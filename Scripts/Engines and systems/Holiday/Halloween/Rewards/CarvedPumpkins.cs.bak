@@ -1,0 +1,138 @@
+using System;
+using Server.Network;
+using Server.Gumps;
+using Server.Multis;
+using System.Collections.Generic;
+using Server.ContextMenus; 
+
+namespace Server.Items
+{
+	public class CarvedPumpkin : BaseLight, ISecurable
+	{
+		public override int LitItemID{ get { return 0x4691; } }
+		
+		public override int UnlitItemID{ get { return 0x4694; } }
+
+		private SecureLevel m_Level;
+
+		[CommandProperty( AccessLevel.GameMaster )]
+		public SecureLevel Level
+		{
+			get{ return m_Level; }
+			set{ m_Level = value; }
+		}
+
+		[Constructable]
+		public CarvedPumpkin() : base( 0x4694 )
+		{
+			Duration = TimeSpan.Zero; // Never burnt out
+			Weight = 10;
+			Light = LightType.Circle150;
+			Burning = false;
+		}
+
+		public override void OnDoubleClick( Mobile from )
+		{
+			if ( !from.InRange( GetWorldLocation(), 1 ) )
+				from.LocalOverheadMessage( MessageType.Regular, 0x3B2, 1019045 ); // I can't reach that.
+			else
+				base.OnDoubleClick( from );
+		}
+
+		public override void GetContextMenuEntries( Mobile from, List<ContextMenuEntry> list )
+		{
+			base.GetContextMenuEntries( from, list );
+			SetSecureLevelEntry.AddTo( from, this, list );
+		}
+
+		public override void GetProperties( ObjectPropertyList list )
+		{
+			base.GetProperties( list );
+			list.Add( "Happy Halloween" );
+		}
+
+		public CarvedPumpkin( Serial serial ) : base( serial )
+		{
+		}
+		public override void Serialize( GenericWriter writer )
+		{
+			base.Serialize( writer );
+
+			writer.Write( (int) 0 ); // version
+
+			writer.WriteEncodedInt( (int) m_Level );
+		}
+		public override void Deserialize( GenericReader reader )
+		{
+			base.Deserialize( reader );
+
+			int version = reader.ReadInt();
+
+			m_Level = (SecureLevel) reader.ReadEncodedInt();
+		}
+	}
+	public class CarvedPumpkin2 : BaseLight, ISecurable
+	{
+		public override int LitItemID{ get { return 0x4695; } }
+		
+		public override int UnlitItemID{ get { return 0x4698; } }
+
+		private SecureLevel m_Level;
+
+		[CommandProperty( AccessLevel.GameMaster )]
+		public SecureLevel Level
+		{
+			get{ return m_Level; }
+			set{ m_Level = value; }
+		}
+
+		[Constructable]
+		public CarvedPumpkin2() : base( 0x4698 )
+		{
+			Duration = TimeSpan.Zero; // Never burnt out
+			Weight = 10;
+			Light = LightType.Circle150;
+			Burning = false;
+		}
+
+		public override void OnDoubleClick( Mobile from )
+		{
+			if ( !from.InRange( GetWorldLocation(), 1 ) )
+				from.LocalOverheadMessage( MessageType.Regular, 0x3B2, 1019045 ); // I can't reach that.
+			else
+				base.OnDoubleClick( from );
+		}
+
+		public override void GetContextMenuEntries( Mobile from, List<ContextMenuEntry> list )
+		{
+			base.GetContextMenuEntries( from, list );
+			SetSecureLevelEntry.AddTo( from, this, list );
+		}
+
+		public override void GetProperties( ObjectPropertyList list )
+		{
+			base.GetProperties( list );
+			list.Add( "Happy Halloween" );
+		}
+
+		public CarvedPumpkin2( Serial serial ) : base( serial )
+		{
+		}
+		public override void Serialize( GenericWriter writer )
+		{
+			base.Serialize( writer );
+
+			writer.Write( (int) 0 ); // version
+
+			writer.WriteEncodedInt( (int) m_Level );
+		}
+		public override void Deserialize( GenericReader reader )
+		{
+			base.Deserialize( reader );
+
+			int version = reader.ReadInt();
+
+			m_Level = (SecureLevel) reader.ReadEncodedInt();
+		}
+	}
+}

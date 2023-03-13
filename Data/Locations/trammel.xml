@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<places>
+	<parent name="Sosaria">
+		<parent name="Sosaria">
+			<parent name="Towns">
+				<parent name="Anchor Rock">
+					<child name="Docks" x="367" y="1421" z="66" />
+					<child name="Port" x="7063" y="730" z="65" />
+					<child name="Cave" x="6660" y="4057" z="-5" />
+				</parent>
+				<child name="Britain" x="2999" y="1044" z="0" />
+				<child name="Britain Castle" x="2985" y="932" z="0" />
+				<child name="Dawn" x="5919" y="2881" z="0" />
+				<child name="Death Gulch" x="3717" y="1540" z="0" />
+				<child name="Devil Guard" x="1656" y="1484" z="2" />
+				<child name="Fawn" x="2119" y="276" z="0" />
+				<child name="Glacial Coast" x="4766" y="1196" z="2" />
+				<child name="Grey" x="902" y="2063" z="0" />
+				<child name="Iceclad Fisherman" x="4326" y="1169" z="2" />
+				<child name="Lamut County" x="1906" y="1170" z="0" />
+				<child name="Montor" x="3212" y="2610" z="1" />
+				<child name="Moon" x="806" y="728" z="0" />
+				<child name="Mountain Crest" x="4514" y="1276" z="2" />
+				<child name="Sarth Abbey" x="2698" y="1462" z="0" />
+				<child name="Umbra" x="2662" y="3272" z="0" />
+				<child name="Yew" x="2433" y="876" z="2" />
+			</parent>
+			<parent name="Dungeons">
+				<parent name="Ancient Pyramid">
+					<child name="Entrance" x="1168" y="474" z="2" />
+					<child name="Level 1" x="5322" y="573" z="0" />
+					<child name="Level 2" x="5331" y="706" z="0" />
+					<child name="Level 3" x="5353" y="908" z="0" />
+				</parent>
+				<parent name="Castle Exodus">
+					<child name="Entrance" x="899" y="2731" z="0" />
+					<child name="Level 1" x="5925" y="590" z="0" />
+				</parent>
+				<parent name="Cave of Banished Mages">
+					<child name="Fortress" x="250" y="3483" z="0" />
+				</parent>
+				<parent name="Caverns of Poseidon">
+					<child name="Entrance" x="198" y="2299" z="12" />
+					<child name="Level 1" x="5199" y="2112" z="40" />
+					<child name="Level 2" x="5809" y="1690" z="0" />
+					<child name="Level 3" x="5585" y="1027" z="0" />
+					<child name="Level 4" x="5849" y="1730" z="0" />
+					<child name="Level 5" x="6039" y="1737" z="0" />
+				</parent>
+				<parent name="Clues">
+					<child name="Entrance" x="3760" y="2041" z="0" />
+					<child name="Level 1" x="5313" y="2273" z="0" />
+					<child name="Level 2" x="5557" y="2175" z="0" />
+					<child name="Level 3" x="5990" y="2180" z="0" />
+				</parent>
+				<parent name="Dardin's Pit">
+					<child name="Entrance" x="3006" y="448" z="0" />
+					<child name="Level 1" x="5697" y="45" z="0" />
+					<child name="Level 2" x="5770" y="390" z="0" />
+				</parent>
+				<parent name="Doom">
+					<child name="Entrance" x="1628" y="2561" z="0" />
+					<child name="Level 1" x="5320" y="71" z="0" />
+					<child name="Level 2" x="5393" y="298" z="0" />
+				</parent>
+				<parent name="Fires Of Hell">
+					<child name="Entrance" x="3345" y="1650" z="0" />
+					<child name="Level 1" x="6028" y="2045" z="20" />
+					<child name="Level 2" x="5357" y="1348" z="0" />
+					<child name="Level 3" x="5607" y="1310" z="0" />
+				</parent>
+				<parent name="Ice Island Dungeons">
+					<child name="1 - Entrance" x="4397" y="1264" z="5" />
+					<child name="2 - Entrance" x="4460" y="1218" z="5" />
+					<child name="2 - Level 1" x="4468" y="3284" z="25" />
+					<child name="2 - Level 2" x="4319" y="3297" z="0" />
+					<child name="3 - Entrance" x="4459" y="1266" z="5" />
+					<child name="3 - Level 1" x="4309" y="3481" z="25" />
+					<child name="4 - Entrance" x="4628" y="1351" z="5" />
+					<child name="4 - Level 1" x="5187" y="2955" z="25" />
+					<child name="5 - Entrance" x="4702" y="1209" z="5" />
+					<child name="5 - Level 1" x="5430" y="2887" z="25" />
+					<child name="6 - Entrance" x="4809" y="1276" z="5" />
+					<child name="6 - Level 1" x="4402" y="3678" z="0" />
+					<child name="7 - Entrance" x="5049" y="1220" z="30" />
+					<child name="7 - Level 1" x="3721" y="3707" z="0" />
+				</parent>
+				<parent name="Mines Of Morinia">
+					<child name="Entrance" x="1022" y="1372" z="2" />
+					<child name="Level 1" x="5898" y="1221" z="0" />
+					<child name="Level 2" x="5911" y="1317" z="0" />
+					<child name="Level 3" x="5696" y="1472" z="0" />
+				</parent>
+				<parent name="Perinian Depths">
+					<child name="Entrance" x="3619" y="460" z="0" />
+					<child name="Level 1" x="5953" y="79" z="0" />
+					<child name="Level 2" x="5979" y="446" z="0" />
+				</parent>
+				<parent name="Time Awaits">
+					<child name="Entrance" x="3831" y="1502" z="0" />
+					<child name="Level 1" x="5630" y="594" z="0" />
+					<child name="Level 2" x="5560" y="918" z="0" />
+					<child name="Time Lord Chamber" x="4802" y="3356" z="5" />
+				</parent>
+			</parent>
+			<parent name="Starter Dungeons">
+				<parent name="Accursed Maze">
+					<child name="Dungeon" x="5860" y="809" z="0" />
+				</parent>
+				<parent name="Magma Vaults">
+					<child name="Dungeon" x="2465" y="3771" z="0" />
+				</parent>
+				<parent name="Forgotten Tombs">
+					<child name="Dungeon" x="2382" y="3530" z="0" />
+				</parent>
+				<parent name="Dark Sanctum">
+					<child name="Dungeon" x="2468" y="3239" z="0" />
+				</parent>
+				<parent name="Shrouded Grave">
+					<child name="Dungeon" x="2398" y="3929" z="0" />
+				</parent>
+				<parent name="Chamber of Bane">
+					<child name="Dungeon" x="2786" y="4014" z="0" />
+				</parent>
+				<parent name="Coldhall Depths">
+					<child name="Dungeon" x="2725" y="3519" z="0" />
+				</parent>
+			</parent>
+			<parent name="Other Areas">
+				<child name="Abandoned Home 1" x="1914" y="919" z="25" />
+				<child name="Abandoned Home 2" x="3329" y="2063" z="40" />
+				<child name="Ancient Temple" x="3696" y="533" z="5" />
+				<child name="Arena Royale" x="3659" y="2098" z="0" />
+				<child name="Bandit Camp" x="3027" y="384" z="0" />
+				<child name="Baron Almric's Tomb" x="4864" y="2800" z="0" />
+				<child name="Black Blade Ruins" x="4505" y="1894" z="2" />
+				<child name="Castle of Shadowguard" x="4762" y="3977" z="0" />
+				<child name="Dark Tower" x="3508" y="2294" z="0" />
+				<child name="Dark Fortress" x="3798" y="1880" z="2" />
+				<child name="Exodus Castle" x="876" y="2703" z="0" />
+				<child name="Forgotten Halls" x="3015" y="944" z="0" />
+				<child name="Fort Blessed" x="3698" y="1259" z="0" />				
+				<child name="Fort Watchers" x="4011" y="2770" z="0" />
+				<child name="Guardian's Chamber" x="4999" y="3995" z="0" />
+				<child name="Light House" x="3196" y="524" z="0" />
+				<child name="Mangar's Tower" x="2824" y="1901" z="0" />
+				<child name="Montor Sewers" x="3058" y="2562" z="0" />
+				<child name="Orc Fort Small" x="572" y="503" z="0" />
+				<child name="Orc Fort Medium" x="3402" y="1187" z="1" />
+				<child name="Orc Fort Large" x="2314" y="1826" z="0" />
+				<child name="Pit" x="2316" y="1533" z="0" />
+				<child name="Pirate Isle" x="1818" y="2232" z="0" />
+				<child name="Ratmen Lair" x="1303" y="1449" z="0" />
+				<child name="Ruins 1" x="1292" y="1459" z="0" />
+				<child name="Ruins 2" x="1709" y="1819" z="0" />
+				<child name="Serpent Pillars" x="4333" y="2321" z="0" />
+				<child name="Skara Brae Ruins" x="4754" y="2791" z="0" />
+				<child name="Sosarian Keep" x="1106" y="1749" z="0" />
+				<child name="Stone Wall Inn" x="1833" y="756" z="0" />
+				<child name="Temple Ruins" x="541" y="203" z="1" />
+				<child name="Tomb of Kas" x="3606" y="3961" z="0" />
+				<child name="Tomb of Lethe" x="4131" y="3431" z="0" />
+				<child name="Tomb of Malak" x="5711" y="2654" z="5" />
+				<child name="Tomb of Zoda" x="4605" y="3279" z="0" />
+				<child name="Underworld Gate" x="1445" y="1629" z="0" />
+				<child name="Widow's Keep" x="2533" y="2436" z="2" />
+			</parent>
+		</parent>
+		<parent name="Ambrosia">
+			<child name="Abandoned Town" x="5744" y="3262" z="0" />
+			<child name="Caddellite Crater" x="5605" y="3833" z="0" />
+			<parent name="Dragon's Maw">
+				<child name="Entrance" x="5316" y="3437" z="5" />
+				<child name="Main" x="4745" y="3857" z="0" />
+				<child name="Tomb of Gor" x="4879" y="3855" z="0" />
+				<child name="Void Dragon" x="4321" y="4039" z="0" />
+				<child name="Radiation Dragon" x="4207" y="3992" z="0" />
+				<child name="Crystal Dragon" x="4464" y="3965" z="0" />
+				<child name="Elder Dragon" x="4350" y="3920" z="0" />
+			</parent>
+			<child name="Forge of Energy" x="5333" y="3208" z="15" />
+			<child name="Shrine, North" x="5227" y="3602" z="15" />
+			<child name="Shrine, South" x="5746" y="3891" z="5" />
+			<child name="Shrine, East" x="5911" y="3570" z="2" />
+			<child name="Shrine, West" x="5226" y="3602" z="15" />
+			<parent name="Zuluu Cave">
+				<child name="Entrance" x="5904" y="4001" z="0" />
+				<child name="Level 1" x="6301" y="3335" z="0" />
+				<child name="Level 2" x="7069" y="3890" z="5" />
+				<child name="Arena" x="6654" y="3684" z="0" />
+			</parent>
+
+		</parent>
+		<parent name="Bottle World">
+			<child name="Bottle Gate" x="6610" y="1082" z="0" />
+			<child name="City of Kuldara" x="6727" y="1803" z="0" />
+			<child name="Dark Druid Valley" x="6938" y="245" z="0" />
+			<child name="Dragon Cave" x="6892" y="2314" z="0" />
+			<child name="Kuldar Cemetery" x="6681" y="1602" z="10" />
+			<child name="Kuldar Catacombs" x="6548" y="2949" z="45" />
+			<child name="Kuldara Sewers" x="6210" y="2797" z="10" />
+			<child name="Vordo's Castle" x="7115" y="2874" z="30" />
+			<parent name="Vordo's Dungeon">
+				<child name="Level 1" x="6278" y="170" z="0" />
+				<child name="Level 2" x="6379" y="393" z="0" />
+			</parent>
+		</parent>
+		<parent name="Umber Veil">
+			<child name="Ancient Graveyard" x="1827" y="3316" z="0" />
+			<child name="Eastern Ruins" x="1863" y="3632" z="12" />
+			<child name="Mausoleum" x="1531" y="3599" z="0" />
+			<child name="Mountain Stronghold" x="1405" y="3691" z="45" />
+			<child name="Renika" x="1449" y="3787" z="0" />
+			<parent name="Tower of Brass">
+				<child name="Entrance" x="1593" y="3376" z="15" />
+				<child name="Level 1" x="6952" y="3565" z="0" />
+				<child name="Level 2" x="6522" y="3538" z="50" />
+				<child name="Level 3" x="6401" y="3124" z="5" />
+				<child name="Level 4" x="6246" y="3470" z="10" />
+				<child name="Level 5" x="6905" y="3360" z="40" />
+				<child name="Level 6" x="6361" y="3601" z="0" />
+				<child name="Level 7" x="580" y="3814" z="100" />
+				<child name="Level 8" x="5213" y="2633" z="21" />
+				<child name="Level 9" x="6396" y="4010" z="5" />
+				<child name="Level 10" x="6790" y="3337" z="10" />
+				<child name="Level 11" x="6482" y="3925" z="0" />
+				<child name="Level 12" x="6837" y="3834" z="0" />
+				<child name="Level 13" x="6551" y="3413" z="0" />
+			</parent>
+			<child name="Western Ruins" x="1095" y="3393" z="12" />
+		</parent>
+		<parent name="Misc Areas">
+			<child name="Bank" x="3437" y="3425" z="0" />
+			<child name="Basement" x="4111" y="3564" z="0" />
+			<child name="Black Magic Guild" x="3599" y="3217" z="0" />
+			<child name="Camping Tent Small" x="3723" y="3978" z="0" />
+			<child name="Camping Tent Large" x="3801" y="3979" z="0" />
+			<child name="Chamber of Virtue" x="2603" y="3855" z="0" />
+			<child name="Chamber of Corruption" x="2875" y="3471" z="0" />
+			<child name="Chasm Floor" x="2578" y="3688" z="0" />
+			<child name="Crash Site" x="4135" y="3771" z="1" />
+			<child name="Dungeon Room" x="3688" y="3330" z="0" />
+			<child name="Hall of Legends" x="5979" y="2481" z="0" />
+			<child name="Lost Glade" x="3913" y="3965" z="0" />
+			<child name="Port" x="7063" y="730" z="65" />
+			<child name="Ship Cabin" x="3256" y="3475" z="20" />
+			<child name="Tavern" x="3684" y="3484" z="0" />
+			<child name="Thieves Guild" x="3426" y="3191" z="0" />
+			<child name="Time Lord" x="3559" y="3405" z="0" />
+			<child name="Wizards Guild" x="3541" y="3542" z="0" />
+			<child name="Xardok's Castle" x="4478" y="1837" z="0" />
+		</parent>
+	</parent>
+</places>

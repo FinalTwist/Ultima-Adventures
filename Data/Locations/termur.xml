@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<places>
+	<parent name="Savaged Empire">
+		<parent name="The Land">
+			<parent name="Towns">
+				<child name="Barako Mines" x="1122" y="2536" z="-1" />
+				<child name="Barbarian Mines" x="967" y="2858" z="25" />
+				<child name="Savage Sea Docks" x="1088" y="316" z="66" />
+				<child name="Village of Barako" x="285" y="1698" z="37" />
+				<child name="Village of Kurak" x="728" y="921" z="-2" />
+			</parent>
+			<parent name="Other Areas">
+				<child name="Cemetery" x="262" y="1385" z="2" />
+				<child name="Crypt of Morphius" x="122" y="2949" z="0" />
+				<child name="Cyclops Valley" x="156" y="604" z="50" />
+				<child name="Desert Mansion" x="781" y="341" z="39" />
+				<child name="Elvan Pass" x="1104" y="1946" z="-29" />
+				<child name="Forge of Poison" x="1070" y="1168" z="0" />
+				<child name="Haunted Ruins" x="399" y="939" z="-3" />
+				<child name="Maze" x="162" y="3139" z="44" />
+				<child name="Maze Portal" x="926" y="1777" z="26" />
+				<child name="Obsidian Fortress" x="916" y="3440" z="0" />
+				<child name="Orc Fort" x="226" y="1334" z="3" />
+				<child name="Pixie Cave" x="147" y="849" z="98" />
+				<child name="Tower of Mondain" x="59" y="2901" z="0" />
+				<child name="Wyvern Isle" x="879" y="172" z="45" />
+				<child name="Wyvern Peninsula" x="180" y="311" z="6" />
+			</parent>
+		</parent>
+		<parent name="Dungeons">
+			<parent name="Ancient Wyrm Lair">
+				<child name="Entrance" x="779" y="612" z="15" />
+				<child name="Valley" x="275" y="3788" z="0" />
+			</parent>
+			<child name="Blood Dungeon" x="729" y="2503" z="-28" />
+			<parent name="Castle Archmage">
+				<child name="Entrance" x="464" y="851" z="-60" />
+				<child name="Level 1" x="452" y="2037" z="-28" />
+				<child name="Level 2" x="555" y="2054" z="-28" />
+				<child name="Level 3" x="674" y="1953" z="-28" />
+				<child name="Level 4" x="694" y="1942" z="-28" />
+			</parent>
+			<parent name="Crypts">
+				<child name="Entrance" x="225" y="3168" z="5" />
+				<child name="Level 1" x="385" y="2542" z="0" />
+				<child name="Level 2" x="396" y="2255" z="33" />
+			</parent>
+			<parent name="Forgotten Halls">
+				<child name="Level 1" x="275" y="3297" z="20" />
+				<child name="Level 2" x="68" y="3845" z="0" />
+				<child name="Level 3" x="415" y="3689" z="5" />
+				<child name="Level 4" x="553" y="3660" z="36" />
+				<child name="Level 5" x="514" y="3585" z="0" />
+				<child name="Level 6" x="170" y="3291" z="0" />
+				<child name="Level 7" x="140" y="3307" z="20" />
+				<child name="Level 8" x="85" y="3303" z="0" />
+				<child name="Level 9" x="56" y="3261" z="20" />
+			</parent>
+			<child name="Ice Dungeon" x="227" y="30" z="30" />
+			<parent name="Ice Queen Fortress">
+				<child name="Level 1" x="275" y="2976" z="44" />
+				<child name="Level 2" x="406" y="2961" z="22" />
+				<child name="Level 3" x="266" y="2848" z="0" />
+				<child name="Level 4" x="414" y="2811" z="0" />
+			</parent>
+			<parent name="Lich Isle">
+				<child name="Entrance" x="1051" y="459" z="16" />
+				<child name="Level 1" x="736" y="3365" z="20" />
+			</parent>
+			<parent name="Halls of Ogrimar">
+				<child name="Entrance" x="1107" y="1380" z="17" />
+				<child name="Level 1" x="811" y="2387" z="-28" />
+				<child name="Level 2" x="1015" y="2415" z="-28" />
+				<child name="Level 3" x="990" y="2411" z="-28" />
+				<child name="Level 4" x="1124" y="2329" z="-29" />
+				<child name="Demon Room" x="973" y="2343" z="-28" />
+				<child name="Ork Demigod" x="880" y="2567" z="-71" />
+			</parent>
+			<parent name="Ratman Mines">
+				<child name="Entrance" x="158" y="1369" z="32" />
+				<child name="Level 1" x="1037" y="2168" z="-3" />
+				<child name="Level 2" x="939" y="2167" z="-28" />
+			</parent>
+			<child name="Rock Dungeon" x="1092" y="1038" z="0" />
+			<parent name="Sakleth Area">
+				<child name="Cave" x="929" y="1977" z="-28" />
+				<child name="Dragon King" x="226" y="2593" z="-19" />
+			</parent>
+			<parent name="Scurvy Reef">
+				<child name="Level 1" x="479" y="4051" z="0" />
+				<child name="Level 2" x="486" y="3981" z="0" />
+				<child name="Level 3" x="428" y="3822" z="10" />
+			</parent>
+			<child name="Spider Cave" x="472" y="2646" z="-28" />
+			<parent name="Tomb of Kazibal">
+				<child name="Entrance" x="368" y="298" z="57" />
+				<child name="Level 1" x="547" y="3317" z="0" />
+				<child name="Level 2" x="525" y="3353" z="62" />
+				<child name="Level 3" x="425" y="3282" z="72" />
+				<child name="Level 4" x="482" y="3389" z="0" />
+			</parent>
+			<child name="Tombs" x="154" y="2730" z="-28" />
+			<child name="Twisted Pass" x="148" y="2361" z="-29" />
+			<parent name="Undersea Castle">
+				<child name="Entrance" x="282" y="444" z="15" />
+				<child name="Level 1" x="598" y="2766" z="-28" />
+				<child name="Level 2" x="636" y="3893" z="45" />
+				<child name="Level 3" x="931" y="3305" z="12" />
+			</parent>
+		</parent>
+		<parent name="Alien Ship">
+			<child name="Entrance" x="613" y="2857" z="0" />
+			<child name="Level 1" x="1093" y="3162" z="20" />
+			<child name="Level 2" x="1085" y="3846" z="0" />
+		</parent>
+	</parent>
+</places>

@@ -1,0 +1,55 @@
+Quest with enigmae and keywords 
+
+--------------------------------------------------------------------------------
+
+First of all I wish to thank everybody. 
+I am nb also be indulgent.
+It is my first script of quest and I am French also, you will have certainly to retouch the dialogues of the pnj.
+
+Quest of Elements is a quest with enigmae and keywords.
+
+Oracle made a bet with the Gods. He gives you alternately 4 enigmae to be resolved.
+
+In every found solution, you have to visit the corresponding God, to say the name followed by the keyword which is solution of the enigma. The God gives you then one of the Elements that you have to bring back to the Oracle.
+
+To begin the Quest, visit Oracle and say : oracle hail
+
+Quest takes place on Trammel. 
+
+I arranged the pnj so but you can choose the other places, it will then be necessary to think of modifying the logs of gumps:
+
+Oracle: near the Hall of Virtues to Britain
+Hephaistos: 4593 36136 30
+Eole : 5132 157 0
+Poseidon : 1319 550 30
+Gaia: 2594 461 60
+
+Archambeau: in Britain's library
+Pythie: in the temple of the Justice
+
+
+
+
+
+
+To begin the Quest, visit Oracle and say : oracle hail
+
+In every found solution, you have to visit the corresponding God, to say the name followed by the keyword which is solution of the enigma. The God gives you then one of the Elements that you have to bring back to the Oracle.
+
+The keywords are on each mobile's files like Hephaistos.cs line 84
+Edit the file and search "string keyword"
+
+
+Code:
+ string keyword = this.Name + " wind";
+Each time you must say pnj's name and the keyword like this : hephaistos wind.
+
+The Oracle give you each time a section of parchment. When you have the four sections clic on this.
+
+Give the Parchment of Knowledge to Archambeau, he'll say you where is the Pythie.
+
+Give the Parchment of Wisdom to the Pythie and she'll give you a reward : the bracelet of elements.
+
+I hope to help you 
+
+Angeline

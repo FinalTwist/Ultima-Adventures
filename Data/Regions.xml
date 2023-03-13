@@ -1,0 +1,1955 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServerRegions>
+  <Facet name="Felucca">
+
+		// NOT USED YET // 2138 is next Treasure Spawner IDs
+
+		<region type="ProtectedRegion" priority="20" name="the Lodoria Forest">
+		  <rect x="5301" y="4017" width="25" height="25" />
+		</region>
+		
+		<region type="OutDoorRegion" priority="65" name="the Great Forge of Ice">
+			<rect x="3971" y="728" width="18" height="18" />
+		</region>
+
+		<region type="OutDoorRegion" priority="50" name="the Ranger Outpost">
+			<rect x="5157" y="1095" width="139" height="306" />
+		</region>
+		<region type="OutDoorRegion" priority="80" name="the Glowing Pond">
+			<rect x="5216" y="1330" width="23" height="20" />
+		</region>
+		<region type="OutDoorRegion" priority="80" name="the Altar of Golden Rangers">
+			<rect x="5202" y="1300" width="5" height="6" />
+		</region>
+
+		// CAVE
+		<region type="CaveRegion" priority="50" name="the Undersea Pass">
+			<rect x="6272" y="3595" width="188" height="387" />
+			<rect x="6251" y="3231" width="133" height="370" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Ancient Elven Mine">
+			<rect x="6807" y="2614" width="179" height="155" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Craghole Cavern">
+			<rect x="5800" y="3635" width="99" height="70" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Lodoria Mine">
+			<rect x="5668" y="3609" width="95" height="54" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Whispering Cavern">
+			<rect x="5664" y="3684" width="116" height="101" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Dusklight Mine">
+			<rect x="5340" y="3719" width="131" height="88" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Old Minotaur Caves">
+			<rect x="5222" y="3825" width="256" height="117" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Lost Dwarven Mines">
+			<rect x="5293" y="3517" width="157" height="138" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Ancient Dwarf Mines">
+			<rect x="5568" y="3375" width="185" height="166" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Thunderous Hall Cavern">
+			<rect x="5209" y="3142" width="243" height="276" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the One Eyed Tunnel">
+			<rect x="5558" y="3172" width="84" height="104" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Seaside Cavern">
+			<rect x="5648" y="3149" width="99" height="70" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Giant Hold Cave">
+			<rect x="5898" y="3175" width="232" height="159" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Windchill Cavern">
+			<rect x="5989" y="2965" width="105" height="66" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Rockfall Grotto">
+			<rect x="5808" y="3004" width="131" height="77" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Ogredug Grotto">
+			<rect x="5724" y="2953" width="117" height="47" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Springvale Mine">
+			<rect x="5189" y="2975" width="111" height="73" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Lost Canyon Cave">
+			<rect x="5446" y="2942" width="68" height="52" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Oasis Cave">
+			<rect x="5312" y="2914" width="98" height="90" />
+			<rect x="5283" y="2922" width="64" height="44" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Crumbling Cave">
+			<rect x="5222" y="2835" width="59" height="68" />
+		</region>
+
+		// PIRATE SEAS
+		<region type="PirateRegion" priority="50" name="the Waters of the Mad Wolf">
+			<rect x="4646" y="3677" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Shameful Captain">
+			<rect x="3463" y="3779" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Angry Hangman">
+			<rect x="3385" y="2773" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Dark Treasure">
+			<rect x="2264" y="1677" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Privateer's Greed">
+			<rect x="4384" y="2085" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Rage of the Sea">
+			<rect x="3256" y="1933" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Screaming Serpent">
+			<rect x="4713" y="1133" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Hellish Eel">
+			<rect x="4040" y="253" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Darkened Sea">
+			<rect x="1744" y="643" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Poisoned Blade">
+			<rect x="240" y="342" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Golden Sail">
+			<rect x="871" y="1451" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Barge of Poseidon">
+			<rect x="343" y="2956" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Demon's Scurvy">
+			<rect x="896" y="3764" width="84" height="84" />
+		</region>
+
+		// DUNGEONS
+		<region type="DungeonRegion" priority="50" name="the Lodoria Sewers">
+			<rect x="6027" y="1425" width="103" height="88" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Lizardman Cave">
+			<rect x="5376" y="509" width="141" height="134" />
+				<spawning>
+					<object id="2021" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="5" />
+					<object id="7652" type="DungeonChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="6" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Ratmen Cave">
+			<rect x="5801" y="319" width="63" height="66" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Crypt">
+			<rect x="5222" y="3057" width="33" height="72" />
+				<spawning>
+					<object id="2030" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="3" />
+					<object id="2031" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="1" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Wrong">
+			<rect x="5379" y="1283" width="248" height="226" />
+			<rect x="5639" y="508" width="249" height="180" />
+				<spawning>
+					<object id="2028" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="60" />
+					<object id="2029" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="30" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Volcanic Cave">
+			<rect x="5830" y="3361" width="210" height="180" />
+				<spawning>
+					<object id="2026" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="22" />
+					<object id="2027" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="11" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Terathan Keep">
+			<rect x="5125" y="1536" width="252" height="246" />
+				<spawning>
+					<object id="2024" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="36" />
+					<object id="2025" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="18" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Shame">
+			<rect x="5628" y="1" width="265" height="125" />
+			<rect x="5375" y="2" width="259" height="253" />
+				<spawning>
+					<object id="2022" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="53" />
+					<object id="2023" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="26" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Ice Fiend Lair">
+			<rect x="5653" y="300" width="55" height="37" />
+				<spawning>
+					<object id="2018" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="2" />
+					<object id="2019" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="1" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Frozen Hells">
+			<rect x="5665" y="132" width="224" height="131" />
+				<spawning>
+					<object id="2016" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="16" />
+					<object id="2017" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="8" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Hythloth">
+			<rect x="5902" y="14" width="238" height="227" />
+			<rect x="5941" y="335" width="27" height="31" />
+				<spawning>
+					<object id="2014" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="29" />
+					<object id="2015" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="15" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Mind Flayer City">
+			<rect x="5122" y="7" width="249" height="247" />
+				<spawning>
+					<object id="2012" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="32" />
+					<object id="2013" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="16" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the City of Embers">
+			<rect x="5632" y="1282" width="258" height="242" />
+				<spawning>
+					<object id="2010" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="37" />
+					<object id="2011" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="19" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="100" name="Dungeon Destard">
+			<rect x="6764" y="463" width="167" height="158" />
+			<rect x="5123" y="770" width="246" height="255" />
+				<spawning>
+					<object id="2008" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="33" />
+					<object id="2009" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="16" />
+					<object id="7654" type="DungeonChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="18" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Despise">
+			<rect x="5377" y="646" width="154" height="131" />
+			<rect x="5374" y="768" width="255" height="255" />
+			<rect x="5145" y="2393" width="201" height="281" />
+			<rect x="5370" y="2397" width="179" height="203" />
+				<spawning>
+					<object id="2006" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="70" />
+					<object id="2007" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="35" />
+					<object id="7653" type="DungeonChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="6" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Deceit">
+			<rect x="5125" y="525" width="228" height="243" />
+				<spawning>
+					<object id="2004" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="30" />
+					<object id="2005" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="15" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Covetous">
+			<rect x="5377" y="1843" width="133" height="123" />
+			<rect x="5376" y="1947" width="246" height="96" />
+			<rect x="5436" y="2080" width="138" height="85" />
+			<rect x="5559" y="2468" width="311" height="124" />
+			<rect x="5273" y="2696" width="51" height="53" />
+				<spawning>
+					<object id="2002" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+					<object id="2003" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Lodoria Catacombs">
+			<rect x="5531" y="1821" width="97" height="110" />
+			<rect x="5398" y="1788" width="234" height="51" />
+				<spawning>
+					<object id="2000" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="13" />
+					<object id="2001" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="7" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Halls of Undermountain">
+			<rect x="5205" y="291" width="263" height="218" />
+				<spawning>
+					<object id="2760" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="36" />
+					<object id="2761" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="18" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Vault of the Black Knight">
+			<rect x="6181" y="21" width="491" height="583" />
+				<spawning>
+					<object id="2762" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="178" />
+					<object id="2763" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="89" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Crypts of Dracula">
+			<rect x="5724" y="2668" width="121" height="189" />
+				<spawning>
+					<object id="2764" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="14" />
+					<object id="2765" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="7" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="20" name="Stonegate Castle">
+			<rect x="5979" y="2243" width="1022" height="653" />
+				<spawning>
+					<object id="2136" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="300" />
+					<object id="2137" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="140" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Castle of Dracula">
+			<rect x="6744" y="1396" width="360" height="354" />
+				<spawning>
+					<object id="5009" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="75" />
+					<object id="5010" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="35" />
+				</spawning>
+		</region>
+
+		<region type="DungeonRegion" priority="50" name="the Montor Sewers">
+			<rect x="6448" y="892" width="177" height="141" />
+		</region>
+
+		<region type="DungeonRegion" priority="50" name="the Depths of Carthax Lake">
+			<rect x="5732" y="1582" width="401" height="326" />
+			<rect x="5157" y="1837" width="153" height="304" />
+			<rect x="5154" y="2192" width="375" height="186" />
+				<spawning>
+					<object id="4762" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="80" />
+					<object id="4763" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Morgaelin's Inferno">
+			<rect x="6883" y="529" width="260" height="346" />
+			<rect x="6662" y="909" width="360" height="444" />
+			<rect x="7017" y="958" width="121" height="234" />
+			<rect x="5990" y="2092" width="89" height="146" />
+				<spawning>
+					<object id="4764" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="80" />
+					<object id="4765" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Zealan Tombs">
+			<rect x="6346" y="640" width="500" height="202" />
+			<rect x="5966" y="861" width="46" height="56" />
+			<rect x="5423" y="1545" width="285" height="213" />
+			<rect x="6679" y="2239" width="237" height="207" />
+			<rect x="6924" y="2218" width="201" height="343" />
+				<spawning>
+					<object id="4766" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="80" />
+					<object id="4767" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Temple of Osirus">
+			<rect x="6043" y="3504" width="173" height="226" />
+			<rect x="6020" y="3741" width="149" height="332" />
+			<rect x="6190" y="3778" width="130" height="191" />
+			<rect x="6053" y="879" width="148" height="161" />
+				<spawning>
+					<object id="4768" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="80" />
+					<object id="4769" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Argentrock Castle">
+			<rect x="5929" y="429" width="241" height="374" />
+			<rect x="5783" y="690" width="128" height="268" />
+			<rect x="6194" y="622" width="104" height="200" />
+			<rect x="6499" y="1043" width="40" height="45" />
+				<spawning>
+					<object id="4770" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="80" />
+					<object id="4771" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="60" name="the Daemon's Crag">
+			<rect x="5866" y="2080" width="85" height="152" />
+			<rect x="6135" y="1954" width="305" height="262" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Hall of the Mountain King">
+			<rect x="6747" y="1758" width="374" height="239" />
+			<rect x="6472" y="2053" width="62" height="68" />
+			<rect x="6956" y="2022" width="169" height="142" />
+			<rect x="6227" y="882" width="175" height="164" />
+			<rect x="6354" y="1165" width="196" height="197" />
+			<rect x="6336" y="1187" width="35" height="35" />
+			<rect x="6303" y="1206" width="109" height="151" />
+			<rect x="5155" y="2702" width="87" height="112" />
+				<spawning>
+					<object id="4772" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="80" />
+					<object id="4773" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="80" name="the Sanctum of Saltmarsh">
+			<rect x="5683" y="1963" width="142" height="157" />
+			<rect x="5909" y="1943" width="151" height="82" />
+			<rect x="6554" y="2044" width="80" height="100" />
+			<rect x="6241" y="1094" width="161" height="63" />
+			<rect x="6067" y="1124" width="218" height="263" />
+			<rect x="6278" y="1147" width="51" height="48" />
+			<rect x="6293" y="1094" width="45" height="95" />
+			<rect x="6319" y="1100" width="78" height="74" />
+				<spawning>
+					<object id="4778" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="80" />
+					<object id="4779" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+				</spawning>
+		</region>
+
+		// ETHEREAL PLANE
+		<region type="StartRegion" priority="50" name="the Ethereal Plane">
+			<rect x="5906" y="3887" width="115" height="112" />
+		</region>
+
+		// OUTDOOR AREAS
+		<region type="OutDoorBadRegion" priority="50" name="the Terathan Keep">
+			<rect x="597" y="2393" width="25" height="24" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Ratmen Ruins">
+			<rect x="1541" y="2253" width="20" height="20" />
+		</region>
+		<region type="OutDoorRegion" priority="50" name="the Great Dwarven Forge">
+			<rect x="2969" y="3456" width="7" height="24" />
+			<rect x="2962" y="3451" width="9" height="34" />
+			<rect x="2941" y="3453" width="7" height="7" />
+			<rect x="2947" y="3449" width="16" height="43" />
+			<rect x="2925" y="3465" width="13" height="19" />
+			<rect x="2934" y="3459" width="20" height="42" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Graveyard">
+			<rect x="2129" y="2681" width="24" height="19" />
+			<rect x="2690" y="2151" width="20" height="25" />
+			<rect x="4146" y="2936" width="32" height="26" />
+			<rect x="4346" y="1724" width="38" height="31" />
+		</region>
+		<region type="NecromancerRegion" priority="50" name="Ravendark Woods">
+			<rect x="6445" y="3053" width="563" height="425" />
+			<rect x="6537" y="3450" width="465" height="457" />
+				<spawning>
+					<object id="3001" type="RavendarkStorm" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="100" />
+				</spawning>
+		</region>
+		<region type="NecromancerRegion" priority="100" name="the Village of Ravendark">
+			<rect x="6752" y="3625" width="42" height="32" />
+			<rect x="6744" y="3644" width="109" height="88" />
+			<rect x="6725" y="3688" width="87" height="60" />
+			<rect x="6700" y="3735" width="98" height="38" />
+			<rect x="6725" y="3766" width="32" height="35" />
+		</region>
+		<region type="NecromancerRegion" priority="50" name="the Island of Dracula">
+			<rect x="490" y="3570" width="44" height="82" />
+			<rect x="467" y="3546" width="28" height="117" />
+			<rect x="464" y="3651" width="52" height="46" />
+			<rect x="433" y="3500" width="39" height="200" />
+			<rect x="297" y="3473" width="148" height="221" />
+			<rect x="324" y="3688" width="248" height="112" />
+			<rect x="455" y="3796" width="20" height="33" />
+			<rect x="506" y="3599" width="43" height="39" />
+				<spawning>
+					<object id="3002" type="RavendarkStorm" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="15" />
+				</spawning>
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Island of Stonegate">
+			<rect x="1178" y="219" width="398" height="270" />
+		</region>
+
+		// VILLAGES
+		<region type="VillageRegion" priority="50" name="the Village of Whisper">
+			<rect x="800" y="871" width="122" height="133" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the Town of Glacial Hills">
+			<rect x="3684" y="245" width="63" height="48" />
+			<rect x="3671" y="276" width="16" height="15" />
+			<rect x="3654" y="286" width="24" height="18" />
+			<rect x="3644" y="301" width="26" height="25" />
+			<rect x="3642" y="324" width="30" height="44" />
+			<rect x="3612" y="364" width="135" height="114" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the Village of Springvale">
+			<rect x="4233" y="1480" width="39" height="52" />
+			<rect x="4164" y="1414" width="140" height="74" />
+			<rect x="4235" y="1382" width="76" height="90" />
+			<rect x="4236" y="1482" width="36" height="46" />
+			<rect x="4286" y="1484" width="14" height="14" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the City of Elidor">
+			<rect x="2875" y="1221" width="111" height="25" />
+			<rect x="2875" y="1246" width="93" height="61" />
+			<rect x="2875" y="1307" width="104" height="28" />
+			<rect x="2856" y="1328" width="142" height="97" />
+			<rect x="2941" y="1259" width="48" height="30" />
+			<rect x="2966" y="1343" width="53" height="60" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the Village of Islegem">
+			<rect x="2803" y="2199" width="61" height="76" />
+			<rect x="2762" y="2257" width="49" height="14" />
+			<rect x="2756" y="2248" width="14" height="12" />
+			<rect x="2727" y="2239" width="32" height="26" />
+		</region>
+		<region type="VillageRegion" priority="50" name="Greensky Village">
+			<rect x="4206" y="2957" width="48" height="76" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the Port of Dusk">
+			<rect x="2640" y="3146" width="104" height="67" />
+			<rect x="2587" y="3170" width="55" height="112" />
+			<rect x="2636" y="3207" width="52" height="50" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the Port of Starguide">
+			<rect x="2297" y="3121" width="89" height="67" />
+			<rect x="2321" y="3100" width="25" height="36" />
+			<rect x="2366" y="3149" width="35" height="21" />
+			<rect x="2295" y="3158" width="85" height="44" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the Village of Portshine">
+			<rect x="804" y="1987" width="90" height="59" />
+			<rect x="830" y="1976" width="62" height="48" />
+			<rect x="869" y="2018" width="32" height="16" />
+		</region>
+		<region type="VillageRegion" priority="55" name="the Castle of Knowledge">
+			<rect x="1755" y="2190" width="45" height="48" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the City of Lodoria">
+			<rect x="2040" y="2125" width="127" height="78" />
+			<rect x="2085" y="2196" width="30" height="59" />
+			<rect x="1957" y="2147" width="143" height="116" />
+			<rect x="1799" y="2118" width="161" height="138" />
+			<rect x="1829" y="2252" width="121" height="42" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the Lodoria Cemetery">
+			<rect x="1847" y="2365" width="68" height="40" />
+		</region>
+
+		<region type="PublicRegion" priority="50" name="the Chamber of Tyball">
+			<rect x="6037" y="332" width="53" height="44" />
+		</region>
+		<region type="PublicRegion" priority="50" name="the Obsidian Tower">
+			<rect x="5393" y="1140" width="41" height="40" />
+		</region>
+
+		<region type="SafeRegion" priority="100" name="Kraken Reef Docks">
+		  <rect x="4655" y="3077" width="235" height="235" />
+		</region>
+		<region type="UnderHouseRegion" priority="100" name="Barnacled Cavern">
+			<rect x="5581" y="3798" width="237" height="291" />
+		</region>
+
+		// THE BARD'S TALE
+		<region type="BardTownRegion" priority="50" name="the Town of Skara Brae">
+			<rect x="6837" y="108" width="246" height="236" />
+		</region>
+		<region type="BardDungeonRegion" priority="50" name="Mangar's Tower">
+			<rect x="6451" y="1389" width="215" height="118" />
+			<rect x="6215" y="1408" width="241" height="483" />
+				<spawning>
+					<object id="2766" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="50" />
+					<object id="2767" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="26" />
+				</spawning>
+		</region>
+		<region type="BardDungeonRegion" priority="90" name="Mangar's Chamber">
+			<rect x="6393" y="1455" width="69" height="95" />
+		</region>
+		<region type="BardDungeonRegion" priority="50" name="Kylearan's Tower">
+			<rect x="5611" y="2173" width="304" height="251" />
+				<spawning>
+					<object id="2768" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="47" />
+					<object id="2769" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="24" />
+				</spawning>
+		</region>
+		<region type="BardDungeonRegion" priority="50" name="Harkyn's Castle">
+			<rect x="5519" y="1054" width="517" height="194" />
+				<spawning>
+					<object id="2770" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="51" />
+					<object id="2771" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="25" />
+				</spawning>
+		</region>
+		<region type="BardDungeonRegion" priority="50" name="the Catacombs">
+			<rect x="6481" y="1889" width="163" height="156" />
+				<spawning>
+					<object id="2772" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="14" />
+					<object id="2773" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="7" />
+				</spawning>
+		</region>
+		<region type="BardDungeonRegion" priority="50" name="the Lower Catacombs">
+			<rect x="6131" y="2656" width="148" height="100" />
+			<rect x="6201" y="2642" width="78" height="42" />
+				<spawning>
+					<object id="2792" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="12" />
+					<object id="2793" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="6" />
+				</spawning>
+		</region>
+		<region type="BardDungeonRegion" priority="50" name="the Sewers">
+			<rect x="6477" y="1526" width="211" height="260" />
+				<spawning>
+					<object id="2774" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="17" />
+				</spawning>
+		</region>
+		<region type="BardDungeonRegion" priority="50" name="the Mines">
+			<rect x="6026" y="2314" width="90" height="60" />
+		</region>
+		<region type="BardDungeonRegion" priority="50" name="the Cellar">
+			<rect x="5373" y="2652" width="280" height="117" />
+				<spawning>
+					<object id="2775" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="10" />
+				</spawning>
+		</region>
+	</Facet>
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	<Facet name="Trammel">
+		<region type="LunaRegion" priority="20" name="the Celestial Moon of Luna">
+			<rect x="5801" y="2716" width="324" height="318" />
+		</region>
+			<region type="MoonCore" priority="100" name="Moonlight Cavern">
+				<rect x="6735" y="486" width="133" height="76" />
+			</region>
+			<region type="MoonCore" priority="100" name="the Moon's Core">
+				<rect x="5631" y="1883" width="2" height="10" />
+				<rect x="5631" y="1883" width="13" height="2" />
+				<rect x="5643" y="1883" width="2" height="6" />
+				<rect x="5642" y="1888" width="6" height="2" />
+				<rect x="5648" y="1888" width="2" height="5" />
+				<rect x="5648" y="1892" width="14" height="2" />
+				<rect x="5661" y="1892" width="2" height="7" />
+				<rect x="5661" y="1898" width="18" height="2" />
+				<rect x="5678" y="1898" width="2" height="8" />
+				<rect x="5678" y="1905" width="12" height="2" />
+				<rect x="5689" y="1905" width="2" height="9" />
+				<rect x="5689" y="1910" width="7" height="5" />
+			</region>
+			<region type="MoonCore" priority="90" name="the Core of the Moon">
+				<rect x="5619" y="1862" width="110" height="75" />
+			</region>
+		<region type="PirateRegion" priority="50" name="the Island of Poseidon">
+			<rect x="146" y="2224" width="100" height="106" />
+		</region>
+
+		<region type="PublicRegion" priority="100" name="the Castle of Shadowguard">
+			<rect x="4729" y="3951" width="53" height="55" />
+		</region>
+		<region type="PublicRegion" priority="100" name="the Guardian's Chamber">
+			<rect x="4981" y="3978" width="26" height="30" />
+		</region>
+		<region type="PublicRegion" priority="100" name="the Tomb of Lethe">
+			<rect x="4117" y="3411" width="30" height="30" />
+		</region>
+		<region type="PublicRegion" priority="100" name="Seggallions's Cave">
+			<rect x="5024" y="3820" width="32" height="28" />
+		</region>
+		<region type="PublicRegion" priority="100" name="Garamon's Mansion">
+			<rect x="5016" y="3741" width="32" height="25" />
+		</region>
+		<region type="OutDoorRegion" priority="65" name="Shimazu's Dojo">
+			<rect x="5588" y="2863" width="57" height="43" />
+		</region>
+		<region type="CrashRegion" priority="100" name="the Crash Site">
+		  <rect x="4086" y="3745" width="60" height="60" />
+		</region>
+
+		// PIRATE SEAS
+		<region type="PirateRegion" priority="50" name="the Waters of the Blade of Neptune">
+			<rect x="185" y="173" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Captain's Whore">
+			<rect x="408" y="925" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Pearl of Hades">
+			<rect x="386" y="1950" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Rage of the Nine">
+			<rect x="401" y="2781" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Bloody Wave">
+			<rect x="1170" y="2350" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Cruel Mistress">
+			<rect x="1649" y="285" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Morbid Sail">
+			<rect x="3352" y="421" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Silver Sun">
+			<rect x="4737" y="315" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Night's Raid">
+			<rect x="4074" y="1908" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Dragon's Wave">
+			<rect x="4169" y="836" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Kraken's Heart">
+			<rect x="4817" y="1661" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Damned Skull">
+			<rect x="2200" y="2853" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="60" name="the Waters of the Whispering Wind">
+			<rect x="1752" y="2223" width="25" height="43" />
+		</region>
+		<region type="PirateRegion" priority="60" name="the Waters of the Jewel of the Deep">
+			<rect x="1782" y="2265" width="45" height="29" />
+		</region>
+
+		<region type="OutDoorBadRegion" priority="50" name="the Caddellite Crater">
+			<rect x="5588" y="3811" width="28" height="28" />
+		</region>
+		<region type="BargeDeadRegion" priority="50" name="the Barge of the Dead">
+			<rect x="5404" y="3945" width="34" height="11" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Brigand Fort">
+			<rect x="2979" y="351" width="67" height="71" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Ruins of Skara Brae">		
+			<rect x="4751" y="2776" width="12" height="10" />
+			<rect x="4750" y="2796" width="12" height="12" />
+			<rect x="4755" y="2760" width="23" height="19" />
+			<rect x="4777" y="2755" width="28" height="24" />
+			<rect x="4742" y="2783" width="18" height="15" />
+			<rect x="4758" y="2778" width="42" height="37" />
+		</region>
+
+		<region type="OutDoorRegion" priority="65" name="the Powerful Forge of Energy">
+			<rect x="5326" y="3199" width="11" height="13" />
+		</region>
+
+		<region type="CaveRegion" priority="65" name="the Devil's Mine">
+			<rect x="5198" y="1552" width="59" height="68" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Pirate Cave">
+			<rect x="5420" y="1662" width="69" height="48" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Hot Spring Cave">
+			<rect x="5258" y="1647" width="32" height="35" />
+			<rect x="5281" y="1637" width="103" height="78" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Cave of Virtue">
+			<rect x="5160" y="1685" width="116" height="80" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Mountain Crest Mine">
+			<rect x="5522" y="1890" width="95" height="103" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Junglewall Cave">
+			<rect x="5643" y="2319" width="99" height="66" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Avalanche Grotto">
+			<rect x="5776" y="2349" width="92" height="77" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Mines of Moon">
+			<rect x="5632" y="2399" width="122" height="101" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Moonglow Tunnel">
+			<rect x="5313" y="2435" width="127" height="88" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Snowdrop Cave">
+			<rect x="3859" y="3661" width="47" height="51" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Twisted Cave">
+			<rect x="3973" y="3657" width="56" height="71" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Cavern of Echoes">
+			<rect x="3840" y="3743" width="39" height="37" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Frostwind Grotto">
+			<rect x="3968" y="3750" width="37" height="30" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Serpent Pass">
+			<rect x="3865" y="3793" width="133" height="58" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Coldrock Cavern">
+			<rect x="3672" y="3752" width="84" height="79" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Nightshadow Cave">
+			<rect x="3397" y="3836" width="109" height="95" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Old Grey Mine">
+			<rect x="3464" y="3657" width="84" height="107" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Fallwater Cavern">
+			<rect x="3342" y="3996" width="86" height="64" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Volcanic Pass">
+			<rect x="3183" y="3603" width="212" height="225" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Ambrosian Cavern">
+			<rect x="3219" y="3865" width="129" height="84" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Britain Mines">
+			<rect x="3007" y="3823" width="163" height="197" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Montor Mine">
+			<rect x="3039" y="3696" width="109" height="99" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Old Umber Cave">
+			<rect x="2927" y="3668" width="77" height="58" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Yew Mines">
+			<rect x="2938" y="3531" width="197" height="124" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Cavern of Sermillon">
+			<rect x="3193" y="3239" width="154" height="97" />
+		</region>
+		<region type="OutDoorBadRegion" priority="80" name="the Graveyard">
+			<rect x="1744" y="1607" width="23" height="21" />
+			<rect x="1753" y="1627" width="14" height="8" />
+			<rect x="2159" y="351" width="18" height="19" />
+			<rect x="802" y="598" width="28" height="32" />
+			<rect x="928" y="1972" width="59" height="39" />
+			<rect x="3236" y="2784" width="36" height="40" />
+			<rect x="3062" y="1013" width="33" height="23" />
+			<rect x="4858" y="2796" width="28" height="25" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Lost Graveyard">
+			<rect x="5867" y="2583" width="53" height="56" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the British Family Cemetery">
+		  <rect x="3052" y="949" width="45" height="27" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Dark Fortress">
+			<rect x="3777" y="1846" width="12" height="14" />
+			<rect x="3785" y="1846" width="28" height="32" />
+		</region>
+		<region type="OutDoorRegion" priority="65" name="the Church of the Divine">
+			<rect x="1386" y="3767" width="23" height="30" />
+		</region>
+		<region type="PublicRegion" priority="50" name="Xardok's Castle">
+			<rect x="4458" y="1820" width="7" height="7" />
+			<rect x="4460" y="1822" width="15" height="18" />
+			<rect x="4475" y="1826" width="7" height="9" />
+			<rect x="4466" y="1840" width="2" height="4" />
+			<rect x="4464" y="1844" width="11" height="8" />
+		</region>
+		<region type="PublicRegion" priority="50" name="the Hall of Legends">
+			<rect x="5940" y="2435" width="77" height="63" />
+		</region>
+		<region type="PublicRegion" priority="50" name="the Thieves Guild">
+			<rect x="3396" y="3182" width="52" height="39" />
+		</region>
+		<region type="PublicRegion" priority="50" name="the Ship's Lower Deck">
+			<rect x="3219" y="3421" width="70" height="96" />
+		</region>
+		<region type="PublicRegion" priority="50" name="the Camping Tent">
+			<rect x="3703" y="3961" width="106" height="36" />
+		</region>
+		<region type="PublicRegion" priority="50" name="the Dungeon Room">
+			<rect x="3681" y="3319" width="37" height="34" />
+		</region>
+		<region type="PublicRegion" priority="50" name="the Black Magic Guild">
+			<rect x="3563" y="3197" width="54" height="80" />
+		</region>
+		<region type="PublicRegion" priority="50" name="the Wizards Guild">
+			<rect x="3518" y="3512" width="75" height="75" />
+		</region>
+		<region type="PublicRegion" priority="50" name="the Basement">
+			<rect x="4065" y="3527" width="70" height="70" />
+		</region>
+		<region type="PublicRegion" priority="50" name="the Tavern">
+			<rect x="3634" y="3414" width="89" height="103" />
+		</region>
+		<region type="PublicRegion" priority="50" name="the Bank">
+			<rect x="3421" y="3370" width="56" height="87" />
+		</region>
+		<region type="PublicRegion" priority="50" name="the Lost Glade">
+			<rect x="3885" y="3940" width="45" height="45" />
+		</region>
+		<region type="PublicRegion" priority="50" name="the Chasm">
+			<rect x="2557" y="3654" width="72" height="72" />
+		</region>
+		<region type="PublicRegion" priority="80" name="the Port">
+			<rect x="6905" y="524" width="260" height="260" />
+		</region>
+
+		<region type="CaveRegion" priority="50" name="the Tomb of Kas the Bloody Handed">
+			<rect x="3592" y="3952" width="22" height="22" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Tomb of Baron Almric">
+			<rect x="7027" y="3169" width="30" height="30" />
+		</region>
+		<region type="CaveRegion" priority="100" name="the Tomb of Malak the Syth Lord">
+			<rect x="5689" y="2635" width="40" height="40" />
+		</region>
+		
+		<region type="CaveRegion" priority="100" name="the Tomb of Zoda the Jedi Master">
+			<rect x="4593" y="3267" width="40" height="40" />
+		</region>
+		
+
+		<region type="DungeonRegion" priority="50" name="the Ruins of the Black Blade">
+			<rect x="4947" y="3484" width="112" height="106" />
+		</region>
+		<region type="DungeonRegion" priority="100" name="the Caverns of Poseidon">
+			<rect x="5701" y="1664" width="112" height="56" />
+			<rect x="5780" y="1722" width="133" height="75" />
+			<rect x="5960" y="1677" width="114" height="75" />
+			<rect x="5181" y="1855" width="247" height="286" />
+			<rect x="5564" y="959" width="137" height="85" />
+				<spawning>
+					<object id="2020" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="55" />
+					<object id="2090" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="26" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Ancient Pyramid">
+			<rect x="5192" y="422" width="246" height="561" />
+				<spawning>
+					<object id="2032" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="70" />
+					<object id="2033" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="35" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="90" name="the Tower of Brass">
+			<rect x="6916" y="3473" width="56" height="155" />
+			<rect x="6787" y="3787" width="75" height="97" />
+			<rect x="6785" y="3575" width="58" height="58" />
+			<rect x="6170" y="3724" width="333" height="325" />
+			<rect x="6494" y="3520" width="48" height="74" />
+			<rect x="6491" y="3349" width="132" height="131" />
+			<rect x="6312" y="3543" width="77" height="77" />
+			<rect x="6169" y="3411" width="125" height="93" />
+			<rect x="6380" y="3072" width="42" height="64" />
+			<rect x="6711" y="3074" width="217" height="352" />
+			<rect x="5198" y="2542" width="261" height="119" />
+			<rect x="437" y="3787" width="204" height="112" />
+				<spawning>
+					<object id="2091" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="125" />
+					<object id="2120" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="70" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Clues">
+			<rect x="5242" y="2229" width="199" height="160" />
+			<rect x="5535" y="2087" width="199" height="173" />
+			<rect x="5800" y="2080" width="234" height="185" />
+				<spawning>
+					<object id="2036" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="55" />
+					<object id="2037" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="26" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dardin's Pit">
+			<rect x="5474" y="302" width="321" height="191" />
+			<rect x="5536" y="20" width="191" height="231" />
+				<spawning>
+					<object id="2038" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="53" />
+					<object id="2039" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="26" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="80" name="Frostwall Caverns">
+			<rect x="2856" y="3204" width="225" height="199" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Abandon">
+			<rect x="5187" y="35" width="254" height="356" />
+				<spawning>
+					<object id="2040" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="46" />
+					<object id="2041" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="23" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Exodus">
+			<rect x="5816" y="537" width="239" height="183" />
+				<spawning>
+					<object id="2042" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="22" />
+					<object id="2043" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="11" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Fires of Hell">
+			<rect x="5227" y="1326" width="201" height="146" />
+			<rect x="5856" y="1886" width="251" height="180" />
+			<rect x="5437" y="1168" width="315" height="220" />
+				<spawning>
+					<object id="2044" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="72" />
+					<object id="2045" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="36" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Frozen Dungeon">
+			<rect x="3668" y="3648" width="80" height="79" />
+			<rect x="5149" y="2706" width="460" height="297" />
+			<rect x="4173" y="3213" width="352" height="679" />
+				<spawning>
+					<object id="2046" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+					<object id="2047" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Mines of Morinia">
+			<rect x="5540" y="1436" width="193" height="204" />
+			<rect x="5832" y="1299" width="180" height="335" />
+			<rect x="5801" y="901" width="255" height="359" />
+				<spawning>
+					<object id="2048" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="96" />
+					<object id="2049" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="48" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Perinian Depths">
+			<rect x="5824" y="32" width="250" height="475" />
+				<spawning>
+					<object id="2050" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="60" />
+					<object id="2051" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="30" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Ratmen Lair">
+			<rect x="2681" y="3684" width="146" height="143" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Dungeon of Time Awaits">
+			<rect x="4989" y="3209" width="89" height="91" />
+			<rect x="5467" y="526" width="294" height="416" />
+			<rect x="5704" y="2623" width="26" height="28" />
+				<spawning>
+					<object id="2052" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="62" />
+					<object id="2053" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="31" />
+				</spawning>
+		</region>
+
+		<region type="DungeonRegion" priority="100" name="the Dragon's Maw">
+			<rect x="4079" y="3916" width="156" height="115" />
+			<rect x="4419" y="3899" width="100" height="74" />
+			<rect x="4285" y="3956" width="115" height="100" />
+			<rect x="4292" y="3883" width="95" height="47" />
+			<rect x="4548" y="3540" width="355" height="345" />
+				<spawning>
+					<object id="2201" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+					<object id="2202" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="80" name="the Cave of the Zuluu">
+			<rect x="6211" y="3106" width="224" height="246" />
+			<rect x="6932" y="3779" width="165" height="156" />
+			<rect x="6625" y="3618" width="57" height="82" />
+				<spawning>
+					<object id="2203" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+					<object id="2204" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Mausoleum">
+			<rect x="3793" y="3217" width="265" height="295" />
+				<spawning>
+					<object id="2034" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+					<object id="2035" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+				</spawning>
+		</region>
+
+		<region type="OutDoorBadRegion" priority="50" name="Castle Exodus">
+			<rect x="852" y="2647" width="49" height="52" />
+				<spawning>
+					<object id="2800" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="10" />
+					<object id="2801" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="5" />
+				</spawning>
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Swamp Ruins of the Dead">
+			<rect x="503" y="190" width="38" height="26" />
+		</region>
+		<region type="OutDoorRegion" priority="50" name="Mangar's Tower">
+			<rect x="2820" y="1870" width="18" height="14" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Lich Tower">
+			<rect x="3489" y="2264" width="41" height="38" />
+		</region>
+		<region type="CaveRegion" priority="50" name="the British Family Tomb">
+			<rect x="5188" y="1783" width="48" height="64" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Cave of Banished Mages">
+			<rect x="46" y="3259" width="619" height="672" />
+			<rect x="228" y="3267" width="210" height="63" />
+			<rect x="429" y="3291" width="225" height="115" />
+			<rect x="423" y="3400" width="191" height="228" />
+			<rect x="89" y="3324" width="346" height="255" />
+			<rect x="58" y="3533" width="214" height="258" />
+			<rect x="94" y="3785" width="238" height="141" />
+				<spawning>
+					<object id="2054" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="100" />
+					<object id="2055" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="50" />
+					<object id="2121" type="DungeonChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+				</spawning>
+		</region>
+		<region type="UnderHouseRegion" priority="50" name="the Dark Caves">
+			<rect x="5206" y="1035" width="215" height="271" />
+		</region>
+		<region type="UnderHouseRegion" priority="100" name="Shipwreck Grotto">
+			<rect x="6537" y="3779" width="243" height="300" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Accursed Maze">
+			<rect x="5830" y="751" width="188" height="117" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Chamber of Bane">
+			<rect x="2662" y="3936" width="178" height="118" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="Coldhall Depths">
+			<rect x="2606" y="3452" width="151" height="129" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Dark Sanctum">
+			<rect x="2371" y="3217" width="134" height="116" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Forgotten Tombs">
+			<rect x="2359" y="3460" width="142" height="130" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Magma Vaults">
+			<rect x="2313" y="3657" width="183" height="170" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Shrouded Grave">
+			<rect x="2316" y="3907" width="202" height="166" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Orc Fort">
+			<rect x="559" y="475" width="29" height="27" />
+			<rect x="2289" y="1783" width="50" height="43" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Ratmen Fort">
+			<rect x="3384" y="1157" width="37" height="37" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Ratmen Ruins">
+			<rect x="1280" y="1438" width="24" height="22" />
+		</region>
+		<region type="CaveRegion" priority="50" name="the Time Lord Chamber">
+			<rect x="4724" y="3282" width="162" height="149" />
+		</region>
+		<region type="StartRegion" priority="50" name="the Time Lord Room">
+			<rect x="3533" y="3378" width="54" height="49" />
+		</region>
+		<region type="WantedRegion" priority="50" name="the Britain Dungeons">
+			<rect x="4098" y="3226" width="20" height="20" />
+		</region>
+		<region type="DeadRegion" priority="90" name="the City of the Dead">
+			<rect x="5640" y="3234" width="18" height="9" />
+			<rect x="5629" y="3279" width="32" height="35" />
+			<rect x="5657" y="3223" width="170" height="123" />
+		</region>
+		<region type="VillageRegion" priority="50" name="Death Gulch">
+			<rect x="3673" y="1472" width="129" height="52" />
+		</region>
+		<region type="ProtectedRegion" priority="50" name="the Cabin">
+		  <rect x="1897" y="915" width="10" height="8" />
+		  <rect x="3313" y="2058" width="11" height="9" />
+		</region>
+		<region type="VillageRegion" priority="50" name="The Town of Devil Guard">
+			<rect x="1581" y="1439" width="129" height="169" />
+			<rect x="1687" y="1494" width="58" height="141" />
+			<rect x="1731" y="1575" width="48" height="68" />
+			<rect x="1674" y="1584" width="19" height="21" />
+		</region>
+		<region type="VillageRegion" priority="50" name="The Farmland of Devil Guard">
+			<rect x="6555" y="3152" width="100" height="129" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the Town of Moon">
+			<rect x="762" y="667" width="103" height="72" />
+			<rect x="762" y="739" width="85" height="46" />
+			<rect x="839" y="733" width="20" height="16" />
+			<rect x="791" y="769" width="23" height="38" />
+		</region>
+		<region type="VillageRegion" priority="49" name="the Village of Grey">
+			<rect x="833" y="2012" width="17" height="38" />
+			<rect x="829" y="2050" width="19" height="33" />
+			<rect x="847" y="2058" width="8" height="6" />
+			<rect x="854" y="2046" width="44" height="39" />
+			<rect x="901" y="2038" width="32" height="73" />
+			<rect x="926" y="2043" width="17" height="64" />
+			<rect x="896" y="2079" width="36" height="58" />
+			<rect x="893" y="2042" width="17" height="61" />
+			<rect x="885" y="2120" width="37" height="26" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the City of Montor">
+			<rect x="3057" y="2561" width="326" height="102" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the Village of Fawn">
+			<rect x="2058" y="242" width="148" height="79" />
+			<rect x="2080" y="304" width="48" height="24" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the Village of Yew">
+			<rect x="2336" y="825" width="207" height="90" />
+			<rect x="2364" y="813" width="143" height="107" />
+		</region>
+		<region type="VillageRegion" priority="60" name="the City of Britain">
+			<rect x="2929" y="985" width="127" height="143" />
+			<rect x="2940" y="886" width="156" height="105" />
+		</region>
+		<region type="OutDoorRegion" priority="50" name="the Buccaneer's Den">
+			<rect x="1733" y="2116" width="182" height="150" />
+		</region>
+		<region type="UmbraRegion" priority="70" name="the Undercity of Umbra">
+			<rect x="2628" y="3211" width="112" height="131" />
+		</region>
+		<region type="SafeRegion" priority="100" name="Anchor Rock Docks">
+		  <rect x="223" y="1229" width="235" height="235" />
+		</region>
+
+	// SHRINES
+		<region type="OutDoorRegion" priority="80" name="Shrine of Intelligence">
+			<rect x="5170" y="3106" width="9" height="9" />
+		</region>
+		<region type="OutDoorRegion" priority="80" name="Shrine of Strength">
+			<rect x="5214" y="3597" width="9" height="9" />
+		</region>
+		<region type="OutDoorRegion" priority="80" name="Shrine of Wisdom">
+			<rect x="5900" y="3565" width="9" height="9" />
+		</region>
+		<region type="OutDoorRegion" priority="80" name="Shrine of Dexterity">
+			<rect x="5741" y="3879" width="9" height="9" />
+		</region>
+		<region type="ProtectedRegion" priority="100" name="the Chamber of Virtue">
+			<rect x="2563" y="3824" width="70" height="70" />
+		</region>
+		<region type="ProtectedRegion" priority="100" name="the Chamber of Corruption">
+			<rect x="2835" y="3438" width="70" height="70" />
+		</region>
+
+	// ICE ISLAND REGIONS
+		<region type="VillageRegion" priority="50" name="Iceclad Fisherman's Village">
+			<rect x="4287" y="1137" width="54" height="64" />
+			<go location="(2899,676,2)" />
+			<zrange min="0" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the Town of Mountain Crest">
+			<rect x="4482" y="1233" width="84" height="63" />
+			<go location="(4514,1276,2)" />
+			<zrange min="0" />
+		</region>
+		<region type="VillageRegion" priority="50" name="Glacial Coast Village">
+			<rect x="4715" y="1134" width="77" height="70" />
+			<rect x="4739" y="1126" width="19" height="24" />
+			<go location="(4749,1177,2)" />
+			<zrange min="0" />
+		</region>
+		<region type="VillageRegion" priority="90" name="the Tower">
+			<rect x="4373" y="1212" width="21" height="18" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the Town of Renika">
+			<rect x="1409" y="3737" width="78" height="73" />
+			<go location="(1449,3787,0)" />
+		</region>
+
+		<region type="DawnRegion" priority="50" name="the Lunar City of Dawn">
+			<rect x="5903" y="2842" width="119" height="61" />
+			<rect x="5903" y="2903" width="88" height="21" />
+		</region>
+
+		// Bottle World
+		<region type="VillageRegion" priority="50" name="the City of Kuldara">
+			<rect x="6720" y="1630" width="20" height="12" />
+			<rect x="6749" y="1613" width="62" height="28" />
+			<rect x="6709" y="1639" width="118" height="22" />
+			<rect x="6613" y="1674" width="31" height="24" />
+			<rect x="6694" y="1658" width="125" height="149" />
+			<rect x="6635" y="1912" width="14" height="14" />
+			<rect x="6646" y="1894" width="16" height="30" />
+			<rect x="6648" y="1886" width="18" height="10" />
+			<rect x="6657" y="1860" width="10" height="28" />
+			<rect x="6671" y="1845" width="24" height="16" />
+			<rect x="6652" y="1847" width="22" height="15" />
+			<rect x="6625" y="1825" width="30" height="35" />
+			<rect x="6725" y="1869" width="28" height="14" />
+			<rect x="6761" y="1870" width="22" height="11" />
+			<rect x="6714" y="1838" width="84" height="33" />
+			<rect x="6792" y="1800" width="29" height="34" />
+			<rect x="6695" y="1807" width="100" height="34" />
+			<rect x="6686" y="1838" width="30" height="31" />
+			<rect x="6604" y="1843" width="25" height="28" />
+			<rect x="6579" y="1847" width="29" height="47" />
+			<rect x="6812" y="1677" width="28" height="18" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Kuldar Cemetery">
+			<rect x="6632" y="1597" width="40" height="18" />
+			<rect x="6632" y="1547" width="55" height="51" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Valley of Dark Druids">
+			<rect x="6638" y="78" width="322" height="279" />
+		</region>
+		<region type="OutDoorBadRegion" priority="80" name="The Castle of Vordo">
+			<rect x="6598" y="1670" width="101" height="115" />
+			<rect x="6591" y="1782" width="115" height="20" />
+			<rect x="6686" y="1661" width="19" height="20" />
+			<rect x="6590" y="1661" width="20" height="21" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Highrock Mine">
+			<rect x="6919" y="445" width="104" height="68" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Waterfall Cavern">
+			<rect x="6785" y="669" width="99" height="56" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Crumbling Cave">
+			<rect x="6701" y="693" width="73" height="89" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="Steamfire Cave">
+			<rect x="6655" y="436" width="113" height="46" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="Vordo's Castle Grounds">
+			<rect x="7018" y="2803" width="123" height="146" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Kuldara Sewers">
+			<rect x="6162" y="2786" width="216" height="259" />
+				<spawning>
+					<object id="5001" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="22" />
+					<object id="5002" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="11" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Crypts of Kuldar">
+			<rect x="6451" y="2811" width="161" height="153" />
+				<spawning>
+					<object id="5003" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="15" />
+					<object id="5004" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="8" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Vordo's Castle">
+			<rect x="6856" y="2809" width="123" height="146" />
+				<spawning>
+					<object id="5005" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="12" />
+					<object id="5006" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="6" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Vordo's Dungeon">
+			<rect x="6118" y="0" width="420" height="762" />
+				<spawning>
+					<object id="5007" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="150" />
+					<object id="5008" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="75" />
+				</spawning>
+		</region>
+		
+		<region type="OutDoorRegion" priority="50" name="GreenAcres">
+			<rect x="5442" y="1004" width="130" height="115" />
+		</region>
+		
+		// Final edits
+		<region type="VillageRegion" priority="80" name="Sarth Abbey">
+			<rect x="2578" y="1410" width="167" height="190" />
+		</region>
+		<region type="VillageRegion" priority="60" name="Lamut County">
+			<rect x="1876" y="1099" width="93" height="109" />
+			<rect x="1832" y="1127" width="44" height="81" />
+		</region>
+		<region type="SafeRegion" priority="100" name="Sosarian Keep">
+		  <rect x="1004" y="1668" width="102" height="112" />
+		</region>
+		<region type="OutDoorRegion" priority="60" name="The Pit">
+			<rect x="2209" y="1480" width="109" height="60" />
+		</region>
+		<region type="OutDoorRegion" priority="50" name="Arena Royale">
+			<rect x="3614" y="2070" width="47" height="44" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Widow's Keep">
+			<rect x="2451" y="2310" width="165" height="126" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="Sarth Cemetery">
+			<rect x="2528" y="1605" width="40" height="43" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="Fort Watchers">
+			<rect x="3960" y="2742" width="56" height="60" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="Witches' Brew">
+			<rect x="2634" y="1743" width="46" height="39" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="The Cracked Labyrinth">
+			<rect x="1760" y="570" width="76" height="113" />
+		</region>
+
+		
+	</Facet>
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	<Facet name="Ilshenar">
+		<region type="OutDoorBadRegion" priority="50" name="the Hall of the Banished">
+			<rect x="1514" y="890" width="92" height="74" />
+		</region>
+		<region type="SafeRegion" priority="50" name="the Ruins of Tenebrae">
+		  <rect x="1403" y="423" width="168" height="104" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Hall of the Mountain King">
+			<rect x="1684" y="62" width="28" height="25" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="Aarghok Urcish Settlement">
+			<rect x="1653" y="485" width="114" height="129" />
+		</region>	
+		<region type="OutDoorBadRegion" priority="50" name="the Zealan Cemetery">
+			<rect x="1334" y="601" width="38" height="43" />
+		</region>
+		<region type="DungeonHomeRegion" priority="70" name="a Dungeon Dwelling">
+			<rect x="1625" y="779" width="652" height="303" />
+		</region>
+		
+		
+		<region type="DungeonRegion" priority="50" name="Doom">
+			<rect x="1364" y="1020" width="267" height="272" />
+				<spawning>
+					<object id="5102" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="30" />
+					<object id="5103" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="15" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Doom Gauntlet">
+			<rect x="1377" y="1347" width="254" height="250" />
+				<spawning>
+					<object id="5104" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="30" />
+					<object id="5105" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="15" />
+				</spawning>
+		</region>
+		
+		<region type="DungeonRegion" priority="50" name="the Stygian Abyss">
+			<rect x="1653" y="1146" width="260" height="291" />
+			<rect x="1969" y="1136" width="94" height="96" />
+				<spawning>
+					<object id="4774" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="30" />
+					<object id="4775" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="15" />
+				</spawning>
+		</region>
+
+		<region type="ProtectedRegion" priority="100" name="the Chamber of the Codex">
+		  <rect x="1828" y="1318" width="30" height="28" />
+		  <rect x="1818" y="1341" width="52" height="20" />
+		  <rect x="1830" y="1355" width="24" height="23" />
+		</region>
+
+		<region type="DungeonRegion" priority="50" name="the Glacial Scar">
+			<rect x="2104" y="1118" width="178" height="267" />
+			<rect x="1943" y="1264" width="124" height="150" />
+			<rect x="1925" y="1459" width="169" height="130" />
+			<rect x="2129" y="1422" width="115" height="94" />
+			<rect x="1663" y="1455" width="131" height="117" />
+			<rect x="1835" y="1476" width="50" height="49" />
+				<spawning>
+					<object id="4776" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="100" />
+					<object id="4777" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="50" />
+				</spawning>
+		</region>
+
+		<region type="DungeonRegion" priority="50" name="Widow's Lament">
+			<rect x="1043" y="1295" width="264" height="254" />
+				<spawning>
+					<object id="5100" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="90" />
+					<object id="5101" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+				</spawning>
+		</region>
+
+		<region type="VillageRegion" priority="50" name="the Temple of Praetoria">
+		  <rect x="387" y="487" width="229" height="234" />
+		</region>
+		
+	</Facet>
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	<Facet name="Malas">
+		<region type="SafeRegion" priority="100" name="Peter's Prison">
+		  <rect x="1946" y="1310" width="27" height="25" />
+		</region>
+		<region type="SafeRegion" priority="100" name="Dream State">
+		  <rect x="2001" y="1308" width="11" height="11" />
+		</region>
+		<region type="OutDoorRegion" priority="50" name="the Bridge of Tul'mok">
+			<rect x="789" y="1010" width="8" height="238" />
+		</region>
+		<region type="OutDoorRegion" priority="65" name="the Great Forge of Fire">
+			<rect x="787" y="1117" width="20" height="17" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Dustwind Tunnel">
+			<rect x="1898" y="1200" width="128" height="82" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Lone Rock Cave">
+			<rect x="1944" y="1094" width="115" height="47" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Hateful Cave">
+			<rect x="2063" y="1152" width="128" height="75" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Lakeside Tunnels">
+			<rect x="2415" y="1165" width="104" height="97" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Sleepy Gargoyle Cave">
+			<rect x="2237" y="1197" width="122" height="82" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Great Plain Cave">
+			<rect x="2228" y="1069" width="108" height="92" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Sosarian Pass">
+			<rect x="2362" y="1019" width="95" height="71" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Rock Oven Cave">
+			<rect x="2234" y="999" width="88" height="41" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Dry Cavern">
+			<rect x="2099" y="953" width="77" height="91" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Southside Grotto">
+			<rect x="1991" y="970" width="73" height="63" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Sunfire Cave">
+			<rect x="1912" y="965" width="43" height="53" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Teardrop Cave">
+			<rect x="1936" y="897" width="28" height="30" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Stonewall Cavern">
+			<rect x="1934" y="605" width="43" height="52" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Sand Giant Tunnels">
+			<rect x="2012" y="590" width="56" height="65" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Cave of Gods">
+			<rect x="2108" y="591" width="31" height="38" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Serpent Spine Grotto">
+			<rect x="2162" y="279" width="74" height="66" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Mountainside Cavern">
+			<rect x="1990" y="268" width="65" height="48" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Sandstorm Cave">
+			<rect x="1906" y="264" width="73" height="65" />
+		</region>
+
+		<region type="SafeRegion" priority="100" name="Serpent Sail Docks">
+		  <rect x="849" y="1768" width="149" height="81" />
+		</region>
+
+		<region type="PublicRegion" priority="50" name="the Ethereal Void">
+			<rect x="2405" y="605" width="42" height="40" />
+		</region>
+
+		<region type="DungeonRegion" priority="50" name="the Ancient Prison">
+			<rect x="1886" y="344" width="128" height="236" />
+				<spawning>
+					<object id="2056" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="16" />
+					<object id="2057" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="8" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Cave of Fire">
+			<rect x="2018" y="668" width="146" height="266" />
+				<spawning>
+					<object id="2058" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+					<object id="2059" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="10" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Cave of Souls">
+			<rect x="2415" y="31" width="124" height="173" />
+				<spawning>
+					<object id="2060" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="11" />
+					<object id="2061" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="5" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Ankh">
+			<rect x="2020" y="29" width="85" height="200" />
+				<spawning>
+					<object id="2062" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="9" />
+					<object id="2063" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="4" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Bane">
+			<rect x="1891" y="31" width="99" height="212" />
+			<rect x="2416" y="228" width="120" height="35" />
+				<spawning>
+					<object id="2064" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="11" />
+					<object id="2065" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="5" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Hate">
+			<rect x="2145" y="371" width="139" height="175" />
+				<spawning>
+					<object id="2066" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="13" />
+					<object id="2067" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="6" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Scorn">
+			<rect x="2181" y="675" width="75" height="199" />
+				<spawning>
+					<object id="2068" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="8" />
+					<object id="2069" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="4" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Torment">
+			<rect x="1910" y="681" width="86" height="181" />
+				<spawning>
+					<object id="2070" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="8" />
+					<object id="2071" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="4" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Vile">
+			<rect x="2296" y="371" width="93" height="158" />
+				<spawning>
+					<object id="2072" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="8" />
+					<object id="2073" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="4" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Wicked">
+			<rect x="2136" y="26" width="110" height="227" />
+				<spawning>
+					<object id="2074" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="13" />
+					<object id="2075" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="6" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Wrath">
+			<rect x="2280" y="669" width="103" height="261" />
+				<spawning>
+					<object id="2076" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="14" />
+					<object id="2077" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="7" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Flooded Temple">
+			<rect x="2411" y="679" width="126" height="226" />
+				<spawning>
+					<object id="2078" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="15" />
+					<object id="2079" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="7" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Gargoyle Crypts">
+			<rect x="2031" y="353" width="103" height="204" />
+				<spawning>
+					<object id="2080" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="11" />
+					<object id="2081" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="5" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Serpent Sanctum">
+			<rect x="2418" y="332" width="122" height="251" />
+			<rect x="2325" y="289" width="36" height="36" />
+				<spawning>
+					<object id="2082" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="16" />
+					<object id="2083" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="8" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Tomb of the Fallen Wizard">
+			<rect x="2262" y="20" width="131" height="251" />
+				<spawning>
+					<object id="2084" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="17" />
+					<object id="2085" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="8" />
+				</spawning>
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Island of the Black Knight">
+			<rect x="1649" y="334" width="119" height="37" />
+			<rect x="1598" y="250" width="192" height="89" />
+			<rect x="1600" y="179" width="173" height="84" />
+			<rect x="1581" y="141" width="133" height="73" />
+			<rect x="1459" y="117" width="127" height="69" />
+			<rect x="1421" y="181" width="193" height="77" />
+			<rect x="1405" y="250" width="214" height="120" />
+		</region>
+		<region type="OutDoorBadRegion" priority="70" name="the Castle of the Black Knight">
+			<rect x="1543" y="238" width="62" height="63" />
+		</region>
+		<region type="SkyHomeDwelling" priority="50" name="Sky Home">
+			<rect x="2386" y="1614" width="96" height="104" />
+			<rect x="1924" y="1373" width="559" height="160" />
+			<rect x="1918" y="1876" width="613" height="142" />
+		</region>
+		<region type="GargoyleRegion" priority="50" name="the City of Furnace">
+			<rect x="2111" y="1610" width="223" height="166" />
+		</region>
+	</Facet>
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	<Facet name="Tokuno">
+		<region type="OutDoorBadRegion" priority="50" name="the Altar of the Blood God">
+			<rect x="1146" y="956" width="27" height="34" />
+			<rect x="1097" y="956" width="54" height="38" />
+			<rect x="1111" y="991" width="40" height="44" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Natives' Camp">
+			<rect x="105" y="732" width="31" height="59" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the Cimmeran Hold">
+			<rect x="379" y="1202" width="25" height="25" />
+			<rect x="379" y="1224" width="14" height="41" />
+			<rect x="340" y="1249" width="49" height="17" />
+			<rect x="303" y="1207" width="47" height="46" />
+			<rect x="244" y="1148" width="78" height="68" />
+			<rect x="319" y="1161" width="31" height="28" />
+			<rect x="427" y="1020" width="22" height="20" />
+			<rect x="248" y="1080" width="51" height="35" />
+			<rect x="293" y="1028" width="151" height="73" />
+			<rect x="321" y="1097" width="123" height="54" />
+			<rect x="390" y="1146" width="55" height="24" />
+			<rect x="330" y="1142" width="7" height="26" />
+			<rect x="318" y="1223" width="28" height="28" />
+			<rect x="336" y="1217" width="57" height="48" />
+			<rect x="304" y="1164" width="114" height="62" />
+			<rect x="244" y="1079" width="155" height="92" />
+		</region>
+		<region type="SafeRegion" priority="50" name="the Forgotten Lighthouse">
+		  <rect x="702" y="476" width="34" height="64" />
+		  <rect x="673" y="506" width="63" height="34" />
+		</region>
+
+		// PIRATE SEAS
+		<region type="PirateRegion" priority="50" name="the Waters of the Screaming Mermaid">
+			<rect x="9" y="183" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Siren's Blood">
+			<rect x="971" y="760" width="34" height="59" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Doom of the Isles">
+			<rect x="422" y="10" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Fearful Eye of Neptune">
+			<rect x="918" y="92" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Sea's Wrath">
+			<rect x="575" y="347" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Plunderer's Skull">
+			<rect x="1232" y="530" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Maiden's Anchor">
+			<rect x="390" y="789" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Bloody Wave">
+			<rect x="78" y="1315" width="84" height="84" />
+		</region>
+		<region type="PirateRegion" priority="50" name="the Waters of the Dreams of Gold">
+			<rect x="625" y="1266" width="84" height="84" />
+		</region>
+
+	</Facet>
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	<Facet name="TerMur">
+		<region type="SavageRegion" priority="20" name="the Hut">
+		  <rect x="244" y="1942" width="25" height="25" />
+		</region>
+		<region type="OutDoorRegion" priority="65" name="the Sickening Forge of Venom">
+			<rect x="1061" y="1164" width="9" height="6" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Graveyard">
+			<rect x="211" y="1347" width="47" height="39" />
+		</region>
+
+		<region type="DungeonRegion" priority="50" name="the Blood Temple">
+			<rect x="653" y="2480" width="156" height="245" />
+				<spawning>
+					<object id="2086" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+					<object id="2087" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="10" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Tombs">
+			<rect x="1" y="2496" width="180" height="334" />
+				<spawning>
+					<object id="2088" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="31" />
+					<object id="2089" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="15" />
+				</spawning>
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Corrupt Pass">
+			<rect x="2" y="2073" width="168" height="368" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Crypt">
+			<rect x="363" y="2443" width="148" height="132" />
+				<spawning>
+					<object id="2092" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="10" />
+					<object id="2093" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="5" />
+				</spawning>
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Great Pyramid">
+			<rect x="851" y="2497" width="87" height="160" />
+				<spawning>
+					<object id="2094" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="7" />
+					<object id="2095" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="3" />
+				</spawning>
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Altar of the Dragon King">
+			<rect x="190" y="2574" width="69" height="68" />
+				<spawning>
+					<object id="2096" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="3" />
+					<object id="2097" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="1" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Ice Queen Fortress">
+			<rect x="241" y="2744" width="257" height="255" />
+				<spawning>
+					<object id="2098" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="33" />
+					<object id="2099" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="16" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Dungeon of the Lich King">
+			<rect x="259" y="2111" width="277" height="274" />
+				<spawning>
+					<object id="2100" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="38" />
+					<object id="2101" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="19" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Dungeon of the Mad Archmage">
+			<rect x="366" y="1889" width="441" height="186" />
+				<spawning>
+					<object id="2102" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="42" />
+					<object id="2103" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="21" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Halls of Ogrimar">
+			<rect x="798" y="2272" width="417" height="185" />
+				<spawning>
+					<object id="2104" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="39" />
+					<object id="2105" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Pixie Cave">
+			<rect x="1088" y="2107" width="100" height="122" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Ratmen Mines">
+			<rect x="850" y="2110" width="203" height="129" />
+				<spawning>
+					<object id="2106" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="14" />
+					<object id="2107" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="7" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="Dungeon Rock">
+			<rect x="597" y="2163" width="175" height="217" />
+				<spawning>
+					<object id="2108" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+					<object id="2109" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="10" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Sakkhra Tunnel">
+			<rect x="887" y="1949" width="87" height="45" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Spider Cave">
+			<rect x="359" y="2602" width="137" height="75" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Storm Giant Lair">
+			<rect x="545" y="2670" width="103" height="113" />
+				<spawning>
+					<object id="2110" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="6" />
+					<object id="2111" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="3" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Cave of the Ancient Wyrm">
+			<rect x="16" y="1904" width="124" height="113" />
+			<rect x="270" y="3804" width="14" height="16" />
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Forgotten Halls">
+			<rect x="21" y="3225" width="348" height="213" />
+			<rect x="60" y="3828" width="139" height="180" />
+			<rect x="370" y="3538" width="375" height="196" />
+				<spawning>
+					<object id="2123" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="120" />
+					<object id="2124" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="60" />
+				</spawning>
+		</region>
+		<region type="OutDoorRegion" priority="50" name="the Enchanted Pass">
+			<rect x="998" y="1873" width="197" height="122" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Isle of the Lich">
+			<rect x="1040" y="393" width="17" height="13" />
+			<rect x="1027" y="405" width="29" height="17" />
+			<rect x="1021" y="421" width="37" height="50" />
+			<rect x="1070" y="387" width="17" height="68" />
+			<rect x="1055" y="387" width="17" height="79" />
+				<spawning>
+					<object id="2112" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="3" />
+					<object id="2113" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="1" />
+				</spawning>
+		</region>
+		<region type="OutDoorBadRegion" priority="80" name="the Hidden Valley">
+			<rect x="112" y="3704" width="183" height="100" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Castle of the Mad Archmage">
+			<rect x="416" y="797" width="93" height="79" />
+				<spawning>
+					<object id="2114" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="4" />
+					<object id="2115" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="2" />
+				</spawning>
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Mage Mansion">
+			<rect x="769" y="330" width="26" height="10" />
+			<rect x="764" y="311" width="36" height="20" />
+				<spawning>
+					<object id="2116" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="3" />
+					<object id="2117" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="1" />
+				</spawning>
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Island of the Storm Giant">
+			<rect x="261" y="392" width="46" height="88" />
+			<rect x="262" y="479" width="41" height="11" />
+			<rect x="295" y="399" width="26" height="76" />
+			<rect x="248" y="398" width="15" height="80" />
+				<spawning>
+					<object id="2118" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="4" />
+					<object id="2119" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="2" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Undersea Castle">
+			<rect x="605" y="3768" width="223" height="324" />
+			<rect x="901" y="3249" width="50" height="68" />
+				<spawning>
+					<object id="2125" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+					<object id="2126" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Tomb of Kazibal">
+			<rect x="404" y="3252" width="205" height="177" />
+				<spawning>
+					<object id="2128" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+					<object id="2129" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Catacombs of Azerok">
+			<rect x="619" y="3259" width="216" height="221" />
+				<spawning>
+					<object id="2130" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+					<object id="2131" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Azure Castle">
+			<rect x="156" y="3583" width="203" height="132" />
+				<spawning>
+					<object id="2132" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+					<object id="2133" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="10" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Scurvy Reef">
+			<rect x="315" y="3812" width="185" height="261" />
+				<spawning>
+					<object id="2134" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="40" />
+					<object id="2135" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="20" />
+				</spawning>
+		</region>
+
+		<region type="DungeonRegion" priority="50" name="the Ancient Sky Ship">
+			<rect x="981" y="2906" width="255" height="273" />
+			<rect x="886" y="3634" width="357" height="416" />
+				<spawning>
+					<object id="4780" type="HiddenTrap" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="150" />
+					<object id="4781" type="HiddenChest" minSpawnTime="PT1S" maxSpawnTime="PT1S" amount="75" />
+				</spawning>
+		</region>
+		<region type="DungeonRegion" priority="50" name="the Ancient Crash Site">
+			<rect x="571" y="2828" width="194" height="285" />
+		</region>
+
+		<region type="CaveRegion" priority="50" name="the Cimmeran Mines">
+			<rect x="941" y="2772" width="141" height="102" />
+		</region>
+		<region type="CaveRegion" priority="50" name="the Barako Mines">
+			<rect x="992" y="2510" width="145" height="147" />
+		</region>
+		<region type="OutDoorBadRegion" priority="50" name="the Orc Fort">
+			<rect x="210" y="1309" width="40" height="27" />
+		</region>
+
+		<region type="VillageRegion" priority="50" name="the Village of Barako">
+		  <rect x="138" y="1649" width="176" height="115" />
+		  <rect x="142" y="1724" width="146" height="64" />
+		  <rect x="253" y="1633" width="75" height="119" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the Village of Kurak">
+			<rect x="667" y="818" width="182" height="192" />
+			<rect x="840" y="933" width="34" height="36" />
+			<rect x="821" y="927" width="32" height="53" />
+		</region>
+
+		<region type="CaveRegion" priority="50" name="the Obsidian Fortress">
+			<rect x="881" y="3380" width="67" height="68" />
+		</region>
+
+		<region type="CaveRegion" priority="65" name="the Kurak Mine">
+			<rect x="998" y="3476" width="121" height="95" />
+		</region>
+		<region type="CaveRegion" priority="65" name="Dust Air Cavern">
+			<rect x="1133" y="3425" width="103" height="71" />
+		</region>
+		<region type="CaveRegion" priority="65" name="the Quiet Cave">
+			<rect x="1007" y="3408" width="93" height="45" />
+		</region>
+
+		<region type="PublicRegion" priority="50" name="the Tower of Mondain">
+			<rect x="52" y="2885" width="22" height="24" />
+		</region>
+		<region type="PublicRegion" priority="50" name="the Crypt of Morphius">
+			<rect x="111" y="2932" width="26" height="26" />
+		</region>
+
+		<region type="SafeRegion" priority="100" name="Savage Sea Docks">
+		  <rect x="1052" y="309" width="65" height="40" />
+		</region>
+
+		<region type="MazeRegion" priority="95" name="the Hedge Maze">
+		  <rect x="31" y="3055" width="241" height="160" />
+		</region>
+
+	</Facet>
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+	<Facet name="Midland">
+		<region type="VillageRegion" priority="50" name="the city of Midkemia">
+		  <rect x="2598" y="755" width="150" height="274" />
+		  <rect x="2598" y="1029" width="61" height="40" />
+		  <rect x="2561" y="822" width="37" height="71" />
+		  <rect x="2741" y="838" width="54" height="66" />
+		  <rect x="2598" y="744" width="70" height="11" />
+		  <rect x="2668" y="748" width="36" height="7" />
+		</region>
+		<region type="VillageRegion" priority="50" name="Ha'ars Crag">
+		  <rect x="2607" y="2052" width="122" height="112" />
+		  <rect x="2729" y="2074" width="39" height="50" />
+		</region>
+		<region type="VillageRegion" priority="50" name="the port of Calypso">
+		  <rect x="4318" y="417" width="176" height="169" />
+		</region>
+		<region type="VillageRegion" priority="50" name="Freeport">
+		  <rect x="2051" y="2453" width="197" height="204" />
+		</region>
+		<region type="OutDoorRegion" priority="40" name="the Weeds">
+		  <rect x="1966" y="2549" width="179" height="212" />
+		</region>
+	</Facet>
+</ServerRegions>

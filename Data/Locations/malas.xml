@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<places>
+	<parent name="Serpent Island">
+		<parent name="Serpent Island">
+			<parent name="Towns">
+				<child name="Serpent Sail Docks" x="912" y="1819" z="21" />
+				<child name="City of Furnace" x="2241" y="1670" z="5" />
+			</parent>
+			<child name="Black Knight Castle" x="1580" y="304" z="0" />
+			<child name="Black Knight Vault" x="1581" y="202" z="0" />
+			<parent name="Dungeons">
+				<parent name="Ancient Prison">
+					<child name="Entrance" x="748" y="846" z="1" />
+					<child name="Level 1" x="1931" y="437" z="0" />
+					<child name="Level 2" x="1952" y="504" z="0" />
+				</parent>
+				<parent name="Cave of Fire">
+					<child name="Entrance" x="561" y="1143" z="0" />
+					<child name="Level 1" x="2086" y="794" z="2" />
+					<child name="Level 2" x="2070" y="854" z="0" />
+				</parent>
+				<parent name="Cave of Souls">
+					<child name="Entrance" x="121" y="1475" z="0" />
+					<child name="Level 1" x="2527" y="57" z="1" />
+					<child name="Level 2" x="2480" y="176" z="0" />
+				</parent>
+				<parent name="Dungeon Ankh">
+					<child name="Entrance" x="465" y="1435" z="2" />
+					<child name="Level 1" x="2034" y="104" z="7" />
+					<child name="Level 2" x="2041" y="196" z="0" />
+				</parent>
+				<parent name="Dungeon Bane">
+					<child name="Entrance" x="310" y="760" z="2" />
+					<child name="Level 1" x="1945" y="99" z="0" />
+					<child name="Level 2" x="1915" y="166" z="2" />
+				</parent>
+				<parent name="Dungeon Hate">
+					<child name="Entrance" x="1457" y="1220" z="0" />
+					<child name="Level 1" x="2213" y="417" z="0" />
+					<child name="Level 2" x="2180" y="485" z="0" />
+				</parent>
+				<parent name="Dungeon Scorn">
+					<child name="Entrance" x="1463" y="873" z="2" />
+					<child name="Level 1" x="2232" y="687" z="0" />
+					<child name="Level 2" x="2212" y="864" z="0" />
+				</parent>
+				<parent name="Dungeon Torment">
+					<child name="Entrance" x="1689" y="1224" z="0" />
+					<child name="Level 1" x="1976" y="698" z="0" />
+					<child name="Level 2" x="1971" y="841" z="0" />
+				</parent>
+				<parent name="Dungeon Vile">
+					<child name="Entrance" x="1554" y="991" z="2" />
+					<child name="Level 1" x="2337" y="396" z="0" />
+					<child name="Level 2" x="2329" y="518" z="0" />
+				</parent>
+				<parent name="Dungeon Wicked">
+					<child name="Entrance" x="733" y="260" z="0" />
+					<child name="Level 1" x="2191" y="57" z="0" />
+					<child name="Level 2" x="2184" y="158" z="2" />
+				</parent>
+				<parent name="Dungeon Wrath">
+					<child name="Entrance" x="1803" y="918" z="0" />
+					<child name="Level 1" x="2356" y="683" z="0" />
+					<child name="Level 2" x="2357" y="829" z="2" />
+				</parent>
+				<parent name="Flooded Temple">
+					<child name="Entrance" x="1069" y="953" z="2" />
+					<child name="Level 1" x="2506" y="727" z="1" />
+					<child name="Level 2" x="2465" y="846" z="0" />
+				</parent>
+				<parent name="Gargoyle Crypts">
+					<child name="Entrance" x="1267" y="936" z="0" />
+					<child name="Level 1" x="2103" y="361" z="0" />
+					<child name="Level 2" x="2079" y="514" z="0" />
+				</parent>
+				<parent name="Serpent Sanctum">
+					<child name="Entrance" x="1092" y="1610" z="0" />
+					<child name="Level 1" x="2519" y="421" z="0" />
+					<child name="Level 2" x="2488" y="509" z="0" />
+				</parent>
+				<parent name="Tomb of the Fallen Wizard">
+					<child name="Entrance" x="1056" y="1338" z="0" />
+					<child name="Level 1" x="2353" y="105" z="0" />
+					<child name="Level 2" x="2331" y="232" z="2" />
+				</parent>
+			</parent>
+			<child name="Ethereal Void" x="2433" y="620" z="5" />
+			<child name="Forge of Fire" x="796" y="1126" z="25" />
+		</parent>
+	</parent>
+</places>

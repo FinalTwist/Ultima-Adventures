@@ -1,0 +1,54 @@
+using System;
+using Server;
+
+namespace Server.Items
+{
+	public class ShieldOfIce : BaseShield
+	{
+		public override int BasePhysicalResistance{ get{ return 0; } }
+		public override int BaseFireResistance{ get{ return 0; } }
+		public override int BaseColdResistance{ get{ return 15; } }
+		public override int BasePoisonResistance{ get{ return 0; } }
+		public override int BaseEnergyResistance{ get{ return 0; } }
+
+		public override int InitMinHits{ get{ return 50; } }
+		public override int InitMaxHits{ get{ return 65; } }
+
+		public override int AosStrReq{ get{ return 45; } }
+
+		public override int ArmorBase{ get{ return 11; } }
+
+		[Constructable]
+		public ShieldOfIce() : base( 0x1B7B )
+		{
+			Weight = 6.0;
+			Name = "Shield Of Ice";
+			Hue = 1152;
+			
+			HitPoints = Utility.RandomMinMax(100, 125);
+			MaxHitPoints = Utility.RandomMinMax(126, 150);
+			
+			Attributes.CastSpeed = 1;
+			Attributes.AttackChance = 15;
+			Attributes.DefendChance = 15;
+		}
+
+		public ShieldOfIce( Serial serial ) : base(serial)
+		{
+		}
+
+		public override void Deserialize( GenericReader reader )
+		{
+			base.Deserialize( reader );
+
+			int version = reader.ReadInt();
+		}
+
+		public override void Serialize( GenericWriter writer )
+		{
+			base.Serialize( writer );
+
+			writer.Write( (int)0 );//version
+		}
+	}
+}

@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<AllMaps>
+  <Map>
+    <MapID>36</MapID>
+    <Mines>8</Mines>
+    <Levels>6</Levels>
+    <DeepMineInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_1/8_1/6</Region>
+        <Map>36</Map>
+        <X>12</X>
+        <Y>12</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_1/8_2/6</Region>
+        <Map>36</Map>
+        <X>12</X>
+        <Y>694</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_1/8_3/6</Region>
+        <Map>36</Map>
+        <X>12</X>
+        <Y>1376</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_1/8_4/6</Region>
+        <Map>36</Map>
+        <X>12</X>
+        <Y>2058</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_1/8_5/6</Region>
+        <Map>36</Map>
+        <X>12</X>
+        <Y>2740</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_1/8_6/6</Region>
+        <Map>36</Map>
+        <X>12</X>
+        <Y>3422</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <HarvestInfo>
+        <Detail>
+          <OreType>Server.Items.IronOre</OreType>
+          <FirstLevel>0</FirstLevel>
+        </Detail>
+        <Detail>
+          <OreType>Server.Items.ShadowIronOre</OreType>
+          <FirstLevel>0</FirstLevel>
+        </Detail>
+        <Detail>
+          <OreType>Server.Items.CopperOre</OreType>
+          <FirstLevel>1</FirstLevel>
+        </Detail>
+      </HarvestInfo>
+      <MobileDetails>
+        <Detail>
+          <MobileType>Server.Mobiles.EarthElemental</MobileType>
+          <FirstLevel>0</FirstLevel>
+        </Detail>
+      </MobileDetails>
+    </DeepMineInfo>
+    <DeepMineInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_2/8_1/6</Region>
+        <Map>36</Map>
+        <X>908</X>
+        <Y>12</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_2/8_2/6</Region>
+        <Map>36</Map>
+        <X>908</X>
+        <Y>694</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_2/8_3/6</Region>
+        <Map>36</Map>
+        <X>908</X>
+        <Y>1376</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_2/8_4/6</Region>
+        <Map>36</Map>
+        <X>908</X>
+        <Y>2058</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_2/8_5/6</Region>
+        <Map>36</Map>
+        <X>908</X>
+        <Y>2740</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_2/8_6/6</Region>
+        <Map>36</Map>
+        <X>908</X>
+        <Y>3422</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <HarvestInfo />
+      <MobileDetails />
+    </DeepMineInfo>
+    <DeepMineInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_3/8_1/6</Region>
+        <Map>36</Map>
+        <X>1804</X>
+        <Y>12</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_3/8_2/6</Region>
+        <Map>36</Map>
+        <X>1804</X>
+        <Y>694</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_3/8_3/6</Region>
+        <Map>36</Map>
+        <X>1804</X>
+        <Y>1376</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_3/8_4/6</Region>
+        <Map>36</Map>
+        <X>1804</X>
+        <Y>2058</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_3/8_5/6</Region>
+        <Map>36</Map>
+        <X>1804</X>
+        <Y>2740</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_3/8_6/6</Region>
+        <Map>36</Map>
+        <X>1804</X>
+        <Y>3422</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <HarvestInfo />
+      <MobileDetails />
+    </DeepMineInfo>
+    <DeepMineInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_4/8_1/6</Region>
+        <Map>36</Map>
+        <X>2700</X>
+        <Y>12</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_4/8_2/6</Region>
+        <Map>36</Map>
+        <X>2700</X>
+        <Y>694</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_4/8_3/6</Region>
+        <Map>36</Map>
+        <X>2700</X>
+        <Y>1376</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_4/8_4/6</Region>
+        <Map>36</Map>
+        <X>2700</X>
+        <Y>2058</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_4/8_5/6</Region>
+        <Map>36</Map>
+        <X>2700</X>
+        <Y>2740</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_4/8_6/6</Region>
+        <Map>36</Map>
+        <X>2700</X>
+        <Y>3422</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <HarvestInfo />
+      <MobileDetails />
+    </DeepMineInfo>
+    <DeepMineInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_5/8_1/6</Region>
+        <Map>36</Map>
+        <X>3596</X>
+        <Y>12</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_5/8_2/6</Region>
+        <Map>36</Map>
+        <X>3596</X>
+        <Y>694</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_5/8_3/6</Region>
+        <Map>36</Map>
+        <X>3596</X>
+        <Y>1376</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_5/8_4/6</Region>
+        <Map>36</Map>
+        <X>3596</X>
+        <Y>2058</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_5/8_5/6</Region>
+        <Map>36</Map>
+        <X>3596</X>
+        <Y>2740</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_5/8_6/6</Region>
+        <Map>36</Map>
+        <X>3596</X>
+        <Y>3422</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <HarvestInfo />
+      <MobileDetails />
+    </DeepMineInfo>
+    <DeepMineInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_6/8_1/6</Region>
+        <Map>36</Map>
+        <X>4492</X>
+        <Y>12</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_6/8_2/6</Region>
+        <Map>36</Map>
+        <X>4492</X>
+        <Y>694</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_6/8_3/6</Region>
+        <Map>36</Map>
+        <X>4492</X>
+        <Y>1376</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_6/8_4/6</Region>
+        <Map>36</Map>
+        <X>4492</X>
+        <Y>2058</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_6/8_5/6</Region>
+        <Map>36</Map>
+        <X>4492</X>
+        <Y>2740</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_6/8_6/6</Region>
+        <Map>36</Map>
+        <X>4492</X>
+        <Y>3422</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <HarvestInfo />
+      <MobileDetails />
+    </DeepMineInfo>
+    <DeepMineInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_7/8_1/6</Region>
+        <Map>36</Map>
+        <X>5388</X>
+        <Y>12</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_7/8_2/6</Region>
+        <Map>36</Map>
+        <X>5388</X>
+        <Y>694</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_7/8_3/6</Region>
+        <Map>36</Map>
+        <X>5388</X>
+        <Y>1376</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_7/8_4/6</Region>
+        <Map>36</Map>
+        <X>5388</X>
+        <Y>2058</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_7/8_5/6</Region>
+        <Map>36</Map>
+        <X>5388</X>
+        <Y>2740</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_7/8_6/6</Region>
+        <Map>36</Map>
+        <X>5388</X>
+        <Y>3422</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <HarvestInfo />
+      <MobileDetails />
+    </DeepMineInfo>
+    <DeepMineInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_8/8_1/6</Region>
+        <Map>36</Map>
+        <X>6284</X>
+        <Y>12</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_8/8_2/6</Region>
+        <Map>36</Map>
+        <X>6284</X>
+        <Y>694</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_8/8_3/6</Region>
+        <Map>36</Map>
+        <X>6284</X>
+        <Y>1376</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_8/8_4/6</Region>
+        <Map>36</Map>
+        <X>6284</X>
+        <Y>2058</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_8/8_5/6</Region>
+        <Map>36</Map>
+        <X>6284</X>
+        <Y>2740</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <DeepLevelInfo>
+        <Region>Underground_36_8/8_6/6</Region>
+        <Map>36</Map>
+        <X>6284</X>
+        <Y>3422</Y>
+        <Width>884</Width>
+        <Height>670</Height>
+        <Spots />
+      </DeepLevelInfo>
+      <HarvestInfo />
+      <MobileDetails />
+    </DeepMineInfo>
+  </Map>
+</AllMaps>

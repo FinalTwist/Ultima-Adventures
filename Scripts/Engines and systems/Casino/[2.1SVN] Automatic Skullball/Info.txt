@@ -1,0 +1,104 @@
+http://www.runuo.com/community/threads/2-1-svn-automatic-skullball.488491/
+
+
+Automatic Skullball
+By: SHAMBAMPOW
+Original Credits: Roth/Joeku
+
+
+
+
+
+What is Skullball?
+Skullball is the UO version of Soccer. There are two teams, two nets, and 1 ball. The players dribble/kick the ball around, and whoever gets the ball into the opposing team's goal, scores.
+
+
+The ball is moved in the direction they are traveling by running it over. 
+
+
+Whichever team gets to 10 first wins.
+
+
+What is Automatic about this?
+This version of Skullball is Automatic in the sense that it is 1-click to setup, and then your done. The game is also entirely self-perpetuating (you won't need to micromanage the game).
+
+
+Features Include: 
+Enter/Exit gates
+Score Tracking/Reset
+Automatic Prize Handout (Trophy Statue)
+Winners Prize On/Off
+Freeze Players After Score On/Off
+Freeze Time Delay Setting
+Automatic Leave Game When Finished
+Automatic Side Reset & Staggered Positioning
+Entirely Pre-Configured!
+
+
+1 click setup stone:
+Arena
+Pre-configured skullball
+Pre-configured Enter/Exit gates
+Referees
+Goals
+
+
+Also Included: 
+Skullball Stadium Addon (Bleachers)
+
+
+What is the best thing about this system? 
+It's completely drag/drop!
+Not a single edit needs to be made.
+You can be playing within 1 minute of downloading. (Literally!)
+
+
+Installation:
+Drag/Drop into Customs Folder. Restart. Voila!
+
+
+In-game Set-up:
+1. Find an open space
+2. [Add SkullballSetupStone
+3. Double Click Setup Stone
+4. [Add SkullballStadiumAddon ( Optional )
+
+
+** Game Region Advice: **
+It is advised that you also use Custom-Regions-In-A-Box to create a Skullball Region which block certain actions including:
+Teleporting/WallOfStone/EnergyField/AnimalForm
+Mark/Recall/Gate/SacredJourny/Hiding
+Stuck Menu
+Spawning
+Entering
+
+
+**** UPDATE! ****
+***************************************************************************************
+[9/27/2011]
+Using the feedback I've received thus far, I've updated the system to allow further customization.
+New Features Include:
+Using the variable "GiveRewardMinTeamCount = #;" you can now adjust the minimum players which must be on the field in order for a handout to be awarded.
+
+
+Using the following three variables:
+DisplayDateOnReward = true/fasle;
+DisplayNameOnReward = true/false;
+DisplayTeamCountOnReward = true/false;
+You can now alter the information given on the reward statue's name. You can add/remove the players Name, the Date/Time, and/or the Team Count ( looks like "[5v4]" ).
+
+
+All 4 of these new variables are accessible within the game via the Props Menu.
+
+
+And Most Importantly:
+I've fixed the serialization/deserialization to properly save all of your settings!
+
+
+***************************************************************************************
+
+
+Let the games begin!
+
+
+** Comments and Feedback Welcome! **

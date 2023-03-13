@@ -1,0 +1,39 @@
+This patch slightly modifies how InteriorDecorators find the floor, which determines how far an item can be lowered or raised.  Before TownHouses, homes always had a foundation underneith, that square block.  InteriorDecorator used that foundation as the bottom floor.  With this patch, when no bottom floor is found it will find the bottom floor off the map itself.
+
+~
+
+To patch, replace the following method within Scripts/Items/Misc/InteriorDecorator.cs with this updated code:
+
+[code]
+
+			private static int GetFloorZ( Item item )
+			{
+				Map map = item.Map;
+
+				if ( map == null )
+					return int.MinValue;
+
+				Tile[] tiles = map.Tiles.GetStaticTiles( item.X, item.Y, true );
+
+				int z = int.MinValue;
+
+				for ( int i = 0; i < tiles.Length; ++i )
+				{
+					Tile tile = tiles[i];
+					ItemData id = TileData.ItemTable[tile.ID & 0x3FFF];
+
+					int top = tile.Z; // Confirmed : no height checks here
+
+					if ( id.Surface && !id.Impassable && top > z && top <= item.Z )
+						z = top;
+				}
+
+				if ( z == int.MinValue )
+					z = map.Tiles.GetLandTile( item.X, item.Y ).Z;
+
+				return z;
+			}
+
+[/code]
+
+Be sure you make a backup of the default IntoeriorDecorator.cs file.  Although removing TownHouses won't cause any problems with this patch, backups are always a great idea!  You can also comment out the old method instead of completely replacing it.

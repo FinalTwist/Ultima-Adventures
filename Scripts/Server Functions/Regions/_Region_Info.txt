@@ -1,0 +1,102 @@
+///// SPELLS THAT TELEPORT
+
+--MARK
+MarkSpell
+HellsBrandSpell
+DruidicRuneSpell
+
+--GATES
+GateTravelSpell
+MushroomGatewaySpell
+UndeadGraveyardGatewaySpell
+
+--RECALLS
+HellsGateSpell
+NaturesPassageSpell
+RecallSpell
+SacredJourneySpell
+
+///// TRAP AND HIDDEN CHEST RATIO
+Divide Area by 1603 for Traps    Divide Area by 3205 for Hidden Chests
+
+///// COMMANDS
+CommandSystem.Register( "RespawnAllRegions", AccessLevel.Administrator, new CommandEventHandler( RespawnAllRegions_OnCommand ) );
+CommandSystem.Register( "RespawnRegion", AccessLevel.GameMaster, new CommandEventHandler( RespawnRegion_OnCommand ) );
+CommandSystem.Register( "DelAllRegionSpawns", AccessLevel.Administrator, new CommandEventHandler( DelAllRegionSpawns_OnCommand ) );
+CommandSystem.Register( "DelRegionSpawns", AccessLevel.GameMaster, new CommandEventHandler( DelRegionSpawns_OnCommand ) );
+CommandSystem.Register( "StartAllRegionSpawns", AccessLevel.Administrator, new CommandEventHandler( StartAllRegionSpawns_OnCommand ) );
+CommandSystem.Register( "StartRegionSpawns", AccessLevel.GameMaster, new CommandEventHandler( StartRegionSpawns_OnCommand ) );
+CommandSystem.Register( "StopAllRegionSpawns", AccessLevel.Administrator, new CommandEventHandler( StopAllRegionSpawns_OnCommand ) );
+CommandSystem.Register( "StopRegionSpawns", AccessLevel.GameMaster, new CommandEventHandler( StopRegionSpawns_OnCommand ) );
+
+CommandSystem.Register( "GenStealArties", AccessLevel.Administrator, new CommandEventHandler( GenStealArties_OnCommand ) );
+CommandSystem.Register( "RemoveStealArties", AccessLevel.Administrator, new CommandEventHandler( RemoveStealArties_OnCommand ) );
+
+///// MUSIC
+1	OldUlt01
+2	Create1
+3	DragFlit
+4	OldUlt02
+5	OldUlt03
+6	OldUlt04
+7	OldUlt05
+8	OldUlt06
+9	Stones2
+10	Britain1
+11	Britain2
+12	Bucsden
+13	Jhelom
+14	LBCastle
+15	Linelle
+16	Magincia
+17	Minoc
+18	Ocllo
+19	Samlethe
+20	Serpents
+21	Skarabra
+22	Trinsic
+23	Vesper
+24	Wind
+25	Yew
+26	Cave01
+27	Dungeon9
+28	Forest_a
+29	InTown01
+30	Jungle_a
+31	Mountn_a
+32	Plains_a
+33	Sailing
+34	Swamp_a
+35	Tavern01
+36	Tavern02
+37	Tavern03
+38	Tavern04
+39	Combat1
+40	Combat2
+41	Combat3
+42	Approach
+43	Death
+44	Victory
+45	BTCastle
+46	Nujelm
+47	Dungeon2
+48	Cove
+49	Moonglow
+50	Zento
+51	TokunoDungeon
+52	Taiko
+53	DreadHornArea
+54	ElfCity
+55	GrizzleDungeon
+56	MelisandesLair
+57	ParoxysmusLair
+58	GwennoConversation
+59	GoodEndGame
+60	GoodVsEvil
+61	GreatEarthSerpents
+62	Humanoids_U9
+63	MinocNegative
+64	Paws
+65	SelimsBar
+66	SerpentIsleCombat_U7
+67	ValoriaShips

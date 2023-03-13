@@ -1,0 +1,51 @@
+using System;
+using Server.Items;
+using Server.Network;
+using Server.Mobiles;
+
+namespace Server.Items
+{
+    public class NoticeClue : Item
+	{
+		public override bool HandlesOnMovement{ get{ return true; } }
+
+		private DateTime m_NextTalk;
+		public DateTime NextTalk{ get{ return m_NextTalk; } set{ m_NextTalk = value; } }
+
+		public override void OnMovement( Mobile m, Point3D oldLocation )
+		{
+			if( m is PlayerMobile )
+			{
+				if ( DateTime.UtcNow >= m_NextTalk && Utility.InRange( m.Location, this.Location, 5 ) )
+				{
+					m.PrivateOverheadMessage(MessageType.Regular, 1150, false, this.Name, m.NetState);
+					m_NextTalk = (DateTime.UtcNow + TimeSpan.FromSeconds( 30 ));
+				}
+			}
+		}
+
+		[Constructable]
+		public NoticeClue( ) : base( 0x181E )
+		{
+			Movable = false;
+			Visible = false;
+			Name = "clue";
+		}
+
+		public NoticeClue( Serial serial ) : base( serial )
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+			writer.Write((int) 0);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+			int version = reader.ReadInt();
+		}
+	}	
+}
