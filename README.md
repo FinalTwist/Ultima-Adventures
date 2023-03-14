@@ -7,4 +7,6 @@ I can't claim much of the code here, as a large portion of it was taken by publi
 
 Note that the code requires a custom client which can be downloaded at https://www.servuo.com/archive/ultima-adventures-a-full-featured-content-packed-offline-online-server.1374/
 
+I have also included the Feb 2023 release to the release page on this git, this release contains all you need to run the project.  If you make any changes to this codebase, you can simply overwrite the files to the client directory to merge them (unless you rename/move/add files).
+
 All the best to the UO community, I hope to keep playing this amazing game for many more years to come.  Feel free to clone and revise as you wish!
