@@ -61,9 +61,12 @@ namespace Server.Mobiles
 		public override void OnDeath( Container c )
 		{
 			base.OnDeath( c );
-
+			
+			if (!this.Controlled)
+			{
 			Item scale = new HardScales( Utility.RandomMinMax( 10, 50 ), "iron scales" );
    			c.DropItem(scale);
+			}
 		}
 
 		public override void CheckReflect( Mobile caster, ref bool reflect )

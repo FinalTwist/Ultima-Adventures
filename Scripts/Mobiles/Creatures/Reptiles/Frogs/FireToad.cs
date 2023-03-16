@@ -174,11 +174,21 @@ namespace Server.Mobiles
 
 				foreach ( Mobile m in m_Owner.GetMobilesInRange( 10 ) )
 				{
-					if ( m != m_Owner && m.Player && m_Owner.CanBeHarmful( m ) && m_Owner.CanSee( m ) && m.AccessLevel == AccessLevel.Player && ( (BaseCreature)m_Owner ).IsEnemy( m ) )
+					if (!((BaseCreature)m_Owner).Controlled && m != m_Owner && m.Player && m_Owner.CanBeHarmful( m ) && m_Owner.CanSee( m ) && m.AccessLevel == AccessLevel.Player && ( (BaseCreature)m_Owner ).IsEnemy( m ) )
 					{
 						toTeleport = m;
 						break;
 					}
+					else if (((BaseCreature)m_Owner).Controlled && ((BaseCreature)m_Owner).ControlMaster != null)
+					{
+						Mobile Francis = ((BaseCreature)m_Owner).ControlMaster;
+						if (m is BaseCreature && Francis.Map == m_Owner.Map && !((BaseCreature)m).Controlled && !((BaseCreature)m).Summoned && ((BaseCreature)m).ControlMaster != Francis && Francis.CanBeHarmful(m) && m_Owner.CanSee(m) && ((BaseCreature)m).IsEnemy(Francis) )
+						{
+							toTeleport = m;
+							break;
+						}
+					}
+					
 				}
 
 				if ( toTeleport != null )

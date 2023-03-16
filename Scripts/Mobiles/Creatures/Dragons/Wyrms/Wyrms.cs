@@ -249,7 +249,7 @@ namespace Server.Mobiles
 
 			Region reg = Region.Find( this.Location, this.Map );
 
-			if ( rDrop != null && rDrop != "" )
+			if ( !this.Controlled && rDrop != null && rDrop != "" )
 			{
 				int SpecialScales = Utility.RandomMinMax( 10, 50 );
 

@@ -255,6 +255,9 @@ namespace Server.Mobiles
 
 		public static void DropSpecial( BaseCreature me, Mobile killer, string odd, string metal, string name, Container c, int chance, int color )
 		{
+			if (me.Controlled)
+				return;
+				
 			if ( Utility.RandomDouble() > 0.85 && GetPlayerInfo.LuckyKiller( killer.Luck, killer ) && Utility.RandomMinMax( 1, chance ) == 1 && !me.Controlled )
 			{
 				if ( Utility.RandomBool() )
@@ -284,7 +287,7 @@ namespace Server.Mobiles
 		{
 			base.OnDeath( c );
 
-			if ( rDrop != null && rDrop != "" )
+			if ( !this.Controlled && rDrop != null && rDrop != "" )
 			{
 				int SpecialScales = Utility.RandomMinMax( 10, 50 );
 					if ( rBody == 61 ){ SpecialScales = Utility.RandomMinMax( 5, 25 ); }

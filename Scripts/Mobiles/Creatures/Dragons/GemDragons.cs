@@ -33,9 +33,9 @@ namespace Server.Mobiles
 			SetDex( 86, 105 );
 			SetInt( 436, 475 );
 
-			SetHits( 478, 495 );
+			SetHits( 650, 750 );
 
-			SetDamage( 16, 22 );
+			SetDamage( 25, 30 );
 
 			SetDamageType( ResistanceType.Physical, 75 );
 			SetDamageType( ResistanceType.Fire, 25 );
@@ -81,6 +81,9 @@ namespace Server.Mobiles
 		public override void OnDeath( Container c )
 		{
 			base.OnDeath( c );
+			
+			if (!this.Controlled)
+			{
 
 			if ( this.Hue == MaterialInfo.GetMaterialColor( "onyx", "monster", 0 ) )
 			{
@@ -141,6 +144,7 @@ namespace Server.Mobiles
 			{
 				Item scale = new HardScales( Utility.RandomMinMax( 5, 10 ), "jade scales" );
 				c.DropItem(scale);
+			}
 			}
 		}
 

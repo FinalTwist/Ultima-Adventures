@@ -325,6 +325,9 @@ namespace Server.Spells.Necromancy
 							creature.SetSkill( SkillName.Tactics, ( mod*bc.Skills[SkillName.Tactics].Value ) );
 							creature.SetSkill( SkillName.Wrestling, ( mod*bc.Skills[SkillName.Wrestling].Value ) );
 						}
+						
+						if (Caster is BaseCreature && ((BaseCreature)Caster).AI == AIType.AI_Mage)
+							((SummonedCorpse)creature).MobSummon = true;
 
 						creature.Location = c.Location;
 						Effects.SendLocationEffect( creature.Location, creature.Map, 0x3400, 60, 0, 0 );

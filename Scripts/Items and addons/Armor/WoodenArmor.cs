@@ -7,11 +7,11 @@ namespace Server.Items
 {
 	public class WoodenPlateLegs : BaseArmor ///////////////////////////////////////////////////////
 	{
-		public override int BasePhysicalResistance{ get{ return 5; } }
+		public override int BasePhysicalResistance{ get{ return 10; } }
 		public override int BaseFireResistance{ get{ return 1; } }
-		public override int BaseColdResistance{ get{ return 2; } }
-		public override int BasePoisonResistance{ get{ return 3; } }
-		public override int BaseEnergyResistance{ get{ return 4; } }
+		public override int BaseColdResistance{ get{ return 6; } }
+		public override int BasePoisonResistance{ get{ return 9; } }
+		public override int BaseEnergyResistance{ get{ return 8; } }
 
 		public override int InitMinHits{ get{ return 50; } }
 		public override int InitMaxHits{ get{ return 65; } }
@@ -21,8 +21,8 @@ namespace Server.Items
 		public override int OldStrReq{ get{ return 60; } }
 		public override int OldDexBonus{ get{ return -6; } }
 
-		public override int ArmorBase{ get{ return 35; } }
-
+		public override int ArmorBase{ get{ return 40; } }
+		
 		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Plate; } }
 		public override CraftResource DefaultResource{ get{ return CraftResource.RegularWood; } }
 
@@ -54,11 +54,11 @@ namespace Server.Items
 	}
 	public class WoodenPlateGloves : BaseArmor ///////////////////////////////////////////////////
 	{
-		public override int BasePhysicalResistance{ get{ return 5; } }
+		public override int BasePhysicalResistance{ get{ return 7; } }
 		public override int BaseFireResistance{ get{ return 1; } }
-		public override int BaseColdResistance{ get{ return 2; } }
-		public override int BasePoisonResistance{ get{ return 3; } }
-		public override int BaseEnergyResistance{ get{ return 4; } }
+		public override int BaseColdResistance{ get{ return 4; } }
+		public override int BasePoisonResistance{ get{ return 7; } }
+		public override int BaseEnergyResistance{ get{ return 6; } }
 
 		public override int InitMinHits{ get{ return 50; } }
 		public override int InitMaxHits{ get{ return 65; } }
@@ -68,8 +68,8 @@ namespace Server.Items
 
 		public override int OldDexBonus{ get{ return -2; } }
 
-		public override int ArmorBase{ get{ return 30; } }
-
+		public override int ArmorBase{ get{ return 40; } }
+		
 		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Plate; } }
 		public override CraftResource DefaultResource{ get{ return CraftResource.RegularWood; } }
 
@@ -103,8 +103,8 @@ namespace Server.Items
 	{
 		public override int BasePhysicalResistance{ get{ return 5; } }
 		public override int BaseFireResistance{ get{ return 1; } }
-		public override int BaseColdResistance{ get{ return 2; } }
-		public override int BasePoisonResistance{ get{ return 3; } }
+		public override int BaseColdResistance{ get{ return 3; } }
+		public override int BasePoisonResistance{ get{ return 5; } }
 		public override int BaseEnergyResistance{ get{ return 4; } }
 
 		public override int InitMinHits{ get{ return 50; } }
@@ -115,7 +115,7 @@ namespace Server.Items
 
 		public override int OldDexBonus{ get{ return -1; } }
 
-		public override int ArmorBase{ get{ return 30; } }
+		public override int ArmorBase{ get{ return 40; } }
 
 		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Plate; } }
 		public override CraftResource DefaultResource{ get{ return CraftResource.RegularWood; } }
@@ -148,11 +148,11 @@ namespace Server.Items
 	}
 	public class WoodenPlateArms : BaseArmor ///////////////////////////////////////////////////////
 	{
-		public override int BasePhysicalResistance{ get{ return 5; } }
+		public override int BasePhysicalResistance{ get{ return 11; } }
 		public override int BaseFireResistance{ get{ return 1; } }
-		public override int BaseColdResistance{ get{ return 2; } }
-		public override int BasePoisonResistance{ get{ return 3; } }
-		public override int BaseEnergyResistance{ get{ return 4; } }
+		public override int BaseColdResistance{ get{ return 6; } }
+		public override int BasePoisonResistance{ get{ return 8; } }
+		public override int BaseEnergyResistance{ get{ return 7; } }
 
 		public override int InitMinHits{ get{ return 50; } }
 		public override int InitMaxHits{ get{ return 65; } }
@@ -162,8 +162,8 @@ namespace Server.Items
 
 		public override int OldDexBonus{ get{ return -2; } }
 
-		public override int ArmorBase{ get{ return 30; } }
-
+		public override int ArmorBase{ get{ return 40; } }
+		
 		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Plate; } }
 		public override CraftResource DefaultResource{ get{ return CraftResource.RegularWood; } }
 
@@ -195,11 +195,11 @@ namespace Server.Items
 	}
 	public class WoodenPlateChest : BaseArmor /////////////////////////////////////////////////////
 	{
-		public override int BasePhysicalResistance{ get{ return 5; } }
-		public override int BaseFireResistance{ get{ return 1; } }
-		public override int BaseColdResistance{ get{ return 2; } }
-		public override int BasePoisonResistance{ get{ return 3; } }
-		public override int BaseEnergyResistance{ get{ return 4; } }
+		public override int BasePhysicalResistance{ get{ return 14; } }
+		public override int BaseFireResistance{ get{ return 3; } }
+		public override int BaseColdResistance{ get{ return 7; } }
+		public override int BasePoisonResistance{ get{ return 9; } }
+		public override int BaseEnergyResistance{ get{ return 8; } }
 
 		public override int InitMinHits{ get{ return 50; } }
 		public override int InitMaxHits{ get{ return 65; } }
@@ -209,7 +209,7 @@ namespace Server.Items
 
 		public override int OldDexBonus{ get{ return -8; } }
 
-		public override int ArmorBase{ get{ return 30; } }
+		public override int ArmorBase{ get{ return 40; } }
 
 		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Plate; } }
 		public override CraftResource DefaultResource{ get{ return CraftResource.RegularWood; } }
@@ -220,7 +220,7 @@ namespace Server.Items
 			Name = "wooden tunic";
 			Hue = 0x840;
 			Weight = 8.0;
-			Layer = Layer.Shirt;
+			Layer = Layer.InnerTorso;
 		}
 
 		public WoodenPlateChest( Serial serial ) : base( serial )
@@ -242,12 +242,12 @@ namespace Server.Items
 	}
 	public class WoodenPlateHelm : BaseArmor ///////////////////////////////////////////////////////
 	{
-		public override int BasePhysicalResistance{ get{ return 5; } }
+		public override int BasePhysicalResistance{ get{ return 11; } }
 		public override int BaseFireResistance{ get{ return 1; } }
-		public override int BaseColdResistance{ get{ return 2; } }
-		public override int BasePoisonResistance{ get{ return 3; } }
-		public override int BaseEnergyResistance{ get{ return 4; } }
-
+		public override int BaseColdResistance{ get{ return 5; } }
+		public override int BasePoisonResistance{ get{ return 6; } }
+		public override int BaseEnergyResistance{ get{ return 6; } }
+		
 		public override int InitMinHits{ get{ return 50; } }
 		public override int InitMaxHits{ get{ return 65; } }
 
@@ -256,7 +256,7 @@ namespace Server.Items
 
 		public override int OldDexBonus{ get{ return -1; } }
 
-		public override int ArmorBase{ get{ return 30; } }
+		public override int ArmorBase{ get{ return 40; } }
 
 		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Plate; } }
 		public override CraftResource DefaultResource{ get{ return CraftResource.RegularWood; } }

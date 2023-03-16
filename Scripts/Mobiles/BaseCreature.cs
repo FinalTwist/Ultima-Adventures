@@ -2151,6 +2151,12 @@ namespace Server.Mobiles
 
 		public virtual bool IsEnemy( Mobile m )
 		{
+		
+			//adding special here for animate dead cast by mage ai mobs
+			if (this is SummonedCorpse && ((SummonedCorpse)this).MobSummon && ( m is PlayerMobile || ( m is BaseCreature && ((BaseCreature)m).Controlled && ((BaseCreature)m).ControlMaster is PlayerMobile ) ) )
+				return true;
+			else if (this is SummonedCorpse && ((SummonedCorpse)this).MobSummon)
+				return false;
 
 			if (Controlled && !m_goferal && m is BaseCreature && !((BaseCreature)m).GoFeral && ((BaseCreature)m).ControlMaster == ControlMaster && ((BaseCreature)m).Combatant != this )
 				return false;
@@ -4522,7 +4528,7 @@ namespace Server.Mobiles
 						basecalc /= 1.5;
 
 					// modify based on attributes and abilities
-									
+								
 					if (this.CanHeal)
 						modifier += this.Skills[SkillName.Healing].Value / 200.0;
 					
@@ -4540,6 +4546,9 @@ namespace Server.Mobiles
 						else 
 							modifier += .1;
 					}
+					
+					if (this is BullFrog || this is FireToad || this is GiantToad || this is IceToad || this is PoisonFrog ) //have a special latch ability
+						modifier += 0.10;
 
 					if (Backpack is StrongBackpack)
 						modifier += 0.25;

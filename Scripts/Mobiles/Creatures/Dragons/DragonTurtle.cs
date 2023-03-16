@@ -71,7 +71,7 @@ namespace Server.Mobiles
 			base.OnDeath( c );
 
 			Mobile killer = this.LastKiller;
-			if ( killer != null )
+			if ( killer != null && !this.Controlled )
 			{
 				if ( killer is BaseCreature )
 					killer = ((BaseCreature)killer).GetMaster();

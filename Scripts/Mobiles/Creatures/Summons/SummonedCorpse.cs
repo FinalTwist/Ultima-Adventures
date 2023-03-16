@@ -9,6 +9,14 @@ namespace Server.Mobiles
 	{
 		public int BCPoison;
 		public int BCImmune;
+		
+		private bool m_MobSummon;
+		[CommandProperty( AccessLevel.GameMaster )]
+		public bool MobSummon
+		{
+		    get{ return m_MobSummon; }
+		    set{ m_MobSummon = value; }
+		}
 
 		public override double DispelDifficulty{ get{ return 117.5; } }
 		public override double DispelFocus{ get{ return 45.0; } }
@@ -80,13 +88,16 @@ namespace Server.Mobiles
 		public override void Serialize( GenericWriter writer )
 		{
 			base.Serialize( writer );
-			writer.Write( (int) 0 );
+			writer.Write( (int) 1 );
+			writer.Write( (bool) m_MobSummon );
 		}
 
 		public override void Deserialize( GenericReader reader )
 		{
 			base.Deserialize( reader );
 			int version = reader.ReadInt();
+			if (version >= 1)
+				m_MobSummon = reader.ReadBool();
 		}
 	}
 }

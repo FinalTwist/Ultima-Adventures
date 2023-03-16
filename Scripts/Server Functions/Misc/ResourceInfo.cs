@@ -730,8 +730,8 @@ namespace Server.Items
 
 			ghosttree.ArmorPhysicalResist = 9; //20
 			ghosttree.ArmorFireResist = 5;
-			ghosttree.ArmorColdResist = 6;
-			ghosttree.ArmorPoisonResist = 5;
+			ghosttree.ArmorColdResist = 9;
+			ghosttree.ArmorPoisonResist = 9;
 			ghosttree.ArmorEnergyResist = 6;
 			ghosttree.WeaponColdDamage = 25;
 			ghosttree.WeaponEnergyDamage = 25;
@@ -757,9 +757,10 @@ namespace Server.Items
 
 			CraftAttributeInfo elventree = ElvenTree = new CraftAttributeInfo(); //1
 
-			elventree.ArmorPhysicalResist = 10; //38
-			elventree.ArmorPoisonResist = 12;
-			elventree.ArmorEnergyResist = 16;
+			elventree.ArmorPhysicalResist = 10;   //39
+			elventree.ArmorFireResist = 3;			
+			elventree.ArmorPoisonResist = 11;
+			elventree.ArmorEnergyResist = 15;
 			elventree.ArmorDurability = 25;
 			elventree.ArmorLuck = 100;
 			elventree.WeaponLuck = 100;

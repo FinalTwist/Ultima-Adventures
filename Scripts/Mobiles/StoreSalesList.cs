@@ -2811,7 +2811,13 @@ namespace Server.Mobiles
 				if ( MyServerSettings.BuyChance() ){Add( typeof( DovetailSaw ), 7 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( Axle ), 1 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( Club ), 13 ); } 
-
+				
+				if ( MyServerSettings.BuyChance() ){Add( typeof( WoodenPlateArms ), 90 ); } 
+				if ( MyServerSettings.BuyChance() ){Add( typeof( WoodenPlateChest ), 119 ); } 
+				if ( MyServerSettings.BuyChance() ){Add( typeof( WoodenPlateGloves ), 70 ); } 
+				if ( MyServerSettings.BuyChance() ){Add( typeof( WoodenPlateGorget ), 50 ); } 
+				if ( MyServerSettings.BuyChance() ){Add( typeof( WoodenPlateLegs ), 106 ); } 
+				
 				if ( MyServerSettings.BuyChance() ){Add( typeof( Log ), 1 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( AshLog ), 2 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( CherryLog ), 2 ); } 
@@ -5565,7 +5571,7 @@ namespace Server.Mobiles
 				if ( MyServerSettings.BuyChance() ){Add( typeof( SewingKit ), 1 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( Dyes ), 4 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( DyeTub ), 4 ); } 
-				if ( MyServerSettings.BuyChance() ){Add( typeof( BoltOfCloth ), 50 ); } 
+				if ( MyServerSettings.BuyChance() ){Add( typeof( BoltOfCloth ), 35 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( FancyShirt ), 10 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( Shirt ), 6 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( ShortPants ), 3 ); } 
@@ -6375,7 +6381,7 @@ namespace Server.Mobiles
 				if ( MyServerSettings.BuyChance() ){Add( typeof( Dyes ), 4 ); }  
 				if ( MyServerSettings.BuyChance() ){Add( typeof( DyeTub ), 4 ); }  
 				if ( MyServerSettings.BuyChance() ){Add( typeof( UncutCloth ), 1 ); } 
-				if ( MyServerSettings.BuyChance() ){Add( typeof( BoltOfCloth ), 50 ); }  
+				if ( MyServerSettings.BuyChance() ){Add( typeof( BoltOfCloth ), 35 ); }  
 				if ( MyServerSettings.BuyChance() ){Add( typeof( LightYarnUnraveled ), 9 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( LightYarn ), 9 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( DarkYarn ), 9 ); } 
@@ -8311,7 +8317,7 @@ namespace Server.Mobiles
 				Add( typeof( SewingKit ), 1 );
 				Add( typeof( Dyes ), 4 );
 				Add( typeof( DyeTub ), 4 );
-				Add( typeof( BoltOfCloth ), 50 );
+				Add( typeof( BoltOfCloth ), 35 );
 				Add( typeof( FancyShirt ), 10 );
 				Add( typeof( Shirt ), 6 );
 				Add( typeof( ShortPants ), 3 );
