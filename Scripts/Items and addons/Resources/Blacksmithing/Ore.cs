@@ -159,7 +159,7 @@ namespace Server.Items
 			else
 			{
 				from.SendLocalizedMessage( 501976 ); // The ore is too far away.
-                return;
+                		return;
 			}
 		}
 
