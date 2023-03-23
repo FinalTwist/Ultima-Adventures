@@ -130,10 +130,26 @@ namespace Server.Items
 			if ( !Movable )
 				return;
 			
-			if ( RootParent is BaseCreature )
+			if ( RootParent is BaseCreature creature )
 			{
-				from.SendLocalizedMessage( 500447 ); // That is not accessible
-				return;
+
+                if ((creature.Controlled != false) & creature.ControlMaster == from & from.InRange( this.GetWorldLocation(), 1 ))
+                { 
+                    from.SendLocalizedMessage( 501971 ); // Select the forge on which to smelt the ore, or another pile of ore with which to combine it.
+                    from.Target = new InternalTarget( this );
+
+                }
+                else if ((creature.Controlled != false) & creature.ControlMaster == from & (from.InRange( this.GetWorldLocation(), 5)))
+                {
+                    from.SendMessage(1256, "Your animal must be closer in order to smelt that.");
+                    return;
+                }
+                else
+                {
+                    from.SendLocalizedMessage( 500447 ); // That is not accessible
+                    return;
+                }
+				
 			}
 			else if ( from.InRange( this.GetWorldLocation(), 2 ) )
 			{
@@ -143,6 +159,7 @@ namespace Server.Items
 			else
 			{
 				from.SendLocalizedMessage( 501976 ); // The ore is too far away.
+                return;
 			}
 		}
 
