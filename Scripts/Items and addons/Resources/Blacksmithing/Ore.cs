@@ -139,16 +139,16 @@ namespace Server.Items
                     			from.Target = new InternalTarget( this );
 
                 		}
-                	else if ((creature.Controlled != false) & creature.ControlMaster == from & (from.InRange( this.GetWorldLocation(), 5)))
-                	{
-                    		from.SendMessage(1256, "Your animal must be closer in order to smelt that.");
-                    		return;
-                	}
-                	else
-                	{
-                    		from.SendLocalizedMessage( 500447 ); // That is not accessible
-                    		return;
-                	}
+                		else if ((creature.Controlled != false) & creature.ControlMaster == from & (from.InRange( this.GetWorldLocation(), 5)))
+                		{
+                    			from.SendMessage(1256, "Your animal must be closer in order to smelt that.");
+                    			return;
+                		}
+                		else
+                		{
+                    			from.SendLocalizedMessage( 500447 ); // That is not accessible
+                    			return;
+                		}
 				
 			}
 			else if ( from.InRange( this.GetWorldLocation(), 2 ) )
