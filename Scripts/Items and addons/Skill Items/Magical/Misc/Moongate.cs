@@ -14,6 +14,20 @@ namespace Server.Items
 		private Point3D m_Target;
 		private Map m_TargetMap;
 		private bool m_bDispellable;
+		private bool m_champgate;
+		
+		[CommandProperty( AccessLevel.GameMaster )]
+		public bool ChampGate
+		{
+			get
+			{
+				return m_champgate;
+			}
+			set
+			{
+				m_champgate = value;
+			}
+		}
 
 		[CommandProperty( AccessLevel.GameMaster )]
 		public Point3D Target
@@ -169,7 +183,7 @@ namespace Server.Items
 				if ( m.AccessLevel == AccessLevel.Player || !m.Hidden )
 					m.PlaySound( 0x1FE );
 
-				if (this.Dispellable)
+				if (this.Dispellable && !m_champgate)
 					AetherGlobe.ApplyCurse( m, Map.Internal, m_TargetMap, 2);
 
 				OnGateUsed( m );

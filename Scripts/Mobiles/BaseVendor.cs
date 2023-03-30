@@ -2116,7 +2116,7 @@ namespace Server.Mobiles
 						case 2: reward = new EnhancementDeed(); break;
 					}
 				}
-				else if (credits <= (basecred *182)) //+34
+				else if (credits <= (basecred *172)) //+34
 				{
 					switch (Utility.Random(3))
 					{
@@ -2125,7 +2125,7 @@ namespace Server.Mobiles
 						case 2: reward = new EnhancementDeed(); break;
 					}
 				}
-				else if (credits <= (basecred *220)) //+38
+				else if (credits <= (basecred *200)) //+38
 				{
 					switch (Utility.Random(3))
 					{
@@ -2134,7 +2134,7 @@ namespace Server.Mobiles
 						case 2: reward = new EnhancementDeed(); break;
 					}
 				}
-				else if (credits <= (basecred *220)) //+38
+				else if (credits <= (basecred *230)) //+38
 				{
 					switch (Utility.Random(3))
 					{

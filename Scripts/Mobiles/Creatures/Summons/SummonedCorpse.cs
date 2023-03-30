@@ -80,6 +80,29 @@ namespace Server.Mobiles
 				return null;
 			}
 		}
+		
+		public override bool IsEnemy( Mobile m )
+		{
+			//adding special here for animate dead cast by mage ai mobs
+			if (m_MobSummon && ( m is PlayerMobile || ( m is BaseCreature && ((BaseCreature)m).Controlled && ((BaseCreature)m).ControlMaster is PlayerMobile ) ) )
+				return true;
+			else if (m_MobSummon)
+				return false;
+			
+			return base.IsEnemy(m);
+		}
+		
+		public override bool CanBeHarmful( Mobile target, bool message, bool ignoreOurBlessedness )
+		{
+			if (m_MobSummon)
+			{
+				if ( target is PlayerMobile || ( target is BaseCreature && ((BaseCreature)target).Controlled && ((BaseCreature)target).ControlMaster is PlayerMobile ) )
+					return true;
+				else
+					return false;
+			}
+			return base.CanBeHarmful( target, message, ignoreOurBlessedness );
+		}
 
 		public SummonedCorpse( Serial serial ) : base( serial )
 		{

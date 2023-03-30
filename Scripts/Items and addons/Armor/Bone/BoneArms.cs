@@ -6,9 +6,9 @@ namespace Server.Items
 	[FlipableAttribute( 0x144e, 0x1453 )]
 	public class BoneArms : BaseArmor
 	{
-		public override int BasePhysicalResistance{ get{ return 9; } }
-		public override int BaseFireResistance{ get{ return 5; } }
-		public override int BaseColdResistance{ get{ return 3; } }
+		public override int BasePhysicalResistance{ get{ return 11; } }
+		public override int BaseFireResistance{ get{ return 6; } }
+		public override int BaseColdResistance{ get{ return 5; } }
 		public override int BasePoisonResistance{ get{ return 7; } }
 		public override int BaseEnergyResistance{ get{ return 6; } }
 

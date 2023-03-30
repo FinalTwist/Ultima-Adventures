@@ -9999,7 +9999,7 @@ namespace Server.Mobiles
 
 				}
 
-				if (Utility.RandomDouble() > 0.97 && !(this is BaseRed) && !(this is BaseBlue) && !(this is BaseVendor) && !(this is BaseChild) && !(this is BaseCursed))
+				if (Utility.RandomDouble() > 0.97 && !(this is BaseRed) && !(this is BaseBlue) && !(this is BaseVendor) && !(this is BaseChild) && !(this is BaseCursed) && !(this is BaseChampion) && !(this is Zombiex))
 					c.AddItem( new EssenceBones(this.GetType()));
 
 				base.OnDeath( c );

@@ -240,8 +240,29 @@ namespace Server
 						totalDamage -= (int)adjust;
 				}
 			}
+			
+			//empowering troubadours with reduced damage based on number of discorded mobs in area
+			if (m is PlayerMobile && ((PlayerMobile)m).Troubadour() && SkillHandlers.Discordance.IsDiscorded(from)) //getting damaged by discorded mob
+			{
+				int number = 1; //how many discorded mobs are nearby?
+				
+				IPooledEnumerable mobiles = m.Map.GetMobilesInRange( m.Location, 8 );
 
-
+				foreach ( Mobile mm in mobiles )
+				{
+					if ( mm is BaseCreature && mm != from && SkillHandlers.Discordance.IsDiscorded(mm) && !((BaseCreature)mm).Controlled && !((BaseCreature)mm).Summoned)
+					{
+						number ++;
+					}
+				}
+				
+				if (number > 5)
+					number = 5; //we set a max of 50% damage reduction
+				
+				double reduction = (double)totalDamage * (1 - ((double)number * 0.10)); //reducing damage 
+				totalDamage = (int)reduction;
+			}
+				
 			#region Dragon Barding
 			if( (from == null || !from.Player) && m.Player && m.Mount is SwampDragon )
 			{

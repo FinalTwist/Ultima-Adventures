@@ -103,6 +103,8 @@ namespace Server.Spells.Seventh
 				Effects.PlaySound( Caster.Location, Caster.Map, 0x20E );
 				InternalItem firstGate = new InternalItem( loc, map );
 				firstGate.Hue = Server.Items.CharacterDatabase.GetMySpellHue( Caster, 0 );
+				if ( AetherGlobe.EvilChamp == Caster || AetherGlobe.GoodChamp == Caster )
+					firstGate.ChampGate = true;
 				firstGate.MoveToWorld( Caster.Location, Caster.Map );
 
 				if ( Worlds.RegionAllowedTeleport( Caster.Map, Caster.Location, Caster.X, Caster.Y ) == true )
@@ -110,6 +112,8 @@ namespace Server.Spells.Seventh
 					Effects.PlaySound( loc, map, 0x20E );
 					InternalItem secondGate = new InternalItem( Caster.Location, Caster.Map );
 					secondGate.Hue = Server.Items.CharacterDatabase.GetMySpellHue( Caster, 0 );
+					if ( AetherGlobe.EvilChamp == Caster || AetherGlobe.GoodChamp == Caster )
+						secondGate.ChampGate = true;
 					secondGate.MoveToWorld( loc, map );
 				}
 			}

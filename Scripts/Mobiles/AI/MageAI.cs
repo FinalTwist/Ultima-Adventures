@@ -741,7 +741,7 @@ namespace Server.Mobiles
 			//first start with some routines based on situation
 			if (many)
 			{
-				//pile of them over there, field them, mass damage them, or mass curse them if close
+				//many of them: field them, mass damage them, or mass curse them if close
 				if ( dist > 4 && odds < 0.50 ) 
 				{
 					if (Utility.RandomBool())
@@ -765,11 +765,11 @@ namespace Server.Mobiles
 				else if (Utility.RandomDouble() <= 30 && m_Mobile.Skills[ SkillName.Magery ].Value > 50.0 && !c.Paralyzed)
 					spell = new ParalyzeSpell( m_Mobile, null );
 
-				if ( spell == null && CastingNecro() && odds <= 0.45 && odds >= 0.15 && m_Mobile.Skills[ SkillName.Necromancy ].Value > 30 && BloodOathSpell.GetBloodOath( c ) != m_Mobile )
+				if ( spell == null && CastingNecro() && odds <= 0.45 && Utility.RandomBool() && m_Mobile.Skills[ SkillName.Necromancy ].Value > 30 && BloodOathSpell.GetBloodOath( c ) != m_Mobile )
 					spell = new BloodOathSpell( m_Mobile, null );
 			}
 
-			if (spell == null && distance && Utility.RandomBool()) //possibly single archer/mage 
+			if (spell == null && distance && Utility.RandomBool()) //getting attacked from a distance possibly single archer/mage 
 			{
 				if (c is PlayerMobile)
 				{
@@ -778,7 +778,7 @@ namespace Server.Mobiles
 					Item firstvalid = c.FindItemOnLayer( Layer.FirstValid );
 
 					//archer, first try to paralyze
-                	if ( ( twohanded is BaseRanged || firstvalid is BaseRanged || twohanded is BaseMeleeWeapon || firstvalid is BaseMeleeWeapon ) && !( c.Paralyzed || c.Frozen) && GetMaxCircle(m_Mobile) >= 5 && odds > 0.55)
+                			if ( ( twohanded is BaseRanged || firstvalid is BaseRanged || twohanded is BaseMeleeWeapon || firstvalid is BaseMeleeWeapon ) && !( c.Paralyzed || c.Frozen) && GetMaxCircle(m_Mobile) >= 5 && odds > 0.55)
 						spell = new ParalyzeSpell( m_Mobile, null );
 
 					//not paralyzed, so lets blood oath if necro
@@ -787,7 +787,7 @@ namespace Server.Mobiles
 				}
 				
 				//lets summon some help with this one
-				if ( spell == null && ( m_Mobile.Followers + 3 ) < m_Mobile.FollowersMax && m_Mobile.Mana > 50 && odds > 30 && odds < 60 )
+				if ( spell == null && ( m_Mobile.Followers + 3 ) < m_Mobile.FollowersMax && m_Mobile.Mana > 50 && odds > 0.30 && odds < 0.60 )
 					spell = GetRandomSummonSpell();
 			}
 
@@ -816,48 +816,48 @@ namespace Server.Mobiles
 			}
 
 			//is the player hidden?
-			if (spell == null && c.Hidden && odds > 50 && odds < 70)
-            {
+			if (spell == null && c.Hidden && odds > 0.50 && odds < 0.70)
+            		{
 				bool foundhidden = false;
 
 				//reveal them
-                if (GetMaxCircle(m_Mobile) >= 6 && Utility.RandomDouble() > 0.66 && m_Mobile.InRange( c,  m_Mobile.RangePerception) )
-                {
-                    List<Mobile> targets = new List<Mobile>();
+				if (GetMaxCircle(m_Mobile) >= 6 && Utility.RandomDouble() > 0.66 && m_Mobile.InRange( c,  m_Mobile.RangePerception) )
+				{
+				    List<Mobile> targets = new List<Mobile>();
 
-                    Map map = m_Mobile.Map;
-                    IPoint3D p = m_Mobile.Location;
+				    Map map = m_Mobile.Map;
+				    IPoint3D p = m_Mobile.Location;
 
-                    if ( map != null )
-                    {
-                        IPooledEnumerable eable = map.GetMobilesInRange( new Point3D( p ), 1 + (int)(m_Mobile.Skills[SkillName.Magery].Value / 20.0) );
+				    if ( map != null )
+				    {
+					IPooledEnumerable eable = map.GetMobilesInRange( new Point3D( p ), 1 + (int)(m_Mobile.Skills[SkillName.Magery].Value / 20.0) );
 
-                        foreach ( Mobile m in eable )
-                        {
-                            if ( m.Hidden && (m.AccessLevel == AccessLevel.Player || m_Mobile.AccessLevel > m.AccessLevel) && CheckDifficulty( m_Mobile, m ) )
-                                targets.Add( m );
-                        }
+					foreach ( Mobile m in eable )
+					{
+					    if ( m.Hidden && (m.AccessLevel == AccessLevel.Player || m_Mobile.AccessLevel > m.AccessLevel) && CheckDifficulty( m_Mobile, m ) )
+						targets.Add( m );
+					}
 
-                        eable.Free();
-                    }
+					eable.Free();
+				    }
 
-                    for ( int i = 0; i < targets.Count; ++i )
-                    {
-                        Mobile m = targets[i];
+				    for ( int i = 0; i < targets.Count; ++i )
+				    {
+					Mobile m = targets[i];
 
-                        m.RevealingAction();
+					m.RevealingAction();
 
-                        m.FixedParticles( 0x375A, 9, 20, 5049, Server.Items.CharacterDatabase.GetMySpellHue( m_Mobile, 0 ), 0, EffectLayer.Head );
-                        m.PlaySound( 0x1FD );
-						if (m.Player)
-							m.SendMessage("You've been revealed!");
+					m.FixedParticles( 0x375A, 9, 20, 5049, Server.Items.CharacterDatabase.GetMySpellHue( m_Mobile, 0 ), 0, EffectLayer.Head );
+					m.PlaySound( 0x1FD );
+								if (m.Player)
+									m.SendMessage("You've been revealed!");
 
-						foundhidden = true;
-                    }
-                }
+								foundhidden = true;
+				    }
+                		}
 				if (foundhidden) //did an action this time
 					return null;
-            }
+            		}
 
 
 			//small chance of blessing

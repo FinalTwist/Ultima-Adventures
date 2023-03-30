@@ -6868,7 +6868,12 @@ namespace Server.Mobiles
 				if ( MyServerSettings.BuyChance() ){Add( typeof( SkullDemon ), Utility.Random( 100,300 ) ); }  
 				if ( MyServerSettings.BuyChance() ){Add( typeof( SkullGiant ), Utility.Random( 100,300 ) ); }  
 				if ( MyServerSettings.BuyChance() ){ Add( typeof( MixingCauldron ), 123 ); }  
-				if ( MyServerSettings.BuyChance() ){ Add( typeof( MixingSpoon ), 17 ); }  
+				if ( MyServerSettings.BuyChance() ){ Add( typeof( MixingSpoon ), 17 ); } 
+				if ( MyServerSettings.BuyChance() ){Add( typeof( BoneArms ), 94 ); } 
+				if ( MyServerSettings.BuyChance() ){Add( typeof( BoneChest ), 121 ); } 
+				if ( MyServerSettings.BuyChance() ){Add( typeof( BoneGloves ), 72 ); } 
+				if ( MyServerSettings.BuyChance() ){Add( typeof( BoneLegs ), 109 ); } 
+				if ( MyServerSettings.BuyChance() ){Add( typeof( BoneSkirt ), 109 ); }				
 				if ( MyServerSettings.BuyRareChance() ){ Add( typeof( MyNecromancerSpellbook ), Utility.Random( 250,1000 ) ); } 
 				Add( typeof( CorpseSailor ), Utility.RandomMinMax( 50, 300 ) );
 				Add( typeof( CorpseChest ), Utility.RandomMinMax( 50, 300 ) );

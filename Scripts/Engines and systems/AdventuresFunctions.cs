@@ -1372,24 +1372,23 @@ namespace Server.Misc
 
 			if (bones.Map != null && bones.Map == Map.Trammel)
 			{
-				chances -= 0.20;
-				if (Utility.RandomBool())
+				if (Utility.RandomBool()) //cutting spawn rate by half in sosaria
 					return;
 			}
 
-			if (count <= 3 && chances > 0.75)
+			if (count <= 3 && chances >= 0.98)
 				{
 					spawn = true;
 				}
-			else if (count <= 6 && chances > 0.55)
+			else if (count <= 6 && chances > 0.93)
 				{
 					spawn = true;
 				}
-			else if (count <= 10 && chances > 0.30)
+			else if (count <= 10 && chances > 0.85)
 				{
 					spawn = true;
 				}
-			else if (count >= 15 && chances > 0.10)
+			else if (count >= 15 && chances > 0.75)
 				{
 					spawn = true;
 				}

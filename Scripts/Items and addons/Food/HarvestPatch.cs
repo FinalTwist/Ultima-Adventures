@@ -72,7 +72,7 @@ namespace Server.Items
 						else
 						{
 							if ( --m_crops == 0 )
-								Timer.DelayCall( TimeSpan.FromMinutes( 30 ), new TimerCallback( Respawn ) );
+								Timer.DelayCall( TimeSpan.FromMinutes( 150 ), new TimerCallback( Respawn ) );
 
 							from.SendMessage( "You harvest some of the crop and put it in your pack." ); // You pick some fruit and put it in your backpack.
 						}
@@ -121,7 +121,7 @@ namespace Server.Items
 							    m_crops --;
 							}
                                 
-						    Timer.DelayCall( TimeSpan.FromMinutes( Utility.RandomMinMax(10, 30) ), new TimerCallback( Respawn ) );
+						    Timer.DelayCall( TimeSpan.FromMinutes( Utility.RandomMinMax(150, 180) ), new TimerCallback( Respawn ) );
 						    from.SendMessage( "You harvest the crop and put it in your pack." ); // You pick some fruit and put it in your backpack.
 						}
 					}
