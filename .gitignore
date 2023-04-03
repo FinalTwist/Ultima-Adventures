@@ -32,6 +32,7 @@
 *.csproj.user
 *.DotSettings.user
 *.ini
+*.cs.bak
 
 # Include Data Files
 !/Data/*
