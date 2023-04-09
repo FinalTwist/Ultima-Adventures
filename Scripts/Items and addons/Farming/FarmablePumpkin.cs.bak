@@ -1,0 +1,50 @@
+using System;
+using Server;
+using Server.Network;
+
+namespace Server.Items
+{
+	public class FarmablePumpkin : FarmableCrop
+	{
+		public static int GetCropID()
+		{
+			return Utility.RandomList( 0x53C9, 0x53CA, 0x53CB, 0x53CC );
+		}
+
+		public override Item GetCropObject()
+		{
+			Pumpkin pumpkin = new Pumpkin();
+			return pumpkin;
+		}
+
+		public override int GetPickedID()
+		{
+			return Utility.RandomList( 0x0C5F, 0x0C60 );
+		}
+
+		[Constructable]
+		public FarmablePumpkin(): base( GetCropID() )
+		{
+			Name = "pumpkin";
+		}
+
+		public FarmablePumpkin( Serial serial )
+			: base( serial )
+		{
+		}
+
+		public override void Serialize( GenericWriter writer )
+		{
+			base.Serialize( writer );
+
+			writer.WriteEncodedInt( (int) 0 ); // version
+		}
+
+		public override void Deserialize( GenericReader reader )
+		{
+			base.Deserialize( reader );
+
+			int version = reader.ReadEncodedInt();
+		}
+	}
+}

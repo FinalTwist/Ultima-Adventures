@@ -1,0 +1,74 @@
+Admin Commands
+All commands are activated by typing a prefix of [ (left bracket)
+Command Effect
+
+Add - Creates the variable object
+Admin - Lists the Accounts with Administrator rights currently logged in.
+Animate - Causes the Target to perform the designated animation.
+APN - Toggles On/Off Auto Page Notify
+AutoPageNotify - Toggles On/Off Auto Page Notify
+B - Broadcast the message to all accounts currently logged in
+Ban - Bans the targetted player
+Bank - Opens the target's bank box
+BC - Broadcast the message to all accounts currently logged in
+BCAST - Broadcast the message to all accounts currently logged in
+Cast - Auto-Casts the designated spell
+Client - Displays Target Client Version information
+Delete - Deletes targetted object
+Dismount - Dismounts from steed
+DocGen - Generates Documents
+Dupe - Duplicates the targetted object
+DupeInBag - Duplicates the targetted object in bag
+Firewall - Displays Firewall information
+Get - Displays Property information
+GetSkill - Displays skill information
+Go - Opens 'Go' gump menu
+Grab - Optional player loot package
+GuildProps - Displays target's guild information
+Help - Displays Help gump
+Hide - Hides target
+Immortal - Causes the target to become invulnerable
+IncX - Adds/Subtracts from the targets X coordinate
+IncXYZ - Adds/Subtracts from the targets X/Y/Z coordinates
+IncY - Adds/Subtracts from the targets Y coordinate
+IncZ - Adds/Subtracts from the targets Z coordinate
+Invul - Causes the target to become invulnerable
+Kick - Disconnects Target
+Kill - Kills the Target
+Mortal - Causes the target to become vulnerable / mortal
+MOTD - Edits/Displays the Message of the Day
+Move - Moves target object/player to selected position
+NewX - Sets the target object/players X coordinate
+NewXYZ - Sets the target object/players XYZ coordinates
+NewY - Sets the target object/players Y coordinate
+NewZ - Sets the target object/players Z coordinate
+NoInvul - Causes the target to become vulnerable / mortal
+Objlist - Generates an html document listing all objects currently spawned on the shard
+Pages - Displays GM pages
+Props - Displays Property information
+Recompile - Recompiles Scripts
+Remove - Deletes targetted object
+Res - Resurrects Target Player (would be nice if someone made npcs ress-able as well)
+Resurrect - Resurrects Target Player (would be nice if someone made npcs ress-able as well)
+S - Sends variable message to all currently logged in staff
+Save - Causes the world to save
+Set - Sets variable property to target
+SetSkill - Sets variable skill on target
+ShaveBeard - Shaves targets beard
+ShaveHair - Shaves targets hair
+SignGen - Generates all world signs using signs.cfg
+Skills - Displays a skill menu
+SM - Sends variable message to all currently logged in staff
+SMSG - Sends variable message to all currently logged in staff
+Stuck - Used by players when physically unable to move due to map/script flaw
+Tele - Teleports user to target location
+Teleport - Teleports user to target location
+TelGen - Generates standard world teleporters
+Tile - Tiles variable object in a bounding box
+Unhide - Unhides target
+Who - Displays a list of all currently logged in users
+Wholist - Displays a list of all currently logged in users
+Wipe - Destroys all objects in a bounding box
+WipeItems - Destroys all items (in a bounding box)
+WipeNPCs - Kills all NPCs (in a bounding box)
+WipMultis - Destroys all multis (in a bounding box)
