@@ -1,0 +1,39 @@
+# Assemblies
+/Server/bin
+/Server/obj
+/Scripts/bin
+/Scripts/obj
+/Scripts/Output
+
+# Common Directories
+/Backups
+/Documentation
+/Files
+/Info
+/Logs
+/Saves
+
+# Custom Directories
+/UltimaLive
+
+# Common Files
+/System.Drawing.Common.dll
+
+# Wildcard Files
+*.pdb
+*.exe
+*.exe.mdb
+*.exe.config
+*.sh
+*.suo
+*.idea
+*.log
+*.bin
+*.csproj.user
+*.DotSettings.user
+*.ini
+*.cs.bak
+
+# Include Data Files
+!/Data/*
+
