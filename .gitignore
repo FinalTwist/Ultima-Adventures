@@ -19,6 +19,9 @@
 # Common Files
 /System.Drawing.Common.dll
 
+#Directory setting file 
+/Scripts/MyServerSettings.cs
+
 # Wildcard Files
 *.pdb
 *.exe
