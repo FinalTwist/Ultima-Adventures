@@ -7,7 +7,6 @@ I can't claim all of the code here, as a large portion of it was taken by public
 
 The original fork thread, discussion, feature list, etc can be found on servuo forums:  https://www.servuo.com/archive/ultima-adventures-a-full-featured-content-packed-offline-online-server.1374/
 
-////
 How to play/Use this git
 
 The Git is meant to be used together with a client package you can download in the release area.  To play:
