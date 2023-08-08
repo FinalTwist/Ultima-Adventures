@@ -1,0 +1,1533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A85850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="0A850A0A85850A8585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="0A85858585850A850A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A8585850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A0A8585850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="850A0A85850A85850A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A0A850A858585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="8585850A850A850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="8585850A85850A0A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle EW" HashKey="0A85850A85850A8585">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A85850A850A850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A8585850A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A85850A0A8585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A85850A850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A0A850A850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle INS" HashKey="85850A8585850A8585">
+    <MapTiles>
+      <MapTile TileID="22" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A850A85850A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A85850A850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A85850A850A858585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SN" HashKey="0A850A858585858585">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle WE" HashKey="85850A85850A858585">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="8585850A85850A850A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85858585850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="0A0A0A85858585850A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NS" HashKey="858585858585850A0A">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A850A85850A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="85850A0A850A0A8585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A85850A0A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A858585850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A0A850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="85850A0A8585858585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85858585850A0A850A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A8585850A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="8585850A8585850A85">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A0A850A85850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEB" HashKey="85858585858585850A">
+    <MapTiles>
+      <MapTile TileID="651" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="8585850A850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A8585850A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A858585850A0A8585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SN" HashKey="850A85858585858585">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85858585850A850A85">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A0A85850A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A0A85850A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A8585850A0A8585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NS" HashKey="8585858585850A0A85">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A0A850A850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A8585850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="0A0A0A0A85850A8585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A0A850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A0A850A858585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle EW" HashKey="0A85858585850A8585">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A0A858585850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85850A8585850A0A85">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="850A850A85850A8585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A850A850A85850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="0A858585850A858585">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A0A85850A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="8585850A858585850A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A0A850A0A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85850A85850A850A85">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A85850A850A0A8585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A0A8585850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="0A850A85850A85850A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="85850A0A850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A850A850A850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle WE" HashKey="85850A85858585850A">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle EW" HashKey="0A85850A8585858585">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A85850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A0A850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A8585850A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="85850A0A8585850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85850A85850A0A850A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle EW" HashKey="8585850A8585858585">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A850A850A850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="0A850A85850A858585">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A85850A850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="8585850A850A0A8585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85850A858585850A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A850A85850A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A8585850A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85850A85850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="85850A0A85850A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle WE" HashKey="85858585850A858585">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A850A850A85850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A85858585850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A8585850A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWB" HashKey="8585858585850A8585">
+    <MapTiles>
+      <MapTile TileID="653" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A8585850A0A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A850A8585850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="85850A0A85850A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="85850A0A850A850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="0A0A8585858585850A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="0A85858585850A0A85">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A850A850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A858585850A850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A850A85850A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="850A858585850A8585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A8585850A850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="850A8585850A858585">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A0A85850A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A85850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A858585850A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle IWE" HashKey="0A858585858585850A">
+    <MapTiles>
+      <MapTile TileID="22" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="0A85850A8585850A85">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A850A850A0A8585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A858585850A0A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A0A8585850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="850A850A8585858585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A85850A0A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="0A8585858585850A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A85850A850A85850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A0A858585850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="850A0A85858585850A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="8585850A850A850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A0A850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="0A85850A85850A850A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A85850A850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A858585850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A85850A850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A85850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="8585850A850A85850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle EW" HashKey="8585850A85850A8585">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="0A85850A85850A0A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="0A0A850A8585858585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="85850A0A850A858585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="0A0A0A85850A85850A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A0A8585850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A850A850A0A8585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A858585850A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85858585850A0A8585">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A8585850A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="0A0A8585850A858585">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A8585850A850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A0A858585850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="0A0A858585850A8585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A850A850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A858585850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="850A8585858585850A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A0A850A850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A0A850A850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A850A8585850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A8585850A0A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="850A0A0A8585858585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="0A85850A858585850A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A0A850A850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A0A85850A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A85850A0A8585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A0A850A0A8585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A85858585850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A0A85850A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A0A85850A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A85850A850A0A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85850A8585850A0A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A850A85850A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="850A0A85850A858585">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A0A850A85850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A858585850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A85850A850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A0A850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85850A85850A850A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="8585850A85850A0A85">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="850A0A8585850A8585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A0A850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A85850A0A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A0A8585850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85850A8585850A850A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="85850A0A850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A850A850A850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="0A850A85858585850A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A8585850A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A0A85850A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle WE" HashKey="85850A85850A85850A">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="85850A0A8585850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85858585850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SN" HashKey="0A0A0A858585858585">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NS" HashKey="858585858585850A85">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A85850A850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="85850A0A850A0A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="8585850A850A0A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85850A858585850A85">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A858585850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="0A0A850A85850A8585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A8585850A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="85850A0A858585850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85850A85850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="8585850A8585850A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle WE" HashKey="85858585850A85850A">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A850A850A858585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A0A850A0A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="8585850A850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NS" HashKey="8585858585850A850A">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A8585850A0A8585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A0A8585850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="85850A0A85850A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85858585850A850A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A0A850A850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SN" HashKey="0A0A85858585858585">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="0A85858585850A0A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NS" HashKey="8585858585850A0A0A">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A858585850A850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A8585850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A0A850A85850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="850A0A0A85850A8585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A85850A850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A0A850A858585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="0A850A0A8585858585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A850A850A858585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="0A858585850A85850A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="0A85850A8585850A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A0A850A0A8585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A85850A0A8585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="0A8585858585850A85">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEB" HashKey="85850A858585858585">
+    <MapTiles>
+      <MapTile TileID="652" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SN" HashKey="850A0A858585858585">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A8585850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A850A85850A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="0A850A8585850A8585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWA" HashKey="85850A85850A0A8585">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A850A850A850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A85850A850A850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A858585850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="8585850A850A858585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="0A0A0A8585850A8585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NEA" HashKey="0A85850A85850A0A85">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A850A858585850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="85850A0A85850A8585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="85850A0A850A85850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="0A0A0A85850A858585">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A850A850A0A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A858585850A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A0A850A0A8585">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A850A858585850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A850A8585850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="0A0A8585850A85850A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="85850A0A850A850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A8585850A850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SEA" HashKey="0A0A0A0A8585858585">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A850A858585850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A850A850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A858585850A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A85858585850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A858585850A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A850A850A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A8585850A850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle SWA" HashKey="850A8585850A85850A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A850A8585850A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A85850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A858585850A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle NWB" HashKey="0A8585858585858585">
+    <MapTiles>
+      <MapTile TileID="650" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="0A0A0A85850A0A0A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A858585850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A0A85850A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A850A850A0A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A0A0A850A0A850A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Beach to Jungle AC" HashKey="850A85858585850A85">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

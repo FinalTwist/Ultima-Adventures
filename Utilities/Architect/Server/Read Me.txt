@@ -1,0 +1,7 @@
+Installing
+
+1. Put the OrbRemoteServer folder into your Custom Script folder.
+2. Put the OrbServerSDK & UOArchitectInterface libraries into your core directory.
+3. Put System.Runtime.Remoting or your own local copy into your core directory.
+4. Open Data\Assemblies and add the new dlls.
+5. Configure your router to handle port forwarding for 2595 if needed.

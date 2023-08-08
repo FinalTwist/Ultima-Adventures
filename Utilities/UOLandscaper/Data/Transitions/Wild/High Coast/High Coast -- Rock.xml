@@ -1,0 +1,1324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="4D4D4D124D4D121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D124D4D4D121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="124D4D124D4D124D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="124D124D4D124D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="12124D124D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SN" HashKey="1212124D4D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="12124D4D4D4D4D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast (High) to Rock SWA" HashKey="1212124D4D124D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-11" />
+      <MapTile TileID="557" AltIDMod="-11" />
+      <MapTile TileID="558" AltIDMod="-11" />
+      <MapTile TileID="559" AltIDMod="-11" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="124D12124D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWB" HashKey="124D4D4D4D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock WE" HashKey="4D4D4D4D4D124D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="124D124D4D4D4D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SN" HashKey="4D12124D4D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock WE" HashKey="4D4D124D4D124D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="4D4D4D124D4D4D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock WE" HashKey="4D4D124D4D4D4D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="1212124D4D124D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="124D4D4D4D124D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="12124D4D4D124D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="4D4D12124D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="4D12124D4D124D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D124D4D12121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NS" HashKey="4D4D4D4D4D4D4D1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="4D124D4D4D4D4D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="124D124D4D124D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="4D124D124D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D124D4D124D124D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="4D4D4D124D4D124D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D124D4D4D124D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="124D4D124D4D121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="12124D124D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NS" HashKey="4D4D4D4D4D4D12124D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="124D4D124D4D4D124D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="124D12124D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock EW" HashKey="124D4D4D4D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D4D4D4D12124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D124D4D12124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="4D4D4D124D4D4D1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D124D4D4D4D1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="12124D4D4D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="121212124D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="4D124D124D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="1212124D4D4D4D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D124D4D4D12124D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="124D124D4D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock EW" HashKey="124D4D124D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NS" HashKey="4D4D4D4D4D4D124D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="124D4D4D4D4D4D124D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D4D4D4D124D124D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="1212124D4D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="124D4D4D4D4D121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D4D4D4D12121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock EW" HashKey="4D4D4D124D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEB" HashKey="4D4D124D4D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="4D4D12124D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="124D4D4D4D124D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="12124D4D4D124D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock WE" HashKey="4D4D124D4D124D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="4D1212124D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SN" HashKey="4D124D4D4D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SN" HashKey="12124D4D4D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="121212124D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="4D12124D4D4D4D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="4D124D4D4D124D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock WE" HashKey="4D4D4D4D4D124D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SN" HashKey="124D124D4D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock EW" HashKey="124D4D124D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NS" HashKey="4D4D4D4D4D4D121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="4D12124D4D124D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D124D4D1212124D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEB" HashKey="4D4D4D4D4D4D4D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NS" HashKey="4D4D4D4D4D4D4D124D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="124D4D4D4D4D124D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D4D4D4D12124D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D124D4D124D1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock EW" HashKey="4D4D4D124D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="124D4D124D4D12124D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="4D4D4D124D4D12124D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="4D1212124D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="4D124D4D4D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="124D4D124D4D4D1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="124D4D124D4D4D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWB" HashKey="4D4D4D4D4D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="124D4D4D4D4D4D1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D4D4D4D124D1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D124D4D12124D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="4D4D4D124D4D4D124D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D124D4D4D4D124D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SWA" HashKey="4D124D4D4D124D4D12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock SEA" HashKey="4D12124D4D4D124D4D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NEA" HashKey="124D4D4D4D4D12124D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Rock NWA" HashKey="4D4D4D4D4D1212124D">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-13" />
+      <MapTile TileID="557" AltIDMod="-13" />
+      <MapTile TileID="558" AltIDMod="-13" />
+      <MapTile TileID="559" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

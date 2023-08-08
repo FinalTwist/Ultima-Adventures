@@ -43,6 +43,7 @@ namespace Server.Mobiles
 
 			VirtualArmor = 80;
 			captured = false;
+			
 			type = 5;
 			
 

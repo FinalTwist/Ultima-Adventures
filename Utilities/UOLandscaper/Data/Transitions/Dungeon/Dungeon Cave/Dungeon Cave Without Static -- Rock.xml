@@ -1,0 +1,1126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A124A124A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A4A4A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="0" />
+      <MapTile TileID="582" AltIDMod="0" />
+      <MapTile TileID="583" AltIDMod="0" />
+      <MapTile TileID="584" AltIDMod="0" />
+      <MapTile TileID="585" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="12124A4A4A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A12121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A1212124A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A124A4A4A1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A124A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="0" />
+      <MapTile TileID="582" AltIDMod="0" />
+      <MapTile TileID="583" AltIDMod="0" />
+      <MapTile TileID="584" AltIDMod="0" />
+      <MapTile TileID="585" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A124A124A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A124A4A124A4A12">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A124A4A12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A124A4A4A124A4A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="121212124A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A1212124A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A4A4A124A4A12">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A124A4A4A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A4A4A4A12124A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="12124A4A4A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A12124A4A4A4A4A12">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A124A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="1212124A4A124A4A12">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A124A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A124A4A12124A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A124A4A124A12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A4A4A124A4A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A124A4A4A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="121212124A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A1212124A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A12124A4A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="0" />
+      <MapTile TileID="582" AltIDMod="0" />
+      <MapTile TileID="583" AltIDMod="0" />
+      <MapTile TileID="584" AltIDMod="0" />
+      <MapTile TileID="585" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A12124A12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="1212124A4A124A4A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A124A4A4A4A4A12">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A12124A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A12124A4A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A124A4A4A124A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A12124A4A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A4A4A4A124A12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="12124A4A4A124A4A12">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A124A124A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="1212124A4A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A4A4A4A4A1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A12124A4A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A4A12124A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A4A4A1212">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A4A121212">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A12124A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A4A124A12">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A4A4A4A4A124A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A124A4A124A4A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A4A12124A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A12124A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A124A4A4A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A124A4A4A4A12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="12124A124A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A124A4A4A1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A4A4A4A121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A124A4A121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A124A4A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A124A4A12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A124A1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="12124A4A4A124A4A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A124A4A124A12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A12124A4A124A4A12">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A4A124A12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A124A4A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A4A4A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A4A4A1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A124A4A4A124A4A12">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A12124A4A124A4A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A124A4A12124A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A4A4A124A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A4A4A4A12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A4A4A4A12">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="0" />
+      <MapTile TileID="582" AltIDMod="0" />
+      <MapTile TileID="583" AltIDMod="0" />
+      <MapTile TileID="584" AltIDMod="0" />
+      <MapTile TileID="585" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A124A1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A12121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="1212124A4A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A12124A12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A4A4A124A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A12124A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A1212124A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A124A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A124A124A4A4A4A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="1212124A4A4A4A4A12">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="12124A4A4A4A4A4A12">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A124A4A4A124A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A4A4A124A4A4A">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="124A4A124A4A4A4A12">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="12124A124A4A124A4A">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A4A124A4A121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A4A124A4A4A121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave Without Static To Rock" HashKey="4A124A4A4A4A4A4A12">
+    <MapTiles>
+      <MapTile TileID="559" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="556" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

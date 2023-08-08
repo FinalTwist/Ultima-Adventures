@@ -103,7 +103,7 @@ namespace Server.Mobiles
 			annoyed = Utility.RandomMinMax(20,100);
 			
 			
-			if (Title == "the Orphan")
+			if (Title == "the Orphan" && m_type != 5)
 				m_type = 5;
 			
 			else
@@ -244,7 +244,7 @@ namespace Server.Mobiles
 					case 3: m_type = 4; break; //thief
 				}
 			}
-			else if (m_type == 0 && (this.Title != null || this.Title != ""))
+			else if (m_type == 0 && this.Title != null && this.Title == "the Orphan")
 			{
 				m_type = 5;
 				this.Title = "the Orphan";
@@ -750,7 +750,7 @@ namespace Server.Mobiles
 				case 4: this.Body = 0x28; break; 
 			}
 
-			if (this.Title == "the Oprhan")
+			if (this.Title == "the Orphan" && m_type != 5)
 				m_type = 5;
 
 			else if (m_type == 0)

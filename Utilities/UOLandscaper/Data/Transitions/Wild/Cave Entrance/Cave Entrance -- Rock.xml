@@ -1,0 +1,691 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1214141212FF1212FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="121212121214FF1414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="64" />
+      <MapTile TileID="557" AltIDMod="64" />
+      <MapTile TileID="558" AltIDMod="64" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="14121214FFFF14FFFF">
+    <MapTiles>
+      <MapTile TileID="467" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1212FF121214141414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="60" />
+      <MapTile TileID="558" AltIDMod="60" />
+      <MapTile TileID="559" AltIDMod="60" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="14FFFF14FFFF121212">
+    <MapTiles>
+      <MapTile TileID="473" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="141412141212FF1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="60" />
+      <MapTile TileID="558" AltIDMod="60" />
+      <MapTile TileID="559" AltIDMod="60" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FF1414121214121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="60" />
+      <MapTile TileID="558" AltIDMod="60" />
+      <MapTile TileID="559" AltIDMod="60" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1212121212121414FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="60" />
+      <MapTile TileID="558" AltIDMod="60" />
+      <MapTile TileID="559" AltIDMod="60" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="141212141212FF1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="60" />
+      <MapTile TileID="558" AltIDMod="60" />
+      <MapTile TileID="559" AltIDMod="60" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="121212121212FFFF14">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="64" />
+      <MapTile TileID="557" AltIDMod="64" />
+      <MapTile TileID="558" AltIDMod="64" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FFFF14121214121214">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1212141212FF1212FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FF1212FF1212141212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1212FF1212FF121414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1212141212141212FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="64" />
+      <MapTile TileID="557" AltIDMod="64" />
+      <MapTile TileID="558" AltIDMod="64" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="141414FFFF14FFFF12">
+    <MapTiles>
+      <MapTile TileID="469" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="121212121214FFFF14">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="141414141212FF1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="60" />
+      <MapTile TileID="558" AltIDMod="60" />
+      <MapTile TileID="559" AltIDMod="60" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="14121214121214FFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="14141414FFFF12FFFF">
+    <MapTiles>
+      <MapTile TileID="467" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FFFF14FFFF14121414">
+    <MapTiles>
+      <MapTile TileID="471" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="12121214FFFF14FFFF">
+    <MapTiles>
+      <MapTile TileID="467" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1212FF121214121214">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="60" />
+      <MapTile TileID="558" AltIDMod="60" />
+      <MapTile TileID="559" AltIDMod="60" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1214141212141212FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="64" />
+      <MapTile TileID="557" AltIDMod="64" />
+      <MapTile TileID="558" AltIDMod="64" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1412121412121414FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="60" />
+      <MapTile TileID="558" AltIDMod="60" />
+      <MapTile TileID="559" AltIDMod="60" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="121414FFFF14FFFF14">
+    <MapTiles>
+      <MapTile TileID="469" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="12FFFF14FFFF141414">
+    <MapTiles>
+      <MapTile TileID="473" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1414FF141212141212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="64" />
+      <MapTile TileID="557" AltIDMod="64" />
+      <MapTile TileID="558" AltIDMod="64" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="141412FFFF12FFFF12">
+    <MapTiles>
+      <MapTile TileID="469" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="12121214121214FFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FF1212FF1212141412">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="14FFFF14FFFF141212">
+    <MapTiles>
+      <MapTile TileID="473" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1414FF141212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="64" />
+      <MapTile TileID="557" AltIDMod="64" />
+      <MapTile TileID="558" AltIDMod="64" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FFFF14FFFF14121212">
+    <MapTiles>
+      <MapTile TileID="471" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="14FFFF14FFFF141412">
+    <MapTiles>
+      <MapTile TileID="473" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="14141214FFFF14FFFF">
+    <MapTiles>
+      <MapTile TileID="467" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="14FFFF121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="141414FF1212FF1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FFFF14FFFF14121214">
+    <MapTiles>
+      <MapTile TileID="471" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FFFF14121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="141212FF1212FF1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FF1212FF1212141414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FF1414121214121214">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="60" />
+      <MapTile TileID="558" AltIDMod="60" />
+      <MapTile TileID="559" AltIDMod="60" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="14FFFF141212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="121214121214FF1414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="64" />
+      <MapTile TileID="557" AltIDMod="64" />
+      <MapTile TileID="558" AltIDMod="64" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="12141412FFFF12FFFF">
+    <MapTiles>
+      <MapTile TileID="467" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="121212FFFF14FFFF14">
+    <MapTiles>
+      <MapTile TileID="469" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1414FF121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="64" />
+      <MapTile TileID="557" AltIDMod="64" />
+      <MapTile TileID="558" AltIDMod="64" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1212FF1212FF121214">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="14141412FFFF12FFFF">
+    <MapTiles>
+      <MapTile TileID="467" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="141412FF1212FF1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FF1414121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="60" />
+      <MapTile TileID="558" AltIDMod="60" />
+      <MapTile TileID="559" AltIDMod="60" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1212FF121214121414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="60" />
+      <MapTile TileID="558" AltIDMod="60" />
+      <MapTile TileID="559" AltIDMod="60" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="14FFFF141212141212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FFFF12FFFF12141412">
+    <MapTiles>
+      <MapTile TileID="471" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="12FFFF12FFFF141414">
+    <MapTiles>
+      <MapTile TileID="473" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1212121412121414FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="60" />
+      <MapTile TileID="558" AltIDMod="60" />
+      <MapTile TileID="559" AltIDMod="60" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="121212121212FF1414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="64" />
+      <MapTile TileID="557" AltIDMod="64" />
+      <MapTile TileID="558" AltIDMod="64" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FFFF12FFFF12141414">
+    <MapTiles>
+      <MapTile TileID="471" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="121214121214FFFF14">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="121214FFFF14FFFF14">
+    <MapTiles>
+      <MapTile TileID="469" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="141414FFFF12FFFF12">
+    <MapTiles>
+      <MapTile TileID="469" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1212FF1212FF141414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="12FFFF12FFFF121414">
+    <MapTiles>
+      <MapTile TileID="473" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1414141212FF1212FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FF1212141212141212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="64" />
+      <MapTile TileID="557" AltIDMod="64" />
+      <MapTile TileID="558" AltIDMod="64" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FF1212141212141414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="64" />
+      <MapTile TileID="557" AltIDMod="64" />
+      <MapTile TileID="558" AltIDMod="64" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="1414141212141212FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="64" />
+      <MapTile TileID="557" AltIDMod="64" />
+      <MapTile TileID="558" AltIDMod="64" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FF1212141212141412">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="64" />
+      <MapTile TileID="557" AltIDMod="64" />
+      <MapTile TileID="558" AltIDMod="64" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FFFF12FFFF14141414">
+    <MapTiles>
+      <MapTile TileID="471" AltIDMod="40" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="FFFF14121214121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Rock" HashKey="12121212121214FFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

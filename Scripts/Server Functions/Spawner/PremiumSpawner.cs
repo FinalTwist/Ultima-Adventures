@@ -1302,19 +1302,19 @@ namespace Server.Mobiles
 			if (m_Creatures.Count == (m_Count-1) || m_Count == 1)
 			{
 				Region reg = Region.Find( this.Location, this.Map );
-				if ( (reg.IsPartOf( typeof(BardDungeonRegion) ) || reg.IsPartOf( typeof( DungeonRegion ) ) ) && Utility.RandomDouble() > 0.90 )
+				if ( (reg.IsPartOf( typeof(BardDungeonRegion) ) || reg.IsPartOf( typeof( DungeonRegion ) ) ) && Utility.RandomDouble() > 0.93 )
 				{
 					double bleh = Utility.RandomDouble();
 					if (m_Count <= 4)
 					{
-						if (bleh >= 0.75)
-							amount += Utility.RandomMinMax(2,3);
+						if (bleh >= 0.85)
+							amount += Utility.RandomMinMax(2,4);
 						else
-							amount += Utility.RandomMinMax(1,2);
+							amount += Utility.RandomMinMax(1,3);
 					}
 					else
 					{
-							amount += Utility.RandomMinMax(2,5);
+							amount += Utility.RandomMinMax(1,2);
 					}
 				}
 			}
@@ -1329,7 +1329,7 @@ namespace Server.Mobiles
 				{
 					Mobile m = (Mobile)ent;
 
-					if ( (m is Mangar || m is Exodus || m is Surtaz || m is Vulcrum || m is Arachnar || m is CaddelliteDragon) && amount > 0)
+					if ( ( m is Mangar || m is Exodus || m is Surtaz || m is Vulcrum || m is Arachnar || m is CaddelliteDragon || (m is BaseCreature && ( ((BaseCreature)m).HitsMaxSeed > 1000 || m.Fame > 15000 ) ) ) && amount > 0)
 						amount = 0;
 
 					m_Creatures.Add( m );
@@ -1421,19 +1421,19 @@ namespace Server.Mobiles
 			if (m_CreaturesA.Count == (m_CountA-1) || m_CountA == 1)
 			{
 				Region reg = Region.Find( this.Location, this.Map );
-				if ( (reg.IsPartOf( typeof( BardDungeonRegion ) ) || reg.IsPartOf( typeof( DungeonRegion ) ) ) && Utility.RandomDouble() > 0.90 )
+				if ( (reg.IsPartOf( typeof( BardDungeonRegion ) ) || reg.IsPartOf( typeof( DungeonRegion ) ) ) && Utility.RandomDouble() > 0.93 )
 				{
 					double bleh = Utility.RandomDouble();
 					if (m_CountA <= 4)
 					{
-						if (bleh >= 0.75)
+						if (bleh >= 0.85)
 							amount += Utility.RandomMinMax(2,3);
 						else
 							amount += Utility.RandomMinMax(1,2);
 					}
 					else
 					{
-							amount += Utility.RandomMinMax(2,5);
+							amount += Utility.RandomMinMax(1,2);
 					}
 				}
 			}
@@ -1448,7 +1448,7 @@ namespace Server.Mobiles
 				{
 					Mobile m = (Mobile)ent;
 
-					if ( (m is Mangar || m is Exodus || m is Surtaz || m is Vulcrum || m is Arachnar || m is CaddelliteDragon) && amount > 0)
+					if ( ( m is Mangar || m is Exodus || m is Surtaz || m is Vulcrum || m is Arachnar || m is CaddelliteDragon || (m is BaseCreature && ( ((BaseCreature)m).HitsMaxSeed > 1000 || m.Fame > 15000 ) ) ) && amount > 0)
 						amount = 0;
 
 					m_CreaturesA.Add( m );
@@ -1541,19 +1541,19 @@ namespace Server.Mobiles
 			if (m_CreaturesB.Count == (m_CountB-1) || m_CountB == 1)
 			{
 				Region reg = Region.Find( this.Location, this.Map );
-				if ( ( reg.IsPartOf( typeof( BardDungeonRegion ) ) || reg.IsPartOf( typeof( DungeonRegion ) ) ) && Utility.RandomDouble() > 0.85 )
+				if ( ( reg.IsPartOf( typeof( BardDungeonRegion ) ) || reg.IsPartOf( typeof( DungeonRegion ) ) ) && Utility.RandomDouble() > 0.93 )
 				{
 					double bleh = Utility.RandomDouble();
 					if (m_CountB <= 4)
 					{
-						if (bleh >= 0.75)
+						if (bleh >= 0.85)
 							amount += Utility.RandomMinMax(2,3);
 						else
 							amount += Utility.RandomMinMax(1,2);
 					}
 					else
 					{
-							amount += Utility.RandomMinMax(2,5);
+							amount += Utility.RandomMinMax(1,2);
 					}
 				}
 			}
@@ -1570,6 +1570,8 @@ namespace Server.Mobiles
 
 					m_CreaturesB.Add( m );
 					
+					if ( ( m is Mangar || m is Exodus || m is Surtaz || m is Vulcrum || m is Arachnar || m is CaddelliteDragon || (m is BaseCreature && ( ((BaseCreature)m).HitsMaxSeed > 1000 || m.Fame > 15000 ) ) ) && amount > 0)
+						amount = 0;
 
 					Point3D loc = ( m is BaseVendor ? this.Location : GetSpawnPosition() );
 					
@@ -1661,11 +1663,10 @@ namespace Server.Mobiles
 				Mobile m = (Mobile)ent;
 
 				m_CreaturesC.Add( m );
-				
 
 				Point3D loc = ( m is BaseVendor ? this.Location : GetSpawnPosition() );
 				
-								if ( m is WanderingHealer || m is Adventurers || m is Jedi )
+				if ( m is WanderingHealer || m is Adventurers || m is Jedi )
 				{
 					loc = GetSpawnPosition();
 				}
@@ -1753,11 +1754,10 @@ namespace Server.Mobiles
 				Mobile m = (Mobile)ent;
 
 				m_CreaturesD.Add( m );
-				
 
 				Point3D loc = ( m is BaseVendor ? this.Location : GetSpawnPosition() );
 				
-								if ( m is WanderingHealer || m is Adventurers || m is Jedi )
+				if ( m is WanderingHealer || m is Adventurers || m is Jedi )
 				{
 					loc = GetSpawnPosition();
 				}
@@ -1835,10 +1835,9 @@ namespace Server.Mobiles
 
 				m_CreaturesE.Add( m );
 				
-
 				Point3D loc = ( m is BaseVendor ? this.Location : GetSpawnPosition() );
 				
-								if ( m is WanderingHealer || m is Adventurers || m is Jedi )
+				if ( m is WanderingHealer || m is Adventurers || m is Jedi )
 				{
 					loc = GetSpawnPosition();
 				}

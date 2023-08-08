@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RandomStatics Chance="3">
+  <Statics Description="Bubbling Lave " Freq="5">
+    <Static TileID="6773" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Open Fire" Freq="5">
+    <Static TileID="6571" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Lava" Freq="5">
+    <Static TileID="13401" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Lava" Freq="5">
+    <Static TileID="13371" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Lava" Freq="5">
+    <Static TileID="13383" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+</RandomStatics>

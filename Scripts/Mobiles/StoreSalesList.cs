@@ -1340,7 +1340,7 @@ namespace Server.Mobiles
 			{
 				Add( new GenericBuyInfo( typeof( PowerCoil ), Utility.Random( 10000,20000 ), Utility.Random( 1,5 ), 0x8A7, 0 ) );
 				Add( new GenericBuyInfo( typeof( EmbalmingFluid ), Utility.Random( 100,200 ), Utility.Random( 15,55 ), 0xE0F, 0xBA1 ) );
-			}
+            }
 		}
 
 		public class InternalSellInfo : GenericSellInfo
@@ -5962,8 +5962,9 @@ namespace Server.Mobiles
 				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( typeof( LiquorBarrel ), 20000, Utility.Random( 1,4 ), 0x3DB9, 0 ) ); }
 				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( typeof( CheesePress ), 20000, Utility.Random( 1,4 ), 0x3DB9, 0 ) ); }
 				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( typeof( DeviceKit), 1000, Utility.Random( 1,2 ), 0x4F86, 0 ) ); }
-			
-			} 
+                if (MyServerSettings.SellChance()) { Add(new GenericBuyInfo(typeof(GogglesofScience), 1000, Utility.Random(1, 2), 0x3172, 0)); }
+
+            } 
 		} 
 
 		public class InternalSellInfo : GenericSellInfo 

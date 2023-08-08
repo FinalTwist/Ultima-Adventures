@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="132121132121212121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313211313211313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131321212121212121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121132121131313">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="132121132121131321">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212113211313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313131321212121">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121212121132121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="132121131321131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313131321131321">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121132121131321">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121131321131321">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="211313211313212121">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131321132121212121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="211313212113212113">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="132121131321131321">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="211313211313211313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313212113212113">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121212121211313">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121132121132121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="211313212113212121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313132121212121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="132121132121131313">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212113212113131313">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212113212113211313">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121212113212113">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131321132121132121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212113131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212113212121212121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313131313132121">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313211313212113">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212113212113212121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131321131321212121">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121212121131313">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121131321131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="211313211313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212113211313211313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313131313211313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313211313212121">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313131313131321">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="353" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="132121212121212121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121211313211313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131321131321132121">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121212121131321">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121212121212113">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="353" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="132121131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131321131321131321">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121211313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212113212113212113">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313131313212113">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131321131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121212113131313">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313131321132121">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="211313131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313132121132121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131321131321131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313212121212121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="211313211313212113">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="212121212113211313">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="211313212121212121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313212113212121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="132121132121132121">
+    <MapTiles>
+      <MapTile TileID="1092" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dark Sandstone To Blank" HashKey="131313131313212121">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

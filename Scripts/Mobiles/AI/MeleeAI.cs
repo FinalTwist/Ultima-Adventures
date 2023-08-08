@@ -3,56 +3,17 @@ using System.Collections;
 using Server.Targeting;
 using Server.Network;
 
+//
+// This is a first simple AI
+//
+//
+
 namespace Server.Mobiles
 {
 	public class MeleeAI : BaseAI
 	{
 		public MeleeAI(BaseCreature m) : base (m)
 		{
-		}
-
-		public void RunTo( Mobile m )
-		{
-			if( !SmartAI )
-			{
-				if( !MoveTo( m, true, m_Mobile.RangeFight ) )
-					OnFailedMove();
-
-				return;
-			}
-
-			if( !m_Mobile.InRange( m, m_Mobile.RangeFight ) )
-			{
-					if( !MoveTo( m, true, 1 ) )
-						OnFailedMove();
-			}
-		}
-		
-		public void OnFailedMove()
-		{
-			/*
-			if( !m_Mobile.DisallowAllMoves && !Server.Mobiles.BasePirate.IsSailor( m_Mobile ) && ( SmartAI ? Utility.Random( 4 ) == 0 : ScaleByMagery( TeleportChance ) > Utility.RandomDouble() ) )
-			{
-				if( m_Mobile.Target != null )
-					m_Mobile.Target.Cancel( m_Mobile, TargetCancelType.Canceled );
-
-				new TeleportSpell( m_Mobile, null ).Cast();
-
-				m_Mobile.DebugSay( "I am stuck, I'm going to try teleporting away" );
-			}
-			else */if( AcquireFocusMob( m_Mobile.RangePerception, m_Mobile.FightMode, false, false, true ) )
-			{
-				if( m_Mobile.Debug )
-					m_Mobile.DebugSay( "My move is blocked, so I am going to attack {0}", m_Mobile.FocusMob.Name );
-
-				m_Mobile.Combatant = m_Mobile.FocusMob;
-				Action = ActionType.Combat;
-			}
-			else
-			{
-				WalkRandom(0, 1, 1); // Final, can no longer be cornered! will try a random move anywhere
-				m_Mobile.DebugSay( "I am stuck" );
-			}
 		}
 
 		public override bool DoActionWander()
@@ -77,48 +38,19 @@ namespace Server.Mobiles
 
 		public override bool DoActionCombat()
 		{
-				/*if (Insensitive.Contains(strategy, "many") && CheckCanCastMagery(6))
-				{
-					return new MassCurse( m_Mobile, null );
-				}*/
-			
-
-			if ( m_Mobile.Combatant == null || m_Mobile.Combatant.Deleted || m_Mobile.Combatant.Map != m_Mobile.Map || !m_Mobile.Combatant.Alive || m_Mobile.Combatant.IsDeadBondedPet )
-			{
-				if (m_Mobile.Combatant.Alive && !m_Mobile.Combatant.Deleted && m_Mobile.Combatant != null)
-				{
-					FindEnemy(m_Mobile.Combatant);
-				}
-				if (m_Mobile.Combatant == null || m_Mobile.Combatant.Deleted || m_Mobile.Combatant.Map != m_Mobile.Map || !m_Mobile.Combatant.Alive || m_Mobile.Combatant.IsDeadBondedPet)
-				{
-					m_Mobile.DebugSay( "My combatant is gone, so my guard is up" );
-
-					Action = ActionType.Guard;
-					return true;
-				}
-			}
-
 			Mobile combatant = m_Mobile.Combatant;
-			string strategy = AssessStrategy(m_Mobile.Combatant);
-			int distance = (int)m_Mobile.GetDistanceToSqrt( m_Mobile.Combatant );
-			m_Mobile.Warmode = true;
+
+			if ( combatant == null || combatant.Deleted || combatant.Map != m_Mobile.Map || !combatant.Alive || combatant.IsDeadBondedPet )
+			{
+				m_Mobile.DebugSay( "My combatant is gone, so my guard is up" );
+
+				Action = ActionType.Guard;
+
+				return true;
+			}
 
 			if ( !m_Mobile.InRange( combatant, m_Mobile.RangePerception ) )
 			{
-				//Okay so someone went out of range, should we move to another nearby, or try and follow the combatant?
-				if (SmartAI && distance >= (m_Mobile.RangePerception + 3) && m_Mobile.InLOS(combatant) ) 
-				{
-					//they are still closeby, could charge
-					if ( m_Mobile is BaseCreature && m_Mobile.Stam > (m_Mobile.StamMax / 2) && Utility.RandomDouble() > 0.80)
-						CustomAbility.Charge.DoEffects((BaseCreature)m_Mobile, combatant, m_Mobile.DamageMin, m_Mobile.DamageMax);
-					//didnt charge, can maybe move there if the thing has low health?
-					else if ( Utility.RandomBool() && combatant.Hits < (combatant.Hits / 3) && Utility.RandomDouble() > 0.75 )
-					{
-
-					}//Runto combatant
-				}
-				
-				
 				// They are somewhat far away, can we find something else?
 
 				if ( AcquireFocusMob( m_Mobile.RangePerception, m_Mobile.FightMode, false, false, true ) )
@@ -215,19 +147,6 @@ namespace Server.Mobiles
 			}
 
 			return true;
-			
-			/* 
-			can add CustomAbility
-			Charge based on dex
-			ImpaleAOE
-			Ambush based on hiding
-			ThrowBoulder (rock?)
-			toxic spores (poisoning)
-			if shield, knockback, stun
-			takedown (if mounted)
-			*/
-			
-			
 		}
 
 		public override bool DoActionGuard()

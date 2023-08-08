@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RandomStatics Chance="1">
+  <Statics Description="Coconut palm" Freq="4">
+    <Static TileID="3221" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Date palm" Freq="4">
+    <Static TileID="3222" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Small palm" Freq="4">
+    <Static TileID="3225" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Small palm" Freq="4">
+    <Static TileID="3226" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Small palm" Freq="4">
+    <Static TileID="3227" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Small palm" Freq="4">
+    <Static TileID="3228" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Small palm" Freq="4">
+    <Static TileID="3229" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Ponytail palm" Freq="4">
+    <Static TileID="3238" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Banana tree (small)" Freq="2">
+    <Static TileID="3240" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Banana tree " Freq="2">
+    <Static TileID="3242" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Banana tree " Freq="2">
+    <Static TileID="3243" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Yucca " Freq="3">
+    <Static TileID="3383" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Yucca " Freq="3">
+    <Static TileID="3384" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Grasses" Freq="5">
+    <Static TileID="3378" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Grasses" Freq="7">
+    <Static TileID="3379" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="1">
+    <Static TileID="4962" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="1">
+    <Static TileID="4963" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="5">
+    <Static TileID="4965" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="5">
+    <Static TileID="4966" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="5">
+    <Static TileID="4967" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="4">
+    <Static TileID="4968" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="1">
+    <Static TileID="4969" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="7">
+    <Static TileID="4970" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="4">
+    <Static TileID="4971" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="4">
+    <Static TileID="4972" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="4">
+    <Static TileID="4973" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="1">
+    <Static TileID="6001" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="1">
+    <Static TileID="6002" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="1">
+    <Static TileID="6003" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="1">
+    <Static TileID="6004" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="1">
+    <Static TileID="6005" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="1">
+    <Static TileID="6006" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="1">
+    <Static TileID="6007" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="1">
+    <Static TileID="6008" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="1">
+    <Static TileID="6009" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="4">
+    <Static TileID="6010" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="4">
+    <Static TileID="6011" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Rocks" Freq="4">
+    <Static TileID="6012" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Shells" Freq="10">
+    <Static TileID="4036" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="4038" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Shells" Freq="10">
+    <Static TileID="4039" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Shells" Freq="10">
+    <Static TileID="4044" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="4041" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="4042" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Shells" Freq="10">
+    <Static TileID="4040" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="4042" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="4041" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="4036" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Beach Camp" Freq="10">
+    <Static TileID="4041" X="-2" Y="0" Z="0" Hue="0" />
+    <Static TileID="4038" X="0" Y="2" Z="0" Hue="0" />
+    <Static TileID="4036" X="0" Y="2" Z="0" Hue="0" />
+    <Static TileID="4036" X="2" Y="-1" Z="0" Hue="0" />
+    <Static TileID="3221" X="4" Y="0" Z="0" Hue="0" />
+    <Static TileID="3222" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="3225" X="0" Y="1" Z="0" Hue="0" />
+    <Static TileID="3378" X="5" Y="0" Z="0" Hue="0" />
+    <Static TileID="3378" X="1" Y="2" Z="0" Hue="0" />
+    <Static TileID="3378" X="3" Y="-1" Z="0" Hue="0" />
+    <Static TileID="3379" X="4" Y="1" Z="0" Hue="0" />
+    <Static TileID="3379" X="0" Y="1" Z="0" Hue="0" />
+    <Static TileID="3233" X="5" Y="1" Z="0" Hue="0" />
+  </Statics>
+</RandomStatics>

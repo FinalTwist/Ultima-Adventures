@@ -4845,9 +4845,9 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			bool yeah = true;
 			
 			Item stone = this.FindItemOnLayer( Layer.Talisman );
-			//if ( (stone != null && !(stone is PhilosopherStone)) || stone == null )
-			//	yeah = false;
-			//commented out since it doesnt exist yet
+			    if ( (stone != null && !(stone is PhilosophersStone)) || stone == null )
+				yeah = false;
+			
 
 			Item neck = this.FindItemOnLayer( Layer.Neck );
 			if (neck != null && !(neck is BaseClothing))
@@ -4929,13 +4929,13 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				//total 250% bonus damage
 				
 				//50 pts for alchemy
-				bonus += 0.5 * (Skills[SkillName.Alchemy].Value / 120);
+				bonus += 0.2 * (Skills[SkillName.Alchemy].Value / 120);
 				
 				//50 pts for dex
-				bonus += 0.5 * ((double)Dex/500);
+				bonus += 0.2 * ((double)Dex/500);
 				
 				//50 pts base
-				bonus += 0.5;
+				bonus += 0.2;
 				
 				//100 pts TasteID
 				bonus += 1.0 * (Skills[SkillName.TasteID].Value / 120);
@@ -5764,8 +5764,9 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				
 			if (this.Troubadour())
 				list.Add ( "Wandering Troubadour - teller of tales." );
-				
-			if (this.BAC > 0)
+            if (this.Alchemist())
+                list.Add("Mad Chemist - For Great Science!!.");
+            if (this.BAC > 0)
 			{
 				string drunk = "a little tipsy";
 				

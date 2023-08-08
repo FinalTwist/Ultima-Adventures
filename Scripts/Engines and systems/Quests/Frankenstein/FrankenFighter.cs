@@ -199,7 +199,7 @@ namespace Server.Mobiles
 		{
 			base.OnThink();
 
-			if (!m_Threwpot && ( m_lesspots > 0 || m_greatpots > 0 ) && ControlMaster != null && ControlMaster is PlayerMobile && ((PlayerMobile)ControlMaster).Alchemist() && Utility.RandomDouble() > 0.85)
+			if (!m_Threwpot && ( m_lesspots > 0 || m_greatpots > 0 || m_pots > 0 ) && ControlMaster != null && ControlMaster is PlayerMobile && ((PlayerMobile)ControlMaster).Alchemist() && Utility.RandomDouble() > 0.85)
 			{
 				if (this.Combatant != null && InLOS( this.Combatant ) && (int)GetDistanceToSqrt( this.Combatant ) > 3 && (int)GetDistanceToSqrt( this.Combatant ) < 15 )
 				{
@@ -250,13 +250,13 @@ namespace Server.Mobiles
 				explosion = new ExplosionPotion();
 				m_pots --;
 			}
-			else
+			else if (m_greatpots > 0)
 			{
 				explosion = new GreaterExplosionPotion();
 				m_greatpots --;
 			}
 
-		    if( explosion != null && explosion.Amount > 0)
+		    if( explosion != null )
 		    {
 
 				explosion.Internalize();

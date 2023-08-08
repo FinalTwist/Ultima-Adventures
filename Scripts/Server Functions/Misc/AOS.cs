@@ -109,6 +109,10 @@ namespace Server
 			{	
 				totalDamage = (int)((double)damage * (1+ (from.Skills[SkillName.Wrestling].Value / 120) + (from.Dex / 300) ) );
 			}
+			else if (magic && from is PlayerMobile && ((PlayerMobile)from).Alchemist() ) //alchemists do less magic damage
+			{
+				damage = (int)((double)damage * 0.10);
+			}
 			else if (magic && from is PlayerMobile && ((PlayerMobile)from).Sorcerer() && Spells.Fourth.CurseSpell.UnderEffect( m ) )
 			{
 				
@@ -135,83 +139,101 @@ namespace Server
 				
 				totalDamage = damage;
 			}
-			else if( !ignoreArmor )
-			{
-				// Armor Ignore on OSI ignores all defenses, not just physical.
-				int resPhys = m.PhysicalResistance;
-				int resFire = m.FireResistance;
-				int resCold = m.ColdResistance;
-				int resPois = m.PoisonResistance;
-				int resNrgy = m.EnergyResistance;
 
-				totalDamage  = damage * phys * (100 - resPhys);
-				totalDamage += damage * fire * (100 - resFire);
-				totalDamage += damage * cold * (100 - resCold);
-				totalDamage += damage * pois * (100 - resPois);
-				totalDamage += damage * nrgy * (100 - resNrgy);
+            //Add points to PhilosophersStone 
 
-				totalDamage /= 10000;
 
-				if ( Core.ML )
-				{
-					totalDamage += damage * direct / 100;
+            else if (from is PlayerMobile && ((PlayerMobile)from).Alchemist())
+            {
 
-					if ( quiver != null && !(AdventuresFunctions.IsInMidland((object)from)))
-						totalDamage += totalDamage * quiver.DamageIncrease / 100;
-				}
+               if (Utility.Random(2) == 1)
+               {
+                    PhilosophersStone trinket = null;
+                    trinket = from.FindItemOnLayer(Layer.Talisman) as PhilosophersStone;
+                    trinket.ApplyGain();
+                }
+            }
 
-				if( totalDamage < 1 )
-					totalDamage = 1;
-			}
-			else if( Core.ML && m is PlayerMobile && from is PlayerMobile )
-			{
-				if ( quiver != null && !(AdventuresFunctions.IsInMidland((object)from)))
-					damage += damage * quiver.DamageIncrease / 100;
+            else if (!ignoreArmor)
+            {
+                // Armor Ignore on OSI ignores all defenses, not just physical.
+                int resPhys = m.PhysicalResistance;
+                int resFire = m.FireResistance;
+                int resCold = m.ColdResistance;
+                int resPois = m.PoisonResistance;
+                int resNrgy = m.EnergyResistance;
 
-				if ( !deathStrike )
-					totalDamage = Math.Min( damage, 35 );	// Direct Damage cap of 35
-				else
-					totalDamage = Math.Min( damage, 70 );	// Direct Damage cap of 70
-			}
-			else 
-			{
-			/*	change to be implemented later 
-				int resPhys = m.PhysicalResistance;
-				int resFire = m.FireResistance;
-				int resCold = m.ColdResistance;
-				int resPois = m.PoisonResistance;
-				int resNrgy = m.EnergyResistance;
+                totalDamage = damage * phys * (100 - resPhys);
+                totalDamage += damage * fire * (100 - resFire);
+                totalDamage += damage * cold * (100 - resCold);
+                totalDamage += damage * pois * (100 - resPois);
+                totalDamage += damage * nrgy * (100 - resNrgy);
 
-				totalDamage  = (damage * phys * (100 - resPhys))/2;
-				totalDamage += (damage * fire * (100 - resFire))/2;
-				totalDamage += (damage * cold * (100 - resCold))/2;
-				totalDamage += (damage * pois * (100 - resPois))/2;
-				totalDamage += (damage * nrgy * (100 - resNrgy))/2;
+                totalDamage /= 10000;
 
-				totalDamage /= 10000;
-				
-				totalDamage += (phys + fire + cold + pois + nrgy) /2;
+                if (Core.ML)
+                {
+                    totalDamage += damage * direct / 100;
 
-				if ( Core.ML )
-				{
-					totalDamage += damage * direct / 100;
+                    if (quiver != null && !(AdventuresFunctions.IsInMidland((object)from)))
+                        totalDamage += totalDamage * quiver.DamageIncrease / 100;
+                }
 
-					if ( quiver != null && !(AdventuresFunctions.IsInMidland((object)from)))
-						totalDamage += totalDamage * quiver.DamageIncrease / 100;
-				}
+                if (totalDamage < 1)
+                    totalDamage = 1;
+            }
+            else if (Core.ML && m is PlayerMobile && from is PlayerMobile)
+            {
+                if (quiver != null && !(AdventuresFunctions.IsInMidland((object)from)))
+                    damage += damage * quiver.DamageIncrease / 100;
 
-				if( totalDamage < 1 )
-					totalDamage = 1;
-				*/
-				
-				totalDamage = damage;
+                if (!deathStrike)
+                    totalDamage = Math.Min(damage, 35); // Direct Damage cap of 35
+                else
+                    totalDamage = Math.Min(damage, 70); // Direct Damage cap of 70
+            }
+            else
+            {
+                /*	change to be implemented later 
+                    int resPhys = m.PhysicalResistance;
+                    int resFire = m.FireResistance;
+                    int resCold = m.ColdResistance;
+                    int resPois = m.PoisonResistance;
+                    int resNrgy = m.EnergyResistance;
 
-				if ( Core.ML && quiver != null && !(AdventuresFunctions.IsInMidland((object)from)))
-					totalDamage += totalDamage * quiver.DamageIncrease / 100;
-			}
-			
-			if (potions && m is PlayerMobile && ((PlayerMobile)m).Alchemist())
-				totalDamage = (int)((double)totalDamage / (2 + ((PlayerMobile)m).AlchemistBonus()));
+                    totalDamage  = (damage * phys * (100 - resPhys))/2;
+                    totalDamage += (damage * fire * (100 - resFire))/2;
+                    totalDamage += (damage * cold * (100 - resCold))/2;
+                    totalDamage += (damage * pois * (100 - resPois))/2;
+                    totalDamage += (damage * nrgy * (100 - resNrgy))/2;
+
+                    totalDamage /= 10000;
+
+                    totalDamage += (phys + fire + cold + pois + nrgy) /2;
+
+                    if ( Core.ML )
+                    {
+                        totalDamage += damage * direct / 100;
+
+                        if ( quiver != null && !(AdventuresFunctions.IsInMidland((object)from)))
+                            totalDamage += totalDamage * quiver.DamageIncrease / 100;
+                    }
+
+                    if( totalDamage < 1 )
+                        totalDamage = 1;
+                    */
+
+                totalDamage = damage;
+
+                if (Core.ML && quiver != null && !(AdventuresFunctions.IsInMidland((object)from)))
+                    totalDamage += totalDamage * quiver.DamageIncrease / 100;
+            }
+
+
+
+            totalDamage = damage;
+            if (potions && m is PlayerMobile && ((PlayerMobile)m).Alchemist())
+				totalDamage = (int)((double)totalDamage / (8 * ((PlayerMobile)m).AlchemistBonus()));
 
 			if ( from is PlayerMobile && ((PlayerMobile)from).Avatar ) // new effect - balance affects players damage
 			{

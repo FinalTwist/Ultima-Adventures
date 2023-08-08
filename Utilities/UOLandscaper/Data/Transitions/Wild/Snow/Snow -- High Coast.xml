@@ -1,0 +1,918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Snow to High Coast SN" HashKey="4D0C4D0C0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-12" />
+      <MapTile TileID="283" AltIDMod="-12" />
+      <MapTile TileID="284" AltIDMod="-12" />
+      <MapTile TileID="285" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast EW" HashKey="4D0C0C0C0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-12" />
+      <MapTile TileID="283" AltIDMod="-12" />
+      <MapTile TileID="284" AltIDMod="-12" />
+      <MapTile TileID="285" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="4D4D0C0C0C4D0C0C4D">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast EW" HashKey="4D0C0C4D0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="389" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C4D0C0C4D4D4D0C">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C4D0C0C0C4D0C4D">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="0C4D4D4D0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-5" />
+      <MapTile TileID="283" AltIDMod="-5" />
+      <MapTile TileID="284" AltIDMod="-5" />
+      <MapTile TileID="285" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="4D0C4D0C0C4D0C0C0C">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="4D0C0C4D0C0C0C0C4D">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="4D0C0C4D0C0C4D4D0C">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C4D0C0C4D0C4D0C">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SN" HashKey="0C4D4D0C0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="391" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast WE" HashKey="0C0C0C0C0C4D0C0C0C">
+    <MapTiles>
+      <MapTile TileID="386" AltIDMod="-3" />
+      <MapTile TileID="390" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="4D0C0C4D0C0C0C4D4D">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="0C4D4D0C0C4D0C0C0C">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="4D4D0C4D0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-5" />
+      <MapTile TileID="283" AltIDMod="-5" />
+      <MapTile TileID="284" AltIDMod="-5" />
+      <MapTile TileID="285" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="4D0C4D4D0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-5" />
+      <MapTile TileID="283" AltIDMod="-5" />
+      <MapTile TileID="284" AltIDMod="-5" />
+      <MapTile TileID="285" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="4D0C4D4D0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-5" />
+      <MapTile TileID="283" AltIDMod="-5" />
+      <MapTile TileID="284" AltIDMod="-5" />
+      <MapTile TileID="285" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SN" HashKey="4D4D0C0C0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-7" />
+      <MapTile TileID="283" AltIDMod="-7" />
+      <MapTile TileID="284" AltIDMod="-7" />
+      <MapTile TileID="285" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="4D0C4D0C0C0C0C0C4D">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="4D0C4D0C0C4D0C0C4D">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="4D0C0C0C0C0C4D0C4D">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast EW" HashKey="0C0C0C4D0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="389" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="4D0C0C0C0C0C0C4D0C">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C4D0C0C4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="0C4D4D4D0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-5" />
+      <MapTile TileID="283" AltIDMod="-5" />
+      <MapTile TileID="284" AltIDMod="-5" />
+      <MapTile TileID="285" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEB" HashKey="0C0C0C0C0C0C0C0C4D">
+    <MapTiles>
+      <MapTile TileID="380" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="4D0C0C4D0C0C4D4D4D">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NS" HashKey="0C0C0C0C0C0C4D4D0C">
+    <MapTiles>
+      <MapTile TileID="388" AltIDMod="-3" />
+      <MapTile TileID="392" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="4D0C0C0C0C0C4D4D4D">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C4D0C0C0C0C4D0C">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="0C4D4D0C0C0C0C0C4D">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C0C0C0C4D4D0C0C">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="4D0C0C4D0C0C0C4D0C">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NS" HashKey="0C0C0C0C0C0C0C4D4D">
+    <MapTiles>
+      <MapTile TileID="388" AltIDMod="-3" />
+      <MapTile TileID="392" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="4D0C0C4D0C0C4D0C4D">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast EW" HashKey="0C0C0C4D0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-12" />
+      <MapTile TileID="283" AltIDMod="-12" />
+      <MapTile TileID="284" AltIDMod="-12" />
+      <MapTile TileID="285" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="4D4D0C4D0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-9" />
+      <MapTile TileID="283" AltIDMod="-9" />
+      <MapTile TileID="284" AltIDMod="-9" />
+      <MapTile TileID="285" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="0C4D0C0C0C0C0C0C4D">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="0C0C4D4D0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-5" />
+      <MapTile TileID="283" AltIDMod="-5" />
+      <MapTile TileID="284" AltIDMod="-5" />
+      <MapTile TileID="285" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="4D4D0C0C0C0C0C0C4D">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="4D4D0C0C0C4D0C0C0C">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="0C4D0C4D0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-5" />
+      <MapTile TileID="283" AltIDMod="-5" />
+      <MapTile TileID="284" AltIDMod="-5" />
+      <MapTile TileID="285" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="0C0C0C4D0C0C4D0C4D">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="4D0C0C0C0C0C0C4D4D">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="0C0C0C4D0C0C0C4D0C">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C4D0C0C0C4D4D0C">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="4D4D4D0C0C0C0C0C4D">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NS" HashKey="0C0C0C0C0C0C4D4D4D">
+    <MapTiles>
+      <MapTile TileID="388" AltIDMod="-3" />
+      <MapTile TileID="392" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="4D0C0C0C0C0C4D4D0C">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="0C0C0C4D0C0C4D4D4D">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C4D0C0C0C0C4D4D">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C4D0C0C4D4D0C0C">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="4D4D4D4D0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-9" />
+      <MapTile TileID="283" AltIDMod="-9" />
+      <MapTile TileID="284" AltIDMod="-9" />
+      <MapTile TileID="285" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast WE" HashKey="0C0C4D0C0C4D0C0C0C">
+    <MapTiles>
+      <MapTile TileID="386" AltIDMod="-3" />
+      <MapTile TileID="390" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C0C0C0C4D4D0C4D">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NS" HashKey="0C0C0C0C0C0C0C4D0C">
+    <MapTiles>
+      <MapTile TileID="388" AltIDMod="-3" />
+      <MapTile TileID="392" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C0C0C0C4D0C4D0C">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="0C4D0C0C0C4D0C0C0C">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NS" HashKey="0C0C0C0C0C0C4D0C4D">
+    <MapTiles>
+      <MapTile TileID="388" AltIDMod="-3" />
+      <MapTile TileID="392" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast WE" HashKey="0C0C4D0C0C0C0C0C4D">
+    <MapTiles>
+      <MapTile TileID="386" AltIDMod="-3" />
+      <MapTile TileID="390" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C0C0C0C4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SN" HashKey="0C4D0C0C0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-12" />
+      <MapTile TileID="283" AltIDMod="-12" />
+      <MapTile TileID="284" AltIDMod="-12" />
+      <MapTile TileID="285" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="0C0C4D4D0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-5" />
+      <MapTile TileID="283" AltIDMod="-5" />
+      <MapTile TileID="284" AltIDMod="-5" />
+      <MapTile TileID="285" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="0C4D0C4D0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-5" />
+      <MapTile TileID="283" AltIDMod="-5" />
+      <MapTile TileID="284" AltIDMod="-5" />
+      <MapTile TileID="285" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="4D4D4D0C0C4D0C0C0C">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="0C0C0C4D0C0C0C4D4D">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="4D0C0C0C0C4D0C0C0C">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SN" HashKey="4D4D4D0C0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="391" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="4D0C4D0C0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-5" />
+      <MapTile TileID="283" AltIDMod="-5" />
+      <MapTile TileID="284" AltIDMod="-5" />
+      <MapTile TileID="285" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="0C0C0C4D0C0C4D4D0C">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C4D0C0C4D4D0C4D">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast (High) NWB" HashKey="4D0C0C0C0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-1" />
+      <MapTile TileID="283" AltIDMod="-1" />
+      <MapTile TileID="284" AltIDMod="-1" />
+      <MapTile TileID="285" AltIDMod="-1" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEA" HashKey="0C0C0C4D0C0C0C0C4D">
+    <MapTiles>
+      <MapTile TileID="378" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast WE" HashKey="0C0C4D0C0C4D0C0C4D">
+    <MapTiles>
+      <MapTile TileID="386" AltIDMod="-3" />
+      <MapTile TileID="390" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="4D4D4D4D0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-9" />
+      <MapTile TileID="283" AltIDMod="-9" />
+      <MapTile TileID="284" AltIDMod="-9" />
+      <MapTile TileID="285" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWB" HashKey="0C0C0C0C0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="381" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C0C0C0C4D0C4D4D">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="0C4D0C0C0C4D0C0C4D">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast EW" HashKey="4D0C0C4D0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-7" />
+      <MapTile TileID="283" AltIDMod="-7" />
+      <MapTile TileID="284" AltIDMod="-7" />
+      <MapTile TileID="285" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NEB" HashKey="0C0C4D0C0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="382" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C4D0C0C4D0C4D4D">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="0C4D4D0C0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-5" />
+      <MapTile TileID="283" AltIDMod="-5" />
+      <MapTile TileID="284" AltIDMod="-5" />
+      <MapTile TileID="285" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C0C0C0C4D4D4D0C">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast NWA" HashKey="0C0C4D0C0C0C4D4D4D">
+    <MapTiles>
+      <MapTile TileID="377" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="0C4D0C0C0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-5" />
+      <MapTile TileID="283" AltIDMod="-5" />
+      <MapTile TileID="284" AltIDMod="-5" />
+      <MapTile TileID="285" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast WE" HashKey="0C0C0C0C0C4D0C0C4D">
+    <MapTiles>
+      <MapTile TileID="386" AltIDMod="-3" />
+      <MapTile TileID="390" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="0C4D4D0C0C4D0C0C4D">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="4D4D4D0C0C4D0C0C4D">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SWA" HashKey="4D0C0C0C0C4D0C0C4D">
+    <MapTiles>
+      <MapTile TileID="379" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="4D4D0C0C0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-5" />
+      <MapTile TileID="283" AltIDMod="-5" />
+      <MapTile TileID="284" AltIDMod="-5" />
+      <MapTile TileID="285" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow to High Coast SEA" HashKey="4D4D4D0C0C0C4D0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="-5" />
+      <MapTile TileID="283" AltIDMod="-5" />
+      <MapTile TileID="284" AltIDMod="-5" />
+      <MapTile TileID="285" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

@@ -1,0 +1,1185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121215060615060615">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060615060615121212">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="150606150606120606">
+    <MapTiles>
+      <MapTile TileID="83" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121212121212060615">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060606121515121515">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-10" />
+      <MapTile TileID="582" AltIDMod="-10" />
+      <MapTile TileID="583" AltIDMod="-10" />
+      <MapTile TileID="584" AltIDMod="-10" />
+      <MapTile TileID="585" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151512060606060606">
+    <MapTiles>
+      <MapTile TileID="80" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="061212061212151212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060615121215121215">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151506151512151512">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-10" />
+      <MapTile TileID="582" AltIDMod="-10" />
+      <MapTile TileID="583" AltIDMod="-10" />
+      <MapTile TileID="584" AltIDMod="-10" />
+      <MapTile TileID="585" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="150606150606151212">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151515121206121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="061212151212151212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6055" AltIDMod="-5" />
+      <StaticTile TileID="6065" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151515151515120606">
+    <MapTiles>
+      <MapTile TileID="602" AltIDMod="-5" />
+      <MapTile TileID="603" AltIDMod="-5" />
+      <MapTile TileID="604" AltIDMod="-5" />
+      <MapTile TileID="605" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060606060606121515">
+    <MapTiles>
+      <MapTile TileID="82" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121212121212151506">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151512060612060612">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151515061212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="061515121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="150606150606121212">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151212150606150606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121215060606060606">
+    <MapTiles>
+      <MapTile TileID="80" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121515061515061515">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-5" />
+      <MapTile TileID="582" AltIDMod="-5" />
+      <MapTile TileID="583" AltIDMod="-5" />
+      <MapTile TileID="584" AltIDMod="-5" />
+      <MapTile TileID="585" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121206121206121215">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151212151212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060612060612151512">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="120606121515121515">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-10" />
+      <MapTile TileID="582" AltIDMod="-10" />
+      <MapTile TileID="583" AltIDMod="-10" />
+      <MapTile TileID="584" AltIDMod="-10" />
+      <MapTile TileID="585" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151212061212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="120606151515151515">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-10" />
+      <MapTile TileID="582" AltIDMod="-10" />
+      <MapTile TileID="583" AltIDMod="-10" />
+      <MapTile TileID="584" AltIDMod="-10" />
+      <MapTile TileID="585" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121515060606060606">
+    <MapTiles>
+      <MapTile TileID="80" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151212151212150606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="061212151515151515">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-9" />
+      <MapTile TileID="582" AltIDMod="-9" />
+      <MapTile TileID="583" AltIDMod="-9" />
+      <MapTile TileID="584" AltIDMod="-9" />
+      <MapTile TileID="585" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6055" AltIDMod="-5" />
+      <StaticTile TileID="6065" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151506151506121212">
+    <MapTiles>
+      <MapTile TileID="607" AltIDMod="-10" />
+      <MapTile TileID="608" AltIDMod="-10" />
+      <MapTile TileID="609" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121212060615060615">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="061515121515121515">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-9" />
+      <MapTile TileID="582" AltIDMod="-9" />
+      <MapTile TileID="583" AltIDMod="-9" />
+      <MapTile TileID="584" AltIDMod="-9" />
+      <MapTile TileID="585" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6055" AltIDMod="-5" />
+      <StaticTile TileID="6065" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="150606151212151212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121215121215060615">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="061515061515121212">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-10" />
+      <MapTile TileID="582" AltIDMod="-10" />
+      <MapTile TileID="583" AltIDMod="-10" />
+      <MapTile TileID="584" AltIDMod="-10" />
+      <MapTile TileID="585" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="150606121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151515151515121206">
+    <MapTiles>
+      <MapTile TileID="606" AltIDMod="-5" />
+      <MapTile TileID="607" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060606060606151212">
+    <MapTiles>
+      <MapTile TileID="82" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060615060615121215">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060612060612151515">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121212150606150606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151212060606060606">
+    <MapTiles>
+      <MapTile TileID="80" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151512151512060606">
+    <MapTiles>
+      <MapTile TileID="602" AltIDMod="-2" />
+      <MapTile TileID="603" AltIDMod="-2" />
+      <MapTile TileID="604" AltIDMod="-3" />
+      <MapTile TileID="605" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121212121212150606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121215121215060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151506121206121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060612060615060615">
+    <MapTiles>
+      <MapTile TileID="81" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121206121206151506">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060615060612060612">
+    <MapTiles>
+      <MapTile TileID="81" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121515121515061515">
+    <MapTiles>
+      <MapTile TileID="609" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121515120606120606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121206121206151515">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060615060615060612">
+    <MapTiles>
+      <MapTile TileID="81" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="061212061212061515">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121212061515061515">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-10" />
+      <MapTile TileID="582" AltIDMod="-10" />
+      <MapTile TileID="583" AltIDMod="-10" />
+      <MapTile TileID="584" AltIDMod="-10" />
+      <MapTile TileID="585" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060615121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060606060606121215">
+    <MapTiles>
+      <MapTile TileID="82" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121212121212061515">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151515060612060612">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151515120606120606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="061515061212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060612060612060615">
+    <MapTiles>
+      <MapTile TileID="81" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060606151212151212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="120606150606150606">
+    <MapTiles>
+      <MapTile TileID="83" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="061212061515061515">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-10" />
+      <MapTile TileID="582" AltIDMod="-10" />
+      <MapTile TileID="583" AltIDMod="-10" />
+      <MapTile TileID="584" AltIDMod="-10" />
+      <MapTile TileID="585" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="120606120606150606">
+    <MapTiles>
+      <MapTile TileID="83" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="061515061515121515">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-10" />
+      <MapTile TileID="582" AltIDMod="-10" />
+      <MapTile TileID="583" AltIDMod="-10" />
+      <MapTile TileID="584" AltIDMod="-10" />
+      <MapTile TileID="585" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151506151506121206">
+    <MapTiles>
+      <MapTile TileID="607" AltIDMod="-3" />
+      <MapTile TileID="608" AltIDMod="-3" />
+      <MapTile TileID="609" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121212151506151506">
+    <MapTiles>
+      <MapTile TileID="607" AltIDMod="-5" />
+      <MapTile TileID="608" AltIDMod="-5" />
+      <MapTile TileID="609" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121215121206121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151512151512151506">
+    <MapTiles>
+      <MapTile TileID="606" AltIDMod="-5" />
+      <MapTile TileID="607" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="061212061212151515">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060606060606151512">
+    <MapTiles>
+      <MapTile TileID="82" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151515151515061212">
+    <MapTiles>
+      <MapTile TileID="609" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151212151212060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="120606120606121515">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151506121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151515151515060612">
+    <MapTiles>
+      <MapTile TileID="602" AltIDMod="-5" />
+      <MapTile TileID="603" AltIDMod="-5" />
+      <MapTile TileID="604" AltIDMod="-5" />
+      <MapTile TileID="605" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151512151506151506">
+    <MapTiles>
+      <MapTile TileID="607" AltIDMod="-5" />
+      <MapTile TileID="608" AltIDMod="-5" />
+      <MapTile TileID="609" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121515121515060606">
+    <MapTiles>
+      <MapTile TileID="602" AltIDMod="-2" />
+      <MapTile TileID="603" AltIDMod="-2" />
+      <MapTile TileID="604" AltIDMod="-3" />
+      <MapTile TileID="605" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060612151512151512">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-10" />
+      <MapTile TileID="582" AltIDMod="-10" />
+      <MapTile TileID="583" AltIDMod="-10" />
+      <MapTile TileID="584" AltIDMod="-10" />
+      <MapTile TileID="585" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060606121215121215">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060606151512151512">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-10" />
+      <MapTile TileID="582" AltIDMod="-10" />
+      <MapTile TileID="583" AltIDMod="-10" />
+      <MapTile TileID="584" AltIDMod="-10" />
+      <MapTile TileID="585" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121215121215121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="120606120606151515">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151506151506151512">
+    <MapTiles>
+      <MapTile TileID="607" AltIDMod="-10" />
+      <MapTile TileID="608" AltIDMod="-10" />
+      <MapTile TileID="609" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="061515061515061212">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-10" />
+      <MapTile TileID="582" AltIDMod="-10" />
+      <MapTile TileID="583" AltIDMod="-10" />
+      <MapTile TileID="584" AltIDMod="-10" />
+      <MapTile TileID="585" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="151512151512060612">
+    <MapTiles>
+      <MapTile TileID="602" AltIDMod="-5" />
+      <MapTile TileID="603" AltIDMod="-5" />
+      <MapTile TileID="604" AltIDMod="-5" />
+      <MapTile TileID="605" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121515121515120606">
+    <MapTiles>
+      <MapTile TileID="602" AltIDMod="-5" />
+      <MapTile TileID="603" AltIDMod="-5" />
+      <MapTile TileID="604" AltIDMod="-5" />
+      <MapTile TileID="605" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121206151506151506">
+    <MapTiles>
+      <MapTile TileID="607" AltIDMod="-3" />
+      <MapTile TileID="608" AltIDMod="-3" />
+      <MapTile TileID="609" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121206121215121215">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="121206151515151515">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-10" />
+      <MapTile TileID="582" AltIDMod="-10" />
+      <MapTile TileID="583" AltIDMod="-10" />
+      <MapTile TileID="584" AltIDMod="-10" />
+      <MapTile TileID="585" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="060612151515151515">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="-10" />
+      <MapTile TileID="582" AltIDMod="-10" />
+      <MapTile TileID="583" AltIDMod="-10" />
+      <MapTile TileID="584" AltIDMod="-10" />
+      <MapTile TileID="585" AltIDMod="-10" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Rock-Dungeon Cave" HashKey="150606120606120606">
+    <MapTiles>
+      <MapTile TileID="83" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

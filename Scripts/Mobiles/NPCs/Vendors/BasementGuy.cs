@@ -63,7 +63,7 @@ namespace Server.Mobiles
 				{
 					if ( ! mobile.HasGump( typeof( SpeechGump ) ) )
 					{
-						mobile.SendGump(new SpeechGump( "The Right Survival Gear", SpeechFunctions.SpeechText( m_Giver.Name, m_Mobile.Name, "Provisioner" ) ));
+						mobile.SendGump(new SpeechGump( "The Right Survival Gear", SpeechFunctions.SpeechText( m_Giver.Name, m_Mobile.Name, "BasementGuy" ) ));
 					}
 				}
             }

@@ -22,7 +22,11 @@ namespace Server.Items
 		private static bool RelativeLocation = false; // Is the explosion target location relative for mobiles?
 		private const int ExplosionRange = 2; // How long is the blast radius?
 
-		public BaseExplosionPotion( PotionEffect effect ) : base( 0xF0D, effect )
+
+
+
+
+        public BaseExplosionPotion( PotionEffect effect ) : base( 0xF0D, effect )
 		{
 		}
 
@@ -249,21 +253,30 @@ namespace Server.Items
 
 			Effects.PlaySound(loc, map, 0x307);
 
-			Effects.SendLocationEffect(loc, map, 0x36B0, 9, 10, 0, 0);
-			int alchemyBonus = 0;
+			Effects.SendLocationEffect(loc, map, 0x3822, 20, 10, 0, 0);
+            int alchemyBonus = 0;
 
 			if ( direct )
 				alchemyBonus = (int)(from.Skills.Alchemy.Value / (Core.AOS ? 5 : 10));
 
 			IPooledEnumerable eable;
 
-			if (LeveledExplosion)
+            //Explosion Potions have a wider range based on EnhancePotions for Chemists
+
+            int scalar = 0;
+            double scalarx = 0;
+                if (from is PlayerMobile && ((PlayerMobile)from).Alchemist())
+                    scalarx = 1.0 + (0.02 * EnhancePotions(from));
+                    scalar = Convert.ToInt32(scalarx);
+
+
+            if (LeveledExplosion)
 			{
-				eable = map.GetObjectsInRange(loc, ExplosionRange);
+				eable = map.GetObjectsInRange(loc, ExplosionRange + scalar);
 			}
 			else
 			{
-				eable = map.GetMobilesInRange(loc, ExplosionRange);
+				eable = map.GetMobilesInRange(loc, ExplosionRange + scalar);
 			}			ArrayList toExplode = new ArrayList();
 
 			int toDamage = 0;

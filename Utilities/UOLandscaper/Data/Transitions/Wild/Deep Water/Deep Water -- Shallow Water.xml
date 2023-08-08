@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050506050506060606">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="060606050506050505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050506050506050606">
+    <MapTiles>
+      <MapTile TileID="102" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050506050506050506">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="060505060505060605">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050505050506050506">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050506050506050505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050606050506050505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050505050505060605">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="060606050505050505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050505050505050606">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050505050505060505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050505060505060605">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050606050505050505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050505060505060606">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050505050505050506">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050505060505060505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050506050505050505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="060605060505060505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="060605060505050505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="060505050505050505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050606050506050506">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050505050506060606">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="060505060505060606">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="060505060505060505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="060606060505060505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050505050506050606">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="050505050505060606">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="060505060505050505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="060605050505050505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="060606060505050505">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Deep Water to Shallow Water" HashKey="060606050506050506">
+    <MapTiles>
+      <MapTile TileID="168" AltIDMod="-5" />
+      <MapTile TileID="169" AltIDMod="-5" />
+      <MapTile TileID="170" AltIDMod="-5" />
+      <MapTile TileID="171" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

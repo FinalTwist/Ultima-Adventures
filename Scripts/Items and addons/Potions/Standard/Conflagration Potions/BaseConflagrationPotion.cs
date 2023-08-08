@@ -5,6 +5,7 @@ using Server;
 using Server.Network;
 using Server.Targeting;
 using Server.Spells;
+using Server.Mobiles;
 
 namespace Server.Items
 {
@@ -121,7 +122,13 @@ namespace Server.Items
 			if ( timer != null )
 				timer.Stop();
 
-			m_Delay[ m ] = Timer.DelayCall( TimeSpan.FromSeconds( 30 ), new TimerStateCallback( EndDelay_Callback ), m );	
+            //Quicker Cooldown for alchemists based on enhance potion
+            double scalar = 1.0;
+            if (m is PlayerMobile && ((PlayerMobile)m).Alchemist())
+                scalar = 1.0 + (0.02 * EnhancePotions(m));
+
+
+            m_Delay[ m ] = Timer.DelayCall( TimeSpan.FromSeconds( 30 / scalar) , new TimerStateCallback( EndDelay_Callback ), m );	
 		}
 
 		public static int GetDelay( Mobile m )

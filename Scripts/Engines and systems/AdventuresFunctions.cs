@@ -1316,7 +1316,7 @@ namespace Server.Misc
 					else if (chances <= 1)
 						reinforce = typeof ( SkeletalWarrior ); 
 				}
-			else if (count <= 24)
+			else if (count <= 24 || (count >= 25 && stone.Map == Map.Trammel))
 				{
 					if (chances <= 0.20)
 						reinforce = typeof ( Skeleton );

@@ -80,7 +80,7 @@ namespace Server
 
 		public static string GetCompilerOptions( bool debug )
 		{
-			StringBuilder sb = null;			
+			StringBuilder sb = null;
 
 			AppendCompilerOption( ref sb, "/unsafe" );
 
@@ -93,14 +93,14 @@ namespace Server
 
 			if( Core.Is64Bit )
 				AppendCompilerOption( ref sb, "/d:x64" );
-			
+
 #if NEWTIMERS
 			AppendCompilerOption(ref sb, "/d:NEWTIMERS");
 #endif
 
 #if NEWPARENT
 			AppendCompilerOption(ref sb, "/d:NEWPARENT");
-#endif
+# endif
 
 			return (sb == null ? null : sb.ToString());
 		}
@@ -233,10 +233,12 @@ namespace Server
 				if( Core.HaltOnWarning )
 					parms.WarningLevel = 4;
 
-
-				parms.CompilerOptions = String.Format( "{0} /nowarn:169,219,414 /recurse:Scripts/*.cs", parms.CompilerOptions );
+#if !MONO
 				CompilerResults results = provider.CompileAssemblyFromFile( parms, files );
-
+#else
+				parms.CompilerOptions = String.Format( "{0} /nowarn:169,219,414 /recurse:Scripts/*.cs", parms.CompilerOptions );
+				CompilerResults results = provider.CompileAssemblyFromFile( parms, "" );
+#endif
 				m_AdditionalReferences.Add( path );
 
 				Display( results );
@@ -257,7 +259,6 @@ namespace Server
 					}
 				}
 #endif
-
 
 				if( cache && Path.GetFileName( path ) == "Scripts.CS.dll" )
 				{

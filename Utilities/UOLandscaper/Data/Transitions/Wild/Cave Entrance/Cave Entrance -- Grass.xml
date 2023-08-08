@@ -1,0 +1,1737 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212FF121201120101">
+    <MapTiles>
+      <MapTile TileID="563" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101011212011212FF">
+    <MapTiles>
+      <MapTile TileID="562" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0112120112120101FF">
+    <MapTiles>
+      <MapTile TileID="564" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="120101FF0101FF0101">
+    <MapTiles>
+      <MapTile TileID="130" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1212FF1212010112">
+    <MapTiles>
+      <MapTile TileID="565" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1414141212FF0112FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF14FFFF12010112">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12FFFF12FFFF120101">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="14FFFF12FFFF010101">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1414FF1212FF121201">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="120101121201FFFF01">
+    <MapTiles>
+      <MapTile TileID="575" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1201011212011212FF">
+    <MapTiles>
+      <MapTile TileID="562" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="141212141201FFFF01">
+    <MapTiles>
+      <MapTile TileID="568" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01121201121201">
+    <MapTiles>
+      <MapTile TileID="565" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1212FF1201010101">
+    <MapTiles>
+      <MapTile TileID="574" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1214FF1212FF010101">
+    <MapTiles>
+      <MapTile TileID="566" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101FF011212121212">
+    <MapTiles>
+      <MapTile TileID="561" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010112FF1212FF1414">
+    <MapTiles>
+      <MapTile TileID="568" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="011212FF1212FF1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010112FF1212FF1412">
+    <MapTiles>
+      <MapTile TileID="568" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF14FFFF12010101">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101010101FF1212">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1212FF1212010101">
+    <MapTiles>
+      <MapTile TileID="565" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01141212141212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12120112121214FFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12121212121201FFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101FF0101FF0101FF">
+    <MapTiles>
+      <MapTile TileID="137" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFFFFFFFFFF010101">
+    <MapTiles>
+      <MapTile TileID="475" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0112FF1212FF121214">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF12010112010112">
+    <MapTiles>
+      <MapTile TileID="126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212011212FF1214FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121212FF0101FF0101">
+    <MapTiles>
+      <MapTile TileID="130" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1414FF1212FF010101">
+    <MapTiles>
+      <MapTile TileID="566" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121212FFFF01FFFF01">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="120101120101FF0101">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101120101120101FF">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1201FF1212141212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121212121201FFFF01">
+    <MapTiles>
+      <MapTile TileID="568" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF01FFFF011214">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101010112FFFF12">
+    <MapTiles>
+      <MapTile TileID="130" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="141201FFFF01FFFF01">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF011214121212">
+    <MapTiles>
+      <MapTile TileID="566" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212FF0112FF010101">
+    <MapTiles>
+      <MapTile TileID="576" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010112011212FF1212">
+    <MapTiles>
+      <MapTile TileID="561" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12121212121401FFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF12010112010101">
+    <MapTiles>
+      <MapTile TileID="126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101FFFF12FFFF12">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF121214121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121212141201FFFF01">
+    <MapTiles>
+      <MapTile TileID="568" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1212011212010112">
+    <MapTiles>
+      <MapTile TileID="564" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0112FF010101010101">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="141412FF1212FF1201">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101FF1212FF1414">
+    <MapTiles>
+      <MapTile TileID="568" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0112120101FF0101FF">
+    <MapTiles>
+      <MapTile TileID="125" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101FF1212FF1412">
+    <MapTiles>
+      <MapTile TileID="568" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01121201FFFF01FFFF">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01121201121201FFFF">
+    <MapTiles>
+      <MapTile TileID="567" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="14120114121214FFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="141212FF1212FF1201">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121212121212FFFF01">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF0101120101121212">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF011212121212">
+    <MapTiles>
+      <MapTile TileID="566" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1212FF1212011212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101FFFF12FFFF14">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101FF010112010101">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1214141212FF0112FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12121412121401FFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01010112010112FFFF">
+    <MapTiles>
+      <MapTile TileID="125" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1214FF1212FF120101">
+    <MapTiles>
+      <MapTile TileID="566" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1212010112010101">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121212120101FF0101">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101011212FF1212">
+    <MapTiles>
+      <MapTile TileID="561" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101FF011212011212">
+    <MapTiles>
+      <MapTile TileID="561" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212FF1212FF120101">
+    <MapTiles>
+      <MapTile TileID="566" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101010101FF1201">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF0101120101120101">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12FFFF010101010101">
+    <MapTiles>
+      <MapTile TileID="131" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101FF1201FF1212">
+    <MapTiles>
+      <MapTile TileID="575" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101FF010112010112">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212011212FF1212FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121201121201FF0101">
+    <MapTiles>
+      <MapTile TileID="563" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01121201121401FFFF">
+    <MapTiles>
+      <MapTile TileID="567" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12FFFF120101010101">
+    <MapTiles>
+      <MapTile TileID="131" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1212011212011212">
+    <MapTiles>
+      <MapTile TileID="566" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="011214121214FFFF14">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101011212FF1214FF">
+    <MapTiles>
+      <MapTile TileID="567" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101FF0101FF011212">
+    <MapTiles>
+      <MapTile TileID="131" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212120101FF0101FF">
+    <MapTiles>
+      <MapTile TileID="125" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1212010112010112">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010112FFFF12FFFF12">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212FF120101010101">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1214FF1212FF121201">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010112FFFF12FFFF14">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1414FF1212010112">
+    <MapTiles>
+      <MapTile TileID="565" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="141201141201FFFF01">
+    <MapTiles>
+      <MapTile TileID="568" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121201FF0101FF0101">
+    <MapTiles>
+      <MapTile TileID="130" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121201120101FF0101">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101010101120101FF">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1412FF1212010112">
+    <MapTiles>
+      <MapTile TileID="565" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF0101FF0101120101">
+    <MapTiles>
+      <MapTile TileID="126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="14FFFF12FFFF120101">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1212011212010101">
+    <MapTiles>
+      <MapTile TileID="564" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101010101FFFF12">
+    <MapTiles>
+      <MapTile TileID="130" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1201011212FF1214FF">
+    <MapTiles>
+      <MapTile TileID="567" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101FF121212121212">
+    <MapTiles>
+      <MapTile TileID="567" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101011212FF1414FF">
+    <MapTiles>
+      <MapTile TileID="567" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="141212FFFF01FFFF01">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01141201141212">
+    <MapTiles>
+      <MapTile TileID="565" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121212121201FF0101">
+    <MapTiles>
+      <MapTile TileID="563" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0112FF1212FF141414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1414FF1212010101">
+    <MapTiles>
+      <MapTile TileID="565" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101010112FF1212">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1412FF1212010101">
+    <MapTiles />
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1212010101010101">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="14FFFF121212121201">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1201011201011212FF">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF14121214011212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101010101010112FF">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF14121214011214">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01141201141201">
+    <MapTiles>
+      <MapTile TileID="565" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF011214011214">
+    <MapTiles>
+      <MapTile TileID="566" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1201011212FF1212FF">
+    <MapTiles>
+      <MapTile TileID="567" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF011214011212">
+    <MapTiles>
+      <MapTile TileID="566" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0112120101120101FF">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01141201121212">
+    <MapTiles>
+      <MapTile TileID="565" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101011212FF1212FF">
+    <MapTiles>
+      <MapTile TileID="567" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01121401121401FFFF">
+    <MapTiles>
+      <MapTile TileID="567" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1201FF1212141412">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1201FF1212141414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212141212FF0112FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF121214121214">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="011212121214FFFF14">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212FF1212FF121201">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01010112FFFF12FFFF">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101010101FFFFFF">
+    <MapTiles>
+      <MapTile TileID="139" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12121401121401FFFF">
+    <MapTiles>
+      <MapTile TileID="567" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF0101FF0101121212">
+    <MapTiles>
+      <MapTile TileID="126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101120101FF0101">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01141201121201">
+    <MapTiles>
+      <MapTile TileID="565" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="14FFFF141212121201">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="141414FF1212FF1201">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF011212010112">
+    <MapTiles>
+      <MapTile TileID="576" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01011201121201FFFF">
+    <MapTiles>
+      <MapTile TileID="573" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="011212FF1212FF1414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="011212FF1212FF1412">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF0101121212121212">
+    <MapTiles>
+      <MapTile TileID="568" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12FFFF12FFFF010101">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12010112FFFF12FFFF">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1414FF1212011212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="141212141212FFFF01">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12010112010112FFFF">
+    <MapTiles>
+      <MapTile TileID="125" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF0101FF0101121201">
+    <MapTiles>
+      <MapTile TileID="126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01FFFF01FFFF01">
+    <MapTiles>
+      <MapTile TileID="475" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF12FFFF12010112">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101FF0101FF121212">
+    <MapTiles>
+      <MapTile TileID="131" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1412FF1212011212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121201FFFF01FFFF01">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="14FFFF141212141201">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0112FF1212FF121414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="011212011212FF1212">
+    <MapTiles>
+      <MapTile TileID="567" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121212121212FF0101">
+    <MapTiles>
+      <MapTile TileID="565" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF1201010101010101">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101FFFFFFFFFFFF">
+    <MapTiles>
+      <MapTile TileID="475" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010101FF1212FF1212">
+    <MapTiles>
+      <MapTile TileID="568" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF12FFFF12010101">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12121201121201FFFF">
+    <MapTiles>
+      <MapTile TileID="567" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101FF010112121212">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF01FFFF011212">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212120112120101FF">
+    <MapTiles>
+      <MapTile TileID="564" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12121201121401FFFF">
+    <MapTiles>
+      <MapTile TileID="567" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12FFFF120101120101">
+    <MapTiles>
+      <MapTile TileID="131" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF0101121201121212">
+    <MapTiles>
+      <MapTile TileID="562" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101011201011212FF">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101010101011212FF">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF14121212011212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01FFFF01121212">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="011212121212FFFF14">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF12010101010101">
+    <MapTiles>
+      <MapTile TileID="126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1414FF1212FF120101">
+    <MapTiles>
+      <MapTile TileID="566" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF0101FF0101FF0101">
+    <MapTiles>
+      <MapTile TileID="135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF0101120101010101">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF01FFFF121212">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01121201120101">
+    <MapTiles>
+      <MapTile TileID="574" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101010112FF1212FF">
+    <MapTiles>
+      <MapTile TileID="573" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1201011212FF1414FF">
+    <MapTiles>
+      <MapTile TileID="567" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF01FFFF121214">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212011212011212FF">
+    <MapTiles>
+      <MapTile TileID="568" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01FFFF01141201">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF011212011212">
+    <MapTiles>
+      <MapTile TileID="566" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010112010112FF1212">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212FF010101010101">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01121401FFFF01FFFF">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01FFFF01121201">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121201141201FFFF01">
+    <MapTiles>
+      <MapTile TileID="568" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12120114121214FFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="42" />
+      <MapTile TileID="557" AltIDMod="42" />
+      <MapTile TileID="558" AltIDMod="42" />
+      <MapTile TileID="559" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01141212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF011214121214">
+    <MapTiles>
+      <MapTile TileID="566" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010112010112FFFF12">
+    <MapTiles>
+      <MapTile TileID="130" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01FFFF01141212">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212121212120101FF">
+    <MapTiles>
+      <MapTile TileID="566" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212FF121201010101">
+    <MapTiles>
+      <MapTile TileID="563" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12121201FFFF01FFFF">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="010112FF1212FF1212">
+    <MapTiles>
+      <MapTile TileID="568" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01FFFF01FFFF01FFFF">
+    <MapTiles>
+      <MapTile TileID="475" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212FF120101120101">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFFFF010101010101">
+    <MapTiles>
+      <MapTile TileID="133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212FF121201121201">
+    <MapTiles>
+      <MapTile TileID="565" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121201121201FFFF01">
+    <MapTiles>
+      <MapTile TileID="568" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101120101FF0101FF">
+    <MapTiles>
+      <MapTile TileID="125" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212FF1212FF010101">
+    <MapTiles>
+      <MapTile TileID="566" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212011212FF1414FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01010112FFFF14FFFF">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="01010101010112FFFF">
+    <MapTiles>
+      <MapTile TileID="125" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="121212141212FFFF01">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF0101121201121201">
+    <MapTiles>
+      <MapTile TileID="562" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12010112FFFF14FFFF">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FF0101120101121201">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="12121401FFFF01FFFF">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="1212120101120101FF">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="FFFF01121201121212">
+    <MapTiles>
+      <MapTile TileID="565" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101FF0101FF010112">
+    <MapTiles>
+      <MapTile TileID="131" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Grass" HashKey="0101FF010112011212">
+    <MapTiles>
+      <MapTile TileID="3" AltIDMod="0" />
+      <MapTile TileID="4" AltIDMod="0" />
+      <MapTile TileID="5" AltIDMod="0" />
+      <MapTile TileID="6" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

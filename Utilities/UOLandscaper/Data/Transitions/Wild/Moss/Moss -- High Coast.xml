@@ -1,0 +1,918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32324D3232324D4D32">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NS" HashKey="3232323232324D4D32">
+    <MapTiles>
+      <MapTile TileID="147" AltIDMod="-3" />
+      <MapTile TileID="154" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="4D4D323232324D3232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-5" />
+      <MapTile TileID="15854" AltIDMod="-5" />
+      <MapTile TileID="15855" AltIDMod="-5" />
+      <MapTile TileID="15856" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="324D3232324D323232">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="4D324D32324D32324D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast WE" HashKey="32324D32324D323232">
+    <MapTiles>
+      <MapTile TileID="142" AltIDMod="-3" />
+      <MapTile TileID="155" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SN" HashKey="4D4D4D323232323232">
+    <MapTiles>
+      <MapTile TileID="153" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="324D4D32324D32324D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SN" HashKey="324D4D323232323232">
+    <MapTiles>
+      <MapTile TileID="153" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NS" HashKey="3232323232324D324D">
+    <MapTiles>
+      <MapTile TileID="147" AltIDMod="-3" />
+      <MapTile TileID="154" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="4D4D4D32323232324D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="324D324D32324D3232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-5" />
+      <MapTile TileID="15854" AltIDMod="-5" />
+      <MapTile TileID="15855" AltIDMod="-5" />
+      <MapTile TileID="15856" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast EW" HashKey="3232324D32324D3232">
+    <MapTiles>
+      <MapTile TileID="150" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32324D323232324D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="324D3232323232324D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="4D32324D32324D324D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="324D4D32324D323232">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32323232324D4D4D32">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="4D4D3232324D323232">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32324D3232324D4D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="4D4D3232323232324D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast WE" HashKey="32323232324D32324D">
+    <MapTiles>
+      <MapTile TileID="142" AltIDMod="-3" />
+      <MapTile TileID="155" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SN" HashKey="324D32323232323232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-12" />
+      <MapTile TileID="15854" AltIDMod="-12" />
+      <MapTile TileID="15855" AltIDMod="-12" />
+      <MapTile TileID="15856" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="32324D4D3232323232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-5" />
+      <MapTile TileID="15854" AltIDMod="-5" />
+      <MapTile TileID="15855" AltIDMod="-5" />
+      <MapTile TileID="15856" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="4D32324D3232324D32">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEB" HashKey="32324D323232323232">
+    <MapTiles>
+      <MapTile TileID="161" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="4D4D4D32324D32324D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32324D32324D4D4D32">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="4D4D4D4D32324D3232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-9" />
+      <MapTile TileID="15854" AltIDMod="-9" />
+      <MapTile TileID="15855" AltIDMod="-9" />
+      <MapTile TileID="15856" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast WE" HashKey="32323232324D323232">
+    <MapTiles>
+      <MapTile TileID="142" AltIDMod="-3" />
+      <MapTile TileID="155" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32324D323232324D32">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SN" HashKey="4D324D323232323232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-12" />
+      <MapTile TileID="15854" AltIDMod="-12" />
+      <MapTile TileID="15855" AltIDMod="-12" />
+      <MapTile TileID="15856" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="4D323232324D32324D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast EW" HashKey="4D32324D32324D3232">
+    <MapTiles>
+      <MapTile TileID="150" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SN" HashKey="4D4D32323232323232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-7" />
+      <MapTile TileID="15854" AltIDMod="-7" />
+      <MapTile TileID="15855" AltIDMod="-7" />
+      <MapTile TileID="15856" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="4D4D324D3232323232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-5" />
+      <MapTile TileID="15854" AltIDMod="-5" />
+      <MapTile TileID="15855" AltIDMod="-5" />
+      <MapTile TileID="15856" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="3232324D3232324D32">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32323232324D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NS" HashKey="3232323232324D4D4D">
+    <MapTiles>
+      <MapTile TileID="147" AltIDMod="-3" />
+      <MapTile TileID="154" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="4D32323232324D4D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="4D4D4D32324D323232">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32323232324D324D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NS" HashKey="323232323232324D4D">
+    <MapTiles>
+      <MapTile TileID="147" AltIDMod="-3" />
+      <MapTile TileID="154" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="3232324D323232324D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="4D32324D323232324D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="4D4D324D32324D3232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-9" />
+      <MapTile TileID="15854" AltIDMod="-9" />
+      <MapTile TileID="15855" AltIDMod="-9" />
+      <MapTile TileID="15856" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="4D323232324D323232">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32324D32324D324D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32324D32324D4D324D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NS" HashKey="323232323232324D32">
+    <MapTiles>
+      <MapTile TileID="147" AltIDMod="-3" />
+      <MapTile TileID="154" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32324D32324D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="4D324D3232324D3232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-5" />
+      <MapTile TileID="15854" AltIDMod="-5" />
+      <MapTile TileID="15855" AltIDMod="-5" />
+      <MapTile TileID="15856" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="4D3232323232324D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="324D4D4D32324D3232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-5" />
+      <MapTile TileID="15854" AltIDMod="-5" />
+      <MapTile TileID="15855" AltIDMod="-5" />
+      <MapTile TileID="15856" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="4D32324D3232324D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="4D4D3232324D32324D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32324D32324D324D32">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="4D4D4D4D3232323232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-9" />
+      <MapTile TileID="15854" AltIDMod="-9" />
+      <MapTile TileID="15855" AltIDMod="-9" />
+      <MapTile TileID="15856" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="3232324D32324D4D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast EW" HashKey="4D32323232324D3232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-12" />
+      <MapTile TileID="15854" AltIDMod="-12" />
+      <MapTile TileID="15855" AltIDMod="-12" />
+      <MapTile TileID="15856" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWB" HashKey="3232323232324D3232">
+    <MapTiles>
+      <MapTile TileID="162" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="4D324D32324D323232">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="4D32324D32324D4D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="4D324D32323232324D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="324D4D4D3232323232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-5" />
+      <MapTile TileID="15854" AltIDMod="-5" />
+      <MapTile TileID="15855" AltIDMod="-5" />
+      <MapTile TileID="15856" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="3232324D32324D4D32">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast EW" HashKey="4D32324D3232323232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-7" />
+      <MapTile TileID="15854" AltIDMod="-7" />
+      <MapTile TileID="15855" AltIDMod="-7" />
+      <MapTile TileID="15856" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32323232324D4D324D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast WE" HashKey="32324D32323232324D">
+    <MapTiles>
+      <MapTile TileID="142" AltIDMod="-3" />
+      <MapTile TileID="155" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast (High) NWB" HashKey="4D3232323232323232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-1" />
+      <MapTile TileID="15854" AltIDMod="-1" />
+      <MapTile TileID="15855" AltIDMod="-1" />
+      <MapTile TileID="15856" AltIDMod="-1" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32324D32324D4D3232">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="324D4D3232324D3232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-5" />
+      <MapTile TileID="15854" AltIDMod="-5" />
+      <MapTile TileID="15855" AltIDMod="-5" />
+      <MapTile TileID="15856" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="3232324D3232324D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32324D3232324D324D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="324D323232324D3232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-5" />
+      <MapTile TileID="15854" AltIDMod="-5" />
+      <MapTile TileID="15855" AltIDMod="-5" />
+      <MapTile TileID="15856" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast EW" HashKey="3232324D3232323232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-12" />
+      <MapTile TileID="15854" AltIDMod="-12" />
+      <MapTile TileID="15855" AltIDMod="-12" />
+      <MapTile TileID="15856" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="4D3232323232324D32">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="4D324D4D3232323232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-5" />
+      <MapTile TileID="15854" AltIDMod="-5" />
+      <MapTile TileID="15855" AltIDMod="-5" />
+      <MapTile TileID="15856" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="4D4D4D3232324D3232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-5" />
+      <MapTile TileID="15854" AltIDMod="-5" />
+      <MapTile TileID="15855" AltIDMod="-5" />
+      <MapTile TileID="15856" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEB" HashKey="32323232323232324D">
+    <MapTiles>
+      <MapTile TileID="152" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="324D3232324D32324D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="324D324D3232323232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-5" />
+      <MapTile TileID="15854" AltIDMod="-5" />
+      <MapTile TileID="15855" AltIDMod="-5" />
+      <MapTile TileID="15856" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast WE" HashKey="32324D32324D32324D">
+    <MapTiles>
+      <MapTile TileID="142" AltIDMod="-3" />
+      <MapTile TileID="155" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="4D32324D32324D4D32">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32323232324D324D32">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="32324D4D32324D3232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-5" />
+      <MapTile TileID="15854" AltIDMod="-5" />
+      <MapTile TileID="15855" AltIDMod="-5" />
+      <MapTile TileID="15856" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SWA" HashKey="324D4D32323232324D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NWA" HashKey="32323232324D4D3232">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="3232324D32324D324D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast SEA" HashKey="4D324D4D32324D3232">
+    <MapTiles>
+      <MapTile TileID="15853" AltIDMod="-5" />
+      <MapTile TileID="15854" AltIDMod="-5" />
+      <MapTile TileID="15855" AltIDMod="-5" />
+      <MapTile TileID="15856" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="4D32323232324D4D32">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Moss to High Coast NEA" HashKey="4D32323232324D324D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

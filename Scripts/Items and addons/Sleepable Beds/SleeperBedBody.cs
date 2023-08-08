@@ -367,7 +367,7 @@ namespace Server.Items
 			// Delete on Server restart if spell action
 			if( m_spell )
 				this.Delete();
-		}
+		} 
 		
 		private class InternalTimer : Timer
 		{
@@ -381,7 +381,7 @@ namespace Server.Items
 				Priority = TimerPriority.FiveSeconds;
 			}
 			protected override void OnTick() 
-			{
+			{ 
 				if (DateTime.Now < shutitoff)
 				{
 					if(m_Body != null)
@@ -420,7 +420,8 @@ namespace Server.Items
 					Stop();
 					m_Body.PublicOverheadMessage(0,m_Owner.EmoteHue, false,"*falls into a deep, quiet sleep*");
 				}
-			}
+			} 
 		}
 	}
 }
+  

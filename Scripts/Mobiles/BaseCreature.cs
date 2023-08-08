@@ -6031,8 +6031,17 @@ namespace Server.Mobiles
 
 			if ( FightMode == FightMode.CharmMonster ){ FightMode = FightMode.Closest; }
 			else if ( FightMode == FightMode.CharmAnimal ){ FightMode = FightMode.Aggressor; }
-
-			if ( FollowersMax > 5 ){ FollowersMax = 5; }
+			
+			if (RawInt <= 100) //magery ai now summons so this is now relevant for basecreatures
+				FollowersMax = 2;
+			else if (RawInt <= 400) 
+				FollowersMax = 3;
+			else if (RawInt <= 700) 
+				FollowersMax = 5;
+			else if (RawInt <= 1000) 
+				FollowersMax = 7;
+			else if (RawInt > 1000) 
+				FollowersMax = 9;
 		}
 
 		public virtual bool IsHumanInTown()

@@ -1,0 +1,1553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717178117178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="171781818181818117">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="818181178181818117">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) EW" HashKey="178181818181178181">
+    <MapTiles>
+      <MapTile TileID="668" AltIDMod="0" />
+      <MapTile TileID="669" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781818181811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717178117171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWB" HashKey="178181818181818181">
+    <MapTiles>
+      <MapTile TileID="675" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="178181818181811781">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="811717818181178181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SN" HashKey="178117818181818181">
+    <MapTiles>
+      <MapTile TileID="664" AltIDMod="0" />
+      <MapTile TileID="665" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818117178181171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117818117811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717818181171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818117818117811781">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717178181171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SN" HashKey="171781818181818181">
+    <MapTiles>
+      <MapTile TileID="664" AltIDMod="0" />
+      <MapTile TileID="665" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717818117811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781178181171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="818117178181178181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717178117811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="178181178181811781">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) INS" HashKey="818117818181178181">
+    <MapTiles>
+      <MapTile TileID="22" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781818117178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818117178181171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="171717178181178181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117818117811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717818117178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781818117811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717178181171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717818117171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717178181818117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="178117818117818117">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) WE" HashKey="818181818117818117">
+    <MapTiles>
+      <MapTile TileID="670" AltIDMod="0" />
+      <MapTile TileID="671" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717818117811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818117818181171781">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117178117178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117178117811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818181178117178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717178117171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781178117818117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178181178117178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781178117811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178181178117171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEB" HashKey="818117818181818181">
+    <MapTiles>
+      <MapTile TileID="672" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NS" HashKey="818181818181811781">
+    <MapTiles>
+      <MapTile TileID="666" AltIDMod="0" />
+      <MapTile TileID="667" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="811717818117818181">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717178117171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178181178117811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717178117178181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781818117811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717818117811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717178117811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717178117171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717818181178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781178117818181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178181818117171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) WE" HashKey="818117818117818117">
+    <MapTiles>
+      <MapTile TileID="670" AltIDMod="0" />
+      <MapTile TileID="671" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818117818117811717">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178181178117818181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717178117178181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="171717818117818117">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781178181178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178181178117811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781178181171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="178181178181818117">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818117178181178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="178181178181811717">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178181818117178181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) IWE" HashKey="178181818181818117">
+    <MapTiles>
+      <MapTile TileID="22" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781178181171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781178181811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781818117811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="818181178181811717">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) WE" HashKey="818117818117818181">
+    <MapTiles>
+      <MapTile TileID="670" AltIDMod="0" />
+      <MapTile TileID="671" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781818117811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="171717818117818181">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="171781178181178181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717178117818181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818117818181178117">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEB" HashKey="818181818181818117">
+    <MapTiles>
+      <MapTile TileID="673" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781818117171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="171781178181818181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) EW" HashKey="178181178181818181">
+    <MapTiles>
+      <MapTile TileID="668" AltIDMod="0" />
+      <MapTile TileID="669" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717818181178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781178181171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818117818181811717">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818181178117811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781178181811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178181178117178181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="818181178181811781">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717818181171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717818181811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NS" HashKey="818181818181811717">
+    <MapTiles>
+      <MapTile TileID="666" AltIDMod="0" />
+      <MapTile TileID="667" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818117178117171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717178117178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="811717818117818117">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117178181178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781818181171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117818117178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="178117818181818117">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="178117818181178181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781178117811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="171717818181178181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781178117178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818117818181811781">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SN" HashKey="171717818181818181">
+    <MapTiles>
+      <MapTile TileID="664" AltIDMod="0" />
+      <MapTile TileID="665" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781178117171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717818181811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="171781818181178181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178181178117818117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717818181811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117178181171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781178117811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="818181178181171781">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717178117818117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781178181818117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="178117178181178181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117818117178181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178181818117178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818117178181811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781178117178181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="811781818117818117">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117818181171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117818181171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781178117818181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717178181811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781178117811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781818117178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781818117171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781178181178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117178117818117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818181178117818117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781818181811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117178117811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717818117178181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781818181811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818181178117811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="811781818117818181">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="178117818117818181">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781178117171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781818181171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818117178117178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717818181171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818117178117171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781818181178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781818117178181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781818181171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818117178117811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="171781818117818181">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) WE" HashKey="818117818181818117">
+    <MapTiles>
+      <MapTile TileID="670" AltIDMod="0" />
+      <MapTile TileID="671" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117818181178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717178117811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781178117178181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818181178117818181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="811717818181818117">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="171717818181818117">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717818181811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781178117171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781818181178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818117818117171717">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818117178117178181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="818181178181178117">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117178181171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818117178117818181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="818181178181171717">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="811781818181178181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717818117171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SN" HashKey="811781818181818181">
+    <MapTiles>
+      <MapTile TileID="664" AltIDMod="0" />
+      <MapTile TileID="665" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818117178117811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="178181178181171717">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818117178181818117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818117178181811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818117818117178181">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SN" HashKey="811717818181818181">
+    <MapTiles>
+      <MapTile TileID="664" AltIDMod="0" />
+      <MapTile TileID="665" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178181818117811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717178181818117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781178117818117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818117818117171781">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717818117178181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818181178117178181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) EW" HashKey="818181178181178181">
+    <MapTiles>
+      <MapTile TileID="668" AltIDMod="0" />
+      <MapTile TileID="669" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818117818181171717">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="178117178181818181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818181818117171781">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) EW" HashKey="178181178181178181">
+    <MapTiles>
+      <MapTile TileID="668" AltIDMod="0" />
+      <MapTile TileID="669" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717818117171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717178181811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117178181811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="178181178181171781">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="818117178181818181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781178181811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="171717178181818181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NS" HashKey="818181818181171717">
+    <MapTiles>
+      <MapTile TileID="666" AltIDMod="0" />
+      <MapTile TileID="667" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117178117818181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="178181818181171781">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178181818117171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717178117818117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="171781818117818117">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="811781178181178181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717178117811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781178117178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117818181811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781818181171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWB" HashKey="818181818181178181">
+    <MapTiles>
+      <MapTile TileID="674" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) EW" HashKey="818181178181818181">
+    <MapTiles>
+      <MapTile TileID="668" AltIDMod="0" />
+      <MapTile TileID="669" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117178181811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NS" HashKey="818181818181171781">
+    <MapTiles>
+      <MapTile TileID="666" AltIDMod="0" />
+      <MapTile TileID="667" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171781818181811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818117178117818117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717178117818181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="811781818181818117">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781178117171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="178181818117818117">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818117818117178117">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717818117811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178181818117811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717178181178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781818117171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117818117171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717178181171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717818117178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818181818117178117">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117818117171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117178181818117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818181818117171717">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="178181178181178117">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717178181811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781178181818117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818181818117811717">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781178181811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781818117178181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SWA" HashKey="178181818117818181">
+    <MapTiles>
+      <MapTile TileID="678" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818181178117171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117178117171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="811717178181178181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811781818117171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717178181171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="178181818181178117">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="811717178181818181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717818117171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818181818117178181">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="178181818181171717">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) WE" HashKey="818181818117818181">
+    <MapTiles>
+      <MapTile TileID="670" AltIDMod="0" />
+      <MapTile TileID="671" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717178181811781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117178117178181">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) SEA" HashKey="811781178181818181">
+    <MapTiles>
+      <MapTile TileID="677" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NEA" HashKey="178181818181811717">
+    <MapTiles>
+      <MapTile TileID="699" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NWA" HashKey="818181818117811781">
+    <MapTiles>
+      <MapTile TileID="679" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117178117171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="171717178181178117">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178117818181811717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="818181178117171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) NS" HashKey="818181818181178117">
+    <MapTiles>
+      <MapTile TileID="666" AltIDMod="0" />
+      <MapTile TileID="667" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="811717818181171717">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Sand to Planks(WE) AC" HashKey="178181178117171781">
+    <MapTiles>
+      <MapTile TileID="662" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

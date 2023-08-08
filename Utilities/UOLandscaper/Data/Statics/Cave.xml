@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RandomStatics Chance="0">
+  <Statics Description="Cave" Freq="3">
+    <Static TileID="2272" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Cave" Freq="3">
+    <Static TileID="2273" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Cave" Freq="0">
+    <Static TileID="2274" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Cave" Freq="3">
+    <Static TileID="2275" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Cave" Freq="3">
+    <Static TileID="2276" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Cave" Freq="3">
+    <Static TileID="2277" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Cave" Freq="3">
+    <Static TileID="2278" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Cave" Freq="3">
+    <Static TileID="2279" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Cave" Freq="0">
+    <Static TileID="2280" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Cave" Freq="3">
+    <Static TileID="2281" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Cave" Freq="3">
+    <Static TileID="2282" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+</RandomStatics>

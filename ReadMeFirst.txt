@@ -11,15 +11,3 @@ What you need to know:
 4) You're about to embark on a nich, hardcore experience - you will die often, you will lose items and pets will need to be replaced.  No insurance, and many, many ways to lose items.  In this world, death is meant to have consequences.  Losing something is not bad, its an opportunity to move on in a different path.  
 
 5) Closing this window means you agree to the above, and can start adventuring on!  
-
-Ultima-Adventures: Getting Started (Live or Offline server)
-
-1. Download the latest version of Ultima Adventures from https://www.servuo.com/archive/ultima-adventures-a-full-featured-content-packed-offline-online-server.1374/
-2. Extract the zip file to C: - you should end up with a folder like C:\Ultima-Adventures
-3. If you want to play on a local server, run 'Adventures Server.exe' and wait for it to report 'End Daily Tasks'
-4. Run 'Runme Option 2 - ClassicAssist Launcher'
-5. Confirm that the paths displayed in the launcher are correct for Client Options (C:\Ultima-Adventures\Classic\UO\ClassicUO.exe) and Ultima Online (C:\Ultima-Adventures\ClassicUO)
-6. Go into Options in the launcher and make sure 'Override Client Version' is checked, and that the Client Version field has the correct value (7.0.15.1)
-7. Shard selection; if you want to play on the live server, select 'Adventures' from the dropdown. If you want to play locally and already have Adventures Server.exe running, select 'Testing'
-8. Press Start and wait a few seconds for ClassicUO to open
-9. Whatever you enter for account name and password will be used to create a new account for you, as long as the account name isn't already in use; have fun

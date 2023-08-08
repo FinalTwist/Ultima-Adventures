@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="080C0C080101080101">
+    <MapTiles>
+      <MapTile TileID="1474" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="0C01010C0101080808">
+    <MapTiles>
+      <MapTile TileID="1473" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="08080108080C08080C">
+    <MapTiles>
+      <MapTile TileID="903" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="0808080808080C0C01">
+    <MapTiles>
+      <MapTile TileID="904" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="0108080C08080C0808">
+    <MapTiles>
+      <MapTile TileID="902" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="0808080808080C0101">
+    <MapTiles>
+      <MapTile TileID="134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="0808080C01010C0101">
+    <MapTiles>
+      <MapTile TileID="1473" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="0C0C08010108010108">
+    <MapTiles>
+      <MapTile TileID="1474" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="01010C01010C080808">
+    <MapTiles>
+      <MapTile TileID="1472" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="0108080108080C0808">
+    <MapTiles>
+      <MapTile TileID="137" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="08080C08080C080801">
+    <MapTiles>
+      <MapTile TileID="903" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="010C0C080808080808">
+    <MapTiles>
+      <MapTile TileID="901" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="080101080101080C0C">
+    <MapTiles>
+      <MapTile TileID="1471" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="08080C080801080801">
+    <MapTiles>
+      <MapTile TileID="135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="08080108080108080C">
+    <MapTiles>
+      <MapTile TileID="136" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="01010C080808080808">
+    <MapTiles>
+      <MapTile TileID="915" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="0C0C01080808080808">
+    <MapTiles>
+      <MapTile TileID="901" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="08080808080801010C">
+    <MapTiles>
+      <MapTile TileID="134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="08080801010C01010C">
+    <MapTiles>
+      <MapTile TileID="1472" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="080808080808010C0C">
+    <MapTiles>
+      <MapTile TileID="904" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="0C0101080808080808">
+    <MapTiles>
+      <MapTile TileID="139" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="0C08080C0808010808">
+    <MapTiles>
+      <MapTile TileID="902" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="0101080101080C0C08">
+    <MapTiles>
+      <MapTile TileID="1471" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Snow-Grass-Small Dirt" HashKey="0C0808010808010808">
+    <MapTiles>
+      <MapTile TileID="137" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

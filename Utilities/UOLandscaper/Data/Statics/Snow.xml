@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RandomStatics Chance="0">
+	<Statics Description="Cedar tree + needles" Freq="1">
+		<Static TileID="3286" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3287" X="0" Y="0" Z="0" Hue="1153"/>
+	</Statics>
+	<Statics Description="Cedar tree + needles" Freq="1">
+		<Static TileID="3288" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3289" X="0" Y="0" Z="0" Hue="1153"/>
+	</Statics>
+</RandomStatics>

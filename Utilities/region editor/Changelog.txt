@@ -1,0 +1,41 @@
+Changes in Version 1.1:
+* Fixed problems that required the application to be restarted after setting your mul
+  file path and path to regions.xml.
+* The application will now track when changes are made and ask you if you want to save
+  changes when you close the application.
+* The original regions.xml file will be backed up as regions.xml.bck_{timedatestamp)
+  so you can restore any previous version of the file if needed.
+* Altered the application to require .NET Framework 2.0 to comply with other applications
+  and utilities available. The application previously required .NET Framework 4.0.
+* Cleaned up some internal coding to make record tracking more efficient.
+
+Changes in Version 1.2:
+* Minor cosmetic changes in how the large map view is displayed.
+* Changed the alpha highlight for region selection from orange to yellow.
+* Modified the region type field to only allow characters that would be valid to use
+  as a class name. This allows you to specify region types that may be custom to your
+  shard. The drop-down of the combobox still contains the predefined region types in
+  the RunUO SVN.
+
+Changes in Version 1.4:
+* Corrected errors that would cause the Region Editor to lose track of the number of
+  regions on a facet when removing them.
+* Added the ability to allow users to go directly to a specified location on the map.
+* Added the ability to allow users to manually enter the coordinates and size of
+  new areas if an area was not highlighted.
+* Added a button that allows the user to remove all regions from the current facet.
+  This is ideal for shards that are compiling regions for an entirely custom map.
+
+Changes in Version 1.5:
+* Fixed bug that would allow you to scroll the map beyond the visible area showing No Draw tiles.
+* Added a compatibility option in the Options menu that will allow compatibility with older
+  clients that only use map0.mul with a size of 6144x4096.
+* Removed the 'Set Z Min' button and replaced it with a 'Modify Area' button.  This
+  button allows you to modify all the settings on the area including the Z Min.
+
+Changes in Version 1.6:
+* Significantly improved the display and scrolling speed of the main map display.
+
+Changes in Version 1.7:
+* Added additional levels of scale reduction.
+* Added the ability to double-click on the main display to center the display at the selected point.

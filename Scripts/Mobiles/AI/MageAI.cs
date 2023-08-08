@@ -1,3 +1,9 @@
+/*	
+	MageAI redone in 2022-2023 by FinalTwist
+	lots of work went into this, feel free to use as you wish.
+	my humble contribution to the amazing UO community.
+	BTC address: 35hKrHLBnQTVRTtVbvDuPuwQzgurqgrRCc
+*/
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -810,7 +816,7 @@ namespace Server.Mobiles
 			}
 
 			//lets drain some mana, we're low
-			if (spell == null && m_Mobile.Mana < 50 && c.Mana > 50 && Utility.RandomDouble() >= 90 )
+			if (spell == null && m_Mobile.Mana < 50 && c.Mana > 50 && Utility.RandomDouble() >= 0.80 )
 			{
 				spell = GetRandomManaDrainSpell();
 			}
@@ -1028,6 +1034,28 @@ namespace Server.Mobiles
 			}
 
 			return spell;
+		}
+		
+		private void TeleportCombo(Mobile target) //teleported to/away from the enemy, lets do a combo because we're smart.
+		{
+			double odds = Utility.RandomDouble();
+			Spell spell = null;
+			
+			if (odds <= 0.50 && !target.Frozen && !target.Paralyzed )
+				spell = new ParalyzeSpell( m_Mobile, null );
+			else if (odds <= 0.60)
+				GetRandomFieldSpell();
+			else if (odds <= 0.70 && !target.Poisoned )
+				spell = new PoisonSpell( m_Mobile, null );
+			else if (odds <= 0.80 && ( m_Mobile.Followers + 3 ) < m_Mobile.FollowersMax )
+				spell = GetRandomSummonSpell();
+			else if (CastingNecro())
+				spell = GetRandomNecroCurseSpell();
+			else
+				spell = GetRandomCurseSpell();
+			
+			if( spell != null )
+				spell.Cast();
 		}
 
 		private TimeSpan GetDelay()
@@ -1752,10 +1780,10 @@ namespace Server.Mobiles
 			{
 				toTarget = m_Mobile.Combatant;
 				
-				if (SmartAI)
+				if (SmartAI && toTarget.Map != null && !toTarget.Deleted)
 				{
-					//check if its a bunch of tames coming our way
-					if (toTarget is BaseCreature && ((BaseCreature)toTarget).Controlled && m_Mobile.GetDistanceToSqrt( toTarget ) > 4 ) 
+					//check if its a bunch of tames coming our way and are over 4 tiles away
+					if ( m_Mobile.GetDistanceToSqrt( toTarget ) > 4 ) 
 					{
 						//it is, so put fields in between them and us
 						Map map = m_Mobile.Map;
@@ -1787,6 +1815,19 @@ namespace Server.Mobiles
 								return true;
 						}
 					}
+					else //they are on top of me just cast it on them
+					{
+						LandTarget lt = new LandTarget( toTarget.Location, toTarget.Map );
+						Map map = toTarget.Map;
+						int teleRange = targ.Range;
+							
+						if (!(m_Mobile.GetDistanceToSqrt( toTarget ) > teleRange) && m_Mobile.InLOS( lt ) && map.CanSpawnMobile( toTarget.X, toTarget.Y, toTarget.Z ) && !SpellHelper.CheckMulti( toTarget.Location, toTarget.Map ) )
+						{
+								targ.Invoke( m_Mobile, lt );
+								return true;
+						}
+					}
+						
 				}
 			}
 			else if ( isAnimate )
@@ -1864,6 +1905,10 @@ namespace Server.Mobiles
 					if( ( targ.Range == -1 || m_Mobile.InRange( p, targ.Range ) ) && m_Mobile.InLOS( lt ) && map.CanSpawnMobile( px + x, py + y, lt.Z ) && !SpellHelper.CheckMulti( p, map ) )
 					{
 						targ.Invoke( m_Mobile, lt );
+						
+						if (SmartAI && m_Mobile.Mana > 50 && Utility.RandomDouble() < 0.15 )
+							TeleportCombo(toTarget);
+							
 						return true;
 					}
 				}
@@ -1882,6 +1927,10 @@ namespace Server.Mobiles
 					if( m_Mobile.InLOS( lt ) && map.CanSpawnMobile( lt.X, lt.Y, lt.Z ) && !SpellHelper.CheckMulti( randomPoint, map ) )
 					{
 						targ.Invoke( m_Mobile, new LandTarget( randomPoint, map ) );
+						
+						if (SmartAI && m_Mobile.Mana > 50 && Utility.RandomDouble() < 0.15 )
+							TeleportCombo(toTarget);
+							
 						return true;
 					}
 				}

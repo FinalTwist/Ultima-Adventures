@@ -29,6 +29,12 @@ namespace Server.Spells.Song
 		private int m_ModAmount;
 		private string m_ExpiryMessage;
 		private int m_TargetOriginalResistance;
+		private ResistanceMod m_mod;
+		
+		public ResistanceMod Mod {
+			get { return m_mod; }
+			set { m_mod = value;}
+		}
 		
 		public bool IsDamageOverTime {
 			get { return m_DamageOverTime; }
@@ -226,6 +232,9 @@ namespace Server.Spells.Song
 				}
 			}
 			((PlayerMobile)Caster).SongEffects = songEffects;
+			
+			if (m_mod != null)
+				mobile.RemoveResistanceMod(m_mod);
 		}
 
 		public int CalculateDurationByFame(Mobile mobile, bool inverse) {

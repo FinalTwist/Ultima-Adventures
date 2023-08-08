@@ -1,0 +1,1533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+    <TransInfo Description="Beach to Jungle SN" HashKey="0A0A0A505050505050">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SN" HashKey="500A0A505050505050">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SN" HashKey="0A0A50505050505050">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SN" HashKey="500A50505050505050">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SN" HashKey="0A500A505050505050">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle EW" HashKey="0A50500A50500A5050">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle EW" HashKey="0A50500A5050505050">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle EW" HashKey="5050500A50500A5050">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle EW" HashKey="5050500A5050505050">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle EW" HashKey="0A50505050500A5050">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle WE" HashKey="50500A50500A50500A">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle WE" HashKey="50505050500A50500A">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle WE" HashKey="50500A50500A505050">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle WE" HashKey="50505050500A505050">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle WE" HashKey="50500A50505050500A">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NS" HashKey="5050505050500A0A0A">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NS" HashKey="5050505050500A0A50">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NS" HashKey="505050505050500A0A">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NS" HashKey="505050505050500A50">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NS" HashKey="5050505050500A500A">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50500A50500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50505050500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50500A50500A500A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50505050500A500A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50505050500A500A50">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50500A505050500A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50500A5050500A0A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50500A5050500A0A50">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50505050500A0A500A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50500A50500A0A500A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50500A50500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50500A50500A0A5050">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50500A505050500A50">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50505050500A0A5050">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50500A50500A500A50">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50500A5050500A500A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWA" HashKey="50505050500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="0A0A0A0A50500A5050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="0A0A500A50500A5050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="0A0A0A0A5050505050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="0A0A500A5050505050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="0A500A0A5050505050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="0A0A505050500A5050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="500A0A5050500A5050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="0A500A5050500A5050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="0A0A0A5050500A5050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="500A500A5050505050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="0A500A0A50500A5050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="50500A0A50500A5050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="500A0A0A50500A5050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="50500A0A5050505050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="500A500A50500A5050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="500A505050500A5050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEA" HashKey="500A0A0A5050505050">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="0A50500A50500A0A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="5050500A50500A0A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="0A50500A50500A0A50">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="5050500A50500A0A50">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="5050500A5050500A50">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="0A50500A505050500A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="0A50505050500A0A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="0A50505050500A0A50">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="0A5050505050500A50">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="5050500A50500A500A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="0A50500A50500A500A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="0A5050505050500A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="0A50500A5050500A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="5050500A5050500A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="5050500A505050500A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="0A50505050500A500A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEA" HashKey="0A50500A5050500A50">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="0A0A0A50500A50500A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="0A0A0A50500A505050">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="500A0A50500A50500A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="500A0A50500A505050">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="0A505050500A50500A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="0A500A50500A505050">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="0A500A50500A50500A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="0A0A5050505050500A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="500A5050505050500A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="0A0A0A50505050500A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="0A0A5050500A505050">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="500A0A50505050500A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="500A5050500A505050">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="0A505050500A505050">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="0A500A50505050500A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="500A5050500A50500A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWA" HashKey="0A0A5050500A50500A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NWB" HashKey="0A5050505050505050">
+    <MapTiles>
+      <MapTile TileID="650" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SEB" HashKey="50505050505050500A">
+    <MapTiles>
+      <MapTile TileID="651" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle NEB" HashKey="50500A505050505050">
+    <MapTiles>
+      <MapTile TileID="652" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle SWB" HashKey="5050505050500A5050">
+    <MapTiles>
+      <MapTile TileID="653" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="5050500A500A505050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="5050500A500A0A5050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="5050500A500A500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="5050500A500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="5050500A500A50500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="5050500A500A0A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="5050500A500A500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="5050500A500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="50500A0A5050500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="50500A0A50500A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="50500A0A505050500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="50500A0A50500A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="50500A0A5050500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="50500A0A50500A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="50500A0A500A505050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="50500A0A500A0A5050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="50500A0A500A500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="50500A0A500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="50500A0A500A50500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="50500A0A500A0A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="50500A0A500A500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="50500A0A500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A50505050500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A500A5050500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A505050500A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A500A50500A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A500A505050500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A505050500A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A500A50500A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A50505050500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A500A5050500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A505050500A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A500A50500A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A500A500A505050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A5050500A0A5050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A500A500A0A5050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A5050500A500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A500A500A500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A5050500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A500A500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A500A500A50500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A5050500A0A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A500A500A0A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A5050500A500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A500A500A500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A5050500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A500A500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A505050500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A0A5050500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A5050500A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A0A50500A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A0A505050500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A5050500A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A0A50500A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A505050500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A0A5050500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A5050500A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A0A50500A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A0A500A505050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A50500A0A5050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A0A500A0A5050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A50500A500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A0A500A500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A50500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A0A500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A0A500A50500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A50500A0A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A0A500A0A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A50500A500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A0A500A500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A50500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="500A0A0A500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A50500A500A505050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A505050500A0A5050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A50500A500A0A5050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A505050500A500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A50500A500A500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A505050500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A50500A500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A50500A500A50500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A505050500A0A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A50500A500A0A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A505050500A500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A50500A500A500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A505050500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A50500A500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A505050500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A0A5050500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A5050500A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A0A50500A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A0A505050500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A5050500A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A0A50500A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A505050500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A0A5050500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A5050500A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A0A50500A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A0A500A505050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A50500A0A5050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A0A500A0A5050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A50500A500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A0A500A500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A50500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A0A500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A0A500A50500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A50500A0A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A0A500A0A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A50500A500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A0A500A500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A50500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A500A0A500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A50505050500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A500A5050500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A505050500A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A500A50500A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A500A505050500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A505050500A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A500A50500A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A50505050500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A500A5050500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A505050500A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A500A50500A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A500A500A505050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A5050500A0A5050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A500A500A0A5050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A5050500A500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A500A500A500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A5050500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A500A500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A500A500A50500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A5050500A0A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A500A500A0A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A5050500A500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A500A500A500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A5050500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A500A500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A505050500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A0A5050500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A5050500A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A0A50500A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A0A505050500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A5050500A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A0A50500A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A505050500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A0A5050500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A5050500A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A0A50500A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A0A500A505050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A50500A0A5050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A0A500A0A5050">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A50500A500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A0A500A500A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A50500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A0A500A0A0A50">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A0A500A50500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A50500A0A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A0A500A0A500A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A50500A500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A0A500A500A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A50500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle AC" HashKey="0A0A0A0A500A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle IWE" HashKey="0A505050505050500A">
+    <MapTiles>
+      <MapTile TileID="22" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Beach to Jungle INS" HashKey="50500A5050500A5050">
+    <MapTiles>
+      <MapTile TileID="22" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

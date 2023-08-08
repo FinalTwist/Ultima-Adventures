@@ -52,12 +52,19 @@ namespace Server.Spells.Song
 					for ( int i = 0; i < Targets.Count; ++i )
 					{
 						Mobile mobile = (Mobile)Targets[i];
-						mobile.SendMessage( "Your resistance to energy has increased." );	
-						mobile.FixedParticles( 0x373A, 10, 15, 5012, 0x14, 3, EffectLayer.Waist );			
-						Modification =  new ResistanceMod( ResistanceType.Energy, modAmount );
-						mobile.AddResistanceMod( Modification );
-						SongEffect songEffect = new SongEffect(mobile.Serial, this);
-						base.AddSongEffect(songEffect);
+						if ( mobile.EnergyResistance < 70 && (mobile.EnergyResistance + modAmount) > 70)
+							modAmount = 70 - mobile.EnergyResistance;
+						if (mobile.EnergyResistance < 70)
+						{
+							
+							mobile.SendMessage( "Your resistance to energy has increased." );	
+							mobile.FixedParticles( 0x373A, 10, 15, 5012, 0x14, 3, EffectLayer.Waist );			
+							Modification =  new ResistanceMod( ResistanceType.Energy, modAmount );
+							mobile.AddResistanceMod( Modification );
+							Mod = Modification;
+							SongEffect songEffect = new SongEffect(mobile.Serial, this);
+							base.AddSongEffect(songEffect);
+						}
 					}
 					OneTimeSecEvent.SecTimerTick += SecondTimerTick;
 	        	}
