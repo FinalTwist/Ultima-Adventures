@@ -18,6 +18,17 @@ namespace Server.Multis
 		Single
 	}
 
+	public enum BoatDecayLevel
+	{
+		Ageless,
+		LikeNew,
+		Slightly,
+		Somewhat,
+		Fairly,
+		Greatly,
+		IDOC,
+	}
+
 	public abstract class BaseBoat : BaseMulti
 	{
 		// THE LAST TWO INTEGERS ARE THE SEA WIDTH AND HEIGHT //
@@ -29,7 +40,7 @@ namespace Server.Multis
 		private static Rectangle2D[] m_BottleWrap = new Rectangle2D[]{ new Rectangle2D( 6127+16, 828+16, 1040-32, 1915-32 ) };
 		private static Rectangle2D[] m_UmberWrap = new Rectangle2D[]{ new Rectangle2D( 699+16, 3129+16, 1573-32, 966-32 ) };
 
-		private static TimeSpan BoatDecayDelay = TimeSpan.FromDays( MyServerSettings.BoatDecay() );
+		private static TimeSpan BoatDecayDelay = TimeSpan.FromDays( 30 );
 
 		public static BaseBoat FindBoatAt( IPoint2D loc, Map map )
 		{
@@ -124,29 +135,37 @@ namespace Server.Multis
 		{
 			get
 			{
-				DateTime start = TimeOfDecay - BoatDecayDelay;
+				switch(DecayLevel)
+				{
+					case BoatDecayLevel.Ageless: return 0;
+					case BoatDecayLevel.LikeNew: return translateText( this, 1043010 ); // This structure is like new.
+					case BoatDecayLevel.Slightly: return translateText( this, 1043011 ); // This structure is slightly worn.
+					case BoatDecayLevel.Somewhat: return translateText( this, 1043012 ); // This structure is somewhat worn.
+					case BoatDecayLevel.Fairly: return translateText( this, 1043013 ); // This structure is fairly worn.
+					case BoatDecayLevel.Greatly: return translateText( this, 1043014 ); // This structure is greatly worn.
+					default: return translateText( this, 1043015 ); // This structure is in danger of collapsing.
+				}
+			}
+		}
 
-				if ( DateTime.UtcNow - start < TimeSpan.FromHours( 1.0 ) )
-					return translateText( this, 1043010 ); // This structure is like new.
+		[CommandProperty( AccessLevel.GameMaster )]
+		public bool Ageless { get;set; }
 
+		public BoatDecayLevel DecayLevel
+		{
+			get
+			{
+				if (Ageless) return BoatDecayLevel.Ageless;
+				
+				DateTime now = DateTime.UtcNow;
 
-				if ( DateTime.UtcNow - start < TimeSpan.FromDays( 2.0 ) )
-					return translateText( this, 1043011 ); // This structure is slightly worn.
+				if ( now < TimeOfDecay.AddDays(0 - 1) ) return BoatDecayLevel.LikeNew;
+				if ( now < TimeOfDecay.AddDays(0 - 7) ) return BoatDecayLevel.Slightly;
+				if ( now < TimeOfDecay.AddDays(0 - 14) ) return BoatDecayLevel.Somewhat;
+				if ( now < TimeOfDecay.AddDays(0 - 28) ) return BoatDecayLevel.Fairly;
+				if ( now < TimeOfDecay.Subtract(BoatDecayDelay) ) return BoatDecayLevel.Greatly;
 
-
-				if ( DateTime.UtcNow - start < TimeSpan.FromDays( 3.0 ) )
-					return translateText( this, 1043012 ); // This structure is somewhat worn.
-
-
-				if ( DateTime.UtcNow - start < TimeSpan.FromDays( 4.0 ) )
-					return translateText( this, 1043013 ); // This structure is fairly worn.
-
-
-				if ( DateTime.UtcNow - start < TimeSpan.FromDays( 5.0 ) )
-					return translateText( this, 1043014 ); // This structure is greatly worn.
-
-
-				return translateText( this, 1043015 ); // This structure is in danger of collapsing.
+				return BoatDecayLevel.IDOC;
 			}
 		}
 
@@ -440,6 +459,10 @@ namespace Server.Multis
 				}
 			}
 
+			// Pick the lower time
+			DateTime newDateTime = DateTime.UtcNow + BoatDecayDelay;
+			if (newDateTime < m_DecayTime) m_DecayTime = newDateTime;
+
 			m_Instances.Add( this );
 		}
 
@@ -454,6 +477,18 @@ namespace Server.Multis
 				keyValue = m_SPlank.KeyValue;
 
 			Key.RemoveKeys( m, keyValue );
+		}
+
+		public void TakeOwnership( Mobile from ) {
+			if (Owner != null) RemoveKeys(Owner);
+
+            Owner = from;
+			uint keyValue = CreateKeys(from);
+			if ( PPlank != null ) PPlank.KeyValue = keyValue;
+			if ( SPlank != null ) SPlank.KeyValue = keyValue;
+			Refresh();
+
+			from.PrivateOverheadMessage( 0, 1150, false, "You change the locks.", from.NetState );
 		}
 
 		public uint CreateKeys( Mobile m )
@@ -950,53 +985,9 @@ namespace Server.Multis
 				m_TillerMan.InvalidateProperties();
 		}
 
-		private class DecayTimer : Timer
-		{
-			private BaseBoat m_Boat;
-			private int m_Count;
-
-			public DecayTimer( BaseBoat boat ) : base( TimeSpan.FromSeconds( 1.0 ), TimeSpan.FromSeconds( 5.0 ) )
-			{
-				m_Boat = boat;
-
-				Priority = TimerPriority.TwoFiftyMS;
-			}
-
-			protected override void OnTick()
-			{
-				if ( m_Count == 5 )
-				{
-					m_Boat.Delete();
-					Stop();
-				}
-				else
-				{
-					m_Boat.Location = new Point3D( m_Boat.X, m_Boat.Y, m_Boat.Z - 1 );
-
-					if ( m_Boat.TillerMan != null )
-						m_Boat.TillerMan.Say( BaseBoat.translateText( m_Boat, (1007168 + m_Count) ) );
-
-
-					++m_Count;
-				}
-			}
-		}
-
 		public bool CheckDecay()
 		{
-			if ( m_Decaying )
-				return true;
-
-			if ( !IsMoving && DateTime.UtcNow >= m_DecayTime )
-			{
-				new DecayTimer( this ).Start();
-
-				m_Decaying = true;
-
-				return true;
-			}
-
-			return false;
+			return DecayLevel == BoatDecayLevel.IDOC;
 		}
 
 		public bool LowerAnchor( bool message )

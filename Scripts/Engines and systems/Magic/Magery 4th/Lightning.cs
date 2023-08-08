@@ -46,10 +46,10 @@ namespace Server.Spells.Fourth
 				int nBenefit = 0;
 				if ( Caster is PlayerMobile ) // WIZARD
 				{
-					nBenefit = CalculateMobileBenefit(Caster, 10, 4);
+					nBenefit = CalculateMobileBenefit(Caster, 25, 4);
 				}
 
-				damage = GetNewAosDamage( 20, 1, 6, m ) + nBenefit;
+				damage = GetNewAosDamage( 15, 1, 6, m ) + nBenefit;
 
 				if ( Server.Items.CharacterDatabase.GetMySpellHue( Caster, 0 ) > 0 )
 				{

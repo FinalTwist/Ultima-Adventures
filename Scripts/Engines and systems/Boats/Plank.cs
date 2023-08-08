@@ -177,7 +177,7 @@ namespace Server.Items
 		{
 			if ( IsOpen )
 			{
-				if ( (from.Direction & Direction.Running) != 0 || (m_Boat != null && !m_Boat.Contains( from )) )
+				if (m_Boat != null && !m_Boat.Contains( from ))
 					return true;
 
 				Map map = Map;

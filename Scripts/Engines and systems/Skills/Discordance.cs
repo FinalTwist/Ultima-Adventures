@@ -156,7 +156,7 @@ namespace Server.SkillHandlers
 
 		public static bool IsDiscorded(Mobile targ)
 		{
-			if (targ.Deleted || targ == null)
+			if (targ == null || targ.Deleted)
 				return false;
 			
 			if (targ is BaseCreature && ((BaseCreature)targ).IsDiscorded)

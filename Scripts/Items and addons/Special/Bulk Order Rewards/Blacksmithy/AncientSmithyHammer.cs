@@ -69,7 +69,7 @@ namespace Server.Items
 		public override int LabelNumber{ get{ return 1045127; } } // ancient smithy hammer
 
 		[Constructable]
-		public AncientSmithyHammer( int bonus ) : this( bonus, 600 )
+		public AncientSmithyHammer( int bonus ) : this( bonus, 20 )
 		{
 		}
 

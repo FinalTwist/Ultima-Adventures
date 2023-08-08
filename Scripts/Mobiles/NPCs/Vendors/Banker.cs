@@ -200,7 +200,7 @@ namespace Server.Mobiles
 
 		public static bool Deposit( Mobile from, int amount )
 		{
-			if (AdventuresFunctions.IsInMidland((object)from) && from is PlayerMobile && ((PlayerMobile)from).midrace == 0 );
+			if (AdventuresFunctions.IsInMidland((object)from) && from is PlayerMobile && ((PlayerMobile)from).midrace == 0 )
 			{
 				PlayerMobile pm = (PlayerMobile)from;
 				//Backpack pack = (Backpack)pm.Backpack;

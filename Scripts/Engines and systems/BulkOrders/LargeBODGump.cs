@@ -15,6 +15,7 @@ namespace Server.Engines.BulkOrders
 			m_From = from;
 			m_Deed = deed;
 
+			m_From.CloseGump( typeof( LargeBODCreateSmallBODGump ) );
 			m_From.CloseGump( typeof( LargeBODGump ) );
 			m_From.CloseGump( typeof( SmallBODGump ) );
 

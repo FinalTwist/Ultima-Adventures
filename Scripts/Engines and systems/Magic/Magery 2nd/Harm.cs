@@ -52,10 +52,10 @@ namespace Server.Spells.Second
 				if ( Caster is PlayerMobile ) // WIZARD
 				{
 					// make a Harm spell much more powerful if from a soul shard
-					nBenefit = CalculateMobileBenefit(Caster, 12, 5);
+					nBenefit = CalculateMobileBenefit(Caster, 50, 5);
 				}
 				
-				double damage = GetNewAosDamage( 15, 1, 5, m ) + nBenefit;
+				double damage = GetNewAosDamage( 6, 1, 4, m ) + nBenefit;
 
 
 				if ( !m.InRange( Caster, 2 ) )

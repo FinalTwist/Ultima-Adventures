@@ -150,8 +150,9 @@ namespace Server.Gumps
 					AddLabel(lcpg+20, lcbt-2, gth, @"Sinewy Etude");
 					lcbt = lcbt + 18; if (lcbt > 234){lcbt = 108; lcpg = 258;}
 				}
-				if (HasSpell( from, 367) ) 
+				if (false && HasSpell( from, 367) ) 
 				{
+					// TODO: This needs to go onto the second page. It's currently on top of "Ice Threnody".
 					AddButton(lcpg, lcbt, 9762, 9762, 367, GumpButtonType.Reply, 0);
 					AddLabel(lcpg+20, lcbt-2, gth, @"Dominate Creature");
 					lcbt = lcbt + 18; if (lcbt > 234){lcbt = 108; lcpg = 258;}
@@ -226,7 +227,7 @@ namespace Server.Gumps
 			} 
 			else if ( page == 13 )
 			{
-			AddHtml( 105, 86, 133, 163, @"<BASEFONT Color=#363329><BIG>Magic Finale<br><br>An area of effect that dispels all summoned creatures around you.</BIG></BASEFONT>", (bool)false, (bool)false);
+			AddHtml( 105, 86, 133, 163, @"<BASEFONT Color=#363329><BIG>Magic Finale<br><br>An area of effect that dispels all summoned creatures around you and damages enemies you have provoked.</BIG></BASEFONT>", (bool)false, (bool)false);
 			AddHtml( 262, 89, 132, 120, @"<BASEFONT Color=#363329><BIG>Skill: 70<br><br>Mana: 55<br><br>[MagicFinale</BIG></BASEFONT>", (bool)false, (bool)false);
 			AddImage(308, 197, 0x410);
 			} 
@@ -254,7 +255,7 @@ namespace Server.Gumps
 			AddHtml( 262, 89, 132, 120, @"<BASEFONT Color=#363329><BIG>Skill: 60<br><br>Mana: 20<br><br>[SinewyEtude</BIG></BASEFONT>", (bool)false, (bool)false);
 			AddImage(308, 197, 0x414);
 			} 
-			else if ( page == 18 )
+			else if ( false && page == 18 )
 			{
 			AddHtml( 105, 86, 133, 163, @"<BASEFONT Color=#363329><BIG>Dominate Creature<br><br>An incredibly powerful bard song that combines the Provocation skill to completely control a creature for a limited amount of time.</BIG></BASEFONT>", (bool)false, (bool)false);
 			AddHtml( 262, 89, 132, 120, @"<BASEFONT Color=#363329><BIG>Skill: 80<br><br>Mana: 70<br><br>[DominateCreature</BIG></BASEFONT>", (bool)false, (bool)false);

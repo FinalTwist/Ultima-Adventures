@@ -101,12 +101,31 @@ namespace Server.Items
 			} 
 		}
 
-		public static PowerScroll CreateRandom( int min, int max )
+		private static PowerScroll CreateRandom(int min, int max, bool excludeCrafting) 
 		{
 			min /= 5;
 			max /= 5;
 			
-			return new PowerScroll( Skills[Utility.Random( Skills.Count )], 100 + ( Utility.RandomMinMax( min, max ) * 5 ) );
+			SkillName skillName;
+
+			while (true)
+			{
+				skillName = Skills[Utility.Random( Skills.Count )];
+				if (skillName == SkillName.Spellweaving || skillName == SkillName.Mysticism  || skillName == SkillName.Imbuing || skillName == SkillName.Throwing) continue;
+
+				if (excludeCrafting) {
+					if (skillName == SkillName.Blacksmith || skillName == SkillName.Tailoring || skillName == SkillName.Fletching) continue;
+				}
+
+				break;
+			}
+
+			return new PowerScroll( skillName, 100 + (Utility.RandomMinMax( min, max ) * 5));
+		}
+
+		public static PowerScroll CreateRandom( int min, int max )
+		{
+			return CreateRandom(min, max, false);
 		}
 
 		public static PowerScroll CreateRandomNoCraft( int min, int max )
@@ -114,17 +133,7 @@ namespace Server.Items
 			if (min <5 || max <5)
 				return null;
 
-			min /= 5;
-			max /= 5;
-			
-			SkillName skillName;
-
-			do
-			{
-				skillName = Skills[Utility.Random( Skills.Count )];
-			} while ( skillName == SkillName.Blacksmith || skillName == SkillName.Tailoring || skillName == SkillName.Fletching );
-
-			return new PowerScroll( skillName, 100 + (Utility.RandomMinMax( min, max ) * 5));
+			return CreateRandom(min, max, true);
 		}
 
 		public PowerScroll() : this( SkillName.Alchemy, 0.0 )

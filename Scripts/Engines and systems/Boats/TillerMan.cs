@@ -58,7 +58,11 @@ namespace Server.Items
 		{
 			base.GetProperties( list );
 
-			list.Add( m_Boat.Status );
+			int status = m_Boat.Status;
+			if (0 < status)
+			{
+				list.Add( status );
+			}
 		}
 
 		public void Say( int number )

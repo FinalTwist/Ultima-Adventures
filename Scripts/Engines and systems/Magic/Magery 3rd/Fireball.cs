@@ -46,10 +46,10 @@ namespace Server.Spells.Third
 				int nBenefit = 0;
 				if ( Caster is PlayerMobile ) // WIZARD
 				{
-					nBenefit = CalculateMobileBenefit(Caster, 12, 5);
+					nBenefit = CalculateMobileBenefit(Caster, 40, 5);
 				}
 
-				damage = GetNewAosDamage( 15, 1, 5, m ) + nBenefit;
+				damage = GetNewAosDamage( 9, 1, 5, m ) + nBenefit;
 
 				source.MovingParticles( m, 0x36D4, 7, 0, false, true, Server.Items.CharacterDatabase.GetMySpellHue( Caster, 0 ), 0, 9502, 4019, 0x160, 0 );
 				source.PlaySound( Core.AOS ? 0x15E : 0x44B );

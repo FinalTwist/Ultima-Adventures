@@ -103,7 +103,7 @@ namespace Server
 			if ( archer && from != null )
 				quiver = from.FindItemOnLayer( Layer.Cloak ) as BaseQuiver;
 
-			int totalDamage;
+			int totalDamage = damage;
 
 			if (!magic && !nuking && from is PlayerMobile && ((PlayerMobile)from).Troubadour() && SkillHandlers.Discordance.IsDiscorded(m) )
 			{	
@@ -111,7 +111,7 @@ namespace Server
 			}
 			else if (magic && from is PlayerMobile && ((PlayerMobile)from).Alchemist() ) //alchemists do less magic damage
 			{
-				damage = (int)((double)damage * 0.10);
+				totalDamage = (int)((double)damage * 0.10);
 			}
 			else if (magic && from is PlayerMobile && ((PlayerMobile)from).Sorcerer() && Spells.Fourth.CurseSpell.UnderEffect( m ) )
 			{
@@ -229,9 +229,6 @@ namespace Server
                     totalDamage += totalDamage * quiver.DamageIncrease / 100;
             }
 
-
-
-            totalDamage = damage;
             if (potions && m is PlayerMobile && ((PlayerMobile)m).Alchemist())
 				totalDamage = (int)((double)totalDamage / (8 * ((PlayerMobile)m).AlchemistBonus()));
 

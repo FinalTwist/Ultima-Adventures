@@ -14,7 +14,7 @@ namespace Server.Items
 		[Constructable]
 		public CheesePress() : base()
 		{
-			ItemID = 0x3DB9;
+			ItemID = 0x142A;
 			Name = "A cheese press";
 			type = 8;
 			quality = Utility.RandomMinMax(4, 5);

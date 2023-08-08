@@ -2018,12 +2018,36 @@ namespace Server.Mobiles
 			
 			int credits = 0;
 			if (amount >= 1)
-				credits = amount;
+   			{
+	  			if (credittype == 1)
+      				{
+	  				if (amount > ((PlayerMobile)from).BlacksmithBOD)
+       						return;
+	     
+	  				credits = amount;
+      					((PlayerMobile)from).BlacksmithBOD -= credits;
+	   			}
+	   			else if (credittype == 2)
+       				{
+	   				if (amount > ((PlayerMobile)from).TailorBOD)
+       						return;
+
+      					credits = amount;
+       					((PlayerMobile)from).TailorBOD -= credits;
+	    			}
+	    		}
+      
 			else if (credittype == 1)
+   			{
 				credits = ((PlayerMobile)from).BlacksmithBOD;
+    				((PlayerMobile)from).BlacksmithBOD -= credits;
+			}
 			else //tailor
+   			{
 				credits = ((PlayerMobile)from).TailorBOD;
-		
+    				((PlayerMobile)from).TailorBOD -= credits;
+    			}
+
 			Titles.AwardFame( from, (credits/50), true );
 			
 			this.Say("Here you go.");
@@ -2202,14 +2226,6 @@ namespace Server.Mobiles
 					else 
 						reward = new PowerScroll( SkillName.Blacksmith, 100 + 5 );
 				}
-
-				if (reward != null)
-				{
-					if (credits == ((PlayerMobile)from).BlacksmithBOD)
-						((PlayerMobile)from).BlacksmithBOD = 0;
-					else
-						((PlayerMobile)from).BlacksmithBOD -= credits;
-				}
 			
 			}
 			else if (credittype == 2)//tailor
@@ -2374,20 +2390,11 @@ namespace Server.Mobiles
 					else 
 						reward = new PowerScroll( SkillName.Tailoring, 100 + 5 );
 				}
-
-				if (reward != null)
-				{
-					if (credits == ((PlayerMobile)from).TailorBOD)
-						((PlayerMobile)from).TailorBOD = 0;
-					else
-						((PlayerMobile)from).TailorBOD -= credits;
-				}
 			}
 						
 			if ( reward != null )
 			{
 				from.AddToBackpack( reward );
-
 			}
 				
 			gold = credits * Utility.RandomMinMax(4,7);

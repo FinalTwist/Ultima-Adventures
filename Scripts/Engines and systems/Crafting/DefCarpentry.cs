@@ -258,31 +258,31 @@ namespace Server.Engines.Craft
 			AddRes( index, typeof( Cloth ), 1044286, 150, 1044287 );*/
 			//beds 
 			index = AddCraft( typeof( SleeperSmallSouthAddonDeed ), 1044290, "sleeper small east", 30.0, 60.0, typeof( Board ), 1015101, 100, 1044351 );
-			AddRes( index, typeof( Cloth ), 1044036, 40, "cloth" );
+			AddRes( index, typeof( Cloth ), 1044286, 40, "cloth" );
 			index = AddCraft( typeof( SleeperSmallEWAddonDeed ), 1044290, "sleeper small south", 30.0, 60.0, typeof( Board ), 1015101, 100, 1044351 );
-			AddRes( index, typeof( Cloth ), 1044036, 40, "cloth" );
+			AddRes( index, typeof( Cloth ), 1044286, 40, "cloth" );
 			index = AddCraft( typeof( SleeperFutonEWAddonDeed ), 1044290, "sleeper futon east", 40.0, 70.0, typeof( Board ), 1015101, 10, 1044351 );
-			AddRes( index, typeof( Cloth ), 1044036, 200, "cloth" );
+			AddRes( index, typeof( Cloth ), 1044286, 200, "cloth" );
 			index = AddCraft( typeof( SleeperFutonNSAddonDeed ), 1044290, "sleeper futon south", 40.0, 70.0, typeof( Board ), 1015101, 10, 1044351 );
-			AddRes( index, typeof( Cloth ), 1044036, 200, "cloth" );
+			AddRes( index, typeof( Cloth ), 1044286, 200, "cloth" );
 			index = AddCraft( typeof( SleeperEWAddonDeed ), 1044290, "sleeper bed east", 60.0, 90.0, typeof( Board ), 1015101, 200, 1044351 );
-			AddRes( index, typeof( Cloth ), 1044036, 80, "cloth" );
+			AddRes( index, typeof( Cloth ), 1044286, 80, "cloth" );
 			index = AddCraft( typeof( SleeperNSAddonDeed ), 1044290, "sleeper bed south", 60.0, 90.0, typeof( Board ), 1015101, 200, 1044351 );
-			AddRes( index, typeof( Cloth ), 1044036, 80, "cloth" );
+			AddRes( index, typeof( Cloth ), 1044286, 80, "cloth" );
 			index = AddCraft( typeof( SleeperElvenEWAddonDeed ), 1044290, "sleeper elven east", 70.0, 100.0, typeof( Board ), 1015101, 500, 1044351 );
-			AddRes( index, typeof( Cloth ), 1044036, 150, "cloth" );
+			AddRes( index, typeof( Cloth ), 1044286, 150, "cloth" );
 			AddRes( index, typeof( MysticalTreeSap ), "Mystical Tree Sap", 5, 1042081 );
 			AddRes( index, typeof( IronIngot ), 1044036, 20, 1044037 );
 			index = AddCraft( typeof( SleeperElvenSouthAddonDeed ), 1044290, "sleeper elven south", 70.0, 100.0, typeof( Board ), 1015101, 500, 1044351 );
-			AddRes( index, typeof( Cloth ), 1044036, 150, "cloth" );
+			AddRes( index, typeof( Cloth ), 1044286, 150, "cloth" );
 			AddRes( index, typeof( MysticalTreeSap ), "Mystical Tree Sap", 5, 1042081 );
 			AddRes( index, typeof( IronIngot ), 1044036, 20, 1044037 );
 			index = AddCraft( typeof( SleeperTallElvenEastAddonDeed ), 1044290, "sleeper tall elven east", 90.0, 119.0, typeof( Board ), 1015101, 1000, 1044351 );
-			AddRes( index, typeof( Cloth ), 1044036, 300, "cloth" );
+			AddRes( index, typeof( Cloth ), 1044286, 300, "cloth" );
 			AddRes( index, typeof( MysticalTreeSap ), "Mystical Tree Sap", 10, 1042081 );
 			AddRes( index, typeof( IronIngot ), 1044036, 50, 1044037 );
 			index = AddCraft( typeof( SleeperTallElvenSouthAddonDeed ), 1044290, "sleeper tall elven south", 90.0, 119.0, typeof( Board ), 1015101, 1000, 1044351 );
-			AddRes( index, typeof( Cloth ), 1044036, 300, "cloth" );
+			AddRes( index, typeof( Cloth ), 1044286, 300, "cloth" );
 			AddRes( index, typeof( MysticalTreeSap ), "Mystical Tree Sap", 10, 1042081 );
 			AddRes( index, typeof( IronIngot ), 1044036, 50, 1044037 );
 

@@ -73,32 +73,7 @@ namespace Server.Mobiles
 			
 			c.DropItem( new Apple( 6 ) );	
 			
-			if ( Utility.RandomDouble() < 0.05 )
-			{
-				switch ( Utility.Random( 2 ) )
-				{
-					case 0: c.DropItem( new Necklace() ); break;
-					case 1: c.DropItem( new GoldRing() ); break;
-				}
-			}
 			
-			if ( Utility.RandomDouble() < 0.04 )
-				c.DropItem( new GoldBracelet() );
-						
-			if ( Utility.RandomDouble() < 0.03 )
-				c.DropItem( new GoldBeadNecklace() );	
-					
-			if ( Utility.RandomDouble() < 0.02 )
-				c.DropItem( new GoldNecklace() );
-				
-			if ( Utility.RandomDouble() < 0.01 )
-			{
-				switch ( Utility.Random( 2 ) )
-				{
-					case 0: c.DropItem( new Beads() ); break;
-					case 1: c.DropItem( new GoldEarrings() ); break;
-				}
-			}
 		}
 
 		public override Poison PoisonImmune{ get{ return Poison.Deadly; } }

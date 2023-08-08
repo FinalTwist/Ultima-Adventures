@@ -284,16 +284,6 @@ namespace Server.Gumps
 			AddHtml( 100, 155, 477, 103, @"<BODY><BASEFONT Color=#FCFF00><BIG>" + sText + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 		}
 
-		private static void ResurrectNow( object state )
-		{
-			Mobile m = state as Mobile;
-			if (!m.Alive)
-			{
-				m.CloseGump( typeof( ResurrectNowGump ) );
-				m.SendGump( new ResurrectNowGump( m ) );
-			}
-		}
-
 		public override void OnResponse( NetState state, RelayInfo info )
 		{
 			Mobile from = state.Mobile;
@@ -345,8 +335,6 @@ namespace Server.Gumps
 			else
 			{
 				from.SendMessage( "You decide to remain in the spirit realm." );
-				Timer.DelayCall( TimeSpan.FromSeconds( 35.0 ), ResurrectNow, from );
-				return;
 			}
 		}
 	}

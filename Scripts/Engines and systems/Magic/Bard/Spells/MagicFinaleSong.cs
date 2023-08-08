@@ -55,13 +55,8 @@ namespace Server.Spells.Song
 				{
 					if ( m is BaseCreature )
 					{
-						BaseCreature mn = m as BaseCreature;
-						if ( mn.ControlSlots == 666 )
-							targets.Add( m );
-					}
-
-					if ( m is BaseCreature && ((BaseCreature)m).Summoned )
 						targets.Add( m );
+					}
 				}
 				
 				Caster.FixedParticles( 0x3709, 1, 30, 9965, 5, 7, EffectLayer.Waist );

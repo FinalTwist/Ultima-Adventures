@@ -420,6 +420,7 @@ namespace Server.Engines.Craft
 			#endregion
 
 			#region Multi-Component Items
+			// Assemblies
 			index = AddCraft( typeof( AxleGears ), 1044051, 1024177, 0.0, 0.0, typeof( Axle ), 1044169, 1, 1044253 );
 			AddRes( index, typeof( Gears ), 1044254, 1, 1044253 );
 
@@ -440,72 +441,72 @@ namespace Server.Engines.Craft
 			index = AddCraft( typeof( Bola ), 1044051, 1046441, 60.0, 80.0, typeof( BolaBall ), 1046440, 4, 1042613 );
 			AddRes( index, typeof( Leather ), 1044462, 3, 1044463 );
 
-			index = AddCraft( typeof( CiderBarrel ), "Cider Barrel", 1044258, 60.0, 100.0, typeof( ArcaneGem ), "arcane gem", 1, 1044253 );
-			AddRes( index, typeof( Keg ), 1044294, 2, "potion keg" );
-			AddRes( index, typeof( AxleGears ), 1044170, 4, 1044253 );
-
-			index = AddCraft( typeof( WineBarrel ), "Wine Barrel", 1044258, 80.0, 100.0, typeof( ArcaneGem ), "arcane gem", 2, 1044253 );
-			AddRes( index, typeof( Keg ), 1044294, 2, "potion keg" );
-			AddRes( index, typeof( AxleGears ), 1044170, 4, 1044253 );
-
-			index = AddCraft( typeof( AleBarrel ), "Ale Barrel", 1044258, 60.0, 100.0, typeof( ArcaneGem ), "arcane gem", 1, 1044253 );
-			AddRes( index, typeof( Keg ), 1044294, 2, "potion keg" );
-			AddRes( index, typeof( AxleGears ), 1044170, 4, 1044253 );
-
-			index = AddCraft( typeof( CheesePress ), "Cheese Press", 1044258, 60.0, 100.0, typeof( ArcaneGem ), "arcane gem", 2, 1044253 );
-			AddRes( index, typeof( Keg ), 1044294, 2, "potion keg" );
-			AddRes( index, typeof( AxleGears ), 1044170, 4, 1044253 );
-
-			index = AddCraft( typeof( LiquorBarrel ), "Liquor Barrel", 1044258, 95.0, 120.0, typeof( ArcaneGem ), "arcane gem", 4, 1044253 );
-			AddRes( index, typeof( Keg ), 1044294, 2, "potion keg" );
-			AddRes( index, typeof( AxleGears ), 1044170, 4, 1044253 );
-
-			index = AddCraft( typeof( PotionKeg ), 1044051, 1044258, 75.0, 100.0, typeof( Keg ), 1044255, 1, 1044253 );
-			AddRes( index, typeof( Bottle ), 1044250, 10, 1044253 );
-			AddRes( index, typeof( BarrelLid ), 1044251, 1, 1044253 );
-			AddRes( index, typeof( BarrelTap ), 1044252, 1, 1044253 );
+            index = AddCraft(typeof(PotionKeg), 1044051, 1044258, 75.0, 100.0, typeof(Keg), "Keg", 1, 1044253);
+            AddRes(index, typeof(Bottle), 1044250, 10, 1044253);
+            AddRes(index, typeof(BarrelLid), 1044251, 1, 1044253);
+            AddRes(index, typeof(BarrelTap), 1044252, 1, 1044253);
 
 			index = AddCraft( typeof( LockpickingChest10 ), 1044051, "lockpicking chest 10", 75.0, 100.0, typeof( IronIngot ), 1044036, 10, 1044037 );
-			AddRes( index, typeof( ArcaneGem ), "arcane gem", 1, 1044253 );
-			AddRes( index, typeof( WoodenBox ), "wooden box", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ), 1114115, 1, 1044253 );
+			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
 			index = AddCraft( typeof( LockpickingChest20 ), 1044051, "lockpicking chest 20", 80.0, 100.0, typeof( IronIngot ), 1044036, 15, 1044037 );
-			AddRes( index, typeof( ArcaneGem ), "arcane gem", 3, 1044253 );
-			AddRes( index, typeof( WoodenBox ), "wooden box", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ), 1114115, 3, 1044253 );
+			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest30 ), 1044051, "lockpicking chest 30", 82.5, 100.0, typeof( DullCopperIngot ), "dull copper ingot", 10, 1044037 );
-			AddRes( index, typeof( ArcaneGem ), "arcane gem", 4, 1044253 );
-			AddRes( index, typeof( WoodenBox ), "wooden box", 1, 1044253 );
+			index = AddCraft( typeof( LockpickingChest30 ), 1044051, "lockpicking chest 30", 82.5, 100.0, typeof( DullCopperIngot ), 1074916, 10, 1044037 );
+			AddRes( index, typeof( ArcaneGem ), 1114115, 4, 1044253 );
+			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest40 ), 1044051, "lockpicking chest 40", 85.0, 100.0, typeof( ShadowIronIngot ), "shadow iron ingot", 25, 1044037 );
-			AddRes( index, typeof( ArcaneGem ), "arcane gem", 5, 1044253 );
-			AddRes( index, typeof( WoodenBox ), "wooden box", 1, 1044253 );
+			index = AddCraft( typeof( LockpickingChest40 ), 1044051, "lockpicking chest 40", 85.0, 100.0, typeof( ShadowIronIngot ), 1074917, 25, 1044037 );
+			AddRes( index, typeof( ArcaneGem ), 1114115, 5, 1044253 );
+			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest50 ), 1044051, "lockpicking chest 50", 87.5, 100.0, typeof( BronzeIngot ), "bronze ingot", 50, 1044037 );
-			AddRes( index, typeof( ArcaneGem ), "arcane gem", 8, 1044253 );
-			AddRes( index, typeof( WoodenBox ), "wooden box", 1, 1044253 );
+			index = AddCraft( typeof( LockpickingChest50 ), 1044051, "lockpicking chest 50", 87.5, 100.0, typeof( BronzeIngot ), 1074919, 50, 1044037 );
+			AddRes( index, typeof( ArcaneGem ), 1114115, 8, 1044253 );
+			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest60 ), 1044051, "lockpicking chest 60", 90.0, 100.0, typeof( GoldIngot ), "gold ingot", 100, 1044037 );
-			AddRes( index, typeof( ArcaneGem ), "arcane gem", 10, 1044253 );
-			AddRes( index, typeof( WoodenBox ), "wooden box", 1, 1044253 );
+			index = AddCraft( typeof( LockpickingChest60 ), 1044051, "lockpicking chest 60", 90.0, 100.0, typeof( GoldIngot ), 1074920, 100, 1044037 );
+			AddRes( index, typeof( ArcaneGem ), 1114115, 10, 1044253 );
+			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest70 ), 1044051, "lockpicking chest 70", 92.5, 100.0, typeof( AgapiteIngot ), "agapite ingot", 250, 1044037 );
-			AddRes( index, typeof( ArcaneGem ), "arcane gem", 15, 1044253 );
-			AddRes( index, typeof( WoodenBox ), "wooden box", 1, 1044253 );
+			index = AddCraft( typeof( LockpickingChest70 ), 1044051, "lockpicking chest 70", 92.5, 100.0, typeof( AgapiteIngot ), 1074921, 250, 1044037 );
+			AddRes( index, typeof( ArcaneGem ), 1114115, 15, 1044253 );
+			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest80 ), 1044051, "lockpicking chest 80", 95.0, 100.0, typeof( VeriteIngot ), "verite ingot", 500, 1044037 );
-			AddRes( index, typeof( ArcaneGem ), "arcane gem", 30, 1044253 );
-			AddRes( index, typeof( WoodenBox ), "wooden box", 1, 1044253 );
+			index = AddCraft( typeof( LockpickingChest80 ), 1044051, "lockpicking chest 80", 95.0, 100.0, typeof( VeriteIngot ), 1074922, 500, 1044037 );
+			AddRes( index, typeof( ArcaneGem ), 1114115, 30, 1044253 );
+			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest90 ), 1044051, "lockpicking chest 90", 97.5, 100.0, typeof( ValoriteIngot ), "valorite ingot", 1000, 1044037 );
-			AddRes( index, typeof( ArcaneGem ), "arcane gem", 45, 1044253 );
-			AddRes( index, typeof( WoodenBox ), "wooden box", 1, 1044253 );
+			index = AddCraft( typeof( LockpickingChest90 ), 1044051, "lockpicking chest 90", 97.5, 100.0, typeof( ValoriteIngot ), 1074923, 1000, 1044037 );
+			AddRes( index, typeof( ArcaneGem ), 1114115, 45, 1044253 );
+			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			
-			#endregion // REMOVED THE FACTION TRAPS WIZARD
+            // Hospitality
+            index = AddCraft(typeof(AleBarrel), "Hospitality", "ale barrel", 60.0, 100.0, typeof(ArcaneGem), 1114115, 1, 1044253);
+            AddRes(index, typeof(Keg), "Keg", 2, 1044253);
+            AddRes(index, typeof(AxleGears), 1044170, 4, 1044253);
 
-			// Set the overridable material
-			SetSubRes( typeof( IronIngot ), 1044022 );
+            index = AddCraft(typeof(CheesePress), "Hospitality", "cheese press", 60.0, 100.0, typeof(ArcaneGem), 1114115, 2, 1044253);
+            AddRes(index, typeof(Keg), "Keg", 2, 1044253);
+            AddRes(index, typeof(AxleGears), 1044170, 4, 1044253);
+
+            index = AddCraft(typeof(CiderBarrel), "Hospitality", "cider barrel", 60.0, 100.0, typeof(ArcaneGem), 1114115, 1, 1044253);
+            AddRes(index, typeof(Keg), "Keg", 2, 1044253);
+            AddRes(index, typeof(AxleGears), 1044170, 4, 1044253);
+
+            index = AddCraft(typeof(LiquorBarrel), "Hospitality", "liquor barrel", 95.0, 120.0, typeof(ArcaneGem), 1114115, 4, 1044253);
+            AddRes(index, typeof(Keg), "Keg", 2, 1044253);
+            AddRes(index, typeof(AxleGears), 1044170, 4, 1044253);
+
+            index = AddCraft(typeof(WineBarrel), "Hospitality", "wine barrel", 80.0, 100.0, typeof(ArcaneGem), 1114115, 2, 1044253);
+            AddRes(index, typeof(Keg), "Keg", 2, 1044253);
+            AddRes(index, typeof(AxleGears), 1044170, 4, 1044253);
+
+            #endregion // REMOVED THE FACTION TRAPS WIZARD
+
+            // Set the overridable material
+            SetSubRes( typeof( IronIngot ), 1044022 );
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material

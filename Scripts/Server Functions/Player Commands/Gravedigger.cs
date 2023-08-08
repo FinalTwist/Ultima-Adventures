@@ -46,7 +46,7 @@ namespace Server.Misc
 	    mSp.MoveToWorld(new Point3D(from.X, from.Y, from.Z), from.Map);
 
 	    mSp.Say ("Greetings, Sire.");
-	    mSp.Say ("I will fetch your corpse for a fee of 30,000 gold");
+	    mSp.Say ("I will fetch your corpse for a fee of 40,000 gold (coins)");
 	    mSp.Say ("Hurry, I am busy and will only stay here a few minutes.");
 
 	}

@@ -65,7 +65,7 @@ namespace Server.Mobiles
             Basic,	/* Speech Events and Create/Delete Objects */
             Debug	/* includes Asynchronous and Database calls */
         }
-        public static LogLevel Logging { get { return LogLevel.Debug; } }
+        public static LogLevel Logging { get { return LogLevel.None; } }
 
         public enum Attitude { Good = 1, Bad, Indifferent };
         public enum Wealth { Poor, Normal, Rich };

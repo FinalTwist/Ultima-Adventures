@@ -46,8 +46,8 @@ namespace Server.Items
 			base.Deserialize( reader );
 			int version = reader.ReadInt();
 
-			if ( Weight == 1.0 )
-				Weight = 5.0;
+			if ( Weight == 1.0 ) Weight = 5.0;
+			if (ItemID == 0x303 || ItemID == 0x304 ||ItemID ==  0x305 || ItemID ==  0x306) ItemID = 0x1410;
 		}
 	}
 }

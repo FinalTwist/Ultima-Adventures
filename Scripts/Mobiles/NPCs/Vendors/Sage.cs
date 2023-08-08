@@ -52,10 +52,10 @@ namespace Server.Mobiles
 		{
 			if ( dropped is Gold )
 			{
-				int Coins = dropped.Amount/2;
+				int halfDroppedCoins = dropped.Amount/2;
 				string sMessage = "";
 
-				if ( Coins == 500 )
+				if ( halfDroppedCoins == 500 )
 				{
 					if ( from.Skills[SkillName.Inscribe].Value >= 30 )
 					{
@@ -79,12 +79,12 @@ namespace Server.Mobiles
 						from.AddToBackpack ( dropped );
 					}
 				}
-				else if ( 	Coins == 10000 || 
-							Coins == 9000 || 
-							Coins == 8000 || 
-							Coins == 7000 || 
-							Coins == 6000 || 
-							Coins == 5000 
+				else if ( 	halfDroppedCoins == 10000 || 
+							halfDroppedCoins == 9000 || 
+							halfDroppedCoins == 8000 || 
+							halfDroppedCoins == 7000 || 
+							halfDroppedCoins == 6000 || 
+							halfDroppedCoins == 5000 
 					)
 				{
 					int nAllowedForAnotherQuest = SearchPage.ArtifactQuestTimeNew( from );
@@ -133,7 +133,7 @@ namespace Server.Mobiles
 							item.Delete();
 						}
 
-						from.AddToBackpack ( new SearchBook( from, Coins ) );
+						from.AddToBackpack ( new SearchBook( from, halfDroppedCoins ) );
 						dropped.Delete();
 					}
 				}

@@ -990,12 +990,18 @@ namespace Server.Spells
 				
 				if (pm.Sorcerer() && !(spell is FoeRequiemSong))
 				{
-					double affinitybonus = ((from.Skills[SkillName.Magery].Value + from.Skills[SkillName.EvalInt].Value)/100) + (from.Int / 100) + (( AosAttributes.GetValue( from, AosAttribute.SpellDamage ) / (MyServerSettings.RealSpellDamageCap()/3) ));
+                    // Circle is 0-based, so the divisor needs to be intended circle - 1
+                    // 5th circle should be the threshold
+                    // 5 - 1 = 4 (divisor)
+                    MagerySpell magerySpell = spell as MagerySpell;
+                    double spellComplexity = Math.Min(1, magerySpell != null ? (int)magerySpell.Circle / 4 : 1.0);
 
-					if (affinitybonus > 1)
+                    double affinitybonus = ((from.Skills[SkillName.Magery].Value + from.Skills[SkillName.EvalInt].Value)/100) + (from.Int / 100) + (spellComplexity * ( AosAttributes.GetValue( from, AosAttribute.SpellDamage ) / (MyServerSettings.RealSpellDamageCap()/3) ));
+
+                    if (affinitybonus > 1)
 						iDamage = (int)((double)iDamage * affinitybonus);
-				}
-				if (pm.Troubadour() && (spell is FoeRequiemSong)) 
+                }
+                if (pm.Troubadour() && (spell is FoeRequiemSong)) 
 				{
 					double balladierbonus = ((from.Skills[SkillName.Musicianship].Value)/45) + (from.Dex / 90) ;
 
@@ -1024,7 +1030,7 @@ namespace Server.Spells
 
 			iDamage = AdventuresFunctions.DiminishingReturns( iDamage , diminishingmax, 10 ); // FINAL diminishing returns
 
-			Mobile atcker = from;
+            Mobile atcker = from;
 			
 			if ( from is BaseCreature && ((BaseCreature)from).GetMaster() is PlayerMobile)
 				atcker = ((BaseCreature)from).GetMaster();
@@ -1058,7 +1064,7 @@ namespace Server.Spells
 	
 			}
 
-			if (AdventuresFunctions.IsInMidland((object)from) && from is PlayerMobile)
+            if (AdventuresFunctions.IsInMidland((object)from) && from is PlayerMobile)
 				damage = (int)((double)damage * (1.25 * ((PlayerMobile)from).Lucidity()));
 
 			if( delay == TimeSpan.Zero )

@@ -203,10 +203,11 @@ namespace Server.Items
 				BaseHouse house = BaseHouse.FindHouseAt(this);
 				BaseHouse housedest = BaseHouse.FindHouseAt( m_PointDest, m_MapDest, m_PointDest.Z);
 
-				if ( ((PlayerMobile)m).Avatar && house != housedest )
-				{
-					AetherGlobe.ApplyCurse( m, this.Map, m_MapDest, 1 );
-				}
+				// Tsai: This isn't a fast-navigation. Do not penalize player for using this.
+				// if ( ((PlayerMobile)m).Avatar && house != housedest )
+				// {
+				// 	AetherGlobe.ApplyCurse( m, this.Map, m_MapDest, 1 );
+				// }
 			
 				DoTeleport( m );
 			}

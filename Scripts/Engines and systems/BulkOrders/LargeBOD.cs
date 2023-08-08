@@ -198,48 +198,7 @@ namespace Server.Engines.BulkOrders
 					}
 				}
 				else if (o == this) {
-
-					int cost = SmithRewardCalculator.Instance.ComputePoints( this ) * 1000;
-					if (m_RequireExceptional )
-						cost *= 3;
-
-						if ( Banker.Withdraw( from, cost ) )
-						{
-							from.SendLocalizedMessage( 1060398, cost.ToString() ); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
-						}
-						else
-						{
-							from.SendMessage("You need " + cost + " gold to use this feature for this BOD.") ; // You do not have enough funds in your bank to cover the difference between your old house and your new one.
-							return;
-						}
-
-					LargeBulkEntry entry = null;
-					
-					for ( int i = 0; i < m_Entries.Length; ++i )
-					{
-						if (o is LargeSmithBOD){
-							SmallSmithBOD SmallBOD = new SmallSmithBOD();
-							SmallBOD.Type = m_Entries[i].Details.Type;
-							SmallBOD.Number = m_Entries[i].Details.Number;
-							SmallBOD.AmountMax = this.AmountMax;
-							SmallBOD.Graphic = m_Entries[i].Details.Graphic;
-							SmallBOD.Material = this.Material;
-							SmallBOD.RequireExceptional = this.RequireExceptional;
-							from.AddToBackpack(SmallBOD);
-
-						} else if (o is LargeTailorBOD) {
-							SmallTailorBOD SmallBOD = new SmallTailorBOD();
-							SmallBOD.Type = m_Entries[i].Details.Type;
-							SmallBOD.Number = m_Entries[i].Details.Number;
-							SmallBOD.AmountMax = this.AmountMax;
-							SmallBOD.Graphic = m_Entries[i].Details.Graphic;
-							SmallBOD.Material = this.Material;
-							SmallBOD.RequireExceptional = this.RequireExceptional;						
-							from.AddToBackpack(SmallBOD);
-
-						}
-					}
-
+					from.SendGump( new LargeBODCreateSmallBODGump( from, (LargeBOD)this ) );
 				}
 				else
 				{

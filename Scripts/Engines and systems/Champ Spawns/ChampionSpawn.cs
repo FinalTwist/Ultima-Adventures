@@ -405,7 +405,7 @@ namespace Server.Engines.CannedEvil
 		}
 		#endregion
 
-		public static void GiveScrollTo( Mobile killer, SpecialScroll scroll )
+		public static void GiveScrollTo( Mobile killer, Item scroll )
 		{
 			if( scroll == null || killer == null )	//sanity
 				return;
@@ -425,6 +425,8 @@ namespace Server.Engines.CannedEvil
 					killer.AddToBackpack( scroll );
 			}
 			
+			/*is this even a thing in UA?
+
 			// Justice reward
 			PlayerMobile pm = (PlayerMobile)killer;
 			for (int j = 0; j < pm.JusticeProtectors.Count; ++j)
@@ -461,6 +463,7 @@ namespace Server.Engines.CannedEvil
 					catch{}
 				}
 			}
+			*/
 		}
 
 		public void OnSlice()
@@ -529,26 +532,35 @@ namespace Server.Engines.CannedEvil
 
 						if( killer is PlayerMobile )
 						{
-							#region Scroll of Transcendence
 
-									if ( Utility.RandomDouble() <= 0.01 )
+									if ( Utility.RandomDouble() <= 0.01)
 									{
 										PlayerMobile pm = (PlayerMobile)killer;
-										double random = Utility.Random ( 49 );
-										
-										if ( random <= 15 )
-										{
-											ScrollofTranscendence SoTF = CreateRandomSoT( true );
-											GiveScrollTo( pm, (SpecialScroll)SoTF );
-										}
-										else
+										double random = Utility.Random ( 150 );
+										double randomtwo = Utility.Random(150);
+
+										if (random == randomtwo)
 										{
 											PowerScroll PS = PowerScroll.CreateRandomNoCraft(5, 5);
 											if (PS != null)
-												GiveScrollTo( pm, (SpecialScroll)PS );
+												GiveScrollTo( pm, (Item)PS );
 										}
+										else if (Utility.RandomBool())
+										{
+											Item scroll = new RandomAlacrity();
+											if (scroll != null)
+												GiveScrollTo( pm, scroll );
+										}
+										else
+										{
+											ScrollofTranscendence SoTF = CreateRandomSoT( true );
+											GiveScrollTo( pm, (Item)SoTF );
+										}
+
+										
 									}
 
+							/*not in UA?
 								if ( Map == Map.Ilshenar || Map == Map.Tokuno || Map == Map.Malas )
 								{
 									if ( Utility.RandomDouble() < 0.0015 )
@@ -558,7 +570,7 @@ namespace Server.Engines.CannedEvil
 										killer.AddToBackpack( SoTT );
 									}
 								}
-							#endregion
+								
 
 							int mobSubLevel = GetSubLevelFor( m ) + 1;
 
@@ -582,6 +594,7 @@ namespace Server.Engines.CannedEvil
 
 								info.Award( m_Type, mobSubLevel );
 							}
+							*/
 						}
 					}
 				}

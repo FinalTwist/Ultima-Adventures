@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Server;
 using Server.Items;
 using Server.Network;
 using Server.Mobiles;
@@ -14,61 +11,34 @@ namespace Server
 	{ 
 		public static void Initialize()
 		{
-			EventSink.PlayerDeath += new PlayerDeathEventHandler(EventSink_PlayerDeath);
-		}
-
-		private static void EventSink_PlayerDeath(PlayerDeathEventArgs e)
-		{
-			Mobile m = e.Mobile;
-
-			if ( (m == null) || !(m is PlayerMobile) )
-				return;
-
-			if ( ((PlayerMobile)m).SoulBound )
-			{
-				return;
-			}
-
-			if ( ( !m.Alive ) )
-			{
-				Timer.DelayCall( TimeSpan.FromSeconds( 30.0 ), ResurrectNow, m );
-			}
-		}
-
-		private static void ResurrectNow( object state )
-		{
-			Mobile m = state as Mobile;
-
-			if ( !(m is PlayerMobile) || m.Alive)
-				return;
-
-			if ( ((PlayerMobile)m).LastAutoRes == null || DateTime.UtcNow >= ( ((PlayerMobile)m).LastAutoRes + TimeSpan.FromMinutes( 60.0 ) ) )
-			{
-				((PlayerMobile)m).LastAutoRes = DateTime.UtcNow;
-
-				m.CloseGump( typeof( ResurrectNowGump ) );
-				m.SendGump( new ResurrectNowGump( m ) );
-			}
-		}
+			EventSink.PlayerDeath += new PlayerDeathEventHandler(e => ResurrectNowGump.TryShowAutoResurrectGump(e.Mobile as PlayerMobile));
+			EventSink.Login += new LoginEventHandler(e => ResurrectNowGump.TryShowAutoResurrectGump(e.Mobile as PlayerMobile));
+        }
 	}
 }
 
 namespace Server.Gumps
 {
-	public class ResurrectNowGump : Gump
-	{
-		public ResurrectNowGump( Mobile from ): base( 50, 20 )
+    public class ResurrectNowGump : Gump
+    {
+        private enum ButtonType
+        {
+			Close = 0,
+            Accept = 1,
+            Cancel = 2,
+            CancelAndSuppress = 3
+        }
+
+        public ResurrectNowGump( Mobile from ): base( 50, 20 )
 		{
-			if ( !(from is PlayerMobile) || from.Alive)
-				return;
+			if ( !(from is PlayerMobile) || from.Alive) return;
 
-
-			double penalty = 0;
+			double penalty;
 			
-				if (from.Karma >= 0)
-					penalty = ( (100 - ( ((double)AetherGlobe.BalanceLevel / 100000.0) * ( ((double)from.Karma / 15000) ) )  ) / 100 ) ;
-				else 
-					penalty = ( (100 - (((double)(100000-AetherGlobe.BalanceLevel) / 100000.0) * ( ((double)Math.Abs(from.Karma) / 15000) ) ) ) / 100 ) ;
+			if (from.Karma >= 0)
+				penalty = ( (100 - ( ((double)AetherGlobe.BalanceLevel / 100000.0) * ( ((double)from.Karma / 15000) ) )  ) / 100 ) ;
+			else 
+				penalty = ( (100 - (((double)(100000-AetherGlobe.BalanceLevel) / 100000.0) * ( ((double)Math.Abs(from.Karma) / 15000) ) ) ) / 100 ) ;
 				
 			if (penalty >= 0.999)
 				penalty = 0.999;
@@ -76,25 +46,13 @@ namespace Server.Gumps
             int HealCost = GetPlayerInfo.GetResurrectCost( from );
 			int BankGold = Banker.GetBalance( from );
 
-			string sText = "Do you wish to resurrect yourself now?  There will be a harsh penalty for doing so for any experienced adventurers.";
-			bool ResPenalty = false;
+			string sText;
 
-			string c1 = String.Format("{0:0.0}", ((1 - penalty)* 300) );
+            string c1 = String.Format("{0:0.0}", ((1 - penalty)* 300) );
 			string c2 = "10";
-			string loss = "";
-/*
-			if ( GetPlayerInfo.isFromSpace( from ) )
-			{
-				loss = " If you do, you will suffer a " + c2 + "% loss to your fame and karma. You will also lose " + c1 + "% of your statistics and skills.";
-				c1 = "2";
-				c2 = "10";
-			}*/
-				
 
 			if ( ( from.RawDex + from.RawInt + from.RawStr ) > 125 )
 			{
-				ResPenalty = true;
-				
 				if ( !((PlayerMobile)from).Avatar )
 				{
 					c2 = "40";
@@ -113,8 +71,6 @@ namespace Server.Gumps
 			}
 			else 
 			{
-				ResPenalty = true;
-
 				if ( !(((PlayerMobile)from).Avatar) )
 				{
 					c2 = "20";
@@ -171,47 +127,85 @@ namespace Server.Gumps
 			AddItem(186, 85, 3810);
 			AddItem(209, 102, 3808);
 
-			AddButton(162, 365, 4023, 4023, 1, GumpButtonType.Reply, 0);
-			AddButton(389, 365, 4020, 4020, 2, GumpButtonType.Reply, 0);
+			int firstColumn = 100;
+			int secondColumn = 307;
+			int buttonLabelOffset = 30;
+			
+			int y = 355;
+            AddButton(firstColumn, y, 4023, 4024, (int)ButtonType.Accept, GumpButtonType.Reply, 0);
+            AddHtml(firstColumn + buttonLabelOffset, y + 2, 477, 22, @"<BODY><BASEFONT Color=#FF0000><BIG> Resurrect Me </BIG></BASEFONT></BODY>", false, false);
 
-			if ( ResPenalty )
-			{
-				AddHtml( 101, 271, 190, 22, @"<BODY><BASEFONT Color=#FCFF00><BIG>Resurrection Tribute</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
-				AddHtml( 307, 271, 116, 22, @"<BODY><BASEFONT Color=#FF0000><BIG>" + String.Format("{0} Gold", HealCost ) + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+            AddButton(secondColumn, y, 4017, 4018, (int)ButtonType.Cancel, GumpButtonType.Reply, 0);
+            AddHtml(secondColumn + buttonLabelOffset, y + 2, 477, 22, @"<BODY><BASEFONT Color=#FF0000><BIG> Maybe Later </BIG></BASEFONT></BODY>", false, false);
 
-				AddHtml( 101, 305, 190, 22, @"<BODY><BASEFONT Color=#FCFF00><BIG>Gold in the Bank</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
-				AddHtml( 307, 305, 116, 22, @"<BODY><BASEFONT Color=#FF0000><BIG>" + Banker.GetBalance( from ).ToString() + " Gold</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
-			}
+            y += 30;
+            AddButton(secondColumn, y, 4020, 4021, (int)ButtonType.CancelAndSuppress, GumpButtonType.Reply, 0);
+            AddHtml(secondColumn + buttonLabelOffset, y + 2, 477, 22, @"<BODY><BASEFONT Color=#FF0000><BIG> Stop Asking </BIG></BASEFONT></BODY>", false, false);
+
+            AddHtml( firstColumn, 271, 190, 22, @"<BODY><BASEFONT Color=#FCFF00><BIG>Resurrection Tribute</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+			AddHtml( secondColumn, 271, 116, 22, @"<BODY><BASEFONT Color=#FF0000><BIG>" + String.Format("{0} Gold", HealCost ) + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+
+			AddHtml( firstColumn, 305, 190, 22, @"<BODY><BASEFONT Color=#FCFF00><BIG>Gold in the Bank</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+			AddHtml( secondColumn, 305, 116, 22, @"<BODY><BASEFONT Color=#FF0000><BIG>" + Banker.GetBalance( from ).ToString() + " Gold</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 
 			AddHtml( 267, 95, 306, 22, @"<BODY><BASEFONT Color=#FCFF00><BIG><CENTER>" + sGrave + "</CENTER></BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 
-			AddHtml( 100, 155, 477, 103, @"<BODY><BASEFONT Color=#FF0000><BIG>" + sText + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+			AddHtml( firstColumn, 155, 477, 103, @"<BODY><BASEFONT Color=#FF0000><BIG>" + sText + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 		}
 
 		public override void OnResponse( NetState state, RelayInfo info )
 		{
-			Mobile from = state.Mobile;
+			PlayerMobile from = state.Mobile as PlayerMobile;
+			if (from == null) return;
 
 			from.CloseGump( typeof( ResurrectNowGump ) );
 
-			if ( info.ButtonID == 1 && !from.Alive )
-			{
-				from.PlaySound( 0x214 );
-				from.FixedEffect( 0x376A, 10, 16 );
+			ButtonType button = (ButtonType)info.ButtonID;
 
-				from.Resurrect();
+            switch (button)
+            {
+                case ButtonType.Accept:
+					if (from.Alive) return;
 
-				//if ( ( from.RawDex + from.RawInt + from.RawStr ) > 125 )
-				//{
-				Server.Misc.Death.Penalty( from, true, false );
-				//}
+                    from.PlaySound(0x214);
+                    from.FixedEffect(0x376A, 10, 16);
 
-				from.Hits = from.HitsMax;
-				from.Stam = from.StamMax;
-				from.Mana = from.ManaMax;
-				from.Hidden = true;
+                    from.Resurrect();
+
+                    Server.Misc.Death.Penalty(from, true, false);
+
+                    from.Hits = from.HitsMax;
+                    from.Stam = from.StamMax;
+                    from.Mana = from.ManaMax;
+                    from.Hidden = true;
+                    from.LastAutoRes = DateTime.UtcNow;
+                    break;
+
+                case ButtonType.Cancel:
+                case ButtonType.Close:
+                case ButtonType.CancelAndSuppress:
+				default:
+					from.SendMessage( "You decide to remain in the spirit realm." );
+					if (button == ButtonType.CancelAndSuppress) return;
+
+					TryShowAutoResurrectGump(from);
+                    break;
+
 			}
-			else { return; }
-		}
-	}
+        }
+
+        public static void TryShowAutoResurrectGump(PlayerMobile mobile)
+        {
+			if (mobile == null || mobile.SoulBound || mobile.Alive) return;
+
+            Timer.DelayCall(TimeSpan.FromSeconds(30), (m) =>
+            {
+				if (m == null || m.SoulBound || m.Alive) return;
+
+                m.CloseGump(typeof(ResurrectNowGump));
+                m.SendGump(new ResurrectNowGump(m));
+
+            }, mobile);
+        }
+    }
 }

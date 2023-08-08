@@ -56,15 +56,16 @@ namespace Server.Mobiles
 
 				if ( !boat.Deleted && boat.CheckKey( ((Key)o).KeyValue ) )
 				{
-
                     if (pack.ConsumeTotal(typeof(Gold), 1000))
                     {
-						ReturnToBoat( boat.GetMarkedLocation(), boat.Map, from );
+						Point3D location = boat.GetMarkedLocation();
+						string region = Worlds.GetMyWorld(boat.Map, location, location.X, location.Y);
                         from.SendMessage(String.Format("You pay 1,000 gold."));
+                        this.SayTo(from, string.Format("This vessel was last seen in {0} around ({1}, {2}).", region, location.X, location.Y));
 					}
 					else
 					{
-                        this.SayTo(from, "It would cost you 1,000 gold to be returned to your ship.");
+                        this.SayTo(from, "It would cost you 1,000 gold for me to find your ship.");
                         from.SendMessage("You do not have enough gold.");
 					}
 				}
@@ -75,45 +76,6 @@ namespace Server.Mobiles
 			}
 
 			return base.OnDragDrop( from, o );
-		}
-
-		public void ReturnToBoat( Point3D loc, Map map, Mobile from )
-		{
-			if ( !SpellHelper.CheckTravel( from, TravelCheckType.RecallFrom ) )
-			{
-			}
-			else if ( Worlds.AllowEscape( from, from.Map, from.Location, from.X, from.Y ) == false )
-			{
-				this.SayTo(from, "Your ship is somewhere I cannot send you." );
-			}
-			else if ( Worlds.RegionAllowedRecall( from.Map, from.Location, from.X, from.Y ) == false )
-			{
-				this.SayTo(from, "Your ship is somewhere I cannot send you." );
-			}
-			else if ( Worlds.RegionAllowedTeleport( map, loc, loc.X, loc.Y ) == false )
-			{
-				this.SayTo(from, "Your ship is somewhere I cannot send you." );
-			}
-			else if ( !SpellHelper.CheckTravel( from, map, loc, TravelCheckType.RecallTo ) )
-			{
-			}
-			else if ( Server.Misc.WeightOverloading.IsOverloaded( from ) )
-			{
-				from.SendLocalizedMessage( 502359, "", 0x22 ); // Thou art too encumbered to move.
-			}
-			else if ( !map.CanSpawnMobile( loc.X, loc.Y, loc.Z ) )
-			{
-				from.SendLocalizedMessage( 501942 ); // That location is blocked.
-			}
-			else
-			{
-				BaseCreature.TeleportPets( from, loc, map, false );
-				from.PlaySound( 0x13 );
-				Effects.SendLocationParticles( EffectItem.Create( from.Location, from.Map, EffectItem.DefaultDuration ), 0x376A, 9, 32, 0, 0, 5024, 0 );
-				from.MoveToWorld( loc, map );
-				from.PlaySound( 0x13 );
-				Effects.SendLocationParticles( EffectItem.Create( from.Location, from.Map, EffectItem.DefaultDuration ), 0x376A, 9, 32, 0, 0, 5024, 0 );
-			}
 		}
 
 		///////////////////////////////////////////////////////////////////////////

@@ -1139,7 +1139,7 @@ namespace Server.Engines.Craft
 					}
 					else if ( item is PlateArms )
 					{
-						item.ItemID = Utility.RandomList( 0x1410, 0x1417, 0x303, 0x304, 0x305, 0x306 );
+						item.ItemID = Utility.RandomList( 0x1410, 0x1417 );
 					}
 					else if ( item is LeatherCloak || item is LeatherRobe || item is LeatherSandals || item is LeatherShoes || item is LeatherBoots || item is LeatherThighBoots || item is LeatherSoftBoots )
 					{
