@@ -533,7 +533,7 @@ namespace Server.Engines.CannedEvil
 						if( killer is PlayerMobile )
 						{
 
-									if ( Utility.RandomDouble() <= 0.01)
+									if ( Utility.RandomDouble() <= 0.01 && Utility.RandomBool())
 									{
 										PlayerMobile pm = (PlayerMobile)killer;
 										double random = Utility.Random ( 150 );
