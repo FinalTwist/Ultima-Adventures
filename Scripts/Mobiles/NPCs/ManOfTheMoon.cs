@@ -156,8 +156,6 @@ namespace Server.Mobiles
 						Say("Yes... you are properly prepared... but can you tell me the word?"); 	
 					else
 						Say("Frozen?  The mangroves speak of orcs."); 	
-
-
 				}
 				else if (  Insensitive.Contains( e.Speech, "amitofu" ) && penitent)
 				{
@@ -179,6 +177,19 @@ namespace Server.Mobiles
 						Say("I only give one per initiate."); 
 					}
 						
+				}
+				else if (  Insensitive.Contains( e.Speech, "purity" ) && penitent)
+				{
+					PlayerMobile mobile = (PlayerMobile) e.Mobile;
+					Say("You wish to roam these lands in the most purest form of all?  If so, speak the word parvati while in my presence."); 
+
+				}
+				else if (  Insensitive.Contains( e.Speech, "parvati" ) && penitent)
+				{
+					PlayerMobile mobile = (PlayerMobile) e.Mobile;
+					Say("I admire your courage!  Go forth!");
+					mobile.SkillsCap = 15000; 
+
 				}
 				else
 				{ 

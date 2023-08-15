@@ -726,6 +726,9 @@ namespace Server.Misc
 
 				if (mb.Map != null && mb.Map == Map.Midland)
 					return true;
+
+				if (mb is PlayerMobile && mb.SkillsCap == 15000 )
+					return true;
 			}
 
 			return false;
