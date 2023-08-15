@@ -875,7 +875,7 @@ namespace Server.Misc
 
 			int clover = (int)((double)realluck * 0.05); // RETURNS A MAX OF 200
 
-			if (  clover >= Utility.RandomMinMax( 1, 1500 ) ) //at max its 13%, this is 6.6% at mid 
+			if (  clover >= Utility.RandomMinMax( 1, 1000 ) ) //at max its 20%, this is 10% at mid 
 				return true;
 
 			//note:  even with 0 luck attribute the original amount of realluck allows for a minimum value so it is possible to be lucky without luck attribute
