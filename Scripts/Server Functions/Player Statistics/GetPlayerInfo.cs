@@ -867,7 +867,7 @@ namespace Server.Misc
 			if ( realluck <= 0 ) //sanity check
 				return false;
 
-			if (pm.BalanceStatus == 0) //observer, has penalty 20%
+			if (from is PlayerMobile && from.BalanceStatus == 0) //observer, has penalty 20%
 				realluck *= 0.80;
 
 			if ( realluck > MyServerSettings.LuckCap() ) //luck cap is 4k here, so 4k max now
@@ -876,7 +876,10 @@ namespace Server.Misc
 			int clover = (int)((double)realluck * 0.05); // RETURNS A MAX OF 200
 
 			if (  clover >= Utility.RandomMinMax( 1, 1000 ) ) //at max its 20%, this is 10% at mid 
+			{
+				from.SendMessage( "You feel lucky!" );
 				return true;
+			}
 
 			//note:  even with 0 luck attribute the original amount of realluck allows for a minimum value so it is possible to be lucky without luck attribute
 
@@ -884,44 +887,17 @@ namespace Server.Misc
 				((PlayerMobile)from).CheckRest();
 			
 			if ( from is PlayerMobile && ((PlayerMobile)from).GetFlag(PlayerFlag.WellRested) && Utility.RandomDouble() < 0.10 ) 
+			{
+				from.SendMessage( "You feel lucky!" );
 				return true;
+			}
 				
 			return false;
 		}
 
 		public static bool LuckyKiller( int luck, Mobile from )
 		{
-
-			if (AdventuresFunctions.IsInMidland((object)from) || luck > 8000)
-				luck = 0;
-				
-			int realluck = Utility.RandomMinMax(1,2000) + (int)( (double)luck /2);			
-
-			double balancetweak = 1;
-			double balance = (double)AetherGlobe.BalanceLevel;
-
-			if (from is PlayerMobile && ((PlayerMobile)from).Avatar)		
-			{
-				PlayerMobile pm = (PlayerMobile)from;
-				if (pm.Karma < 0)
-					balance = 100000 - balance;
-
-				balance = (balance - 50000) / 200000;
-				balancetweak += balance;
-
-			}
-			
-			realluck = (int)((double)realluck * balancetweak);
-
-			if ( realluck <= 0 )
-				return false;
-
-			if ( realluck > MyServerSettings.LuckCap() )
-			realluck = MyServerSettings.LuckCap();
-
-			int clover = (int)((double)realluck * 0.05); // RETURNS A MAX OF 200
-
-			if (  clover >= Utility.RandomMinMax( 1, 250 ) )
+			if (LuckyPlayer(luck, from))
 				return true;
 
 			return false;
