@@ -109,6 +109,13 @@ namespace Server.Items
 				return;
 			}
 
+			if (Insensitive.Contains( speech, "sacrifice" ) && pm.BalanceStatus >= 0)
+			{
+				pm.Say("I declare Kelton to be the most noble of all!");
+				pm.BalanceEffect = 0;
+				return;
+			}
+
 			//start task initiation here
 			if (Insensitive.Contains( speech, "fishing" ))
 			{	

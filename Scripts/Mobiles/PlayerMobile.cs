@@ -6540,7 +6540,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				
 				string speech = e.Speech;
 				
-				if ( (Insensitive.Contains( speech, "i wish to make" ) || Insensitive.Contains( speech, "i wish to start" ) || Insensitive.Contains( speech, "i wish to have" ) ) && !GetFlag( PlayerFlag.IsAutomated ) )
+				if ( (Insensitive.Contains( speech, "i wish to make" ) || Insensitive.Contains( speech, "i wish to start" ) || Insensitive.Contains( speech, "i wish to have" ) || Insensitive.Contains( speech, "i wish to sacrifice" ) ) && !GetFlag( PlayerFlag.IsAutomated ) )
 				{
 					AdventuresAutomation.StartTask(this, speech);
 				}
