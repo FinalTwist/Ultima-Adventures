@@ -215,6 +215,9 @@ namespace Server.Mobiles
 			else 
 				fake = true;
 
+			if (number > 0 && m is PlayerMobile && GetPlayerInfo.LuckyPlayer(m.Luck, m))
+				number += Utility.RandomMinMax(1, 2);
+
 			for ( int i = 0; i < number; ++i )
 			{
 				Mobile m = toGive[i % toGive.Count];

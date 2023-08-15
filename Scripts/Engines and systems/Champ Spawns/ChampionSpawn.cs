@@ -533,7 +533,7 @@ namespace Server.Engines.CannedEvil
 						if( killer is PlayerMobile )
 						{
 
-									if ( Utility.RandomDouble() <= 0.01 && Utility.RandomBool())
+									if ( Utility.RandomDouble() <= 0.15 && GetPlayerInfo.LuckyPlayer( killer.Luck, killer )) //at max luck this is 2%
 									{
 										PlayerMobile pm = (PlayerMobile)killer;
 										double random = Utility.Random ( 150 );

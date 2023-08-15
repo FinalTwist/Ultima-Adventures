@@ -837,37 +837,48 @@ namespace Server.Misc
 
 		public static bool LuckyPlayer( int luck, Mobile from )
 		{
-			if (AdventuresFunctions.IsInMidland((object)from) || luck > 8000)
+			if (AdventuresFunctions.IsInMidland((object)from))
 				luck = 0;
 
-			int realluck = Utility.RandomMinMax(1,2000) + (int)( (double)luck /2);	
+			if (luck > 8000) //how is this even possible... but it is apparently
+				luck = 8000;
+
+			int realluck = Utility.RandomMinMax(1,2000) + (int)( (double)luck /2);	//max of 6000, however likely to be 4000 in most cases maxed
 
 			double balancetweak = 1;
-			double balance = (double)AetherGlobe.BalanceLevel;
+			double balance = (double)AetherGlobe.BalanceLevel; 
 
 			if (from is PlayerMobile )		
 			{
 				PlayerMobile pm = (PlayerMobile)from;
-				if (pm.Karma < 0)
-					balance = 100000 - balance;
 
-				balance = (balance - 50000) / 200000;
-				balancetweak += balance;
+				//adjusting for player alignment plus or minus 25% effect based on balance
+				if (pm.BalanceStatus < 0 || pm.Karma < 0)
+					balance = balance - 50000; 
+				else if ( pm.BalanceStatus > 0 || pm.Karma > 0 )
+					balance = 50000 - balance; 
 
+				balance = balance / 200000; 
+				balancetweak += balance; 
 			}
 			
 			realluck = (int)((double)realluck * balancetweak);
 
-			if ( realluck <= 0 )
+			if ( realluck <= 0 ) //sanity check
 				return false;
 
-			if ( realluck > MyServerSettings.LuckCap() )
+			if (pm.BalanceStatus == 0) //observer, has penalty 20%
+				realluck *= 0.80;
+
+			if ( realluck > MyServerSettings.LuckCap() ) //luck cap is 4k here, so 4k max now
 			realluck = MyServerSettings.LuckCap();
 
 			int clover = (int)((double)realluck * 0.05); // RETURNS A MAX OF 200
 
-			if (  clover >= Utility.RandomMinMax( 1, 250 ) )
+			if (  clover >= Utility.RandomMinMax( 1, 1500 ) ) //at max its 13%, this is 6.6% at mid 
 				return true;
+
+			//note:  even with 0 luck attribute the original amount of realluck allows for a minimum value so it is possible to be lucky without luck attribute
 
 			if (from is PlayerMobile)
 				((PlayerMobile)from).CheckRest();
