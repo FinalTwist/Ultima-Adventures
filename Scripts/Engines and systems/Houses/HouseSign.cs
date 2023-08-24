@@ -13,6 +13,8 @@ namespace Server.Multis
 		private BaseHouse m_Owner;
 		private Mobile m_OrgOwner;
 
+		//public BaseHouse Owner{ get{ return m_Owner; } set{ m_Owner = value; } }
+
 		public HouseSign( BaseHouse owner ) : base( 0xBD2 )
 		{
 			m_Owner = owner;

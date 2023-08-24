@@ -593,7 +593,7 @@ namespace Server
 
 		#region Standard fields
 		private bool m_IsCrafted;
-		private bool m_IsNormalOnly;
+		private bool m_IsPure;
 		private Serial m_Serial;
 		private Point3D m_Location;
 		private int m_ItemID;
@@ -2030,9 +2030,13 @@ namespace Server
 
 		public virtual void Serialize( GenericWriter writer )
 		{
-			writer.Write( 13 ); // version 10 isCrafted, 11 normal only items added
+			writer.Write( 14 ); // version 10 isCrafted, 11 normal only items added 
 
 			writer.Write( (string)m_LastTouched);
+
+			writer.Write( (bool)m_IsPure);
+
+			writer.Write( (bool)m_IsCrafted);
 
 			SaveFlag flags = SaveFlag.None;
 
@@ -2357,16 +2361,19 @@ namespace Server
 
 			switch ( version )
 			{
-				case 13:
+                case 14:
 					m_LastTouched = reader.ReadString();
-					goto case 12;
-				case 12:
-					goto case 9;				
-				case 11:
-					m_IsNormalOnly = reader.ReadBool();
-					goto case 10;
-				case 10:
+                    m_IsPure = reader.ReadBool();
 					m_IsCrafted = reader.ReadBool();
+                    goto case 9; // 
+                case 13:
+					m_LastTouched = reader.ReadString();
+					goto case 9;
+				case 12:
+				case 11:
+					goto case 9;
+				case 10:
+					m_IsCrafted = reader.ReadBool(); // Warning: Not actually written until v14
 					goto case 9;
 				case 9:
 				case 8:
@@ -3584,13 +3591,13 @@ namespace Server
 			}
 		}
 
-		public bool IsNormalOnly
+		public bool IsPure
 		{
 			get {
-				return m_IsNormalOnly;
+				return m_IsPure;
 			}
 			set {
-				m_IsNormalOnly = value; InvalidateProperties();
+				m_IsPure = value; InvalidateProperties();
 			}
 		}
 
@@ -4714,7 +4721,7 @@ namespace Server
 		public Item()
 		{
 			m_IsCrafted	= false;
-			m_IsNormalOnly = false;
+			m_IsPure = false;
 			m_Serial = Serial.NewItem;
 			//m_Items = new ArrayList( 1 );
 			Visible = true;

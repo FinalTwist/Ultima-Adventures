@@ -190,7 +190,7 @@ namespace Server.Items
 
 		public virtual bool IsDecoContainer
 		{
-			get{ return !Movable && !IsLockedDown && !IsSecure && Parent == null && !m_LiftOverride; }
+			get{ return false; }//!Movable && !IsLockedDown && !IsSecure && Parent == null && !m_LiftOverride; }
 		}
 
 		public virtual int GetDroppedSound( Item item )
@@ -208,22 +208,22 @@ namespace Server.Items
 
 		public override bool CheckLift( Mobile from, Item item, ref LRReason reject )
 		{
-			if ( from.AccessLevel < AccessLevel.GameMaster && IsDecoContainer )
+			/*if ( from.AccessLevel < AccessLevel.GameMaster && IsDecoContainer )
 			{
 				reject = LRReason.CannotLift;
 				return false;
-			}
+			}*/
 
 			return base.CheckLift( from, item, ref reject );
 		}
 
 		public override bool CheckItemUse( Mobile from, Item item )
 		{
-			if ( item != this && from.AccessLevel < AccessLevel.GameMaster && IsDecoContainer )
+			/*if ( item != this && from.AccessLevel < AccessLevel.GameMaster && IsDecoContainer )
 			{
 				from.LocalOverheadMessage( MessageType.Regular, 0x3B2, 1019045 ); // I can't reach that.
 				return false;
-			}
+			}*/
 
 			return base.CheckItemUse( from, item );
 		}

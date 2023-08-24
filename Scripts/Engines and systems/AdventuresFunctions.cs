@@ -1509,49 +1509,51 @@ namespace Server.Misc
 			int itemcnt = 0;
 
 			foreach ( Item sign in World.Items.Values ) 
-			if ( sign is TownHouseSign )
 			{
-				TownHouse ths = ((TownHouseSign)sign).House;
+				if ( sign is TownHouseSign )
+				{
+					TownHouse ths = ((TownHouseSign)sign).House;
 
-			        foreach (Rectangle2D rect in ((TownHouseSign)sign).Blocks)
-            			{
-                			ArrayList l = new ArrayList();
-                			foreach (Item item in Map.GetItemsInBounds(rect))
-					{
-						if (item.Movable && item.Visible && ths.Region.Contains(item.Location))
-						{
-							if ( !(ths.Secures.Contains(item)) )
+						foreach (Rectangle2D rect in ((TownHouseSign)sign).Blocks)
 							{
-								itemcnt ++;
-                    						l.Add(item);
+								ArrayList l = new ArrayList();
+								foreach (Item item in ths.Map.GetItemsInBounds(rect))
+						{
+							if (item.Movable && item.Visible && ths.Region.Contains(item.Location))
+							{
+								if ( !(ths.Secures.Contains(item)) )
+								{
+									itemcnt ++;
+												l.Add(item);
+								}
+							
 							}
-						
 						}
 					}
+					//todo delete items in list
 				}
-				//todo delete items in list
-			}
-			if ( sign is HouseSign )
-			{
-				BaseHouse hs = sign.Owner;
-		
-					Point2D start = new Point2D( this.X + hs.Components.Min.X, this.Y + hs.Components.Min.Y );
-					Point2D end = new Point2D( this.X + hs.Components.Max.X + 1, this.Y + hs.Components.Max.Y + 1 );
-					Rectangle2D rect = new Rectangle2D( start, end );
-		
-					List<Item> list = new List<Item>();
-		
-					IPooledEnumerable eable = sign.Map.GetItemsInBounds( rect );
-					
-					foreach ( Item item in eable )
-						if ( item.Movable && IsInside( item ) && !hs.LockDowns.Contains(item) && !hs.Secures.Contains(item) )
-						{
-							itemcnt ++;
-							list.Add( item );
-						}
+				else if ( sign is HouseSign )
+				{
+					BaseHouse hs = ((HouseSign)sign).Owner;
+			
+						Point2D start = new Point2D( hs.X + hs.Components.Min.X, hs.Y + hs.Components.Min.Y );
+						Point2D end = new Point2D( hs.X + hs.Components.Max.X + 1, hs.Y + hs.Components.Max.Y + 1 );
+						Rectangle2D rect = new Rectangle2D( start, end );
+			
+						List<Item> list = new List<Item>();
+			
+						IPooledEnumerable eable = sign.Map.GetItemsInBounds( rect );
+						
+						foreach ( Item item in eable )
+							if ( item.Movable && hs.IsInside( item ) && !hs.LockDowns.Contains(item) && !hs.Secures.Contains(item) )
+							{
+								itemcnt ++;
+								list.Add( item );
+							}
 
-					eable.Free();
-	
+						eable.Free();
+				}
+		
 			}
 			World.Broadcast(0x35, true, "there are  " + itemcnt + " items unsecured in houses");
 		}

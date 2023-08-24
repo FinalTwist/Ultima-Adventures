@@ -789,6 +789,7 @@ namespace Server
 		private DateTime m_LastIntGain;
 		private DateTime m_LastDexGain;
 		private Race m_Race;
+		private bool m_Puritain;
 
 		#endregion
 
@@ -5500,6 +5501,11 @@ namespace Server
 
 			switch( version )
 			{
+				case 33:
+				{
+					m_Puritain = reader.ReadBool();
+					goto case 32;
+				}
 				case 32:
 					{
 						// Removed StuckMenu
@@ -5949,7 +5955,9 @@ namespace Server
 
 		public virtual void Serialize( GenericWriter writer )
 		{
-			writer.Write( (int)32 ); // version
+			writer.Write( (int)33 ); // version
+
+			writer.Write( m_Puritain );
 
 			writer.WriteDeltaTime( m_LastStrGain );
 			writer.WriteDeltaTime( m_LastIntGain );
@@ -9724,6 +9732,9 @@ namespace Server
 			if( item.Deleted )
 				return false;
 
+			if (m_Puritain && !item.IsPure)
+				return false;
+
 			Container pack = this.Backpack;
 
 			return pack != null && pack.TryDropItem( this, item, false );
@@ -9749,11 +9760,17 @@ namespace Server
 				return false;
 			}
 
+			if (m_Puritain && !item.IsPure)
+				return false;
+
 			return true;
 		}
 
 		public virtual bool CheckLift( Mobile from, Item item, ref LRReason reject )
 		{
+			if (m_Puritain && !item.IsPure)
+				return false;
+
 			return true;
 		}
 
@@ -9793,6 +9810,9 @@ namespace Server
 				return false;
 			}
 
+			if ((m_Puritain && !from.Puritain) || (!m_Puritain && from.Puritain))
+				return false;
+
 				NetState ourState = m_NetState;
 				NetState theirState = from.m_NetState;
 
@@ -9826,6 +9846,9 @@ namespace Server
 		/// </summary>
 		public virtual bool OnDragDrop( Mobile from, Item dropped )
 		{
+			if (!m_Puritain && dropped.IsPure )
+				dropped.IsPure = false;
+
 			if( from == this )
 			{
 				Container pack = this.Backpack;
@@ -9850,6 +9873,9 @@ namespace Server
 			for( int i = 0; i < m_Items.Count; ++i )
 				if( m_Items[i].CheckConflictingLayer( this, item, item.Layer ) || item.CheckConflictingLayer( this, m_Items[i], m_Items[i].Layer ) )
 					return false;
+
+			if (m_Puritain && !item.IsPure)
+				return false;
 
 			return true;
 		}
@@ -9890,6 +9916,9 @@ namespace Server
 		/// </example>
 		public virtual bool OnDragLift( Item item )
 		{
+			if (!m_Puritain && item.IsPure )
+				item.IsPure = false;
+
 			return true;
 		}
 
@@ -9926,6 +9955,9 @@ namespace Server
 		/// <returns>True if the drop is allowed, false if otherwise.</returns>
 		public virtual bool OnDroppedItemToMobile( Item item, Mobile target )
 		{
+			if (target.Puritain && !item.IsPure )
+				return false;
+
 			return true;
 		}
 
@@ -9965,6 +9997,8 @@ namespace Server
 		/// </summary>
 		public virtual void OnItemLifted( Mobile from, Item item )
 		{
+			if (!from.Puritain && item.IsPure )
+				item.IsPure = false;
 		}
 
 		public virtual bool AllowItemUse( Item item )
@@ -11401,6 +11435,19 @@ namespace Server
 			set
 			{
 				m_CanSwim = value;
+			}
+		}
+
+		[CommandProperty( AccessLevel.GameMaster )]
+		public bool Puritain
+		{
+			get
+			{
+				return m_Puritain;
+			}
+			set
+			{
+				m_Puritain = value;
 			}
 		}
 
