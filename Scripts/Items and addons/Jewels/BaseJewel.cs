@@ -31,6 +31,8 @@ namespace Server.Items
 		private AosSkillBonuses m_AosSkillBonuses;
 		private CraftResource m_Resource;
 		private GemType m_GemType;
+		private Mobile m_Crafter;
+		private ArmorQuality m_Quality;
 
 		[CommandProperty( AccessLevel.GameMaster )]
 		public int MaxHitPoints
@@ -130,6 +132,20 @@ namespace Server.Items
 			jewel.m_AosSkillBonuses = new AosSkillBonuses( newItem, m_AosSkillBonuses );
 		}
 
+		[CommandProperty( AccessLevel.GameMaster )]
+		public Mobile Crafter
+		{
+			get{ return m_Crafter; }
+			set{ m_Crafter = value; InvalidateProperties(); }
+		}
+		
+		[CommandProperty( AccessLevel.GameMaster )]
+		public ArmorQuality Quality
+		{
+			get{ return m_Quality; }
+			set{ m_Quality = value; InvalidateProperties(); }
+		}
+
 		public virtual int ArtifactRarity{ get{ return 0; } }
 
 		public BaseJewel( int itemID, Layer layer ) : base( itemID )
@@ -154,7 +170,7 @@ namespace Server.Items
 			bool SB = false;
 			if (from != null && from is PlayerMobile )
 			{
-				if (((PlayerMobile)from).SoulBound || AdventuresFunctions.IsInMidland((object)from))
+				if (((PlayerMobile)from).SoulBound || AdventuresFunctions.IsPuritain((object)from))
 					SB = true;
 			}
 
@@ -289,12 +305,15 @@ namespace Server.Items
 		{
 			base.GetProperties( list );
 
+			if ( m_Crafter != null )
+				list.Add( 1050043, m_Crafter.Name ); // crafted by ~1_NAME~
+
 			#region [Item Name Color]
 			//int value = ItemNameHue.JewelItemProps.CheckJewel(this);
 			#endregion
 
 			bool md = false;
-			if (AdventuresFunctions.IsInMidland((object)this))
+			if (AdventuresFunctions.IsPuritain((object)this))
 				md = true;
 
 			m_AosSkillBonuses.GetProperties( list );
@@ -407,10 +426,15 @@ namespace Server.Items
 		{
 		    string resourceName = CraftResources.GetName(m_Resource);
 
-		    if (string.IsNullOrEmpty(resourceName) || resourceName.ToLower() == "none" || resourceName.ToLower() == "normal" || resourceName.ToLower() == "iron")
-			resourceName = "";
+		    TextInfo cultInfo = new CultureInfo("en-US", false).TextInfo;
 
-		    list.Add(1053099, ItemNameHue.UnifiedItemProps.RarityNameMod(this, "{0}\t{1}"), resourceName, GetNameString());
+		    if (string.IsNullOrEmpty(resourceName) || resourceName.ToLower() == "none" || resourceName.ToLower() == "normal" || resourceName.ToLower() == "iron")
+				resourceName = "";
+
+		    if (resourceName == "")
+				list.Add(1053099, ItemNameHue.UnifiedItemProps.RarityNameMod(this, ((m_Quality == ArmorQuality.Exceptional) ? "Exceptional " : "") + "{0}"), cultInfo.ToTitleCase(GetNameString()));
+		    else
+				list.Add(1053099, ItemNameHue.UnifiedItemProps.RarityNameMod(this, ((m_Quality == ArmorQuality.Exceptional) ? "Exceptional " : "") + "{0}\t{1}"), resourceName, GetNameString());
 		}
 		#endregion
 
@@ -418,7 +442,10 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 3 ); // version
+			writer.Write( (int) 4 ); // version
+
+			writer.WriteEncodedInt( (int) m_Quality );
+			writer.Write( (Mobile) m_Crafter );
 
 			writer.WriteEncodedInt( (int) m_MaxHitPoints );
 			writer.WriteEncodedInt( (int) m_HitPoints );
@@ -439,6 +466,13 @@ namespace Server.Items
 
 			switch ( version )
 			{
+				case 4:
+				{
+					m_Quality = (ArmorQuality)reader.ReadEncodedInt();
+					m_Crafter = reader.ReadMobile();
+
+					goto case 3;
+				}
 				case 3:
 				{
 					m_MaxHitPoints = reader.ReadEncodedInt();
@@ -459,14 +493,14 @@ namespace Server.Items
 					m_AosResistances = new AosElementAttributes( this, reader );
 					m_AosSkillBonuses = new AosSkillBonuses( this, reader );
 
-					if ( Core.AOS && Parent is Mobile && !(AdventuresFunctions.IsInMidland((object)Parent)))
+					if ( Core.AOS && Parent is Mobile && !(AdventuresFunctions.IsPuritain((object)Parent)))
 						m_AosSkillBonuses.AddTo( (Mobile)Parent );
 
 					int strBonus = m_AosAttributes.BonusStr;
 					int dexBonus = m_AosAttributes.BonusDex;
 					int intBonus = m_AosAttributes.BonusInt;
 
-					if ( Parent is Mobile && (strBonus != 0 || dexBonus != 0 || intBonus != 0) && (Parent is PlayerMobile && !((PlayerMobile)Parent).SoulBound) && !(AdventuresFunctions.IsInMidland((object)Parent)))
+					if ( Parent is Mobile && (strBonus != 0 || dexBonus != 0 || intBonus != 0) && (Parent is PlayerMobile && !((PlayerMobile)Parent).SoulBound) && !(AdventuresFunctions.IsPuritain((object)Parent)))
 					{
 						Mobile m = (Mobile)Parent;
 
@@ -509,6 +543,11 @@ namespace Server.Items
 
 		public int OnCraft( int quality, bool makersMark, Mobile from, CraftSystem craftSystem, Type typeRes, BaseTool tool, CraftItem craftItem, int resHue )
 		{
+			Quality = (ArmorQuality)quality;
+
+			if ( makersMark )
+				Crafter = from;
+
 			Type resourceType = typeRes;
 
 			if ( resourceType == null )
@@ -545,7 +584,7 @@ namespace Server.Items
 					GemType = GemType.Diamond;
 			}
 
-			return 1;
+			return quality;
 		}
 
 		#endregion

@@ -700,6 +700,25 @@ namespace Server.Items
 			}
 		}
 
+		public void ApplyAttributesTo( BaseClothing cloth )
+		{
+			CraftResourceInfo resInfo = CraftResources.GetInfo( m_Resource );
+
+			if ( resInfo == null )
+				return;
+
+			CraftAttributeInfo attrs = resInfo.AttributeInfo;
+
+			if ( attrs == null )
+				return;
+
+			int attributeCount = Utility.RandomMinMax( attrs.RunicMinAttributes, attrs.RunicMaxAttributes );
+			int min = attrs.RunicMinIntensity;
+			int max = attrs.RunicMaxIntensity;
+
+			ApplyAttributesTo( cloth, true, 0, attributeCount, min, max );
+		}
+
 		public static void ApplyAttributesTo( BaseClothing cloth, int attributeCount, int min, int max )
 		{
 			ApplyAttributesTo( cloth, false, 0, attributeCount, min, max );

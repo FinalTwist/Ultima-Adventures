@@ -663,7 +663,7 @@ namespace Server.Items
 			bool SB = false;
 			if (from is PlayerMobile )
 			{
-				if (((PlayerMobile)from).SoulBound || AdventuresFunctions.IsInMidland((object)from))
+				if (((PlayerMobile)from).SoulBound || AdventuresFunctions.IsPuritain((object)from))
 					SB = true;
 			}
 
@@ -671,7 +671,7 @@ namespace Server.Items
 			int dexBonus = m_AosAttributes.BonusDex;
 			int intBonus = m_AosAttributes.BonusInt;
 
-			if ( (strBonus != 0 || dexBonus != 0 || intBonus != 0) && !SB && !AdventuresFunctions.IsInMidland((object)from))
+			if ( (strBonus != 0 || dexBonus != 0 || intBonus != 0) && !SB && !AdventuresFunctions.IsPuritain((object)from))
 			{
 				Mobile m = from;
 
@@ -689,7 +689,7 @@ namespace Server.Items
 
 			from.NextCombatTime = Core.TickCount + (int)GetDelay(from).TotalMilliseconds;
 
-			if ( UseSkillMod && m_AccuracyLevel != WeaponAccuracyLevel.Regular && !SB && !AdventuresFunctions.IsInMidland((object)from) )
+			if ( UseSkillMod && m_AccuracyLevel != WeaponAccuracyLevel.Regular && !SB && !AdventuresFunctions.IsPuritain((object)from) )
 			{
 				if ( m_SkillMod != null )
 					m_SkillMod.Remove();
@@ -698,7 +698,7 @@ namespace Server.Items
 				from.AddSkillMod( m_SkillMod );
 			}
 
-			if ( Core.AOS && m_AosWeaponAttributes.MageWeapon != 0 && m_AosWeaponAttributes.MageWeapon != 30 && !SB && !AdventuresFunctions.IsInMidland((object)from))
+			if ( Core.AOS && m_AosWeaponAttributes.MageWeapon != 0 && m_AosWeaponAttributes.MageWeapon != 30 && !SB && !AdventuresFunctions.IsPuritain((object)from))
 			{
 				if ( m_MageMod != null )
 					m_MageMod.Remove();
@@ -707,7 +707,7 @@ namespace Server.Items
 				from.AddSkillMod( m_MageMod );
 			}
 
-			if (!SB && !AdventuresFunctions.IsInMidland((object)from))
+			if (!SB && !AdventuresFunctions.IsPuritain((object)from))
 				CustomWeaponAbilities.Check(this,from);
 
 			return true;
@@ -724,11 +724,11 @@ namespace Server.Items
 				bool SB = false;
 				if (from is PlayerMobile )
 				{
-					if (((PlayerMobile)from).SoulBound || AdventuresFunctions.IsInMidland((object)from))
+					if (((PlayerMobile)from).SoulBound || AdventuresFunctions.IsPuritain((object)from))
 						SB = true;
 				}
 
-				if ( Core.AOS && !SB && !AdventuresFunctions.IsInMidland((object)from))
+				if ( Core.AOS && !SB && !AdventuresFunctions.IsPuritain((object)from))
 					m_AosSkillBonuses.AddTo( from );
 
 				from.CheckStatTimers();
@@ -849,7 +849,7 @@ namespace Server.Items
 			double ourValue, theirValue;
 
 			int bonus = GetHitChanceBonus();
-			if ( AdventuresFunctions.IsInMidland((object)attacker))
+			if ( AdventuresFunctions.IsPuritain((object)attacker))
 			{
 				bonus = 0;
 			}
@@ -862,16 +862,16 @@ namespace Server.Items
 				if ( defValue <= -20.0 )
 					defValue = -19.9;
 
-				if ( !AdventuresFunctions.IsInMidland((object)attacker))
+				if ( !AdventuresFunctions.IsPuritain((object)attacker))
 					bonus += AosAttributes.GetValue( attacker, AosAttribute.AttackChance );
 
-				if ( AdventuresFunctions.IsInMidland((object)attacker) && attacker is PlayerMobile && ( ((PlayerMobile)attacker).Mounted && !(((PlayerMobile)attacker).Mount is EtherealMount ) ) )
+				if ( AdventuresFunctions.IsPuritain((object)attacker) && attacker is PlayerMobile && ( ((PlayerMobile)attacker).Mounted && !(((PlayerMobile)attacker).Mount is EtherealMount ) ) )
 					bonus += 15;			
 				
-				if ( AdventuresFunctions.IsInMidland((object)attacker) && attacker is PlayerMobile)
+				if ( AdventuresFunctions.IsPuritain((object)attacker) && attacker is PlayerMobile)
 					bonus += (int)(15 * ((PlayerMobile)attacker).Agility());
 
-				if ( AdventuresFunctions.IsInMidland((object)attacker) && attacker is BaseCreature)
+				if ( AdventuresFunctions.IsPuritain((object)attacker) && attacker is BaseCreature)
 					bonus += (int)(15 * ((BaseCreature)attacker).Agility());
 
 				if ( Spells.Chivalry.DivineFurySpell.UnderEffect( attacker ) )
@@ -899,16 +899,16 @@ namespace Server.Items
 
 				ourValue = (atkValue + 20.0) * (100 + bonus);
 
-				if ( !AdventuresFunctions.IsInMidland((object)defender))
+				if ( !AdventuresFunctions.IsPuritain((object)defender))
 					bonus = AosAttributes.GetValue( defender, AosAttribute.DefendChance );
 
-				if ( AdventuresFunctions.IsInMidland((object)defender) && defender is PlayerMobile)
+				if ( AdventuresFunctions.IsPuritain((object)defender) && defender is PlayerMobile)
 				{
 					if (!((PlayerMobile)defender).Mounted)
 						bonus += (int)(15 * ((PlayerMobile)defender).Agility());
 				}
 
-				if ( AdventuresFunctions.IsInMidland((object)defender) && defender is BaseCreature)
+				if ( AdventuresFunctions.IsPuritain((object)defender) && defender is BaseCreature)
 				{
 					if (!((BaseCreature)defender).Mounted)
 						bonus += (int)(15 * ((BaseCreature)defender).Agility());
@@ -986,7 +986,7 @@ namespace Server.Items
 				int weaponSpeedCap = MyServerSettings.WeaponSpeedCap();
 				int bonus = AosAttributes.GetValue( m, AosAttribute.WeaponSpeed );
 
-				if ( (m is PlayerMobile && ((PlayerMobile)m).SoulBound) || AdventuresFunctions.IsInMidland((object)m))
+				if ( (m is PlayerMobile && ((PlayerMobile)m).SoulBound) || AdventuresFunctions.IsPuritain((object)m))
 					bonus = 0;
 
 				if (bonus > weaponSpeedCap) {
@@ -1013,7 +1013,7 @@ namespace Server.Items
 				if ( SkillHandlers.Discordance.GetEffect( m, ref discordanceEffect ) )
 					bonus -= discordanceEffect;
 
-				if (AdventuresFunctions.IsInMidland((object)m) && m is PlayerMobile)
+				if (AdventuresFunctions.IsPuritain((object)m) && m is PlayerMobile)
 				{
 					//double differential = speed - ((speed/2)*((PlayerMobile)m).Agility());
 					//differential /= 1;
@@ -1141,7 +1141,7 @@ namespace Server.Items
 				canSwing = ( p == null || p.PeacedUntil <= DateTime.UtcNow );
 			}
 
-			if (AdventuresFunctions.IsInMidland((object)attacker) && attacker is PlayerMobile)
+			if (AdventuresFunctions.IsPuritain((object)attacker) && attacker is PlayerMobile)
 			{
 				if (Utility.RandomDouble() < (0.35 * (((PlayerMobile)attacker).Encumbrance()) + 0.45 * (1- ((PlayerMobile)attacker).Agility())))
 					((PlayerMobile)attacker).Stam -= Utility.RandomMinMax(1, 3);
@@ -1237,7 +1237,7 @@ namespace Server.Items
 				if ( defender.Dex < 80 )
 					chance = chance * (20 + defender.Dex) / 100;
 
-				if (AdventuresFunctions.IsInMidland((object)defender) && defender is PlayerMobile)
+				if (AdventuresFunctions.IsPuritain((object)defender) && defender is PlayerMobile)
 					chance *= ((PlayerMobile)defender).Agility();
 
 				return defender.CheckSkill( SkillName.Parry, chance );
@@ -1271,7 +1271,7 @@ namespace Server.Items
 				if( defender.Dex < 80 )
 					chance = chance * (20 + defender.Dex) / 100;
 
-				if (AdventuresFunctions.IsInMidland((object)defender) && defender is PlayerMobile)
+				if (AdventuresFunctions.IsPuritain((object)defender) && defender is PlayerMobile)
 					chance *= ((PlayerMobile)defender).Agility();
 
 				if ( chance > aosChance )
@@ -1374,7 +1374,7 @@ namespace Server.Items
 						LevelItemManager.RepairItems( defender );
 					}
 
-					if (AdventuresFunctions.IsInMidland((object)defender) && defender.Player && CheckDodge(defender, attacker) && Utility.RandomBool()) //riposte!
+					if (AdventuresFunctions.IsPuritain((object)defender) && defender.Player && CheckDodge(defender, attacker) && Utility.RandomBool()) //riposte!
 					{
 						defender.SendMessage("You parry the blow and quickly counter the attack!");
 						OnSwing(defender, attacker);
@@ -1634,7 +1634,7 @@ namespace Server.Items
 		{
 			bool dodged = false;
 
-			if ( (defender is PlayerMobile || defender is BaseCreature) && AdventuresFunctions.IsInMidland((object)defender))
+			if ( (defender is PlayerMobile || defender is BaseCreature) && AdventuresFunctions.IsPuritain((object)defender))
 				dodged = CheckDodge(defender, attacker);
 
 			double sneakBonus = 0.0;
@@ -1693,7 +1693,7 @@ namespace Server.Items
 				attacker.PlaySound( GetHitAttackSound( attacker, defender ) );
 				defender.PlaySound( GetHitDefendSound( attacker, defender ) );
 
-				if ( AdventuresFunctions.IsInMidland((object)defender) && (( defender is BaseCreature && ((BaseCreature)defender).Mounted  && !(((BaseCreature)defender).Mount is EtherealMount) ) || (defender is PlayerMobile && ((PlayerMobile)defender).Mounted && !(((PlayerMobile)defender).Mount is EtherealMount)) ) ) // hit deflects on mount
+				if ( AdventuresFunctions.IsPuritain((object)defender) && (( defender is BaseCreature && ((BaseCreature)defender).Mounted  && !(((BaseCreature)defender).Mount is EtherealMount) ) || (defender is PlayerMobile && ((PlayerMobile)defender).Mounted && !(((PlayerMobile)defender).Mount is EtherealMount)) ) ) // hit deflects on mount
 				{
 
 					IMount mount = null;
@@ -1805,7 +1805,7 @@ namespace Server.Items
 			//factor *= damageBonus;
 			percentageBonus += (int)(damageBonus * 100) - 100;
 
-			if (AdventuresFunctions.IsInMidland((object)attacker) && ( ( attacker is PlayerMobile && ((PlayerMobile)attacker).Mounted) || (attacker is BaseCreature && ((BaseCreature)attacker).Mounted)) )
+			if (AdventuresFunctions.IsPuritain((object)attacker) && ( ( attacker is PlayerMobile && ((PlayerMobile)attacker).Mounted) || (attacker is BaseCreature && ((BaseCreature)attacker).Mounted)) )
 				percentageBonus += 15;
 
 			CheckSlayerResult cs = CheckSlayers( attacker, defender );
@@ -2076,13 +2076,13 @@ namespace Server.Items
 						HitPoints -= (Utility.RandomMinMax(0,2));
 				}
 
-				if ( !(AdventuresFunctions.IsInMidland((object)this)) && m_AosWeaponAttributes.SelfRepair > Utility.Random( 20 ) )
+				if ( !(AdventuresFunctions.IsPuritain((object)this)) && m_AosWeaponAttributes.SelfRepair > Utility.Random( 20 ) )
 				{
 					HitPoints += 1;
 				}
 				else
 				{
-					if ( this is ILevelable && !(AdventuresFunctions.IsInMidland((object)this)))
+					if ( this is ILevelable && !(AdventuresFunctions.IsPuritain((object)this)))
 					{
 						LevelItemManager.RepairItems( attacker );
 					}
@@ -2122,7 +2122,7 @@ namespace Server.Items
 					bc.Hits += damage;
 			}
 
-			if ( !AdventuresFunctions.IsInMidland((object)attacker) )
+			if ( !AdventuresFunctions.IsPuritain((object)attacker) )
 			{
 				bool SB = false;
 
@@ -2305,7 +2305,7 @@ namespace Server.Items
 
 				int SDICap = MyServerSettings.RealSpellDamageCap();
 				// SDI bonus
-				if ( !AdventuresFunctions.IsInMidland((object)attacker) && !(attacker is PlayerMobile && ((PlayerMobile)attacker).SoulBound))
+				if ( !AdventuresFunctions.IsPuritain((object)attacker) && !(attacker is PlayerMobile && ((PlayerMobile)attacker).SoulBound))
 				{
 					damageBonus += AosAttributes.GetValue( attacker, AosAttribute.SpellDamage );
 				}
@@ -2626,7 +2626,7 @@ namespace Server.Items
 				PlayerMobile pm = (PlayerMobile)attacker;
 				pm.Stealthing = 0;
 			}
-			if (AdventuresFunctions.IsInMidland((object)defender) &&  defender is PlayerMobile && attacker is BaseCreature )
+			if (AdventuresFunctions.IsPuritain((object)defender) &&  defender is PlayerMobile && attacker is BaseCreature )
 			{
 				PlayerMobile pm = (PlayerMobile)defender;
 				if (pm.Mounted && pm.Mount != null && !(pm.Mount is EtherealMount) )
@@ -3692,7 +3692,7 @@ namespace Server.Items
 					if ( m_Animation == OldAnimation )
 						m_Animation = (WeaponAnimation)(-1);
 
-					if ( UseSkillMod && m_AccuracyLevel != WeaponAccuracyLevel.Regular && Parent is Mobile && !(AdventuresFunctions.IsInMidland((object)Parent)))
+					if ( UseSkillMod && m_AccuracyLevel != WeaponAccuracyLevel.Regular && Parent is Mobile && !(AdventuresFunctions.IsPuritain((object)Parent)))
 					{
 						m_SkillMod = new DefaultSkillMod( AccuracySkill, true, (int)m_AccuracyLevel * 5);
 						((Mobile)Parent).AddSkillMod( m_SkillMod );
@@ -3702,14 +3702,14 @@ namespace Server.Items
 				}
 			}
 
-			if ( Core.AOS && Parent is Mobile  && !(AdventuresFunctions.IsInMidland((object)Parent)))
+			if ( Core.AOS && Parent is Mobile  && !(AdventuresFunctions.IsPuritain((object)Parent)))
 				m_AosSkillBonuses.AddTo( (Mobile)Parent );
 
 			int strBonus = m_AosAttributes.BonusStr;
 			int dexBonus = m_AosAttributes.BonusDex;
 			int intBonus = m_AosAttributes.BonusInt;
 
-			if ( this.Parent is Mobile && (strBonus != 0 || dexBonus != 0 || intBonus != 0) && (Parent is PlayerMobile && !((PlayerMobile)Parent).SoulBound) && !(AdventuresFunctions.IsInMidland((object)Parent)) )
+			if ( this.Parent is Mobile && (strBonus != 0 || dexBonus != 0 || intBonus != 0) && (Parent is PlayerMobile && !((PlayerMobile)Parent).SoulBound) && !(AdventuresFunctions.IsPuritain((object)Parent)) )
 			{
 				Mobile m = (Mobile)this.Parent;
 
@@ -3972,82 +3972,82 @@ namespace Server.Items
 			if ( (prop = m_AosWeaponAttributes.UseBestSkill) != 0 )
 				list.Add( 1060400 ); // use best weapon skill
 
-			if ( (prop = (GetDamageBonus() + m_AosAttributes.WeaponDamage)) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = (GetDamageBonus() + m_AosAttributes.WeaponDamage)) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060401, prop.ToString() ); // damage increase ~1_val~%
 
-			if ( (prop = m_AosAttributes.DefendChance) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.DefendChance) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060408, prop.ToString() ); // defense chance increase ~1_val~%
 
-			if ( (prop = m_AosAttributes.EnhancePotions) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.EnhancePotions) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060411, prop.ToString() ); // enhance potions ~1_val~%
 
-			if ( (prop = m_AosAttributes.CastRecovery) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.CastRecovery) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060412, prop.ToString() ); // faster cast recovery ~1_val~
 
-			if ( (prop = m_AosAttributes.CastSpeed) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.CastSpeed) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060413, prop.ToString() ); // faster casting ~1_val~
 
-			if ( (prop = (GetHitChanceBonus() + m_AosAttributes.AttackChance)) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = (GetHitChanceBonus() + m_AosAttributes.AttackChance)) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060415, prop.ToString() ); // hit chance increase ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitColdArea) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitColdArea) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060416, prop.ToString() ); // hit cold area ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitDispel) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitDispel) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060417, prop.ToString() ); // hit dispel ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitEnergyArea) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitEnergyArea) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060418, prop.ToString() ); // hit energy area ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitFireArea) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitFireArea) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060419, prop.ToString() ); // hit fire area ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitFireball) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitFireball) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060420, prop.ToString() ); // hit fireball ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitHarm) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitHarm) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060421, prop.ToString() ); // hit harm ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitLeechHits) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitLeechHits) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060422, prop.ToString() ); // hit life leech ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitLightning) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitLightning) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060423, prop.ToString() ); // hit lightning ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitLowerAttack) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitLowerAttack) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060424, prop.ToString() ); // hit lower attack ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitLowerDefend) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitLowerDefend) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060425, prop.ToString() ); // hit lower defense ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitMagicArrow) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitMagicArrow) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060426, prop.ToString() ); // hit magic arrow ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitLeechMana) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitLeechMana) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060427, prop.ToString() ); // hit mana leech ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitPhysicalArea) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitPhysicalArea) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060428, prop.ToString() ); // hit physical area ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitPoisonArea) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitPoisonArea) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060429, prop.ToString() ); // hit poison area ~1_val~%
 
-			if ( (prop = m_AosWeaponAttributes.HitLeechStam) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.HitLeechStam) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060430, prop.ToString() ); // hit stamina leech ~1_val~%
 
-			if ( Core.ML && this is BaseRanged && ( prop = ( (BaseRanged) this ).Velocity ) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( Core.ML && this is BaseRanged && ( prop = ( (BaseRanged) this ).Velocity ) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1072793, prop.ToString() ); // Velocity ~1_val~%
 
-			if ( (prop = m_AosAttributes.BonusDex) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.BonusDex) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060409, prop.ToString() ); // dexterity bonus ~1_val~
 
-			if ( (prop = m_AosAttributes.BonusHits) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.BonusHits) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060431, prop.ToString() ); // hit point increase ~1_val~
 
-			if ( (prop = m_AosAttributes.BonusInt) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.BonusInt) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060432, prop.ToString() ); // intelligence bonus ~1_val~
 
-			if ( (prop = m_AosAttributes.LowerManaCost) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.LowerManaCost) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060433, prop.ToString() ); // lower mana cost ~1_val~%
 
 			if ( (prop = m_AosAttributes.LowerRegCost) != 0 )
@@ -4056,16 +4056,16 @@ namespace Server.Items
 			if ( (prop = GetLowerStatReq()) != 0 )
 				list.Add( 1060435, prop.ToString() ); // lower requirements ~1_val~%
 
-			if ( (prop = (GetLuckBonus() + m_AosAttributes.Luck)) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = (GetLuckBonus() + m_AosAttributes.Luck)) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060436, prop.ToString() ); // luck ~1_val~
 
 			if ( (prop = m_AosWeaponAttributes.MageWeapon) != 0 )
 				list.Add( 1060438, (30 - prop).ToString() ); // mage weapon -~1_val~ skill
 
-			if ( (prop = m_AosAttributes.BonusMana) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.BonusMana) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060439, prop.ToString() ); // mana increase ~1_val~
 
-			if ( (prop = m_AosAttributes.RegenMana) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.RegenMana) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060440, prop.ToString() ); // mana regeneration ~1_val~
 
 			if ( (prop = m_AosAttributes.NightSight) != 0 )
@@ -4073,31 +4073,31 @@ namespace Server.Items
 			if ( (prop = m_AosAttributes.NightSight) != 0 && !(this is LightSword) && !(this is DoubleLaserSword) && !(this is LevelLaserSword) && !(this is LevelDoubleLaserSword) )
 				list.Add( 1060441 ); // night sight
 
-			if ( (prop = m_AosAttributes.ReflectPhysical) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.ReflectPhysical) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060442, prop.ToString() ); // reflect physical damage ~1_val~%
 
-			if ( (prop = m_AosAttributes.RegenStam) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.RegenStam) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060443, prop.ToString() ); // stamina regeneration ~1_val~
 
-			if ( (prop = m_AosAttributes.RegenHits) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.RegenHits) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060444, prop.ToString() ); // hit point regeneration ~1_val~
 
-			if ( (prop = m_AosWeaponAttributes.SelfRepair) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosWeaponAttributes.SelfRepair) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060450, prop.ToString() ); // self repair ~1_val~
 
 			if ( (prop = m_AosAttributes.SpellChanneling) != 0 )
 				list.Add( 1060482 ); // spell channeling
 
-			if ( (prop = m_AosAttributes.SpellDamage) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.SpellDamage) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060483, prop.ToString() ); // spell damage increase ~1_val~%
 
-			if ( (prop = m_AosAttributes.BonusStam) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.BonusStam) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060484, prop.ToString() ); // stamina increase ~1_val~
 
-			if ( (prop = m_AosAttributes.BonusStr) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.BonusStr) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060485, prop.ToString() ); // strength bonus ~1_val~
 
-			if ( (prop = m_AosAttributes.WeaponSpeed) != 0 && !(AdventuresFunctions.IsInMidland((object)this)))
+			if ( (prop = m_AosAttributes.WeaponSpeed) != 0 && !(AdventuresFunctions.IsPuritain((object)this)))
 				list.Add( 1060486, prop.ToString() ); // swing speed increase ~1_val~%
 
 			int phys, fire, cold, pois, nrgy, chaos, direct;

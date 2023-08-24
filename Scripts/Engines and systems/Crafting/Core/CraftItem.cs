@@ -356,6 +356,7 @@ namespace Server.Engines.Craft
 					typeof( BaseArmor ),
 					typeof( BaseWeapon ),
 					typeof( BaseClothing ),
+					typeof( BaseJewel ),
 					typeof( BaseInstrument ),
 					typeof( DragonBardingDeed ),
 					typeof( BaseTool ),

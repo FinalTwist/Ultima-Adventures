@@ -837,7 +837,7 @@ namespace Server.Misc
 
 		public static bool LuckyPlayer( int luck, Mobile from )
 		{
-			if (AdventuresFunctions.IsInMidland((object)from))
+			if (AdventuresFunctions.IsPuritain((object)from))
 				luck = 0;
 
 			if (luck > 8000) //how is this even possible... but it is apparently
@@ -859,16 +859,17 @@ namespace Server.Misc
 					balance = 50000 - balance; 
 
 				balance = balance / 200000; 
-				balancetweak += balance; 
-			}
-			
-			realluck = (int)((double)realluck * balancetweak);
+				balancetweak += balance;
+            }
 
-			if ( realluck <= 0 ) //sanity check
+            double characterTypeModifier = 1.0;
+            if (from is PlayerMobile && ((PlayerMobile)from).BalanceStatus == 0) //observer, has penalty 20%
+                characterTypeModifier = 0.80;
+
+            realluck = (int)((double)realluck * balancetweak * characterTypeModifier);
+
+            if ( realluck <= 0 ) //sanity check
 				return false;
-
-			if (from is PlayerMobile && from.BalanceStatus == 0) //observer, has penalty 20%
-				realluck *= 0.80;
 
 			if ( realluck > MyServerSettings.LuckCap() ) //luck cap is 4k here, so 4k max now
 			realluck = MyServerSettings.LuckCap();
@@ -969,7 +970,7 @@ namespace Server.Misc
 		public static int LuckyPlayerArtifacts( int luck, Mobile from)
 		{
 
-			if (AdventuresFunctions.IsInMidland((object)from) || luck > 8000)
+			if (AdventuresFunctions.IsPuritain((object)from) || luck > 8000)
 				luck = 0;
 
 			int realluck = Utility.RandomMinMax(1,2000) + (int)( (double)luck /2);	
@@ -1010,7 +1011,7 @@ namespace Server.Misc
 			{
 				CharacterDatabase DB = Server.Items.CharacterDatabase.GetDB( m );
 
-				if ( DB.CharacterOriental == 1 )
+				if (DB != null && DB.CharacterOriental == 1 )
 					return true;
 			}
 			else if ( m is BaseCreature )
@@ -1040,7 +1041,7 @@ namespace Server.Misc
 				{
 					CharacterDatabase DB = Server.Items.CharacterDatabase.GetDB( killer );
 
-					if ( DB.CharacterOriental == 1 )
+					if (DB != null && DB.CharacterOriental == 1 )
 						return true;
 				}
 				else
@@ -1070,7 +1071,7 @@ namespace Server.Misc
 					{
 						CharacterDatabase DB = Server.Items.CharacterDatabase.GetDB( hitter );
 
-						if ( DB.CharacterOriental == 1 )
+						if ( DB != null && DB.CharacterOriental == 1 )
 							return true;
 					}
 				}
@@ -1085,7 +1086,7 @@ namespace Server.Misc
 			{
 				CharacterDatabase DB = Server.Items.CharacterDatabase.GetDB( m );
 
-				if ( DB.CharacterBarbaric > 0 )
+				if ( DB != null && DB.CharacterBarbaric > 0 )
 					return DB.CharacterBarbaric;
 			}
 
@@ -1098,7 +1099,7 @@ namespace Server.Misc
 			{
 				CharacterDatabase DB = Server.Items.CharacterDatabase.GetDB( m );
 
-				if ( DB.CharacterEvil == 1 )
+				if (DB != null && DB.CharacterEvil == 1 )
 					return true;
 			}
 			else if ( m != null && m is BaseCreature )
@@ -1128,7 +1129,7 @@ namespace Server.Misc
 				{
 					CharacterDatabase DB = Server.Items.CharacterDatabase.GetDB( killer );
 
-					if ( DB.CharacterEvil == 1 )
+					if ( DB != null && DB.CharacterEvil == 1 )
 						return true;
 				}
 				else
@@ -1158,7 +1159,7 @@ namespace Server.Misc
 					{
 						CharacterDatabase DB = Server.Items.CharacterDatabase.GetDB( hitter );
 
-						if ( DB.CharacterEvil == 1 )
+						if ( DB != null && DB.CharacterEvil == 1 )
 							return true;
 					}
 				}

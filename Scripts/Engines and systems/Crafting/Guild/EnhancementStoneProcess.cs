@@ -113,13 +113,14 @@ namespace Server.Items
 
 		public bool IsCraftedByEnhancer( Item item, Mobile from )
 		{
-			bool crafted = false;
+            Mobile crafter = null;
 
-			if ( item is BaseClothing ){ BaseClothing cloth = (BaseClothing)item; if ( cloth.Crafter == from ){ crafted = true; } }
-			else if ( item is BaseArmor ){ BaseArmor armor = (BaseArmor)item; if ( armor.Crafter == from ){ crafted = true; } }
-			else if ( item is BaseWeapon ){ BaseWeapon weapon = (BaseWeapon)item; if ( weapon.Crafter == from ){ crafted = true; } }
+            if (item is BaseClothing) crafter = ((BaseClothing)item).Crafter;
+            else if (item is BaseArmor) crafter = ((BaseArmor)item).Crafter;
+            else if (item is BaseWeapon) crafter = ((BaseWeapon)item).Crafter;
+            else if (item is BaseJewel) crafter = ((BaseJewel)item).Crafter;
 
-			return crafted;
+            return crafter != null && crafter == from;
 		}
 
         public int GetCostToUpgrade(AttributeHandler handler)

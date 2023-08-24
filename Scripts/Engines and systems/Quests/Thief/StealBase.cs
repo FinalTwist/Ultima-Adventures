@@ -692,8 +692,7 @@ namespace Server.Items
 
                     int difficulty = Misc.MyServerSettings.GetDifficultyLevel( m.Location, m.Map );
 
-					if (difficulty == 0 || difficulty == null) // divide by zero check
-						difficulty = 1;
+					if (difficulty < 1 ) difficulty = 1;
 
                     int fame = 150 * difficulty;
 

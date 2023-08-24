@@ -2161,7 +2161,7 @@ namespace Server.Mobiles
 			if (Controlled && !m_goferal && m is BaseCreature && !((BaseCreature)m).GoFeral && ((BaseCreature)m).ControlMaster == ControlMaster && ((BaseCreature)m).Combatant != this )
 				return false;
 			
-			if (AdventuresFunctions.IsInMidland((object)this))
+			if (AdventuresFunctions.IsPuritain((object)this))
 			{
 				if (this.midrace > 0)
 					return IntelligentAction.RaceCheck(this, m);
@@ -2825,7 +2825,7 @@ namespace Server.Mobiles
 				m_NoKillAwards = true;
 			}
 
-			if ( (m_midrace != 0 || this is Townsperson || this is BaseVendor) && AdventuresFunctions.IsInMidland((object)this))
+			if ( (m_midrace != 0 || this is Townsperson || this is BaseVendor) && AdventuresFunctions.IsPuritain((object)this))
 			{
 				if (this is Townsperson || (this is BaseVendor && m_midrace == 0))
 				{
@@ -4462,7 +4462,7 @@ namespace Server.Mobiles
 			DynamicGold();
 			NameColor();
 
-			if (AdventuresFunctions.IsInMidland((object)this) && this.midrace > 0 && ( !(this is MidlandVendor) || !(this is TownHerald)) && this.Fame < 10000)
+			if (AdventuresFunctions.IsPuritain((object)this) && this.midrace > 0 && ( !(this is MidlandVendor) || !(this is TownHerald)) && this.Fame < 10000)
 				DynamicBeefUp(this, (this.Fame + Utility.RandomMinMax(2000, 5000)));
 
 			else if ( Heat > 0 && !IsParagon && !(this is Zombiex) && !(this is BaseUndead) )
@@ -7684,7 +7684,7 @@ namespace Server.Mobiles
 			InhumanSpeech speechType = this.SpeechType;
 
 			Mobile m = e.Mobile;
-			if (m != null && AdventuresFunctions.IsInMidland((object)this) && midrace > 0 && !m.Hidden && CanSee(m) && InRange( m, 7 ) )
+			if (m != null && AdventuresFunctions.IsPuritain((object)this) && midrace > 0 && !m.Hidden && CanSee(m) && InRange( m, 7 ) )
 			{
 				if (IntelligentAction.RaceCheck(this, m)) // means this is an enemy
 				{
@@ -7887,7 +7887,7 @@ namespace Server.Mobiles
 		{
 			base.OnMovement( m, oldLocation );
 
-			if (AdventuresFunctions.IsInMidland((object)this) && midrace > 0 && !m.Hidden && CanSee(m) && InRange( m, 5 ) && !InRange( oldLocation, 5 ))
+			if (AdventuresFunctions.IsPuritain((object)this) && midrace > 0 && !m.Hidden && CanSee(m) && InRange( m, 5 ) && !InRange( oldLocation, 5 ))
 			{
 				if (IntelligentAction.RaceCheck(this, m)) // means this is an enemy
 				{
@@ -9062,7 +9062,7 @@ namespace Server.Mobiles
 			if ( slayer is PlayerMobile )
 			{
 
-				if (AdventuresFunctions.IsInMidland((object)slayer))
+				if (AdventuresFunctions.IsPuritain((object)slayer))
 					((PlayerMobile)slayer).AdjustReputation( this );
 
 				///////////////////////////////////////////////////////////////////////////////////////
@@ -9436,7 +9436,7 @@ namespace Server.Mobiles
 			}
 
 
-			if (AdventuresFunctions.IsInMidland((object)this) && Body.IsHuman && midrace > 0 )
+			if (AdventuresFunctions.IsPuritain((object)this) && Body.IsHuman && midrace > 0 )
 				Server.Misc.MorphingTime.TurnToSomethingOnDeath( this );
 
 			return base.OnBeforeDeath();

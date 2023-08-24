@@ -36,7 +36,7 @@ namespace Server.Mobiles
 				FacialHairHue = HairColor;
             }
 
-            if (AdventuresFunctions.IsInMidland((object)this))
+            if (AdventuresFunctions.IsPuritain((object)this))
             {
             Item robe = new PirateRobe(); robe.Hue = 0x455; AddItem(robe);
 

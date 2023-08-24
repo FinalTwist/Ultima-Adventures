@@ -558,7 +558,7 @@ namespace Server.Mobiles
 			else if ( dropped is Head && !from.Blessed )
 			{
 
-				if (((Head)dropped).midrace > 0 && ((Head)dropped).midrace == this.midrace && AdventuresFunctions.IsInMidland((object)this))
+				if (((Head)dropped).midrace > 0 && ((Head)dropped).midrace == this.midrace && AdventuresFunctions.IsPuritain((object)this))
 				{
 					from.CriminalAction( true);
 					this.Say("Halt!  Murderer!");

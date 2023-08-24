@@ -66,7 +66,7 @@ namespace Server.Misc
     	}	
 		public static bool GetMyEnemies( Mobile m, Mobile me, bool checkDisguise )
 		{
-			if (AdventuresFunctions.IsInMidland((object)me) && me is BaseCreature && ((BaseCreature)me).midrace > 0)
+			if (AdventuresFunctions.IsPuritain((object)me) && me is BaseCreature && ((BaseCreature)me).midrace > 0)
 				return RaceCheck (me, m);
 
 			bool enemy = true;

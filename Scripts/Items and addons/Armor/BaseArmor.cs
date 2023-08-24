@@ -679,7 +679,7 @@ namespace Server.Items
 			{
 				Mobile from = (Mobile)parent;
 
-				if ( Core.AOS && !(AdventuresFunctions.IsInMidland((object)parent)) && !(from is PlayerMobile && ((PlayerMobile)from).SoulBound ))
+				if ( Core.AOS && !(AdventuresFunctions.IsPuritain((object)parent)) && !(from is PlayerMobile && ((PlayerMobile)from).SoulBound ))
 					m_AosSkillBonuses.AddTo( from );
 
 				from.Delta( MobileDelta.Armor ); // Tell them armor rating has changed
@@ -1134,14 +1134,14 @@ namespace Server.Items
 			if ( m_AosSkillBonuses == null )
 				m_AosSkillBonuses = new AosSkillBonuses( this );
 
-			if ( Core.AOS && Parent is Mobile && !(AdventuresFunctions.IsInMidland((object)Parent)))
+			if ( Core.AOS && Parent is Mobile && !(AdventuresFunctions.IsPuritain((object)Parent)))
 				m_AosSkillBonuses.AddTo( (Mobile)Parent );
 
 			int strBonus = ComputeStatBonus( StatType.Str );
 			int dexBonus = ComputeStatBonus( StatType.Dex );
 			int intBonus = ComputeStatBonus( StatType.Int );
 
-			if ( Parent is Mobile && (strBonus != 0 || dexBonus != 0 || intBonus != 0) && (Parent is PlayerMobile && !((PlayerMobile)Parent).SoulBound) && !(AdventuresFunctions.IsInMidland((object)Parent)))
+			if ( Parent is Mobile && (strBonus != 0 || dexBonus != 0 || intBonus != 0) && (Parent is PlayerMobile && !((PlayerMobile)Parent).SoulBound) && !(AdventuresFunctions.IsPuritain((object)Parent)))
 			{
 				Mobile m = (Mobile)Parent;
 
@@ -1274,12 +1274,12 @@ namespace Server.Items
 			bool SB = false;
 			if (from is PlayerMobile )
 			{
-				if (((PlayerMobile)from).SoulBound || AdventuresFunctions.IsInMidland((object)from))
+				if (((PlayerMobile)from).SoulBound || AdventuresFunctions.IsPuritain((object)from))
 					SB = true;
 			}
 
 			bool MD = false;
-			if (AdventuresFunctions.IsInMidland((object)from))
+			if (AdventuresFunctions.IsPuritain((object)from))
 				MD = true;
 
 			int strBonus = ComputeStatBonus( StatType.Str );
@@ -1643,11 +1643,11 @@ namespace Server.Items
 
 			if ( ruin < Utility.Random( 100 ) ) // chance to lower durability
 			{
-				if ( this is ILevelable && !(AdventuresFunctions.IsInMidland((object)this)) )
+				if ( this is ILevelable && !(AdventuresFunctions.IsPuritain((object)this)) )
 				{
 					LevelItemManager.RepairItems( ((Mobile)Parent) );
 				}
-				else if ( !AdventuresFunctions.IsInMidland((object)this) && m_AosArmorAttributes.SelfRepair > Utility.Random( 20 ) )
+				else if ( !AdventuresFunctions.IsPuritain((object)this) && m_AosArmorAttributes.SelfRepair > Utility.Random( 20 ) )
 				{
 					HitPoints += 1;
 				}
@@ -1770,12 +1770,12 @@ m_MaxHits
 		    TextInfo cultInfo = new CultureInfo("en-US", false).TextInfo;
 
 		    if (string.IsNullOrEmpty(resourceName) || resourceName.ToLower() == "none" || resourceName.ToLower() == "normal" || resourceName.ToLower() == "iron")
-			resourceName = "";
+				resourceName = "";
 
 		    if (resourceName == "")
-			list.Add(1053099, ItemNameHue.UnifiedItemProps.RarityNameMod(this, ((m_Quality == ArmorQuality.Exceptional) ? "Exceptional " : "") + "{0}"), cultInfo.ToTitleCase(GetNameString()));
+				list.Add(1053099, ItemNameHue.UnifiedItemProps.RarityNameMod(this, ((m_Quality == ArmorQuality.Exceptional) ? "Exceptional " : "") + "{0}"), cultInfo.ToTitleCase(GetNameString()));
 		    else
-			list.Add(1053099, ItemNameHue.UnifiedItemProps.RarityNameMod(this, ((m_Quality == ArmorQuality.Exceptional) ? "Exceptional " : "") + "{0}\t{1}"), resourceName, GetNameString());
+				list.Add(1053099, ItemNameHue.UnifiedItemProps.RarityNameMod(this, ((m_Quality == ArmorQuality.Exceptional) ? "Exceptional " : "") + "{0}\t{1}"), resourceName, GetNameString());
 		    #endregion
 		}
 
@@ -1811,7 +1811,7 @@ m_MaxHits
 
 
 			bool md = false;
-			if (AdventuresFunctions.IsInMidland((object)this))
+			if (AdventuresFunctions.IsPuritain((object)this))
 				md = true;
 
 			#region [Item Name Color]
@@ -1993,7 +1993,7 @@ m_MaxHits
 				if ( !( Core.ML && this is BaseShield ))		// Guessed Core.ML removed exceptional resist bonuses from crafted shields
 					DistributeBonuses( (tool is BaseRunicTool ? 8 : Core.SE ? 5 : 5) ); // Not sure since when, but right now 15 points are added, not 14.
 
-				if( Core.ML && !(this is BaseShield) )
+				if( Core.ML /* && !(this is BaseShield) */ )
 				{
 					int bonus = (int)(from.Skills.ArmsLore.Value / 15);
 

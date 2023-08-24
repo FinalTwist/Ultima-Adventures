@@ -49,7 +49,7 @@ namespace Server.Misc
 		private static TimeSpan Mobile_HitsRegenRate( Mobile from )
 		{
 			int points = AosAttributes.GetValue( from, AosAttribute.RegenHits );
-			if ((AdventuresFunctions.IsInMidland((object)from)))
+			if ((AdventuresFunctions.IsPuritain((object)from)))
 				points = 0;
 
 			if (from is PlayerMobile && points >= MyServerSettings.RegenHitsCap() && from.BodyMod != 263)
@@ -145,7 +145,7 @@ namespace Server.Misc
 
 			int cappedPoints = AosAttributes.GetValue( from, AosAttribute.RegenStam );
 
-						if ((AdventuresFunctions.IsInMidland((object)from)))
+						if ((AdventuresFunctions.IsPuritain((object)from)))
 				cappedPoints = 0;
 
 			if (from is PlayerMobile && cappedPoints >= MyServerSettings.RegenStamCap() && from.BodyMod != 263)
@@ -160,7 +160,7 @@ namespace Server.Misc
 			if( Core.ML && from is PlayerMobile )
 				cappedPoints = Math.Min( cappedPoints, 24 );
 
-			if (AdventuresFunctions.IsInMidland((object)from) && from is PlayerMobile)
+			if (AdventuresFunctions.IsPuritain((object)from) && from is PlayerMobile)
 				cappedPoints = (int)( (double)cappedPoints * (1.3 * ((PlayerMobile)from).Agility()) );
 
 			points += cappedPoints;
@@ -241,7 +241,7 @@ namespace Server.Misc
 
 				int cappedPoints = AosAttributes.GetValue( from, AosAttribute.RegenMana );
 
-				if ((AdventuresFunctions.IsInMidland((object)from)))
+				if ((AdventuresFunctions.IsPuritain((object)from)))
 					cappedPoints = 0;
 
 				if (from is PlayerMobile && cappedPoints >= MyServerSettings.RegenManaCap() && from.BodyMod != 263)
@@ -258,7 +258,7 @@ namespace Server.Misc
 				if( Core.ML && from is PlayerMobile )
 					cappedPoints = Math.Min( cappedPoints, 18 );
 
-				if (AdventuresFunctions.IsInMidland((object)from) && from is PlayerMobile)
+				if (AdventuresFunctions.IsPuritain((object)from) && from is PlayerMobile)
 					cappedPoints =(int)((double)cappedPoints * (1.3 * ((PlayerMobile)from).Lucidity()));
 
 				totalPoints += cappedPoints;

@@ -619,7 +619,7 @@ namespace Server.Spells
 				return false;
 			}
 
-			if (AdventuresFunctions.IsInMidland((object)caster) && caster.AccessLevel == AccessLevel.Player)
+			if (AdventuresFunctions.IsPuritain((object)caster) && caster.AccessLevel == AccessLevel.Player)
 				return false;
 			
 			// Final: Can't teleport into a dungeon 
@@ -1064,7 +1064,7 @@ namespace Server.Spells
 	
 			}
 
-            if (AdventuresFunctions.IsInMidland((object)from) && from is PlayerMobile)
+            if (AdventuresFunctions.IsPuritain((object)from) && from is PlayerMobile)
 				damage = (int)((double)damage * (1.25 * ((PlayerMobile)from).Lucidity()));
 
 			if( delay == TimeSpan.Zero )

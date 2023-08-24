@@ -175,7 +175,7 @@ namespace Server
                 {
                     totalDamage += damage * direct / 100;
 
-                    if (quiver != null && !(AdventuresFunctions.IsInMidland((object)from)))
+                    if (quiver != null && !(AdventuresFunctions.IsPuritain((object)from)))
                         totalDamage += totalDamage * quiver.DamageIncrease / 100;
                 }
 
@@ -184,7 +184,7 @@ namespace Server
             }
             else if (Core.ML && m is PlayerMobile && from is PlayerMobile)
             {
-                if (quiver != null && !(AdventuresFunctions.IsInMidland((object)from)))
+                if (quiver != null && !(AdventuresFunctions.IsPuritain((object)from)))
                     damage += damage * quiver.DamageIncrease / 100;
 
                 if (!deathStrike)
@@ -215,7 +215,7 @@ namespace Server
                     {
                         totalDamage += damage * direct / 100;
 
-                        if ( quiver != null && !(AdventuresFunctions.IsInMidland((object)from)))
+                        if ( quiver != null && !(AdventuresFunctions.IsPuritain((object)from)))
                             totalDamage += totalDamage * quiver.DamageIncrease / 100;
                     }
 
@@ -225,7 +225,7 @@ namespace Server
 
                 totalDamage = damage;
 
-                if (Core.ML && quiver != null && !(AdventuresFunctions.IsInMidland((object)from)))
+                if (Core.ML && quiver != null && !(AdventuresFunctions.IsPuritain((object)from)))
                     totalDamage += totalDamage * quiver.DamageIncrease / 100;
             }
 
@@ -317,11 +317,14 @@ namespace Server
 					reflectPhys = reflectDamageCap;
 				}
 
-				if( reflectPhys != 0 && !(AdventuresFunctions.IsInMidland((object)from)))
+				if( reflectPhys != 0 && !(AdventuresFunctions.IsPuritain((object)from)))
 				{
 					from.Damage( Scale( (damage * phys * (100 - (ignoreArmor ? 0 : m.PhysicalResistance))) / 10000, reflectPhys ), m );
 				}
-			}			
+			}	
+
+			if (m is PlayerMobile && (AdventuresFunctions.IsPuritain((object)m)))
+				totalDamage *= (int)((double)totalDamage * 0.2);		
 
 			m.Damage( totalDamage, from );
 			return totalDamage;
@@ -386,7 +389,7 @@ namespace Server
 
 		public static int GetValue( Mobile m, AosAttribute attribute )
 		{
-			if( !Core.AOS || AdventuresFunctions.IsInMidland((object)m))
+			if( !Core.AOS || AdventuresFunctions.IsPuritain((object)m))
 				return 0;
 
 			List<Item> items = m.Items;
@@ -404,7 +407,7 @@ namespace Server
 
 			if (m is PlayerMobile)
 			{
-				if (((PlayerMobile)m).SoulBound || AdventuresFunctions.IsInMidland((object)m))
+				if (((PlayerMobile)m).SoulBound || AdventuresFunctions.IsPuritain((object)m))
 					return value;
 			}
 
@@ -645,7 +648,7 @@ namespace Server
 
 		public static int GetValue( Mobile m, AosWeaponAttribute attribute )
 		{
-			if( !Core.AOS || AdventuresFunctions.IsInMidland((object)m)) 
+			if( !Core.AOS || AdventuresFunctions.IsPuritain((object)m)) 
 				return 0;
 
 			List<Item> items = m.Items;
@@ -782,7 +785,7 @@ namespace Server
 
 		public static int GetValue( Mobile m, AosArmorAttribute attribute )
 		{
-			if( !Core.AOS || AdventuresFunctions.IsInMidland((object)m))
+			if( !Core.AOS || AdventuresFunctions.IsPuritain((object)m))
 				return 0;
 
 			List<Item> items = m.Items;
@@ -872,7 +875,7 @@ namespace Server
 		{
 			Remove();
 
-			if (AdventuresFunctions.IsInMidland((object)m))
+			if (AdventuresFunctions.IsPuritain((object)m))
 				return;
 
 			for( int i = 0; i < 5; ++i )

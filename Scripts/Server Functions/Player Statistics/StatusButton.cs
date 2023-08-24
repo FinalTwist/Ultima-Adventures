@@ -21,7 +21,7 @@ namespace Server.Engines.Quests
 		{
 			Mobile from = e.Mobile;
 
-			if (Misc.AdventuresFunctions.IsInMidland((object)from))
+			if (Misc.AdventuresFunctions.IsPuritain((object)from))
 				return;
 
 			from.CloseGump( typeof( StatsGump ) );

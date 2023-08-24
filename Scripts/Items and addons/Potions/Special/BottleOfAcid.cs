@@ -113,14 +113,14 @@ namespace Server.Items
 						from.SendMessage( "Someone already used acid to melt the skin away." );
 					}
 				}
-				else if ( targeted is ILockable )
+				else if ( targeted is ILockable && targeted is LockableContainer)
 				{
 					ILockable o = (ILockable)targeted;
-					LockableContainer cont2 = (LockableContainer)o;
 					TrapableContainer cont3 = (TrapableContainer)o;
 
 					if ( ( o.Locked ) || ( cont3.TrapType != TrapType.None ) )
 					{
+						LockableContainer cont2 = (LockableContainer)o;
 						if ( o is BaseDoor && !((BaseDoor)o).UseLocks() )  // this seems to check house doors also
 						{
 							from.SendMessage( "This acid is to dissolve locks and traps on most chests." );

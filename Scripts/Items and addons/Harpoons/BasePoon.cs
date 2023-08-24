@@ -117,7 +117,7 @@ namespace Server.Items
 		{
 			int total = base.GetTotal( type );
 
-			if ( type == TotalType.Weight && !Server.Misc.AdventuresFunctions.IsInMidland((object)this))
+			if ( type == TotalType.Weight && !Server.Misc.AdventuresFunctions.IsPuritain((object)this))
 				total -= total * m_WeightReduction / 100;
 
 			return total;
@@ -213,7 +213,7 @@ namespace Server.Items
 			{
 				Mobile mob = (Mobile) parent;
 
-				if (!Server.Misc.AdventuresFunctions.IsInMidland((object)parent))
+				if (!Server.Misc.AdventuresFunctions.IsPuritain((object)parent))
 					m_Attributes.AddStatBonuses( mob );
 			}
 		}
@@ -250,7 +250,7 @@ namespace Server.Items
 				list.Add( 3006987, "{0}\t{1}", 0, Capacity ); // Ammo: ~1_QUANTITY~/~2_CAPACITY~ Harpoon Rope
 
 			bool MD = false;
-			if (Server.Misc.AdventuresFunctions.IsInMidland((object)this))
+			if (Server.Misc.AdventuresFunctions.IsPuritain((object)this))
 				MD = true;
 
 

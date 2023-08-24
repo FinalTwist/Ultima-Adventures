@@ -555,7 +555,7 @@ namespace Server.Mobiles
 
 			Server.Mobiles.PremiumSpawner.SpreadOut( this );
 
-			if (AdventuresFunctions.IsInMidland((object)this))
+			if (AdventuresFunctions.IsPuritain((object)this))
 			{
 				if ( reg.Name == "Midkemia"  )
 				{
@@ -976,7 +976,7 @@ namespace Server.Mobiles
 				return;
 			}
 
-			if (AdventuresFunctions.IsInMidland((object)this))
+			if (AdventuresFunctions.IsPuritain((object)this))
 			{
 				this.Say( "Apologies but I don't sell anything M'lord." );
 				return;
@@ -1199,7 +1199,7 @@ namespace Server.Mobiles
 				return;
 			}
 
-			if (AdventuresFunctions.IsInMidland((object)this))
+			if (AdventuresFunctions.IsPuritain((object)this))
 			{
 				this.Say( "Apologies but I don't sell anything M'lord." );
 				return;
@@ -2399,7 +2399,7 @@ namespace Server.Mobiles
 				
 			gold = credits * Utility.RandomMinMax(4,7);
 					
-			if (AdventuresFunctions.IsInMidland((object)this))
+			if (AdventuresFunctions.IsPuritain((object)this))
 				gold /= 2;
 
 			if ( gold > 2500 )

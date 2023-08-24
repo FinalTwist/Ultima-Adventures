@@ -340,7 +340,7 @@ namespace Server.Items
 			bool SB = false;
 			if ( mob != null && mob is PlayerMobile )
 			{
-				if (((PlayerMobile)mob).SoulBound || AdventuresFunctions.IsInMidland((object)mob))
+				if (((PlayerMobile)mob).SoulBound || AdventuresFunctions.IsPuritain((object)mob))
 					SB = true;
 			}
 
@@ -622,7 +622,7 @@ namespace Server.Items
 				list.Add( 1050043, m_Crafter.Name ); // crafted by ~1_NAME~
 
 				bool md = false;
-			if (AdventuresFunctions.IsInMidland((object)this))
+			if (AdventuresFunctions.IsPuritain((object)this))
 				md = true;
 
 
@@ -1113,6 +1113,11 @@ namespace Server.Items
 
 			if ( context != null && context.DoNotColor )
 				Hue = 0;
+
+			if ( Core.AOS && tool is BaseRunicTool )
+			{
+				((BaseRunicTool)tool).ApplyAttributesTo( this );
+			}
 
 			return quality;
 		}

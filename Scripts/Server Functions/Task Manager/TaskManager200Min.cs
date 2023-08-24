@@ -8,7 +8,7 @@ using Server.Misc;
 
 namespace Server.Items
 {
-	public class TaskManager200Min : Item
+	public class TaskManager200Min : Item //not renaming to keep existing item
 	{
 		
 		private static DateTime lastrun;
@@ -17,7 +17,7 @@ namespace Server.Items
 		public TaskManager200Min () : base( 0x0EDE )
 		{
 			Movable = false;
-			Name = "Task Manager 200 Minutes";
+			Name = "Task Manager Minute";
 			Visible = false;
 			lastrun = DateTime.UtcNow;
 			TaskTimer thisTimer = new TaskTimer( this ); 
@@ -56,7 +56,7 @@ namespace Server.Items
 		public class TaskTimer : Timer 
 		{ 
 			private Item i_item; 
-			public TaskTimer( Item task ) : base( TimeSpan.FromMinutes( 200.0 ) )
+			public TaskTimer( Item task ) : base( TimeSpan.FromMinutes( 2.0 ) )
 			{ 
 				Priority = TimerPriority.OneMinute; 
 				i_item = task; 
@@ -73,7 +73,7 @@ namespace Server.Items
 		public class FirstTimer : Timer 
 		{ 
 			private Item i_item; 
-			public FirstTimer( Item task ) : base( TimeSpan.FromSeconds( 10.0 ) )
+			public FirstTimer( Item task ) : base( TimeSpan.FromSeconds( 1.0 ) )
 			{ 
 				Priority = TimerPriority.OneSecond; 
 				i_item = task; 
@@ -89,9 +89,27 @@ namespace Server.Items
 
 		public static void RunThis( bool DoAction )
 		{
-
-			Console.WriteLine( "Done 200 Minute Tasks" );
-			
+			foreach (Mobile m in World.Mobiles.Values)
+			{
+				if (m is PlayerMobile && AdventuresFunctions.IsPuritain((object)m) )
+				{
+    					PlayerMobile p = (PlayerMobile)m;
+					
+     					if ( (double)((double)p.Int / 350) > Utility.RandomDouble() )
+	  				{
+       						if ( p.MentalExhaustCount > 1000 )
+	  						p.MentalExhaustCount /= 2;
+	 					else if ( p.MentalExhaustCount > 500 )
+	  						p.MentalExhaustCount -= 200;
+	 					else if ( p.MentalExhaustCount > 100 )
+	  						p.MentalExhaustCount -= 50;
+	 					else if ( p.MentalExhaustCount > 10 )
+       							p.MentalExhaustCount -= 5;
+	      					else if (p.MentalExhaustCount > 1 )
+							p.MentalExhaustCount -= 1;
+       					}
+				}
+			}
 		}
 	}
 }

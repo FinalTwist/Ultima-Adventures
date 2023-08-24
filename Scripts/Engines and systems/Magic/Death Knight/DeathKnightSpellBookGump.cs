@@ -42,6 +42,7 @@ namespace Server.Gumps
 
 			AddHtml( 172, 61, 345, 31, @"<BODY><BASEFONT Color=#111111><BIG><CENTER>Death Magic                 Death Magic</CENTER></BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 
+			string name, map, dungeon;
 			if ( page == 1 )
 			{
 				int SpellsInBook = 14;
@@ -95,99 +96,141 @@ namespace Server.Gumps
 
 			else if ( page == 2 )
 			{
-				sGrave = Worlds.GetAreaEntrance( "Dungeon Despise", Map.Felucca );
-				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Banish<BR><BR>Souls: 56<BR><BR>Skill: 40<BR><BR>Mana: 36<BR><BR>Sir Oslan Knarren<BR>Land of Lodoria<BR>Dungeon Despise<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				name = "Saint Kargoth";
+				map = "Land of Sosaria";
+				dungeon = "Ancient Pyramid";
+				sGrave = Worlds.GetAreaEntrance( dungeon, Map.Trammel );
+				AddHtml( 128, 99, 201, 223, "<BODY><BASEFONT Color=#111111><BIG>Banish<BR><BR>Souls: 56<BR><BR>Skill: 40<BR><BR>Mana: 36<BR><BR>" + name + "<BR>" + map + "<BR>" + dungeon + "<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Banish summoned creatures back to their realm, demons back to hell, or elementals back to their plane of existence.<br><br>Command Word: [Banish</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x5010, 2405);
 			}
 			else if ( page == 3 )
 			{
-				sGrave = Worlds.GetAreaEntrance( "Dungeon Abandon", Map.Trammel );
-				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Demonic Touch<BR><BR>Souls: 21<BR><BR>Skill: 15<BR><BR>Mana: 16<BR><BR>Lady Kath of Naelex<BR>Land of Sosaria<BR>Dungeon Doom<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				name = "Lord Monduiz Dephaar";
+				map = "Land of Sosaria";
+				dungeon = "Dungeon Clues";
+				sGrave = Worlds.GetAreaEntrance( dungeon, Map.Trammel );
+				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Demonic Touch<BR><BR>Souls: 21<BR><BR>Skill: 15<BR><BR>Mana: 16<BR><BR>" + name + "<BR>" + map + "<BR>" + dungeon + "<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>The death knight's target is healed by demonic forces for a significant amount.<br><br>Command Word: [DemonicTouch</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x5009, 2405);
 			}
 			else if ( page == 4 )
 			{
-				sGrave = Worlds.GetAreaEntrance( "Dungeon Hythloth", Map.Felucca );
-				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Devil Pact<BR><BR>Souls: 98<BR><BR>Skill: 90<BR><BR>Mana: 60<BR><BR>Lord Khayven of Rax<BR>Land of Lodoria<BR>Dungeon Hythloth<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				name = "Lady Kath of Naelex";
+				map = "Land of Sosaria";
+				dungeon = "Dungeon Abandon";
+				sGrave = Worlds.GetAreaEntrance( dungeon, Map.Trammel );
+				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Devil Pact<BR><BR>Souls: 98<BR><BR>Skill: 90<BR><BR>Mana: 60<BR><BR>" + name + "<BR>" + map + "<BR>" + dungeon + "<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Summons the devil to battle with the death knight.<br><br>Command Word: [DevilPact</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x5005, 2405);
 			}
 			else if ( page == 5 )
 			{
-				sGrave = Worlds.GetAreaEntrance( "City of the Dead", Map.Trammel );
-				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Grim Reaper<BR><BR>Souls: 42<BR><BR>Skill: 30<BR><BR>Mana: 28<BR><BR>Sir Farian of Lirtham<BR>Land of Ambrosia<BR>City of the Dead<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				name = "Prince Myrhal of Rax";
+				map = "Land of Sosaria";
+				dungeon = "Fires of Hell";
+				sGrave = Worlds.GetAreaEntrance( dungeon, Map.Trammel );
+				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Grim Reaper<BR><BR>Souls: 42<BR><BR>Skill: 30<BR><BR>Mana: 28<BR><BR>" + name + "<BR>" + map + "<BR>" + dungeon + "<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>The next target hit becomes marked by the grim reaper. All damage dealt to it is increased, but the death knight takes extra damage from other kinds of creatures.<br><br>Command Word: [GrimReaper</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x402, 2405);
 			}
 			else if ( page == 6 )
 			{
-				sGrave = Worlds.GetAreaEntrance( "Ancient Pyramid", Map.Trammel );
-				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Hag Hand<BR><BR>Souls: 7<BR><BR>Skill: 5<BR><BR>Mana: 8<BR><BR>Saint Kargoth<BR>Land of Sosaria<BR>Ancient Pyramid<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				name = "Sir Maeril of Naelax";
+				map = "Land of Sosaria";
+				dungeon = "Dungeon Exodus";
+				sGrave = Worlds.GetAreaEntrance( dungeon, Map.Trammel );
+				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Hag Hand<BR><BR>Souls: 7<BR><BR>Skill: 5<BR><BR>Mana: 8<BR><BR>" + name + "<BR>" + map + "<BR>" + dungeon + "<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Your hand holds the powers of a hag, where it can remove curses from items and others.<br><br>Command Word: [HagHand</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x5002, 2405);
 			}
 			else if ( page == 7 )
 			{
-				sGrave = Worlds.GetAreaEntrance( "Dungeon Shame", Map.Felucca );
-				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Hellfire<BR><BR>Souls: 84<BR><BR>Skill: 70<BR><BR>Mana: 52<BR><BR>Duke Urkar of Torquann<BR>Land of Lodoria<BR>Dungeon Shame<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				name = "Sir Farian of Lirtham";
+				map = "Land of Ambrosia";
+				dungeon = "City of the Dead";
+				sGrave = Worlds.GetAreaEntrance( dungeon, Map.Trammel );
+				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Hellfire<BR><BR>Souls: 84<BR><BR>Skill: 70<BR><BR>Mana: 52<BR><BR>" + name + "<BR>" + map + "<BR>" + dungeon + "<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>The death knights's enemy is scorched by a hellfire that continues to burn the enemy for a short duration.<br><br>Command Word: [Hellfire</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x3E9, 2405);
 			}
 			else if ( page == 8 )
 			{
-				sGrave = Worlds.GetAreaEntrance( "Dungeon Exodus", Map.Trammel );
-				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Lucifer's Bolt<BR><BR>Souls: 35<BR><BR>Skill: 25<BR><BR>Mana: 24<BR><BR>Sir Maeril of Naelax<BR>Land of Sosaria<BR>Dungeon Exodus<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				name = "Lord Androma of Gara";
+				map = "Island of Umber Veil";
+				dungeon = "the Mausoleum";
+				sGrave = Worlds.GetAreaEntrance( dungeon, Map.Trammel );
+				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Lucifer's Bolt<BR><BR>Souls: 35<BR><BR>Skill: 25<BR><BR>Mana: 24<BR><BR>" + name + "<BR>" + map + "<BR>" + dungeon + "<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Calls down a bolt of energy from Lucifer himself, and temporarily stuns the enemy.<br><br>Command Word: [LucifersBolt</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x5DC0, 2405);
 			}
 			else if ( page == 9 )
 			{
-				sGrave = Worlds.GetAreaEntrance( "the City of Embers", Map.Felucca );
-				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Orb of Orcus<BR><BR>Souls: 200<BR><BR>Skill: 80<BR><BR>Mana: 56<BR><BR>Sir Luren the Boar<BR>Land of Lodoria<BR>the City of Embers<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				name = "Sir Oslan Knarren";
+				map = "Land of Lodoria";
+				dungeon = "Dungeon Despise";
+				sGrave = Worlds.GetAreaEntrance( dungeon, Map.Felucca );
+				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Orb of Orcus<BR><BR>Souls: 200<BR><BR>Skill: 80<BR><BR>Mana: 56<BR><BR>" + name + "<BR>" + map + "<BR>" + dungeon + "<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>The forces of Orcus surround the knight and refelec a certain amount of magical effects back at the caster.<br><br>Command Word: [OrbOfOrcus</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x1B, 2405);
 			}
 			else if ( page == 10 )
 			{
-				sGrave = Worlds.GetAreaEntrance( "Lodoria Catacombs", Map.Felucca );
-				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Shield of Hate<BR><BR>Souls: 77<BR><BR>Skill: 60<BR><BR>Mana: 48<BR><BR>Sir Minar of Darmen<BR>Land of Lodoria<BR>Lodoria Catacombs<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				name = "Sir Rezinar of Haxx";
+				map = "Land of Lodoria";
+				dungeon = "Dungeon Deceit";
+				sGrave = Worlds.GetAreaEntrance( dungeon, Map.Felucca );
+				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Shield of Hate<BR><BR>Souls: 77<BR><BR>Skill: 60<BR><BR>Mana: 48<BR><BR>" + name + "<BR>" + map + "<BR>" + dungeon + "<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Channels hatred to form a barrier around the target, shielding them from physical harm.<br><br>Command Word: [ShieldOfHate</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x3EE, 2405);
 			}
 			else if ( page == 11 )
 			{
-				sGrave = Worlds.GetAreaEntrance( "Dungeon Deceit", Map.Felucca );
-				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Soul Reaper<BR><BR>Souls: 63<BR><BR>Skill: 45<BR><BR>Mana: 40<BR><BR>Sir Rezinar of Haxx<BR>Land of Lodoria<BR>Dungeon Deceit<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				name = "Lord Thyrian of Naelax";
+				map = "Land of Lodoria";
+				dungeon = "Dungeon Wrong";
+				sGrave = Worlds.GetAreaEntrance( dungeon, Map.Felucca );
+				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Soul Reaper<BR><BR>Souls: 63<BR><BR>Skill: 45<BR><BR>Mana: 40<BR><BR>" + name + "<BR>" + map + "<BR>" + dungeon + "<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Drains the enemy of their soul, reducing their mana for a short period of time.<br><br>Command Word: [SoulReaper</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x5006, 2405);
 			}
 			else if ( page == 12 )
 			{
-				sGrave = Worlds.GetAreaEntrance( "Fires of Hell", Map.Trammel );
-				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Strength of Steel<BR><BR>Souls: 28<BR><BR>Skill: 20<BR><BR>Mana: 20<BR><BR>Prince Myrhal of Rax<BR>Land of Sosaria<BR>Fires of Hell<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				name = "Sir Minar of Darmen";
+				map = "Land of Lodoria";
+				dungeon = "Lodoria Catacombs";
+				sGrave = Worlds.GetAreaEntrance( dungeon, Map.Felucca );
+				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Strength of Steel<BR><BR>Souls: 28<BR><BR>Skill: 20<BR><BR>Mana: 20<BR><BR>" + name + "<BR>" + map + "<BR>" + dungeon + "<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Greatly increases the target's strength for a short period.<br><br>Command Word: [StrengthOfSteel</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x2B, 2405);
 			}
 			else if ( page == 13 )
 			{
-				sGrave = Worlds.GetAreaEntrance( "Dungeon Clues", Map.Trammel );
-				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Strike<BR><BR>Souls: 14<BR><BR>Skill: 10<BR><BR>Mana: 12<BR><BR>Lord Monduiz Dephaar<BR>Land of Sosaria<BR>Dungeon Clues<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				name = "Duke Urkar of Torquann";
+				map = "Land of Lodoria";
+				dungeon = "Dungeon Shame";
+				sGrave = Worlds.GetAreaEntrance( dungeon, Map.Felucca );
+				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Strike<BR><BR>Souls: 14<BR><BR>Skill: 10<BR><BR>Mana: 12<BR><BR>" + name + "<BR>" + map + "<BR>" + dungeon + "<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>The death knight's enemy is damaged by a demonic energy from the nine hells.<br><br>Command Word: [Strike</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x12, 2405);
 			}
 			else if ( page == 14 )
 			{
-				sGrave = Worlds.GetAreaEntrance( "the Mausoleum", Map.Trammel );
-				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Succubus Skin<BR><BR>Souls: 49<BR><BR>Skill: 35<BR><BR>Mana: 32<BR><BR>Lord Androma of Gara<BR>Island of Umber Veil<BR>the Mausoleum<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				name = "Sir Luren the Boar";
+				map = "Land of Lodoria";
+				dungeon = "the City of Embers";
+				sGrave = Worlds.GetAreaEntrance( dungeon, Map.Felucca );
+				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Succubus Skin<BR><BR>Souls: 49<BR><BR>Skill: 35<BR><BR>Mana: 32<BR><BR>" + name + "<BR>" + map + "<BR>" + dungeon + "<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>The death knight's target has their skin regenerate health over time.<br><br>Command Word: [SuccubusSkin</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x500C, 2405);
 			}
 			else if ( page == 15 )
 			{
-				sGrave = Worlds.GetAreaEntrance( "Dungeon Wrong", Map.Felucca );
-				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Wrath<BR><BR>Souls: 70<BR><BR>Skill: 50<BR><BR>Mana: 44<BR><BR>Lord Thyrian of Naelax<BR>Land of Lodoria<BR>Dungeon Wrong<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				name = "Lord Khayven of Rax";
+				map = "Land of Lodoria";
+				dungeon = "Dungeon Hythloth";
+				sGrave = Worlds.GetAreaEntrance( dungeon, Map.Felucca );
+				AddHtml( 128, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Wrath<BR><BR>Souls: 70<BR><BR>Skill: 50<BR><BR>Mana: 44<BR><BR>" + name + "<BR>" + map + "<BR>" + dungeon + "<BR>" + sGrave + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>The death knight unleashes the forces of hell unto his nearby enemies, causing much damage. <br><br>Command Word: [Wrath</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x2E, 2405);
 			}

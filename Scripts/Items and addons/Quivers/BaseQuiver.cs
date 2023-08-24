@@ -286,11 +286,11 @@ namespace Server.Items
 				bool SB = false;
 				if (mob is PlayerMobile )
 				{
-					if (((PlayerMobile)mob).SoulBound || Server.Misc.AdventuresFunctions.IsInMidland((object)mob))
+					if (((PlayerMobile)mob).SoulBound || Server.Misc.AdventuresFunctions.IsPuritain((object)mob))
 						SB = true;
 				}
 
-				if (!SB && !(Server.Misc.AdventuresFunctions.IsInMidland((object)Parent)))
+				if (!SB && !(Server.Misc.AdventuresFunctions.IsPuritain((object)Parent)))
 					m_Attributes.AddStatBonuses( mob );
 			}
 		}
@@ -324,7 +324,7 @@ namespace Server.Items
 				list.Add( 1063341 ); // exceptional
 
 			bool md = false;
-			if (Server.Misc.AdventuresFunctions.IsInMidland((object)this))
+			if (Server.Misc.AdventuresFunctions.IsPuritain((object)this))
 				md = true;
 
 			Item ammo = Ammo;

@@ -151,7 +151,7 @@ namespace Server.Spells
 			int SDICap = MyServerSettings.RealSpellDamageCap();
 			int sdiBonus = AosAttributes.GetValue( m_Caster, AosAttribute.SpellDamage );
 
-			if ((AdventuresFunctions.IsInMidland((object)m_Caster)))
+			if ((AdventuresFunctions.IsPuritain((object)m_Caster)))
 			{
 					sdiBonus = 0;
 					if (m_Caster is PlayerMobile)
@@ -787,19 +787,19 @@ namespace Server.Spells
 
 			int fcr = AosAttributes.GetValue( m_Caster, AosAttribute.CastRecovery );
 
-			if ((AdventuresFunctions.IsInMidland((object)m_Caster)))
+			if ((AdventuresFunctions.IsPuritain((object)m_Caster)))
 				fcr = 0;
 			
 			if ( AnimalForm.UnderTransformation( m_Caster ) )
 				fcr = 0;
 
-			if (AdventuresFunctions.IsInMidland((object)m_Caster) && m_Caster is PlayerMobile && ((PlayerMobile)m_Caster).Lucidity() > 0.50)
+			if (AdventuresFunctions.IsPuritain((object)m_Caster) && m_Caster is PlayerMobile && ((PlayerMobile)m_Caster).Lucidity() > 0.50)
 				fcr += 1;
 
-			if (AdventuresFunctions.IsInMidland((object)m_Caster) && m_Caster is PlayerMobile && ((PlayerMobile)m_Caster).Lucidity() > 0.70)
+			if (AdventuresFunctions.IsPuritain((object)m_Caster) && m_Caster is PlayerMobile && ((PlayerMobile)m_Caster).Lucidity() > 0.70)
 				fcr += 1;
 
-			if (AdventuresFunctions.IsInMidland((object)m_Caster) && m_Caster is PlayerMobile && ((PlayerMobile)m_Caster).Lucidity() > 0.90)
+			if (AdventuresFunctions.IsPuritain((object)m_Caster) && m_Caster is PlayerMobile && ((PlayerMobile)m_Caster).Lucidity() > 0.90)
 				fcr += 1;
 
 			if (fcr >= MyServerSettings.CastRecoveryCap()) {
@@ -839,7 +839,7 @@ namespace Server.Spells
 				fcMax = 2;
 
 			int fc = AosAttributes.GetValue( m_Caster, AosAttribute.CastSpeed );
-			if ((AdventuresFunctions.IsInMidland((object)m_Caster)))
+			if ((AdventuresFunctions.IsPuritain((object)m_Caster)))
 				fc = 0;
 			
 			if ( AnimalForm.UnderTransformation( m_Caster ) )
@@ -851,10 +851,10 @@ namespace Server.Spells
 			if ( ProtectionSpell.Registry.Contains( m_Caster ) )
 				fc -= 2;
 
-			if (AdventuresFunctions.IsInMidland((object)m_Caster) && m_Caster is PlayerMobile && ((PlayerMobile)m_Caster).Lucidity() > 0.70)
+			if (AdventuresFunctions.IsPuritain((object)m_Caster) && m_Caster is PlayerMobile && ((PlayerMobile)m_Caster).Lucidity() > 0.70)
 				fc += 1;
 
-			if (AdventuresFunctions.IsInMidland((object)m_Caster) && m_Caster is PlayerMobile && ((PlayerMobile)m_Caster).Lucidity() > 0.90)
+			if (AdventuresFunctions.IsPuritain((object)m_Caster) && m_Caster is PlayerMobile && ((PlayerMobile)m_Caster).Lucidity() > 0.90)
 				fc += 1;
 
 			TimeSpan baseDelay = CastDelayBase;

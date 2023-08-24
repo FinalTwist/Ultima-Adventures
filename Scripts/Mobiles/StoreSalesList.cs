@@ -2937,9 +2937,9 @@ namespace Server.Mobiles
 				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( typeof( WoodenBowlOfTomatoSoup ), 30, Utility.Random( 1,100 ), 0x1606, 0 ) ); }
 				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( typeof( RoastPig ), 1060, Utility.Random( 1,100 ), 0x9BB, 0 ) ); }
 				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( typeof( SackFlour ), 15, Utility.Random( 1,100 ), 0x1039, 0 ) ); }
-				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( typeof( RollingPin ), 5, Utility.Random( 1,100 ), 0x1043, 0 ) ); }
-				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( typeof( FlourSifter ), 5, Utility.Random( 1,100 ), 0x103E, 0 ) ); }
-				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( "1044567", typeof( Skillet ), 5, Utility.Random( 1,100 ), 0x97F, 0 ) ); }
+				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( typeof( RollingPin ), 25, Utility.Random( 1,100 ), 0x1043, 0 ) ); }
+				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( typeof( FlourSifter ), 25, Utility.Random( 1,100 ), 0x103E, 0 ) ); }
+				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( "1044567", typeof( Skillet ), 25, Utility.Random( 25,100 ), 0x97F, 0 ) ); }
 				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( typeof( GardenTool ), 12, Utility.Random( 1,100 ), 0xDFD, 0x84F ) ); }
 				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( typeof( HerbalistCauldron ), 247, 1, 0x2676, 0 ) ); }
 				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( typeof( MixingSpoon ), 34, Utility.Random( 1,100 ), 0x1E27, 0x979 ) ); }

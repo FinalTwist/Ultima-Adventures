@@ -123,7 +123,7 @@ namespace Server.Items
 				}
 			}
 
-			if ( Core.ML && m_Velocity > 0 &&  !(Server.Misc.AdventuresFunctions.IsInMidland((object)attacker)) )
+			if ( Core.ML && m_Velocity > 0 &&  !(Server.Misc.AdventuresFunctions.IsPuritain((object)attacker)) )
 			{
 				int bonus = (int) attacker.GetDistanceToSqrt( defender );
 
@@ -158,7 +158,7 @@ namespace Server.Items
 						
 						if (quiver != null)
 						{
-							if (!Server.Misc.AdventuresFunctions.IsInMidland((object)p))
+							if (!Server.Misc.AdventuresFunctions.IsPuritain((object)p))
 								reduce = quiver.LowerAmmoCost;
 						}
 							
@@ -229,7 +229,7 @@ namespace Server.Items
 					if ( quiver.LowerAmmoCost > 90)
 						quiver.LowerAmmoCost = 90;
 
-					if (Server.Misc.AdventuresFunctions.IsInMidland((object)attacker))
+					if (Server.Misc.AdventuresFunctions.IsPuritain((object)attacker))
 						quiver.LowerAmmoCost = 0;
 				}
 

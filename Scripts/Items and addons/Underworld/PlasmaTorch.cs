@@ -93,7 +93,7 @@ namespace Server.Items
 					else
 						from.SendMessage( "That does not need to be unlocked." );
 				}
-				else if ( targeted is ILockable )
+				else if ( targeted is ILockable && targeted is LockableContainer)
 				{
 					ILockable o = (ILockable)targeted;
 					LockableContainer cont2 = (LockableContainer)o;

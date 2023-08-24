@@ -6,6 +6,7 @@ using Server.Items;
 using Server.Mobiles;
 using Server.Regions;
 using System.Collections.Generic;
+using Server.Misc;
 
 namespace Server.Engines.CannedEvil
 {

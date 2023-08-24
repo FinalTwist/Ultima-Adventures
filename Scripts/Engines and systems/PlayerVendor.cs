@@ -1679,7 +1679,7 @@ namespace Server.Mobiles
 					totalGold = m_Vendor.BankAccount + m_Vendor.HoldGold;
 				}
 
-				if (AdventuresFunctions.IsInMidland((object)this))
+				if (AdventuresFunctions.IsPuritain((object)this))
 					pay /= 5;
 
 				if ( pay > totalGold )

@@ -1488,7 +1488,7 @@ namespace Server.Items
 
 				Head head = new Head( dead.Name );
 
-				if (dead is BaseCreature && ((BaseCreature)dead).midrace > 0 && AdventuresFunctions.IsInMidland((object)dead))
+				if (dead is BaseCreature && ((BaseCreature)dead).midrace > 0 && AdventuresFunctions.IsPuritain((object)dead))
 				{
 					head.midrace = ((BaseCreature)dead).midrace;
 					if (((BaseCreature)dead).midrace ==1)
@@ -1545,7 +1545,7 @@ namespace Server.Items
 					else if ( m_CorpseName.Contains(" a golem controller") ){ myWork = "Controller"; 	dead.Name = (dead.Name).Replace(" the golem Controller", ""); }
 				} // final adds new heads
 
-				if (dead is BaseCreature && ((BaseCreature)dead).midrace > 0 && AdventuresFunctions.IsInMidland((object)dead))
+				if (dead is BaseCreature && ((BaseCreature)dead).midrace > 0 && AdventuresFunctions.IsPuritain((object)dead))
 				{
 					if (((BaseCreature)dead).midrace ==1)
 						myWork = "Human";

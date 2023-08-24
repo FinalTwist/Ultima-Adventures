@@ -61,7 +61,7 @@ namespace Server.Mobiles
 
 		public static bool Withdraw( Mobile from, int amount )
 		{
-			if (!AdventuresFunctions.IsInMidland((object)from))
+			if (!AdventuresFunctions.IsPuritain((object)from))
 			{
 				Item[] gold, checks;
 				int balance = GetBalance( from, out gold, out checks );
@@ -101,7 +101,7 @@ namespace Server.Mobiles
 				return true;
 			}
 
-			else if (AdventuresFunctions.IsInMidland((object)from) && from is PlayerMobile && ((PlayerMobile)from).midrace != 0 );
+			else if (AdventuresFunctions.IsPuritain((object)from) && from is PlayerMobile && ((PlayerMobile)from).midrace != 0 );
 			{
 				PlayerMobile pm = (PlayerMobile)from;
 				//Backpack pack = (Backpack)pm.Backpack;
@@ -200,7 +200,7 @@ namespace Server.Mobiles
 
 		public static bool Deposit( Mobile from, int amount )
 		{
-			if (AdventuresFunctions.IsInMidland((object)from) && from is PlayerMobile && ((PlayerMobile)from).midrace == 0 )
+			if (AdventuresFunctions.IsPuritain((object)from) && from is PlayerMobile && ((PlayerMobile)from).midrace == 0 )
 			{
 				PlayerMobile pm = (PlayerMobile)from;
 				//Backpack pack = (Backpack)pm.Backpack;
@@ -494,7 +494,7 @@ namespace Server.Mobiles
 						case 0x0002: // *bank*
 						{
 							e.Handled = true;
-							if (AdventuresFunctions.IsInMidland((object)this))
+							if (AdventuresFunctions.IsPuritain((object)this))
 							{
 								if (Utility.RandomBool())
 									this.Say("Aye sir, it is a bank, you can deposit, withdraw or check the balance of your account.");
@@ -576,7 +576,7 @@ namespace Server.Mobiles
 				if ( box != null )
 				{
 					this.Say("Very well, I have deposited " + dropped.Amount.ToString() + " into your account wish us.");
-					if (AdventuresFunctions.IsInMidland((object)this))
+					if (AdventuresFunctions.IsPuritain((object)this))
 					{
 						// charge a fee!  banks charge fees!
 						int fee = 0;

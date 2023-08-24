@@ -216,6 +216,14 @@ namespace Server.Mobiles
 		private bool m_troub;
 		private bool m_alch;
 
+  		private bool m_soulboundresurrect;
+    		private int m_mentalexhaustcount;
+     		public int MentalExhaustCount
+		{
+			get { return m_mentalexhaustcount; }
+			set { m_mentalexhaustcount = value; }
+		}
+
 		private PokerGame m_PokerGame; //Edit for Poker System
 		public PokerGame PokerGame
 		{
@@ -1059,7 +1067,7 @@ namespace Server.Mobiles
 
 		public override int MaxWeight { get 
 		{ 
-			if (AdventuresFunctions.IsInMidland((object)this))
+			if (AdventuresFunctions.IsPuritain((object)this))
 				return (((Core.ML && this.Race == Race.Human) ? 80 : 40) + (int)(3 * this.Str));
 
 			return (((Core.ML && this.Race == Race.Human) ? 100 : 40) + (int)(4 * this.Str)); } }
@@ -1140,7 +1148,7 @@ namespace Server.Mobiles
 		{
 			int magicResist = (int)(Skills[SkillName.MagicResist].Value * 10);
 			int min = int.MinValue;
-			if (AdventuresFunctions.IsInMidland((object)this))
+			if (AdventuresFunctions.IsPuritain((object)this))
 			{
 				if ( magicResist >= 1000 )
 					min = 10 + ((magicResist - 1000) / 50);
@@ -2766,12 +2774,6 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				if ( m_JusticeProtectors.Count > 0 )
 					list.Add( new CallbackEntry( 6157, new ContextCallback( CancelProtection ) ) );
 
-				//list.Add(new Server.Achievements.AchivementGumpEntry(this));
-
-
-				// WIZARD REMOVED AS THERE ARE NO CHAMPION SPAWNS
-				//if( Alive )
-				//	list.Add( new CallbackEntry( 6210, new ContextCallback( ToggleChampionTitleDisplay ) ) );
 			}
 			if ( from != this )
 			{
@@ -2943,7 +2945,11 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				AetherGlobe.GoodChamp = null;
 
 			this.Criminal = false;
-			this.Resurrect();
+
+   			m_soulboundresurrect = true;
+   			this.Resurrect();
+      			m_soulboundresurrect = false;
+
 			this.Hits = this.HitsMax;
 			this.Stam = this.StamMax;
 			this.Mana = this.ManaMax;
@@ -3598,7 +3604,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 				if ( c != null )
 				{
-					if (AdventuresFunctions.IsInMidland((object)this) && (Agility()/2) > Utility.RandomDouble() )
+					if (AdventuresFunctions.IsPuritain((object)this) && (Agility()/2) > Utility.RandomDouble() )
 					{}
 					else
 						c.Slip();
@@ -3633,6 +3639,9 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 		public override void Resurrect()
 		{
+			if (this.SoulBound && !m_soulboundresurrect)
+				this.ResetPlayer();
+
 			bool wasAlive = this.Alive;
 
 			base.Resurrect();
@@ -4584,7 +4593,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 		public void AdjustReputation(Mobile killed)
 		{
-			if (AdventuresFunctions.IsInMidland((object)this))
+			if (AdventuresFunctions.IsPuritain((object)this))
 			{
 				int effect = killed.Fame/50;
 				int harmed = 0;
@@ -4946,6 +4955,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 		public double Agility() //for dodge and parry
 		{
+			//how nimble is the player?  Dex greatly influences this and armor influences it to the negative
 
 			if ( AccessLevel > AccessLevel.Player )
 				return 1;
@@ -4974,6 +4984,9 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 		public double Encumbrance()
 		{
+			//how much is the player carrying?  This will affect how much he can run, whether he can dodge, etc
+			//strength greatly influences this higher str, more you can carry
+			
 			if ( AccessLevel > AccessLevel.Player )
 				return 0;
 
@@ -4997,12 +5010,42 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 		}
 
+		public double MentalExhaustion()
+		{
+			//everytime the function is called on, count goes up.  if it gets too high the player will start failing (doing too much too quickly)
+			//higher int increases the cap and impact of this, higher end, higher focus
+			
+			if ( AccessLevel > AccessLevel.Player )
+				return 0;
+
+			m_mentalexhaustcount ++; 
+
+			if ( m_mentalexhaustcount > (int)(50 + (this.Int * 20)))
+				m_mentalexhaustcount = (int)(50 + (this.Int * 20));
+			
+			double calc = 0;
+
+			//lets calculate base using a function of int.
+			calc =  (double)m_mentalexhaustcount / (double)(50 + (this.Int * 20));
+
+			if (calc > 1)
+				calc = 1;
+			if (calc <0 )
+				calc = 0;
+
+			//Add chance of count going down
+			if (Utility.RandomDouble() < (this.Int / 350));
+			    m_mentalexhaustcount --;
+
+			return calc;
+		}
+
 		public void AdjustReputation(int gold, int midrace, bool benefit)
 		{
 			if ( AccessLevel > AccessLevel.Player )
 				return;
 
-			if (AdventuresFunctions.IsInMidland((object)this))
+			if (AdventuresFunctions.IsPuritain((object)this))
 			{
 				int effect = gold/50;
 				int race = 0;
@@ -5895,7 +5938,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 					}
 			}
 
-			if (AdventuresFunctions.IsInMidland((object)this)) 
+			if (AdventuresFunctions.IsPuritain((object)this)) 
 			{
 
 				if ( Mounted && Mount is BaseCreature)
@@ -6122,7 +6165,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			AnimalFormContext animalContext = AnimalForm.GetContext( this );
 
-			if (AdventuresFunctions.IsInMidland((object)this)) 
+			if (AdventuresFunctions.IsPuritain((object)this)) 
 			{
 				if (running && !onHorse)
 				{

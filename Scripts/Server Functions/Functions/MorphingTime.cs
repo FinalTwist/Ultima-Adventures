@@ -1458,7 +1458,7 @@ namespace Server.Misc
 
 		public static void TurnToSomethingOnDeath( Mobile from )
 		{
-			if (from is BaseCreature && AdventuresFunctions.IsInMidland((object)from) && from.Body.IsHuman)
+			if (from is BaseCreature && AdventuresFunctions.IsPuritain((object)from) && from.Body.IsHuman)
 			{
 				if (((BaseCreature)from).midrace == 2) // garg
 					from.Body = 4; // GARGOYLE

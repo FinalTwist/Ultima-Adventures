@@ -520,7 +520,7 @@ namespace Server.Items
 
 		public override void OnAdded(IEntity parent )
 		{
-			if ( Core.AOS && parent is Mobile && !(Server.Misc.AdventuresFunctions.IsInMidland((object)parent)))
+			if ( Core.AOS && parent is Mobile && !(Server.Misc.AdventuresFunctions.IsPuritain((object)parent)))
 			{
 				Mobile from = (Mobile)parent;
 
@@ -616,7 +616,7 @@ namespace Server.Items
 			}
 
 			bool MD = false;
-			if (Server.Misc.AdventuresFunctions.IsInMidland((object)this))
+			if (Server.Misc.AdventuresFunctions.IsPuritain((object)this))
 				MD = true;
 
 			m_AosSkillBonuses.GetProperties( list );
@@ -796,14 +796,14 @@ namespace Server.Items
 
 			CheckReplenishUses();
 
-			if ( Core.AOS && Parent is Mobile && !(Server.Misc.AdventuresFunctions.IsInMidland((object)Parent)))
+			if ( Core.AOS && Parent is Mobile && !(Server.Misc.AdventuresFunctions.IsPuritain((object)Parent)))
 				m_AosSkillBonuses.AddTo( (Mobile)Parent );
 
 			int strBonus = m_AosAttributes.BonusStr;
 			int dexBonus = m_AosAttributes.BonusDex;
 			int intBonus = m_AosAttributes.BonusInt;
 
-			if ( Parent is Mobile && (strBonus != 0 || dexBonus != 0 || intBonus != 0) && !(Server.Misc.AdventuresFunctions.IsInMidland((object)Parent)))
+			if ( Parent is Mobile && (strBonus != 0 || dexBonus != 0 || intBonus != 0) && !(Server.Misc.AdventuresFunctions.IsPuritain((object)Parent)))
 			{
 				Mobile m = (Mobile)Parent;
 

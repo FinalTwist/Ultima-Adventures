@@ -19,11 +19,12 @@ namespace Server.Items
 		{
 			if ( m is PlayerMobile && ((PlayerMobile)m).SkillsCap != 10000)
 			{
-				if ( Utility.InRange( Location, m.Location, 6 ) && !Utility.InRange( Location, oldLocation, 6 ) )
+				if ( Utility.InRange( Location, m.Location, 6 ) )
 				{
+    					//Point3D shoofrancisaway = new Point3D(2228, 3572, 10);
 					m.MoveToWorld(oldLocation, m.Map);
-					m.SendMessage("A strange moon on the obelisk glows and stops you from moving.");
-				}
+     					m.SendMessage("A strange moon on the obelisk glows and stops you from moving further.");
+	  			}
 			}
 		}
 

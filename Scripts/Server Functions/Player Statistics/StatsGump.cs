@@ -28,7 +28,7 @@ namespace Server.Gumps
 		{
 			Mobile from = e.Mobile;
 
-			if (AdventuresFunctions.IsInMidland((object)from))
+			if (AdventuresFunctions.IsPuritain((object)from))
 				return;
 
 			from.CloseGump( typeof( StatsGump ) );

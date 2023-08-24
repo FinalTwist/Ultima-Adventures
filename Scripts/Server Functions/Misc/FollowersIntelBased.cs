@@ -28,7 +28,7 @@ namespace Server.Mobiles
         {
             if (Config.MaxFollowersAllowed - Config.MinFollowersAllowed > 0)
             {
-                if (Server.Misc.AdventuresFunctions.IsInMidland((object)m))
+                if (Server.Misc.AdventuresFunctions.IsPuritain((object)m))
                 {
                     m.FollowersMax = 1;
                     if ( (m.Skills[SkillName.Veterinary].Base >= 100) && (m.Skills[SkillName.AnimalLore].Base >= 100) && (m.Skills[SkillName.AnimalTaming].Base >= 100) )

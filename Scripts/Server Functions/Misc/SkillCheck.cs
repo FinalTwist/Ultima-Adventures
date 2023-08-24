@@ -118,8 +118,102 @@ namespace Server.Misc
 			return CheckSkill( from, skill, loc, chance );
 		}
 
+		public static bool CheckPuritainSuccess( Mobile from, Skill skill, object amObj, double chance )
+		{
+			double first = 0;
+			double second = 0;
+			double third = 0;
+
+			SkillName skillName = skill.SkillName;
+			
+			//mental skills rely mainly on mental exhaustion
+			if (
+				skillName == SkillName.DetectHidden &&
+				skillName == SkillName.Meditation &&
+				skillName == SkillName.TasteID &&
+				skillName == SkillName.ItemID &&
+				skillName == SkillName.Anatomy &&
+				skillName == SkillName.AnimalLore &&
+				skillName == SkillName.Tactics &&
+				skillName == SkillName.Tracking &&
+				skillName == SkillName.EvalInt &&
+				skillName == SkillName.Magery &&
+				skillName == SkillName.Necromancy &&
+				skillName == SkillName.Chivalry &&
+				skillName == SkillName.Inscribe &&
+				skillName == SkillName.Alchemy &&
+				skillName == SkillName.ArmsLore )
+			{
+				second = ((PlayerMobile)from).Agility();
+				third = ((PlayerMobile)from).Encumbrance();
+				first = ((PlayerMobile)from).MentalExhaustion();
+			}
+				
+			//these rely mainly on agility
+			else if ( 
+				skillName == SkillName.Lockpicking &&
+				skillName == SkillName.RemoveTrap &&
+				skillName == SkillName.Musicianship &&	
+				skillName == SkillName.Musicianship &&
+				skillName == SkillName.Hiding &&
+				skillName == SkillName.Provocation &&
+				skillName == SkillName.Discordance &&
+				skillName == SkillName.Peacemaking &&
+				skillName == SkillName.Stealing &&
+				skillName == SkillName.Stealth &&
+				skillName == SkillName.Ninjitsu &&
+				skillName == SkillName.Bushido &&
+				skillName == SkillName.Tinkering &&
+				skillName == SkillName.Herding &&
+				skillName == SkillName.Cooking &&
+				skillName == SkillName.Fletching &&
+				skillName == SkillName.Carpentry &&
+				skillName == SkillName.Camping &&
+				skillName == SkillName.Tailoring )
+			{
+				first = ((PlayerMobile)from).Agility();
+				second = ((PlayerMobile)from).Encumbrance();
+				third = ((PlayerMobile)from).MentalExhaustion();
+			}
+
+			//these rely mainly on encumbrance
+			else if (
+				skillName == SkillName.Mining &&		
+				skillName == SkillName.Parry &&
+				skillName == SkillName.Swords &&
+				skillName == SkillName.Blacksmith &&
+				skillName == SkillName.Fencing &&
+				skillName == SkillName.Macing &&
+				skillName == SkillName.Lumberjacking )
+			{
+				second = ((PlayerMobile)from).Agility();
+				first = ((PlayerMobile)from).Encumbrance();
+				third = ((PlayerMobile)from).MentalExhaustion();
+			}
+				
+			//basic principle:  a score of 2 is failure.  We will add the three scores based on a probability of being checked (100%, 50%, 25%) and check that against a random variable from 0 to 2.
+			double checkvalue = Utility.RandomDouble() *2;
+			
+			double score = first;
+			if (Utility.RandomBool())
+				score += second;
+			if (Utility.RandomDouble() < 0.25)
+				score += third;
+
+			//lets do the check
+			if (score < checkvalue)
+				return true;
+
+			//they fail.
+			return false;
+
+		}
+		
 		public static bool CheckSkill( Mobile from, Skill skill, object amObj, double chance )
 		{
+			if (from is PlayerMobile && AdventuresFunctions.IsPuritain((object)from) )
+				return CheckPuritainSuccess(from, skill, amObj, chance);
+			
 			SkillName skillName = skill.SkillName;
 
 			if ( from.Skills.Cap == 0 )
@@ -531,7 +625,7 @@ namespace Server.Misc
 				int harder = 1;
 
 
-				if (AdventuresFunctions.IsInMidland((object)from))
+				if (AdventuresFunctions.IsPuritain((object)from))
 				{
 
 					if ( skill.Base <= 25.0 )

@@ -21,7 +21,7 @@ namespace Server.Mobiles
 
 		public class InternalBuyInfo : List<GenericBuyInfo> 
 		{
-             private double baseprice = 15000;
+             private double baseprice = 12500;
              private double multiple = 1;
 
              public InternalBuyInfo() 

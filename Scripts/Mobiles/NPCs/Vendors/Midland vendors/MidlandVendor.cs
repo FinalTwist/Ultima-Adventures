@@ -729,7 +729,7 @@ namespace Server.Mobiles
 		public bool GiveMoney( Mobile from, int amount)
 		{
 
-			if (!AdventuresFunctions.IsInMidland((object)this) || !AdventuresFunctions.IsInMidland((object)from) || !(from is PlayerMobile) || ((PlayerMobile)from).midrace == 0 )
+			if (!AdventuresFunctions.IsPuritain((object)this) || !AdventuresFunctions.IsPuritain((object)from) || !(from is PlayerMobile) || ((PlayerMobile)from).midrace == 0 )
 				return false;
 
 			if (amount < 0 )
@@ -786,7 +786,7 @@ namespace Server.Mobiles
 		public bool GetMoney( Mobile from, int amount)
 		{
 
-			if (!AdventuresFunctions.IsInMidland((object)this) || !AdventuresFunctions.IsInMidland((object)from) || !(from is PlayerMobile) || ((PlayerMobile)from).midrace == 0 )
+			if (!AdventuresFunctions.IsPuritain((object)this) || !AdventuresFunctions.IsPuritain((object)from) || !(from is PlayerMobile) || ((PlayerMobile)from).midrace == 0 )
 				return false;
 
 			PlayerMobile pm = (PlayerMobile)from;

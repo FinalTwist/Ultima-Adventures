@@ -28,7 +28,7 @@ namespace Server.Items
 		{
 		get
 		{
-			if (this.RootParentEntity != null && Server.Misc.AdventuresFunctions.IsInMidland((object)this.RootParentEntity ) ) 
+			if (this.RootParentEntity != null && Server.Misc.AdventuresFunctions.IsPuritain((object)this.RootParentEntity ) ) 
 				return UltimaLiveLumberjacking.System;
 
 			return Lumberjacking.System;

@@ -66,7 +66,7 @@ namespace Server.Mobiles
 
 		public override void OnDeath( Container c )
         {
-            if (AdventuresFunctions.IsInMidland((object)this))
+            if (AdventuresFunctions.IsPuritain((object)this))
             {
                 //set these for each mob
                 double odds = 1; // 0 - 1 max (e.g. 0.50 is 50%)

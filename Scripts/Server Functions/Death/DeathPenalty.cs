@@ -26,7 +26,7 @@ namespace Server.Misc
 					return;
 				}
 
-				if (AdventuresFunctions.IsInMidland(from))
+				if (AdventuresFunctions.IsPuritain(from))
 					return;
 
 				double val1 = 0.05; // karma loss

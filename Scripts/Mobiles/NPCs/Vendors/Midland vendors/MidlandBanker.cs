@@ -35,7 +35,7 @@ namespace Server.Mobiles
 		{
 			int balance = 0;
 
-			if (!AdventuresFunctions.IsInMidland((object)this) || !AdventuresFunctions.IsInMidland((object)from) || !(from is PlayerMobile) || ((PlayerMobile)from).midrace == 0 )
+			if (!AdventuresFunctions.IsPuritain((object)this) || !AdventuresFunctions.IsPuritain((object)from) || !(from is PlayerMobile) || ((PlayerMobile)from).midrace == 0 )
 				return 0;
 
 			PlayerMobile pm = (PlayerMobile)from;
@@ -59,7 +59,7 @@ namespace Server.Mobiles
 		public bool Deposit( Mobile from, int amount)
 		{
 
-			if (!AdventuresFunctions.IsInMidland((object)this) || !AdventuresFunctions.IsInMidland((object)from) || !(from is PlayerMobile) || ((PlayerMobile)from).midrace == 0 )
+			if (!AdventuresFunctions.IsPuritain((object)this) || !AdventuresFunctions.IsPuritain((object)from) || !(from is PlayerMobile) || ((PlayerMobile)from).midrace == 0 )
 				return false;
 
 			PlayerMobile pm = (PlayerMobile)from;
@@ -303,7 +303,7 @@ namespace Server.Mobiles
 						case 0x0002: // *bank*
 						{
 							e.Handled = true;
-							if (AdventuresFunctions.IsInMidland((object)this))
+							if (AdventuresFunctions.IsPuritain((object)this))
 							{
 								if (Utility.RandomBool())
 									this.Say("Aye sir, it is a bank, you can deposit, withdraw or check the balance of your account.");

@@ -66,7 +66,7 @@ namespace Server.Commands
 			{
 				PlayerMobile pm = e.Mobile as PlayerMobile;
 
-				if (!AdventuresFunctions.IsInMidland((object)pm))
+				if (!AdventuresFunctions.IsPuritain((object)pm))
 					pm.SendMessage("That won't work here");
 
 				pm.SendMessage("Agility is " + pm.Agility());
@@ -703,7 +703,7 @@ namespace Server.Misc
 			return false;
 		}
 
-		public static bool IsInMidland( Object o )
+		public static bool IsPuritain( Object o )
 		{
 			if (o is Item)
 			{
@@ -712,10 +712,13 @@ namespace Server.Misc
 				if (i.Map != null && i.Map == Map.Midland)
 					return true;
 
+				if (i.IsPure)
+					return true;
+
 				if (i.RootParentEntity is Mobile)
 				{
 					Mobile m = (Mobile)i.RootParentEntity;
-					if (m != null && m.Map == Map.Midland ) 
+					if (m != null && (m.Map == Map.Midland || m.Puritain) ) 
 						return true;
 				}
 				
@@ -727,7 +730,7 @@ namespace Server.Misc
 				if (mb.Map != null && mb.Map == Map.Midland)
 					return true;
 
-				if (mb is PlayerMobile && mb.SkillsCap == 15000 )
+				if (mb is PlayerMobile && mb.SkillsCap == 15000 && mb.Puritain )
 					return true;
 			}
 
@@ -1449,9 +1452,110 @@ namespace Server.Misc
 			else
 				Console.WriteLine( "Internal items cleanup: " + bogusCnt + " items.");
 		}
+
+		public static void OldCharCleanup()
+		{
+			int itemcnt = 0;
+			int mobilecnt = 0;
+
+			ArrayList toRemove = new ArrayList();
+
+			DateTime cutoffDate = DateTime.Now.AddYears(0 - 1);
+			foreach (Mobile m in World.Mobiles.Values)
+			{
+				if (m is PlayerMobile && ((PlayerMobile)m).LastOnline < cutoffDate)
+				{
+					PlayerMobile p = (PlayerMobile)m;
+
+					if ((p.Int + p.Dex + p.Str) < 125)
+					{
+						mobilecnt++;
+						toRemove.Add((object)p);
+					}
+					else
+					{
+						BankBox box = m.FindBankNoCreate();
+
+						if (box != null)
+						{
+							foreach (Item i in box.Items)
+							{
+								if (i is MovingCrate || i is MovingBox || (i is Bag && i.Name == "Town House Belongings"  ) )
+								{
+									itemcnt++;
+									toRemove.Add((object)i);
+								}
+								
+							}
+						}
+					}
+				}
+			}
+
+			foreach (object o in toRemove)
+			{
+				if (o is Item)
+					((Item)o).Delete();
+				else if (o is Mobile)
+					((Mobile)o).Delete();
+			}
+
+			World.Broadcast(0x35, true, "Deleted " + itemcnt + " moving crates and " + mobilecnt + " characters who have not logged in for more than 12 months.");
+			// Console.WriteLine("Deleted " + itemcnt + " moving crates and " + mobilecnt + " characters who have not logged in for more than 12 months.");
+		}
+
+		public void OldHouseCleanup()
+		{
+			int itemcnt = 0;
+
+			foreach ( Item sign in World.Items.Values ) 
+			if ( sign is TownHouseSign )
+			{
+				TownHouse ths = ((TownHouseSign)sign).House;
+
+			        foreach (Rectangle2D rect in ((TownHouseSign)sign).Blocks)
+            			{
+                			ArrayList l = new ArrayList();
+                			foreach (Item item in Map.GetItemsInBounds(rect))
+					{
+						if (item.Movable && item.Visible && ths.Region.Contains(item.Location))
+						{
+							if ( !(ths.Secures.Contains(item)) )
+							{
+								itemcnt ++;
+                    						l.Add(item);
+							}
+						
+						}
+					}
+				}
+				//todo delete items in list
+			}
+			if ( sign is HouseSign )
+			{
+				BaseHouse hs = sign.Owner;
+		
+					Point2D start = new Point2D( this.X + hs.Components.Min.X, this.Y + hs.Components.Min.Y );
+					Point2D end = new Point2D( this.X + hs.Components.Max.X + 1, this.Y + hs.Components.Max.Y + 1 );
+					Rectangle2D rect = new Rectangle2D( start, end );
+		
+					List<Item> list = new List<Item>();
+		
+					IPooledEnumerable eable = sign.Map.GetItemsInBounds( rect );
+					
+					foreach ( Item item in eable )
+						if ( item.Movable && IsInside( item ) && !hs.LockDowns.Contains(item) && !hs.Secures.Contains(item) )
+						{
+							itemcnt ++;
+							list.Add( item );
+						}
+
+					eable.Free();
+	
+			}
+			World.Broadcast(0x35, true, "there are  " + itemcnt + " items unsecured in houses");
+		}
+		
 		
 	}
 }
-
-
-

@@ -43,7 +43,7 @@ namespace Server.Mobiles
 			if ( ( DisguiseTimers.IsDisguised( m ) || Server.Spells.Fifth.IncognitoSpell.m_Timers.Contains(m)) && !m.Criminal )
 				return false;
 
-			if ((this is MidlandGuard) && !m.Criminal && AdventuresFunctions.IsInMidland((object)this))
+			if ((this is MidlandGuard) && !m.Criminal && AdventuresFunctions.IsPuritain((object)this))
 				return Server.Misc.IntelligentAction.GetMidlandEnemies( m, this, false );
 				
 			if (this is MercenaryGuard && !m.Criminal )

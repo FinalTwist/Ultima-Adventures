@@ -6,6 +6,7 @@ using Server.Items;
 using Server.Mobiles;
 using Server.Engines.CannedEvil;
 using Server.Multis;
+using Server.Misc;
 
 namespace Server.Mobiles
 {
@@ -130,14 +131,14 @@ namespace Server.Mobiles
 			if (m_guardwhacked)
 				random -= 0.09;
 				
-				if ( random >= 0.96 )
-					level = 25; // 4%
-				else if ( random >= 0.92)
-					level = 20; // 8%
-				else if ( random >= 0.84)
-					level = 15;	//16%
-				else if ( random >= 0.50)
-					level = 10;	 //50%
+			if ( random >= 0.96 )
+				level = 25; // 4%
+			else if ( random >= 0.92)
+				level = 20; // 8%
+			else if ( random >= 0.84)
+				level = 15;	//16%
+			else if ( random >= 0.50)
+				level = 10;	 //50%
 
 			if (random < 0)
 				PowerScroll.CreateRandomNoCraft( 1, 1 );	
@@ -215,18 +216,20 @@ namespace Server.Mobiles
 			else 
 				fake = true;
 
-			if (number > 0 && m is PlayerMobile && GetPlayerInfo.LuckyPlayer(m.Luck, m))
-				number += Utility.RandomMinMax(1, 2);
-
 			for ( int i = 0; i < number; ++i )
 			{
 				Mobile m = toGive[i % toGive.Count];
-				//if (Utility.RandomBool() )
-				//{
-					PowerScroll ps = CreateRandomPowerScroll( fake);
-					if (ps != null)
-						GivePowerScrollTo( m, ps );
-				//}
+
+                int amount = 1;
+                if (m is PlayerMobile && GetPlayerInfo.LuckyPlayer(m.Luck, m))
+                    amount += Utility.RandomMinMax(1, 2);
+
+                for (int j = 0; j < amount; j++)
+                {
+                    PowerScroll ps = CreateRandomPowerScroll(fake);
+                    if (ps != null)
+                        GivePowerScrollTo(m, ps);
+                }
 			}
 		}
 

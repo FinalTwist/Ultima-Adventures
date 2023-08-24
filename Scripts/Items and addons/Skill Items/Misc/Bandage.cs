@@ -613,7 +613,7 @@ namespace Server.Items
 
 				double dexseconds = 4 * (1- ((double)dex/300));// ( 300 - dex ) /60;
 
-				if (AdventuresFunctions.IsInMidland((object)healer) && healer is PlayerMobile)
+				if (AdventuresFunctions.IsPuritain((object)healer) && healer is PlayerMobile)
 				{
 					bandageSpeedMin = MyServerSettings.BandageSpeedMin();
 					dexseconds = (( 150 - (double)dex ) /25) * (1-((PlayerMobile)healer).Agility());

@@ -78,7 +78,7 @@ namespace Server.Engines.Harvest
 				if ( m_Definition.RaceBonus && from.Race == Race.Elf )	//def.RaceBonus = Core.ML
 					minutes *= .75;	//25% off the time.  
 
-				if (from != null && Server.Misc.AdventuresFunctions.IsInMidland((object)from))
+				if (from != null && Server.Misc.AdventuresFunctions.IsPuritain((object)from))
 					minutes *= 50;
 
 				m_NextRespawn = DateTime.UtcNow + TimeSpan.FromMinutes( minutes );

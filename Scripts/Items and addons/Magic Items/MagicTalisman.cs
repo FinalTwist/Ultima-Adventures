@@ -51,7 +51,7 @@ namespace Server.Items
 		{	
 			Mobile p = null;
 
-			if (p != null && ( !(p is PlayerMobile) || Server.Misc.AdventuresFunctions.IsInMidland(parent) || !((PlayerMobile)p).Avatar ))
+			if (p != null && ( !(p is PlayerMobile) || Server.Misc.AdventuresFunctions.IsPuritain(parent) || !((PlayerMobile)p).Avatar ))
 			{
 				p.SendMessage( "Can only be used in normal lands and by restricted players." );
 				this.Delete();

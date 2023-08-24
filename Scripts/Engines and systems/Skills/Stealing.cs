@@ -349,7 +349,7 @@ namespace Server.SkillHandlers
 					{
 						m_Thief.SendMessage( "That is too heavy to steal." );
 					}
-					else if (AdventuresFunctions.IsInMidland((object)m_Thief) && (m_Thief is PlayerMobile || m_Thief is BaseCreature) && Utility.RandomDouble() < w2 )
+					else if (AdventuresFunctions.IsPuritain((object)m_Thief) && (m_Thief is PlayerMobile || m_Thief is BaseCreature) && Utility.RandomDouble() < w2 )
 					{
 						if (m_Thief is PlayerMobile)
 							m_Thief.SendMessage( "You fumble the attempt." );
@@ -431,7 +431,7 @@ namespace Server.SkillHandlers
 					}
 				}
 
-				if (AdventuresFunctions.IsInMidland((object)m_Thief) && caught && m_Thief is PlayerMobile)
+				if (AdventuresFunctions.IsPuritain((object)m_Thief) && caught && m_Thief is PlayerMobile)
 				{
 					if (root is BaseCreature && ((BaseCreature)root).midrace > 0 )
 						((PlayerMobile)m_Thief).AdjustReputation( Utility.RandomMinMax(500, 2500), ((BaseCreature)root).midrace, false);
@@ -528,7 +528,7 @@ namespace Server.SkillHandlers
 									else if (Math.Abs(((Mobile)target).Fame) > 26001)
 										reward = Utility.RandomMinMax(450, 500); // 40% rare, 60% impossible
 
-									if (AdventuresFunctions.IsInMidland((object)target) && reward > 150)
+									if (AdventuresFunctions.IsPuritain((object)target) && reward > 150)
 										reward -= Utility.RandomMinMax(50, 149);
 									
 									double luckavg = 0;
@@ -617,7 +617,7 @@ namespace Server.SkillHandlers
 										stolen = TryStealItem( rngitem, ref caught, (Mobile)target );
 										if (stolen != null)
 										{
-											if (rngitem is Gold && AdventuresFunctions.IsInMidland((object)from))
+											if (rngitem is Gold && AdventuresFunctions.IsPuritain((object)from))
 											{
 												if (target is BaseCreature && ((BaseCreature)target).midrace != 0)
 												{
@@ -731,7 +731,7 @@ namespace Server.SkillHandlers
 							if (mobRoot.Combatant == null)
 								mobRoot.Combatant = m_Thief;
 						}
-						if (AdventuresFunctions.IsInMidland((object)mobRoot) && mobRoot is BaseCreature && ((BaseCreature)mobRoot).midrace != 0 && m_Thief is PlayerMobile)
+						if (AdventuresFunctions.IsPuritain((object)mobRoot) && mobRoot is BaseCreature && ((BaseCreature)mobRoot).midrace != 0 && m_Thief is PlayerMobile)
 							((PlayerMobile)m_Thief).AdjustReputation(Utility.RandomMinMax(20,100), ((BaseCreature)mobRoot).midrace, false);
 
 						string message = String.Format( "You notice {0} trying to steal from {1}.", m_Thief.Name, mobRoot.Name );

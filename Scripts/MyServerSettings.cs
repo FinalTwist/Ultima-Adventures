@@ -27,16 +27,12 @@ namespace Server.Misc
 
 		public static string FilesPath()
 		{
-			// THE SERVER REQUIRES SOME CLIENT FILES TO FUNCTION
-			// THESE REQUIRED FILES SHOULD BE INCLUDED IN THE "Files" FOLDER OF THE PACKAGE
-			// SET THE BELOW PATH TO WHERE THIS FOLDER IS LOCATED
+            // THE SERVER REQUIRES SOME CLIENT FILES TO FUNCTION
+            // THESE REQUIRED FILES SHOULD BE INCLUDED IN THE "Files" FOLDER OF THE PACKAGE
+            // SET THE BELOW PATH TO WHERE THIS FOLDER IS LOCATED
 
-			//Windows
-			//return @"C:\Ultima-Adventures\Files";
-
-			//Linux
-			return @"./Files";
-		}
+            return @"C:\Ultima-Adventures\Files";
+        }
 
 		public static bool AllowSaveFunction()
 		{
@@ -176,7 +172,7 @@ namespace Server.Misc
 							cut = 55;						
 				}	
 
-				if (AdventuresFunctions.IsInMidland((object)m))
+				if (AdventuresFunctions.IsPuritain((object)m))
 					cut /= 2;		
 			
 			return cut;
@@ -440,9 +436,9 @@ namespace Server.Misc
 			return true;
 		}
 
-		public static double BoatDecay() // HOW MANY DAYS A BOAT WILL LAST BEFORE IT DECAYS, WHERE USING IT REFRESHES THE TIME
-		{
-			return 9999.0;
+		public static int BoatDecay() // HOW MANY DAYS A BOAT WILL LAST BEFORE IT DECAYS, WHERE USING IT REFRESHES THE TIME
+		{ 
+			return 30;
 		}
 
 		public static double HomeDecay() // HOW MANY DAYS A HOUSE WILL LAST BEFORE IT DECAYS, WHERE USING IT REFRESHES THE TIME
