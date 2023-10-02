@@ -12,12 +12,14 @@ How to play/Use this git
 The Git is meant to be used together with a client package you can download in the release area.  To play:
 
 1. clone this git (or any other branch of this git you want) on your local hard drive
-2. change anything you want in it, edit the scripts
-2.1 Note:  MyServerSettings.cs script needs to be edited depending on what system you are using.  Search for FilesPath and change depending on which system you are using.
-3. make sure your cloned git is in c:\Ultima-Adventures
-4. Download the drop-in additional files in the release tab, extract everything inside the Ultima-Adventures folder in the archive to your C:\Ultima-Adventures folder
-5. Run the executable to run your own server, or run the runme options to launch the client
+2. make sure your cloned git is in c:\Ultima-Adventures (else some editing is required in myserversettings.cs)
+3. MyServerSettings.cs script needs to be edited depending on what system you are using.  Search for FilesPath and change depending on which system you are using.
+4. Extract the Saves Archive into the main directory (so you have C:\Ultima-Adventures\Saves)
+5. Download the drop-in additional files in the release tab, extract everything inside the Ultima-Adventures folder in the archive to your C:\Ultima-Adventures folder
+6. Run the executable to run your own server, or run the runme options to launch the client
 
 Alternatively, you can just download the entire package and not bother with cloning the git by downloading the Entire server package and extracing to your C:\ but you will be missing some of the latest changes applied to the code.
 
 All the best to the UO community, I hope to keep playing this amazing game for many more years to come.  Feel free to clone and revise as you wish!
+
+Note:  This code is completely open for you to use in any way you want.  Because the code depends on Runuo, Servuo, Djeryv, myself and hundreds of other contributors, we ask that you return the favor and make your server code/changes freely available.  The codebase benefits overall when everyone adds to it in their own personal capacity.
