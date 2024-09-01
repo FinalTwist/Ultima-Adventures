@@ -27,12 +27,12 @@ namespace Server.Spells.Chivalry
 
 		public override bool CheckCast(Mobile caster)
 		{
-			int mana = ScaleMana( RequiredMana );
-
 			if ( !base.CheckCast( caster ) )
 				return false;
 
-			if ( Caster.Karma < 0 )
+            int mana = ScaleMana(RequiredMana);
+
+            if ( Caster.Karma < 0 )
 			{
 				Caster.SendMessage( "You do not have enough Karma to use this ability." );
 				return false;

@@ -21,7 +21,7 @@ namespace Server.Mobiles
 		{
 			public InternalBuyInfo()
 			{  
-				Add( new GenericBuyInfo( typeof( PowderOfTemperament ), 2000000, 20, 0x973, 0 ) );
+				// Add( new GenericBuyInfo( typeof( PowderOfTemperament ), 2000000, 20, 0x973, 0 ) );
 				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( "Leather",typeof( Leather ), 15, 10000, 0x1BD7, 0 ) ); }
 				Add( new GenericBuyInfo( "Spined Leather", typeof( SpinedLeather ), 75, 10000, 0x1081, 0 ) );
 				if (Utility.RandomBool())

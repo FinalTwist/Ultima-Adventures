@@ -1,11 +1,12 @@
 
-using System; 
+using System;
+using Server.Engines.Craft;
 using Server.Items; 
 
 namespace Server.Items 
 { 
-   public class HoodedRobeOfTheLeprechaun : BaseArmor
-   { 
+   public class HoodedRobeOfTheLeprechaun : BaseArmor, IClothingStub, ITailorRepairable
+    { 
       public override int PhysicalResistance{ get{ return 2; } } 
                 public override int FireResistance{ get{ return 2; } } 
                 public override int ColdResistance{ get{ return 2; } } 
@@ -21,7 +22,7 @@ namespace Server.Items
       { 
          Weight = 1; 
                         Hue = 69; 
-                        Name = "Hooded RobeOf The Leprechaun"; 
+                        Name = "Hooded Robe Of The Leprechaun"; 
                         IntRequirement = 50;
                         Attributes.Luck = 1000;  
                         Attributes.RegenMana = 1; 

@@ -1,12 +1,13 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
 
-	public class DarkRoseLegs : BaseArmor
-	{
+	public class DarkRoseLegs : BaseArmor, IBlacksmithRepairable
+    {
         public override int BasePhysicalResistance { get { return 5; } }
         public override int BaseFireResistance { get { return 3; } }
         public override int BaseColdResistance { get { return 5; } }

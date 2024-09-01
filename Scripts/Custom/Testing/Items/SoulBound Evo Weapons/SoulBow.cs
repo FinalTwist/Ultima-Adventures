@@ -7,11 +7,12 @@ using Server;
 using Server.Network;
 using Server.Items;
 using Server.Mobiles;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x13B2, 0x13B1 )]
-	public class SoulBow : BaseRanged
+	public class SoulBow : BaseRanged, IBowcraftFletchingRepairable
 	{
         private int mEvolutionPoints;//Bow will only evolve to 50%
         [CommandProperty(AccessLevel.GameMaster)]

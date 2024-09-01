@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x143B, 0x143A )]
-    public class GiftMaul : BaseGiftBashing
-	{
+    public class GiftMaul : BaseGiftBashing, IBlacksmithRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.CrushingBlow; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.ConcussionBlow; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.DeathBlow; } }

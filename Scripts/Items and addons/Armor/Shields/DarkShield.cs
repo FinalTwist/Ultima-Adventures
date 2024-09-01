@@ -1,11 +1,12 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x2FC8, 0x317E )]
-	public class DarkShield : BaseShield
-	{
+	public class DarkShield : BaseShield, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 0; } }
 		public override int BaseFireResistance{ get{ return 1; } }
 		public override int BaseColdResistance{ get{ return 0; } }

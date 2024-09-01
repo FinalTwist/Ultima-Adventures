@@ -21,15 +21,14 @@ namespace Server.Items
 		private bool named;
 
 		[Constructable]
-		public HeroSarcoWE() : base( 0x14F0 )
+		public HeroSarcoWE() : base( )
 		{
-			
-			AddComponent( new AddonComponent( 0x1C62 ), -2, 0, 2 );
-			AddComponent( new AddonComponent( 0x1CC5 ), -1, 0, 2 );
-			AddComponent( new AddonComponent( 0x1C60 ), 0, 0, 2 );
-			AddComponent( new AddonComponent( 0x1C65 ), 0, -1, 2 );
-			AddComponent( new AddonComponent( 0x1C64 ), -1, -1, 2 );
-			AddComponent( new AddonComponent( 0x1C63 ), -2, -1, 2 );
+			AddComponent( new AddonComponent( 0x1C62 ), -2,  0, 0 );
+			AddComponent( new AddonComponent( 0x1C61 ), -1,  0, 0 );
+			AddComponent( new AddonComponent( 0x1C60 ),  0,  0, 0 );
+			AddComponent( new AddonComponent( 0x1C65 ),  0, -1, 0 );
+			AddComponent( new AddonComponent( 0x1C64 ), -1, -1, 0 );
+			AddComponent( new AddonComponent( 0x1C63 ), -2, -1, 0 );
 
 			base.Weight = 0;
 			Movable = false;
@@ -103,21 +102,20 @@ namespace Server.Items
 
 	public class HeroSarcoNS : BaseAddon
 	{
-
-		private static int[,] m_AddOnSimpleComponents = new int[,] {
-			{7337, 0, -2, 1}, {7336, 0, -1, 1}, {7335, 0, 0, 1},
-			{7338, -1, -2, 1}, {7339, -1, -1, 1}, {7340, -1, 0, 1}
-		};
-
+		
 		public override BaseAddonDeed Deed { get { return new PeaPatchDeed(); } }
 
 		private bool named;
 
 		[Constructable]
-		public HeroSarcoNS() : base( 0x14F0 )
+		public HeroSarcoNS() : base( )
 		{
-			for (int i = 0; i < m_AddOnSimpleComponents.Length / 3; i++)
-				AddComponent( new AddonComponent( m_AddOnSimpleComponents[i,0] ), m_AddOnSimpleComponents[i,1], m_AddOnSimpleComponents[i,2], m_AddOnSimpleComponents[i,3] );
+			AddComponent( new AddonComponent( 7337 ),  0, -2, 0);
+			AddComponent( new AddonComponent( 7336 ),  0, -1, 0);
+			AddComponent( new AddonComponent( 7335 ),  0,  0, 0);
+			AddComponent( new AddonComponent( 7338 ), -1, -2, 0);
+			AddComponent( new AddonComponent( 7339 ), -1, -1, 0);
+			AddComponent( new AddonComponent( 7340 ), -1,  0, 0);
 
 			base.Weight = 0;
 			Movable = false;

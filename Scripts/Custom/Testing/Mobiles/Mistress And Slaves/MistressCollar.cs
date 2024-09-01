@@ -1,9 +1,10 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
-	public class MistressCollar : BaseArmor
+	public class MistressCollar : BaseArmor, ITailorRepairable
 	{
 		public override int ArtifactRarity{ get{ return 58; } }
 

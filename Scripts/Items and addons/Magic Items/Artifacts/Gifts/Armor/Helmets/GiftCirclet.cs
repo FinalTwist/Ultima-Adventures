@@ -1,10 +1,11 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x2B6F, 0x3166 )]
-    public class GiftCirclet : BaseGiftArmor
+    public class GiftCirclet : BaseGiftArmor, ITinkerRepairable
 	{
 		public override int BasePhysicalResistance{ get{ return 1; } }
 		public override int BaseFireResistance{ get{ return 5; } }
@@ -22,7 +23,7 @@ namespace Server.Items
 
 		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Plate; } }
 
-		public override ArmorMeditationAllowance DefMedAllowance{ get{ return ArmorMeditationAllowance.All; } }
+        public override ArmorMeditationAllowance DefMedAllowance{ get{ return ArmorMeditationAllowance.All; } }
 
 		[Constructable]
 		public GiftCirclet() : base( 0x2B6F )

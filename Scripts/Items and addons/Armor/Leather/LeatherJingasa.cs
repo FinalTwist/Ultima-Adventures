@@ -1,10 +1,11 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
-	public class LeatherJingasa : BaseArmor
-	{
+	public class LeatherJingasa : BaseArmor, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 4; } }
 		public override int BaseFireResistance{ get{ return 3; } }
 		public override int BaseColdResistance{ get{ return 3; } }

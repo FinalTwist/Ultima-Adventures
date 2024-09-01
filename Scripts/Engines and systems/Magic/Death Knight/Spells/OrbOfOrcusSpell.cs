@@ -28,11 +28,11 @@ namespace Server.Spells.DeathKnight
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if ( Core.AOS )
-				return true;
+        {
+            if (!base.CheckCast(caster))
+                return false;
 
-			if ( Caster.MagicDamageAbsorb > 0 )
+            if ( Caster.MagicDamageAbsorb > 0 )
 			{
 				Caster.SendLocalizedMessage( 1005559 ); // This spell is already in effect.
 				return false;

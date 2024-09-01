@@ -866,11 +866,18 @@ namespace Server.Engines.Apiculture
 		public apiBeeHiveDeed()
 		{
 			ItemID = 2330;
-			Name = "beehive";
+			Name = "Bee Hive";
 		}
 
 		public apiBeeHiveDeed( Serial serial ) : base( serial )
 		{
+		}
+
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties( list );
+
+			list.Add("Double click to place");
 		}
 
 		public override void Serialize( GenericWriter writer )

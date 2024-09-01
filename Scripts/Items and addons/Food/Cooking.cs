@@ -420,28 +420,50 @@ namespace Server.Items
 			get{ return m_Quantity; }
 			set
 			{
+				if (m_Quantity == value) return;
+
 				if ( value < 0 )
 					value = 0;
 				else if ( value > 5 )
 					value = 5;
 
-				m_Quantity = value;
+				int oldWeight = GetTotal(TotalType.Weight);
 
-				if ( m_Quantity == 0 )
-					Delete();
-				else if ( m_Quantity < 5 && (ItemID == 0x1039 || ItemID == 0x1045) )
+				m_Quantity = value;
+				ReleaseWorldPackets();
+
+				int newWeight = GetTotal(TotalType.Weight);
+
+                UpdateTotal(this, TotalType.Weight, newWeight - oldWeight);
+
+				// Transform to open sack
+                if ( m_Quantity < 5 && (ItemID == 0x1039 || ItemID == 0x1045) )
 					++ItemID;
+
+				InvalidateProperties();
+
+				if (value < 1)
+					Delete();
+
 			}
 		}
-
+		
 		[Constructable]
 		public SackFlour() : base( 0x1039 )
 		{
-			Weight = 5.0;
+			Weight = 1;
 			m_Quantity = 5;
 		}
 
-		public SackFlour( Serial serial ) : base( serial )
+        public override int GetTotal(TotalType type)
+        {
+			if (type != TotalType.Weight) return base.GetTotal(type);
+
+			// 1 stone per Use, minus the base weight
+			return Quantity - PileWeight;
+        }
+
+        public SackFlour( Serial serial ) : base( serial )
 		{
 		}
 
@@ -488,7 +510,16 @@ namespace Server.Items
 				Weight = 5.0;
 		}
 
-		public override void OnDoubleClick( Mobile from )
+        public override void Consume(int amount)
+        {
+            Quantity -= amount;
+            Console.WriteLine("New Quantity: {0}", Quantity);
+
+            if (Quantity <= 0)
+                Delete();
+        }
+
+        public override void OnDoubleClick( Mobile from )
 		{
 			if ( !Movable )
 				return;

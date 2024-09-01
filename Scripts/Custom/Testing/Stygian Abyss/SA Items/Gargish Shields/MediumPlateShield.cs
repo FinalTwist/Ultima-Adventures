@@ -1,12 +1,13 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	// Based off a MetalShield
 	[FlipableAttribute( 0x4203, 0x4209 )]
-	public class MediumPlateShield : BaseShield
-	{
+	public class MediumPlateShield : BaseShield, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 0; } }
 		public override int BaseFireResistance{ get{ return 1; } }
 		public override int BaseColdResistance{ get{ return 0; } }

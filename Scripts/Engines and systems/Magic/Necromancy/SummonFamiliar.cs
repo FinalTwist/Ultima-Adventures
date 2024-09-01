@@ -33,8 +33,11 @@ namespace Server.Spells.Necromancy
 		public static Hashtable Table{ get{ return m_Table; } }
 
 		public override bool CheckCast(Mobile caster)
-		{
-			BaseCreature check = (BaseCreature)m_Table[Caster];
+        {
+            if (!base.CheckCast(caster))
+                return false;
+
+            BaseCreature check = (BaseCreature)m_Table[Caster];
 
 			if ( check != null && !check.Deleted )
 			{
@@ -42,7 +45,7 @@ namespace Server.Spells.Necromancy
 				return false;
 			}
 
-			return base.CheckCast( caster );
+			return true;
 		}
 
 		public override void OnCast()

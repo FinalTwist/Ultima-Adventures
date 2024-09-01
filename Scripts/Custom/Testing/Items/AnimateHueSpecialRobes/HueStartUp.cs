@@ -6,7 +6,7 @@ namespace Server.AnimateHue
 
         public static void Initialize()
         {
-            EventSink.ServerStarted += new ServerStartedEventHandler(HueStarted);
+            // EventSink.ServerStarted += new ServerStartedEventHandler(HueStarted);
         }
 
         private static void HueStarted()

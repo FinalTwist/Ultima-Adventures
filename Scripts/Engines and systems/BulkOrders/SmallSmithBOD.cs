@@ -10,19 +10,6 @@ namespace Server.Engines.BulkOrders
 	[TypeAlias( "Scripts.Engines.BulkOrders.SmallSmithBOD" )]
 	public class SmallSmithBOD : SmallBOD
 	{
-		public static double[] m_BlacksmithMaterialChances = new double[]
-			{
-				0.501953125, // None
-				0.250000000, // Dull Copper
-				0.125000000, // Shadow Iron
-				0.062500000, // Copper
-				0.031250000, // Bronze
-				0.015625000, // Gold
-				0.007812500, // Agapite
-				0.003906250, // Verite
-				0.001953125  // Valorite
-			};
-
 		public override int ComputeFame()
 		{
 			return SmithRewardCalculator.Instance.ComputeFame( this );
@@ -68,7 +55,7 @@ namespace Server.Engines.BulkOrders
 			return list;
 		}
 
-		public static SmallSmithBOD CreateRandomFor( Mobile m )
+		public static SmallSmithBOD CreateRandomFor( Mobile m, bool defaultMaterialOnly = true )
 		{
 			SmallBulkEntry[] entries;
 			bool useMaterials;
@@ -77,6 +64,8 @@ namespace Server.Engines.BulkOrders
 				entries = SmallBulkEntry.BlacksmithArmor;
 			else
 				entries = SmallBulkEntry.BlacksmithWeapons;
+
+            if (defaultMaterialOnly) useMaterials = false;
 
 			if ( entries.Length > 0 )
 			{
@@ -96,7 +85,7 @@ namespace Server.Engines.BulkOrders
 				{
 					for ( int i = 0; i < 20; ++i )
 					{
-						BulkMaterialType check = GetRandomMaterial( BulkMaterialType.DullCopper, m_BlacksmithMaterialChances );
+						BulkMaterialType check = GetRandomMaterial( BulkMaterialType.DullCopper, BulkMaterialType.Dwarven );
 						double skillReq = 0.0;
 
 						switch ( check )
@@ -108,13 +97,17 @@ namespace Server.Engines.BulkOrders
 							case BulkMaterialType.Gold: skillReq = 85.0; break;
 							case BulkMaterialType.Agapite: skillReq = 90.0; break;
 							case BulkMaterialType.Verite: skillReq = 95.0; break;
-							case BulkMaterialType.Valorite: skillReq = 100.0; break;
-							case BulkMaterialType.Spined: skillReq = 65.0; break;
-							case BulkMaterialType.Horned: skillReq = 80.0; break;
-							case BulkMaterialType.Barbed: skillReq = 99.0; break;
-						}
+							case BulkMaterialType.Valorite: skillReq = 99.0; break;
+                            case BulkMaterialType.Nepturite: skillReq = 99.0; break;
+                            case BulkMaterialType.Obsidian: skillReq = 99.0; break;
+                            case BulkMaterialType.Steel: skillReq = 99.0; break;
+                            case BulkMaterialType.Brass: skillReq = 105.0; break;
+							case BulkMaterialType.Mithril: skillReq = 110.0; break;
+							case BulkMaterialType.Xormite: skillReq = 115.0; break;
+							case BulkMaterialType.Dwarven: skillReq = 120.0; break;
+                        }
 
-						if ( theirSkill >= skillReq )
+                        if ( theirSkill >= skillReq )
 						{
 							material = check;
 							break;
@@ -129,13 +122,15 @@ namespace Server.Engines.BulkOrders
 
 				bool reqExceptional = ( excChance > Utility.RandomDouble() );
 
+				SmallBulkEntry entry = null;
+				
 				CraftSystem system = DefBlacksmithy.CraftSystem;
 
-				List<SmallBulkEntry> validEntries = new List<SmallBulkEntry>();
-
-				for ( int i = 0; i < entries.Length; ++i )
+				for ( int i = 0; i < 150; ++i )
 				{
-					CraftItem item = system.CraftItems.SearchFor( entries[i].Type );
+					SmallBulkEntry check = entries[Utility.Random( entries.Length )];
+
+					CraftItem item = system.CraftItems.SearchFor( check.Type );
 
 					if ( item != null )
 					{
@@ -148,16 +143,16 @@ namespace Server.Engines.BulkOrders
 								chance = item.GetExceptionalChance( system, chance, m );
 
 							if ( chance > 0.0 )
-								validEntries.Add( entries[i] );
+							{
+								entry = check;
+								break;
 							}
 						}
 					}
-
-				if ( validEntries.Count > 0 )
-				{
-					SmallBulkEntry entry = validEntries[Utility.Random( validEntries.Count )];
-					return new SmallSmithBOD( entry, material, amountMax, reqExceptional );
 				}
+
+				if ( entry != null )
+					return new SmallSmithBOD( entry, material, amountMax, reqExceptional );
 			}
 
 			return null;
@@ -193,7 +188,7 @@ namespace Server.Engines.BulkOrders
 				BulkMaterialType material;
 
 				if ( useMaterials )
-					material = GetRandomMaterial( BulkMaterialType.DullCopper, m_BlacksmithMaterialChances );
+					material = GetRandomMaterial( BulkMaterialType.DullCopper, BulkMaterialType.Dwarven );
 				else
 					material = BulkMaterialType.None;
 

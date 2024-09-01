@@ -100,11 +100,11 @@ namespace Server.Items
 				else if ( targeted is MagicPigment )
 				{
 					MagicPigment pigment = (MagicPigment)targeted;
-					pigment.Hue = color;
-					from.RevealingAction();
-					from.PlaySound( 0x23E );
-					from.AddToBackpack( new Jar() );
-					m_Dye.Consume();
+					if (pigment.ApplyHue(from, m_Dye.Hue, 0x23E))
+					{
+						from.AddToBackpack( new Jar() );
+						m_Dye.Consume();
+					}
 				}
 				else
 				{

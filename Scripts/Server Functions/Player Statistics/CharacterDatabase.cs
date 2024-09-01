@@ -86,6 +86,10 @@ namespace Server.Items
 		[CommandProperty( AccessLevel.GameMaster )]
 		public int Character_Evil { get { return CharacterEvil; } set { CharacterEvil = value; InvalidateProperties(); } }
 
+		public Serial CharacterAutolootContainer;
+		[CommandProperty( AccessLevel.GameMaster )]
+		public Serial Character_AutolootContainer { get { return CharacterAutolootContainer; } set { CharacterAutolootContainer = value; InvalidateProperties(); } }
+
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		public string MessageQuest;
@@ -268,7 +272,7 @@ namespace Server.Items
 		public override void Serialize( GenericWriter writer )
 		{
 			base.Serialize( writer );
-			writer.Write( (int)1 ); // version
+			writer.Write( (int)2 ); // version
 			writer.Write( (Mobile)CharacterOwner );
 			writer.Write( CharacterMOTD );
 			writer.Write( CharacterSkill );
@@ -325,7 +329,8 @@ namespace Server.Items
 			writer.Write( CharHue );
 			writer.Write( CharHairHue );
 			writer.Write( EpicQuestNumber );
-		}
+			writer.Write( CharacterAutolootContainer );
+        }
 
 		public override void Deserialize( GenericReader reader )
 		{
@@ -387,6 +392,11 @@ namespace Server.Items
 			CharHue = reader.ReadInt();
 			CharHairHue = reader.ReadInt();
 			EpicQuestNumber = reader.ReadInt();
+
+			if (version > 1)
+			{
+				CharacterAutolootContainer = reader.ReadInt();
+            }
 		}
 
 		public static CharacterDatabase GetDB( Mobile m ) // ----------------------------------------------------------------------------------------
@@ -1108,6 +1118,14 @@ namespace Server.Items
 			}
 		}
 
+		public static void SetAutolootContainer( Mobile m, Serial serial )
+		{
+            CharacterDatabase DB = Server.Items.CharacterDatabase.GetDB(m);
+			if (DB == null) return;
+
+			DB.CharacterAutolootContainer = serial;
+        }
+
 		public static void LootContainer( Mobile m, Container box ) // -------------------------------------------------------------------------------------
 		{
 			if (box.Deleted || box == null )
@@ -1412,13 +1430,32 @@ namespace Server.Items
 					nEntry++;
 				}
 
-				int sound = 0;
-				foreach ( Item stuff in belongings )
+				Container autolootContainer = null;
+				PlayerMobile player = m as PlayerMobile;
+				if (player != null && player.Backpack != null)
+				{
+                    Serial serial = DB.CharacterAutolootContainer;
+					if (serial!= Serial.Zero)
+                    {
+                        autolootContainer = player.FindItemRecursive(player.Backpack, i => i.Serial == serial, true) as Container;
+                    }
+                }
+
+                int sound = 0;
+				foreach ( Item item in belongings )
 				{
 					sound = 1;
-					//+++
-					m.AddToBackpack( stuff );
-				}
+					if (autolootContainer != null)
+                    {
+						if (item.Deleted || player.Puritain && !item.IsPure) continue;
+
+						autolootContainer.OnDragDrop(player, item); // Needs to respect coinpouches, etc
+                    }
+					else
+					{
+                        m.AddToBackpack(item);
+                    }
+                }
 
 				if ( sound > 0 )
 				{

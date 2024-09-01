@@ -1,12 +1,13 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 using Server.Mobiles;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 11014, 11015 )]
-	public class DarkFatherMorphLegs : BaseArmor
-	{
+	public class DarkFatherMorphLegs : BaseArmor, ITailorRepairable
+    {
 		public int originalkarma;
 
 		//public override int LabelNumber{ get{ return 1074303; } }

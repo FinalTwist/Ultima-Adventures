@@ -1,10 +1,11 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public class LanternOfSlavery : BaseShield
-	{
+	public class LanternOfSlavery : BaseShield, ITinkerRepairable
+    {
 		public override int ArtifactRarity{ get{ return 58; } }
 
 		public override int BasePhysicalResistance{ get{ return 10; } }

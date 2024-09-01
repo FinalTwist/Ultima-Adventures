@@ -1,11 +1,12 @@
 using System;
 using Server.Items;
 using Server.Network;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0xF43, 0xF44 )]
-	public class Hatchet : BaseAxe
+	public class Hatchet : BaseAxe, ITinkerRepairable
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.ArmorIgnore; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.Disarm; } }

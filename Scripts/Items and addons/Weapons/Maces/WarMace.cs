@@ -1,11 +1,12 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x1407, 0x1406 )]
-	public class WarMace : BaseBashing
+	public class WarMace : BaseBashing, IBlacksmithRepairable
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.CrushingBlow; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.BleedAttack; } }

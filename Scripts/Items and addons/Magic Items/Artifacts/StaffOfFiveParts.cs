@@ -7,11 +7,12 @@ using Server.Network;
 using Server.Mobiles;
 using System.Collections.Generic;
 using Server.Misc;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public class StaffFiveParts : QuarterStaff
-	{
+	public class StaffFiveParts : QuarterStaff, ICarpentryRepairable
+    {
 		public Mobile StaffOwner;
 		public string StaffName;
 		public int StaffMagic;

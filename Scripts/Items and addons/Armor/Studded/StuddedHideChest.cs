@@ -1,10 +1,11 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
-	public class StuddedHideChest : BaseArmor
-	{
+	public class StuddedHideChest : BaseArmor, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 9; } }
 		public override int BaseFireResistance{ get{ return 8; } }
 		public override int BaseColdResistance{ get{ return 7; } }

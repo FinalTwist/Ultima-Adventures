@@ -40,11 +40,10 @@ namespace Server.Spells.Ninjitsu
 
 		public override bool CheckCast(Mobile caster)
 		{
-			int mana = ScaleMana( RequiredMana );
-
 			if ( !base.CheckCast( caster ) )
 				return false;
 
+			int mana = ScaleMana( RequiredMana );
 			if ( !CheckExpansion( Caster ) )
 			{
 				Caster.SendLocalizedMessage( 1063456 ); // You must upgrade to Samurai Empire in order to use that ability.

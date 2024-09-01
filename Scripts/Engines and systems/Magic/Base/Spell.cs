@@ -514,6 +514,13 @@ namespace Server.Spells
 				caster.SendMessage("You can't cast anything in this state.");
 				return false;
 			}
+			
+			if (caster is PlayerMobile && ((PlayerMobile)caster).Alchemist())
+			{
+				caster.SendMessage("You can't seem to grasp magic forces!"); 
+				return false;
+			}
+			
 			return true;
 		}
 

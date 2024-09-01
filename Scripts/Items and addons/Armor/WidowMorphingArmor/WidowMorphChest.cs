@@ -1,12 +1,13 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 using Server.Mobiles;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 11016, 11017 )]
-	public class WidowMorphChest : BaseArmor
-	{
+	public class WidowMorphChest : BaseArmor, ITailorRepairable
+    {
 		//public override int LabelNumber{ get{ return 1074303; } }
 		public override int BasePhysicalResistance{ get{ return 8; } }
 		public override int BaseFireResistance{ get{ return 5; } }
@@ -19,9 +20,9 @@ namespace Server.Items
 		public override int AosStrReq{ get{ return 20; } }
 		public override int ArmorBase{ get{ return 40; } }
 
-		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Leather; } }
+		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Leather; } } // ?
 
-		[Constructable]
+        [Constructable]
 		public WidowMorphChest() : base( 11016 )
 		{
 			Name = "Morphing Armor of the Widow";

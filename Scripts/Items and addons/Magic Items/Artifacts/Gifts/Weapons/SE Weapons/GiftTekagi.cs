@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x27Ab, 0x27F6 )]
-    public class GiftTekagi : BaseGiftKnife
-	{
+    public class GiftTekagi : BaseGiftKnife, IBlacksmithRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.DualWield; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.TalonStrike; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.FreezeStrike; } }

@@ -1,10 +1,11 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
-	public class SavageGloves : BaseArmor
-	{
+	public class SavageGloves : BaseArmor, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 5; } }
 		public override int BaseFireResistance{ get{ return 5; } }
 		public override int BaseColdResistance{ get{ return 6; } }

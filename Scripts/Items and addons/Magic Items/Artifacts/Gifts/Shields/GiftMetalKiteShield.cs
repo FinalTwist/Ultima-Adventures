@@ -1,10 +1,11 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    public class GiftMetalKiteShield : BaseGiftShield, IDyable
-	{
+    public class GiftMetalKiteShield : BaseGiftShield, IDyable, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 0; } }
 		public override int BaseFireResistance{ get{ return 0; } }
 		public override int BaseColdResistance{ get{ return 0; } }
@@ -18,7 +19,7 @@ namespace Server.Items
 
 		public override int ArmorBase{ get{ return 16; } }
 
-		[Constructable]
+        [Constructable]
 		public GiftMetalKiteShield() : base( 0x1B74 )
 		{
 			Name = "metal kite shield";

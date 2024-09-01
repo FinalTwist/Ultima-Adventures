@@ -1,13 +1,14 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 using Server.Guilds;
 
 namespace Server.Items
 {
 	// Based off an OrderShield
 	[FlipableAttribute( 0x422A, 0x422C )]
-	public class GargishOrderShield : BaseShield
-	{
+	public class GargishOrderShield : BaseShield, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 1; } }
 		public override int BaseFireResistance{ get{ return 0; } }
 		public override int BaseColdResistance{ get{ return 0; } }

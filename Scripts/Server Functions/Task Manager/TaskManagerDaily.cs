@@ -430,13 +430,15 @@ namespace Server.Items
 				}
 				
 				
-				if (goodchamp != null)
+				if (goodchamp != null && goodchamp != AetherGlobe.GoodChamp)
 				{
 					AetherGlobe.GoodChamp = (Mobile)goodchamp;
+					goodchamp.InvalidateProperties();
 				}
-				if (evilchamp != null)
+				if (evilchamp != null && evilchamp != AetherGlobe.EvilChamp)
 				{
 					AetherGlobe.EvilChamp = (Mobile)evilchamp;
+					evilchamp.InvalidateProperties();
 				}
 
 				AdventuresFunctions.CheckInfection();
@@ -445,19 +447,13 @@ namespace Server.Items
 
 				Cleanup.Run();
 
-				
-		
-//end
-				//Console.WriteLine( "Done champs" );
-				
-				//Server.Items.WorkingSpots.PopulateVillages();
 				Farms.PlantGardens();
 				Server.Mobiles.Citizens.PopulateCities();
 				ThiefGuildmaster.WipeFlaggedList();		
-				Server.Misc.AdventuresFunctions.CleanupInternalObjects( null, true );		
+				Server.Misc.AdventuresFunctions.CleanupInternalObjects( null, true );	
+				Server.Misc.AdventuresFunctions.OldCharCleanup();
 				LoggingFunctions.LogServer( "Done - Remove Spread Out Monsters, Drinkers, And Healers" );
 				Console.WriteLine( "End Daily Tasks" );
-				//World.Broadcast( 0x35, true, "End daily tasks" );
 				lastrun = DateTime.UtcNow;
 			}
 		}

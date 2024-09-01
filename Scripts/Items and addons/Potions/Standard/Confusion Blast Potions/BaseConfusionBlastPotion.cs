@@ -20,10 +20,12 @@ namespace Server.Items
 
 		public BaseConfusionBlastPotion( PotionEffect effect ) : base( 0x180F, effect )
 		{
+			ReturnBottleOnUse = false;
 		}
 
 		public BaseConfusionBlastPotion( Serial serial ) : base( serial )
 		{
+			ReturnBottleOnUse = false;
 		}
 
 		public override void Drink( Mobile from )
@@ -88,7 +90,7 @@ namespace Server.Items
 			if ( Deleted || map == null )
 				return;
 
-			Consume();
+			Consume(from);
 
 			// Check if any other players are using this potion
 			for ( int i = 0; i < m_Users.Count; i ++ )

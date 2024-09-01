@@ -168,47 +168,54 @@ namespace Server.Engines.PartySystem
 			UpdateSoulboundBuffs(false);
 		}
 
-		public void UpdateSoulboundBuffs(bool regionchange) {
+		public void UpdateSoulboundBuffs(bool regionchange)
+		{
 			int baseOffset = 5;
-			for ( int i = 0; i < m_Members.Count; ++i )
+			for (int i = 0; i < m_Members.Count; ++i)
 			{
 				Mobile f = ((PartyMemberInfo)m_Members[i]).Mobile;
-				if (f is PlayerMobile && ((PlayerMobile)f).SoulBound) {
+				if (f is PlayerMobile && ((PlayerMobile)f).SoulBound)
+				{
 					Phylactery phylactery = ((PlayerMobile)f).FindPhylactery();
-					if (phylactery != null) {
-						if (IsSoulBound()) 
+					if (phylactery != null)
+					{
+						if (IsSoulBound())
 						{
 							int ct = 0;
-							for ( int ix = 0; ix < m_Members.Count; ++ix )
+							for (int ix = 0; ix < m_Members.Count; ++ix)
 							{
 								Mobile ff = ((PartyMemberInfo)m_Members[ix]).Mobile;
-								if (ff != f && ( Region.Find( f.Location, f.Map ) == Region.Find( ff.Location, ff.Map ) ) )
+								if (ff != f && (Region.Find(f.Location, f.Map) == Region.Find(ff.Location, ff.Map)))
 								{
 									Phylactery phylactery2 = ((PlayerMobile)ff).FindPhylactery();
-									if ( phylactery.PowerLevel <= phylactery2.PowerLevel)
+									if (phylactery2 != null && phylactery.PowerLevel <= phylactery2.PowerLevel)
 									{
-										ct ++;
+										ct++;
 									}
 								}
 							}
 
 							List<PhylacteryMod> mods = phylactery.PhylacteryMods;
-							if (mods.Count > 0) {
-								foreach(PhylacteryMod mod in mods) {
-									mod.Offset = (baseOffset*ct);
+							if (mods.Count > 0)
+							{
+								foreach (PhylacteryMod mod in mods)
+								{
+									mod.Offset = (baseOffset * ct);
 								}
 								phylactery.PhylacteryMods = mods;
 								phylactery.UpdateOwnerSoul(((PlayerMobile)f));
 								if (!regionchange)
 									f.SendMessage("You have received a temporary buff to your phylactery");
 							}
-						} else if (phylactery.PhylacteryMods.Count > 0){
+						}
+						else if (phylactery.PhylacteryMods.Count > 0)
+						{
 							this.ClearSoulboundPartyBuffs(((PlayerMobile)f));
 							f.SendMessage("A non soul bound player has joined, your party buffs diminish");
 						}
 					}
 				}
-			}	
+			}
 		}
 
 		public void Add( Mobile m )

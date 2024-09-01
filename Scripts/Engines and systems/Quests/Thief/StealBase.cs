@@ -846,7 +846,7 @@ namespace Server.Items
 		public void FillMeUp( Container box, Mobile from )
 		{
 			Item i = null;
-			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( (int)( 20 + ( from.Luck / 2 ) ), from ) == true )
+			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( from.Luck, from ) == true )
 			{
 						double difficulty = (double)Misc.MyServerSettings.GetDifficultyLevel( from.Location, from.Map );
 
@@ -863,14 +863,14 @@ namespace Server.Items
 				//BaseContainer.DropItemFix( i, from, box.ItemID, box.GumpID );
 			}
 
-			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( (int)( 20 + ( from.Luck / 2 ) ), from ) == true )
+			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( from.Luck, from ) == true )
 			{
 				i = DungeonLoot.RandomSlayer();
 				box.DropItem(i);
 				//BaseContainer.DropItemFix( i, from, box.ItemID, box.GumpID );
 			}
 
-			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( (int)( 20 + ( from.Luck / 2 ) ), from ) == true )
+			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( from.Luck, from ) == true )
 			{
 
 
@@ -889,7 +889,7 @@ namespace Server.Items
 				//BaseContainer.DropItemFix( i, from, box.ItemID, box.GumpID );
 			}
 
-			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( (int)( 20 + ( from.Luck / 2 ) ), from ) == true )
+			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( from.Luck, from ) == true )
 			{
 				if ( Server.Misc.GetPlayerInfo.EvilPlay( from ) == true && Utility.RandomMinMax( 0, 10 ) == 10 )
 				{
@@ -908,7 +908,7 @@ namespace Server.Items
 				}
 			}
 
-			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( (int)( 20 + ( from.Luck / 2 ) ), from ) == true )
+			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( from.Luck, from ) == true )
 			{
 				Item idropped = DungeonLoot.RandomRare();
 				if ( idropped is OilLeather || idropped is OilMetal ){ idropped.Amount = Utility.RandomMinMax( 1, 8 ); }
@@ -918,14 +918,14 @@ namespace Server.Items
 				//BaseContainer.DropItemFix( idropped, from, box.ItemID, box.GumpID );
 			}
 
-			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( (int)( 20 + ( from.Luck / 2 ) ), from ) == true )
+			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( from.Luck, from ) == true )
 			{
 				i = DungeonLoot.RandomLoreBooks();
 				box.DropItem(i);
 				//BaseContainer.DropItemFix( i, from, box.ItemID, box.GumpID );
 			}
 
-			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( (int)( 20 + ( from.Luck / 2 ) ), from ) == true )
+			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( from.Luck, from ) == true )
 			{
 				if ( Utility.Random( 4 ) != 1 ) { i = Loot.RandomScroll( 0, 7, SpellbookType.Regular ); box.DropItem(i); //BaseContainer.DropItemFix( i, from, box.ItemID, box.GumpID ); 
                 }
@@ -945,7 +945,7 @@ namespace Server.Items
 			box.DropItem(i);
 			//BaseContainer.DropItemFix( i, from, box.ItemID, box.GumpID );
 
-			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( (int)( 20 + ( from.Luck / 2 ) ), from ) == true )
+			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( from.Luck, from ) == true )
 			{
 				Item item = Loot.RandomArmorOrShieldOrWeaponOrJewelryOrClothing( Server.LootPackEntry.IsInTokuno( from ) );
 				Server.Misc.ContainerFunctions.LootMutate( from, Server.LootPack.GetRegularLuckChance( from ), item, box, Utility.RandomMinMax( 8, 10 ) );
@@ -953,7 +953,7 @@ namespace Server.Items
 				//BaseContainer.DropItemFix( item, from, box.ItemID, box.GumpID );
 			}
 
-			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( (int)( 20 + ( from.Luck / 2 ) ), from ) == true )
+			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( from.Luck, from ) == true )
 			{
 				Item lute = Loot.RandomInstrument();
 				Server.Misc.ContainerFunctions.LootMutate( from, Server.LootPack.GetRegularLuckChance( from ), lute, box, Utility.RandomMinMax( 8, 10 ) );
@@ -961,21 +961,21 @@ namespace Server.Items
 				//BaseContainer.DropItemFix( lute, from, box.ItemID, box.GumpID );
 			}
 
-			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( (int)( 20 + ( from.Luck / 2 ) ), from ) == true )
+			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( from.Luck, from ) == true )
 			{
 				i = Loot.RandomGem();
 				box.DropItem(i);
 				//BaseContainer.DropItemFix( i, from, box.ItemID, box.GumpID );
 			}
 
-			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( (int)( 20 + ( from.Luck / 2 ) ), from ) == true )
+			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( from.Luck, from ) == true )
 			{
 				i = Loot.RandomPotion();
 				box.DropItem(i);
 				//BaseContainer.DropItemFix( i, from, box.ItemID, box.GumpID );
 			}
 
-			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( (int)( 20 + ( from.Luck / 2 ) ), from ) == true )
+			if ( Server.Misc.GetPlayerInfo.LuckyPlayer( from.Luck, from ) == true )
 			{
 				Item wand = Loot.RandomWand();
 				Server.Misc.MaterialInfo.ColorMetal( wand, 0 );

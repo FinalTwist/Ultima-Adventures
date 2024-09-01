@@ -131,13 +131,13 @@ namespace Server.Items
             Definitions.Add(new AttributeHandler(EnhanceType.AosElementAttribute, "Physical", "Physical Resist", 					30, 1, 2,
                 !armor, !weapon, jewelry, !spellbook, !shield, clothing));
             Definitions.Add(new AttributeHandler(EnhanceType.AosElementAttribute, "Fire", "Fire Resist", 							30, 1, 2,
-                !armor, !weapon, jewelry, spellbook, !shield, clothing));
+                !armor, !weapon, jewelry, !spellbook, !shield, clothing));
             Definitions.Add(new AttributeHandler(EnhanceType.AosElementAttribute, "Cold", "Cold Resist", 							30, 1, 2,
-                !armor, !weapon, jewelry, spellbook, !shield, clothing));
+                !armor, !weapon, jewelry, !spellbook, !shield, clothing));
             Definitions.Add(new AttributeHandler(EnhanceType.AosElementAttribute, "Poison", "Poison Resist", 						30, 1, 2,
-                !armor, !weapon, jewelry, spellbook, !shield, clothing));
+                !armor, !weapon, jewelry, !spellbook, !shield, clothing));
             Definitions.Add(new AttributeHandler(EnhanceType.AosElementAttribute, "Energy", "Energy Resist", 						30, 1, 2,
-                !armor, !weapon, jewelry, spellbook, !shield, clothing));
+                !armor, !weapon, jewelry, !spellbook, !shield, clothing));
             Definitions.Add(new AttributeHandler(EnhanceType.AosAttribute, "BonusStr", "Strength Bonus", 							20, 1, 10,
                 armor, !weapon, jewelry, spellbook, shield, clothing));
             Definitions.Add(new AttributeHandler(EnhanceType.AosAttribute, "BonusDex", "Dexterity Bonus", 							20, 1, 10,

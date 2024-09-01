@@ -55,6 +55,10 @@ namespace Server.Mobiles
 			Karma = -5000;
 
 			VirtualArmor = 36;
+			
+			Tamable = true;
+			ControlSlots = 2;
+			MinTameSkill = 80.1;
 
 			PackItem( new SpidersSilk( 8 ) );
 
@@ -71,6 +75,8 @@ namespace Server.Mobiles
 		public override Poison PoisonImmune{ get{ return Poison.Deadly; } }
 		public override Poison HitPoison{ get{ return Poison.Lethal; } }
 		public override int TreasureMapLevel{ get{ return 3; } }
+		public override FoodType FavoriteFood{ get{ return FoodType.Meat; } }
+		public override PackInstinct PackInstinct{ get{ return PackInstinct.Arachnid; } }
 
 		public DreadSpider( Serial serial ) : base( serial )
 		{

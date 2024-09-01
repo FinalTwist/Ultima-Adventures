@@ -1,11 +1,12 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
 	[Flipable]
-	public class MistressGloves : BaseArmor, IArcaneEquip
-	{
+	public class MistressGloves : BaseArmor, IArcaneEquip, ITailorRepairable
+    {
 		public override int ArtifactRarity{ get{ return 58; } }
 
 		public override int BasePhysicalResistance{ get{ return 12; } }

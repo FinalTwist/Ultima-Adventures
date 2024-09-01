@@ -10,6 +10,7 @@ using Server.Commands.Generic;
 using Server.Mobiles;
 using Server.Accounting;
 using Server.Regions;
+using Server.Engines.BulkOrders;
 
 namespace Server.Misc
 {
@@ -43,7 +44,7 @@ namespace Server.Misc
 
 				int gold = Utility.RandomMinMax( repMin, repMax );
 
-				gold = (int)(( gold * 2 ) * (MyServerSettings.GetGoldCutRate(from, null) * .01)); //FINAL change this for gold payout
+				gold = (int)(gold * (MyServerSettings.GetGoldCutRate(from, null) * .01)); //FINAL change this for gold payout
 
 				int fame = Utility.RandomMinMax( ((int)(gold/20)), ((int)(gold/20)+Utility.RandomMinMax( 0, 3 )) );
 					if ( fame < 5 ){ fame = 5; }
@@ -177,30 +178,63 @@ namespace Server.Misc
 			int tools = Convert.ToInt32( GetDataElement( client, 5 ) );
 			int resources = Convert.ToInt32( GetDataElement( client, 6 ) );
 			int fame = Convert.ToInt32( GetDataElement( client, 8 ) );
+			int gold = Convert.ToInt32( GetDataElement( client, 4 ) );
 
 			if ( difficulty >= Utility.RandomMinMax( 1, 110 ) )
 			{
 				from.PlaySound( 0x2E6 );
 				from.PlaySound( shoppe.ShelfSound );
 
-				int gold = Convert.ToInt32( GetDataElement( client, 4 ) );
+				shoppe.ShoppeReputation += fame;
+				if ( shoppe.ShoppeReputation > 10000 ){ shoppe.ShoppeReputation = 10000; }
 
-				shoppe.ShoppeReputation = shoppe.ShoppeReputation + fame;
-					if ( shoppe.ShoppeReputation > 10000 ){ shoppe.ShoppeReputation = 10000; }
+				var owner = (PlayerMobile)shoppe.ShoppeOwner;
+				int barter = (int)owner.Skills[SkillName.ItemID].Value;
+				if ( owner.NpcGuild == NpcGuild.MerchantsGuild ){ barter += 25; } // FOR GUILD MEMBERS
+				gold += (int)(gold * (barter / 100f));
 
-				shoppe.ShoppeGold = shoppe.ShoppeGold + gold;
-					if ( shoppe.ShoppeGold > 500000 ){ shoppe.ShoppeGold = 500000; }
+				shoppe.ShoppeGold += gold;
+				if ( shoppe.ShoppeGold > 100000 ){ shoppe.ShoppeGold = 100000; }
+
+				// Every 2k rep, give a 1% chance (up to 3%)
+				int rewardChance = Math.Min(shoppe.ShoppeReputation / 2000, 3);
+				if (Utility.Random( 100 ) < rewardChance)
+				{
+					Item item = null;
+                    if ( shoppe is MorticianShoppe ){ }
+					else if ( shoppe is HerbalistShoppe ){ }
+					else if ( shoppe is AlchemistShoppe ){ }
+					else if ( shoppe is BlacksmithShoppe ){ item = new LargeSmithBOD(true); }
+					else if ( shoppe is BowyerShoppe ){ item = new LargeFletcherBOD(true); }
+					else if ( shoppe is CarpentryShoppe ){ item = new LargeCarpenterBOD(true); }
+					else if ( shoppe is CartographyShoppe ){ }
+					else if ( shoppe is BakerShoppe ){ }
+					else if ( shoppe is LibrarianShoppe ){ }
+					else if ( shoppe is TailorShoppe ){ item = new LargeTailorBOD(true); }
+					else if ( shoppe is TinkerShoppe ){ }
+
+					if (item != null)
+					{
+						if (item is LargeBOD)
+							from.SendAsciiMessage("The guild acknowledges talent and presents you with a hefty task.");
+						else
+							from.SendAsciiMessage("Your hardwork pays off and the guild awards your talent.");
+
+                        from.AddToBackpack(item);
+						from.SendSound( 0x3D ); // Flute
+                    }
+                }
 			}
 			else
 			{
 				from.PlaySound( from.Female ? 812 : 1086 );
 				from.PlaySound( shoppe.ShelfSound );
-                int gold = Convert.ToInt32(GetDataElement(client, 4));
+                gold /= 2; // Lose half what the job was worth if you fail
 
                 shoppe.ShoppeReputation = shoppe.ShoppeReputation - fame;
-					if ( shoppe.ShoppeReputation < 0 ){ shoppe.ShoppeReputation = 0; }
-                shoppe.ShoppeGold = shoppe.ShoppeGold - gold; //Sygun - Compensation for failing the job
-                    if (shoppe.ShoppeGold < 0) { shoppe.ShoppeGold = 0; }
+				if ( shoppe.ShoppeReputation < 0 ){ shoppe.ShoppeReputation = 0; }
+                shoppe.ShoppeGold = shoppe.ShoppeGold - gold;
+				if (shoppe.ShoppeGold < 0) { shoppe.ShoppeGold = 0; }
             }
 
 			shoppe.ShoppeTools = shoppe.ShoppeTools - tools;

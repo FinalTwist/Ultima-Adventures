@@ -1,11 +1,12 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x13cc, 0x13d3 )]
-	public class LeatherChest : BaseArmor
-	{
+	public class LeatherChest : BaseArmor, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 7; } }
 		public override int BaseFireResistance{ get{ return 6; } }
 		public override int BaseColdResistance{ get{ return 5; } }

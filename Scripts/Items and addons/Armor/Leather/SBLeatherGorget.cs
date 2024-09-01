@@ -1,11 +1,12 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 using Server.Mobiles;
 
 namespace Server.Items
 {
-	public class SBLeatherGorget : BaseArmor
-	{
+	public class SBLeatherGorget : BaseArmor, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 13; } }
 		public override int BaseFireResistance{ get{ return 14; } }
 		public override int BaseColdResistance{ get{ return 13; } }

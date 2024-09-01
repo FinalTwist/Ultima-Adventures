@@ -1,10 +1,11 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public class PlateOfHonorHelm : BaseArmor
-	{
+	public class PlateOfHonorHelm : BaseArmor, IBlacksmithRepairable
+    {
 		public override int LabelNumber{ get{ return 1074303; } }
 		public override int BasePhysicalResistance{ get{ return 8; } }
 		public override int BaseFireResistance{ get{ return 5; } }

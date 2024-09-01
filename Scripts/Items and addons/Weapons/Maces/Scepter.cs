@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x26BC, 0x26C6 )]
-	public class Scepter : BaseBashing
-	{
+	public class Scepter : BaseBashing, IBlacksmithRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.CrushingBlow; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.MortalStrike; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.RidingAttack; } }

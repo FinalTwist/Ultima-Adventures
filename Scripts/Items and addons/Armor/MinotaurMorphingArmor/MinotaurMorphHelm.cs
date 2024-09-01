@@ -1,11 +1,12 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 using Server.Mobiles;
 
 namespace Server.Items
 {
-	public class MinotaurMorphHelm : BaseArmor
-	{
+	public class MinotaurMorphHelm : BaseArmor, ITailorRepairable
+    {
 		//public override int LabelNumber{ get{ return 1074303; } }
 		public override int BasePhysicalResistance{ get{ return 8; } }
 		public override int BaseFireResistance{ get{ return 5; } }

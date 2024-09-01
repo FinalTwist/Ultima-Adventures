@@ -1,10 +1,11 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
-	public class GiftHeavyPlateJingasa : BaseGiftArmor
-	{
+	public class GiftHeavyPlateJingasa : BaseGiftArmor, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 7; } }
 		public override int BaseFireResistance{ get{ return 2; } }
 		public override int BaseColdResistance{ get{ return 2; } }
@@ -21,7 +22,7 @@ namespace Server.Items
 
 		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Plate; } }
 
-		[Constructable]
+        [Constructable]
 		public GiftHeavyPlateJingasa() : base( 0x2777 )
 		{
 			Weight = 5.0;

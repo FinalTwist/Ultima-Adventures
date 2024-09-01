@@ -54,6 +54,10 @@ namespace Server.Mobiles
 			Karma = -3500;
 
 			VirtualArmor = 24;
+			
+			Tamable = true;
+			ControlSlots = 2;
+			MinTameSkill = 80;
 
 			PackItem( new SpidersSilk( 5 ) );
 
@@ -68,6 +72,7 @@ namespace Server.Mobiles
 		}
 
 		public override FoodType FavoriteFood{ get{ return FoodType.Meat; } }
+		public override PackInstinct PackInstinct{ get{ return PackInstinct.Arachnid; } }
 		public override Poison PoisonImmune{ get{ return Poison.Deadly; } }
 		public override Poison HitPoison{ get{ return Poison.Deadly; } }
 

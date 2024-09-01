@@ -6,10 +6,11 @@ using Server.ContextMenus;
 using System.Collections;
 using System.Collections.Generic;
 using Server.Gumps;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    public abstract class BaseLevelClothing : BaseClothing, ILevelable
+    public abstract class BaseLevelClothing : BaseClothing, ILevelable, ITailorRepairable
     {
         /* These private variables store the exp, level, and *
          * points for the item */

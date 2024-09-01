@@ -41,9 +41,17 @@ namespace Server.Items
 
 		public static ScrollofAlacrity CreateRandom()
 		{
-			SkillName skill = (SkillName)Utility.Random( SkillInfo.Table.Length );
+            SkillName skillName;
 
-			return new ScrollofAlacrity(skill);
+            while (true)
+            {
+                skillName = (SkillName)Utility.Random(SkillInfo.Table.Length);
+                if (skillName == SkillName.Spellweaving || skillName == SkillName.Mysticism || skillName == SkillName.Imbuing || skillName == SkillName.Throwing) continue;
+
+                break;
+            }
+
+            return new ScrollofAlacrity(skillName);
 		}
 
 		public ScrollofAlacrity() : this( SkillName.Alchemy )

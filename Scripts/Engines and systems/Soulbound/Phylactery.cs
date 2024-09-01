@@ -14,6 +14,15 @@ using System.ComponentModel;
 
 namespace Server.Items
 {
+	public static class EssenceMultipliers
+	{
+        public const double HitChance = 0.5; // 2 Essence = 1% HCI
+		public const double Hitpoints = 1.42;
+		public const double Mana = 1.42;
+		public const double Stamina = 1.11;
+		public const int Luck = 20;
+		public const int Resistances = 3;
+    }
 	public enum EssenceType : byte
 	{
 		Power = 0,
@@ -858,31 +867,31 @@ namespace Server.Items
 				if (fireEssence > FireEssenceMax) {
 					fireEssence = FireEssenceMax;
 				}
-				FireMod = new ResistanceMod( ResistanceType.Fire, fireEssence*3);
+				FireMod = new ResistanceMod( ResistanceType.Fire, fireEssence*EssenceMultipliers.Resistances);
 				player.AddResistanceMod( FireMod );
 				int scorpionEssence = this.ScorpionEssence + CalculatePhylacteryMods("ScorpionEssence");
 				if (scorpionEssence > ScorpionEssenceMax) {
 					scorpionEssence = ScorpionEssenceMax;
 				}
-				PoisonMod = new ResistanceMod( ResistanceType.Poison, scorpionEssence*3 );
+				PoisonMod = new ResistanceMod( ResistanceType.Poison, scorpionEssence*EssenceMultipliers.Resistances);
 				player.AddResistanceMod( PoisonMod );
 				int coldEssence = this.ColdEssence + CalculatePhylacteryMods("ColdEssence");
 				if (coldEssence > ColdEssenceMax) {
 					coldEssence = ColdEssenceMax;
 				}			
-				ColdMod = new ResistanceMod( ResistanceType.Cold, coldEssence*3);
+				ColdMod = new ResistanceMod( ResistanceType.Cold, coldEssence*EssenceMultipliers.Resistances);
 				player.AddResistanceMod( ColdMod );	
 				int energyEssence = this.EnergyEssence + CalculatePhylacteryMods("EnergyEssence");
 				if (energyEssence > EnergyEssenceMax) {
 					energyEssence = EnergyEssenceMax;
 				}			
-				EnergyMod = new ResistanceMod( ResistanceType.Energy, energyEssence*3);
+				EnergyMod = new ResistanceMod( ResistanceType.Energy, energyEssence*EssenceMultipliers.Resistances);
 				player.AddResistanceMod( EnergyMod );	
 				int earthEssence = this.EarthEssence + CalculatePhylacteryMods("EarthEssence");
 				if (earthEssence > EarthEssenceMax) {
 					earthEssence = EarthEssenceMax;
 				}	
-				PhysicalMod = new ResistanceMod( ResistanceType.Physical, earthEssence*3);
+				PhysicalMod = new ResistanceMod( ResistanceType.Physical, earthEssence*EssenceMultipliers.Resistances);
 				player.AddResistanceMod( PhysicalMod );
 				
 				int defendChance = this.BearEssence + CalculatePhylacteryMods("BearEssence");
@@ -890,7 +899,7 @@ namespace Server.Items
 					defendChance = MyServerSettings.DefendChanceCap();
 				}
 				Attributes.DefendChance = defendChance;
-				Attributes.BonusStam = (int)((this.BearEssence+CalculatePhylacteryMods("BearEssence"))*1.11); 
+				Attributes.BonusStam = (int)((this.BearEssence+CalculatePhylacteryMods("BearEssence"))*EssenceMultipliers.Stamina); 
 				
 				int spellDamage = (this.DemonicEssence + CalculatePhylacteryMods("DemonicEssence"));
 				if (spellDamage > MyServerSettings.SpellDamage()) {
@@ -922,19 +931,19 @@ namespace Server.Items
 				}
 				//Attributes.RegenHits = leechHits;  figure this out
 
-				Attributes.BonusHits = (int)((this.PlantEssence+CalculatePhylacteryMods("PlantEssence"))*1.42);
+				Attributes.BonusHits = (int)((this.PlantEssence+CalculatePhylacteryMods("PlantEssence"))*EssenceMultipliers.Hitpoints); 
 				int regenMana = (this.WaterEssence + CalculatePhylacteryMods("WaterEssence"));
 				if (regenMana > MyServerSettings.RegenManaCap()) {
 					regenMana = MyServerSettings.RegenManaCap();
 				}
 				Attributes.RegenMana = regenMana;
-				Attributes.BonusMana = (int)((this.WaterEssence+CalculatePhylacteryMods("WaterEssence"))*1.42);
+				Attributes.BonusMana = (int)((this.WaterEssence+CalculatePhylacteryMods("WaterEssence"))*EssenceMultipliers.Mana);
 				int reflectPhysical = (this.ThornEssence + CalculatePhylacteryMods("ThornEssence"));
 				if (reflectPhysical > MyServerSettings.ReflectDamageCap()) {
 					reflectPhysical = MyServerSettings.ReflectDamageCap();
 				}
 				Attributes.ReflectPhysical = reflectPhysical;
-				int attackChance = (this.EagleEssence/2 + CalculatePhylacteryMods("EagleEssence"));
+				int attackChance = ((int)(this.EagleEssence*EssenceMultipliers.HitChance) + CalculatePhylacteryMods("EagleEssence"));
 				if (attackChance > MyServerSettings.HitChanceCap()) {
 					attackChance = MyServerSettings.HitChanceCap();
 				}
@@ -982,7 +991,7 @@ namespace Server.Items
 					lowerRegCost = MyServerSettings.LowerReagentCostCap();
 				}
 				Attributes.LowerRegCost = lowerRegCost;
-				int luck = (this.LuckyEssence + CalculatePhylacteryMods("LuckyEssence")) *20;
+				int luck = (this.LuckyEssence + CalculatePhylacteryMods("LuckyEssence")) *EssenceMultipliers.Luck;
 				if (luck > MyServerSettings.LuckCap()) {
 					luck = MyServerSettings.LuckCap();
 				}
@@ -1034,19 +1043,19 @@ namespace Server.Items
 			}
 			
 			if ((EarthEssence + CalculatePhylacteryMods("EarthEssence")) > 0) {
-				list.Add( 1060448, (EarthEssence + CalculatePhylacteryMods("EarthEssence")*3).ToString()); // physical resist ~1_val~%
+				list.Add( 1060448, ((EarthEssence + CalculatePhylacteryMods("EarthEssence"))*EssenceMultipliers.Resistances).ToString()); // physical resist ~1_val~%
 			}
 			if ((FireEssence + CalculatePhylacteryMods("FireEssence")) > 0) {
-				list.Add( 1060447, (FireEssence + CalculatePhylacteryMods("FireEssence")*3).ToString()); // fire resist ~1_val~%
+				list.Add( 1060447, ((FireEssence + CalculatePhylacteryMods("FireEssence"))*EssenceMultipliers.Resistances).ToString()); // fire resist ~1_val~%
 			}
 			if ((ColdEssence + CalculatePhylacteryMods("ColdEssence")) > 0) {
-				list.Add( 1060445, (ColdEssence + CalculatePhylacteryMods("ColdEssence")*3).ToString()); // cold resist ~1_val~%
+				list.Add( 1060445, ((ColdEssence + CalculatePhylacteryMods("ColdEssence"))*EssenceMultipliers.Resistances).ToString()); // cold resist ~1_val~%
 			}
 			if ((ScorpionEssence + CalculatePhylacteryMods("ScorpionEssence")) > 0) {
-				list.Add( 1060449, (ScorpionEssence + CalculatePhylacteryMods("ScorpionEssence")*3).ToString()); // poison resist ~1_val~%
+				list.Add( 1060449, ((ScorpionEssence + CalculatePhylacteryMods("ScorpionEssence"))*EssenceMultipliers.Resistances).ToString()); // poison resist ~1_val~%
 			}
 			if ((EnergyEssence + CalculatePhylacteryMods("EnergyEssence")) > 0) {
-				list.Add( 1060446, (EnergyEssence + CalculatePhylacteryMods("EnergyEssence")*3).ToString()); // energy resist ~1_val~%
+				list.Add( 1060446, ((EnergyEssence + CalculatePhylacteryMods("EnergyEssence"))*EssenceMultipliers.Resistances).ToString()); // energy resist ~1_val~%
 			}
 			if ((TitanEssence + CalculatePhylacteryMods("TitanEssence")) > 0) {
 				list.Add( 1060401, Attributes.WeaponDamage.ToString()); // damage increase ~1_val~%

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Concurrent;
 using Server.Items;
 using Server.Network;
 using Server.ContextMenus;
@@ -101,8 +102,12 @@ namespace Server.Mobiles
 
 		private ArrayList m_ArmorBuyInfo = new ArrayList();
 		private ArrayList m_ArmorSellInfo = new ArrayList();
+		private ConcurrentDictionary<Type, int> m_PlayerSoldItems;
+		private readonly object m_PlayerSoldItemLock = new object();
+        const int MAX_BUY_AMOUNT = 100;
+		const int MAX_STACKABLE_BUY_AMOUNT = 300;
 
-		private DateTime m_LastRestock;
+        private DateTime m_LastRestock;
 
 		private bool m_pricesadjusted;
 
@@ -245,11 +250,11 @@ namespace Server.Mobiles
 
 					if ( ( ( Core.SE ) ? totalMinutes == 0 : totalHours == 0 ) )
 					{
-						m_From.SendLocalizedMessage( 1049038 ); // You can get an order now.
-
 						if ( Core.AOS )
 						{
 							Item bulkOrder = m_Vendor.CreateBulkOrder( m_From, true );
+							if (bulkOrder != null)
+								m_From.SendLocalizedMessage( 1049038 ); // You can get an order now.
 
 							if ( bulkOrder is LargeBOD )
 								m_From.SendGump( new LargeBODAcceptGump( m_From, (LargeBOD)bulkOrder ) );
@@ -453,8 +458,15 @@ namespace Server.Mobiles
 
 			m_ArmorBuyInfo.Clear();
 			m_ArmorSellInfo.Clear();
+			lock ( m_PlayerSoldItemLock )
+			{
+				// Clear() is not thread safe.
+				// Only recreate it if it was previously created
+				if ( m_PlayerSoldItems != null )
+					m_PlayerSoldItems = new ConcurrentDictionary<Type, int>();
+			}
 
-			for ( int i = 0; i < SBInfos.Count; i++ )
+            for ( int i = 0; i < SBInfos.Count; i++ )
 			{
 				SBInfo sbInfo = (SBInfo)SBInfos[i];
 				m_ArmorBuyInfo.AddRange( sbInfo.BuyInfo ); //+++ Can change price here
@@ -1203,7 +1215,7 @@ namespace Server.Mobiles
 			{
 				this.Say( "Apologies but I don't sell anything M'lord." );
 				return;
-			}				
+			}
 
 			Container pack = from.Backpack;
 
@@ -1211,16 +1223,20 @@ namespace Server.Mobiles
 			{
 				IShopSellInfo[] info = GetSellInfo();
 
-				//Hashtable table = new Hashtable();
-				Dictionary<Item, SellItemState> table = new Dictionary<Item, SellItemState>();
+                //Hashtable table = new Hashtable();
+                Dictionary<Item, SellItemState> table = new Dictionary<Item, SellItemState>();
 
+				int soldAmount;
 				foreach ( IShopSellInfo ssi in info )
 				{
 					Item[] items = pack.FindItemsByType( ssi.Types );
 
 					foreach ( Item item in items )
-					{
-						LockableContainer parentcon = item.ParentEntity as LockableContainer;
+                    {
+						int maxBuyAmount = item.Stackable ? MAX_STACKABLE_BUY_AMOUNT : MAX_BUY_AMOUNT;
+                        if (m_PlayerSoldItems != null && m_PlayerSoldItems.TryGetValue(item.GetType(), out soldAmount) && maxBuyAmount <= soldAmount) continue;
+
+                        LockableContainer parentcon = item.ParentEntity as LockableContainer;
 
 						if ( item is Container && ( (Container)item ).Items.Count != 0 )
 							continue;
@@ -1911,24 +1927,45 @@ namespace Server.Mobiles
 					}
 					
 					int creds = 0;
-
-					if ((dropped is LargeSmithBOD || dropped is SmallSmithBOD) && from is PlayerMobile)
+					var player = from as PlayerMobile;
+					if (player != null)
 					{
-						if (dropped is LargeSmithBOD)
-							creds = SmithRewardCalculator.Instance.ComputePoints( (LargeBOD)dropped );
-						else 
-							creds = SmithRewardCalculator.Instance.ComputePoints( (SmallBOD)dropped )/3;
+						if (dropped is LargeSmithBOD || dropped is SmallSmithBOD)
+						{
+							if (dropped is LargeSmithBOD)
+								creds = SmithRewardCalculator.Instance.ComputePoints( (LargeBOD)dropped );
+							else 
+								creds = SmithRewardCalculator.Instance.ComputePoints( (SmallBOD)dropped );
 
-						((PlayerMobile)from).BlacksmithBOD += creds; 
-					}
-					else if ((dropped is LargeTailorBOD || dropped is SmallTailorBOD) && from is PlayerMobile)
-					{
-						if (dropped is LargeTailorBOD)
-							creds = TailorRewardCalculator.Instance.ComputePoints( (LargeBOD)dropped );		
-						else
-							creds = TailorRewardCalculator.Instance.ComputePoints( (SmallBOD)dropped ) /3;
-							
-						((PlayerMobile)from).TailorBOD += creds; 
+							player.BlacksmithBOD += creds; 
+						}
+						else if (dropped is LargeTailorBOD || dropped is SmallTailorBOD)
+						{
+							if (dropped is LargeTailorBOD)
+								creds = TailorRewardCalculator.Instance.ComputePoints( (LargeBOD)dropped );		
+							else
+								creds = TailorRewardCalculator.Instance.ComputePoints( (SmallBOD)dropped );
+								
+							player.TailorBOD += creds; 
+						}
+						else if (dropped is LargeCarpenterBOD || dropped is SmallCarpenterBOD)
+						{
+							if (dropped is LargeCarpenterBOD)
+								creds = CarpenterRewardCalculator.Instance.ComputePoints( (LargeBOD)dropped );		
+							else
+								creds = CarpenterRewardCalculator.Instance.ComputePoints( (SmallBOD)dropped );
+								
+							player.CarpenterBOD += creds; 
+						}
+						else if (dropped is LargeFletcherBOD || dropped is SmallFletcherBOD)
+						{
+							if (dropped is LargeFletcherBOD)
+								creds = FletcherRewardCalculator.Instance.ComputePoints( (LargeBOD)dropped );		
+							else
+								creds = FletcherRewardCalculator.Instance.ComputePoints( (SmallBOD)dropped );
+								
+							player.FletcherBOD += creds; 
+						}
 					}
 					
 					from.SendSound( 0x3D );
@@ -1937,6 +1974,48 @@ namespace Server.Mobiles
 					SayTo( from, "Thank you!  You've earned " + (creds) + " credits with the Guild." );
 					SayTo( from, "You can always ask me about your credits total or to redeem them." );
 
+					if (
+						( dropped is SmallBOD && ( (SmallBOD)dropped ).Material == BulkMaterialType.None ) ||
+						( dropped is LargeBOD && ( (LargeBOD)dropped ).Material == BulkMaterialType.None ))
+					{
+						// Basic material BODs will give gold
+						int gold = 0;
+
+						if ((dropped is LargeSmithBOD || dropped is SmallSmithBOD))
+						{
+							if (dropped is LargeSmithBOD)
+								gold = SmithRewardCalculator.Instance.ComputeGold( (LargeBOD)dropped );
+							else 
+								gold = SmithRewardCalculator.Instance.ComputeGold( (SmallBOD)dropped );
+						}
+						else if ((dropped is LargeTailorBOD || dropped is SmallTailorBOD))
+						{
+							if (dropped is LargeTailorBOD)
+								gold = TailorRewardCalculator.Instance.ComputeGold( (LargeBOD)dropped );		
+							else
+								gold = TailorRewardCalculator.Instance.ComputeGold( (SmallBOD)dropped );
+						}
+						else if (dropped is LargeCarpenterBOD || dropped is SmallCarpenterBOD)
+						{
+							if (dropped is LargeCarpenterBOD)
+								gold = CarpenterRewardCalculator.Instance.ComputeGold( (LargeBOD)dropped );		
+							else
+								gold = CarpenterRewardCalculator.Instance.ComputeGold( (SmallBOD)dropped );
+						}
+						else if (dropped is LargeFletcherBOD || dropped is SmallFletcherBOD)
+						{
+							if (dropped is LargeFletcherBOD)
+								gold = FletcherRewardCalculator.Instance.ComputeGold( (LargeBOD)dropped );		
+							else
+								gold = FletcherRewardCalculator.Instance.ComputeGold( (SmallBOD)dropped );
+						}
+
+                        if (gold > 2500)
+                            Banker.Deposit(from, gold);
+                        else if (gold > 0)
+                            from.AddToBackpack(new Gold(gold));
+                    }
+            
 					OnSuccessfulBulkOrderReceive( from );
 
 					((PlayerMobile)from).NextBODTurnInTime = DateTime.Now + TimeSpan.FromSeconds( 10.0 );
@@ -2017,36 +2096,35 @@ namespace Server.Mobiles
 				credittype = 2;
 			
 			int credits = 0;
-			if (amount >= 1)
-   			{
-	  			if (credittype == 1)
-      				{
-	  				if (amount > ((PlayerMobile)from).BlacksmithBOD)
-       						return;
-	     
-	  				credits = amount;
-      					((PlayerMobile)from).BlacksmithBOD -= credits;
-	   			}
-	   			else if (credittype == 2)
-       				{
-	   				if (amount > ((PlayerMobile)from).TailorBOD)
-       						return;
+            if (amount >= 1)
+            {
+                if (credittype == 1)
+                {
+                    if (amount > ((PlayerMobile)from).BlacksmithBOD)
+                        return;
 
-      					credits = amount;
-       					((PlayerMobile)from).TailorBOD -= credits;
-	    			}
-	    		}
-      
-			else if (credittype == 1)
-   			{
-				credits = ((PlayerMobile)from).BlacksmithBOD;
-    				((PlayerMobile)from).BlacksmithBOD -= credits;
-			}
-			else //tailor
-   			{
-				credits = ((PlayerMobile)from).TailorBOD;
-    				((PlayerMobile)from).TailorBOD -= credits;
-    			}
+                    credits = amount;
+                    ((PlayerMobile)from).BlacksmithBOD -= credits;
+                }
+                else if (credittype == 2)
+                {
+                    if (amount > ((PlayerMobile)from).TailorBOD)
+                        return;
+
+                    credits = amount;
+                    ((PlayerMobile)from).TailorBOD -= credits;
+                }
+            }
+            else if (credittype == 1)
+            {
+                credits = ((PlayerMobile)from).BlacksmithBOD;
+                ((PlayerMobile)from).BlacksmithBOD -= credits;
+            }
+            else //tailor
+            {
+                credits = ((PlayerMobile)from).TailorBOD;
+                ((PlayerMobile)from).TailorBOD -= credits;
+            }
 
 			Titles.AwardFame( from, (credits/50), true );
 			
@@ -2217,11 +2295,11 @@ namespace Server.Mobiles
 					double odds = Utility.RandomDouble();
 					if (odds >= 0.97)
 						reward = new PowerScroll( SkillName.Blacksmith, 100 + 25 );
-					else if (odds >= 90)
+					else if (odds >= 0.90)
 						reward = new PowerScroll( SkillName.Blacksmith, 100 + 20 );
-					else if (odds >= 75)
+					else if (odds >= 0.75)
 						reward = new PowerScroll( SkillName.Blacksmith, 100 + 15 );
-					else if (odds >= 20)
+					else if (odds >= 0.20)
 						reward = new PowerScroll( SkillName.Blacksmith, 100 + 10 );
 					else 
 						reward = new PowerScroll( SkillName.Blacksmith, 100 + 5 );
@@ -2381,11 +2459,11 @@ namespace Server.Mobiles
 					double odds = Utility.RandomDouble();
 					if (odds >= 0.97)
 						reward = new PowerScroll( SkillName.Tailoring, 100 + 25 );
-					else if (odds >= 90)
+					else if (odds >= 0.90)
 						reward = new PowerScroll( SkillName.Tailoring, 100 + 20 );
-					else if (odds >= 75)
+					else if (odds >= 0.75)
 						reward = new PowerScroll( SkillName.Tailoring, 100 + 15 );
-					else if (odds >= 20)
+					else if (odds >= 0.20)
 						reward = new PowerScroll( SkillName.Tailoring, 100 + 10 );
 					else 
 						reward = new PowerScroll( SkillName.Tailoring, 100 + 5 );
@@ -2758,6 +2836,12 @@ namespace Server.Mobiles
 				return false;
 			}
 
+			lock ( m_PlayerSoldItemLock ) // Create it if it hasn't been created
+			{
+				if ( m_PlayerSoldItems == null )
+					m_PlayerSoldItems = new ConcurrentDictionary<Type, int>();
+			}
+
 			seller.PlaySound( 0x32 );
 
 			IShopSellInfo[] info = GetSellInfo();
@@ -2766,7 +2850,7 @@ namespace Server.Mobiles
 			int Sold = 0;
 			Container cont;
 
-			foreach ( SellItemResponse resp in list )
+            foreach ( SellItemResponse resp in list )
 			{
 				if ( resp.Item.RootParent != seller || resp.Amount <= 0 || !resp.Item.IsStandardLoot() || !resp.Item.Movable || ( resp.Item is Container && ( (Container)resp.Item ).Items.Count != 0 ) )
 					continue;
@@ -2812,6 +2896,15 @@ namespace Server.Mobiles
 
 						if ( amount > resp.Item.Amount )
 							amount = resp.Item.Amount;
+							
+						Type itemType = resp.Item.GetType();
+						int previouslyBoughtAmount;
+						m_PlayerSoldItems.TryGetValue(itemType, out previouslyBoughtAmount);
+
+                        int maxBuyAmount = resp.Item.Stackable ? MAX_STACKABLE_BUY_AMOUNT : MAX_BUY_AMOUNT;
+                        int buyAmount = maxBuyAmount - previouslyBoughtAmount;
+						if ( amount > buyAmount )
+							amount = buyAmount;
 
 						if ( ssi.IsResellable( resp.Item ) )
 						{
@@ -2864,6 +2957,9 @@ namespace Server.Mobiles
 							else
 								resp.Item.Delete();
 						}
+
+						// Update the amount the vendor has bought
+						m_PlayerSoldItems.AddOrUpdate(itemType, type => amount, (type, value) => value + amount);
 
 						int barter = (int)seller.Skills[SkillName.ItemID].Value;
 						if ( barter < 100 && this.NpcGuild != NpcGuild.None && this.NpcGuild == pm.NpcGuild ){ barter = 100; GuildMember = 1; } // FOR GUILD MEMBERS
@@ -2936,7 +3032,17 @@ namespace Server.Mobiles
 			string sTitle = GetPlayerInfo.GetNPCGuild( this );
 			if ( sTitle != "" ){ list.Add( Utility.FixHtml( sTitle ) ); }
 
-			if (this is Blacksmith || this is BlacksmithGuildmaster || this is Tailor || this is TailorGuildmaster)
+			if (
+				this is Blacksmith || 
+				this is BlacksmithGuildmaster || 
+				this is Tailor ||
+				this is TailorGuildmaster ||
+				this is Carpenter ||
+				this is CarpenterGuildmaster ||
+				this is Bowyer ||
+				this is ArcherGuildmaster ||
+				this is RangerGuildmaster
+				)
 			{
 				list.Add("Bulk orders give credits, say 'credits' to see how many you have.");
 				list.Add("To redeem your credits, say 'claim'.");

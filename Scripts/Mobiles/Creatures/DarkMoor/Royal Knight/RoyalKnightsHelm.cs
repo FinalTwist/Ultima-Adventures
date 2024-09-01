@@ -1,10 +1,11 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
-	public class Royalknightshelm : BaseArmor
-	{
+	public class Royalknightshelm : BaseArmor, IBlacksmithRepairable
+    {
                 public override int ArtifactRarity{ get{ return 20; } } 
 
 		public override int BasePhysicalResistance{ get{ return 15; } }

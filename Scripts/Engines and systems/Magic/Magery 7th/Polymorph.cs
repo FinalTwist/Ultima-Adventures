@@ -33,8 +33,11 @@ namespace Server.Spells.Seventh
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if( TransformationSpellHelper.UnderTransformation( Caster ) )
+        {
+            if (!base.CheckCast(caster))
+                return false;
+
+            if ( TransformationSpellHelper.UnderTransformation( Caster ) )
 			{
 				Caster.SendLocalizedMessage( 1061633 ); // You cannot polymorph while in that form.
 				return false;

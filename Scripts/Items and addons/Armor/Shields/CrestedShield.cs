@@ -1,11 +1,12 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x2FC9, 0x317F )]
-	public class CrestedShield : BaseShield
-	{
+	public class CrestedShield : BaseShield, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 0; } }
 		public override int BaseFireResistance{ get{ return 0; } }
 		public override int BaseColdResistance{ get{ return 1; } }

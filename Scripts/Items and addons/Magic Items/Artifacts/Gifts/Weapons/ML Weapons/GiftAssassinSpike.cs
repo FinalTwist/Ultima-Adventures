@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x2D21, 0x2D2D )]
-	public class GiftAssassinSpike : BaseGiftKnife
-	{
+	public class GiftAssassinSpike : BaseGiftKnife, IBlacksmithRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.InfectiousStrike; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.ShadowStrike; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.LightningStriker; } }

@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x13b4, 0x13b3 )]
-    public class GiftClub : BaseGiftBashing
-	{
+    public class GiftClub : BaseGiftBashing, ICarpentryRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.ShadowStrike; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.Dismount; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.StunningStrike; } }

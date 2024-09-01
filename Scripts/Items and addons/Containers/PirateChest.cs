@@ -42,7 +42,7 @@ namespace Server.Items
 
 				if ( GetPlayerInfo.LuckyPlayer( from.Luck, from ) )
 				{
-					FillMeUpLevel = FillMeUpLevel + Utility.RandomMinMax( 1, 2 );
+					FillMeUpLevel = FillMeUpLevel + Utility.RandomMinMax( 1, 3 );
 				}
 
 				ContainerFunctions.FillTheContainer( FillMeUpLevel, this, from );

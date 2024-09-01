@@ -77,9 +77,14 @@ namespace Server.Misc
 							IMount mount = m.Mount;
 							if ( mount != null )
 							{
+								Server.Mobiles.EtherealMount.EthyDismount( m, true );
 								mount.Rider = null;
-								BaseCreature horse = (BaseCreature)mount;
-								horse.Delete();
+								
+								BaseCreature horse = mount as BaseCreature;
+								if (horse != null)
+								{
+									horse.Delete();
+								}
 							}
 							bc.ActiveSpeed = 0.2;
 							bc.PassiveSpeed = 0.4;

@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x27A7, 0x27F2 )]
-    public class GiftLajatang : BaseGiftKnife
-	{
+    public class GiftLajatang : BaseGiftKnife, IBlacksmithRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.DefenseMastery; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.FrenziedWhirlwind; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.DevastatingBlow; } }

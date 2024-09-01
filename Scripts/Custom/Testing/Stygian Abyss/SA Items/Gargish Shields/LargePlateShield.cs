@@ -1,12 +1,13 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	// Based off a HeaterShield
 	[FlipableAttribute( 0x4204, 0x4208 )]
-	public class LargePlateShield : BaseShield
-	{
+	public class LargePlateShield : BaseShield, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 0; } }
 		public override int BaseFireResistance{ get{ return 1; } }
 		public override int BaseColdResistance{ get{ return 0; } }

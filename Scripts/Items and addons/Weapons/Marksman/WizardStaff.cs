@@ -8,6 +8,7 @@ using Server.Misc;
 using Server.Network;
 using Server.Spells;
 using Server.Mobiles;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
@@ -191,8 +192,8 @@ namespace Server.Items
 		}
 	}
 
-	public abstract class BaseWizardStaff : BaseMeleeWeapon
-	{
+	public abstract class BaseWizardStaff : BaseMeleeWeapon, ICarpentryRepairable
+    {
 		public int damageType;
 		[CommandProperty(AccessLevel.Owner)]
 		public int damage_Type { get { return damageType; } set { damageType = value; InvalidateProperties(); } }

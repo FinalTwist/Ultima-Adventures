@@ -94,7 +94,7 @@ namespace Server
 
 			List<Mobile> targets = new List<Mobile>();
 
-			foreach ( Mobile m in Map.AllMaps[map.MapID].GetMobilesInRange( location, range ) )
+            foreach ( Mobile m in map.GetMobilesInRange( location, range ) )
 			{
 				if ( CanTarget( from, m, true, false, allownull ) )
 				{

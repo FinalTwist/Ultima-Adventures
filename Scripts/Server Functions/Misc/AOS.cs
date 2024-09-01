@@ -10,6 +10,7 @@ using Server.Spells;
 using Server.Spells.Fifth;
 using Server.Spells.Seventh;
 using Server.Spells.Ninjitsu;
+using Server.Custom;
 
 namespace Server
 {
@@ -105,11 +106,11 @@ namespace Server
 
 			int totalDamage = damage;
 
-			if (!magic && !nuking && from is PlayerMobile && ((PlayerMobile)from).Troubadour() && SkillHandlers.Discordance.IsDiscorded(m) )
+            if (!magic && !nuking && from is PlayerMobile && ((PlayerMobile)from).Troubadour() && SkillHandlers.Discordance.IsDiscorded(m) )
 			{	
 				totalDamage = (int)((double)damage * (1+ (from.Skills[SkillName.Wrestling].Value / 120) + (from.Dex / 300) ) );
 			}
-			else if (magic && from is PlayerMobile && ((PlayerMobile)from).Alchemist() ) //alchemists do less magic damage
+			else if (magic && from is PlayerMobile && ((PlayerMobile)from).Alchemist() ) // Alchemists shouldn't do any Magic damage ... safeguard I guess
 			{
 				totalDamage = (int)((double)damage * 0.10);
 			}
@@ -139,21 +140,6 @@ namespace Server
 				
 				totalDamage = damage;
 			}
-
-            //Add points to PhilosophersStone 
-
-
-            else if (from is PlayerMobile && ((PlayerMobile)from).Alchemist())
-            {
-
-               if (Utility.Random(2) == 1)
-               {
-                    PhilosophersStone trinket = null;
-                    trinket = from.FindItemOnLayer(Layer.Talisman) as PhilosophersStone;
-                    trinket.ApplyGain();
-                }
-            }
-
             else if (!ignoreArmor)
             {
                 // Armor Ignore on OSI ignores all defenses, not just physical.
@@ -162,6 +148,15 @@ namespace Server
                 int resCold = m.ColdResistance;
                 int resPois = m.PoisonResistance;
                 int resNrgy = m.EnergyResistance;
+
+                if (potions && !(m is PlayerMobile))
+                {
+                    resPhys /= 2;
+                    resFire /= 2;
+                    resCold /= 2;
+                    resPois /= 2;
+                    resNrgy /= 2;
+                }
 
                 totalDamage = damage * phys * (100 - resPhys);
                 totalDamage += damage * fire * (100 - resFire);
@@ -229,10 +224,7 @@ namespace Server
                     totalDamage += totalDamage * quiver.DamageIncrease / 100;
             }
 
-            if (potions && m is PlayerMobile && ((PlayerMobile)m).Alchemist())
-				totalDamage = (int)((double)totalDamage / (8 * ((PlayerMobile)m).AlchemistBonus()));
-
-			if ( from is PlayerMobile && ((PlayerMobile)from).Avatar ) // new effect - balance affects players damage
+            if ( from is PlayerMobile && ((PlayerMobile)from).Avatar ) // new effect - balance affects players damage
 			{
 				double bal = 0;
 				int adjust = 0;
@@ -323,10 +315,21 @@ namespace Server
 				}
 			}	
 
+            // Add points to PhilosophersStone 
+            if (from is PlayerMobile && ((PlayerMobile)from).MadChemist() && Utility.RandomBool())
+            {
+				PhilosophersStone trinket = (PhilosophersStone)from.FindItemOnLayer(Layer.Talisman);
+				trinket.ApplyGain();
+            }
+
 			if (m is PlayerMobile && (AdventuresFunctions.IsPuritain((object)m)))
 				totalDamage *= (int)((double)totalDamage * 0.2);		
 
+            if (Feint.Registry.ContainsKey(m) && Feint.Registry[m].Enemy == from)
+                totalDamage -= (int)((double)totalDamage * ((double)Feint.Registry[m].DamageReduction / 100));
+
 			m.Damage( totalDamage, from );
+
 			return totalDamage;
 		}
 
@@ -415,8 +418,9 @@ namespace Server
 			for( int i = 0; i < items.Count; ++i )
 			{
 				Item obj = items[i];
+				if (obj is IDisableableItem && ((IDisableableItem)obj).IsDisabled) continue;
 
-				if( obj is BaseWeapon )
+                if( obj is BaseWeapon )
 				{
 					AosAttributes attrs = ((BaseWeapon)obj).Attributes;
 

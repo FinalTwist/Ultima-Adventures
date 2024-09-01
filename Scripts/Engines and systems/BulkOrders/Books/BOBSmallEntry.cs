@@ -31,6 +31,10 @@ namespace Server.Engines.BulkOrders
 				bod = new SmallSmithBOD( m_AmountCur, m_AmountMax, m_ItemType, m_Number, m_Graphic, m_RequireExceptional, m_Material );
 			else if ( m_DeedType == BODType.Tailor )
 				bod = new SmallTailorBOD( m_AmountCur, m_AmountMax, m_ItemType, m_Number, m_Graphic, m_RequireExceptional, m_Material );
+			else if ( m_DeedType == BODType.Carpenter )
+				bod = new SmallCarpenterBOD( m_AmountCur, m_AmountMax, m_ItemType, m_Number, m_Graphic, m_RequireExceptional, m_Material );
+			else if ( m_DeedType == BODType.Fletcher )
+				bod = new SmallFletcherBOD( m_AmountCur, m_AmountMax, m_ItemType, m_Number, m_Graphic, m_RequireExceptional, m_Material );
 
 			return bod;
 		}
@@ -43,9 +47,13 @@ namespace Server.Engines.BulkOrders
 			if ( bod is SmallTailorBOD )
 				m_DeedType = BODType.Tailor;
 			else if ( bod is SmallSmithBOD )
-				m_DeedType = BODType.Smith;
+                m_DeedType = BODType.Smith;
+            else if ( bod is SmallCarpenterBOD )
+                m_DeedType = BODType.Carpenter;
+            else if ( bod is SmallFletcherBOD )
+                m_DeedType = BODType.Fletcher;
 
-			m_Material = bod.Material;
+            m_Material = bod.Material;
 			m_AmountCur = bod.AmountCur;
 			m_AmountMax = bod.AmountMax;
 			m_Number = bod.Number;
@@ -55,35 +63,60 @@ namespace Server.Engines.BulkOrders
 		public BOBSmallEntry( GenericReader reader )
 		{
 			int version = reader.ReadEncodedInt();
+            string type = reader.ReadString();
 
-			switch ( version )
-			{
-				case 0:
-				{
-					string type = reader.ReadString();
+            if (type != null)
+                m_ItemType = ScriptCompiler.FindTypeByFullName(type);
 
-					if ( type != null )
-						m_ItemType = ScriptCompiler.FindTypeByFullName( type );
+            m_RequireExceptional = reader.ReadBool();
 
-					m_RequireExceptional = reader.ReadBool();
+            m_DeedType = (BODType)reader.ReadEncodedInt();
 
-					m_DeedType = (BODType)reader.ReadEncodedInt();
+            m_Material = (BulkMaterialType)reader.ReadEncodedInt();
+            m_AmountCur = reader.ReadEncodedInt();
+            m_AmountMax = reader.ReadEncodedInt();
+            m_Number = reader.ReadEncodedInt();
+            m_Graphic = reader.ReadEncodedInt();
+            m_Price = reader.ReadEncodedInt();
 
-					m_Material = (BulkMaterialType)reader.ReadEncodedInt();
-					m_AmountCur = reader.ReadEncodedInt();
-					m_AmountMax = reader.ReadEncodedInt();
-					m_Number = reader.ReadEncodedInt();
-					m_Graphic = reader.ReadEncodedInt();
-					m_Price = reader.ReadEncodedInt();
-
+            switch (version)
+            {
+                case 2:
 					break;
-				}
-			}
-		}
+
+                case 1:
+					{
+                        if (m_DeedType == BODType.Tailor && (int)m_Material == 7)
+                        {
+                            m_Material -= 7;
+                        }
+                        break;
+                    }
+
+                case 0:
+                    {
+                        switch (m_DeedType)
+                        {
+                            case BODType.Tailor:
+                                if (m_Material > 0)
+                                    m_Material += 7; // Number of Metals added ahead of it in the Enum
+                                break;
+
+                            case BODType.Carpenter:
+                            case BODType.Fletcher:
+                                m_Material += 7; // Number of Metals added ahead of it in the Enum
+                                m_Material += 8; // Number of Leathers added ahead of it in the Enum
+                                break;
+                        }
+
+                        break;
+                    }
+            }
+        }
 
 		public void Serialize( GenericWriter writer )
 		{
-			writer.WriteEncodedInt( 0 ); // version
+			writer.WriteEncodedInt( 2 ); // version
 
 			writer.Write( m_ItemType == null ? null : m_ItemType.FullName );
 

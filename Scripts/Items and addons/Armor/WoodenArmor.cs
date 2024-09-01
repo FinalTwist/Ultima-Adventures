@@ -3,10 +3,12 @@ using System;
 using Server;
 using Server.Misc;
 using Server.Items;
+using Server.Engines.Craft;
+
 namespace Server.Items
 {
-	public class WoodenPlateLegs : BaseArmor ///////////////////////////////////////////////////////
-	{
+	public class WoodenPlateLegs : BaseArmor, ICarpentryRepairable ///////////////////////////////////////////////////////
+    {
 		public override int BasePhysicalResistance{ get{ return 10; } }
 		public override int BaseFireResistance{ get{ return 1; } }
 		public override int BaseColdResistance{ get{ return 6; } }
@@ -52,8 +54,8 @@ namespace Server.Items
 			ItemID = 0x1965;
 		}
 	}
-	public class WoodenPlateGloves : BaseArmor ///////////////////////////////////////////////////
-	{
+	public class WoodenPlateGloves : BaseArmor, ICarpentryRepairable ///////////////////////////////////////////////////////
+    {
 		public override int BasePhysicalResistance{ get{ return 7; } }
 		public override int BaseFireResistance{ get{ return 1; } }
 		public override int BaseColdResistance{ get{ return 4; } }
@@ -99,8 +101,8 @@ namespace Server.Items
 			ItemID = 0x1968;
 		}
 	}
-	public class WoodenPlateGorget : BaseArmor ///////////////////////////////////////////////////
-	{
+	public class WoodenPlateGorget : BaseArmor, ICarpentryRepairable ///////////////////////////////////////////////////////
+    {
 		public override int BasePhysicalResistance{ get{ return 5; } }
 		public override int BaseFireResistance{ get{ return 1; } }
 		public override int BaseColdResistance{ get{ return 3; } }
@@ -146,8 +148,8 @@ namespace Server.Items
 			ItemID = 0x1967;
 		}
 	}
-	public class WoodenPlateArms : BaseArmor ///////////////////////////////////////////////////////
-	{
+	public class WoodenPlateArms : BaseArmor, ICarpentryRepairable ///////////////////////////////////////////////////////
+    {
 		public override int BasePhysicalResistance{ get{ return 11; } }
 		public override int BaseFireResistance{ get{ return 1; } }
 		public override int BaseColdResistance{ get{ return 6; } }
@@ -193,8 +195,8 @@ namespace Server.Items
 			ItemID = 0x1964;
 		}
 	}
-	public class WoodenPlateChest : BaseArmor /////////////////////////////////////////////////////
-	{
+	public class WoodenPlateChest : BaseArmor, ICarpentryRepairable /////////////////////////////////////////////////////
+    {
 		public override int BasePhysicalResistance{ get{ return 14; } }
 		public override int BaseFireResistance{ get{ return 3; } }
 		public override int BaseColdResistance{ get{ return 7; } }
@@ -240,8 +242,8 @@ namespace Server.Items
 			ItemID = 0x1969;
 		}
 	}
-	public class WoodenPlateHelm : BaseArmor ///////////////////////////////////////////////////////
-	{
+	public class WoodenPlateHelm : BaseArmor, ICarpentryRepairable ///////////////////////////////////////////////////////
+    {
 		public override int BasePhysicalResistance{ get{ return 11; } }
 		public override int BaseFireResistance{ get{ return 1; } }
 		public override int BaseColdResistance{ get{ return 5; } }

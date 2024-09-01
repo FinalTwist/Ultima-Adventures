@@ -1,10 +1,11 @@
+using Server.Engines.Craft;
 using System;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x170d, 0x170e )]
-	public class LeatherSandals : BaseArmor
-	{
+	public class LeatherSandals : BaseArmor, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 2; } }
 		public override int BaseFireResistance{ get{ return 3; } }
 		public override int BaseColdResistance{ get{ return 4; } }
@@ -51,8 +52,8 @@ namespace Server.Items
 	}
 
 	[FlipableAttribute( 0x170f, 0x1710 )]
-	public class LeatherShoes : BaseArmor
-	{
+	public class LeatherShoes : BaseArmor, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 2; } }
 		public override int BaseFireResistance{ get{ return 2; } }
 		public override int BaseColdResistance{ get{ return 3; } }
@@ -99,8 +100,8 @@ namespace Server.Items
 	}
 
 	[FlipableAttribute( 0x170b, 0x170c )]
-	public class LeatherBoots : BaseArmor
-	{
+	public class LeatherBoots : BaseArmor, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 3; } }
 		public override int BaseFireResistance{ get{ return 3; } }
 		public override int BaseColdResistance{ get{ return 4; } }
@@ -147,8 +148,8 @@ namespace Server.Items
 	}
 
 	[FlipableAttribute( 0x1711, 0x1712 )]
-	public class LeatherThighBoots : BaseArmor
-	{
+	public class LeatherThighBoots : BaseArmor, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 4; } }
 		public override int BaseFireResistance{ get{ return 4; } }
 		public override int BaseColdResistance{ get{ return 5; } }
@@ -195,8 +196,8 @@ namespace Server.Items
 	}
 
 	[FlipableAttribute( 0x2FC4, 0x317A )]
-	public class LeatherSoftBoots : BaseArmor
-	{
+	public class LeatherSoftBoots : BaseArmor, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 3; } }
 		public override int BaseFireResistance{ get{ return 3; } }
 		public override int BaseColdResistance{ get{ return 4; } }

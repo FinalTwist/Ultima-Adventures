@@ -1,11 +1,12 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
 	[Flipable( 0x2645, 0x2646 )]
-	public class DragonHelm : BaseArmor
-	{
+	public class DragonHelm : BaseArmor, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 3; } }
 		public override int BaseFireResistance{ get{ return 3; } }
 		public override int BaseColdResistance{ get{ return 3; } }

@@ -1,12 +1,13 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 using Server.Mobiles;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x13cd, 0x13c5 )]
-	public class SBLeatherArms : BaseArmor
-	{
+	public class SBLeatherArms : BaseArmor, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 14; } }
 		public override int BaseFireResistance{ get{ return 16; } }
 		public override int BaseColdResistance{ get{ return 17; } }

@@ -124,7 +124,7 @@ namespace Server.Mobiles
 			if ( Utility.RandomMinMax( 1, 2 ) == 1 )
 			{
 				Item acid = new GreaterConflagrationPotion();
-				acid.Name = "botle of alien blood";
+				acid.Name = "bottle of alien blood";
 				acid.Hue = 0x48E;
 				c.DropItem( acid );
 			}

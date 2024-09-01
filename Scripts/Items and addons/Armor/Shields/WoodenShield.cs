@@ -1,10 +1,11 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public class WoodenShield : BaseShield
-	{
+	public class WoodenShield : BaseShield, ICarpentryRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 0; } }
 		public override int BaseFireResistance{ get{ return 0; } }
 		public override int BaseColdResistance{ get{ return 0; } }

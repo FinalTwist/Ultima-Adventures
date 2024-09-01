@@ -1,10 +1,11 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
-    public class GiftStuddedHaidate : BaseGiftArmor
-	{
+    public class GiftStuddedHaidate : BaseGiftArmor, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 2; } }
 		public override int BaseFireResistance{ get{ return 4; } }
 		public override int BaseColdResistance{ get{ return 3; } }

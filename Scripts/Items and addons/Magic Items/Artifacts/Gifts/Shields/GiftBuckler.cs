@@ -1,10 +1,11 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    public class GiftBuckler : BaseGiftShield
-	{
+    public class GiftBuckler : BaseGiftShield, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 0; } }
 		public override int BaseFireResistance{ get{ return 0; } }
 		public override int BaseColdResistance{ get{ return 0; } }
@@ -18,7 +19,7 @@ namespace Server.Items
 
 		public override int ArmorBase{ get{ return 7; } }
 
-		[Constructable]
+        [Constructable]
 		public GiftBuckler() : base( 0x1B73 )
 		{
 			Weight = 5.0;

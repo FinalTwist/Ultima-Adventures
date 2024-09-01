@@ -292,6 +292,8 @@ namespace Server.Gumps
 
 			if( info.ButtonID == 1 )
 			{
+				if (from.Alive) return;
+				
 				if( from.Map == null || !from.Map.CanFit( from.Location, 16, false, false ) )
 				{
 					from.SendLocalizedMessage( 502391 ); // Thou can not be resurrected there!

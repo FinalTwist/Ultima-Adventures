@@ -19,9 +19,17 @@ namespace Server.Items
 
 		public static ScrollofTranscendence CreateRandom( int min, int max )
 		{
-			SkillName skill = (SkillName)Utility.Random( SkillInfo.Table.Length );
+            SkillName skillName;
 
-			return new ScrollofTranscendence(skill, Utility.RandomMinMax(min, max) * 0.1);
+            while (true)
+            {
+                skillName = (SkillName)Utility.Random(SkillInfo.Table.Length);
+                if (skillName == SkillName.Spellweaving || skillName == SkillName.Mysticism || skillName == SkillName.Imbuing || skillName == SkillName.Throwing) continue;
+
+                break;
+            }
+
+            return new ScrollofTranscendence(skillName, Utility.RandomMinMax(min, max) * 0.1);
 		}
 
 		public ScrollofTranscendence() : this( SkillName.Alchemy, 0.0 )

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using Server;
+using Server.Items;
 
 namespace Server.Engines.BulkOrders
 {
@@ -23,25 +24,21 @@ namespace Server.Engines.BulkOrders
 			m_Graphic = graphic;
 		}
 
-		public static SmallBulkEntry[] BlacksmithWeapons
-		{
-			get{ return GetEntries( "Blacksmith", "weapons" ); }
-		}
+		// Blacksmith
+		public static SmallBulkEntry[] BlacksmithWeapons { get{ return GetEntries( "Blacksmith", "weapons" ); } }
+		public static SmallBulkEntry[] BlacksmithArmor { get{ return GetEntries( "Blacksmith", "armor" ); } }
 
-		public static SmallBulkEntry[] BlacksmithArmor
-		{
-			get{ return GetEntries( "Blacksmith", "armor" ); }
-		}
+		// Tailor
+		public static SmallBulkEntry[] TailorCloth { get{ return GetEntries( "Tailoring", "cloth" ); } }
+		public static SmallBulkEntry[] TailorLeather { get{ return GetEntries( "Tailoring", "leather" ); } }
 
-		public static SmallBulkEntry[] TailorCloth
-		{
-			get{ return GetEntries( "Tailoring", "cloth" ); }
-		}
+		// Carpenter
+        public static SmallBulkEntry[] CarpenterArmor { get { return GetEntries("Carpenter", "armor"); } }
+        public static SmallBulkEntry[] CarpenterInstrument { get { return GetEntries("Carpenter", "instruments"); } }
+        public static SmallBulkEntry[] CarpenterWeapons { get { return GetEntries("Carpenter", "weapons"); } }
 
-		public static SmallBulkEntry[] TailorLeather
-		{
-			get{ return GetEntries( "Tailoring", "leather" ); }
-		}
+		// Fletcher
+        public static SmallBulkEntry[] FletcherWeapons { get { return GetEntries("Fletcher", "weapons"); } }
 
 		private static Hashtable m_Cache;
 
@@ -75,8 +72,8 @@ namespace Server.Engines.BulkOrders
 			List<SmallBulkEntry> list = new List<SmallBulkEntry>();
 
 			if ( File.Exists( path ) )
-			{
-				using ( StreamReader ip = new StreamReader( path ) )
+            {
+                using ( StreamReader ip = new StreamReader( path ) )
 				{
 					string line;
 
@@ -86,16 +83,18 @@ namespace Server.Engines.BulkOrders
 							continue;
 
 						try
-						{
-							string[] split = line.Split( '\t' );
+                        {
+                            string[] split = line.Split( '\t' );
 
 							if ( split.Length >= 2 )
-							{
-								Type type = ScriptCompiler.FindTypeByName( split[0] );
+                            {
+                                Type type = ScriptCompiler.FindTypeByName( split[0] );
 								int graphic = Utility.ToInt32( split[split.Length - 1] );
+								int cliloc;
+								if (!TryGetCustomCliloc(type, out cliloc)) cliloc = graphic < 0x4000 ? 1020000 + graphic : 1078872 + graphic;
 
-								if ( type != null && graphic > 0 )
-									list.Add( new SmallBulkEntry( type, graphic < 0x4000 ? 1020000 + graphic : 1078872 + graphic, graphic ) );
+                                if ( type != null && graphic > 0 )
+									list.Add( new SmallBulkEntry( type, cliloc, graphic ) );
 							}
 						}
 						catch
@@ -107,5 +106,20 @@ namespace Server.Engines.BulkOrders
 
 			return list.ToArray();
 		}
-	}
+
+		private static bool TryGetCustomCliloc(Type type, out int cliloc)
+		{
+			cliloc = 0;
+
+			if (type == typeof(WoodenPlateLegs)) cliloc = 1015037;
+			else if (type == typeof(WoodenPlateGloves)) cliloc = 1015030;
+			else if (type == typeof(WoodenPlateGorget)) cliloc = 1015035;
+			else if (type == typeof(WoodenPlateArms)) cliloc = 1015036;
+			else if (type == typeof(WoodenPlateChest)) cliloc = 1015033;
+			else if (type == typeof(WoodenPlateHelm)) cliloc = 1015039;
+			else if (type == typeof(TambourineTassel)) cliloc = 1044320;
+
+            return cliloc != 0;
+		}
+    }
 }

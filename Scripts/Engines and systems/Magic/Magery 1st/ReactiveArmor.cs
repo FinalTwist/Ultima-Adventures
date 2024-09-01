@@ -24,8 +24,11 @@ namespace Server.Spells.First
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if ( Core.AOS )
+        {
+            if (!base.CheckCast(caster))
+                return false;
+
+            if ( Core.AOS )
 				return true;
 
 			if ( Caster.MeleeDamageAbsorb > 0 )
@@ -60,53 +63,42 @@ namespace Server.Spells.First
 						targ.PlaySound( 0x1E9 );
 						targ.FixedParticles( 0x376A, 9, 32, 5008, Server.Items.CharacterDatabase.GetMySpellHue( Caster, 0 ), 0, EffectLayer.Waist );
 
-						double affinitybonus = 120 * ((Caster.Skills[SkillName.Magery].Value + Caster.Skills[SkillName.EvalInt].Value)/250);
-						
-						if (Caster.Int < 50)
-							affinitybonus /= 2;
-						
-						int val = (int)affinitybonus/2;
-						
+						int physicalChange = 0;
+						int elementalChange = 0;
 						if (Caster is PlayerMobile && ((PlayerMobile)Caster).Sorcerer())
 						{
-							mods = new ResistanceMod[5]
-							{
-								new ResistanceMod( ResistanceType.Physical, val + (int)(targ.Skills[SkillName.Inscribe].Value / 20) ),
-								new ResistanceMod( ResistanceType.Fire, (int)affinitybonus ),
-								new ResistanceMod( ResistanceType.Cold, (int)affinitybonus ),
-								new ResistanceMod( ResistanceType.Poison, (int)affinitybonus ),
-								new ResistanceMod( ResistanceType.Energy, (int)affinitybonus )
-							};
+							// Max bonus * how close to max Magery+Eval
+							double affinitybonus = 120 * ((Caster.Skills[SkillName.Magery].Value + Caster.Skills[SkillName.EvalInt].Value)/250);
+							
+							physicalChange = (int)affinitybonus / 2;
+							elementalChange = (int)affinitybonus;
 						}
 						else
 						{
-							mods = new ResistanceMod[5]
-							{
-								new ResistanceMod( ResistanceType.Physical, (15) + (int)(targ.Skills[SkillName.Inscribe].Value / 20) ),
-								new ResistanceMod( ResistanceType.Fire, -5 ),
-								new ResistanceMod( ResistanceType.Cold, -5 ),
-								new ResistanceMod( ResistanceType.Poison, -5 ),
-								new ResistanceMod( ResistanceType.Energy, -5 )
-							};
+							physicalChange = 20;
+							elementalChange = -5;
 						}
 
+						// Inscription bonus
+						physicalChange += (int)(targ.Skills[SkillName.Inscribe].Value / 20);
+						mods = new ResistanceMod[5]
+						{
+							new ResistanceMod( ResistanceType.Physical, physicalChange ),
+							new ResistanceMod( ResistanceType.Fire, elementalChange ),
+							new ResistanceMod( ResistanceType.Cold, elementalChange ),
+							new ResistanceMod( ResistanceType.Poison, elementalChange ),
+							new ResistanceMod( ResistanceType.Energy, elementalChange )
+						};
 						m_Table[targ] = mods;
 
 						for ( int i = 0; i < mods.Length; ++i )
 							targ.AddResistanceMod( mods[i] );
 
-						string args = "";
-						if (Caster is PlayerMobile && ((PlayerMobile)Caster).Sorcerer())
-						{
-							args = String.Format("{0}\t{1}\t{2}\t{3}\t{4}", val, affinitybonus, affinitybonus, affinitybonus, affinitybonus);
-						}
-						else
-						{
-							int physresist = 15 + (int)(targ.Skills[SkillName.Inscribe].Value / 20);
-							args = String.Format("{0}\t{1}\t{2}\t{3}\t{4}", physresist, 5, 5, 5, 5);
-						}
+						int elementalChangeAbs = Math.Abs(elementalChange);
+						string args = String.Format("{0}\t{1}\t{2}\t{3}\t{4}", physicalChange, elementalChangeAbs, elementalChangeAbs, elementalChangeAbs, elementalChangeAbs);
+						int descriptionCliloc = elementalChange < 0 ? 1075813 : 1075818;
 
-						BuffInfo.AddBuff(Caster, new BuffInfo(BuffIcon.ReactiveArmor, 1075812, 1075813, args.ToString()));
+						BuffInfo.AddBuff(Caster, new BuffInfo(BuffIcon.ReactiveArmor, 1075812, descriptionCliloc, args.ToString()));
 					}
 					else
 					{

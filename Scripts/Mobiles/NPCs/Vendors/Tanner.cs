@@ -301,7 +301,7 @@ namespace Server.Mobiles
                         from.SendMessage("You do not have enough gold.");
                     }
                 }
-                else if ( (targeted is BaseWeapon && from.Backpack != null) && ( targeted is GiftThrowingGloves || targeted is GiftPugilistGloves || targeted is LevelThrowingGloves || targeted is LevelPugilistGloves || targeted is ThrowingGloves || targeted is PugilistGlove || targeted is PugilistGloves || targeted is PugilistMits ) ) 
+                else if ( (targeted is BaseWeapon && from.Backpack != null) && ( targeted is IThrowingGloves || targeted is IPugilistGloves ) ) 
                 {
                     BaseWeapon ba = targeted as BaseWeapon;
                     Container pack = from.Backpack;

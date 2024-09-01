@@ -8,14 +8,6 @@ namespace Server.Engines.BulkOrders
 {
 	public class SmallTailorBOD : SmallBOD
 	{
-		public static double[] m_TailoringMaterialChances = new double[]
-			{
-				0.857421875, // None
-				0.125000000, // Spined
-				0.015625000, // Horned
-				0.001953125  // Barbed
-			};
-
 		public override int ComputeFame()
 		{
 			return TailorRewardCalculator.Instance.ComputeFame( this );
@@ -61,7 +53,7 @@ namespace Server.Engines.BulkOrders
 			return list;
 		}
 
-		public static SmallTailorBOD CreateRandomFor( Mobile m )
+		public static SmallTailorBOD CreateRandomFor( Mobile m, bool defaultMaterialOnly = true )
 		{
 			SmallBulkEntry[] entries;
 			bool useMaterials;
@@ -71,6 +63,8 @@ namespace Server.Engines.BulkOrders
 				entries = SmallBulkEntry.TailorLeather;
 			else
 				entries = SmallBulkEntry.TailorCloth;
+
+            if (defaultMaterialOnly) useMaterials = false;
 
 			if ( entries.Length > 0 )
 			{
@@ -89,20 +83,22 @@ namespace Server.Engines.BulkOrders
 				{
 					for ( int i = 0; i < 20; ++i )
 					{
-						BulkMaterialType check = GetRandomMaterial( BulkMaterialType.Spined, m_TailoringMaterialChances );
+						BulkMaterialType check = GetRandomMaterial( BulkMaterialType.Horned, BulkMaterialType.Alien );
 						double skillReq = 0.0;
 
 						switch ( check )
 						{
-							case BulkMaterialType.DullCopper: skillReq = 65.0; break;
-							case BulkMaterialType.Bronze: skillReq = 80.0; break;
-							case BulkMaterialType.Gold: skillReq = 85.0; break;
-							case BulkMaterialType.Agapite: skillReq = 90.0; break;
-							case BulkMaterialType.Verite: skillReq = 95.0; break;
-							case BulkMaterialType.Valorite: skillReq = 100.0; break;
-							case BulkMaterialType.Spined: skillReq = 65.0; break;
-							case BulkMaterialType.Horned: skillReq = 80.0; break;
-							case BulkMaterialType.Barbed: skillReq = 99.0; break;
+							case BulkMaterialType.Horned: skillReq = 60.0; break;
+                            case BulkMaterialType.Barbed: skillReq = 65.0; break;
+                            case BulkMaterialType.Necrotic: skillReq = 70.0; break;
+                            case BulkMaterialType.Volcanic: skillReq = 75.0; break;
+                            case BulkMaterialType.Frozen: skillReq = 80.0; break;
+                            case BulkMaterialType.Spined: skillReq = 85.0; break;
+                            case BulkMaterialType.Goliath: skillReq = 90.0; break;
+                            case BulkMaterialType.Draconic: skillReq = 95.0; break;
+							case BulkMaterialType.Hellish: skillReq = 99.0; break;
+							case BulkMaterialType.Dinosaur: skillReq = 105.0; break;
+							case BulkMaterialType.Alien: skillReq = 120.0; break;
 						}
 
 						if ( theirSkill >= skillReq )
@@ -120,14 +116,15 @@ namespace Server.Engines.BulkOrders
 
 				bool reqExceptional = ( excChance > Utility.RandomDouble() );
 
+				SmallBulkEntry entry = null;
 
 				CraftSystem system = DefTailoring.CraftSystem;
 
-				List<SmallBulkEntry> validEntries = new List<SmallBulkEntry>();
-
-				for ( int i = 0; i < entries.Length; ++i )
+				for ( int i = 0; i < 150; ++i )
 				{
-					CraftItem item = system.CraftItems.SearchFor( entries[i].Type );
+					SmallBulkEntry check = entries[Utility.Random( entries.Length )];
+
+					CraftItem item = system.CraftItems.SearchFor( check.Type );
 
 					if ( item != null )
 					{
@@ -140,16 +137,16 @@ namespace Server.Engines.BulkOrders
 								chance = item.GetExceptionalChance( system, chance, m );
 
 							if ( chance > 0.0 )
-								validEntries.Add( entries[i] );
+							{
+								entry = check;
+								break;
 							}
 						}
 					}
-
-				if ( validEntries.Count > 0 )
-				{
-					SmallBulkEntry entry = validEntries[Utility.Random( validEntries.Count )];
-					return new SmallTailorBOD( entry, material, amountMax, reqExceptional );
 				}
+					
+				if ( entry != null )
+					return new SmallTailorBOD( entry, material, amountMax, reqExceptional );
 			}
 
 			return null;
@@ -185,7 +182,7 @@ namespace Server.Engines.BulkOrders
 				BulkMaterialType material;
 
 				if ( useMaterials )
-					material = GetRandomMaterial( BulkMaterialType.Spined, m_TailoringMaterialChances );
+					material = GetRandomMaterial( BulkMaterialType.Horned, BulkMaterialType.Alien );
 				else
 					material = BulkMaterialType.None;
 
@@ -223,7 +220,7 @@ namespace Server.Engines.BulkOrders
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 0 ); // version
+			writer.Write( (int) 1 ); // version
 		}
 
 		public override void Deserialize( GenericReader reader )
@@ -231,6 +228,18 @@ namespace Server.Engines.BulkOrders
 			base.Deserialize( reader );
 
 			int version = reader.ReadInt();
-		}
+            switch (version)
+            {
+                case 1:
+                    break;
+
+                case 0:
+                    if (Material != BulkMaterialType.None)
+                    {
+                        Material += 7; // Number of Metals added ahead of it in the Enum
+                    }
+                    break;
+            }
+        }
 	}
 }

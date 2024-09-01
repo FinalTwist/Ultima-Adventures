@@ -115,10 +115,7 @@ namespace Server.Engines.Craft
 		public override void InitCraftList()
 		{
 			int index = AddCraft( typeof( Bottle ), 1044050, 1023854, 52.5, 102.5, typeof( Sand ), 1044625, 1, 1044627 );
-			SetUseAllRes( index, true );
-
 			index = AddCraft( typeof( Jar ), 1044050, "jar", 52.5, 102.5, typeof( Sand ), 1044625, 1, 1044627 );
-			SetUseAllRes( index, true );
 
 			AddCraft( typeof( Monocle ), 1044050, "monocle", 5.0, 55.0, typeof( Sand ), 1044625, 1, 1044627 );
 			AddCraft( typeof( SmallFlask ), 1044050, 1044610, 52.5, 102.5, typeof( Sand ), 1044625, 2, 1044627 );
@@ -134,6 +131,12 @@ namespace Server.Engines.Craft
 			AddCraft( typeof( EmptyVialsWRack ), 1044050, 1044616, 65.0, 115.0, typeof( Sand ), 1044625, 8, 1044627 );
 			AddCraft( typeof( FullVialsWRack ), 1044050, 1044617, 65.0, 115.0, typeof( Sand ), 1044625, 9, 1044627 );
 			AddCraft( typeof( SpinningHourglass ), 1044050, 1044618, 75.0, 125.0, typeof( Sand ), 1044625, 10, 1044627 );
+						
+			// Batch begin
+			index = AddCraft( typeof( Bottle ), 1044050, "batch of empty bottles", 52.5, 102.5, typeof( Sand ), 1044625, 1, 1044627 );
+			SetUseAllRes( index, true );
+			index = AddCraft( typeof( Jar ), 1044050, "batch of jars", 52.5, 102.5, typeof( Sand ), 1044625, 1, 1044627 );
+			SetUseAllRes( index, true );
 		}
 	}
 }

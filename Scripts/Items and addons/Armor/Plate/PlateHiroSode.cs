@@ -1,10 +1,11 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
-	public class PlateHiroSode : BaseArmor
-	{
+	public class PlateHiroSode : BaseArmor, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 12; } }
 		public override int BaseFireResistance{ get{ return 7; } }
 		public override int BaseColdResistance{ get{ return 6; } }

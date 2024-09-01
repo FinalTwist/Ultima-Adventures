@@ -26,24 +26,36 @@ namespace Server.Spells.Mystic
 		{
 		}
 
-		public static Hashtable TableWindRunning = new Hashtable();
-
-		public static bool HasEffect( Mobile m )
-		{
-			return ( TableWindRunning[m] != null );
-		}
+        private static Hashtable m_Timers = new Hashtable();
 
 		public static bool UnderEffect( Mobile m )
 		{
-			return TableWindRunning.Contains( m );
+			return m_Timers.Contains( m );
 		}
 
 		public static void RemoveEffect( Mobile m )
 		{
-			m.Send(SpeedControl.Disable);
-			TableWindRunning.Remove( m );
-			m.EndAction( typeof( WindRunner ) );
+			if (StopTimer( m ))
+			{
+				m.Send(SpeedControl.Disable);
+				m.EndAction( typeof( WindRunner ) );
+				m.PlaySound( 0x64C ); // Cleansing winds
+				m.SendMessage("You feel the wind around you dissipate");
+			}
 		}
+
+        public static bool StopTimer(Mobile m)
+        {
+            Timer t = (Timer)m_Timers[m];
+
+            if (t != null)
+            {
+                t.Stop();
+                m_Timers.Remove(m);
+            }
+
+            return (t != null);
+        }
 
 		public override void OnCast()
 		{
@@ -65,17 +77,20 @@ namespace Server.Spells.Mystic
 			{
 				if ( !Caster.CanBeginAction( typeof( WindRunner ) ) )
 				{
-					WindRunner.RemoveEffect( Caster );
+					StopTimer( Caster );
 				}
 
 				int TotalTime = (int)( Caster.Skills[SkillName.Wrestling].Value * 5 );
-				TableWindRunning[Caster] = SpeedControl.MountSpeed;
+                InternalTimer timer = new InternalTimer( Caster, TimeSpan.FromSeconds( TotalTime ) );
+
 				Caster.Send(SpeedControl.MountSpeed);
-				new InternalTimer( Caster, TimeSpan.FromSeconds( TotalTime ) ).Start();
 				Caster.BeginAction( typeof( WindRunner ) );
 				Point3D air = new Point3D( ( Caster.X+1 ), ( Caster.Y+1 ), ( Caster.Z+5 ) );
 				Effects.SendLocationParticles(EffectItem.Create(air, Caster.Map, EffectItem.DefaultDuration), 0x2007, 9, 32, 0, 0, 5022, 0);
-				Caster.PlaySound( 0x64F );
+				Caster.PlaySound( 0x64F ); // Hailstorm
+
+				m_Timers[Caster] = timer;
+				timer.Start();
 			}
 
             FinishSequence();
@@ -84,21 +99,16 @@ namespace Server.Spells.Mystic
 		private class InternalTimer : Timer
 		{
 			private Mobile m_m;
-			private DateTime m_Expire;
 
-			public InternalTimer( Mobile Caster, TimeSpan duration ) : base( TimeSpan.Zero, TimeSpan.FromSeconds( 0.1 ) )
+			public InternalTimer( Mobile Caster, TimeSpan duration ) : base( duration )
 			{
+				Priority = TimerPriority.OneSecond;
 				m_m = Caster;
-				m_Expire = DateTime.UtcNow + duration;
 			}
 
 			protected override void OnTick()
 			{
-				if ( DateTime.UtcNow >= m_Expire )
-				{
-					WindRunner.RemoveEffect( m_m );
-					Stop();
-				}
+				RemoveEffect( m_m );
 			}
 		}
 	}

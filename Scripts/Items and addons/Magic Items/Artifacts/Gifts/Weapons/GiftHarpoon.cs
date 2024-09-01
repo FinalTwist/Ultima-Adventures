@@ -3,10 +3,11 @@ using Server.Items;
 using Server.Network;
 using Server.Spells;
 using Server.Mobiles;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public class GiftHarpoon : BaseRanged
+	public class GiftHarpoon : BaseRanged, IBlacksmithRepairable
 	{
 		public override int EffectID{ get{ return 0x528A; } }
 		public override Type AmmoType{ get{ return typeof( HarpoonRope ); } }

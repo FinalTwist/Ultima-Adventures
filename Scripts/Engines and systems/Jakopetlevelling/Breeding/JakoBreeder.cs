@@ -28,7 +28,7 @@ namespace Custom.Jerbal.Jako.Breeding
 
         public override void AddCustomContextEntries(Server.Mobile from, List<Server.ContextMenus.ContextMenuEntry> list)
         {
-            list.Add(new BreedEntry(this,from));
+            list.Add(new BreedEntry(this, from));
             base.AddCustomContextEntries(from, list);
         }
 
@@ -43,7 +43,7 @@ namespace Custom.Jerbal.Jako.Breeding
             {
                 if (from is PlayerMobile)
                     m_From = (PlayerMobile)from;
-                m_Trainer = trainer;               
+                m_Trainer = trainer;
             }
 
             public override void OnClick()
@@ -51,7 +51,7 @@ namespace Custom.Jerbal.Jako.Breeding
                 if (m_From == null)
                     return;
                 JakoBreeder.BreedClick(m_From, m_Trainer);
-                
+
             }
         }
 
@@ -95,9 +95,11 @@ namespace Custom.Jerbal.Jako.Breeding
 
             ReadyPetForBreed(c1);
             ReadyPetForBreed(c2);
-            
-            pm1.AddToBackpack(new BreedingParentTicket(pm1, pm2, c1, c2, DateTime.UtcNow + c1.NextMateIn));
-            pm2.AddToBackpack(new BreedingParentTicket(pm2, pm1, c2, c1, DateTime.UtcNow + c2.NextMateIn));
+
+            c1.NextMate = DateTime.UtcNow + c1.NextMateIn;
+            c2.NextMate = DateTime.UtcNow + c2.NextMateIn;
+            pm1.AddToBackpack(new BreedingParentTicket(pm1, pm2, c1, c2, c1.NextMate));
+            pm2.AddToBackpack(new BreedingParentTicket(pm2, pm1, c2, c1, c2.NextMate));
 
         }
 
@@ -119,11 +121,10 @@ namespace Custom.Jerbal.Jako.Breeding
             }
 
             BaseCreature bc = pet as BaseCreature;
-            bc.NextMate = DateTime.UtcNow + bc.NextMateIn;
-            bc.MoveToWorld( owner.Location, owner.Map );
+            bc.MoveToWorld(owner.Location, owner.Map);
             int slots = bc.ControlSlots;//making sure slots don't change for old pets
             double mintaming = bc.MinTameSkill;
-	        bc.SetControlMaster(owner);
+            bc.SetControlMaster(owner);
             bc.OnAfterSpawn();
             bc.ControlSlots = slots;//restoring
             bc.MinTameSkill = mintaming;//restoring
@@ -140,7 +141,7 @@ namespace Custom.Jerbal.Jako.Breeding
 
             if (((BaseCreature)req.Creature1).ControlMaster == ((BaseCreature)req.Creature2).ControlMaster)
                 return;
-			
+
             ((BaseCreature)req.Creature2).ControlMaster.SendMessage("The Breeding has been canceled.");
             ((BaseCreature)req.Creature2).ControlMaster.CloseGump(typeof(JakoBreederAcceptGump));
         }
@@ -148,14 +149,14 @@ namespace Custom.Jerbal.Jako.Breeding
         public static void SendMasterOkayGumps(Mobile targeter, BaseCreature bc1, BaseCreature bc2)
         {
             CleanUpPendingOffers();
-            int dictID = PendingOffers.Add(new BreedingRequest(bc1,bc2));
+            int dictID = PendingOffers.Add(new BreedingRequest(bc1, bc2));
             if (bc1.ControlMaster == null && bc2.ControlMaster != null) // one of the pets is stabled likely
-                bc2.ControlMaster.SendGump(new JakoBreederAcceptGump(targeter,bc1,bc2,dictID));
+                bc2.ControlMaster.SendGump(new JakoBreederAcceptGump(targeter, bc1, bc2, dictID));
             else if (bc1.ControlMaster != null)
-                bc1.ControlMaster.SendGump(new JakoBreederAcceptGump(targeter,bc1,bc2,dictID));
+                bc1.ControlMaster.SendGump(new JakoBreederAcceptGump(targeter, bc1, bc2, dictID));
 
             if (bc1.ControlMaster != bc2.ControlMaster && bc2.ControlMaster != null && bc1.ControlMaster != null)
-                bc2.ControlMaster.SendGump(new JakoBreederAcceptGump(targeter,bc2,bc1,dictID));
+                bc2.ControlMaster.SendGump(new JakoBreederAcceptGump(targeter, bc2, bc1, dictID));
         }
 
         private static void CleanUpPendingOffers()
@@ -184,7 +185,7 @@ namespace Custom.Jerbal.Jako.Breeding
 
         public static string CanBreed(Mobile animal)
         {
-            if ( !(animal is BaseCreature) )
+            if (!(animal is BaseCreature))
                 return "what kind of thing is this? Does it have a male and female version?";
 
             BaseCreature bc;
@@ -199,13 +200,13 @@ namespace Custom.Jerbal.Jako.Breeding
             if (bc == null || !bc.JakoIsEnabled)
                 return "You can't breed that!";
 
-            if ( bc.IsParagon)
+            if (bc.IsParagon)
                 return "Nice try, Everyone knows paragons are impotent!";
-                
+
             if (bc is JakoBreeder)
             {
                 bc.Emote("scoffs");
-                return String.Format("I should {0} you...",(bc.Female?"slap":"hit"));
+                return String.Format("I should {0} you...", (bc.Female ? "slap" : "hit"));
             }
             if (bc.Body.IsHuman)
                 return "You'll need to find an innkeeper for that.";
@@ -234,12 +235,12 @@ namespace Custom.Jerbal.Jako.Breeding
             if (bc1 == bc2)
                 return (bc1.Female ? "I'm all out of magic juice and haven't been to THAT bank for awhile, sorry." : "I don't think it's long enough, and won't produce the results you want anyways.");
             if (bc1.GetType() != bc2.GetType())
-			{
-				if ( Insensitive.Contains(bc1.Title, "primeval dragon") && Insensitive.Contains(bc2.Title, " primeval dragon") )
-					return null;
-				else
-					return "That seems complicated.  Would that even be possible? *think*";
-			}
+            {
+                if (Insensitive.Contains(bc1.Title, "primeval dragon") && Insensitive.Contains(bc2.Title, " primeval dragon"))
+                    return null;
+                else
+                    return "That seems complicated.  Would that even be possible? *think*";
+            }
             if (bc1.Female == bc2.Female)
                 return "I think it would be best to not push your beliefs on these creatures.";
             if (Math.Abs((int)(bc1.RealLevel - bc2.RealLevel)) > 5)
@@ -251,10 +252,10 @@ namespace Custom.Jerbal.Jako.Breeding
         {
             if (creature1.Deleted || creature2.Deleted)
                 return 0;
-            double mult =1;
+            double mult = 1;
             if (((BaseCreature)creature1).ControlMaster == ((BaseCreature)creature2).ControlMaster)
                 mult = 2;
-            return (int)(((BaseCreature)creature1).Level * ((BaseCreature)creature2).Level * 50*mult);
+            return (int)(((BaseCreature)creature1).Level * ((BaseCreature)creature2).Level * 50 * mult);
         }
 
 
@@ -262,9 +263,9 @@ namespace Custom.Jerbal.Jako.Breeding
         {
             if (from is PlayerMobile && from != null && dropped is BreedingParentTicket)
             {
-				
+
                 BreedingParentTicket bt = (BreedingParentTicket)dropped;
-                if (bt.Creature == null || bt.Creature.Deleted )
+                if (bt.Creature == null || bt.Creature.Deleted)
                 {
                     from.SendMessage("Your pet has been lost forever.  I have added to your bank a level 50 rabbit deed and turned this one worthless.  Please page a GM with details of this error.");
                     bt.NullifyDeed();
@@ -275,18 +276,18 @@ namespace Custom.Jerbal.Jako.Breeding
                     dropped.Delete();
                     return false;
                 }
-				if (bt.OtherCreature == null)
-					bt.OtherCreature = bt.Creature;
-				
+                if (bt.OtherCreature == null)
+                    bt.OtherCreature = bt.Creature;
+
                 if (bt.Owner != from && (bt.DoneReal == DateTime.MinValue && bt.OtherParent != from))
                 {
                     from.SendMessage("This ticket is not yours! You can not claim it!");
                     return false;
                 }
-                if ( (bt.DoneReal >= DateTime.UtcNow) && (((Mobile)from).AccessLevel == AccessLevel.Player) )
+                if ((bt.DoneReal >= DateTime.UtcNow) && (((Mobile)from).AccessLevel == AccessLevel.Player))
                 {
-						from.SendMessage("Your pet is not ready yet.");
-						return false;
+                    from.SendMessage("Your pet is not ready yet.");
+                    return false;
                 }
 
                 if (((BaseCreature)bt.Creature).ControlSlots > (from.FollowersMax - from.Followers))
@@ -299,327 +300,201 @@ namespace Custom.Jerbal.Jako.Breeding
                 ReadyPetForReturn(from, bt.Creature);
                 if (bt.DoneReal == DateTime.MinValue)
                     return true;
-                    
+
                 if (bt.Failed)
                 {
                     bt.Owner.SendMessage("The breeding has failed! Some of your money has been returned.");
-                    bt.OtherParent.SendMessage("The breeding has failed! Some of your money has been returned.");	
-					Banker.Deposit(bt.Owner, (int)(JakoBreeder.GoldPrice(bt.Creature, bt.OtherCreature) * .75));
+                    bt.OtherParent.SendMessage("The breeding has failed! Some of your money has been returned.");
+                    Banker.Deposit(bt.Owner, (int)(JakoBreeder.GoldPrice(bt.Creature, bt.OtherCreature) * .75));
                     Banker.Deposit(bt.OtherParent, (int)(JakoBreeder.GoldPrice(bt.OtherCreature, bt.Creature) * .75));
                     return true;
                 }
 
                 if (bt.Creature.Female)
                 {
-                    BaseCreature baby1 = Activator.CreateInstance(bt.Creature.GetType()) as BaseCreature;	
-
-			if (baby1.Tamable && !(baby1 is Zombiex) && !(baby1 is BaseUndead) && !baby1.Controlled)
-			{
-
-
-					int rarity = 3; //randomize new pets on world generation
-					int chance = Utility.RandomMinMax(1, 200);
-					if (chance == 69)  // 0.5% chance
-					    rarity = 6;
-					else if (chance <= 10) // 5% chance
-					    rarity = 5;
-					else if (chance <= 30) // 15% chance
-					    rarity = 4;
-					else if (chance >= 190) // 5% chance
-					    rarity = 1;
-					else if (chance >= 170)  // 15% chance
-					    rarity = 2;
-					 
-
-					if (rarity > 3) // 85% chance of being normal or stronger
-					{
-					    baby1.RawStr = (int)((double)baby1.RawStr*( ((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
-					    baby1.RawDex = (int)((double)baby1.RawDex*( ((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
-					    baby1.RawInt = (int)((double)baby1.RawInt*( ((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
-					    baby1.HitsMaxSeed = (int)((double)baby1.HitsMaxSeed*( ((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
-
-					    baby1.Hits = baby1.HitsMaxSeed;
-					    baby1.DamageMax = (int)((double)baby1.DamageMax*( ((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
-					    baby1.DamageMin = (int)((double)baby1.DamageMin*( ((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
-					    if (baby1.DamageMin > baby1.DamageMax)
-						baby1.DamageMin = baby1.DamageMax -1;
-					}
-					else if (rarity < 3) // 15% chance of being weaker
-					{
-					    baby1.RawStr = (int)((double)baby1.RawStr*( ((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
-					    baby1.RawDex = (int)((double)baby1.RawDex*( ((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
-					    baby1.RawInt = (int)((double)baby1.RawInt*( ((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
-					    baby1.HitsMaxSeed = (int)((double)baby1.HitsMaxSeed*( ((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
-
-					    baby1.Hits = baby1.HitsMaxSeed;
-					    baby1.DamageMax = (int)((double)baby1.DamageMax*( ((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
-					    baby1.DamageMin = (int)((double)baby1.DamageMin*( ((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
-					    if (baby1.DamageMin > baby1.DamageMax)
-						baby1.DamageMin = baby1.DamageMax -1;
-					}
-					else if (rarity == 3) // 70% chance of small change only
-					{
-					    baby1.RawStr += (int)((double)baby1.RawStr*( ((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
-					    baby1.RawDex += (int)((double)baby1.RawDex*( ((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
-					    baby1.RawInt += (int)((double)baby1.RawInt*( ((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
-					    baby1.HitsMaxSeed += (int)((double)baby1.HitsMaxSeed*( ((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
-
-					    baby1.Hits = baby1.HitsMaxSeed;
-					    baby1.DamageMax += (int)((double)baby1.DamageMax*( ((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
-					    baby1.DamageMin += (int)((double)baby1.DamageMin*( ((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
-					    if (baby1.DamageMin > baby1.DamageMax)
-						baby1.DamageMin = baby1.DamageMax -1;
-					}
-
-			}
-
+                    BaseCreature baby1 = Activator.CreateInstance(bt.Creature.GetType()) as BaseCreature;
+                    AdjustInitialStats(baby1);
                     baby1.MaxLevel = Convert.ToUInt32(Math.Ceiling((double)(((BaseCreature)bt.Creature).Level + ((BaseCreature)bt.OtherCreature).Level) / 1.25) + 1);
+                    baby1.Breeding = true;
 
-                    SetStats( baby1, bt.Creature as BaseCreature, bt.OtherCreature as BaseCreature );    
+                    SetStats(baby1, bt.Creature as BaseCreature, bt.OtherCreature as BaseCreature);
 
-					LoggingFunctions.LogBreed( from, baby1, baby1.MaxLevel );
-					from.SendMessage("Here is a ticket for the baby");
+                    LoggingFunctions.LogBreed(from, baby1, baby1.MaxLevel);
+                    from.SendMessage("Here is a ticket for the baby");
                     from.AddToBackpack(new BreedingParentTicket(bt.Owner, bt.OtherParent, baby1, DateTime.MinValue));
+
                     if (bt.Twins)
                     {
                         BaseCreature baby2 = Activator.CreateInstance(bt.Creature.GetType()) as BaseCreature;
-                        baby2.Female = baby1.Female;
+                        AdjustInitialStats(baby2);
+                        // baby2.Female = baby1.Female; // Stats aren't identical, no reason to force the Gender to be
                         baby2.MaxLevel = baby1.MaxLevel;
-			
+                        baby2.Breeding = true;
 
-                        if (baby2.Tamable && !(baby2 is Zombiex) && !(baby2 is BaseUndead))
-                        {
-    					int rarity = 3; //randomize new pets on world generation
-					int chance = Utility.RandomMinMax(1, 200);
-					if (chance == 69)  // 0.5% chance
-					    rarity = 6;
-					else if (chance <= 10) // 5% chance
-					    rarity = 5;
-					else if (chance <= 30) // 15% chance
-					    rarity = 4;
-					else if (chance >= 190) // 5% chance
-					    rarity = 1;
-					else if (chance >= 170)  // 15% chance
-					    rarity = 2;
-					 
+                        SetStats(baby2, bt.Creature as BaseCreature, bt.OtherCreature as BaseCreature);
 
-					if (rarity > 3) // 85% chance of being normal or stronger
-					{
-					    baby2.RawStr = (int)((double)baby2.RawStr*( ((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
-					    baby2.RawDex = (int)((double)baby2.RawDex*( ((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
-					    baby2.RawInt = (int)((double)baby2.RawInt*( ((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
-					    baby2.HitsMaxSeed = (int)((double)baby2.HitsMaxSeed*( ((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
-
-					    baby2.Hits = baby2.HitsMaxSeed;
-					    baby2.DamageMax = (int)((double)baby2.DamageMax*( ((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
-					    baby2.DamageMin = (int)((double)baby2.DamageMin*( ((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
-					    if (baby2.DamageMin > baby2.DamageMax)
-						baby2.DamageMin = baby2.DamageMax -1;
-					}
-					else if (rarity < 3) // 15% chance of being weaker
-					{
-					    baby2.RawStr = (int)((double)baby2.RawStr*( ((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
-					    baby2.RawDex = (int)((double)baby2.RawDex*( ((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
-					    baby2.RawInt = (int)((double)baby2.RawInt*( ((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
-					    baby2.HitsMaxSeed = (int)((double)baby2.HitsMaxSeed*( ((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
-
-					    baby2.Hits = baby1.HitsMaxSeed;
-					    baby2.DamageMax = (int)((double)baby2.DamageMax*( ((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
-					    baby2.DamageMin = (int)((double)baby2.DamageMin*( ((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
-					    if (baby2.DamageMin > baby2.DamageMax)
-						baby2.DamageMin = baby2.DamageMax -1;
-					}
-					else if (rarity == 3) // 70% chance of small change only
-					{
-					    baby2.RawStr += (int)((double)baby2.RawStr*( ((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
-					    baby2.RawDex += (int)((double)baby2.RawDex*( ((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
-					    baby2.RawInt += (int)((double)baby2.RawInt*( ((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
-					    baby2.HitsMaxSeed += (int)((double)baby2.HitsMaxSeed*( ((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
-
-					    baby2.Hits = baby1.HitsMaxSeed;
-					    baby2.DamageMax += (int)((double)baby2.DamageMax*( ((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
-					    baby2.DamageMin += (int)((double)baby2.DamageMin*( ((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
-					    if (baby2.DamageMin > baby2.DamageMax)
-						baby2.DamageMin = baby2.DamageMax -1;
-					}
-
-                            SetStats( baby2, bt.Creature as BaseCreature, bt.OtherCreature as BaseCreature );  
-
-                            bt.Owner.SendMessage("Congradulations, your pet has just had twins! The father of the child has received the additional ticket.");
-                            if (bt.Owner != bt.OtherParent)
-                                bt.OtherParent.SendMessage(" Good news, it's twins! {0} has just recieved the second baby. Your ticket to redeem has been placed in your bank.", bt.Owner.Name);
-                            bt.OtherParent.BankBox.AddItem(new BreedingParentTicket(bt.OtherParent, bt.Owner, baby2, DateTime.MinValue));
-                        }
+                        bt.Owner.SendMessage("Congratulations, your pet has just had twins! The father of the child has received the additional ticket.");
+                        if (bt.Owner != bt.OtherParent)
+                            bt.OtherParent.SendMessage(" Good news, it's twins! {0} has just recieved the second baby. Your ticket to redeem has been placed in your bank.", bt.Owner.Name);
+                        bt.OtherParent.BankBox.AddItem(new BreedingParentTicket(bt.OtherParent, bt.Owner, baby2, DateTime.MinValue));
                     }
                 }
+
                 return true;
             }
+
             return false;
         }
-
-        public void SetStats( Mobile baby, BaseCreature parent1, BaseCreature parent2 )
+        
+        private void AdjustInitialStats(BaseCreature baby)
         {
-            if (baby == null || parent1 == null || parent2 == null)
+            if (baby.Tamable && !(baby is Zombiex) && !(baby is BaseUndead) && !baby.Controlled)
+            {
+                int rarity = 3; //randomize new pets on world generation
+                int chance = Utility.RandomMinMax(1, 200);
+                if (chance == 69)  // 0.5% chance
+                    rarity = 6;
+                else if (chance <= 10) // 5% chance
+                    rarity = 5;
+                else if (chance <= 30) // 10% chance
+                    rarity = 4;
+                else if (chance >= 190) // 5% chance
+                    rarity = 1;
+                else if (chance >= 170)  // 10% chance
+                    rarity = 2;
+
+                if (rarity > 3) // 85% chance of being normal or stronger
+                {
+                    baby.RawStr = (int)((double)baby.RawStr * (((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
+                    baby.RawDex = (int)((double)baby.RawDex * (((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
+                    baby.RawInt = (int)((double)baby.RawInt * (((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
+                    baby.HitsMaxSeed = (int)((double)baby.HitsMaxSeed * (((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
+
+                    baby.Hits = baby.HitsMaxSeed;
+                    baby.DamageMax = (int)((double)baby.DamageMax * (((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
+                    baby.DamageMin = (int)((double)baby.DamageMin * (((double)(Utility.RandomMinMax(3, rarity) * 0.33))));
+                }
+                else if (rarity < 3) // 15% chance of being weaker
+                {
+                    baby.RawStr = (int)((double)baby.RawStr * (((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
+                    baby.RawDex = (int)((double)baby.RawDex * (((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
+                    baby.RawInt = (int)((double)baby.RawInt * (((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
+                    baby.HitsMaxSeed = (int)((double)baby.HitsMaxSeed * (((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
+
+                    baby.Hits = baby.HitsMaxSeed;
+                    baby.DamageMax = (int)((double)baby.DamageMax * (((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
+                    baby.DamageMin = (int)((double)baby.DamageMin * (((double)(Utility.RandomMinMax(1, rarity) * 0.33))));
+                }
+                else if (rarity == 3) // 70% chance of small change only
+                {
+                    baby.RawStr += (int)((double)baby.RawStr * (((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
+                    baby.RawDex += (int)((double)baby.RawDex * (((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
+                    baby.RawInt += (int)((double)baby.RawInt * (((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
+                    baby.HitsMaxSeed += (int)((double)baby.HitsMaxSeed * (((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
+
+                    baby.Hits = baby.HitsMaxSeed;
+                    baby.DamageMax += (int)((double)baby.DamageMax * (((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
+                    baby.DamageMin += (int)((double)baby.DamageMin * (((double)(Utility.RandomMinMax(1, rarity) * 0.05))));
+                }
+
+                baby.DamageMin = Math.Min(baby.DamageMin, baby.DamageMax - 1); // Min must be less than Max
+            }
+        }
+
+        private void SetStats(BaseCreature babe, BaseCreature parent1, BaseCreature parent2)
+        {
+            if (babe == null || parent1 == null || parent2 == null)
                 return;
 
-            BaseCreature statser = parent1;
-            BaseCreature babe = (BaseCreature)baby;
-
+            BaseCreature statser;
             if (Utility.RandomDouble() > 0.33)
             {
-                if (Utility.RandomBool())
-                    statser = parent1;
-                else
-                        statser = parent2;
+                statser = Utility.RandomBool() ? parent1 : parent2;
                 babe.HitsMaxSeed = statser.HitsMaxSeed;
                 babe.Hits = babe.HitsMaxSeed;
             }
 
             if (Utility.RandomDouble() > 0.50)
             {
-                if (Utility.RandomBool())
-                    statser = parent1;
-                else
-                        statser = parent2;
-
-                if (statser.m_oldstr != 0)
-                    babe.RawStr = statser.m_oldstr;
-                else
-                    babe.RawStr = statser.RawStr;
+                statser = Utility.RandomBool() ? parent1 : parent2;
+                babe.RawStr = Math.Max(statser.m_oldstr, statser.RawStr);
             }
 
-            if (Utility.RandomDouble() > 0.85 )
+            if (Utility.RandomDouble() > 0.85)
             {
-                if (statser.m_oldmin != 0)
-                    babe.DamageMin = statser.m_oldmin;
-                else
-                    babe.DamageMin = statser.DamageMin;
-
-                if (statser.m_oldmax != 0)
-                    babe.DamageMax = statser.m_oldmax;
-                else
-                    babe.DamageMax = statser.DamageMax;
+                statser = Utility.RandomBool() ? parent1 : parent2;
+                babe.DamageMin = Math.Max(statser.m_oldmin, statser.DamageMin);
+                babe.DamageMax = Math.Max(statser.m_oldmax, statser.DamageMax);
             }
 
             if (Utility.RandomDouble() > 0.50)
             {
-                if (Utility.RandomBool())
-                    statser = parent1;
-                else
-                        statser = parent2;
-
-                if (statser.m_olddex != 0)
-                    babe.RawDex = statser.m_olddex;
-                else
-                    babe.RawDex = statser.RawDex;
+                statser = Utility.RandomBool() ? parent1 : parent2;
+                babe.RawDex = Math.Max(statser.m_olddex, statser.RawDex);
             }
 
             if (Utility.RandomDouble() > 0.50)
             {
-                if (Utility.RandomBool())
-                    statser = parent1;
-                else
-                        statser = parent2;
-
-                if (statser.m_oldint != 0)
-                    babe.RawInt = statser.m_oldint;
-                else
-                    babe.RawInt = statser.RawInt;
+                statser = Utility.RandomBool() ? parent1 : parent2;
+                babe.RawInt = Math.Max(statser.m_oldint, statser.RawInt);
             }
 
             if (Utility.RandomDouble() > 0.33)
             {
-                if (Utility.RandomBool())
-                    statser = parent1;
-                else
-                        statser = parent2;
-                
-                if (statser.m_oldpois != 0)
-                    babe.PoisonResistSeed = statser.m_oldpois;
-                else
-                    babe.PoisonResistSeed = statser.PoisonResistSeed;
+                statser = Utility.RandomBool() ? parent1 : parent2;
+                babe.PoisonResistSeed = Math.Max(statser.m_oldpois, statser.PoisonResistSeed);
             }
 
             if (Utility.RandomDouble() > 0.33)
             {
-                if (Utility.RandomBool())
-                    statser = parent1;
-                else
-                        statser = parent2;
-                
-                if (statser.m_oldcold != 0)
-                    babe.ColdResistSeed = statser.m_oldcold;
-                else
-                    babe.ColdResistSeed = statser.ColdResistSeed;
+                statser = Utility.RandomBool() ? parent1 : parent2;
+                babe.ColdResistSeed = Math.Max(statser.m_oldcold, statser.ColdResistSeed);
             }
 
             if (Utility.RandomDouble() > 0.33)
             {
-                if (Utility.RandomBool())
-                    statser = parent1;
-                else
-                        statser = parent2;
-
-                if (statser.m_oldphys != 0)
-                    babe.PhysicalResistanceSeed = statser.m_oldphys;
-                else
-                    babe.PhysicalResistanceSeed = statser.PhysicalResistanceSeed;
+                statser = Utility.RandomBool() ? parent1 : parent2;
+                babe.PhysicalResistanceSeed = Math.Max(statser.m_oldphys, statser.PhysicalResistanceSeed);
             }
 
             if (Utility.RandomDouble() > 0.33)
             {
-                if (Utility.RandomBool())
-                    statser = parent1;
-                else
-                        statser = parent2;
-                
-                if (statser.m_oldfire != 0)
-                    babe.FireResistSeed = statser.m_oldfire;
-                else
-                    babe.FireResistSeed = statser.FireResistSeed;    
+                statser = Utility.RandomBool() ? parent1 : parent2;
+                babe.FireResistSeed = Math.Max(statser.m_oldfire, statser.FireResistSeed);
             }
 
             if (Utility.RandomDouble() > 0.33)
             {
-                if (Utility.RandomBool())
-                    statser = parent1;
-                else
-                        statser = parent2;
-
-                if (statser.m_oldener != 0)
-                    babe.EnergyResistSeed = statser.m_oldener;
-                else
-                    babe.EnergyResistSeed = statser.EnergyResistSeed;    
-            }     
-
-
+                statser = Utility.RandomBool() ? parent1 : parent2;
+                babe.EnergyResistSeed = Math.Max(statser.m_oldener, statser.EnergyResistSeed);
+            }
         }
 
         public override void OnSpeech(SpeechEventArgs e)
         {
             if (e.Speech.ToLower().Equals("i wish to breed"))
-                SayTo(e.Mobile,String.Format("I'm not that type of {0}.",(Female?"girl":"guy")));
+                SayTo(e.Mobile, String.Format("I'm not that type of {0}.", (Female ? "girl" : "guy")));
             else if (e.Speech.ToLower().Contains("i wish to breed animals") || e.Speech.ToLower().Contains("mate"))
                 JakoBreeder.BreedClick((PlayerMobile)e.Mobile, this);
             base.OnSpeech(e);
         }
 
-		public JakoBreeder( Serial serial ) : base( serial )
-		{
-		}
+        public JakoBreeder(Serial serial) : base(serial)
+        {
+        }
 
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
-		}
+            writer.Write((int)0); // version
+        }
 
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-			int version = reader.ReadInt();
-		}
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+            int version = reader.ReadInt();
+        }
 
 
         public class BreedingRequest

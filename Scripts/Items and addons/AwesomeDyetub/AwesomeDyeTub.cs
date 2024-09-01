@@ -118,7 +118,7 @@ namespace Server.Items
         }
         [CommandProperty(AccessLevel.Player)]
         public double HueDelay { get { return m_HueDelay; } set { m_HueDelay = value; } }
-        
+
         [Constructable]
         public AwesomeDyeTub()
         {
@@ -326,51 +326,52 @@ namespace Server.Items
                 this.Resizable = false;
 
                 this.AddPage(0);
+                //
 
                 this.AddBackground(71, 78, 180, 92, 2620);
                 this.AddBackground(71, 162, 144, 84, 2620);
                 this.AddBackground(139, 238, 76, 35, 2620);
 
                 this.AddLabel(80, 90, 2416, @"Current Hue:");
-		if (cd.Redyable)
-		{
-		    this.AddButton(226, 90, 250, 251, (int)Buttons.CurHuePlus, GumpButtonType.Reply, 0);
-		    this.AddButton(166, 90, 252, 253, (int)Buttons.CurHueMinus, GumpButtonType.Reply, 0);
-		    this.AddTextEntry(187, 90, 31, 20, 2416, 1, @"" + m_CD.Hue);
-		}
+                if (cd.Redyable)
+                {
+                    this.AddButton(226, 90, 250, 251, (int)Buttons.CurHuePlus, GumpButtonType.Reply, 0);
+                    this.AddButton(166, 90, 252, 253, (int)Buttons.CurHueMinus, GumpButtonType.Reply, 0);
+                    this.AddTextEntry(187, 90, 31, 20, 2416, 1, @"" + m_CD.Hue);
+                }
 
                 this.AddButton(77, 116, 2124, 248, (int)Buttons.ApplyHue, GumpButtonType.Reply, 0);
                 this.AddLabel(135, 116, 2416, @"to Target");
 
-		this.AddLabel(80, 138, 2416, @"Preview Item");
-		this.AddButton(162, 138, 2515, 2515, (int)Buttons.Preview, GumpButtonType.Reply, 0);
+                this.AddLabel(80, 138, 2416, @"Preview Item");
+                this.AddButton(162, 138, 2515, 2515, (int)Buttons.Preview, GumpButtonType.Reply, 0);
 
-		if (cd.Redyable)
-		{
-		    this.AddButton(77, 173, ButtonID(m_CD), ButtonID(m_CD), (int)Buttons.StopStartHueCycle, GumpButtonType.Reply, 0);
-		}
+                if (cd.Redyable)
+                {
+                    this.AddButton(77, 173, ButtonID(m_CD), ButtonID(m_CD), (int)Buttons.StopStartHueCycle, GumpButtonType.Reply, 0);
+                }
 
-		this.AddLabel(cd.Redyable ? 137 : 79, 174, 2416, cd.Redyable ? @"Cycle Hues" : @"Unchangeable Hue");
+                this.AddLabel(cd.Redyable ? 137 : 79, 174, 2416, cd.Redyable ? @"Cycle Hues" : @"Unchangeable Hue");
 
-		if (cd.Redyable)
-		{
-		    this.AddLabel(80, 195, 2416, @"Start Hue");
-		    this.AddTextEntry(155, 195, 33, 20, 2416, 2, @"" + m_CD.m_HueStart);//Start hue
-		    this.AddLabel(80, 215, 2416, @"Stop Hue");
-		    this.AddTextEntry(155, 215, 33, 20, 2416, 3, @"" + m_CD.m_HueStop);//End hue
-		}
+                if (cd.Redyable)
+                {
+                    this.AddLabel(80, 195, 2416, @"Start Hue");
+                    this.AddTextEntry(155, 195, 33, 20, 2416, 2, @"" + m_CD.m_HueStart);//Start hue
+                    this.AddLabel(80, 215, 2416, @"Stop Hue");
+                    this.AddTextEntry(155, 215, 33, 20, 2416, 3, @"" + m_CD.m_HueStop);//End hue
+                }
 
-		this.AddButton(73, 237, 1028, 1026, (int)Buttons.Exit, GumpButtonType.Reply, 0);
+                this.AddButton(73, 237, 1028, 1026, (int)Buttons.Exit, GumpButtonType.Reply, 0);
 
-		if (cd.Redyable)
-		{
-		    this.AddLabel(145, 245, 2416, @"Get Hue");
-		    this.AddButton(191, 249, 5300, 5300, (int)Buttons.GetHue, GumpButtonType.Reply, 0);
-		}
-		else
-		{
-		    this.AddLabel(145, 245, 2416, @"----------");
-		}
+                if (cd.Redyable)
+                {
+                    this.AddLabel(145, 245, 2416, @"Get Hue");
+                    this.AddButton(191, 249, 5300, 5300, (int)Buttons.GetHue, GumpButtonType.Reply, 0);
+                }
+                else
+                {
+                    this.AddLabel(145, 245, 2416, @"----------");
+                }
 
             }
 
@@ -393,27 +394,27 @@ namespace Server.Items
                 Mobile from = state.Mobile;
 
                 #region TextRelays
-		if (m_CD.Redyable)
-		{
-		    TextRelay entry1 = info.GetTextEntry(1);
-		    int CurHue = NegProtection(entry1 == null ? "" : entry1.Text.Trim());
-		    if (CurHue > 2999)
-			from.SendMessage("There are no hues above 2999.");
-		    else if (!(CurHue == m_CD.Hue) && !m_CD.m_IsCycling)
-			m_CD.Hue = CurHue;
+                if (m_CD.Redyable)
+                {
+                    TextRelay entry1 = info.GetTextEntry(1);
+                    int CurHue = NegProtection(entry1 == null ? "" : entry1.Text.Trim());
+                    if (CurHue > 2999)
+                        from.SendMessage("There are no hues above 2999.");
+                    else if (!(CurHue == m_CD.Hue) && !m_CD.m_IsCycling)
+                        m_CD.Hue = CurHue;
 
-		    TextRelay entry2 = info.GetTextEntry(2);
-		    int HueStart = NegProtection(entry2 == null ? "" : entry2.Text.Trim());
-		    if (!(HueStart == m_CD.m_HueStart))
-			m_CD.m_HueStart = HueStart;
+                    TextRelay entry2 = info.GetTextEntry(2);
+                    int HueStart = NegProtection(entry2 == null ? "" : entry2.Text.Trim());
+                    if (!(HueStart == m_CD.m_HueStart))
+                        m_CD.m_HueStart = HueStart;
 
-		    TextRelay entry3 = info.GetTextEntry(3);
-		    int HueStop = NegProtection(entry3 == null ? "" : entry3.Text.Trim());
-		    if (HueStop > 2999)
-			from.SendMessage("There are no hues above 2999.");
-		    else if (!(HueStop == m_CD.m_HueStop))
-			m_CD.m_HueStop = HueStop;
-		}
+                    TextRelay entry3 = info.GetTextEntry(3);
+                    int HueStop = NegProtection(entry3 == null ? "" : entry3.Text.Trim());
+                    if (HueStop > 2999)
+                        from.SendMessage("There are no hues above 2999.");
+                    else if (!(HueStop == m_CD.m_HueStop))
+                        m_CD.m_HueStop = HueStop;
+                }
                 #endregion
 
                 #region switch ( info.ButtonID )
@@ -447,11 +448,11 @@ namespace Server.Items
                 if (cd.ItemID != 0xFAB)
                     cd.ItemID = 0xFAB;
 
-		if (!cd.Redyable)
-		{
-		    cd.m_HueStart = cd.Hue;
-		    cd.m_HueStop = cd.Hue;
-		}
+                if (!cd.Redyable)
+                {
+                    cd.m_HueStart = cd.Hue;
+                    cd.m_HueStop = cd.Hue;
+                }
 
                 from.CloseGump(typeof(AwesomeDyeTubGump));
             }
@@ -525,14 +526,14 @@ namespace Server.Items
                     if (!CheckRange(from, m_CD))
                         return;
 
-		    if (!(targeted is Item))
-		    {
+                    if (!(targeted is Item) || targeted is DyeTub)
+                    {
                         from.SendLocalizedMessage(m_CD.FailMessage);
-			return;
-		    }
+                        return;
+                    }
 
                     Item item = (Item)targeted;
-
+                    
                     if (item is IDyable && !(item is Container) && (m_CD.AllowDyables || m_CD.AllowEverything))
                     {
                         if (!from.InRange(m_CD.GetWorldLocation(), 1) || !from.InRange(item.GetWorldLocation(), 1))
@@ -611,7 +612,7 @@ namespace Server.Items
                     else if (item is BaseArmor)
                     {
                         BaseArmor ba = item as BaseArmor;
-                        if (((ba.MaterialType == ArmorMaterialType.Leather || ba.MaterialType == ArmorMaterialType.Studded) || item is ElvenBoots ||  m_CD.AllowEverything))
+                        if (((ba.MaterialType == ArmorMaterialType.Leather || ba.MaterialType == ArmorMaterialType.Studded) || item is ElvenBoots || m_CD.AllowEverything))
                         {
                             if (!from.InRange(m_CD.GetWorldLocation(), 1) || !from.InRange(item.GetWorldLocation(), 1))
                             {
@@ -810,26 +811,26 @@ namespace Server.Items
             {
                 if (from.AccessLevel < AccessLevel.GameMaster)
                 {
-                    from.SendMessage(240, "Hey! " + from.Name + "! Use of this dyetub will cost you " + cost + " " + PayTypeName()+".");
+                    from.SendMessage(240, "Hey! " + from.Name + "! Use of this dyetub will cost you " + cost + " " + PayTypeName() + ".");
                     from.SendMessage(269, "Hit escape to exit this transaction or target again to confirm.");
                 }
             }
             public static bool TakePayment(Mobile from, AwesomeDyeTub cd, int cost)
             {
 
-				int i_Bank = Banker.GetBalance( from );
-				int i_Total = cost;
-							
-				Container bank = from.FindBankNoCreate();
-				
-				if ( ( from.Backpack != null && from.Backpack.ConsumeTotal( typeof( Gold ), i_Total ) ) || ( bank != null && bank.ConsumeTotal( typeof( Gold ), i_Total ) ) )
-					return true;
+                int i_Bank = Banker.GetBalance(from);
+                int i_Total = cost;
+
+                Container bank = from.FindBankNoCreate();
+
+                if ((from.Backpack != null && from.Backpack.ConsumeTotal(typeof(Gold), i_Total)) || (bank != null && bank.ConsumeTotal(typeof(Gold), i_Total)))
+                    return true;
                 else
                 {
                     from.SendMessage("Begging thy pardon, but thou can not afford that.");
-                    from.SendMessage("The cost for this item is "+cost+" "+PayTypeName()+".");
+                    from.SendMessage("The cost for this item is " + cost + " " + PayTypeName() + ".");
                 }
-				/*
+                /*
                 Container bp = from.Backpack;
                 if (from.AccessLevel >= AccessLevel.Counselor)
                     return true;
@@ -845,7 +846,7 @@ namespace Server.Items
                         from.SendMessage("The cost for this item is "+cost+" "+PayTypeName()+".");
                     }
                 }*/
-                return false;            
+                return false;
             }
             #endregion
         }

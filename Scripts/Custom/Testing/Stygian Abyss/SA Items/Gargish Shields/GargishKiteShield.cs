@@ -1,12 +1,13 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	// Based off a MetalKiteShield
 	[FlipableAttribute( 0x4201, 0x4206 )]
-	public class GargishKiteShield : BaseShield, IDyable
-	{
+	public class GargishKiteShield : BaseShield, IDyable, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 0; } }
 		public override int BaseFireResistance{ get{ return 0; } }
 		public override int BaseColdResistance{ get{ return 0; } }

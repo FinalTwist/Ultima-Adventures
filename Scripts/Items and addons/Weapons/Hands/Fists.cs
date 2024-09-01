@@ -4,7 +4,15 @@ using Server.Network;
 
 namespace Server.Items
 {
-	public class Fists : BaseMeleeWeapon
+	public interface IFistWeapon
+	{
+	}
+
+	public interface IPugilistGloves : IFistWeapon
+	{
+	}
+	
+	public class Fists : BaseMeleeWeapon, IFistWeapon
 	{
 		public static void Initialize()
 		{

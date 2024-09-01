@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x27A3, 0x27EE )]
-    public class GiftTessen : BaseGiftBashing
-	{
+    public class GiftTessen : BaseGiftBashing, IBlacksmithRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.Feint; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.Block; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.MagicProtection2; } }

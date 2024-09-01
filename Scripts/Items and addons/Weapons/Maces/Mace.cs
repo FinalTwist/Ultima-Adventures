@@ -1,11 +1,12 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0xF5C, 0xF5D )]
-	public class Mace : BaseBashing
+	public class Mace : BaseBashing, IBlacksmithRepairable
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.ConcussionBlow; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.Disarm; } }

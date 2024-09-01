@@ -38,8 +38,11 @@ namespace Server.Spells.Herbalist
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if ( Caster.Skills[CastSkill].Value < RequiredSkill )
+        {
+            if (!base.CheckCast(caster))
+                return false;
+
+            if ( Caster.Skills[CastSkill].Value < RequiredSkill )
 			{
 				Caster.PrivateOverheadMessage(MessageType.Regular, 0x14C, false, "You lack the understanding to grow magical mushrooms.", Caster.NetState);
 				return false;

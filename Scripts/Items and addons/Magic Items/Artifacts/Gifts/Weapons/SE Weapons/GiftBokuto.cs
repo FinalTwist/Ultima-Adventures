@@ -1,11 +1,12 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x27A8, 0x27F3 )]
-    public class GiftBokuto : BaseGiftSword
+    public class GiftBokuto : BaseGiftSword, ICarpentryRepairable
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.Feint; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.NerveStrike; } }

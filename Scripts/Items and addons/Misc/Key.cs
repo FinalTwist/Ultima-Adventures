@@ -312,11 +312,30 @@ namespace Server.Items
 					if ( o is Item )
 					{
 						Item item = (Item) o;
+						Plank otherPlank = item is Plank ? ((Plank)item).GetOtherPlank() : null;
 
 						if ( o.Locked )
+						{
 							item.SendLocalizedMessageTo( from, 1048000 ); // You lock it.
+						}
 						else
+						{
 							item.SendLocalizedMessageTo( from, 1048001 ); // You unlock it.
+						}
+
+						if (otherPlank != null)
+						{
+							otherPlank.Locked = o.Locked;
+
+							if ( otherPlank.Locked )
+							{
+								otherPlank.SendLocalizedMessageTo( from, 1048000 ); // You lock it.
+							}
+							else
+							{
+								otherPlank.SendLocalizedMessageTo( from, 1048001 ); // You unlock it.
+							}
+						}
 
 						if ( item is LockableContainer )
 						{

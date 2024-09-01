@@ -28,10 +28,12 @@ namespace Server.Items
 
         public BaseExplosionPotion( PotionEffect effect ) : base( 0xF0D, effect )
 		{
+			ReturnBottleOnUse = false;
 		}
 
 		public BaseExplosionPotion( Serial serial ) : base( serial )
 		{
+			ReturnBottleOnUse = false;
 		}
 
 		public override void Serialize( GenericWriter writer )
@@ -80,9 +82,12 @@ namespace Server.Items
 				from.SendMessage( "That doesn't feel like a good idea." ); 
 				return;
 			}
-
+			
 			ThrowTarget targ = from.Target as ThrowTarget;
-			this.Stackable = false; // Scavenged explosion potions won't stack with those ones in backpack, and still will explode.
+
+			bool isChemist = from is PlayerMobile && ((PlayerMobile)from).Alchemist();
+			if (!isChemist) // Chemists don't have a timer, so it doesn't need to unstack
+				this.Stackable = false; // Scavenged explosion potions won't stack with those ones in backpack, and still will explode.
 
 			if ( targ != null && targ.Potion == this )
 				return;
@@ -96,6 +101,9 @@ namespace Server.Items
 				m_Users.Add( from );
 
 			from.Target = new ThrowTarget( this );
+			
+			// Chemists don't have a Timer
+			if (isChemist) return;
 
 			if ( m_Timer == null )
 			{
@@ -166,11 +174,12 @@ namespace Server.Items
 			Mobile from = (Mobile)states[0];
 			IPoint3D p = (IPoint3D)states[1];
 			Map map = (Map)states[2];
+			bool shouldConsume = (bool)states[3];
 
 			Point3D loc = new Point3D( p );
 
 			if ( InstantExplosion )
-				Explode( from, true, loc, map );
+				Explode( from, true, loc, map, shouldConsume );
 			else
 				MoveToWorld( loc, map );
 		}
@@ -184,7 +193,7 @@ namespace Server.Items
 				get{ return m_Potion; }
 			}
 
-			public ThrowTarget( BaseExplosionPotion potion ) : base( 12, true, TargetFlags.None )
+			public ThrowTarget( BaseExplosionPotion potion ) : base( 9, true, TargetFlags.None )
 			{
 				m_Potion = potion;
 			}
@@ -222,22 +231,30 @@ namespace Server.Items
 
 				Effects.SendMovingEffect( from, to, m_Potion.ItemID, 7, 0, false, false, m_Potion.Hue, 0 );
 
-				if( m_Potion.Amount > 1 )
+				bool shouldConsume = true;
+				if (from is PlayerMobile && ((PlayerMobile) from).Alchemist())
 				{
-					Mobile.LiftItemDupe( m_Potion, 1 );
+					// Check LRC
+					shouldConsume = 0 < m_Potion.GetConsumedAmount(from, 1);
+				}
+				else
+				{
+					if (m_Potion.Amount > 1)
+						Mobile.LiftItemDupe(m_Potion, 1);
+					
+					m_Potion.Internalize();
 				}
 
-				m_Potion.Internalize();
-				Timer.DelayCall( TimeSpan.FromSeconds( 1.0 ), new TimerStateCallback( m_Potion.Reposition_OnTick ), new object[]{ from, p, map } );
+				Timer.DelayCall( TimeSpan.FromSeconds( 1.0 ), new TimerStateCallback( m_Potion.Reposition_OnTick ), new object[]{ from, p, map, shouldConsume } );
 			}
 		}
 
-		public void Explode( Mobile from, bool direct, Point3D loc, Map map )
+		public void Explode( Mobile from, bool direct, Point3D loc, Map map, bool shouldConsume = true )
 		{
 			if ( Deleted )
 				return;
 
-			Consume();
+			if ( shouldConsume ) Consume();
 
 			for ( int i = 0; m_Users != null && i < m_Users.Count; ++i )
 			{
@@ -262,22 +279,22 @@ namespace Server.Items
 			IPooledEnumerable eable;
 
             //Explosion Potions have a wider range based on EnhancePotions for Chemists
-
-            int scalar = 0;
-            double scalarx = 0;
-                if (from is PlayerMobile && ((PlayerMobile)from).Alchemist())
-                    scalarx = 1.0 + (0.02 * EnhancePotions(from));
-                    scalar = Convert.ToInt32(scalarx);
-
+            int radiusBonus = 0;
+			if (from is PlayerMobile && ((PlayerMobile)from).Alchemist())
+			{
+				radiusBonus = Convert.ToInt32(0.02 * EnhancePotions(from));
+			}
 
             if (LeveledExplosion)
 			{
-				eable = map.GetObjectsInRange(loc, ExplosionRange + scalar);
+				eable = map.GetObjectsInRange(loc, ExplosionRange + radiusBonus);
 			}
 			else
 			{
-				eable = map.GetMobilesInRange(loc, ExplosionRange + scalar);
-			}			ArrayList toExplode = new ArrayList();
+				eable = map.GetMobilesInRange(loc, ExplosionRange + radiusBonus);
+			}
+			
+			ArrayList toExplode = new ArrayList();
 
 			int toDamage = 0;
 

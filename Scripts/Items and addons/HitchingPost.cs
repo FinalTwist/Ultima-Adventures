@@ -118,6 +118,13 @@ namespace Server.Custom
 
 						for (int i = 0; i < listOwners.Count; i++)
 						{
+							if (listPets.Count - 1 < i)
+							{
+								var owner = listOwners[i];
+								Console.WriteLine("WARNING: A hitching post entry for {0} ({1}) does not have a pet. Skipping.", owner.Name, owner.Serial);
+								continue;
+							}
+
 							if (listOwners[i] != null && listPets[i] != null)
 								StabledTable.Add(listOwners[i], listPets[i]);
 						}

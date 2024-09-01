@@ -35,7 +35,8 @@ namespace Server.Commands
 			CommandSystem.Register( "AddDurability", AccessLevel.GameMaster, new CommandEventHandler( AddDurability_OnCommand ) );
 
 			CommandSystem.Register( "ResetTamedMobs", AccessLevel.Administrator, new CommandEventHandler( ResetTamedMobs_OnCommand ) );
-			CommandSystem.Register( "ClearCorpses", AccessLevel.Administrator, new CommandEventHandler( clearcorpses_OnCommand ) );			CommandSystem.Register( "ClearNullItems", AccessLevel.Administrator, new CommandEventHandler( clearnullitems_OnCommand ) );
+			CommandSystem.Register( "ClearCorpses", AccessLevel.Administrator, new CommandEventHandler( clearcorpses_OnCommand ) );
+			CommandSystem.Register( "ClearNullItems", AccessLevel.Administrator, new CommandEventHandler( clearnullitems_OnCommand ) );
 			CommandSystem.Register( "ClearNullMobs", AccessLevel.Administrator, new CommandEventHandler( clearnullmobs_OnCommand ) );
 			CommandSystem.Register( "ClearLightSourceItems", AccessLevel.Administrator, new CommandEventHandler( clearlightsourceitems_OnCommand ) );
 			CommandSystem.Register( "ClearClones", AccessLevel.Administrator, new CommandEventHandler( clearclones_OnCommand ) );
@@ -340,16 +341,16 @@ namespace Server.Commands
 				it.Y -= 990;
 				it.Z -=1;
 			}*/
-			if ( it.Map == Map.Trammel && it.X > 600 && it.X < 900 && it.Y > 1600 && it.Y < 1900 )
+			if ( it.Map == Map.Trammel && it.X > 3299 && it.X < 3395 && it.Y > 1288 && it.Y < 1381 )
 			{
 				if (!(it is PremiumSpawner))
 				{
-					it.X += 2603;
-					it.Y -= 821;
+					it.X += 3;
+					it.Y -= 395;
 					
 				}
-				//it.Z ; 728 1753
-				// to 3331 932
+				//3327 1327 to 3330 932
+				// 3333 1317 to 922
 			}
 		}
 
@@ -609,20 +610,23 @@ namespace Server.Commands
 			}
 		}
 
-		[Usage( "ClearClones" )]
-		[Description( "Clears clones that have less than 175 stats" )]
+		[Usage( "ClearClones [totalStats]" )]
+		[Description( "Clears clones that have less than the specified total stats" )]
 		public static void clearclones_OnCommand( CommandEventArgs e )
 		{
+			int totalStats = CloneCharacterOnLogout.CharacterClone.MinimumTotalStats;
+			if ( e.Length >= 1 )
+				totalStats = e.GetInt32( 0 );
+
             foreach (var mobile in new List<Mobile>(World.Mobiles.Values))
 			{
                 if (mobile is CloneCharacterOnLogout.CharacterClone )
 				{
 					Mobile playr = ((CloneCharacterOnLogout.CharacterClone)mobile).Original;
-					if ( (playr.RawStr + playr.RawInt + playr.RawDex) < 150)
+					if ( playr.RawStatTotal < totalStats)
 						mobile.Delete();
 				}
 			}
-                    
 		}
 
 		[Usage( "SimulateInvasion" )]
@@ -1218,6 +1222,14 @@ namespace Server.Misc
 							((IMount)pet).Rider = null; // make sure it's dismounted
 						}
 						pet.MoveToWorld( dude.Location, dude.Map );
+						
+						pet.Hidden = false;
+						BaseCreature creature = pet as BaseCreature;
+						if (creature != null)
+						{
+							creature.ControlTarget = dude;
+							creature.ControlOrder = OrderType.Follow;
+						}
 					}
 				}
 				else
@@ -1425,7 +1437,7 @@ namespace Server.Misc
 
 				    if (conservative)
 				    {
-					    bool goodToRemove = (bogus is ThrowingWeapon || bogus is MageEye || bogus is BasePoon);
+					    bool goodToRemove = (bogus is ThrowingWeapon || bogus is MageEye || bogus is BasePoon || bogus is HarpoonRope);
 					    if (!goodToRemove)
 						    continue;
 				    }
@@ -1451,6 +1463,30 @@ namespace Server.Misc
 		    	who.SendMessage ("Cleaned up " + bogusCnt + " items.");
 			else
 				Console.WriteLine( "Internal items cleanup: " + bogusCnt + " items.");
+
+			ArrayList nullmobs = new ArrayList();
+			foreach ( Mobile m in World.Mobiles.Values )
+			{
+                if (m is BaseCreature)
+                {
+                    BaseCreature bc = (BaseCreature)m;
+                    if (bc.ControlMaster != null) continue; // Don't risk deleting a player's pet
+
+                    if ( !bc.Controlled && !bc.IsHitchStabled && !bc.Breeding && !bc.IsStabled && bc.Map == null) 
+                    {
+						nullmobs.Add( bc );
+                    }
+					Point3D loc = bc.Location;
+					if (loc.X == 0 && loc.Y == 0)
+						nullmobs.Add( bc );
+                }
+            }
+			for ( int i = 0; i < nullmobs.Count; ++i )
+			{
+				Mobile NM = ( Mobile )nullmobs[ i ];
+				Console.WriteLine( "deleting " + NM);
+				NM.Delete();
+			}
 		}
 
 		public static void OldCharCleanup()

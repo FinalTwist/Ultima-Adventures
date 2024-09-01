@@ -5,6 +5,7 @@ using Server.Items;
 using System.Collections.Generic;
 using Server.Gumps;
 using Server.Mobiles;
+using System.Linq;
 
 namespace Server.Engines.BulkOrders
 {
@@ -66,19 +67,14 @@ namespace Server.Engines.BulkOrders
 			}
 		}
 
-		public static BulkMaterialType GetRandomMaterial( BulkMaterialType start, double[] chances )
+		public static BulkMaterialType GetRandomMaterial( BulkMaterialType startType, BulkMaterialType endType )
 		{
-			double random = Utility.RandomDouble();
+			if (startType == endType) { return startType; }
 
-			for ( int i = 0; i < chances.Length; ++i )
-			{
-				if ( random < chances[i] )
-					return ( i == 0 ? BulkMaterialType.None : start + (i - 1) );
-
-				random -= chances[i];
-			}
-
-			return BulkMaterialType.None;
+			int start = (int)startType;
+			int end = (int)endType;
+			
+			return (BulkMaterialType)(start + Utility.Random(1 + end - start));
 		}
 
 		public override int LabelNumber{ get{ return 1045151; } } // a bulk order deed
@@ -111,7 +107,7 @@ namespace Server.Engines.BulkOrders
 				list.Add( 1045141 ); // All items must be exceptional.
 
 			if ( m_Material != BulkMaterialType.None )
-				list.Add( LargeBODGump.GetMaterialNumberFor( m_Material ) ); // All items must be made with x material.
+                list.Add("All items must be crafted with " + SmallBODGump.GetMaterialStringFor(m_Material)); // All items must be made with x material.
 
 			list.Add( 1060656, m_AmountMax.ToString() ); // amount to make: ~1_val~
 
@@ -144,67 +140,76 @@ namespace Server.Engines.BulkOrders
 		{
 			if ( o is Item && ((Item)o).IsChildOf( from.Backpack ) )
 			{
-				if ( o is SmallBOD )
-				{
-					SmallBOD small = (SmallBOD)o;
+                Type objectType = o.GetType();
+                LargeBulkEntry entry = m_Entries.FirstOrDefault(e => e.Details.Type == objectType);
+                if (entry != null)
+                {
+                    if (entry.Amount + 1 > m_AmountMax)
+                    {
+                        from.SendLocalizedMessage(1045166); // The maximum amount of requested items have already been combined to this deed.
+                    }
+                    else
+                    {
+                        BulkMaterialType material = BulkMaterialType.None;
 
-					LargeBulkEntry entry = null;
+                        if (o is BaseArmor)
+                            material = SmallBOD.GetMaterial(((BaseArmor)o).Resource);
+                        else if (o is BaseClothing)
+                            material = SmallBOD.GetMaterial(((BaseClothing)o).Resource);
+						else if (o is BaseWeapon)
+							material = SmallBOD.GetMaterial(((BaseWeapon)o).Resource);
+						else if (o is BaseInstrument)
+							material = SmallBOD.GetMaterial(((BaseInstrument)o).Resource);
 
-					for ( int i = 0; entry == null && i < m_Entries.Length; ++i )
-					{
-						if ( m_Entries[i].Details.Type == small.Type )
-							entry = m_Entries[i];
-					}
+                        if (m_Material >= BulkMaterialType.DullCopper && m_Material <= BulkMaterialType.Dwarven && material != m_Material)
+                        {
+                            from.SendLocalizedMessage(1045168); // The item is not made from the requested ore.
+                        }
+                        else if (m_Material >= BulkMaterialType.Horned && m_Material <= BulkMaterialType.Alien && material != m_Material)
+                        {
+                            from.SendLocalizedMessage(1049352); // The item is not made from the requested leather type.
+                        }
+                        else if (m_Material >= BulkMaterialType.Ash && m_Material <= BulkMaterialType.Elven && material != m_Material)
+                        {
+                            from.SendMessage("The item is not made from the requested wood type.");
+                        }
+                        else
+                        {
+                            bool isExceptional = false;
 
-					if ( entry == null )
-					{
-						from.SendLocalizedMessage( 1045160 ); // That is not a bulk order for this large request.
-					}
-					else if ( m_RequireExceptional && !small.RequireExceptional )
-					{
-						from.SendLocalizedMessage( 1045161 ); // Both orders must be of exceptional quality.
-					}
-					else if ( m_Material >= BulkMaterialType.DullCopper && m_Material <= BulkMaterialType.Valorite && small.Material != m_Material )
-					{
-						from.SendLocalizedMessage( 1045162 ); // Both orders must use the same ore type.
-					}
-					else if ( m_Material >= BulkMaterialType.Spined && m_Material <= BulkMaterialType.Barbed && small.Material != m_Material )
-					{
-						from.SendLocalizedMessage( 1049351 ); // Both orders must use the same leather type.
-					}
-					else if ( m_AmountMax != small.AmountMax )
-					{
-						from.SendLocalizedMessage( 1045163 ); // The two orders have different requested amounts and cannot be combined.
-					}
-					else if ( small.AmountCur < small.AmountMax )
-					{
-						from.SendLocalizedMessage( 1045164 ); // The order to combine with is not completed.
-					}
-					else if ( entry.Amount >= m_AmountMax )
-					{
-						from.SendLocalizedMessage( 1045166 ); // The maximum amount of requested items have already been combined to this deed.
-					}
-					else
-					{
-						entry.Amount += small.AmountCur;
-						small.Delete();
+                            if (o is BaseWeapon)
+                                isExceptional = (((BaseWeapon)o).Quality == WeaponQuality.Exceptional);
+                            else if (o is BaseArmor)
+                                isExceptional = (((BaseArmor)o).Quality == ArmorQuality.Exceptional);
+                            else if (o is BaseClothing)
+                                isExceptional = (((BaseClothing)o).Quality == ClothingQuality.Exceptional);
+                            else if (o is BaseInstrument)
+                                isExceptional = (((BaseInstrument)o).Quality == InstrumentQuality.Exceptional);
 
-						from.SendLocalizedMessage( 1045165 ); // The orders have been combined.
+                            if (m_RequireExceptional && !isExceptional)
+                            {
+                                from.SendLocalizedMessage(1045167); // The item must be exceptional.
+                            }
+                            else
+                            {
+                                ((Item)o).Delete();
+                                entry.Amount++;
 
-						from.SendGump( new LargeBODGump( from, this ) );
+                                from.SendLocalizedMessage(1045170); // The item has been combined with the deed.
 
-						if ( !Complete )
-							BeginCombine( from );
-					}
-				}
-				else if (o == this) {
-					from.SendGump( new LargeBODCreateSmallBODGump( from, (LargeBOD)this ) );
-				}
-				else
-				{
-					from.SendLocalizedMessage( 1045159 ); // That is not a bulk order.
-				}
-			}
+                                from.SendGump(new LargeBODGump(from, this));
+
+                                if (m_Entries.Any(e => e.Amount < m_AmountMax))
+                                    BeginCombine(from);
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    from.SendLocalizedMessage(1045169); // The item is not in the request.
+                }
+            }
 			else
 			{
 				from.SendLocalizedMessage( 1045158 ); // You must have the item in your backpack to target it.

@@ -8,6 +8,7 @@ using Server.Misc;
 using Server.Network;
 using Server.Spells;
 using Server.Mobiles;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
@@ -191,7 +192,7 @@ namespace Server.Items
 		}
 	}
 
-	public class BaseGiftStave : BaseGiftRanged
+	public class BaseGiftStave : BaseGiftRanged, ICarpentryRepairable
 	{
 		public int damageType;
 		[CommandProperty(AccessLevel.Owner)]

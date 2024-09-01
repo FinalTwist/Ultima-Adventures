@@ -25,8 +25,11 @@ namespace Server.Spells.Fifth
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if ( Caster.MagicDamageAbsorb > 0 )
+        {
+            if (!base.CheckCast(caster))
+                return false;
+
+            if ( Caster.MagicDamageAbsorb > 0 )
 			{
 				Caster.SendLocalizedMessage( 1005559 ); // This spell is already in effect.
 				return false;

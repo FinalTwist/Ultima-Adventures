@@ -59,17 +59,11 @@ namespace Server.Spells.Fourth
 
 					foreach ( Mobile m in eable )
 					{
-						// Archcure area effect won't cure aggressors or victims, nor murderers, criminals or monsters 
-						// plus Arch Cure Area will NEVER work on summons/pets if you are in Felucca facet
-						// red players can cure only themselves and guildies with arch cure area.
+                        if ( m == m_directtarget )
+                            continue;
 
-						if ( map.Rules == MapRules.FeluccaRules )
-							{
-								if ( Caster.CanBeBeneficial( m, false ) && ( !Core.AOS || !IsAggressor( m ) && !IsAggressed( m ) && (( IsInnocentTo ( Caster, m ) && IsInnocentTo ( m, Caster ) ) || ( IsAllyTo ( Caster, m ) )) && m != m_directtarget && m is PlayerMobile || m == Caster && m != m_directtarget ))
-									targets.Add( m );
-							}
-						else if ( Caster.CanBeBeneficial( m, false ) && ( !Core.AOS || !IsAggressor( m ) && !IsAggressed( m ) && (( IsInnocentTo ( Caster, m ) && IsInnocentTo ( m, Caster ) ) || ( IsAllyTo ( Caster, m ) )) && m != m_directtarget || m == Caster && m != m_directtarget ))
-							targets.Add( m );
+                        if ( AreaCanTarget(m, false) )
+                            targets.Add( m );
 					}
 
 					eable.Free();
@@ -140,8 +134,38 @@ namespace Server.Spells.Fourth
 		
 		private static bool IsAllyTo( Mobile from, Mobile to )
 		{
-			return ( Notoriety.Compute( from, (Mobile)to ) == Notoriety.Ally );
+            int notoriety = Notoriety.Compute( from, (Mobile)to );
+			if (notoriety == Notoriety.Ally) return true;
+
+			// Allow Reds (players and creatures) to be treated as allies if one of them is the ControlMaster
+			if (notoriety == Notoriety.Murderer) 
+			{
+				if (from is BaseCreature && ((BaseCreature)from).ControlMaster == to) return true;
+				if (to is BaseCreature && ((BaseCreature)to).ControlMaster == from) return true;
+			}
+
+			return false;
 		}
+
+        private bool AreaCanTarget(Mobile target, bool feluccaRules)
+        {
+            if (!Caster.CanBeBeneficial(target, false))
+                return false;
+
+            if (Core.AOS && target != Caster)
+            {
+                if (IsAggressor(target) || IsAggressed(target))
+					return false;
+
+                if ((!IsInnocentTo(Caster, target) || !IsInnocentTo(target, Caster)) && !IsAllyTo(Caster, target))
+					return false;
+
+                if (feluccaRules && !(target is PlayerMobile))
+					return false;
+            }
+
+            return true;
+        }
 
 		private class InternalTarget : Target
 		{

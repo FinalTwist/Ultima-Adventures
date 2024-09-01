@@ -40,43 +40,55 @@ namespace Server.Spells.Eighth
             {
                 Caster.SendLocalizedMessage( 500237 ); // Target can not be seen.
             }
-            else if ( m == Caster && CheckBSequence( m, true ) )
+            else if ( m == Caster )
             {
+				if (CheckBSequence( m, true ))
+				{
 
-                if ( m is PlayerMobile && ((PlayerMobile)m).SoulBound )
-                {
-                    Caster.SendMessage( "This won't work on you." );
-                    return; // no orbs for soulbound players
-                    
-                }
+					if ( m is PlayerMobile && ((PlayerMobile)m).SoulBound )
+					{
+						Caster.SendMessage( "This won't work on you." );
+						return; // no orbs for soulbound players
+						
+					}
 
-			if (m.Backpack == null)
-					return;
+					if (m.Backpack == null)
+							return;
 
-			ArrayList targets = new ArrayList();
-			foreach ( Item item in m.Backpack.Items )
-		    if ( item is SoulOrb )
-		    {
-			SoulOrb myOrb = (SoulOrb)item;
-			if ( myOrb.m_Owner == m )
-			{
-			    targets.Add( item );
-			}
-		    }
+					ArrayList targets = new ArrayList();
+					foreach ( Item item in m.Backpack.Items )
+					if ( item is SoulOrb )
+					{
+					SoulOrb myOrb = (SoulOrb)item;
+					if ( myOrb.m_Owner == m )
+					{
+						targets.Add( item );
+					}
+					}
 
-		for ( int i = 0; i < targets.Count; ++i )
-		{
-		    Item item = ( Item )targets[ i ];
-		    item.Delete();
-		}
+					for ( int i = 0; i < targets.Count; ++i )
+					{
+						Item item = ( Item )targets[ i ];
+						item.Delete();
+					}
 
-                m.PlaySound( 0x214 );
-                m.FixedEffect( 0x376A, 10, 16, Server.Items.CharacterDatabase.GetMySpellHue( Caster, 0 ), 0 );
-		m.SendMessage( "You summon a magical orb to protect your soul." );
-		SoulOrb iOrb = new SoulOrb();
-		iOrb.m_Owner = m;
-		m.AddToBackpack( iOrb );
-		Server.Items.SoulOrb.OnSummoned( m, iOrb );
+							m.PlaySound( 0x214 );
+							m.FixedEffect( 0x376A, 10, 16, Server.Items.CharacterDatabase.GetMySpellHue( Caster, 0 ), 0 );
+					
+					Container pack = m.Backpack;
+					SoulOrb iOrb = new SoulOrb();
+					iOrb.m_Owner = m;
+
+					if (!pack.CheckHold(m, iOrb, true))
+					{
+						iOrb.Delete();
+						return;
+					}
+
+					m.AddToBackpack( iOrb );
+					Server.Items.SoulOrb.OnSummoned( m, iOrb );
+					m.SendMessage( "You summon a magical orb to protect your soul." );
+				}
             }
             else if ( !Caster.Alive )
             {

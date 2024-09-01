@@ -315,10 +315,39 @@ namespace Server.Items
 			if ( Deleted )
 				return;
 
-			foreach ( AddonComponent c in m_Components )
-				c.Location = new Point3D( X + c.Offset.X, Y + c.Offset.Y, Z + c.Offset.Z );
+			if (m_Components == null)
+			{
+				Console.WriteLine("BaseAddon.Components was null. Stopped null ref.");
+				return;
+			}
+
+			foreach (AddonComponent c in m_Components)
+			{
+				if (c == null)
+				{
+					Console.WriteLine("BaseAddon.Components.Component was null. Stopped null ref.");
+					continue;
+				}
+
+				c.Location = new Point3D(X + c.Offset.X, Y + c.Offset.Y, Z + c.Offset.Z);
+			}
+
+			if (m_Itms == null)
+			{
+				Console.WriteLine("BaseAddon.Items was null. Stopped null ref.");
+				return;
+			}
+
 			foreach (Item cc in m_Itms)
-				cc.Location = new Point3D( X, Y, Z );
+			{
+				if (cc == null)
+				{
+					Console.WriteLine("BaseAddon.Items.Item was null. Stopped null ref.");
+					continue;
+				}
+
+				cc.Location = new Point3D(X, Y, Z);
+			}
 		}
 
 		public override void OnMapChange()

@@ -21,79 +21,76 @@ namespace Server.Items
 			Hue = 0x3bf;
 		}
 
+        public override bool CanAdd( Mobile from, Item item)
+		{
+            if ( item is IronOre || 
+				item is DullCopperOre || 
+				item is ShadowIronOre ||
+				item is CopperOre ||
+				item is BronzeOre ||
+				item is GoldOre ||
+				item is AgapiteOre ||
+				item is VeriteOre ||
+				item is ValoriteOre ||
+				item is NepturiteOre ||
+				item is ObsidianOre ||
+				item is MithrilOre ||
+				item is XormiteOre ||
+				item is DwarvenOre ||
+
+                item is Granite ||
+				item is DullCopperGranite ||
+				item is ShadowIronGranite ||
+				item is CopperGranite ||
+				item is BronzeGranite ||
+				item is GoldGranite ||
+				item is AgapiteGranite ||
+				item is VeriteGranite ||
+				item is ValoriteGranite ||
+				item is NepturiteGranite ||
+				item is ObsidianGranite ||
+				item is MithrilGranite ||
+				item is XormiteGranite ||
+				item is DwarvenGranite ||
+
+                item is MinersPouch )
+			{
+				return true;
+			}
+
+			return false;
+		}
+
 		public override bool OnDragDropInto( Mobile from, Item dropped, Point3D p )
         {
-			if ( dropped is Container && !(dropped is MinersPouch) )
+			if (CanAdd(from, dropped)) return base.OnDragDropInto(from, dropped, p);
+
+			if ( dropped is Container )
 			{
                 from.SendMessage("You can only use another miners rucksack within this sack.");
-                return false;
-			}
-            else if ( 	dropped is IronOre || 
-						dropped is DullCopperOre || 
-						dropped is ShadowIronOre ||
-						dropped is CopperOre ||
-						dropped is BronzeOre ||
-						dropped is GoldOre ||
-						dropped is AgapiteOre ||
-						dropped is VeriteOre ||
-						dropped is ValoriteOre ||
-						dropped is Granite ||
-						dropped is DullCopperGranite ||
-						dropped is ShadowIronGranite ||
-						dropped is CopperGranite ||
-						dropped is BronzeGranite ||
-						dropped is GoldGranite ||
-						dropped is AgapiteGranite ||
-						dropped is VeriteGranite ||
-						dropped is ValoriteGranite ||
-						dropped is MinersPouch)
-			{
-				return base.OnDragDropInto(from, dropped, p);
-			}
-			else
-            {
-                from.SendMessage("This rucksack is for mining supplies and ores.");
-                return false;
-            }
-
-            return base.OnDragDropInto(from, dropped, p);
-        }
-
-		public override bool OnDragDrop( Mobile from, Item dropped )
-        {
-			if ( dropped is Container && !(dropped is MinersPouch) )
-			{
-                from.SendMessage("You can only use another miners rucksack within this sack.");
-                return false;
-			}
-            else if (   dropped is IronOre || 
-						dropped is DullCopperOre || 
-						dropped is ShadowIronOre ||
-						dropped is CopperOre ||
-						dropped is BronzeOre ||
-						dropped is GoldOre ||
-						dropped is AgapiteOre ||
-						dropped is VeriteOre ||
-						dropped is ValoriteOre ||
-						dropped is Granite ||
-						dropped is DullCopperGranite ||
-						dropped is ShadowIronGranite ||
-						dropped is CopperGranite ||
-						dropped is BronzeGranite ||
-						dropped is GoldGranite ||
-						dropped is AgapiteGranite ||
-						dropped is VeriteGranite ||
-						dropped is ValoriteGranite )
-			{
-				return base.OnDragDrop(from, dropped);
 			}
 			else
             {
                 from.SendMessage("This rucksack is for mining resources.");
-                return false;
             }
 
-            return base.OnDragDrop(from, dropped);
+			return false;
+        }
+
+		public override bool OnDragDrop( Mobile from, Item dropped )
+        {
+			if (CanAdd(from, dropped)) return base.OnDragDrop(from, dropped);
+
+			if ( dropped is Container )
+			{
+                from.SendMessage("You can only use another miners rucksack within this sack.");
+			}
+			else
+            {
+                from.SendMessage("This rucksack is for mining resources.");
+            }
+			
+			return false;
         }
 
 		public MinersPouch( Serial serial ) : base( serial )
@@ -111,7 +108,7 @@ namespace Server.Items
 			base.Deserialize( reader );
 			int version = reader.ReadInt();
 			Weight = 1.0;
-			MaxItems = 5;
+			MaxItems = 50;
 			Name = "miners rucksack";
 		}
 

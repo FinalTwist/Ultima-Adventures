@@ -6,12 +6,13 @@
 */
 
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
-	public class CraftableHoodRobe : BaseArmor
-	{
+	public class CraftableHoodRobe : BaseArmor, IClothingStub, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 4; } }
 		public override int BaseFireResistance{ get{ return 1; } }
 		public override int BaseColdResistance{ get{ return 3; } }

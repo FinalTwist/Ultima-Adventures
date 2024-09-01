@@ -1051,30 +1051,30 @@ namespace Server
 		/// </summary>
 		public virtual void AddNameProperties( ObjectPropertyList list )
 		{
-			AddNameProperty( list );
+            AddNameProperty( list );
 
 			if ( IsSecure )
 				AddSecureProperty( list );
 			else if ( IsLockedDown )
 				AddLockedDownProperty( list );
 
-			Mobile blessedFor = this.BlessedFor;
+            Mobile blessedFor = this.BlessedFor;
 
 			if ( blessedFor != null && !blessedFor.Deleted )
 				AddBlessedForProperty( list, blessedFor );
 
-			if ( DisplayLootType )
+            if ( DisplayLootType )
 				AddLootTypeProperty( list );
 
-			if ( DisplayWeight )
+            if ( DisplayWeight )
 				AddWeightProperty( list );
 
-			if( QuestItem )
+            if( QuestItem )
 				AddQuestItemProperty( list );
 
 
-			AppendChildNameProperties( list );
-		}
+            AppendChildNameProperties( list );
+        }
 
 		/// <summary>
 		/// Overridable. Adds the "Quest Item" property to the given <see cref="ObjectPropertyList" />.
@@ -1120,8 +1120,8 @@ namespace Server
 		/// Overridable. Event invoked when a child (<paramref name="item" />) is building it's <see cref="ObjectPropertyList" />. Recursively calls <see cref="Item.GetChildProperties">Item.GetChildProperties</see> or <see cref="Mobile.GetChildProperties">Mobile.GetChildProperties</see>.
 		/// </summary>
 		public virtual void GetChildProperties( ObjectPropertyList list, Item item )
-		{
-			if ( m_Parent is Item )
+        {
+            if ( m_Parent is Item )
 				((Item)m_Parent).GetChildProperties( list, item );
 			else if ( m_Parent is Mobile )
 				((Mobile)m_Parent).GetChildProperties( list, item );
@@ -1679,19 +1679,34 @@ namespace Server
 			}
 		}
 
+		private object _pll = new object();
 		public ObjectPropertyList PropertyList
-		{
+        {
 			get
 			{
 				if ( m_PropertyList == null )
 				{
-					m_PropertyList = new ObjectPropertyList( this );
+                    lock(_pll)
+                    {
+                        if (m_PropertyList == null)
+                        {
+                            var opl = m_PropertyList = new ObjectPropertyList(this);
 
-					GetProperties( m_PropertyList );
-					AppendChildProperties( m_PropertyList );
+                            GetProperties(m_PropertyList);
+                            AppendChildProperties(m_PropertyList);
+                            if (m_PropertyList == null)
+							{
+								// This is a disgusting hack. But ain't no way I'm checking 1k files for other occurrences.
+								// At some point someone thought it'd be a good idea to delete an item when it's info was requested.
+								// Plz don't do this. In the event you do, who knows what might happen.
+								// For now, return the same instance we just created... otherwise, someone may internally null out the class member
+								return opl;
+							}
 
-					m_PropertyList.Terminate();
-					m_PropertyList.SetStatic();
+                            m_PropertyList.Terminate();
+                            m_PropertyList.SetStatic();
+                        }
+                    }
 				}
 
 				return m_PropertyList;

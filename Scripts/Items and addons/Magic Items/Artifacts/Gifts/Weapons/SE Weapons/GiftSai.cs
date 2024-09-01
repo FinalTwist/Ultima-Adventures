@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x27AF, 0x27FA )]
-    public class GiftSai : BaseGiftKnife
-	{
+    public class GiftSai : BaseGiftKnife, IBlacksmithRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.Block; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.ArmorPierce; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.DoubleWhirlwindAttack; } }

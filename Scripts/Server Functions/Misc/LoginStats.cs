@@ -27,9 +27,8 @@ namespace Server.Misc
 
 			//Unique Naming System//
 			#region CheckName
-			if ( ( m.Name == CharacterCreation.GENERIC_NAME || !CharacterCreation.CheckDupe(m, m.Name) ) && m.AccessLevel < AccessLevel.GameMaster )
+			if ( ( m.Name == CharacterCreation.GENERIC_NAME || !CharacterCreation.CheckDupe(m, m.Name) ) && string.IsNullOrWhiteSpace(m.NameMod) && m.AccessLevel < AccessLevel.GameMaster )
 			{
-				m.CantWalk = true;
 				m.SendGump( new NameChangeGump( m) );
 			}
 			#endregion

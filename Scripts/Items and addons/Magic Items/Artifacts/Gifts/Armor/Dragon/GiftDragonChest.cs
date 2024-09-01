@@ -1,11 +1,12 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x2641, 0x2642 )]
-    public class GiftDragonChest : BaseGiftArmor
-	{
+    public class GiftDragonChest : BaseGiftArmor, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 3; } }
 		public override int BaseFireResistance{ get{ return 3; } }
 		public override int BaseColdResistance{ get{ return 3; } }
@@ -25,7 +26,7 @@ namespace Server.Items
 		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Dragon; } }
 		public override CraftResource DefaultResource{ get{ return CraftResource.RegularLeather; } }
 
-		[Constructable]
+        [Constructable]
 		public GiftDragonChest() : base( 0x2641 )
 		{
 			Weight = 10.0;

@@ -1,11 +1,12 @@
 using System;
 using Server.Items;
 using Server.Network;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x13C6, 0x13CE )]
-	public class GiftThrowingGloves : BaseGiftRanged
+	public class GiftThrowingGloves : BaseGiftRanged, ITailorRepairable, IThrowingGloves
 	{
 		public string GloveType;
 		

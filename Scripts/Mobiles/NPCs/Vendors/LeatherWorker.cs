@@ -299,7 +299,7 @@ if (ba.MaxHitPoints > 10)
                         from.SendMessage("You do not have enough gold.");
                     }
                 }
-                else if ( (targeted is BaseWeapon && from.Backpack != null) && ( targeted is LevelPugilistGloves || targeted is LevelThrowingGloves || targeted is GiftPugilistGloves || targeted is GiftThrowingGloves || targeted is ThrowingGloves || targeted is PugilistGlove || targeted is PugilistGloves || targeted is PugilistMits ) ) 
+                else if ( (targeted is BaseWeapon && from.Backpack != null) && ( targeted is IPugilistGloves || targeted is IThrowingGloves ) ) 
                 {
                     BaseWeapon ba = targeted as BaseWeapon;
                     Container pack = from.Backpack;

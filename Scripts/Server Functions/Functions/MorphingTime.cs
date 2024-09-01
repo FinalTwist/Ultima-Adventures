@@ -705,8 +705,7 @@ namespace Server.Misc
 							case 3: item.ItemID = Utility.RandomList( 0x2783, 0x27CE ); item.Weight = 3.0; item.Name = "kimono"; break;
 						}
 					}
-					else if ( item is PugilistGlove ) { item.ItemID = 0x13C6; item.Name = "wushu gloves"; }
-					else if ( item is PugilistGloves ) { item.ItemID = 0x13C6; item.Name = "wushu gloves"; }
+					else if ( item is IPugilistGloves ) { item.ItemID = 0x13C6; item.Name = "wushu gloves"; }
 					else if ( item is Crossbow ) { item.Name = "chu-ko-nu"; }
 					else if ( item is ElvenCompositeLongbow ) { item.Name = "daikyu"; }
 					else if ( item is QuarterStaff ) { item.Name = "bo staff"; }

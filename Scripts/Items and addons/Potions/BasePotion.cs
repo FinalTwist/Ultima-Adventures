@@ -134,6 +134,8 @@ namespace Server.Items
 			}
 		}
 
+		protected bool ReturnBottleOnUse { get; set; }
+
 		int ICommodity.DescriptionNumber { get { return LabelNumber; } }
 		bool ICommodity.IsDeedable { get { return (Core.ML); } }
 
@@ -144,11 +146,13 @@ namespace Server.Items
 			m_PotionEffect = effect;
 
 			Stackable = true;
+			ReturnBottleOnUse = true;
 			Weight = 0.65;
 		}
 
 		public BasePotion( Serial serial ) : base( serial )
 		{
+			ReturnBottleOnUse = true;
 		}
 
 		public virtual bool RequireFreeHand{ get{ return false; } }
@@ -169,13 +173,8 @@ namespace Server.Items
 					return true;
 			}
 
-			if (	( handOne is PugilistGlove ) || 
-					( handOne is PugilistGloves ) || 
-					( handOne is LevelPugilistGloves ) || 
-					( handOne is LevelThrowingGloves ) || 
-					( handOne is GiftPugilistGloves ) || 
-					( handOne is GiftThrowingGloves ) || 
-					( handOne is ThrowingGloves ) )
+			if (	( handOne is IPugilistGloves ) ||
+					( handOne is IThrowingGloves ) )
 			{
 				return true;
 			}
@@ -192,7 +191,8 @@ namespace Server.Items
 			{
 				if (!RequireFreeHand || HasFreeHand(from))
 				{
-					if (this is BaseExplosionPotion && Amount > 1)
+					bool isChemist = from is PlayerMobile ? ((PlayerMobile)from).Alchemist() : false;
+					if (!isChemist && this is BaseExplosionPotion && Amount > 1)
 					{
 						BasePotion pot = (BasePotion)Activator.CreateInstance(this.GetType());
 
@@ -259,11 +259,58 @@ namespace Server.Items
 
 		public abstract void Drink( Mobile from );
 
+		public int GetConsumedAmount(Mobile from, int amount)
+		{
+			if (
+				this is BaseAgilityPotion ||
+				this is BaseConflagrationPotion ||
+				this is BaseConfusionBlastPotion ||
+				this is BaseCurePotion ||
+				this is BaseExplosionPotion ||
+				this is BaseFrostbitePotion ||
+				this is BaseHealPotion ||
+				this is BasePoisonPotion ||
+				this is BaseRefreshPotion ||
+				this is BaseStrengthPotion ||
+				this is NightSightPotion
+				)
+			{
+				PlayerMobile player = from as PlayerMobile;
+				if (player != null && (player.Alchemist()))
+				{
+					int consumed = amount;
+					int lrc = Math.Min(50, AosAttributes.GetValue( from, AosAttribute.LowerRegCost ));
+					for (int i = 0; i < amount; i++)
+					{
+						if (lrc > Utility.Random( 100 ))
+						{
+							consumed--;
+						}
+					}
+
+					amount = consumed;
+				}
+			}
+
+			return amount;
+        }
+
+        public void Consume(Mobile from, int amount = 1)
+		{
+			amount = GetConsumedAmount(from, amount);
+			if (amount < 1)	{ return; }
+
+			Consume(amount);
+
+			if (ReturnBottleOnUse)
+			{
+				for (int i = 0; i < amount; i++) from.AddToBackpack( new Bottle() );
+			}
+		}
+
 		public static void PlayDrinkEffect( Mobile m )
 		{
 			m.PlaySound( 0x2D6 );
-
-			m.AddToBackpack( new Bottle() );
 
 			if ( m.Body.IsHuman && !m.Mounted )
 				m.Animate( 34, 5, 1, true, false, 0 );
@@ -296,7 +343,7 @@ namespace Server.Items
 			return TimeSpan.FromSeconds( v.TotalSeconds * scalar );
 		}
 
-		public static double Scale( Mobile m, double v )
+        public static double Scale( Mobile m, double v )
 		{
 			if ( !Core.AOS )
 				return v;
@@ -313,8 +360,8 @@ namespace Server.Items
 		{
 			if ( !Core.AOS )
 				return v;
-			
-			if (m is PlayerMobile && ((PlayerMobile)m).Alchemist())
+
+            if (m is PlayerMobile && ((PlayerMobile)m).Alchemist())
 				v = (int)((double)v * ((PlayerMobile)m).AlchemistBonus());
 
 			return AOS.Scale( v, 100 + EnhancePotions( m ) );

@@ -35,8 +35,11 @@ namespace Server.Spells.Undead
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			return SpellHelper.CheckTravel( Caster, TravelCheckType.GateFrom );
+        {
+            if (!base.CheckCast(caster))
+                return false;
+
+            return SpellHelper.CheckTravel( Caster, TravelCheckType.GateFrom );
 		}
 
 		private bool GateExistsAt(Map map, Point3D loc )

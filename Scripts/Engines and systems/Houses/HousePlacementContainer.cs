@@ -54,18 +54,72 @@ namespace Server.Items
 			g_ac.Add(ac);
 		}
 
+		private bool TryGetMultiplier(BaseWoodBoard board, out double multiplier)
+		{
+			switch(board.Resource)
+            {
+                case CraftResource.RegularWood: multiplier = 1; break;
+                case CraftResource.AshTree: multiplier = 1.2; break;
+                case CraftResource.CherryTree: multiplier = 1.3; break;
+                case CraftResource.EbonyTree: multiplier = 1.4; break;
+                case CraftResource.GoldenOakTree: multiplier = 1.5; break;
+                case CraftResource.HickoryTree: multiplier = 1.6; break;
+                case CraftResource.MahoganyTree: multiplier = 1.7; break;
+                case CraftResource.OakTree: multiplier = 1.8; break;
+                case CraftResource.PineTree: multiplier = 1.9; break;
+                case CraftResource.GhostTree: multiplier = 3; break;
+                case CraftResource.RosewoodTree: multiplier = 2; break;
+                case CraftResource.WalnutTree: multiplier = 2.10; break;
+                case CraftResource.PetrifiedTree: multiplier = 3.10; break;
+                case CraftResource.DriftwoodTree: multiplier = 3.20; break;
+                case CraftResource.ElvenTree: multiplier = 4; break;
+                default: multiplier = 0; break; // Unknown wood type
+			}
+
+			return multiplier != 0;
+		}
+
+		private bool TryGetMultiplier(BaseGranite granite, out double multiplier)
+        {
+            switch (granite.Resource)
+            {
+                case CraftResource.Iron: multiplier = 1; break;
+                case CraftResource.DullCopper: multiplier = 1.25; break;
+                case CraftResource.ShadowIron: multiplier = 1.5; break;
+                case CraftResource.Copper: multiplier = 1.75; break;
+                case CraftResource.Bronze: multiplier = 2; break;
+                case CraftResource.Gold: multiplier = 2.25; break;
+                case CraftResource.Agapite: multiplier = 2.50; break;
+                case CraftResource.Verite: multiplier = 2.75; break;
+                case CraftResource.Valorite: multiplier = 3; break;
+                case CraftResource.Nepturite: multiplier = 3.10; break;
+                case CraftResource.Obsidian: multiplier = 3.10; break;
+                case CraftResource.Steel: multiplier = 3.25; break;
+                case CraftResource.Brass: multiplier = 3.5; break;
+                case CraftResource.Mithril: multiplier = 3.75; break;
+                case CraftResource.Xormite: multiplier = 3.75; break;
+                case CraftResource.Dwarven: multiplier = 7.50; break;
+                default: multiplier = 0; break; // Unknown wood type
+            }
+
+            return multiplier != 0;
+        }
+
 
 		public override bool OnDragDrop( Mobile from, Item dropped )
 		{
-			if (g_Owner == null && (dropped is Board || dropped is Nails || dropped is Granite))
+			if (g_Owner == null && (dropped is BaseWoodBoard || dropped is Nails || dropped is BaseGranite))
 			{
 				g_claimed = true;
 				g_Owner = from;
 			}
 
-			if (dropped is Board)
+			if (dropped is BaseWoodBoard)
 			{
-				g_HaveWood += (int)((double)dropped.Amount);
+                double multiplier;
+                if (!TryGetMultiplier((BaseWoodBoard)dropped, out multiplier)) return false;
+
+                g_HaveWood += (int)(multiplier * dropped.Amount);
 				this.InvalidateProperties();
 				dropped.Delete();
 				return true;
@@ -77,9 +131,12 @@ namespace Server.Items
 				dropped.Delete();
 				return true;
 			}
-			else if ( dropped is Granite)
-			{
-				g_HaveStone += (int)((double)dropped.Amount);
+			else if ( dropped is BaseGranite)
+            {
+                double multiplier;
+                if (!TryGetMultiplier((BaseGranite)dropped, out multiplier)) return false;
+
+                g_HaveStone += (int)(multiplier * dropped.Amount);
 				this.InvalidateProperties();
 				dropped.Delete();
 				return true;

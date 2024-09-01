@@ -46,7 +46,7 @@ namespace Server.Items
 			}
 			else
 			{
-				from.SendMessage("Only the fires of the dwarven forge could melt caddellite!");
+				from.SendMessage("Only the fires of the Great Dwarven Forge could melt caddellite!");
 			}
 		}
 

@@ -1,10 +1,11 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public class WizardWand : BaseBashing
+	public class WizardWand : BaseBashing, ICarpentryRepairable
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.PsychicAttack; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.ZapManaStrike; } }

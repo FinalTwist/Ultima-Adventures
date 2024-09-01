@@ -26,11 +26,11 @@ namespace Server.Spells.HolyMan
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if ( Core.AOS )
-				return true;
+        {
+            if (!base.CheckCast(caster))
+                return false;
 
-			if ( Caster.MagicDamageAbsorb > 0 )
+            if ( Caster.MagicDamageAbsorb > 0 )
 			{
 				Caster.SendMessage( "You are already under the effects of this prayer." );
 				return false;

@@ -516,7 +516,7 @@ namespace Server.Misc
 						if ( weapon is WizardStick ){ weapon.ItemID = Utility.RandomList( 0x0DF2, 0x0DF3, 0x0DF4, 0x0DF5, 0x269D, 0x269E, 0x26BC, 0x26C6 ); box.ItemID = weapon.ItemID; }
 						else { weapon.ItemID = Utility.RandomList( 0xE81, 0x13F8, 0xDF1, 0x2D25, 0xE89, 0x0908 ); box.ItemID = weapon.ItemID; }
 					}
-					else if ( weapon is GiftThrowingGloves || weapon is GiftPugilistGloves || weapon is LevelThrowingGloves || weapon is LevelPugilistGloves || weapon is ThrowingGloves || weapon is PugilistGloves || weapon is PugilistGlove ){ itemID.VendorCanID = "Leatherworker"; }
+					else if ( weapon is IThrowingGloves || weapon is IPugilistGloves ){ itemID.VendorCanID = "Leatherworker"; }
 					else if ( weapon is BaseRanged )
 					{
 						itemID.VendorCanID = "Bowyer";
@@ -1808,7 +1808,8 @@ namespace Server.Misc
 				if ( box != null ){ boxID = box.ItemID; }
 
 			bool plain = Utility.RandomBool();
-				if ( Server.Misc.GetPlayerInfo.LuckyPlayer( from.Luck, from ) ){ plain = false; }
+
+			if ( plain == true && Server.Misc.GetPlayerInfo.LuckyPlayer( from.Luck, from ) ){ plain = false; }
 
 			bool canMod = true;
 
@@ -1977,7 +1978,7 @@ namespace Server.Misc
 							}
 						}
 						else if ( item is BaseWizardStaff ){}
-						else if ( item is ThrowingGloves || item is PugilistGloves || item is PugilistGlove ){ itemID.VendorCanID = "Leatherworker"; }
+						else if ( item is IThrowingGloves || item is IPugilistGloves ){ itemID.VendorCanID = "Leatherworker"; }
 						else if ( item is BaseRanged )
 						{
 							itemID.VendorCanID = "Bowyer";

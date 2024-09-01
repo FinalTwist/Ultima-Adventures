@@ -171,6 +171,9 @@ namespace Server.Misc
 			return false;
 		}
 
+        /// <summary>
+        /// Returns True if the item is a Weapon/Armor whose Resource is a Metal or Strange Metal
+        /// </summary>
 		public static bool IsAnyKindOfMetalItem( Item item )
 		{
 			if ( item == null )
@@ -185,7 +188,10 @@ namespace Server.Misc
 			return false;
 		}
 
-		public static bool IsAnyKindOfWoodItem( Item item )
+        /// <summary>
+        /// Returns True if the item is a Weapon/Armor whose Resource is a Wood or Strange Wood
+        /// </summary>
+        public static bool IsAnyKindOfWoodItem( Item item )
 		{
 			if ( item == null )
 				return false;
@@ -199,7 +205,10 @@ namespace Server.Misc
 			return false;
 		}
 
-		public static bool IsAnyKindOfClothItem( Item item )
+        /// <summary>
+        /// Returns True if the item is a Weapon/Armor/Clothing/Magic whose Resource is a Leather, BaseClothing, or Strange Stuff(?)
+        /// </summary>
+        public static bool IsAnyKindOfClothItem( Item item )
 		{
 			if ( item == null )
 				return false;

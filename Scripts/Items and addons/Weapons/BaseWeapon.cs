@@ -21,8 +21,8 @@ namespace Server.Items
 		SlayerName Slayer2 { get; set; }
 	}
 
-	public abstract class BaseWeapon : Item, IWeapon, ICraftable, ISlayer, IDurability
-	{
+	public abstract class BaseWeapon : Item, IWeapon, ICraftable, ISlayer, IDurability, IRepairable
+    {
 		private string m_EngravedText;
 		
 		[CommandProperty( AccessLevel.GameMaster )]
@@ -1001,9 +1001,6 @@ namespace Server.Items
 
 				if( DualWield.Registry.Contains( m ) )
 					bonus += ((DualWield.DualWieldTimer)DualWield.Registry[m]).BonusSwingSpeed;
-
-				if( Feint.Registry.Contains( m ) )
-					bonus -= ((Feint.FeintTimer)Feint.Registry[m]).SwingSpeedReduction;
 
 				TransformContext context = TransformationSpellHelper.GetContext( m );
 
@@ -4153,7 +4150,7 @@ namespace Server.Items
 					case SkillName.Macing:  list.Add( 1061173 ); break; // skill required: mace fighting
 					case SkillName.Fencing: list.Add( 1061174 ); break; // skill required: fencing
 					case SkillName.Archery: 
-						if ( this is Harpoon || this is LevelHarpoon || this is GiftHarpoon || this is BaseWizardStaff || this is BaseLevelStave || this is BaseGiftStave || this is ThrowingGloves || this is GiftThrowingGloves || this is LevelThrowingGloves ){ list.Add( "skill required: marksmanship" ); }
+						if ( this is Harpoon || this is LevelHarpoon || this is GiftHarpoon || this is BaseWizardStaff || this is BaseLevelStave || this is BaseGiftStave || this is IThrowingGloves ){ list.Add( "skill required: marksmanship" ); }
 						else { list.Add( 1061175 ); } 
 						break; // skill required: archery
 					case SkillName.Wrestling: list.Add( "skill required: wrestling" ); break; // skill required: wrestling

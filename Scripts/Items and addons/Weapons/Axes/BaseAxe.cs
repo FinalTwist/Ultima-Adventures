@@ -5,6 +5,7 @@ using Server;
 using Server.Items;
 using Server.Engines.Harvest;
 using Server.ContextMenus;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
@@ -13,7 +14,7 @@ namespace Server.Items
 		bool Axe( Mobile from, BaseAxe axe );
 	}
 
-	public abstract class BaseAxe : BaseMeleeWeapon
+	public abstract class BaseAxe : BaseMeleeWeapon, IBlacksmithRepairable
 	{
 		public override int DefHitSound{ get{ return 0x232; } }
 		public override int DefMissSound{ get{ return 0x23A; } }

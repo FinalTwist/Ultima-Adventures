@@ -1,11 +1,12 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x1451, 0x1456 )]
-    public class GiftBoneHelm : BaseGiftArmor
-	{
+    public class GiftBoneHelm : BaseGiftArmor, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 3; } }
 		public override int BaseFireResistance{ get{ return 3; } }
 		public override int BaseColdResistance{ get{ return 4; } }
@@ -22,7 +23,7 @@ namespace Server.Items
 
 		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Plate; } }
 
-		[Constructable]
+        [Constructable]
 		public GiftBoneHelm() : base( 0x1451 )
 		{
 			Weight = 3.0;

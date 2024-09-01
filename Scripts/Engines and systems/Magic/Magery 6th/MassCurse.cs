@@ -5,6 +5,7 @@ using Server.Misc;
 using Server.Targeting;
 using Server.Network;
 using Server.Mobiles;
+using Server.Spells.Fourth;
 
 namespace Server.Spells.Sixth
 {
@@ -66,18 +67,14 @@ namespace Server.Spells.Sixth
 					eable.Free();
 				}
 
-				for ( int i = 0; i < targets.Count; ++i )
+				int spellHue = Server.Items.CharacterDatabase.GetMySpellHue(Caster, 0);
+                for ( int i = 0; i < targets.Count; ++i )
 				{
 					Mobile m = targets[i];
 
 					Caster.DoHarmful( m );
 
-					SpellHelper.AddStatCurse( Caster, m, StatType.Str ); SpellHelper.DisableSkillCheck = true;
-					SpellHelper.AddStatCurse( Caster, m, StatType.Dex );
-					SpellHelper.AddStatCurse( Caster, m, StatType.Int ); SpellHelper.DisableSkillCheck = false;
-
-					m.FixedParticles( 0x374A, 10, 15, 5028, Server.Items.CharacterDatabase.GetMySpellHue( Caster, 0 ), 0, EffectLayer.Waist );
-					m.PlaySound( 0x1FB );
+                    CurseSpell.ApplyCurse(Caster, m, spellHue, 0x1FB);
 					
 					HarmfulSpell( m );
 				}

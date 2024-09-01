@@ -398,7 +398,9 @@ namespace Server.Items
 						int amount = (int)((double)m.Fame * loosing );
 						if ( m.Fame - amount < 0 ){ amount = m.Fame; }
 						if ( m.Fame < 1 ){ m.Fame = 0; }
+						int soulForce = ((PlayerMobile)m).SoulForce;
 						Misc.Titles.AwardFame( m, -amount, true );
+						((PlayerMobile)m).SoulForce = soulForce; // Restore old value
 					}
 
 					//karma loss

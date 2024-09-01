@@ -116,7 +116,7 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 0 );
+			writer.Write( (int) 1 );
 
 			writer.Write( (int) m_portaltick );
 

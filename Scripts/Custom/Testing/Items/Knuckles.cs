@@ -1,9 +1,10 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
-	public class Knuckles : BaseBashing
+	public class Knuckles : BaseBashing, IBlacksmithRepairable
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.Disarm; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.ConcussionBlow; } }

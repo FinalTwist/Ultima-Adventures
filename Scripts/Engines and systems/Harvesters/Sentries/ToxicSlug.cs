@@ -8,6 +8,14 @@ namespace Server.Mobiles
 	[CorpseName( "an toxic slug corpse" )]
 	public class ToxicSlug : BaseCreature
 	{
+
+ 		private Mobile m_owner;
+	        public Mobile Owner
+	        {
+	            get{ return m_owner; }
+	            set{ m_owner = value; }
+	        }
+	 
 		[Constructable]
 		public ToxicSlug() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
@@ -81,6 +89,13 @@ namespace Server.Mobiles
 			return new AcidSlime( TimeSpan.FromSeconds(10), 5, 10 );
 		}
 
+		public override bool IsEnemy( Mobile m )
+		{
+  			if (m_owner != null && m == m_owner && m.Combatant != this)
+     				return false;
+	 		return base.IsEnemy(m);
+    		}
+
 		public ToxicSlug( Serial serial ) : base( serial )
 		{
 		}
@@ -88,13 +103,16 @@ namespace Server.Mobiles
 		public override void Serialize( GenericWriter writer )
 		{
 			base.Serialize( writer );
-			writer.Write( (int) 0 );
+			writer.Write( (int) 1 );
+   			writer.Write( (Mobile) m_owner );
 		}
 
 		public override void Deserialize( GenericReader reader )
 		{
 			base.Deserialize( reader );
 			int version = reader.ReadInt();
+   			if (version >= 1)
+      			m_owner = reader.ReadMobile();
 		}
 	}
 }

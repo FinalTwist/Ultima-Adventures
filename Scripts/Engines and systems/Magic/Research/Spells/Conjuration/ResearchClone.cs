@@ -62,8 +62,11 @@ namespace Server.Spells.Research
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if ( Caster.Mounted )
+        {
+            if (!base.CheckCast(caster))
+                return false;
+
+            if ( Caster.Mounted )
 			{
 				Caster.SendLocalizedMessage( 1063132 ); // You cannot use this ability while mounted.
 				return false;
@@ -79,7 +82,7 @@ namespace Server.Spells.Research
 				return false;
 			}
 
-			return base.CheckCast( caster );
+			return true;
 		}
 
 		public override void OnBeginCast()

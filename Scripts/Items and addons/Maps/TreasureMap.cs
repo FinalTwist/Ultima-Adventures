@@ -153,8 +153,7 @@ namespace Server.Items
 			}
 
 			m_Level = level;
-			m_Map = map;
-            DisplayMap = map;
+			DisplayMap = m_Map = map;
 
 			string world = Worlds.GetMyWorld( map, location, x, y ); // NO TREASURE MAPS IN THE BELOW AREAS...
 				if ( world == "the Town of Skara Brae" ){ world = "the Land of Sosaria"; }
@@ -165,7 +164,7 @@ namespace Server.Items
 			map = Worlds.GetMyDefaultMap( world );
 
 			this.ChestLocation = new Point2D( loc.X, loc.Y );
-			this.ChestMap = map;
+			DisplayMap = m_Map = map;
 
             UpdateTreasureMap(this);
 		}
@@ -852,9 +851,9 @@ namespace Server.Items
                 int TimeLeft = 30 - Age;
 
                 if (m_Decoder != null && TimeLeft > 0)
-                    list.Add(String.Format("This map will expire in {0} days", TimeLeft));
+                    list.Add(String.Format("This location will expire in {0} days", TimeLeft));
                 else if (m_Decoder != null && TimeLeft <= 0)
-                    list.Add("This map will expire and reset very soon");                                                
+                    list.Add("This location will expire and reset very soon");                                                
             }
 		}
 
@@ -895,8 +894,7 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-            // SF Treasure = version 2
-            writer.Write((int)2);
+            writer.Write((int)3);
 
 			writer.Write( (Mobile) m_CompletedBy );
 			writer.Write( m_Level );
@@ -916,6 +914,7 @@ namespace Server.Items
 
 			switch ( version )
 			{
+                case 3:
                 case 2:
                 {
                     goto case 1;
@@ -942,6 +941,12 @@ namespace Server.Items
                    
 					break;
 				}
+			}
+
+			// Fix bug where Displayed Map showed an outdated map
+			if (version == 2 && DisplayMap != m_Map)
+			{
+				DisplayMap = m_Map;
 			}
 
 			if (m_Decoder != null)

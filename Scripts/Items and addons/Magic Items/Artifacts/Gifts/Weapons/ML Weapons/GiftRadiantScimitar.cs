@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x2D33, 0x2D27 )]
-    public class GiftRadiantScimitar : BaseGiftSword
-	{
+    public class GiftRadiantScimitar : BaseGiftSword, IBlacksmithRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.WhirlwindAttack; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.Bladeweave; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.DefenseMastery; } }

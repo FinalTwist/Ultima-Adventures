@@ -1,12 +1,13 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 using Server.Mobiles;
 
 namespace Server.Items
 {
 	[Flipable]
-	public class SBLeatherGloves : BaseArmor, IArcaneEquip
-	{
+	public class SBLeatherGloves : BaseArmor, IArcaneEquip, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 14; } }
 		public override int BaseFireResistance{ get{ return 16; } }
 		public override int BaseColdResistance{ get{ return 16; } }

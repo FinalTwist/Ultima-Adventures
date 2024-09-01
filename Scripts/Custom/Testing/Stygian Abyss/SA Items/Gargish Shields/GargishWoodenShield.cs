@@ -1,12 +1,13 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	// Based off a WoodenShield
 	[FlipableAttribute( 0x4200, 0x4207 )]
-	public class GargishWoodenShield : BaseShield
-	{
+	public class GargishWoodenShield : BaseShield, ICarpentryRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 0; } }
 		public override int BaseFireResistance{ get{ return 0; } }
 		public override int BaseColdResistance{ get{ return 0; } }

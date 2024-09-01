@@ -16,6 +16,8 @@ namespace Server.Items
 
         private static Type[] ItemTypesToKeepEquiped = new Type[]
         {
+            typeof(IPugilistGloves), // Idk if this works, but might as well
+            typeof(IThrowingGloves), // Idk if this works, but might as well
 			typeof(GoldRing),
 			typeof(LevelGoldRing),
 			typeof(GiftGoldRing),

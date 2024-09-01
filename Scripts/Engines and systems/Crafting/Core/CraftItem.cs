@@ -695,12 +695,12 @@ namespace Server.Engines.Craft
 
 			int index = 0;
 
-			// Consume ALL
-			if ( consumeType == ConsumeType.All )
+            // Consume ALL
+            if ( consumeType == ConsumeType.All )
 			{
 				m_ResHue = 0; m_ResAmount = 0; m_System = craftSystem;
 
-				if ( IsQuantityType( types ) )
+                if ( IsQuantityType( types ) )
 					index = ConsumeQuantity( ourPack, types, amounts );
 				else
 					index = ourPack.ConsumeTotalGrouped( types, amounts, true, new OnItemConsumed( OnResourceConsumed ), new CheckItemGroup( CheckHueGrouping ) );
@@ -1084,13 +1084,27 @@ namespace Server.Engines.Craft
 					tool.Delete();
 
 				int num = 0;
+				
+				// Prior to crafting, find the relevant resource so we can place the item in the same container
+				// Warning: No guarantee if there are multiple stacks found
+				Container outputContainer = null;
+				if (0 < m_arCraftRes.Count && from != null && from.Backpack != null)
+				{
+					var craftRes = m_arCraftRes.GetAt(0);
+					var baseType = craftRes.ItemType;
+					var resCol = ( m_UseSubRes2 ? craftSystem.CraftSubRes2 : craftSystem.CraftSubRes );
+					if (typeRes != null && baseType == resCol.ResType) baseType = typeRes; // Find non-basic resource if necessary
 
-				Item item;
+					var resource = from != null && from.Backpack != null ? from.Backpack.FindItemByType(baseType, true) : null;
+					outputContainer = resource != null ? resource.Parent as Container : null;
+				}
+
+                Item item;
 				if ( customCraft != null )
 				{
 					item = customCraft.CompleteCraft( out num );
 				}
-				else if ( typeof( MapItem ).IsAssignableFrom( ItemType ) && Worlds.IsPlayerInTheLand( from.Map, from.Location, from.X, from.Y ) == false )
+				else if ( ItemType != typeof(BlankMap) && typeof( MapItem ).IsAssignableFrom( ItemType ) && Worlds.IsPlayerInTheLand( from.Map, from.Location, from.X, from.Y ) == false )
 				{
 					item = new IndecipherableMap();
 					from.SendMessage( "You cannot seem to create a map of this area." );
@@ -1452,6 +1466,40 @@ namespace Server.Engines.Craft
 					else if ( item is PotionKeg )
 					{
 						item.Hue = 0x96D;
+					}
+					else if ( item is TenFootPole )
+					{
+						int cHue = 0;
+						double cWeight = 40.0;
+						string wood = "wooden";
+						Type resourceType = typeRes;
+						if ( resourceType == null )
+							resourceType = Resources.GetAt( 0 ).ItemType;
+
+						CraftResource thisResource = CraftResources.GetFromType( resourceType );
+
+						switch ( thisResource )
+						{
+							case CraftResource.AshTree: cHue = MaterialInfo.GetMaterialColor( "ash", "", 0 );			cWeight = cWeight-1; 	wood = "ashen";				; break;
+							case CraftResource.CherryTree: cHue = MaterialInfo.GetMaterialColor( "cherry", "", 0 ); 		cWeight = cWeight-2; 	wood = "cherry wood";		break;
+							case CraftResource.EbonyTree: cHue = MaterialInfo.GetMaterialColor( "ebony", "", 0 );			cWeight = cWeight-3; 	wood = "ebony wood";		break;
+							case CraftResource.GoldenOakTree: cHue = MaterialInfo.GetMaterialColor( "golden oak", "", 0 ); 	cWeight = cWeight-4; 	wood = "golden oak";		break;
+							case CraftResource.HickoryTree: cHue = MaterialInfo.GetMaterialColor( "hickory", "", 0 ); 		cWeight = cWeight-5; 	wood = "hickory";			break;
+							case CraftResource.MahoganyTree: cHue = MaterialInfo.GetMaterialColor( "mahogany", "", 0 );	cWeight = cWeight-6; 	wood = "mahogany";			break;
+							case CraftResource.DriftwoodTree: cHue = MaterialInfo.GetMaterialColor( "driftwood", "", 0 );	 	cWeight = cWeight-7; 	wood = "driftwood";			; break;
+							case CraftResource.OakTree: cHue = MaterialInfo.GetMaterialColor( "oak", "", 0 );			cWeight = cWeight-8; 	wood = "oaken";				break;
+							case CraftResource.PineTree: cHue = MaterialInfo.GetMaterialColor( "pine", "", 0 );			cWeight = cWeight-9; 	wood = "pine wood";			break;
+							case CraftResource.GhostTree: cHue = MaterialInfo.GetMaterialColor( "ghostwood", "", 0 );		cWeight = cWeight-10; 	wood = "ghostwood";			break;
+							case CraftResource.RosewoodTree: cHue = MaterialInfo.GetMaterialColor( "rosewood", "", 0 );		cWeight = cWeight-11; 	wood = "rosewood";			break;
+							case CraftResource.WalnutTree: cHue = MaterialInfo.GetMaterialColor( "walnut", "", 0 );		cWeight = cWeight-12; 	wood = "walnut wood";;break;
+							case CraftResource.PetrifiedTree: cHue = MaterialInfo.GetMaterialColor( "petrified", "", 0 );		 	cWeight = cWeight-13; 	wood = "petrified wood";break;
+							case CraftResource.ElvenTree: cHue = MaterialInfo.GetMaterialColor( "elven", "", 0 );			cWeight = cWeight-14; 	wood = "elven wood";break;
+						}
+
+						item.Name = "ten foot " + wood + " pole";
+						item.Weight = cWeight;
+						item.Hue = cHue;
+
 					}
 					else if ( item is HorseArmor )
 					{
@@ -1999,10 +2047,23 @@ namespace Server.Engines.Craft
 						fd.Benefit += bn;
 					}
 
+                    if (outputContainer != null && (
+							!(outputContainer is LargeSack) // Not a large sack
+							|| ((LargeSack)outputContainer).CanAdd(from, item)) // Is a large sack AND can add ... try to suppress message
+						)
+					{
+						if (!outputContainer.OnDragDrop(from, item)) // Needs to respect coinpouches, etc
+						{
+							// Fallback to backpack on failure
+							from.AddToBackpack(item);
+						}
+                    }
+					else
+					{
+                        from.AddToBackpack(item);
+                    }
 
-					from.AddToBackpack( item );
-
-					if( from.AccessLevel > AccessLevel.Player )
+                    if( from.AccessLevel > AccessLevel.Player )
 						CommandLogging.WriteLine( from, "Crafting {0} with craft system {1}", CommandLogging.Format( item ), craftSystem.GetType().Name );
 
 					//from.PlaySound( 0x57 );
@@ -2032,10 +2093,10 @@ namespace Server.Engines.Craft
 				int resHue = 0;
 				int maxAmount = 0;
 
-				object message = null;
+                object message = null;
 
-				// Not enough resource to craft it
-				if ( !ConsumeRes( from, typeRes, craftSystem, ref resHue, ref maxAmount, consumeType, ref message, true ) )
+                // Not enough resource to craft it
+                if ( !ConsumeRes( from, typeRes, craftSystem, ref resHue, ref maxAmount, consumeType, ref message, true ) )
 				{
 					if ( tool != null && !tool.Deleted && tool.UsesRemaining > 0 )
 						from.SendGump( new CraftGump( from, craftSystem, tool, message ) );

@@ -15,26 +15,35 @@ namespace Server.Items
 			Hue = Server.Misc.RandomThings.GetRandomLeatherColor();
 		}
 
+        public override bool CanAdd( Mobile from, Item item )
+		{
+            if ( item is Container ) return false;
+
+			return true;
+		}
+
 		public override bool OnDragDropInto( Mobile from, Item dropped, Point3D p )
         {
-			if ( dropped is Container )
+			if (CanAdd(from, dropped)) return base.OnDragDropInto(from, dropped, p);
+
+            if ( dropped is Container )
 			{
                 from.SendMessage("You cannot store containers in this bag.");
-                return false;
 			}
 
-            return base.OnDragDropInto(from, dropped, p);
+            return false;
         }
 
-		public override bool OnDragDrop( Mobile from, Item dropped )
+        public override bool OnDragDrop( Mobile from, Item dropped )
         {
-			if ( dropped is Container )
+            if (CanAdd(from, dropped)) return base.OnDragDrop(from, dropped);
+
+            if ( dropped is Container )
 			{
                 from.SendMessage("You cannot store containers in this bag.");
-                return false;
 			}
 
-            return base.OnDragDrop(from, dropped);
+			return false;
         }
 
 		public BagOfHolding( Serial serial ) : base( serial )

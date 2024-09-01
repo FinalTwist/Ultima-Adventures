@@ -96,6 +96,13 @@ namespace Server.Items
 		[CommandProperty( AccessLevel.GameMaster )]
 		public bool Starboard{ get{ return ( m_Side == PlankSide.Starboard ); } }
 
+		public Plank GetOtherPlank()
+		{
+			if (Boat == null) { return null; }
+			
+			return Starboard ? Boat.PPlank : Boat.SPlank;
+		}
+
 		public void SetFacing( Direction dir )
 		{
 			if ( BaseBoat.isCarpet( m_Boat ) )
@@ -146,7 +153,7 @@ namespace Server.Items
 		}
 		}
 
-		public void Open()
+		public void Open(Mobile from)
 		{
 			if ( IsOpen || Deleted )
 				return;
@@ -170,7 +177,9 @@ namespace Server.Items
 			}
 
 			if ( m_Boat != null )
-				m_Boat.Refresh();
+			{
+				m_Boat.Refresh(from);
+			}
 		}
 
 		public override bool OnMoveOver( Mobile from )
@@ -275,9 +284,6 @@ namespace Server.Items
 				case 0x5437: ItemID = 0x5433; break;
 				case 0x5438: ItemID = 0x5434; break;
 			}
-
-			if ( m_Boat != null )
-				m_Boat.Refresh();
 		}
 
 		public override void OnDoubleClickDead( Mobile from )
@@ -297,7 +303,7 @@ namespace Server.Items
 					if ( IsOpen )
 						Close();
 					else
-						Open();
+						Open(from);
 				}
 				else
 				{
@@ -305,12 +311,12 @@ namespace Server.Items
 					{
 						if ( !Locked )
 						{
-							Open();
+							Open(from);
 						}
 						else if ( from.AccessLevel >= AccessLevel.GameMaster )
 						{
 							from.LocalOverheadMessage( Network.MessageType.Regular, 0x00, 502502 ); // That is locked but your godly powers allow access
-							Open();
+							Open(from);
 						}
 						else
 						{

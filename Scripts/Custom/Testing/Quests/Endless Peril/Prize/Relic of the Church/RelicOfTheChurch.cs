@@ -1,12 +1,13 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 using Server.Mobiles;
 using Server.Network;
 
 namespace Server.Items
 {
-   public class RelicOfTheChurch : BaseShield
-   {
+   public class RelicOfTheChurch : BaseShield, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 10; } }
 		public override int BaseFireResistance{ get{ return 8; } }
 		public override int BaseColdResistance{ get{ return 8; } }

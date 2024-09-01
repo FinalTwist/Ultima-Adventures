@@ -750,6 +750,11 @@ namespace Server.Items
 			return true;
 		}
 
+		public virtual bool CanAdd( Mobile from, Item item )
+		{
+			return true;
+		}
+
 		public override void Serialize( GenericWriter writer )
 		{
 			base.Serialize( writer );

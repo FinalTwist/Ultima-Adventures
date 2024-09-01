@@ -27,8 +27,11 @@ namespace Server.Spells.Ninjitsu
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if (Caster is PlayerMobile)
+        {
+            if (!base.CheckCast(caster))
+                return false;
+
+            if (Caster is PlayerMobile)
 			{
 			    PlayerMobile pm = Caster as PlayerMobile; // IsStealthing should be moved to Server.Mobiles
 			    if ( !pm.IsStealthing )
@@ -42,7 +45,7 @@ namespace Server.Spells.Ninjitsu
 			    return false; // NPC can't cast this, at least yet... targeting is too complex
 			}
 
-			return base.CheckCast( caster );
+			return true;
 		}
 
 		public override bool CheckDisturb( DisturbType type, bool firstCircle, bool resistable )

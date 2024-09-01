@@ -66,6 +66,8 @@ namespace Server.Engines.Craft
 			if ( obj.GetType().IsDefined( typeof( ForgeAttribute ), false ) )
 				return true;
 
+			if (obj is DwarvenForge) return ((DwarvenForge)obj).Light != LightType.Empty;
+
 			int itemID = 0;
 
 			if ( obj is Item )
@@ -83,7 +85,7 @@ namespace Server.Engines.Craft
 				}
 			}
 
-			return ( itemID == 4017 || (itemID >= 0x10DE && itemID <= 0x10E0) || (itemID >= 6522 && itemID <= 6569) || (itemID >= 0x544B && itemID <= 0x544E) );
+			return ( itemID == 4017 || (itemID >= 0x10DE && itemID <= 0x10E0) || (itemID >= 6522 && itemID <= 6569) || itemID == 0x2DD8 || (itemID >= 0x544B && itemID <= 0x544E) );
 		}
 
 		public static void CheckAnvilAndForge( Mobile from, int range, out bool anvil, out bool forge )
@@ -103,7 +105,7 @@ namespace Server.Engines.Craft
 				Type type = item.GetType();
 
 				bool isAnvil = ( type.IsDefined( typeofAnvil, false ) || item.ItemID == 4015 || item.ItemID == 4016 || item.ItemID == 0x2DD5 || item.ItemID == 0x2DD6 || item.ItemID == 0x2B55 || item.ItemID == 0x2B57 );
-				bool isForge = ( type.IsDefined( typeofForge, false ) || item.ItemID == 4017 || (item.ItemID >= 0x10DE && item.ItemID <= 0x10E0) || (item.ItemID >= 6522 && item.ItemID <= 6569) || item.ItemID == 0x2DD8 || (item.ItemID >= 0x544B && item.ItemID <= 0x544E) );
+				bool isForge = IsForge(item);
 
 				if ( isAnvil || isForge )
 				{

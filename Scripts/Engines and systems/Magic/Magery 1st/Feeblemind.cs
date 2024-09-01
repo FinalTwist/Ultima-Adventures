@@ -29,13 +29,7 @@ namespace Server.Spells.First
 
 		public void Target( Mobile m )
 		{
-			// cant get cursed when wearing those
-			if (m is PlayerMobile && ((PlayerMobile)m).Sorcerer())
-			{
-					Item pants = ((PlayerMobile)m).FindItemOnLayer( Layer.OuterLegs );
-					if (pants != null && pants is SkirtOfPower)
-						return;
-			}
+			if (SkirtOfPower.TryBlockCurse(m)) return;
 
 			if ( !Caster.CanSee( m ) )
 			{

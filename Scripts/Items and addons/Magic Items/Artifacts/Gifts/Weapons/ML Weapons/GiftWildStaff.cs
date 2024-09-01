@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x2D25, 0x2D31 )]
-	public class GiftWildStaff : BaseGiftStaff
-	{
+	public class GiftWildStaff : BaseGiftStaff, ICarpentryRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.Block; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.ForceOfNature; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.MagicProtection; } }

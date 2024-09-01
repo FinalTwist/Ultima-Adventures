@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x27A9, 0x27F4 )]
-    public class GiftDaisho : BaseGiftSword
-	{
+    public class GiftDaisho : BaseGiftSword, IBlacksmithRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.Feint; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.DoubleStrike; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.ZapStrStrike; } }

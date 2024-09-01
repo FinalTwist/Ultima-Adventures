@@ -34,9 +34,7 @@ namespace Server.Items
             {
                 from.PrivateOverheadMessage(MessageType.Regular, 0x14C, false, "You read the scroll and find out its true power.", from.NetState);
 
-				SkillName skill = (SkillName)Utility.Random( SkillInfo.Table.Length );
-
-				from.AddToBackpack ( new ScrollofAlacrity ( skill ) );
+                from.AddToBackpack (ScrollofAlacrity.CreateRandom());
 				
                 this.Delete();
             }

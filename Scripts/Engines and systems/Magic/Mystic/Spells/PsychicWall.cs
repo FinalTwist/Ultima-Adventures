@@ -26,8 +26,11 @@ namespace Server.Spells.Mystic
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if ( Core.AOS )
+        {
+            if (!base.CheckCast(caster))
+                return false;
+
+            if ( Core.AOS )
 				return true;
 
 			if ( Caster.MagicDamageAbsorb > 0 )

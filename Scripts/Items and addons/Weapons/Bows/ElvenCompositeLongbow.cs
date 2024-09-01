@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x2D1E, 0x2D2A )]
-	public class ElvenCompositeLongbow : BaseRanged
-	{
+	public class ElvenCompositeLongbow : BaseRanged, IBowcraftFletchingRepairable
+    {
 		public override int EffectID{ get{ return 0xF42; } }
 		public override Type AmmoType{ get{ return typeof( Arrow ); } }
 		public override Item Ammo{ get{ return new Arrow(); } }

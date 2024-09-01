@@ -43,7 +43,6 @@ namespace Server.SkillHandlers
 					if (Utility.RandomDouble() > odds)
 					{
 						m.RevealingAction();
-						m.SendMessage("[testing] odds of staying hidden was " + (int)(odds*100));
 					}
 				}
 				else
@@ -65,7 +64,6 @@ namespace Server.SkillHandlers
 					if (Utility.RandomDouble() > odds)
 					{
 						from.RevealingAction();
-						from.SendMessage("[testing] odds of staying hidden was " + (int)(odds*100));
 					}
 				}
 				else
@@ -242,7 +240,6 @@ namespace Server.SkillHandlers
 					if (Utility.RandomDouble() > odds)
 					{
 						from.RevealingAction();
-						from.SendMessage("[testing] odds of staying hidden was " + (int)(odds*100));
 					}
 				}
 				else

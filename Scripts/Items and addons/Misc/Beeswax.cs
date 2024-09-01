@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-	public class Beeswax : Item
+	public class Beeswax : Item, ICommodity
 	{
 		[Constructable]
 		public Beeswax() : this( 1 )
@@ -21,7 +21,8 @@ namespace Server.Items
 		{
 		}
 
-		
+		int ICommodity.DescriptionNumber { get { return LabelNumber; } }
+		bool ICommodity.IsDeedable { get { return (Core.ML); } }
 
 		public override void Serialize( GenericWriter writer )
 		{

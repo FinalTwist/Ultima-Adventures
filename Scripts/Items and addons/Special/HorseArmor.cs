@@ -115,7 +115,14 @@ namespace Server.Items
 					{
 						BaseCreature xArmor = (BaseCreature)iArmor;
 
-						if ( ( xArmor is Horse || xArmor is ZebraRiding || xArmor is Zebra || xArmor is FireSteed || xArmor is Nightmare || xArmor is AncientNightmareRiding) && xArmor.ControlMaster == from && xArmor is BaseMount )
+						if ( xArmor.ControlMaster == from && xArmor is BaseMount
+                            && (
+								xArmor is Horse || xArmor is AngryHorse || xArmor is SeaHorse
+								|| xArmor is ZebraRiding || xArmor is Zebra 
+								|| xArmor is FireSteed || xArmor is IceSteed || xArmor is RainbowSteed || xArmor is SilverSteed
+								|| xArmor is Nightmare || xArmor is AncientNightmareRiding
+								|| xArmor is Unicorn || xArmor is DarkUnicornRiding || xArmor is RainbowUnicorn
+                            ) )
 						{
 							BaseMount mArmor = (BaseMount)xArmor;
 

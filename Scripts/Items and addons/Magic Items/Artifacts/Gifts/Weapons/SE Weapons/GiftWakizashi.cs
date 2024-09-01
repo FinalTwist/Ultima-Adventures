@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x27A4, 0x27EF )]
-	public class GiftWakizashi : BaseGiftSword
-	{
+	public class GiftWakizashi : BaseGiftSword, IBlacksmithRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.FrenziedWhirlwind; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.DoubleStrike; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.EarthStrike; } }

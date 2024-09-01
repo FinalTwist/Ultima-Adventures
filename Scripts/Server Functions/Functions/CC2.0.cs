@@ -255,6 +255,11 @@ namespace Server.Misc
                             else { Console.WriteLine("No pages to display."); paging = false; }
                             break;
                         }
+                    case "dump packets":
+                        {
+                            DumpCommands.DumpPackets("Console");
+                            break;
+                        }
                     case "help":
                     case "list": //Credit to HomeDaddy for this wonderful list!
                     default:

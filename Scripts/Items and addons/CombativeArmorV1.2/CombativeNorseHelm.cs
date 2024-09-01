@@ -1,11 +1,12 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 using Server.Mobiles;
 
 namespace Server.Items
 {
-	public class CombativeNorseHelm : BaseArmor
-	{
+	public class CombativeNorseHelm : BaseArmor, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 4; } }
 		public override int BaseFireResistance{ get{ return 1; } }
 		public override int BaseColdResistance{ get{ return 4; } }

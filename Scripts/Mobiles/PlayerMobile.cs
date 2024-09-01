@@ -25,31 +25,34 @@ using Server.Engines.Craft;
 using Server.Engines.PartySystem;
 using Server.Poker; // Poker edit
 using Server.Engines.Soulbound;
+using Server.Custom;
+using Server.Custom.Items;
+using Server.Spells.First;
 
 namespace Server.Mobiles
 {
-	#region Enums
-	[Flags]
+    #region Enums
+    [Flags]
 	public enum PlayerFlag // First 16 bits are reserved for default-distro use, start custom flags at 0x00010000
 	{
-		None				= 0x00000000,
+		None					= 0x00000000,
 		Glassblowing			= 0x00000001,
-		Masonry				= 0x00000002,
-		SandMining			= 0x00000004,
-		StoneMining			= 0x00000008,
+		Masonry					= 0x00000002,
+		SandMining				= 0x00000004,
+		StoneMining				= 0x00000008,
 		ToggleMiningStone		= 0x00000010,
-		KarmaLocked			= 0x00000020,
-		IsAutomated			= 0x00000040,
+		KarmaLocked				= 0x00000020,
+		IsAutomated				= 0x00000040,
 		UseOwnFilter			= 0x00000080,
-		Avatar				= 0x00000100,
-		IsZen				= 0x00000200,
-		Young				= 0x00000400,
+		Avatar					= 0x00000100,
+		IsZen					= 0x00000200,
+		Young					= 0x00000400,
 		AcceptGuildInvites		= 0x00000800,
-		DisplayChampionTitle		= 0x00001000,
+		DisplayChampionTitle	= 0x00001000,
 		PublicMyRunUO			= 0x00004000,
 		JustWoreRing			= 0x00013000,
-		InBed				= 0x00015000,
-		WellRested			= 0x00016000,
+		InBed					= 0x00015000,
+		WellRested				= 0x00016000,
 		HasStatReward			= 0x00018000
 	}
 
@@ -85,14 +88,15 @@ namespace Server.Mobiles
 		Red,
 		Black
 	}
+
 	#endregion
 
 	public partial class PlayerMobile : Mobile, IHonorTarget
 	{
 
 
-		// DisruptAfk mod
-		private bool _DisruptAfk = false;
+        // DisruptAfk mod
+        private bool _DisruptAfk = false;
 		public bool DisruptAfk { get { return _DisruptAfk; } set { _DisruptAfk = value; } }
 
 		private class CountAndTimeStamp
@@ -130,57 +134,63 @@ namespace Server.Mobiles
 		private int m_LastGauntletLevel;
 		private bool m_SbRes;
 		public bool SbRes
-		{ 
-			get { return m_SbRes; } 
-			set { m_SbRes = value; } 
+		{
+			get { return m_SbRes; }
+			set { m_SbRes = value; }
 		}
 		private DateTime m_TombstDelay;
 		public DateTime TombstDelay
-		{ 
-			get { return m_TombstDelay; } 
-			set { m_TombstDelay = value; } 
+		{
+			get { return m_TombstDelay; }
+			set { m_TombstDelay = value; }
 		}
 		private DateTime m_LastLogout;
 		public DateTime LastLogout
-		{ 
-			get { return m_LastLogout; } 
-			set { m_LastLogout = value; } 
+		{
+			get { return m_LastLogout; }
+			set { m_LastLogout = value; }
 		}
 		private DateTime m_LastLogin;
 		public DateTime LastLogin
 		{
-			get { return m_LastLogin; } 
-			set { m_LastLogin = value; } 
+			get { return m_LastLogin; }
+			set { m_LastLogin = value; }
 		}
 		private bool m_SbResTimer;
 		public bool SbResTimer
-		{ 
-			get { return m_SbResTimer; } 
-			set { m_SbResTimer = value; } 
+		{
+			get { return m_SbResTimer; }
+			set { m_SbResTimer = value; }
 		}
 		private bool m_flagged;
 		public bool flagged
-		{ 
-			get { return m_flagged; } 
-			set { m_flagged = value; } 
+		{
+			get { return m_flagged; }
+			set { m_flagged = value; }
 		}
 		private bool m_caught;
 		public bool caught
-		{ 
-			get { return m_caught; } 
-			set { m_caught = value; } 
+		{
+			get { return m_caught; }
+			set { m_caught = value; }
 		}
 		private Body m_OriginalBody;
 		private List<SongEffect> m_SongEffects;
-		public List<SongEffect> SongEffects 
-		{ 
-			get { return m_SongEffects; } 
-			set { m_SongEffects = value; } 
+		public List<SongEffect> SongEffects
+		{
+			get { return m_SongEffects; }
+			set { m_SongEffects = value; }
 		}
 		[CommandProperty( AccessLevel.GameMaster )]
 		public int SoulForce {
 			get { return m_SoulForce; }
-			set { m_SoulForce = value;}
+			set
+			{
+				if (m_SoulForce == value) return;
+
+                m_SoulForce = value;
+				CombatBar.Refresh(this);
+            }
 		}
 		[CommandProperty( AccessLevel.GameMaster )]
 		public int LastGauntletLevel {
@@ -193,8 +203,8 @@ namespace Server.Mobiles
 			set { m_InGauntlet = value; }
 		}
 		public Body OriginalBody {
-			get { return m_OriginalBody; } 
-			set { m_OriginalBody = value; } 
+			get { return m_OriginalBody; }
+			set { m_OriginalBody = value; }
 		}
 
 		/*
@@ -212,11 +222,16 @@ namespace Server.Mobiles
 		private List<Mobile> m_AllFollowers;
 		private List<Mobile> m_RecentlyReported;
 
-		private bool m_sorc;
-		private bool m_troub;
-		private bool m_alch;
+		private SpecializationType m_customClass;
+		public SpecializationType CustomClass
+		{
+			get
+			{
+				return m_customClass;
+			}
+        }
 
-  		private bool m_soulboundresurrect;
+        private bool m_soulboundresurrect;
     		private int m_mentalexhaustcount;
      		public int MentalExhaustCount
 		{
@@ -379,10 +394,14 @@ namespace Server.Mobiles
 		public int BalanceStatus
 		{
 			get { return m_BalanceStatus; }
-			set { m_BalanceStatus = value; }
-		}
+            set { m_BalanceStatus = value; InvalidateProperties(); }
+        }
+		
+		public bool IsEvil { get { return m_BalanceStatus == -1; } }
+		public bool IsGood { get { return m_BalanceStatus == 1; } }
+        public bool IsPledged { get { return IsEvil || IsGood; } }
 
-		private bool m_SoulBound;
+        private bool m_SoulBound;
 
 		[CommandProperty( AccessLevel.GameMaster )]
 		public bool SoulBound
@@ -472,9 +491,25 @@ namespace Server.Mobiles
 		{
 			get { return m_TailorBOD; }
 			set { m_TailorBOD = value; }
-		}
+        }
 
-		private int m_midhumans;
+        private int m_CarpenterBOD;
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int CarpenterBOD
+        {
+            get { return m_CarpenterBOD; }
+            set { m_CarpenterBOD = value; }
+        }
+		
+        private int m_FletcherBOD;
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int FletcherBOD
+        {
+            get { return m_FletcherBOD; }
+            set { m_FletcherBOD = value; }
+        }
+
+        private int m_midhumans;
 
 		[CommandProperty( AccessLevel.GameMaster )]
 		public int midhumans
@@ -916,7 +951,23 @@ namespace Server.Mobiles
 			return true;
 		}
 
-		public override void Lift(Item item, int amount, out bool rejected, out LRReason reject)
+        public override bool EquipItem(Item item)
+        {
+			if (!base.EquipItem(item)) return false;
+
+            Items.ForEach(i =>
+            {
+                var observer = i as IEquipmentObserver;
+                if (observer == null) return;
+
+                observer.PlayerItemEquipped(this, item);
+            });
+            CustomClasses.Activate(this);
+
+            return true;
+        }
+
+        public override void Lift(Item item, int amount, out bool rejected, out LRReason reject)
 		{
 
 			if (BaseHouse.CheckLockedDownOrSecured(item))
@@ -1020,7 +1071,15 @@ namespace Server.Mobiles
 
 		public override void OnSkillInvalidated( Skill skill )
 		{
-			if ( skill.SkillName == SkillName.MagicResist )
+            Items.ForEach(i =>
+            {
+                var observer = i as ISkillObserver;
+                if (observer == null) return;
+
+                observer.PlayerSkillChanged(this, skill.SkillName);
+            });
+
+            if ( skill.SkillName == SkillName.MagicResist )
 				UpdateResistances();
 
 			if ( skill.SkillName == SkillName.Herding || skill.SkillName == SkillName.Veterinary || skill.SkillName == SkillName.AnimalLore || skill.SkillName == SkillName.AnimalTaming )
@@ -1034,6 +1093,7 @@ namespace Server.Mobiles
 				this.Hue = Server.Misc.RandomThings.GetRandomSkinColor();
 				this.HairHue = Utility.RandomHairHue();
 			}
+            CustomClasses.Activate(this);
 		}
 
 
@@ -1081,8 +1141,8 @@ namespace Server.Mobiles
 		}
 
 		public override void CriminalAction( bool message )
-		{
-			bool seen = false;
+        {
+            bool seen = false;
 			if (!Hidden)
 			{
 				foreach ( Mobile witness in this.GetMobilesInRange( 12 ) ) 
@@ -1171,7 +1231,7 @@ namespace Server.Mobiles
 
 			int baseMin = base.GetMinResistance( type );
 
-			if (Alchemist())
+			if (MadChemist())
 			{
 				int mini = baseMin;
 				foreach ( Mobile m in GetMobilesInRange( 10 ) )
@@ -1285,10 +1345,10 @@ namespace Server.Mobiles
 				}
 				else if (player.THC <= 0 && player.High)
 					player.High = false;
-			}
-			
-			
-		}
+
+                CustomClasses.Activate(player);
+            }
+        }
 
 		public void UpdateFollowers()
 		{
@@ -1359,9 +1419,6 @@ namespace Server.Mobiles
 
 				Mobile from = this;
 				MaxFollowersIntelBased.Evaluate(from);
-
-				Sorcerer();
-				Troubadour();
 
 				for ( int i = items.Count - 1; i >= 0; --i )
 				{
@@ -1642,7 +1699,7 @@ namespace Server.Mobiles
 			}
 		}
 
-		public override void OnSubItemAdded( Item item )
+        public override void OnSubItemAdded( Item item )
 		{
 			if ( AccessLevel < AccessLevel.GameMaster && item.IsChildOf( this.Backpack ) )
 			{
@@ -1694,8 +1751,8 @@ namespace Server.Mobiles
 		}
 
 		public override void OnItemAdded( Item item )
-		{
-			base.OnItemAdded( item );
+        {
+            base.OnItemAdded( item );
 
 			if ( item is BaseArmor || item is BaseWeapon )
 			{
@@ -1712,13 +1769,11 @@ namespace Server.Mobiles
 			InvalidateMyRunUO();
 		}
 
-
-
 		public override void OnItemRemoved( Item item )
 		{
-			base.OnItemRemoved( item );
+            base.OnItemRemoved( item );
 
-			if ( item is BaseArmor || item is BaseWeapon )
+            if ( item is BaseArmor || item is BaseWeapon )
 			{
 				Hits=Hits; Stam=Stam; Mana=Mana;
 			}
@@ -1726,7 +1781,16 @@ namespace Server.Mobiles
 			if ( this.NetState != null )
 				CheckLightLevels( false );
 
-			InvalidateMyRunUO();
+            Items.ForEach(i =>
+			{
+				var observer = i as IEquipmentObserver;
+				if (observer == null) return;
+
+				observer.PlayerItemRemoved(this, item);
+			});
+
+            CustomClasses.Activate(this);
+            InvalidateMyRunUO();
 		}
 
 		public override double ArmorRating
@@ -2325,7 +2389,7 @@ namespace Server.Mobiles
 
 
 				}
-				if (flavortext == "") // no text yet
+				if (flavortext == "" && Utility.RandomBool()) 
 				{
 					if ( reg.IsPartOf( typeof( TownRegion ) ) || reg.IsPartOf( typeof( VillageRegion ) ) )
 					{
@@ -2488,9 +2552,9 @@ namespace Server.Mobiles
 									case 4: flavortext = "A carving on a tree shows a heart and two initials."; break;
 									case 5: flavortext = "There is blood in the ground here - some small animal got caught here recently."; break;
 									case 6: flavortext = "Someone tried to chop a tree here - don't they know trees just regrow?"; break;
-									case 7: flavortext = ""; break;
-									case 8: flavortext = ""; break;
-									case 9: flavortext = ""; break;
+									case 7: flavortext = "You catch a movement coming from under one of the dead leaves on the ground."; break;
+									case 8: flavortext = "A songbird sings a lovely tune in the distance."; break;
+									case 9: flavortext = "A branch slaps you in the face as you move past a tree."; break;
 
 
 								}
@@ -2499,16 +2563,16 @@ namespace Server.Mobiles
 							{
 								switch (Utility.Random(10)) //
 								{
-									case 0: flavortext = ""; break;
-									case 1: flavortext = ""; break;
-									case 2: flavortext = ""; break;
-									case 3: flavortext = ""; break;
-									case 4: flavortext = ""; break;
-									case 5: flavortext = ""; break;
-									case 6: flavortext = ""; break;
-									case 7: flavortext = ""; break;
-									case 8: flavortext = ""; break;
-									case 9: flavortext = ""; break;
+									case 0: flavortext = "Decomposing matter bubbles up from the swampy water at your feet."; break;
+									case 1: flavortext = "You notice a small lizard climbing a vine nearby.  It looks at you and skitters away as if daring you to catch it."; break;
+									case 2: flavortext = "The heat here is intense, sweat drips from your forehead and falls in the murky waters."; break;
+									case 3: flavortext = "Some black flies keep buzzing in front of your eyes.  They buzz about playfully as you shoo them away."; break;
+									case 4: flavortext = "Green slime falls from a tree branch above you and lands on your head.  Or is it iguana droppings?"; break;
+									case 5: flavortext = "Metal in your armor begins to rust due to the intense humidity."; break;
+									case 6: flavortext = "A horrible rotten egg smell assaults you.  You hope its from rotten eggs...."; break;
+									case 7: flavortext = "The intense heat and humidity dampens all sounds around you."; break;
+									case 8: flavortext = "Rotten, green limbs float in the sawmpy water to your left."; break;
+									case 9: flavortext = "You wonder what is worse, the smell of decay in this sawmp, or Slippery Pete's underarms."; break;
 
 
 								}
@@ -2517,16 +2581,16 @@ namespace Server.Mobiles
 							{
 								switch (Utility.Random(10)) //
 								{
-									case 0: flavortext = ""; break;
-									case 1: flavortext = ""; break;
-									case 2: flavortext = ""; break;
-									case 3: flavortext = ""; break;
-									case 4: flavortext = ""; break;
-									case 5: flavortext = ""; break;
-									case 6: flavortext = ""; break;
-									case 7: flavortext = ""; break;
-									case 8: flavortext = ""; break;
-									case 9: flavortext = ""; break;
+									case 0: flavortext = "A mosquito flies into your ear and you reactively slap yourself senseless!"; break;
+									case 1: flavortext = "The plants are lush here - leaves as large as a boar hover gently above the ground."; break;
+									case 2: flavortext = "You see a trail of red ants slowly eating away decaying carcass of an animal."; break;
+									case 3: flavortext = "The trees' canopies hover high above your head, blockcing most of the sunlight."; break;
+									case 4: flavortext = "Your mind wanders to the ancient ruins of this world.  Is there one under this swamp?"; break;
+									case 5: flavortext = "A cacophony of insects creak and criss all around you."; break;
+									case 6: flavortext = "You look around cautiously... venomous snakes may hide in every branch."; break;
+									case 7: flavortext = "A howling monkey blurts out on a nearby tree."; break;
+									case 8: flavortext = "Have you need here before?  You can see why the large plants make it hard to know your way."; break;
+									case 9: flavortext = "A large jungle tree before you reminds you of Slippery Pete's oversized ego."; break;
 
 
 								}
@@ -2838,16 +2902,20 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				return;
 
 			if (!m_SbRes)
-			{
+			{				
 				if ( HasGump( typeof( ResurrectGump ) ) ) 
 				{
-						CloseGump( typeof( ResurrectGump ) );
+					CloseGump( typeof( ResurrectGump ) );
 				}
-				else if ( HasGump( typeof( ResurrectCostGump ) ) ) 
+				if ( HasGump( typeof( ResurrectCostGump ) ) ) 
 				{
-						CloseGump( typeof( ResurrectCostGump ) );
+					CloseGump( typeof( ResurrectCostGump ) );
 				} 
-				
+				if ( HasGump( typeof( ResurrectNowGump ) ) ) 
+				{
+					CloseGump( typeof( ResurrectNowGump ) );
+				}
+			
 				m.SendMessage("Your soul needs more time to recover from your last incarnation.");
 
 				if (!m_SbResTimer)
@@ -2867,7 +2935,8 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			Phylactery phylactery = this.FindPhylactery();
 			ArrayList tames = new ArrayList();
-			foreach ( Mobile creature in World.Mobiles.Values )
+			List<Mobile> mobiles = new List<Mobile>(World.Mobiles.Values);
+			foreach ( Mobile creature in mobiles )
 			{
 				if ( creature is BaseCreature )
 				{
@@ -2933,8 +3002,10 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			this.THC = 0;
 			this.m_TailorBOD = 0;
 			this.m_BlacksmithBOD = 0;
+			this.m_CarpenterBOD = 0;
+			this.m_FletcherBOD = 0;
 
-			if (THC <= 0)
+            if (THC <= 0)
 				this.High = false;
 			else
 				this.High = true;
@@ -3247,7 +3318,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 		public override bool CheckEquip( Item item )
 		{
-			if ( !base.CheckEquip( item ) )
+            if ( !base.CheckEquip( item ) )
 				return false;
 
 
@@ -3273,7 +3344,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				SendLocalizedMessage( 1004042 ); // You can only equip what you are already carrying while you have a trade pending.
 				return false;
 			}
-			return true;
+            return true;
 		}
 
 		public override bool CheckTrade( Mobile to, Item item, SecureTradeContainer cont, bool message, bool checkItems, int plusItems, int plusWeight )
@@ -3640,7 +3711,10 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 		public override void Resurrect()
 		{
 			if (this.SoulBound && !m_soulboundresurrect)
-				this.ResetPlayer();
+			{
+                this.ResetPlayer();
+				return;
+            }
 
 			bool wasAlive = this.Alive;
 
@@ -4553,6 +4627,9 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			if ( Core.ML && target is BaseCreature && ((BaseCreature)target).Controlled && this == ((BaseCreature)target).ControlMaster )
 				return false;
 
+			// If someone else targets you first, it's not a criminal action
+			if (target.Combatant == this) { return false; }
+
 			return base.IsHarmfulCriminal( target );
 		}
 
@@ -4681,275 +4758,27 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 		public bool Sorcerer() 
 		{
-			bool yeah = true;
-			
-			Item magebook = this.FindItemOnLayer( Layer.Talisman );
-			if ( (magebook != null && ( !(magebook is Spellbook) && !(magebook is NecromancerSpellbook) )) || magebook == null )
-				yeah = false;
-
-			Item shirt = this.FindItemOnLayer( Layer.InnerTorso );
-			if (shirt != null && !(shirt is BaseClothing))
-				yeah = false;
-
-			Item glove = this.FindItemOnLayer( Layer.Gloves );
-			if (glove != null && !(glove is BaseClothing))
-				yeah = false;
-
-			Item pants = this.FindItemOnLayer( Layer.Pants );
-			if (pants != null && !(pants is BaseClothing))
-				yeah = false;
-
-			Item neck = this.FindItemOnLayer( Layer.Neck );
-			if (neck != null && !(neck is BaseClothing) && !(neck is BaseJewel))
-				yeah = false;
-
-			Item arms = this.FindItemOnLayer( Layer.Arms );
-			if (arms != null && !(arms is BaseClothing))
-				yeah = false;
-
-			Item cloak = this.FindItemOnLayer( Layer.Cloak );
-			if (cloak != null && !(cloak is BaseClothing))
-				yeah = false;
-
-			Item helm = this.FindItemOnLayer( Layer.Helm );
-			if (helm != null && !(helm is BaseClothing))
-				yeah = false;
-
-			Item twohanded = this.FindItemOnLayer( Layer.TwoHanded );
-			if (twohanded != null && (twohanded is BaseWeapon || twohanded is BaseArmor))	
-				yeah = false;
-
-			Item oneHanded = this.FindItemOnLayer( Layer.OneHanded );
-			if (oneHanded != null && (oneHanded is BaseWeapon || oneHanded is BaseArmor))	
-				yeah = false;
-
-			Item firstvalid = this.FindItemOnLayer( Layer.FirstValid );
-			if (firstvalid != null && (firstvalid is BaseWeapon || firstvalid is BaseArmor))	
-				yeah = false;
-
-			if (Skills[SkillName.Magery].Value < 90)
-				yeah = false;
-
-			if (Skills[SkillName.EvalInt].Value < 90)
-				yeah = false;
-				
-			if (Int < 50)
-				yeah = false;
-
-			if (yeah && !m_sorc) // new status
-			{
-					PlaySound( 0x202 );
-					FixedParticles( 0x376A, 1, 62, 9923, 3, 3, EffectLayer.Waist );
-					FixedParticles( 0x3779, 1, 46, 9502, 5, 3, EffectLayer.Waist );
-			}
-			
-			if (m_sorc && !yeah) // removed status, remove all buffs
-			{
-				if( m_BuffTable != null )
-				{
-					List<BuffInfo> list = new List<BuffInfo>();
-
-					foreach( BuffInfo buff in m_BuffTable.Values )
-					{
-						if( !buff.RetainThroughDeath )
-						{
-							list.Add( buff );
-						}
-					}
-
-					for( int i = 0; i < list.Count; i++ )
-					{
-						RemoveBuff( list[i] );
-					}
-				}
-			}
-
-			m_sorc = yeah;
-
-			return yeah;
-		}
+			return CustomClass == SpecializationType.Sorcerer;
+        }
 		
 		public bool Troubadour()
+        {
+            return CustomClass == SpecializationType.Troubadour;
+        }
+
+		public bool MadChemist()
 		{
-			bool yeah = true;
-			
-			Item instrument = this.FindItemOnLayer( Layer.Talisman );
-			if ( (instrument != null && ( !(instrument is BaseInstrument) && !(instrument is SongBook) )) || instrument == null ) 
-				yeah = false;
-
-			Item arms = this.FindItemOnLayer( Layer.Arms );
-			if (arms != null && !(arms is BaseClothing))
-				yeah = false;
-
-			Item glove = this.FindItemOnLayer( Layer.Gloves );
-			if (glove != null && !(glove is BaseClothing))
-				yeah = false;
-				
-			Item neck = this.FindItemOnLayer( Layer.Neck );
-			if (neck != null && !(neck is BaseClothing) && !(neck is BaseJewel))
-				yeah = false;
-
-			Item cloak = this.FindItemOnLayer( Layer.Cloak );
-			if (cloak != null && !(cloak is BaseClothing))
-				yeah = false;
-				
-			Item helm = this.FindItemOnLayer( Layer.Helm );
-			if (helm != null && !(helm is BaseClothing))
-				yeah = false;
-
-			Item twohanded = this.FindItemOnLayer( Layer.TwoHanded );
-			if (twohanded != null && (twohanded is BaseWeapon || twohanded is BaseArmor))	
-				yeah = false;
-
-			Item oneHanded = this.FindItemOnLayer( Layer.OneHanded );
-			if (oneHanded != null && (oneHanded is BaseWeapon || oneHanded is BaseArmor))	
-				yeah = false;
-
-			Item firstvalid = this.FindItemOnLayer( Layer.FirstValid );
-			if (firstvalid != null && (firstvalid is BaseWeapon || firstvalid is BaseArmor))	
-				yeah = false;
-
-			if (Skills[SkillName.Musicianship].Value < 90)
-				yeah = false;
-				
-			if (Dex < 50)
-				yeah = false;
-
-			if (yeah && !m_troub)
-			{
-				FixedParticles( 0x376A, 1, 14, 0x13B5, EffectLayer.Waist );
-				PlaySound( 0x511 );
-			}
-			
-			if (m_troub && !yeah) // removed status, remove all buffs
-			{
-				if( m_BuffTable != null )
-				{
-					List<BuffInfo> list = new List<BuffInfo>();
-
-					foreach( BuffInfo buff in m_BuffTable.Values )
-					{
-						if( !buff.RetainThroughDeath )
-						{
-							list.Add( buff );
-						}
-					}
-
-					for( int i = 0; i < list.Count; i++ )
-					{
-						RemoveBuff( list[i] );
-					}
-				}
-			}
-
-			m_troub = yeah;
-
-			return yeah;		
-		
+			return false; // Disable Class until it's fully fleshed out
 		}
 
-		public bool Alchemist() 
-		{
-	
-			bool yeah = true;
-			
-			Item stone = this.FindItemOnLayer( Layer.Talisman );
-			    if ( (stone != null && !(stone is PhilosophersStone)) || stone == null )
-				yeah = false;
-			
-
-			Item neck = this.FindItemOnLayer( Layer.Neck );
-			if (neck != null && !(neck is BaseClothing))
-				yeah = false;
-
-			Item arms = this.FindItemOnLayer( Layer.Arms );
-			if (arms != null && !(arms is BaseClothing))
-				yeah = false;
-
-			Item cloak = this.FindItemOnLayer( Layer.Cloak );
-			if (cloak != null && !(cloak is BaseClothing))
-				yeah = false;
-
-			Item apron = this.FindItemOnLayer( Layer.MiddleTorso );
-			if (apron != null && !(apron is FullApron) && !(apron is HalfApron) )
-				yeah = false;
-
-			Item helm = this.FindItemOnLayer( Layer.Helm );
-			if (helm != null && helm.ItemID != 0x2FB8 && helm.ItemID != 0x3172 )
-				yeah = false;
-
-			Item twohanded = this.FindItemOnLayer( Layer.TwoHanded );
-			if (twohanded != null && (twohanded is BaseWeapon || twohanded is BaseArmor))	
-				yeah = false;
-
-			Item oneHanded = this.FindItemOnLayer( Layer.OneHanded );
-			if (oneHanded != null && (oneHanded is BaseWeapon || oneHanded is BaseArmor))	
-				yeah = false;
-
-			Item firstvalid = this.FindItemOnLayer( Layer.FirstValid );
-			if (firstvalid != null && (firstvalid is BaseWeapon || firstvalid is BaseArmor))	
-				yeah = false;
-
-			if (Skills[SkillName.Alchemy].Value < 90)
-				yeah = false;
-
-			if (Skills[SkillName.Forensics].Value < 90)
-				yeah = false;
-				
-			if (Dex < 50)
-				yeah = false;
-				
-			if (yeah && !m_alch)
-			{
-				FixedParticles( 0x376A, 1, 14, 0x13B5, EffectLayer.Waist );
-				PlaySound( 0x511 );
-			}
-			
-			if (m_alch && !yeah) // removed status, remove all buffs
-			{
-				if( m_BuffTable != null )
-				{
-					List<BuffInfo> list = new List<BuffInfo>();
-
-					foreach( BuffInfo buff in m_BuffTable.Values )
-					{
-						if( !buff.RetainThroughDeath )
-						{
-							list.Add( buff );
-						}
-					}
-
-					for( int i = 0; i < list.Count; i++ )
-					{
-						RemoveBuff( list[i] );
-					}
-				}
-			}
-			
-			m_alch = yeah;
-			return yeah;
-		}
+		public bool Alchemist()
+        {
+            return CustomClass == SpecializationType.Alchemist;
+        }
 		
 		public double AlchemistBonus()
 		{
-			double bonus = 1;
-			if (Alchemist())
-			{
-				//total 250% bonus damage
-				
-				//50 pts for alchemy
-				bonus += 0.2 * (Skills[SkillName.Alchemy].Value / 120);
-				
-				//50 pts for dex
-				bonus += 0.2 * ((double)Dex/500);
-				
-				//50 pts base
-				bonus += 0.2;
-				
-				//100 pts TasteID
-				bonus += 1.0 * (Skills[SkillName.TasteID].Value / 120);
-			}
-			return bonus;
+			return CustomClasses.Alchemist.GetPotionBonus(this);
 		}
 				
 
@@ -5178,11 +5007,14 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			base.Serialize( writer );
 
-			writer.Write( (int) 47 ); // 47 added lastlogout
+			writer.Write( (int) 48 ); // 48 added Fletcher and Carp
+
+			writer.Write( (int)m_CarpenterBOD);
+			writer.Write( (int)m_FletcherBOD);
 
 			writer.Write( (DateTime)m_LastLogout);
 
-			writer.Write( (int)m_BlacksmithBOD);
+            writer.Write( (int)m_BlacksmithBOD);
 			writer.Write( (int)m_TailorBOD);
 			writer.Write( (int)m_THC);
 			writer.Write( (int)m_Stealthing);
@@ -5332,8 +5164,12 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			int version = reader.ReadInt();
 
 			switch ( version )
-			{
-				case 47:
+            {
+                case 48:
+                    m_CarpenterBOD = reader.ReadInt();
+                    m_FletcherBOD = reader.ReadInt();
+                    goto case 47;
+                case 47:
 					m_LastLogout = reader.ReadDateTime();
 					goto case 46;
 				case 46:
@@ -5666,7 +5502,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			if( Hidden )	//Hiding is the only buff where it has an effect that's serialized.
 				AddBuff( new BuffInfo( BuffIcon.HidingAndOrStealth, 1075655 ) );
-		}
+        }
 
 
 
@@ -5800,15 +5636,31 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			}
 
 			if (this.SkillsCap == 1000)
-				list.Add ( "Disciple of the Moon" );
+				list.Add ( "Disciple of the Moon." );
 
-			if (this.Sorcerer())
-				list.Add ( "Sorcerer of the hidden arts." );
-				
-			if (this.Troubadour())
-				list.Add ( "Wandering Troubadour - teller of tales." );
-            if (this.Alchemist())
-                list.Add("Mad Chemist - For Great Science!!.");
+			switch(CustomClass)
+			{
+				case SpecializationType.Alchemist:
+                list.Add("Chemist - For Great Science!!");
+					break;
+
+				case SpecializationType.MadChemist:
+                list.Add("Mad Chemist - Apprentice to Dr Victor.");
+					break;
+
+				case SpecializationType.Sorcerer:
+                    list.Add("Sorcerer of the hidden arts.");
+					break;
+
+                case SpecializationType.Troubadour:
+                    list.Add("Wandering Troubadour - teller of tales.");
+					break;
+
+                case SpecializationType.None:
+				default:
+					break;
+            }
+            
             if (this.BAC > 0)
 			{
 				string drunk = "a little tipsy";
@@ -6094,16 +5946,41 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 		public override void OnKarmaChange( int oldValue )
 		{
 			InvalidateMyRunUO();
-		}
+            CombatBar.Refresh(this);
+        }
 
 		public override void OnFameChange( int oldValue )
 		{
 			InvalidateMyRunUO();
+			CombatBar.Refresh(this);
 		}
 
-		public override void OnSkillChange( SkillName skill, double oldBase )
-		{
-			if ( this.Young && this.SkillsTotal >= 4500 )
+        public override void OnHungerChange(int oldValue)
+        {
+			CombatBar.Refresh(this);
+        }
+
+        public override void OnThirstChange(int oldValue)
+        {
+			CombatBar.Refresh(this);
+        }
+
+        public override void OnTithingPointsChange(int oldValue)
+        {
+            CombatBar.Refresh(this);
+        }
+
+        public override void OnSkillChange( SkillName skill, double oldBase )
+        {
+            Items.ForEach(i =>
+            {
+                var observer = i as ISkillObserver;
+                if (observer == null) return;
+
+                observer.PlayerSkillChanged(this, skill);
+            });
+
+            if ( this.Young && this.SkillsTotal >= 4500 )
 			{
 				Account acc = this.Account as Account;
 
@@ -6114,6 +5991,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			if (skill != SkillName.Focus)
 			    DisruptAfk = true;
 
+            CustomClasses.Activate(this);
 			InvalidateMyRunUO();
 		}
 
@@ -6128,9 +6006,18 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 		}
 
 		public override void OnRawStatChange( StatType stat, int oldValue )
-		{
-			InvalidateMyRunUO();
-		}
+        {
+			Items.ForEach(item =>
+			{
+				var observer = item as IStatObserver;
+				if (observer == null) return;
+
+				observer.PlayerStatChanged(this, stat);
+			});
+
+            CustomClasses.Activate(this);
+            InvalidateMyRunUO();
+        }
 
 		public override void OnDelete()
 		{
@@ -6594,14 +6481,26 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				}
 				else if (  Insensitive.Contains( speech, "i wish to strip" ) )
 				{
-					AdventuresAutomation.UndressItem( this, Layer.OuterTorso );
-					AdventuresAutomation.UndressItem( this, Layer.InnerTorso );
-					AdventuresAutomation.UndressItem( this, Layer.MiddleTorso );
-					AdventuresAutomation.UndressItem( this, Layer.Pants );
-					AdventuresAutomation.UndressItem( this, Layer.Shirt );
-					AdventuresAutomation.UndressItem( this, Layer.OuterLegs );
-					AdventuresAutomation.UndressItem( this, Layer.Waist );
-					AdventuresAutomation.UndressItem( this, Layer.Cloak );
+                    AdventuresAutomation.UndressItem( this, Layer.Talisman );
+                    AdventuresAutomation.UndressItem( this, Layer.OneHanded );
+                    AdventuresAutomation.UndressItem( this, Layer.TwoHanded );
+                    AdventuresAutomation.UndressItem( this, Layer.Bracelet );
+                    AdventuresAutomation.UndressItem( this, Layer.Earrings );
+                    AdventuresAutomation.UndressItem( this, Layer.Neck );
+                    AdventuresAutomation.UndressItem( this, Layer.Ring );
+                    AdventuresAutomation.UndressItem( this, Layer.Arms );
+                    AdventuresAutomation.UndressItem( this, Layer.Cloak );
+                    AdventuresAutomation.UndressItem( this, Layer.Gloves );
+                    AdventuresAutomation.UndressItem( this, Layer.Helm );
+                    AdventuresAutomation.UndressItem( this, Layer.InnerLegs );
+                    AdventuresAutomation.UndressItem( this, Layer.InnerTorso );
+                    AdventuresAutomation.UndressItem( this, Layer.MiddleTorso );
+                    AdventuresAutomation.UndressItem( this, Layer.OuterLegs );
+                    AdventuresAutomation.UndressItem( this, Layer.OuterTorso );
+                    AdventuresAutomation.UndressItem( this, Layer.Pants );
+                    AdventuresAutomation.UndressItem( this, Layer.Shirt );
+                    AdventuresAutomation.UndressItem( this, Layer.Shoes );
+                    AdventuresAutomation.UndressItem( this, Layer.Waist );
 				}
 			}
 
@@ -7144,6 +7043,90 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			}
 
 			m_AutoStabled.Clear();
-		}
-	}
+        }
+
+        public void SetSpecialization(SpecializationType specialization)
+        {
+            if (m_customClass == specialization) return;
+
+            m_customClass = specialization;
+            RemoveNonPersistentBuffs();
+            if (NetState == null) return;
+
+            if (specialization == SpecializationType.None)
+            {
+                FixedParticles(0x374A, 1, 14, 0x13B5, EffectLayer.Waist); // Red particles
+                PlaySound(0x1D5); // wisp4
+            }
+            else
+            {
+                FixedParticles(0x376A, 1, 14, 0x13B5, EffectLayer.Waist); // Blue particles
+                PlaySound(0x511); // Mirror image
+            }
+
+			Items.ForEach(item =>
+			{
+				var observer = item as ISpecializationObserver;
+				if (observer == null) return;
+
+				observer.SpecializationUpdated(this, specialization);
+			});
+            InvalidateProperties();
+        }
+
+        private void RemoveNonPersistentBuffs()
+        {
+            if (m_BuffTable != null)
+            {
+                List<BuffInfo> list = new List<BuffInfo>();
+
+                foreach (BuffInfo buff in m_BuffTable.Values)
+                {
+                    if (!buff.RetainThroughDeath)
+                    {
+                        list.Add(buff);
+                    }
+					else
+                    {
+                        switch (buff.ID)
+                        {
+                            case BuffIcon.ReactiveArmor:
+                                list.Add(buff);
+                                break;
+                        }
+                    }
+                }
+
+                foreach (BuffInfo buff in list)
+                {
+                    RemoveBuff(buff);
+
+                    switch (buff.ID)
+                    {
+                        case BuffIcon.ReactiveArmor:
+							ReactiveArmorSpell.EndArmor(this);
+                            break;
+                    }
+                }
+            }
+        }
+
+        public Item FindItemRecursive(Item item, Predicate<Item> predicate, bool recurse)
+        {
+			if (item == null) return null;
+            if (predicate(item)) return item;
+			if (!recurse) return null;
+
+            if (item is Container)
+            {
+                foreach (Item childItem in item.Items)
+                {
+                    Item result = FindItemRecursive(childItem, predicate, recurse);
+                    if (result != null) return result;
+                }
+            }
+
+            return null;
+        }
+    }
 }

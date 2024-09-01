@@ -108,6 +108,7 @@ Name = "a greater raptor";
 		public override FoodType FavoriteFood{ get{ return FoodType.Fish | FoodType.Meat; } }
 		public override int Scales{ get{ return 2; } }
 		public override ScaleType ScaleType{ get{ return ( ScaleType.Dinosaur ); } }
+		public override PackInstinct PackInstinct{ get{ return PackInstinct.Reptile; } }
 
 		public override int GetAttackSound(){ return 0x622; }	// A
 		public override int GetDeathSound(){ return 0x623; }	// D

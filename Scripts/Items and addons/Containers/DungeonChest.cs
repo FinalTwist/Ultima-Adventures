@@ -246,7 +246,7 @@ namespace Server.Items
 						this.DropItem( advancebook );
 					}
 
-					FillMeUpLevel = FillMeUpLevel + Utility.RandomMinMax( 1, 2 );
+					FillMeUpLevel = FillMeUpLevel + Utility.RandomMinMax( 1, 3 );
 				}
 
 				string sWorld = Worlds.GetMyWorld( this.Map, this.Location, this.X, this.Y );

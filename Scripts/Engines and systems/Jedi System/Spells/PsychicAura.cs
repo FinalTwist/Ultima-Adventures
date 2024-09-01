@@ -26,11 +26,6 @@ namespace Server.Spells.Jedi
         {
         }
 
-		public override bool CheckCast(Mobile caster)
-		{
-			return true;
-		}
-
 		private static Hashtable m_Table = new Hashtable();
 
 		public override void OnCast()

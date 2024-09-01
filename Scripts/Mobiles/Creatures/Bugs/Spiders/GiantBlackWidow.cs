@@ -54,6 +54,10 @@ namespace Server.Mobiles
 			Karma = -3500;
 
 			VirtualArmor = 24;
+			
+			Tamable = true;
+			ControlSlots = 1;
+			MinTameSkill = 70.1;
 
 			PackItem( new SpidersSilk( 5 ) );
 

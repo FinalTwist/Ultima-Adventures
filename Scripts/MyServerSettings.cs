@@ -27,12 +27,12 @@ namespace Server.Misc
 
 		public static string FilesPath()
 		{
-            // THE SERVER REQUIRES SOME CLIENT FILES TO FUNCTION
-            // THESE REQUIRED FILES SHOULD BE INCLUDED IN THE "Files" FOLDER OF THE PACKAGE
-            // SET THE BELOW PATH TO WHERE THIS FOLDER IS LOCATED
+			// THE SERVER REQUIRES SOME CLIENT FILES TO FUNCTION
+			// THESE REQUIRED FILES SHOULD BE INCLUDED IN THE "Files" FOLDER OF THE PACKAGE
+			// SET THE BELOW PATH TO WHERE THIS FOLDER IS LOCATED
 
-            return @"C:\Ultima-Adventures\Files";
-        }
+			return @"C:\Ultima-Adventures\Files";
+		}
 
 		public static bool AllowSaveFunction()
 		{
@@ -575,17 +575,17 @@ namespace Server.Misc
 // Final added customizable caps for certain aos attributes
 		public static int RegenHitsCap() 
 		{
-			return 35;
+			return 18; // This is equipment cap, not actual cap. See RegenRates.cs
 		}	
 
 		public static int RegenManaCap() 
 		{
-			return 35;
+			return 18; // This is equipment cap, not actual cap. See RegenRates.cs
 		}	
 
 		public static int RegenStamCap() 
 		{
-			return 35;
+			return 24; // This is equipment cap, not actual cap. See RegenRates.cs
 		}	
 
 		public static int SpellDamage() 

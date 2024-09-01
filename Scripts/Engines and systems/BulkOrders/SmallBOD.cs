@@ -65,19 +65,14 @@ namespace Server.Engines.BulkOrders
 			LootType = LootType.Blessed;
 		}
 
-		public static BulkMaterialType GetRandomMaterial( BulkMaterialType start, double[] chances )
+		public static BulkMaterialType GetRandomMaterial( BulkMaterialType startType, BulkMaterialType endType )
 		{
-			double random = Utility.RandomDouble();
+			if (startType == endType) { return startType; }
 
-			for ( int i = 0; i < chances.Length; ++i )
-			{
-				if ( random < chances[i] )
-					return ( i == 0 ? BulkMaterialType.None : start + (i - 1) );
-
-				random -= chances[i];
-			}
-
-			return BulkMaterialType.None;
+			int start = (int)startType;
+			int end = (int)endType;
+			
+			return (BulkMaterialType)(start + Utility.Random(1 + end - start));
 		}
 
 		public override void GetProperties( ObjectPropertyList list )
@@ -90,7 +85,7 @@ namespace Server.Engines.BulkOrders
 				list.Add( 1045141 ); // All items must be exceptional.
 
 			if ( m_Material != BulkMaterialType.None )
-				list.Add( SmallBODGump.GetMaterialNumberFor( m_Material ) ); // All items must be made with x material.
+                list.Add("All items must be crafted with " + SmallBODGump.GetMaterialStringFor(Material));
 
 			list.Add( 1060656, m_AmountMax.ToString() ); // amount to make: ~1_val~
 			list.Add( 1060658, "#{0}\t{1}", m_Number, m_AmountCur ); // ~1_val~: ~2_val~
@@ -152,10 +147,41 @@ namespace Server.Engines.BulkOrders
 				case CraftResource.Agapite:			return BulkMaterialType.Agapite;
 				case CraftResource.Verite:			return BulkMaterialType.Verite;
 				case CraftResource.Valorite:		return BulkMaterialType.Valorite;
-				case CraftResource.SpinedLeather:	return BulkMaterialType.Spined;
+                case CraftResource.Nepturite:		return BulkMaterialType.Nepturite;
+				case CraftResource.Obsidian:		return BulkMaterialType.Obsidian;
+				case CraftResource.Steel:			return BulkMaterialType.Steel;
+				case CraftResource.Brass:			return BulkMaterialType.Brass;
+				case CraftResource.Mithril:			return BulkMaterialType.Mithril;
+				case CraftResource.Xormite:			return BulkMaterialType.Xormite;
+				case CraftResource.Dwarven:			return BulkMaterialType.Dwarven;
+
 				case CraftResource.HornedLeather:	return BulkMaterialType.Horned;
 				case CraftResource.BarbedLeather:	return BulkMaterialType.Barbed;
-			}
+				case CraftResource.NecroticLeather:	return BulkMaterialType.Necrotic;
+				case CraftResource.VolcanicLeather:	return BulkMaterialType.Volcanic;
+				case CraftResource.FrozenLeather:	return BulkMaterialType.Frozen;
+				case CraftResource.SpinedLeather:	return BulkMaterialType.Spined;
+				case CraftResource.GoliathLeather:	return BulkMaterialType.Goliath;
+				case CraftResource.DraconicLeather:	return BulkMaterialType.Draconic;
+				case CraftResource.HellishLeather:	return BulkMaterialType.Hellish;
+				case CraftResource.DinosaurLeather:	return BulkMaterialType.Dinosaur;
+				case CraftResource.AlienLeather:	return BulkMaterialType.Alien;
+
+				case CraftResource.AshTree:         return BulkMaterialType.Ash;
+				case CraftResource.CherryTree:      return BulkMaterialType.Cherry;
+				case CraftResource.EbonyTree:       return BulkMaterialType.Ebony;
+				case CraftResource.GoldenOakTree:   return BulkMaterialType.GoldenOak;
+				case CraftResource.HickoryTree:     return BulkMaterialType.Hickory;
+				case CraftResource.MahoganyTree:    return BulkMaterialType.Mahogany;
+				case CraftResource.OakTree:         return BulkMaterialType.Oak;
+				case CraftResource.PineTree:        return BulkMaterialType.Pine;
+				case CraftResource.GhostTree:       return BulkMaterialType.Ghost;
+				case CraftResource.RosewoodTree:    return BulkMaterialType.Rosewood;
+				case CraftResource.WalnutTree:      return BulkMaterialType.Walnut;
+				case CraftResource.PetrifiedTree:   return BulkMaterialType.Petrified;
+				case CraftResource.DriftwoodTree:   return BulkMaterialType.Driftwood;
+				case CraftResource.ElvenTree:       return BulkMaterialType.Elven;
+            }
 
 			return BulkMaterialType.None;
 		}
@@ -170,7 +196,7 @@ namespace Server.Engines.BulkOrders
 				{
 					from.SendLocalizedMessage( 1045166 ); // The maximum amount of requested items have already been combined to this deed.
 				}
-				else if ( m_Type == null || (objectType != m_Type && !objectType.IsSubclassOf( m_Type )) || (!(o is BaseWeapon) && !(o is BaseArmor) && !(o is BaseClothing)) )
+                else if ( m_Type == null || (objectType != m_Type && !objectType.IsSubclassOf( m_Type )) || (!(o is BaseWeapon) && !(o is BaseArmor) && !(o is BaseClothing) && !(o is BaseInstrument)) )
 				{
 					from.SendLocalizedMessage( 1045169 ); // The item is not in the request.
 				}
@@ -178,19 +204,27 @@ namespace Server.Engines.BulkOrders
 				{
 					BulkMaterialType material = BulkMaterialType.None;
 
-					if ( o is BaseArmor )
-						material = GetMaterial( ((BaseArmor)o).Resource );
-					else if ( o is BaseClothing )
-						material = GetMaterial( ((BaseClothing)o).Resource );
+					if (o is BaseArmor)
+						material = GetMaterial( ((BaseArmor)o).Resource);
+					else if (o is BaseClothing)
+						material = GetMaterial(((BaseClothing)o).Resource);
+					else if (o is BaseWeapon)
+						material = GetMaterial(((BaseWeapon)o).Resource);
+					else if (o is BaseInstrument)
+						material = GetMaterial(((BaseInstrument)o).Resource);
 
-					if ( m_Material >= BulkMaterialType.DullCopper && m_Material <= BulkMaterialType.Valorite && material != m_Material )
+					if ( m_Material >= BulkMaterialType.DullCopper && m_Material <= BulkMaterialType.Dwarven && material != m_Material )
 					{
 						from.SendLocalizedMessage( 1045168 ); // The item is not made from the requested ore.
 					}
-					else if ( m_Material >= BulkMaterialType.Spined && m_Material <= BulkMaterialType.Barbed && material != m_Material )
+					else if ( m_Material >= BulkMaterialType.Horned && m_Material <= BulkMaterialType.Alien && material != m_Material )
 					{
 						from.SendLocalizedMessage( 1049352 ); // The item is not made from the requested leather type.
 					}
+                    else if (m_Material >= BulkMaterialType.Ash && m_Material <= BulkMaterialType.Elven && material != m_Material)
+                    {
+                        from.SendMessage("The item is not made from the requested wood type.");
+                    }
 					else
 					{
 						bool isExceptional = false;
@@ -201,6 +235,8 @@ namespace Server.Engines.BulkOrders
 							isExceptional = ( ((BaseArmor)o).Quality == ArmorQuality.Exceptional );
 						else if ( o is BaseClothing )
 							isExceptional = ( ((BaseClothing)o).Quality == ClothingQuality.Exceptional );
+                        else if (o is BaseInstrument)
+                            isExceptional = (((BaseInstrument)o).Quality == InstrumentQuality.Exceptional);
 
 						if ( m_RequireExceptional && !isExceptional )
 						{

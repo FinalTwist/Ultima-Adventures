@@ -1,10 +1,11 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
-	public abstract class BaseStaff : BaseMeleeWeapon
+	public abstract class BaseStaff : BaseMeleeWeapon, ICarpentryRepairable
 	{
 		public override int DefHitSound{ get{ return 0x233; } }
 		public override int DefMissSound{ get{ return 0x239; } }

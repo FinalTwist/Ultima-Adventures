@@ -216,23 +216,34 @@ namespace Server.Mobiles
 				AddImage(164, 551, 140);
 				AddImage(8, 517, 139);
 				AddImage(269, 342, 147);
-				AddHtml( 174, 68, 200, 20, @"<BODY><BASEFONT Color=#FBFBFB><BIG>PETS IN THE STABLE</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 
-				int y = 95;
+ 				int maxCount = Server.Mobiles.AnimalTrainer.GetMaxStabled( from );
+				AddHtml( 174, 68, 300, 20, @"<BODY><BASEFONT Color=#FBFBFB><BIG> " + list.Count + " OF " + maxCount + " PETS IN THE STABLE</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 
-				for ( int i = 0; i < list.Count; ++i )
-				{
-					BaseCreature pet = list[i];
 
-					if ( pet == null || pet.Deleted )
-						continue;
+                int y = 95;
+                int x = 105;
 
-					y = y + 35;
+                for ( int i = 0; i < list.Count; ++i )
+                {
+					// Start of 2nd column
+                    if (i == 9)
+                    {
+                        x = 325;
+                        y = 95;
+                    }
 
-					AddHtml( 145, y, 425, 20, @"<BODY><BASEFONT Color=#FCFF00><BIG>" + pet.Name + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
-					AddButton(105, y, 4005, 4005, (i + 1), GumpButtonType.Reply, 0);
-				}
-			}
+                    BaseCreature pet = list[i];
+
+                    if (pet == null || pet.Deleted)
+                        continue;
+
+                    y = y + 35;
+
+                    AddHtml(x + 40, y, 165, 20, @"<BODY><BASEFONT Color=#FCFF00><BIG>" + pet.Name + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+                    AddButton(x, y, 4005, 4005, (i + 1), GumpButtonType.Reply, 0);
+                }
+            }
 
 			public override void OnResponse( NetState sender, RelayInfo info )
 			{

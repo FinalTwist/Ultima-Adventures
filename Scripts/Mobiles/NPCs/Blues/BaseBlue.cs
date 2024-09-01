@@ -6,6 +6,7 @@ using Server.Items;
 using Server.Mobiles;
 using Server.Gumps;
 using Server.Targeting;
+using System.Linq;
 
 namespace Server.Mobiles 
 { 
@@ -440,7 +441,14 @@ namespace Server.Mobiles
 				}
 				else
 				{
-					murderer.Criminal = true;
+					// Killing guards is a criminal action
+					// Defending yourself is not
+					if ( this is BlueGuard || this is MercenaryGuard || this is MidlandGuard 
+						|| !Aggressed.Any(info => info.Defender == murderer) )
+                    {
+                        murderer.Criminal = true;
+                    }
+
 					murderer.Kills += 1;
 					Server.Items.DisguiseTimers.RemoveDisguise( murderer );
 				}
@@ -449,7 +457,6 @@ namespace Server.Mobiles
 					Container pack = Backpack;
 					pack.DropItem( new EtherealHorse() );
 				}
-
 		    }
 
 		    return base.OnBeforeDeath();

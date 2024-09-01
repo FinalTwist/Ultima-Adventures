@@ -11,6 +11,7 @@ using Server.Mobiles;
 using Server.Commands;
 using System.Globalization;
 using Server.Regions;
+using System.Linq;
 
 namespace Server.Items
 {
@@ -57,7 +58,8 @@ namespace Server.Items
 
 			if ( from.Backpack.FindItemByType( typeof ( Bottle ) ) == null )
 			{
-				from.SendMessage( "The item has been destroyed." );
+				from.SendMessage( "You require a bottle." );
+				return false;
 			}
 			else if ( dropped is SpaceDyes )
 			{
@@ -74,6 +76,93 @@ namespace Server.Items
 			return false;
 		}
 
+		private static readonly List<string> ExtractableMaterials = new List<string>
+		{
+			"Beskar",
+			"Carbonite",
+			"Phrik",
+			"Cortosis",
+			"Songsteel",
+			"Agrinium",
+			"Durasteel",
+			"Titanium",
+			"Laminasteel",
+			"Neuranium",
+			"Promethium",
+			"Quadranium",
+			"Durite",
+			"Farium",
+			"Trimantium",
+			"Xonolite",
+
+			"Veshok",
+			"Cosian",
+			"Greel",
+			"Teej",
+			"Kyshyyyk",
+			"Laroon",
+			"Borl",
+			"Japor",
+
+			"Adesote",
+			"Nylonite",
+			"Biomesh",
+			"Cerlin",
+			"Polyfiber",
+			"Durafiber",
+			"Nylar",
+			"Syncloth",
+			"Hypercloth",
+			"Flexicris",
+			"Thermoweave",
+
+			"Twi'lek",
+			"Rodian",
+			"Martian",
+			"Cardassian",
+			"Xindi",
+			"Tusken",
+			"Andorian",
+			"Zabrak",
+		};
+
+		private static readonly Dictionary<string, int> ExplicitItems = new Dictionary<string, int>
+		{
+			{ "biohazard hood", 0xBA1 },
+			{ "biohazard suit", 0xBA1 },
+			{ "hazmat hood", 0x93D },
+			{ "hazmat suit", 0x93D },
+			{ "radiation hood", 0xBAD },
+			{ "radiation suit", 0xBAD },
+			{ "lab coat", 0xBB4 },
+		};
+
+		private static readonly Dictionary<int, string> DyeMap = new Dictionary<int, string>
+		{
+			{ 0x6F6, "Rodian Green Dye" },
+			{ 0x6F8, "Veshok Gray Dye" },
+			{ 0x701, "Zabrak Red Dye" },
+			{ 0x705, "Kyshyyyk Gold Dye" },
+			{ 0x776, "Tusken Yellow Dye" },
+			{ 0x77F, "Martian Green Dye" },
+			{ 0x7A9, "Durasteel Gray Dye" },
+			{ 0x825, "Andorian Blue Dye" },
+			{ 0x829, "Carbonite Gray Dye" },
+			{ 0x82C, "Cortosis Purple Dye" },
+			{ 0x870, "Neuranium Red Dye" },
+			{ 0x877, "Xindi Gray Dye" },
+			{ 0x8C1, "Agrinium Gray Dye" },
+			{ 0x8D7, "Titanium Blue Dye" },
+			{ 0xAF8, "Twi'lek Purple Dye" },
+			{ 0xB42, "Songsteel White Dye" },
+
+			// For Custom Items
+			{ 0xBA1, "Biohazard Green Dye" },
+			{ 0x93D, "Hazmat Orange Dye" },
+			{ 0xBAD, "Radiation Yellow Dye" },
+			{ 0xBB4, "Lab Coat White Dye" },
+		};
+
 		public static bool GetColor( Item item, Mobile from )
 		{
 			if (from == null)
@@ -83,115 +172,55 @@ namespace Server.Items
 				from.SendMessage( "There's a problem with this item." );
 				return false;
 			}
-from.SendMessage( "1" );
+
 			if (item.Name == null)
 				item.Name = "";
 
-			bool machineWorked = false;
-			string name = "";
 			int color = 0;
-
-			string material = "";
-
-			if ( (item.Name).Contains("Beskar") ){ material = "Beskar"; }
-			else if ( (item.Name).Contains("Carbonite") ){ material = "Carbonite"; }
-			else if ( (item.Name).Contains("Phrik") ){ material = "Phrik"; }
-			else if ( (item.Name).Contains("Cortosis") ){ material = "Cortosis"; }
-			else if ( (item.Name).Contains("Songsteel") ){ material = "Songsteel"; }
-			else if ( (item.Name).Contains("Agrinium") ){ material = "Agrinium"; }
-			else if ( (item.Name).Contains("Durasteel") ){ material = "Durasteel"; }
-			else if ( (item.Name).Contains("Titanium") ){ material = "Titanium"; }
-			else if ( (item.Name).Contains("Laminasteel") ){ material = "Laminasteel"; }
-			else if ( (item.Name).Contains("Neuranium") ){ material = "Neuranium"; }
-			else if ( (item.Name).Contains("Promethium") ){ material = "Promethium"; }
-			else if ( (item.Name).Contains("Quadranium") ){ material = "Quadranium"; }
-			else if ( (item.Name).Contains("Durite") ){ material = "Durite"; }
-			else if ( (item.Name).Contains("Farium") ){ material = "Farium"; }
-			else if ( (item.Name).Contains("Trimantium") ){ material = "Trimantium"; }
-			else if ( (item.Name).Contains("Xonolite") ){ material = "Xonolite"; }
-
-			else if ( (item.Name).Contains("Veshok") ){ material = "Veshok"; }
-			else if ( (item.Name).Contains("Cosian") ){ material = "Cosian"; }
-			else if ( (item.Name).Contains("Greel") ){ material = "Greel"; }
-			else if ( (item.Name).Contains("Teej") ){ material = "Teej"; }
-			else if ( (item.Name).Contains("Kyshyyyk") ){ material = "Kyshyyyk"; }
-			else if ( (item.Name).Contains("Laroon") ){ material = "Laroon"; }
-			else if ( (item.Name).Contains("Borl") ){ material = "Borl"; }
-			else if ( (item.Name).Contains("Japor") ){ material = "Japor"; }
-
-			else if ( (item.Name).Contains("Adesote") ){ material = "Adesote"; }
-			else if ( (item.Name).Contains("Nylonite") ){ material = "Nylonite"; }
-			else if ( (item.Name).Contains("Biomesh") ){ material = "Biomesh"; }
-			else if ( (item.Name).Contains("Cerlin") ){ material = "Cerlin"; }
-			else if ( (item.Name).Contains("Polyfiber") ){ material = "Polyfiber"; }
-			else if ( (item.Name).Contains("Durafiber") ){ material = "Durafiber"; }
-			else if ( (item.Name).Contains("Syncloth") ){ material = "Syncloth"; }
-			else if ( (item.Name).Contains("Hypercloth") ){ material = "Hypercloth"; }
-			else if ( (item.Name).Contains("Flexicris") ){ material = "Flexicris"; }
-			else if ( (item.Name).Contains("Thermoweave") ){ material = "Thermoweave"; }
-			else if ( (item.Name).Contains("Nylar") ){ material = "Nylar"; }
-
-			else if ( (item.Name).Contains("Twi'lek") ){ material = "Twi'lek"; }
-			else if ( (item.Name).Contains("Rodian") ){ material = "Rodian"; }
-			else if ( (item.Name).Contains("Martian") ){ material = "Martian"; }
-			else if ( (item.Name).Contains("Cardassian") ){ material = "Cardassian"; }
-			else if ( (item.Name).Contains("Xindi") ){ material = "Xindi"; }
-			else if ( (item.Name).Contains("Tusken") ){ material = "Tusken"; }
-			else if ( (item.Name).Contains("Andorian") ){ material = "Andorian"; }
-			else if ( (item.Name).Contains("Zabrak") ){ material = "Zabrak"; }
-from.SendMessage( "2" );
-			color = Server.Misc.MaterialInfo.GetSpaceAceColors( material );
-
-			if ( color == 0x6F6 ){ name = "Rodian Green Dye"; machineWorked = true; }
-			else if ( color == 0x6F8 ){ name = "Veshok Gray Dye"; machineWorked = true; }
-			else if ( color == 0x701 ){ name = "Zabrak Red Dye"; machineWorked = true; }
-			else if ( color == 0x705 ){ name = "Kyshyyyk Gold Dye"; machineWorked = true; }
-			else if ( color == 0x776 ){ name = "Tusken Yellow Dye"; machineWorked = true; }
-			else if ( color == 0x77F ){ name = "Martian Green Dye"; machineWorked = true; }
-			else if ( color == 0x7A9 ){ name = "Durasteel Gray Dye"; machineWorked = true; }
-			else if ( color == 0x825 ){ name = "Andorian Blue Dye"; machineWorked = true; }
-			else if ( color == 0x829 ){ name = "Carbonite Gray Dye"; machineWorked = true; }
-			else if ( color == 0x82C ){ name = "Cortosis Purple Dye"; machineWorked = true; }
-			else if ( color == 0x870 ){ name = "Neuranium Red Dye"; machineWorked = true; }
-			else if ( color == 0x877 ){ name = "Xindi Gray Dye"; machineWorked = true; }
-			else if ( color == 0x8C1 ){ name = "Agrinium Gray Dye"; machineWorked = true; }
-			else if ( color == 0x8D7 ){ name = "Titanium Blue Dye"; machineWorked = true; }
-			else if ( color == 0xAF8 ){ name = "Twi'lek Purple Dye"; machineWorked = true; }
-			else if ( color == 0xB42 ){ name = "Songsteel White Dye"; machineWorked = true; }
-from.SendMessage( "3" );
-			if ( machineWorked )
+			if (!ExplicitItems.TryGetValue(item.Name.ToLower(), out color))
 			{
-				from.RevealingAction();
-				from.PlaySound( 0x23E );
-				Item bottle = from.Backpack.FindItemByType( typeof ( Bottle ) );
-				from.SendMessage( "4" );
-				if (bottle == null )
-				{
-					from.SendMessage( "Do you have a bottle in your pack?" );
-					return false;
-				}
-				if ( bottle.Amount > 1 ){ bottle.Amount = bottle.Amount - 1; } else { bottle.Delete(); }
-				from.SendMessage( "5" );
-				from.SendMessage( "You place a vial of " + name + " in your pack." );
-				SpaceDyes vial = new SpaceDyes();
-				vial.Name = name;
-				vial.Hue = color;
-				vial.vialHue = color;
-				from.SendMessage( "6" );
-				from.AddToBackpack( vial );
+				string material = ExtractableMaterials.FirstOrDefault(m => item.Name.StartsWith(m));
+				if (string.IsNullOrWhiteSpace(material)) { material = ExtractableMaterials.FirstOrDefault(m => item.Name.Contains(m)); }
+				if (string.IsNullOrWhiteSpace(material)) { return false; }
+
+				color = Server.Misc.MaterialInfo.GetSpaceAceColors( material );
 			}
-from.SendMessage( "7" );
-			return machineWorked;
+
+			string name;
+			if (!DyeMap.TryGetValue(color, out name)) return false;
+
+			from.RevealingAction();
+			from.PlaySound( 0x23E );
+			Item bottle = from.Backpack.FindItemByType( typeof ( Bottle ) );
+			
+			if (bottle == null )
+			{
+				from.SendMessage( "Do you have a bottle in your pack?" );
+				return false;
+			}
+			if ( bottle.Amount > 1 ){ bottle.Amount = bottle.Amount - 1; } else { bottle.Delete(); }
+			
+			from.SendMessage( "You place a vial of " + name + " in your pack." );
+			SpaceDyes vial = new SpaceDyes();
+			vial.Name = name;
+			vial.Hue = color;
+			vial.vialHue = color;
+			
+			from.AddToBackpack( vial );
+
+			return true;
 		}
 
 		public void ConsumeCharge( Mobile from )
 		{
-			--ItemCharges;
-
-			if ( ItemCharges < 1 )
+			if ( --ItemCharges < 1 )
 			{
 				from.SendLocalizedMessage( 1019073 ); // This item is out of charges.
 				this.Delete();
+			}
+			else
+			{
+				InvalidateProperties();
 			}
 		}
 

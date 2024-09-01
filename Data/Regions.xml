@@ -1285,7 +1285,7 @@
 		
 		// Final edits
 		<region type="VillageRegion" priority="80" name="Sarth Abbey">
-			<rect x="2578" y="1410" width="167" height="190" />
+			<rect x="2578" y="1410" width="180" height="190" />
 		</region>
 		<region type="VillageRegion" priority="60" name="Lamut County">
 			<rect x="1876" y="1099" width="93" height="109" />

@@ -1,10 +1,11 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    public class GiftBascinet : BaseGiftArmor
-	{
+    public class GiftBascinet : BaseGiftArmor, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 7; } }
 		public override int BaseFireResistance{ get{ return 2; } }
 		public override int BaseColdResistance{ get{ return 2; } }
@@ -21,7 +22,7 @@ namespace Server.Items
 
 		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Plate; } }
 
-		[Constructable]
+        [Constructable]
 		public GiftBascinet() : base( 0x140C )
 		{
 			Weight = 5.0;

@@ -673,6 +673,9 @@ namespace Server.Multis
 		{
 			foreach ( IEntity entity in GetHouseEntities() )
 			{
+				if (entity.Map == Map.Trammel && entity.X > 3278 && entity.X < 3440 && entity.Y > 882 && entity.Y < 978)
+					continue;
+
 				Point3D relLoc = new Point3D( entity.X - this.X, entity.Y - this.Y, entity.Z - this.Z );
 				RelocatedEntity relocEntity = new RelocatedEntity( entity, relLoc );
 
@@ -1370,6 +1373,9 @@ namespace Server.Multis
 
 			foreach ( IEntity entity in GetHouseEntities() )
 			{
+				if (entity.Map == Map.Trammel && entity.X > 3278 && entity.X < 3440 && entity.Y > 882 && entity.Y < 978)
+					continue;
+
 				Point3D newLocation = new Point3D( entity.X + x, entity.Y + y, entity.Z + z );
 
 				if ( entity is Item )
@@ -2818,8 +2824,9 @@ namespace Server.Multis
 			if ( version < 11 )
 				m_LastRefreshed = DateTime.UtcNow + TimeSpan.FromHours( 24 * Utility.RandomDouble() );
 
-			if ( !CheckDecay() )
+			if ( !CheckDecay() && !(this.Map == Map.Trammel && this.X > 3278 && this.X < 3440 && this.Y > 882 && this.Y < 978) )
 			{
+
 				if ( RelocatedEntities.Count > 0 )
 					Timer.DelayCall( TimeSpan.Zero, new TimerCallback( RestoreRelocatedEntities ) );
 

@@ -446,39 +446,39 @@ namespace Server.Engines.Craft
             AddRes(index, typeof(BarrelLid), 1044251, 1, 1044253);
             AddRes(index, typeof(BarrelTap), 1044252, 1, 1044253);
 
-			index = AddCraft( typeof( LockpickingChest10 ), 1044051, "lockpicking chest 10", 75.0, 100.0, typeof( IronIngot ), 1044036, 10, 1044037 );
+			index = AddCraft( typeof( LockpickingChest10 ), 1044051, "dilapidated lockpicking chest (10)", 75.0, 100.0, typeof( IronIngot ), 1044036, 10, 1044037 );
 			AddRes( index, typeof( ArcaneGem ), 1114115, 1, 1044253 );
 			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest20 ), 1044051, "lockpicking chest 20", 80.0, 100.0, typeof( IronIngot ), 1044036, 15, 1044037 );
+			index = AddCraft( typeof( LockpickingChest20 ), 1044051, "broken lockpicking chest (20)", 80.0, 100.0, typeof( IronIngot ), 1044036, 15, 1044037 );
 			AddRes( index, typeof( ArcaneGem ), 1114115, 3, 1044253 );
 			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest30 ), 1044051, "lockpicking chest 30", 82.5, 100.0, typeof( DullCopperIngot ), 1074916, 10, 1044037 );
+			index = AddCraft( typeof( LockpickingChest30 ), 1044051, "rusted lockpicking chest (30)", 82.5, 100.0, typeof( DullCopperIngot ), 1074916, 10, 1044037 );
 			AddRes( index, typeof( ArcaneGem ), 1114115, 4, 1044253 );
 			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest40 ), 1044051, "lockpicking chest 40", 85.0, 100.0, typeof( ShadowIronIngot ), 1074917, 25, 1044037 );
+			index = AddCraft( typeof( LockpickingChest40 ), 1044051, "corroded lockpicking chest (40)", 85.0, 100.0, typeof( ShadowIronIngot ), 1074917, 25, 1044037 );
 			AddRes( index, typeof( ArcaneGem ), 1114115, 5, 1044253 );
 			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest50 ), 1044051, "lockpicking chest 50", 87.5, 100.0, typeof( BronzeIngot ), 1074919, 50, 1044037 );
+			index = AddCraft( typeof( LockpickingChest50 ), 1044051, "passable lockpicking chest (50)", 87.5, 100.0, typeof( BronzeIngot ), 1074919, 50, 1044037 );
 			AddRes( index, typeof( ArcaneGem ), 1114115, 8, 1044253 );
 			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest60 ), 1044051, "lockpicking chest 60", 90.0, 100.0, typeof( GoldIngot ), 1074920, 100, 1044037 );
+			index = AddCraft( typeof( LockpickingChest60 ), 1044051, "average lockpicking chest (60)", 90.0, 100.0, typeof( GoldIngot ), 1074920, 100, 1044037 );
 			AddRes( index, typeof( ArcaneGem ), 1114115, 10, 1044253 );
 			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest70 ), 1044051, "lockpicking chest 70", 92.5, 100.0, typeof( AgapiteIngot ), 1074921, 250, 1044037 );
+			index = AddCraft( typeof( LockpickingChest70 ), 1044051, "competent lockpicking chest (70)", 92.5, 100.0, typeof( AgapiteIngot ), 1074921, 250, 1044037 );
 			AddRes( index, typeof( ArcaneGem ), 1114115, 15, 1044253 );
 			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest80 ), 1044051, "lockpicking chest 80", 95.0, 100.0, typeof( VeriteIngot ), 1074922, 500, 1044037 );
+			index = AddCraft( typeof( LockpickingChest80 ), 1044051, "hard lockpicking chest (80)", 95.0, 100.0, typeof( VeriteIngot ), 1074922, 500, 1044037 );
 			AddRes( index, typeof( ArcaneGem ), 1114115, 30, 1044253 );
 			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
-			index = AddCraft( typeof( LockpickingChest90 ), 1044051, "lockpicking chest 90", 97.5, 100.0, typeof( ValoriteIngot ), 1074923, 1000, 1044037 );
+			index = AddCraft( typeof( LockpickingChest90 ), 1044051, "harder lockpicking chest (90)", 97.5, 100.0, typeof( ValoriteIngot ), 1074923, 1000, 1044037 );
 			AddRes( index, typeof( ArcaneGem ), 1114115, 45, 1044253 );
 			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 

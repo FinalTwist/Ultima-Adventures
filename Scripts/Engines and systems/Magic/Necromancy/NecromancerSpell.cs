@@ -38,16 +38,18 @@ namespace Server.Spells.Necromancy
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
+        {
+            if (!base.CheckCast(caster))
+                return false;
 
-			if ( Caster.Karma > 0 )
+            if ( Caster.Karma > 0 )
 			{
 				Caster.SendMessage( "Your positive karma prevents you from casting this spell." );
 				return false;
 			}
 
 
-			return base.CheckCast(caster);
+			return true;
 		}
 
 		public override bool ConsumeReagents()

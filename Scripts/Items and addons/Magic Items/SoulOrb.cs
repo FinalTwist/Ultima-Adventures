@@ -89,16 +89,17 @@ namespace Server.Items
 			SoulOrb arp = (SoulOrb)states[1];
             if (owner != null && !owner.Deleted && arp != null && !arp.Deleted)
             {
-                if (owner.Alive)
-                    return;
+                if (!owner.Alive)
+                {
+                    if ( arp.Name == "blood of a vampire" ){ owner.SendMessage("The blood pours out of the bottle, restoring your life."); }
+                    else if ( arp.Name == "cloning crystal" ){ owner.SendMessage("The crystal forms a clone of your body, restoring your life."); }
+                    else { owner.SendMessage("The orb glows, releasing your soul."); }
+                    owner.Resurrect();
+                    owner.FixedEffect( 0x376A, 10, 16, Server.Items.CharacterDatabase.GetMySpellHue( owner, 0 ), 0 );
+                    Server.Misc.Death.Penalty( owner, false );
+                    BuffInfo.RemoveBuff(owner, BuffIcon.GiftOfLife);
+                }
 
-				if ( arp.Name == "blood of a vampire" ){ owner.SendMessage("The blood pours out of the bottle, restoring your life."); }
-				else if ( arp.Name == "cloning crystal" ){ owner.SendMessage("The crystal forms a clone of your body, restoring your life."); }
-                else { owner.SendMessage("The orb glows, releasing your soul."); }
-                owner.Resurrect();
-                owner.FixedEffect( 0x376A, 10, 16, Server.Items.CharacterDatabase.GetMySpellHue( owner, 0 ), 0 );
-                Server.Misc.Death.Penalty( owner, false );
-                BuffInfo.RemoveBuff(owner, BuffIcon.GiftOfLife);
                 arp.Delete();
             }
         }

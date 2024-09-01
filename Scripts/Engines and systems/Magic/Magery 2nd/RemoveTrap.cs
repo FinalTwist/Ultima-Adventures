@@ -104,6 +104,14 @@ namespace Server.Spells.Second
 						if (nPower > 100){nPower = 100;}
 						TrapWand xWand = (TrapWand)iWand;
 						xWand.WandPower = nPower;
+
+						Container pack = from.Backpack;
+						if (!pack.CheckHold(from, xWand, true))
+						{
+							xWand.Delete();
+							return;
+						}
+
 						from.AddToBackpack( xWand );
 					}
 					m_Owner.FinishSequence();

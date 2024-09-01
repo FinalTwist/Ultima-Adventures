@@ -41,6 +41,11 @@ namespace Server.Mobiles
 			Karma = -2175;
 
 			VirtualArmor = 36; 
+			
+			Tamable = true;
+			ControlSlots = 2;
+			MinTameSkill = 99;
+			
 			PackItem( new SpidersSilk( 12 ) );
 			Item Venom = new VenomSack();
 				Venom.Name = "deadly venom sack";
@@ -56,6 +61,7 @@ namespace Server.Mobiles
 		public override Poison PoisonImmune{ get{ return Poison.Deadly; } }
 		public override Poison HitPoison{ get{ return Poison.Deadly; } }
 		public override PackInstinct PackInstinct{ get{ return PackInstinct.Arachnid; } }
+		public override FoodType FavoriteFood{ get{ return FoodType.Meat; } }
 		public override bool BleedImmune{ get{ return true; } }
 
 		public override int GetAttackSound(){ return 0x601; }	// A

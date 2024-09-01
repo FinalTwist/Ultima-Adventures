@@ -13,7 +13,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-	public abstract class BaseArmor : Item, IScissorable, ICraftable, IWearableDurability
+	public abstract class BaseArmor : Item, IScissorable, ICraftable, IWearableDurability, IRepairable
 	{
 
 
@@ -1141,20 +1141,9 @@ namespace Server.Items
 			int dexBonus = ComputeStatBonus( StatType.Dex );
 			int intBonus = ComputeStatBonus( StatType.Int );
 
-			if ( Parent is Mobile && (strBonus != 0 || dexBonus != 0 || intBonus != 0) && (Parent is PlayerMobile && !((PlayerMobile)Parent).SoulBound) && !(AdventuresFunctions.IsPuritain((object)Parent)))
+			if ( Parent is Mobile )
 			{
-				Mobile m = (Mobile)Parent;
-
-				string modName = Serial.ToString();
-
-				if ( strBonus != 0 )
-					m.AddStatMod( new StatMod( StatType.Str, modName + "Str", strBonus, TimeSpan.Zero ) );
-
-				if ( dexBonus != 0 )
-					m.AddStatMod( new StatMod( StatType.Dex, modName + "Dex", dexBonus, TimeSpan.Zero ) );
-
-				if ( intBonus != 0 )
-					m.AddStatMod( new StatMod( StatType.Int, modName + "Int", intBonus, TimeSpan.Zero ) );
+                AddStatMods((Mobile)Parent);
 			}
 
 			if ( Parent is Mobile )
@@ -1271,48 +1260,15 @@ namespace Server.Items
 
 			from.CheckStatTimers();
 
-			bool SB = false;
-			if (from is PlayerMobile )
-			{
-				if (((PlayerMobile)from).SoulBound || AdventuresFunctions.IsPuritain((object)from))
-					SB = true;
-			}
-
-			bool MD = false;
-			if (AdventuresFunctions.IsPuritain((object)from))
-				MD = true;
-
-			int strBonus = ComputeStatBonus( StatType.Str );
-			int dexBonus = ComputeStatBonus( StatType.Dex );
-			int intBonus = ComputeStatBonus( StatType.Int );
-
-			if ( (strBonus != 0 || dexBonus != 0 || intBonus != 0) && !SB && !MD )
-			{
-				string modName = this.Serial.ToString();
-
-				if ( strBonus != 0 )
-					from.AddStatMod( new StatMod( StatType.Str, modName + "Str", strBonus, TimeSpan.Zero ) );
-
-				if ( dexBonus != 0 )
-					from.AddStatMod( new StatMod( StatType.Dex, modName + "Dex", dexBonus, TimeSpan.Zero ) );
-
-				if ( intBonus != 0 )
-					from.AddStatMod( new StatMod( StatType.Int, modName + "Int", intBonus, TimeSpan.Zero ) );
-			}
+            AddStatMods(from);
 
 			if ( this.Layer == Layer.Gloves )
 			{
-				if (	( from.FindItemOnLayer( Layer.OneHanded ) is PugilistGloves ) || 
-						( from.FindItemOnLayer( Layer.OneHanded ) is PugilistGlove )  || 
-						( from.FindItemOnLayer( Layer.OneHanded ) is ThrowingGloves )  || 
-						( from.FindItemOnLayer( Layer.OneHanded ) is LevelPugilistGloves )  || 
-						( from.FindItemOnLayer( Layer.OneHanded ) is LevelThrowingGloves )  || 
-						( from.FindItemOnLayer( Layer.OneHanded ) is GiftPugilistGloves )  || 
-						( from.FindItemOnLayer( Layer.OneHanded ) is GiftThrowingGloves )  || 
-						( from.FindItemOnLayer( Layer.OneHanded ) is GlovesOfThePugilist ) )
+				if (	( from.FindItemOnLayer( Layer.OneHanded ) is IPugilistGloves ) || 
+						( from.FindItemOnLayer( Layer.OneHanded ) is IThrowingGloves )  )
 					{ Item oneHand = from.FindItemOnLayer( Layer.OneHanded ); from.Backpack.DropItem( oneHand ); //BaseContainer.DropItemFix( oneHand, from, from.Backpack.ItemID, from.Backpack.GumpID ); 
 					}
-				else if ( ( from.FindItemOnLayer( Layer.FirstValid ) is PugilistGloves ) || ( from.FindItemOnLayer( Layer.FirstValid ) is PugilistGlove )  || ( from.FindItemOnLayer( Layer.FirstValid ) is GlovesOfThePugilist ) )
+				else if ( ( from.FindItemOnLayer( Layer.FirstValid ) is IPugilistGloves ) )
 					{ Item firstValid = from.FindItemOnLayer( Layer.FirstValid ); from.Backpack.DropItem( firstValid ); //BaseContainer.DropItemFix( firstValid, from, from.Backpack.ItemID, from.Backpack.GumpID ); 
 					}
 			}
@@ -1583,24 +1539,9 @@ namespace Server.Items
 			if ( parent is Mobile )
 			{
 				Mobile m = (Mobile)parent;
+                RemoveStatMods(m);
 
-				/*bool SB = false;
-				if (m is PlayerMobile )
-				{
-					if (((PlayerMobile)m).SoulBound)
-						SB = true;
-				}*/
-
-				string modName = this.Serial.ToString();
-
-				//if (!SB)
-				//{
-					m.RemoveStatMod( modName + "Str" );
-					m.RemoveStatMod( modName + "Dex" );
-					m.RemoveStatMod( modName + "Int" );
-				//}
-
-				if ( Core.AOS )
+                if ( Core.AOS )
 					m_AosSkillBonuses.Remove();
 
 				((Mobile)parent).Delta( MobileDelta.Armor ); // Tell them armor rating has changed
@@ -1608,6 +1549,31 @@ namespace Server.Items
 			}
 
 			base.OnRemoved( parent );
+		}
+
+		protected void AddStatMods(Mobile mobile)
+		{
+			var player = mobile as PlayerMobile;
+			if (player == null || player.SoulBound || AdventuresFunctions.IsPuritain(player)) return;
+
+			string modName = Serial.ToString();
+			int strBonus = ComputeStatBonus( StatType.Str );
+			int dexBonus = ComputeStatBonus( StatType.Dex );
+			int intBonus = ComputeStatBonus( StatType.Int );
+			if ( strBonus != 0 ) player.AddStatMod( new StatMod( StatType.Str, modName + "Str", strBonus, TimeSpan.Zero ) );
+			if ( dexBonus != 0 ) player.AddStatMod( new StatMod( StatType.Dex, modName + "Dex", dexBonus, TimeSpan.Zero ) );
+			if ( intBonus != 0 ) player.AddStatMod( new StatMod( StatType.Int, modName + "Int", intBonus, TimeSpan.Zero ) );
+		}
+
+		protected void RemoveStatMods(Mobile mobile)
+		{
+			var player = mobile as PlayerMobile;
+			if (player == null) return;
+
+			string modName = this.Serial.ToString();
+			player.RemoveStatMod( modName + "Str" );
+			player.RemoveStatMod( modName + "Dex" );
+			player.RemoveStatMod( modName + "Int" );
 		}
 
 		public virtual void AddResists( BaseArmor item, int A, int B, int C, int D, int E)
@@ -1917,7 +1883,8 @@ m_MaxHits
 			if ( m_HitPoints >= 0 && m_MaxHitPoints > 0 )
 				list.Add( 1060639, "{0}\t{1}", m_HitPoints, m_MaxHitPoints ); // durability ~1_val~ / ~2_val~
 
-			list.Add("this item is considered armor");
+			if (this is IClothingStub) list.Add("this item is considered clothing");
+			else list.Add("this item is considered armor");
 		}
 
 		public override void OnSingleClick( Mobile from )

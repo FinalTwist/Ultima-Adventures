@@ -1,10 +1,11 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 using Server.Misc;
 
 namespace Server.Items
 {
-	public class GiftSash : GiftGoldRing
+	public class GiftSash : GiftGoldRing, ITailorRepairable, IClothingStub
 	{
 		[Constructable]
 		public GiftSash()

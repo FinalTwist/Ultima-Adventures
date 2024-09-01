@@ -14,7 +14,7 @@ namespace Server.Items
 		{
 			Name = "blank scroll";
 			Stackable = true;
-			Weight = 1.0;
+			Weight = 0.1;
 			Amount = amount;
 		}
 
@@ -29,7 +29,7 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 0 ); // version
+			writer.Write( (int) 1 ); // version
 		}
 
 		public override void Deserialize( GenericReader reader )
@@ -37,6 +37,8 @@ namespace Server.Items
 			base.Deserialize( reader );
 
 			int version = reader.ReadInt();
+			if (version == 0)
+				Weight = 0.1;
 		}
 	}
 }

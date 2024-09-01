@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	// Based off a WarMace
 	[FlipableAttribute( 0x903, 0x406E )]
-	public class DiscMace : BaseBashing
+	public class DiscMace : BaseBashing, IBlacksmithRepairable
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.ArmorIgnore; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.Disarm; } }

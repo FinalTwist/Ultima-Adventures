@@ -5,10 +5,11 @@ using Server;
 using Server.Items;
 using Server.Engines.Harvest;
 using Server.ContextMenus;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public abstract class BasePoleArm : BaseMeleeWeapon, IUsesRemaining
+	public abstract class BasePoleArm : BaseMeleeWeapon, IUsesRemaining, IBlacksmithRepairable
 	{
 		public override int DefHitSound{ get{ return 0x237; } }
 		public override int DefMissSound{ get{ return 0x238; } }

@@ -20,14 +20,15 @@ namespace Server.Items
 		{
 			Name = "Leggings Of Musical Panache";
 			Hue = 0x632;
-			SkillBonuses.SetValues( 0, SkillName.Discordance, 30 );
-			SkillBonuses.SetValues( 2, SkillName.Peacemaking, 30 );
-			SkillBonuses.SetValues( 3, SkillName.Provocation, 30 );
+			SkillBonuses.SetValues( 0, SkillName.Discordance, 15 );
+			SkillBonuses.SetValues( 2, SkillName.Peacemaking, 15 );
+			SkillBonuses.SetValues( 3, SkillName.Provocation, 15 );
 
-			Attributes.BonusDex = 20;
-			Attributes.RegenStam = 15;
-			Attributes.DefendChance = 20;
-            Attributes.Luck = 500;
+			Attributes.BonusDex = 10;
+			Attributes.RegenStam = 8;
+			Attributes.DefendChance = 10;
+            Attributes.Luck = 100;
+			//remember the powers they give to resist discord and peace
 		}
 
 

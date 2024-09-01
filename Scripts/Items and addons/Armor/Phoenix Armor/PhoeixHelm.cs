@@ -1,12 +1,13 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 using Server.Items;
 using AMA = Server.Items.ArmorMeditationAllowance;
 
 namespace Server.Items
 {
-	public class PhoenixHelm : BaseArmor
-	{
+	public class PhoenixHelm : BaseArmor, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 11; } }
 		public override int BaseFireResistance{ get{ return 14; } }
 		public override int BaseColdResistance{ get{ return 12; } }

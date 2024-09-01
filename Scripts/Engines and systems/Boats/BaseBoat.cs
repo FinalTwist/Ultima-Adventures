@@ -156,14 +156,14 @@ namespace Server.Multis
 			get
 			{
 				if (Ageless) return BoatDecayLevel.Ageless;
-				
+
 				DateTime now = DateTime.UtcNow;
 
-				if ( now < TimeOfDecay.AddDays(0 - 1) ) return BoatDecayLevel.LikeNew;
-				if ( now < TimeOfDecay.AddDays(0 - 7) ) return BoatDecayLevel.Slightly;
-				if ( now < TimeOfDecay.AddDays(0 - 14) ) return BoatDecayLevel.Somewhat;
-				if ( now < TimeOfDecay.AddDays(0 - 28) ) return BoatDecayLevel.Fairly;
-				if ( now < TimeOfDecay.Subtract(BoatDecayDelay) ) return BoatDecayLevel.Greatly;
+				if (now < TimeOfDecay.Subtract(BoatDecayDelay)) return BoatDecayLevel.LikeNew; // 30+ days
+				if (now < TimeOfDecay.AddDays(0 - 28)) return BoatDecayLevel.Slightly; // 28 to 29 days
+				if (now < TimeOfDecay.AddDays(0 - 14)) return BoatDecayLevel.Somewhat; // 14 to 28 days
+				if (now < TimeOfDecay.AddDays(0 - 7)) return BoatDecayLevel.Fairly; // 7 to 13 days
+				if (now <= TimeOfDecay.AddDays(0 - 1)) return BoatDecayLevel.Greatly; // 1 to 6 days
 
 				return BoatDecayLevel.IDOC;
 			}
@@ -453,7 +453,7 @@ namespace Server.Multis
 					m_ShipName = reader.ReadString();
 
 					if ( version < 1)
-						Refresh();
+						Refresh(Owner);
 
 					break;
 				}
@@ -486,7 +486,7 @@ namespace Server.Multis
 			uint keyValue = CreateKeys(from);
 			if ( PPlank != null ) PPlank.KeyValue = keyValue;
 			if ( SPlank != null ) SPlank.KeyValue = keyValue;
-			Refresh();
+			Refresh(from);
 
 			from.PrivateOverheadMessage( 0, 1150, false, "You change the locks.", from.NetState );
 		}
@@ -977,9 +977,12 @@ namespace Server.Multis
 
 		private bool m_Decaying;
 
-		public void Refresh()
+		public void Refresh(Mobile from)
 		{
+			if ( Owner != from ) return;
+
 			m_DecayTime = DateTime.UtcNow + BoatDecayDelay;
+			from.SendLocalizedMessage( 1043294 ); // Your ship's age and contents have been refreshed.
 
 			if( m_TillerMan != null )
 				m_TillerMan.InvalidateProperties();

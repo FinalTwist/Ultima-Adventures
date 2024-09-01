@@ -26,6 +26,10 @@ namespace Server.Engines.BulkOrders
 				bod = new LargeSmithBOD( m_AmountMax, m_RequireExceptional, m_Material, ReconstructEntries() );
 			else if ( m_DeedType == BODType.Tailor )
 				bod = new LargeTailorBOD( m_AmountMax, m_RequireExceptional, m_Material, ReconstructEntries() );
+			else if ( m_DeedType == BODType.Carpenter )
+				bod = new LargeCarpenterBOD( m_AmountMax, m_RequireExceptional, m_Material, ReconstructEntries() );
+			else if ( m_DeedType == BODType.Fletcher )
+				bod = new LargeFletcherBOD( m_AmountMax, m_RequireExceptional, m_Material, ReconstructEntries() );
 
 			for ( int i = 0; bod != null && i < bod.Entries.Length; ++i )
 				bod.Entries[i].Owner = bod;
@@ -54,6 +58,10 @@ namespace Server.Engines.BulkOrders
 				m_DeedType = BODType.Tailor;
 			else if ( bod is LargeSmithBOD )
 				m_DeedType = BODType.Smith;
+			else if ( bod is LargeCarpenterBOD )
+				m_DeedType = BODType.Carpenter;
+			else if ( bod is LargeFletcherBOD )
+				m_DeedType = BODType.Fletcher;
 
 			m_Material = bod.Material;
 			m_AmountMax = bod.AmountMax;
@@ -67,32 +75,57 @@ namespace Server.Engines.BulkOrders
 		public BOBLargeEntry( GenericReader reader )
 		{
 			int version = reader.ReadEncodedInt();
+            m_RequireExceptional = reader.ReadBool();
 
-			switch ( version )
-			{
-				case 0:
+            m_DeedType = (BODType)reader.ReadEncodedInt();
+
+            m_Material = (BulkMaterialType)reader.ReadEncodedInt();
+            m_AmountMax = reader.ReadEncodedInt();
+            m_Price = reader.ReadEncodedInt();
+
+            m_Entries = new BOBLargeSubEntry[reader.ReadEncodedInt()];		
+
+            for (int i = 0; i < m_Entries.Length; ++i)
+                m_Entries[i] = new BOBLargeSubEntry(reader);
+
+            switch ( version)
+            {
+                case 2:
+                    break;
+
+                case 1:
+                    {
+                        if (m_DeedType == BODType.Tailor && (int)m_Material == 7)
+                        {
+                            m_Material -= 7;
+                        }
+                        break;
+                    }
+
+                case 0:
 				{
-					m_RequireExceptional = reader.ReadBool();
+                    switch (m_DeedType)
+                    {
+                        case BODType.Tailor:
+							if (m_Material > 0)
+								m_Material += 7; // Number of Metals added ahead of it in the Enum
+                            break;
 
-					m_DeedType = (BODType)reader.ReadEncodedInt();
+                        case BODType.Carpenter:
+                        case BODType.Fletcher:
+                            m_Material += 7; // Number of Metals added ahead of it in the Enum
+                            m_Material += 8; // Number of Leathers added ahead of it in the Enum
+                            break;
+                    }
 
-					m_Material = (BulkMaterialType)reader.ReadEncodedInt();
-					m_AmountMax = reader.ReadEncodedInt();
-					m_Price = reader.ReadEncodedInt();
-
-					m_Entries = new BOBLargeSubEntry[reader.ReadEncodedInt()];
-
-					for ( int i = 0; i < m_Entries.Length; ++i )
-						m_Entries[i] = new BOBLargeSubEntry( reader );
-
-					break;
+                    break;
 				}
 			}
 		}
 
 		public void Serialize( GenericWriter writer )
 		{
-			writer.WriteEncodedInt( 0 ); // version
+			writer.WriteEncodedInt( 2 ); // version
 
 			writer.Write( (bool) m_RequireExceptional );
 

@@ -4,7 +4,7 @@ using Server;
 
 namespace Server.Items
 {
-	public class GrayMouserCloak : GoldRing
+	public class GrayMouserCloak : GoldRing, IClothingStub
 	{
 		[Constructable]
 		public GrayMouserCloak()

@@ -1,11 +1,12 @@
 using System;
 using Server.Items;
 using Server.Network;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x1450, 0x1450 )]
-	public class PugilistGlove : BaseWeapon
+	public class PugilistGlove : BaseWeapon, ITailorRepairable, IPugilistGloves
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.Disarm; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.ParalyzingBlow; } }
@@ -63,7 +64,7 @@ namespace Server.Items
 		}
 	}
 	[FlipableAttribute( 0x13C6, 0x13C6 )]
-	public class PugilistGloves : BaseWeapon
+	public class PugilistGloves : BaseWeapon, ITailorRepairable, IPugilistGloves
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.Disarm; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.ParalyzingBlow; } }

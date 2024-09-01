@@ -18,6 +18,7 @@ namespace Server.Items
 			NestSpawnType = "StrongSentry";
 			Movable = true;
 			
+			if (quality != 10) Name = "Nearly Perfect Mining Harvester";
 		}
 
 		public PerfectMiningHarvester( Serial serial ) : base( serial )
@@ -28,7 +29,7 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 0 );
+			writer.Write( (int) 1 );
 		}
 
 		public override void Deserialize( GenericReader reader )
@@ -36,6 +37,10 @@ namespace Server.Items
 			base.Deserialize( reader );
 
 			int version = reader.ReadInt();
+			if (version == 0)
+			{
+				if (quality != 10) Name = "Nearly Perfect Mining Harvester";
+			}
 		}
 	}
 }

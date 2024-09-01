@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x26C3, 0x26CD )]
-	public class RepeatingCrossbow : BaseRanged
-	{
+	public class RepeatingCrossbow : BaseRanged, IBowcraftFletchingRepairable
+    {
 		public override int EffectID{ get{ return 0x1BFE; } }
 		public override Type AmmoType{ get{ return typeof( Bolt ); } }
 		public override Item Ammo{ get{ return new Bolt(); } }

@@ -317,19 +317,25 @@ namespace Server.Spells
 				}
 
 				double percent = GetOffsetScalar( caster, target, curse );
-
-				switch( type )
-				{
-					case StatType.Str:
-						return (int)(target.RawStr * percent);
-					case StatType.Dex:
-						return (int)(target.RawDex * percent);
-					case StatType.Int:
-						return (int)(target.RawInt * percent);
-				}
+				return GetStatOffset(target, type, percent);
 			}
 
 			return 1 + (int)(caster.Skills[SkillName.Magery].Value * 0.1);
+		}
+
+		public static int GetStatOffset( Mobile target, StatType type, double percent )
+		{
+			switch( type )
+			{
+				case StatType.Str:
+					return (int)(target.RawStr * percent);
+				case StatType.Dex:
+					return (int)(target.RawDex * percent);
+				case StatType.Int:
+					return (int)(target.RawInt * percent);
+			}
+
+			return 0;
 		}
 
 		public static Guild GetGuildFor( Mobile m )
@@ -1298,12 +1304,6 @@ namespace Server.Spells
 		{
 			
 			Region reg = Region.Find( caster.Location, caster.Map );
-			
-			if (caster is PlayerMobile && ((PlayerMobile)caster).Alchemist())
-			{
-				caster.SendMessage("You can't seem to grasp magic forces!"); 
-				return false;
-			}
 			
 			//if ((Server.Misc.Worlds.GetRegionName( caster.Map, caster.Location ) == "The Gauntlet Arena") )//&& () )
 			//	return false;

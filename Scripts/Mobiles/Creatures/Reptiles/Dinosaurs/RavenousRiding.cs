@@ -95,6 +95,7 @@ Name = "a greater ravenous";
 		public override FoodType FavoriteFood{ get{ return FoodType.Fish | FoodType.Meat; } }
 		public override int Scales{ get{ return 2; } }
 		public override ScaleType ScaleType{ get{ return ( ScaleType.Dinosaur ); } }
+		public override PackInstinct PackInstinct{ get{ return PackInstinct.Reptile; } }
 
 		public RavenousRiding(Serial serial) : base(serial)
 		{

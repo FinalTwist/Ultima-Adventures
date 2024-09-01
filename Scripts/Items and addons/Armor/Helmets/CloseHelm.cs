@@ -1,10 +1,11 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public class CloseHelm : BaseArmor
-	{
+	public class CloseHelm : BaseArmor, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 9; } }
 		public override int BaseFireResistance{ get{ return 2; } }
 		public override int BaseColdResistance{ get{ return 2; } }

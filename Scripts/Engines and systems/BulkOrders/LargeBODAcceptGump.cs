@@ -59,7 +59,7 @@ namespace Server.Engines.BulkOrders
 
 				if ( deed.Material != BulkMaterialType.None )
 				{
-					AddHtmlLocalized( 40, y, 350, 20, GetMaterialNumberFor( deed.Material ), 0x7FFF, false, false ); // All items must be made with x material.
+                	AddHtml( 40, y, 350, 20, "<basefont color=#FF0000>All items must be crafted with " + SmallBODGump.GetMaterialStringFor(deed.Material), false, false );
 					y += 24;
 				}
 			}
@@ -91,16 +91,6 @@ namespace Server.Engines.BulkOrders
 			{
 				m_Deed.Delete();
 			}
-		}
-
-		public static int GetMaterialNumberFor( BulkMaterialType material )
-		{
-			if ( material >= BulkMaterialType.DullCopper && material <= BulkMaterialType.Valorite )
-				return 1045142 + (int)(material - BulkMaterialType.DullCopper);
-			else if ( material >= BulkMaterialType.Spined && material <= BulkMaterialType.Barbed )
-				return 1049348 + (int)(material - BulkMaterialType.Spined);
-
-			return 0;
 		}
 	}
 }

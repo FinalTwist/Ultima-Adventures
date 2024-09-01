@@ -1,11 +1,11 @@
 using System;
 using Server;
-
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x13C6, 0x13C6 )]
-	public class GlovesOfThePugilist : BaseWeapon
+	public class GlovesOfThePugilist : BaseWeapon, ITailorRepairable, IPugilistGloves
 	{
 		public override int InitMinHits{ get{ return 80; } }
 		public override int InitMaxHits{ get{ return 160; } }

@@ -23,7 +23,7 @@ namespace Server.Items
 
 		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Plate; } }
 
-		[Constructable]
+        [Constructable]
 		public GiftPlateGorget() : base( 0x1413 )
 		{
 			Weight = 2.0;

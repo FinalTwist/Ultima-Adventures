@@ -1,9 +1,10 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public class Glasses : BaseArmor
+	public class Glasses : BaseArmor, ITinkerRepairable
 	{
 		public override int AosStrReq{ get{ return 45; } }
 		public override int OldStrReq{ get{ return 40; } }

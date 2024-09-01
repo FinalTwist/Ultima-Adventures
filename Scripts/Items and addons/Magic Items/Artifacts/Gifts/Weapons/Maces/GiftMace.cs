@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0xF5C, 0xF5D )]
-    public class GiftMace : BaseGiftBashing
-	{
+    public class GiftMace : BaseGiftBashing, IBlacksmithRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.ConcussionBlow; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.Disarm; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.MeleeProtection; } }

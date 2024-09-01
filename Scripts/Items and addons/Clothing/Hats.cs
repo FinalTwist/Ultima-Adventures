@@ -6,7 +6,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-	public abstract class BaseHat : BaseClothing, IShipwreckedItem, IWearableDurability
+	public abstract class BaseHat : BaseClothing, IShipwreckedItem, IWearableDurability, ITailorRepairable
 	{
 		private bool m_IsShipwreckedItem;
 

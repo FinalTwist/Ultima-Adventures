@@ -9,6 +9,13 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
+	/// <summary>
+	/// This item should be treated as if it was clothing
+	/// </summary>
+    public interface IClothingStub
+    {
+    }
+
 	public enum ClothingQuality
 	{
 		Low,
@@ -23,7 +30,7 @@ namespace Server.Items
 		int MaxArcaneCharges{ get; set; }
 	}
 
-	public abstract class BaseClothing : Item, IDyable, IScissorable, ICraftable, IWearableDurability
+	public abstract class BaseClothing : Item, IDyable, IScissorable, ICraftable, IWearableDurability, ITailorRepairable
 	{
 
 		public override bool OnEquip( Mobile from )

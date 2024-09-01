@@ -108,30 +108,18 @@ namespace Server.Engines.Craft
 
 				from.PlaySound( 0x240 ); // Sound of a filling bottle
 
-				if (item is LesserPoisonPotion && from is PlayerMobile)
+				if (from is PlayerMobile && Utility.RandomBool())
 				{
-					if (Utility.RandomBool())
-					from.CheckSkill( SkillName.Poisoning, 0, 40 );
-				}
-				else if (item is PoisonPotion && from is PlayerMobile)
-				{
-					if (Utility.RandomBool())
-					from.CheckSkill( SkillName.Poisoning, 0, 75 );
-				}
-				else if (item is GreaterPoisonPotion && from is PlayerMobile)
-				{
-					if (Utility.RandomBool())
-					from.CheckSkill( SkillName.Poisoning, 0, 95 );
-				}
-				else if (item is DeadlyPoisonPotion && from is PlayerMobile)
-				{
-					if (Utility.RandomBool())
-					from.CheckSkill( SkillName.Poisoning, 0, 115 );
-				}
-				else if (item is LethalPoisonPotion && from is PlayerMobile)
-				{
-					if (Utility.RandomBool())
-					from.CheckSkill( SkillName.Poisoning, 0, 125 );
+					if (item.ItemType == typeof(LesserPoisonPotion))
+						from.CheckSkill( SkillName.Poisoning, 0, 40 );
+					else if (item.ItemType == typeof(PoisonPotion))
+						from.CheckSkill( SkillName.Poisoning, 0, 75 );
+					else if (item.ItemType == typeof(GreaterPoisonPotion))
+						from.CheckSkill( SkillName.Poisoning, 0, 95 );
+					else if (item.ItemType == typeof(DeadlyPoisonPotion))
+						from.CheckSkill( SkillName.Poisoning, 0, 115 );
+					else if (item.ItemType == typeof(LethalPoisonPotion))
+						from.CheckSkill( SkillName.Poisoning, 0, 125 );
 				}
 
 				if ( IsPotion( item.ItemType ) )

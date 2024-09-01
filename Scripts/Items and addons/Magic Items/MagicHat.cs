@@ -2,10 +2,11 @@ using System;
 using Server;
 using Server.Misc;
 using Server.Targeting;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public class MagicHat : GoldRing
+	public class MagicHat : GoldRing, IClothingStub, ITailorRepairable
 	{
 		[Constructable]
 		public MagicHat()

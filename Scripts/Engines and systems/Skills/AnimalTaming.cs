@@ -354,7 +354,7 @@ namespace Server.SkillHandlers
 									case 9: speech = "If you don't tame now I'll starve you for making me wait."; break;
 									case 10: speech = "You might be worth more in hides and meat."; break;
 									case 11: speech = "My name's " + m_Tamer.Name + " and I'm your daddy."; break;
-									case 12: speech = "You're the weakest example of " + m_BeingTamed + " I've ever seen."; break;
+									case 12: speech = "You're the weakest example of " + m_Creature.GetType().Name + " I've ever seen."; break;
 									
 								}
 							}

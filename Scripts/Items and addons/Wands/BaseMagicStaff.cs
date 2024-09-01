@@ -5,6 +5,7 @@ using Server.Network;
 using Server.Targeting;
 using Server.Spells;
 using Server.Mobiles;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
@@ -13,7 +14,7 @@ namespace Server.Items
 		Charges
 	}
 
-	public abstract class BaseMagicStaff : BaseBashing
+	public abstract class BaseMagicStaff : BaseBashing, ICarpentryRepairable
 	{
 		public override int AosStrengthReq { get { return 5; } }
 		public override int AosMinDamage { get { return 7; } }

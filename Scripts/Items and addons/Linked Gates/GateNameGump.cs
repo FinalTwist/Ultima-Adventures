@@ -11,11 +11,12 @@ namespace Server.Gumps
 {
     public class GateNameGump : Gump
     {
+        const string DEFAULT_NAME = "Type here...";
         private LinkedGate m_gate;
 
         public GateNameGump(Mobile from, LinkedGate gate) : base(100, 100)
         {
-            Closable = false;
+            Closable = true;
             Disposable = false;
             Dragable = true;
             Resizable = false;
@@ -23,12 +24,12 @@ namespace Server.Gumps
 
             AddPage(0);
 
-            AddHtml(153, 135, 304, 113, @"Enter a name for this gate below.", (bool)true, (bool)false);
             AddBackground(137, 119, 334, 195, 9250);
+            AddHtml(153, 135, 304, 113, @"Enter a name for this gate below.", (bool)true, (bool)false);
             AddBackground(221, 264, 171, 29, 3000);
 
             AddLabel(153, 270, 0, @"New Name:");
-            AddTextEntry(224, 268, 163, 21, 0, 1, @"Type here...", 16); // 16 Character Limit
+            AddTextEntry(224, 268, 163, 21, 0, 1, DEFAULT_NAME, 16); // 16 Character Limit
             AddButton(395, 267, 4023, 4024, 1, GumpButtonType.Reply, 0); // Okay
         }
 
@@ -47,17 +48,7 @@ namespace Server.Gumps
             }
 
             string name = GetString(info, 1);
-            if (name != null)
-            {
-                name = name.Trim();
-            }
-            else
-            {
-                from.SendMessage(0X22, "You must enter a name.");
-                from.SendGump(new GateNameGump(from, m_gate));
-            }
-
-            if (name != "")
+            if (!string.IsNullOrWhiteSpace(name) && name != DEFAULT_NAME)
             {
                     from.SendMessage(0X22, "The gate is now called {0}.", name);
                     m_gate.Name = name;
@@ -65,7 +56,7 @@ namespace Server.Gumps
             }
             else
             {
-                from.SendMessage(0X22, "You must enter a name.");
+                from.SendMessage(0X22, "You may enter a name.");
             }
 
             from.SendGump(new GateNameGump(from, m_gate));

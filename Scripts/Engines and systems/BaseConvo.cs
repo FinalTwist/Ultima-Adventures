@@ -871,16 +871,20 @@ namespace Server.Mobiles
 				}
 				if ( this is BaseVendor && (Insensitive.Contains(said, "total") || Insensitive.Contains(said, "credits")))
 				{
-					if (pc is PlayerMobile && (this is Blacksmith || this is BlacksmithGuildmaster))
+					var player = pc as PlayerMobile;
+					if (player != null)
 					{
-						PlayerMobile pm = (PlayerMobile)pc;
-						this.Say("You have a total of " + pm.BlacksmithBOD + " credits with the Guild.");
+						int credits = -1;
+						if (this is Blacksmith || this is BlacksmithGuildmaster) credits = player.BlacksmithBOD;
+						if (this is Tailor || this is TailorGuildmaster) credits = player.TailorBOD;
+						if (this is Carpenter || this is CarpenterGuildmaster) credits = player.CarpenterBOD;
+						if (this is Bowyer || this is ArcherGuildmaster || this is RangerGuildmaster) credits = player.FletcherBOD;
+
+						if (credits >= 0)
+						{
+							this.Say("You have a total of " + credits + " credits with the Guild.");
+						}
 					}
-					if (pc is PlayerMobile && (this is Tailor || this is TailorGuildmaster))
-					{
-						PlayerMobile pm = (PlayerMobile)pc;
-						this.Say("You have a total of " + pm.TailorBOD + " credits with the Guild.");
-					}			
 				}
 				else if ( this is BaseVendor && (this is Blacksmith || this is BlacksmithGuildmaster || this is Tailor || this is TailorGuildmaster) && (Insensitive.Contains(said, "claim") || Insensitive.Contains(said, "cash in")|| Insensitive.Contains(said, "redeem")))
 				{

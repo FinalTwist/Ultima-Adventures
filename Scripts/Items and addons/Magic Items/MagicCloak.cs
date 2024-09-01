@@ -1,10 +1,11 @@
 using System;
 using Server;
 using Server.Misc;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public class MagicCloak : GoldRing
+	public class MagicCloak : GoldRing, IClothingStub, ITailorRepairable
 	{
 		private static int[] m_ItemIDs = new int[]
 		{

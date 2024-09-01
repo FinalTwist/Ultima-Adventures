@@ -90,7 +90,8 @@ namespace Server.Mobiles
 		Daemon			= 0x0010,
 		Bear			= 0x0020,
 		Equine			= 0x0040,
-		Bull			= 0x0080
+		Bull			= 0x0080,
+		Reptile				= 0x0100
 	}
 
 	public enum ScaleType
@@ -722,7 +723,7 @@ namespace Server.Mobiles
 		// Damage is given 1.0 seconds after effect is sent
 		public virtual double BreathDamageDelay{ get{ return 1.0; } }
 
-		public virtual int BreathRange{ get{ return RangePerception; } }
+		public virtual int BreathRange{ get{ return 14; } } //was RangePerception
 
 		// Damage types
 		public virtual int BreathPhysicalDamage{ get{ return 0; } }
@@ -1511,6 +1512,9 @@ namespace Server.Mobiles
 					for ( int i = 0; i < targets.Count; ++i )
 					{
 						Mobile m = targets[i];
+						if( Evasion.CheckSpellEvasion( m ) )
+							continue;
+
 						DoFinalBreathAttack( m, form, false );
 					}
 				}
@@ -1561,8 +1565,10 @@ namespace Server.Mobiles
 				baseexp = (double)this.Fame/80;
 			
 			uint baseexpuint = Convert.ToUInt32(baseexp);
+
+			double exponent = 1.70 + ( (1 / Convert.ToDouble(atLevel)) * 3 );
 			
-			return (uint)(baseexpuint * Math.Pow(atLevel, 2) + 50); 
+			return (uint)(baseexpuint * (uint)Math.Pow(atLevel, exponent) + 50); 
 		}
 		
         public virtual uint TraitsGiven(uint atLevel) { return (atLevel == 10) ? (uint)3 : (uint)1; }
@@ -1867,7 +1873,7 @@ namespace Server.Mobiles
                     increaseTraits(TraitsGiven(x), false);
                 }
 
-				if (m_realLevel >= 5 && !this.IsBonded)
+				if (m_realLevel >= 4 && !this.IsBonded)
 					this.IsBonded = true;
 				
 				if (m_realLevel < 25 && newLevel >= 25 && this.ControlSlots >= 2)
@@ -1881,7 +1887,7 @@ namespace Server.Mobiles
 
 				int intlevel =  Convert.ToInt32(newLevel);
 				double levelodds = ((double)intlevel / 200);
-				if  ( intlevel > 10 && Utility.RandomDouble() < levelodds && Utility.RandomMinMax(1, ( (int)(200 / Convert.ToInt32(newLevel)) )  ) == 3 && Utility.RandomDouble() > 0.98 && m_special == 0 && !Body.IsHuman )
+				if  ( intlevel > 10 && Utility.RandomDouble() < levelodds && Utility.RandomMinMax(1, ( (int)(200 / Convert.ToDouble(newLevel)) )  ) == 3 && Utility.RandomDouble() > 0.98 && m_special == 0 && !Body.IsHuman )
 				//((Convert.ToDouble(newLevel) / 8000) > Utility.RandomDouble() && Utility.RandomBool() && m_special == 0 && !Body.IsHuman)//Special added! this doesn't work since it gives specials when newlevel is 0-10
 				{
 
@@ -1894,74 +1900,75 @@ namespace Server.Mobiles
 						{
 							case 1:
 							{
-								m_special = 1;
+								Special = 1;
 								ControlMaster.SendMessage("It has learnt to be more ferocious."); 
 								newspecialgiven = true;
+								break;
 							}
-							break;
 							case 2:
 							{
-								m_special = 2;
+								Special = 2;
 								ControlMaster.SendMessage("It has been granted the regenerative trait."); 
 								newspecialgiven = true;
+								break;
 							}
-							break;
 							case 3:
 							{
-								m_special = 3;
+								Special = 3;
 								ControlMaster.SendMessage("It has been granted the mystical trait.");
 								newspecialgiven = true;
+								break;
 							}
-							break;
 							case 4:
 							{
-								m_special = 4;
+								Special = 4;
 								ControlMaster.SendMessage("It has been granted the firebreather trait.");
 								newspecialgiven = true;
+								break;
 							}
-							break;
 							case 5:
 							{
-								m_special = 5;
+								Special = 5;
 								ControlMaster.SendMessage("It has been granted Thor's touch.");
 								newspecialgiven = true;
+								break;
 							}
-							break;
 							case 6:
 							{
-								m_special = 6;
+								Special = 6;
 								ControlMaster.SendMessage("It has been granted the tactical trait.");
 								newspecialgiven = true;
+								break;
 							}
-							break;
 							case 7:
 							{
-								m_special = 7;
+								Special = 7;
 								ControlMaster.SendMessage("It has been granted the shamanic trait.");
 								newspecialgiven = true;
+								break;
 							}
-							break;
 							case 8:
 							{
-								m_special = 8;
+								Special = 8;
 								ControlMaster.SendMessage("It has been granted the chaotic trait.");
 								newspecialgiven = true;
+								break;
 							}
-							break;
 							case 9:
 							{
-								m_special = 9;
+								// Pets that can poison cannot gain poisoning
+								if (HitPoison != null) continue;
+
+								Special = 9;
 								ControlMaster.SendMessage("It has been granted the poisonous trait.");
 								newspecialgiven = true;
 
 								Skill skill = Skills[SkillName.Poisoning];
 								if (skill.Base == 0)
 									SetSkill(SkillName.Poisoning, 10, 30);
+								break;
 							}
-							break;
 						}
-						if (newspecialgiven)
-							break;
 					}
 				}
 
@@ -4901,8 +4908,12 @@ namespace Server.Mobiles
 				return m_Loyalty;
 			}
 			set
-			{
-				m_Loyalty = Math.Min( Math.Max( value, 0 ), MaxLoyalty );
+            {
+                if (m_Loyalty == value)
+                    return;
+
+                m_Loyalty = Math.Min( Math.Max( value, 0 ), MaxLoyalty );
+				InvalidateProperties();
 			}
 		}
 
@@ -6359,7 +6370,7 @@ namespace Server.Mobiles
 							}
 						}
 
-						if (dropped != null && !dropped.Deleted && dropped.Amount == 1 && dropped.ParentEntity != null) // to prevent stacks of food on ground from being deleted - feeding from ground
+						if (dropped != null && !dropped.Deleted && dropped.Amount < 1)
 							dropped.Delete();
 
 						return true;
@@ -6518,12 +6529,16 @@ namespace Server.Mobiles
 				return m_goferal;
 			}
 			set
-			{
-				m_goferal = value;
-			}
-		}
+            {
+                if (m_goferal == value)
+                    return;
 
-		[CommandProperty( AccessLevel.Administrator )]
+                m_goferal = value;
+				InvalidateProperties();
+            }
+        }
+
+		[CommandProperty( AccessLevel.Seer )]
 		public int Special
 		{
 			get
@@ -6531,10 +6546,14 @@ namespace Server.Mobiles
 				return m_special;
 			}
 			set
-			{
-				m_special = value;
-			}
-		}
+            {
+                if (m_special == value)
+                    return;
+
+                m_special = value;
+				InvalidateProperties();
+            }
+        }
 
 		[CommandProperty( AccessLevel.Administrator )]
 		public bool Debug
@@ -7075,7 +7094,7 @@ namespace Server.Mobiles
 		public virtual void OnGaveMeleeAttack( Mobile defender )
 		{
 			Poison p = HitPoison;
-			if (m_level == 9)
+			if (m_special == 9)
 				p = Poison.Greater;
 
 			if ( m_Paragon )
@@ -7636,11 +7655,23 @@ namespace Server.Mobiles
 			int which = Utility.RandomMinMax(1, 4); // which stat will be reduced, 1/4 chance of all 3 reducing
 			
 			if (which == 1 || which ==4)
+			{
 				this.RawStr = (int)( this.RawStr - ( (int)( (double)this.RawStr * 0.04 ) * severity ) );
+				if (this.RawStr < 1)
+					this.RawStr = 1;
+			}
 			else if (which == 2 || which ==4)
+			{
 				this.RawInt = (int)( this.RawInt - ( (int)( (double)this.RawInt * 0.04 ) * severity ) );
+				if (this.RawInt < 1)
+					this.RawInt = 1;
+			}
 			else if (which == 3 || which ==4)
+			{
 				this.RawDex = (int)( this.RawDex - ( (int)( (double)this.RawDex * 0.04 ) * severity ) );
+				if (this.RawDex < 1)
+					this.RawDex = 1;
+			}
 
 			int DamageBuff = (int)( (double)this.DamageMax * 0.07 ) * severity; // damage will reduce for all injuries
 			
@@ -7649,6 +7680,11 @@ namespace Server.Mobiles
 
 			this.DamageMin -= DamageBuff;
 			this.DamageMax -= DamageBuff;
+
+			if (this.DamageMin <1)
+				this.DamageMin = 1;
+			if (this.DamageMax <2)
+				this.DamageMax = 2;
 
 			int whichresist = Utility.RandomMinMax(1, 6); // which resist will be reduced, 1/6 chance of all 5 being reduced 
 			
@@ -9927,14 +9963,14 @@ namespace Server.Mobiles
 						}
 					}
 
-					if (killera is PlayerMobile) 
-					{
-						double changechange = 0;
+					if (killera is PlayerMobile)
+                    {
+                        double changechange = 0;
 						if ( ((PlayerMobile)killera).BalanceStatus != 0)
 							changechange = ((double)this.Karma / 2500) ;//* ((double)Math.Abs(killer.Karma) / 10000);
 						else 
 							changechange = ((double)this.Karma / 5000) ;//* ((double)Math.Abs(killer.Karma) / 10000);
-						
+
 						Region region = Region.Find( this.Location, this.Map );
 
 						if ( region.IsPartOf( typeof( ChampionSpawnRegion ) )|| region is ChampionSpawnRegion ) 						
@@ -9943,18 +9979,22 @@ namespace Server.Mobiles
 						}	
 
 						if ( !((PlayerMobile)killera).Avatar )
-							changechange /= 10;
+                            changechange /= 10;
 
 						double karmaeffectneg = 0;
-						double karmaeffectpos = 0;
+                        double karmaeffectpos = 0;
 						
 						if ( killera.Karma < 0)
 						{
 							karmaeffectneg = (double)Math.Abs(killera.Karma) / 15000;
-							if (karmaeffectneg >= 1)
-								karmaeffectpos = 0;
-							else
-								karmaeffectpos = 1- karmaeffectneg;
+							karmaeffectpos = 0;
+
+							// This old code was causing anyone under -7500 karma to move the Influence towards Good
+							// I don't know what it was trying to achieve, but it was absolutely devastating Players' Balance Influence
+							// if (karmaeffectneg >= 1)
+							// 	karmaeffectpos = 0;
+							// else
+							// 	karmaeffectpos = 1- karmaeffectneg;
 						}
 						else if (killera.Karma > 0)
 						{
@@ -9963,20 +10003,20 @@ namespace Server.Mobiles
 
 						}						
 
-						double changeevil = Math.Abs(changechange) * karmaeffectneg;	
-						double changegood = changechange * karmaeffectpos;	
+						double changeevil = Math.Abs(changechange) * karmaeffectneg;
+                        double changegood = changechange * karmaeffectpos;	
 
 						if (((PlayerMobile)killera).Avatar)
-						{//sanity checks
+                        {//sanity checks
 							if (changeevil < 0)
 								changeevil = Math.Abs(changeevil);
 							if (changegood > 0)
 								changegood = changegood * -1;	
 						}
-								
+									
 						changechange = changeevil + changegood;
-						
-						if (killera.Kills >0 && changechange >0) // really evil people have more influence on evil
+
+                        if (killera.Kills >0 && changechange >0) // really evil people have more influence on evil
 							changechange *= 1+ (killera.Kills / 200);
 						
 						else if (killera.Kills >0 && changechange <0)
@@ -9990,12 +10030,12 @@ namespace Server.Mobiles
 								changechange = 1;
 						}
 						else if (Math.Abs(changechange) < 1)// someone killed something small and it won't count.
-						{
-							base.OnDeath( c );
+                        {
+                            base.OnDeath( c );
 							return;
 						}
 						double yo_sup = 0.75;
-						if (((PlayerMobile)killera).SoulBound)
+                        if (((PlayerMobile)killera).SoulBound)
 							yo_sup = 1.0;
 
 						if (OneRing.wearer == killera)
@@ -10004,11 +10044,11 @@ namespace Server.Mobiles
 						((PlayerMobile)killera).BalanceEffect += Convert.ToInt32((changechange*yo_sup));
 						AetherGlobe.ChangeCurse( Convert.ToInt32(changechange) );
 
-					}
+                    }
 
 				}
 
-				if (Utility.RandomDouble() > 0.97 && !(this is BaseRed) && !(this is BaseBlue) && !(this is BaseVendor) && !(this is BaseChild) && !(this is BaseCursed) && !(this is BaseChampion) && !(this is Zombiex))
+				if (Utility.RandomBool() && Utility.RandomBool() && Utility.RandomDouble() > 0.97 && !(this is BaseRed) && !(this is BaseBlue) && !(this is BaseVendor) && !(this is BaseChild) && !(this is BaseCursed) && !(this is BaseChampion) && !(this is Zombiex))
 					c.AddItem( new EssenceBones(this.GetType()));
 
 				base.OnDeath( c );
@@ -10610,18 +10650,18 @@ namespace Server.Mobiles
 				}
 
 			}
-			else if ( !IsDeadPet && m_goferal && this.Loyalty > 35)
+			else if ( !IsDeadPet && GoFeral && this.Loyalty > 35)
 			{
-				m_goferal = false;
+                GoFeral = false;
 				if (this.Combatant != null )
 					this.Combatant = null;
 
 				this.Warmode = false;
 				this.FocusMob = null;
 			}
-			else if (IsDeadPet && m_goferal ) 
+			else if (IsDeadPet && GoFeral) 
 			{
-				m_goferal = false;
+				GoFeral = false;
 				if (this.Combatant != null )
 					this.Combatant = null;
 				this.FocusMob = null;

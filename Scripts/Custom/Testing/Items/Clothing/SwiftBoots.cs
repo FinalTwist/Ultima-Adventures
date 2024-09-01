@@ -18,12 +18,13 @@
  */
 
 using System;
+using Server.Engines.Craft;
 using Server.Network;
 
 namespace Server.Items
 {
-	class SwiftBoots : BaseArmor
-	{
+	class SwiftBoots : BaseArmor, ITailorRepairable
+    {
 		public SwiftBoots( Serial serial )
 			: base(serial)
 		{

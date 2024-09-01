@@ -1,10 +1,11 @@
 //Made By Brad Poe
-using System; 
+using System;
+using Server.Engines.Craft;
 using Server.Items; 
 
 namespace Server.Items 
 { 
-   public class BearMaskofTheBarbarian : BaseArmor 
+   public class BearMaskofTheBarbarian : BaseArmor, ITailorRepairable
    { 
       public override int PhysicalResistance{ get{ return 26; } } 
                 public override int FireResistance{ get{ return 15; } } 

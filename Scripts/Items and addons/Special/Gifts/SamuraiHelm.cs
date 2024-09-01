@@ -1,10 +1,11 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x236C, 0x236D )]
-	public class SamuraiHelm : BaseArmor
+	public class SamuraiHelm : BaseArmor, IBlacksmithRepairable
 	{
 		public override int LabelNumber{ get{ return 1062923; } } // Ancient Samurai Helm
 

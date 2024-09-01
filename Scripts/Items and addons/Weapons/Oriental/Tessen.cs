@@ -1,11 +1,12 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x27A3, 0x27EE )]
-	public class Tessen : BaseBashing
+	public class Tessen : BaseBashing, IBlacksmithRepairable
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.Feint; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.Block; } }

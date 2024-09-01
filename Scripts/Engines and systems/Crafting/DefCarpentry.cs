@@ -89,13 +89,7 @@ namespace Server.Engines.Craft
 			//SetUseAllRes( index, true );
 
 			AddCraft( typeof( Kindling ), 1044294, 1023553, 0.0, 00.0, typeof( Log ), 1015101, 1, 1044351 );
-
-			index = AddCraft( typeof( Kindling ), 1044294, "batch of kindling", 0.0, 00.0, typeof( Log ), 1015101, 1, 1044351 );
-			SetUseAllRes( index, true );
-
 			index = AddCraft( typeof( BarkFragment ),	1044294, "bark fragment",	40.0, 70.0, typeof( Board ), 1015101, 1, 1044465 );
-			SetUseAllRes( index, true );
-
 			AddCraft( typeof( BarrelStaves ),				1044294, 1027857,	00.0,  25.0,	typeof( Board ), 1015101,  5, 1044351 );
 			AddCraft( typeof( BarrelLid ),					1044294, 1027608,	11.0,  36.0,	typeof( Board ), 1015101,  4, 1044351 );
 			AddCraft( typeof( ShortMusicStand ),			1044294, 1044313,	78.9, 103.9,	typeof( Board ), 1015101, 15, 1044351 );
@@ -103,26 +97,36 @@ namespace Server.Engines.Craft
 			AddCraft( typeof( Easle ),						1044294, 1044317,	86.8, 111.8,	typeof( Board ), 1015101, 20, 1044351 );
 			AddCraft( typeof( MixingSpoon ),				1044294, "cauldron mixer",	30.0,  60.0,	typeof( Board ), 1015101,  5, 1044351 );
 
-				index = AddCraft( typeof( RedHangingLantern ), 1044294, 1029412, 65.0, 90.0, typeof( Board ), 1015101, 5, 1044351 );
-				AddRes( index, typeof( BlankScroll ), 1044377, 10, 1044378 );
-				 
+			index = AddCraft( typeof( RedHangingLantern ), 1044294, 1029412, 65.0, 90.0, typeof( Board ), 1015101, 5, 1044351 );
+			AddRes( index, typeof( BlankScroll ), 1044377, 10, 1044378 );
+				
 
-				index = AddCraft( typeof( WhiteHangingLantern ), 1044294, 1029416, 65.0, 90.0, typeof( Board ), 1015101, 5, 1044351 );
-				AddRes( index, typeof( BlankScroll ), 1044377, 10, 1044378 );
-				 
+			index = AddCraft( typeof( WhiteHangingLantern ), 1044294, 1029416, 65.0, 90.0, typeof( Board ), 1015101, 5, 1044351 );
+			AddRes( index, typeof( BlankScroll ), 1044377, 10, 1044378 );
+				
 
-				index = AddCraft( typeof( ShojiScreen ), 1044294, 1029423, 80.0, 105.0, typeof( Board ), 1015101, 75, 1044351 );
-				AddSkill( index, SkillName.Tailoring, 50.0, 55.0 );
-				AddRes( index, typeof( Cloth ), 1044286, 60, 1044287 );
-				 
+			index = AddCraft( typeof( ShojiScreen ), 1044294, 1029423, 80.0, 105.0, typeof( Board ), 1015101, 75, 1044351 );
+			AddSkill( index, SkillName.Tailoring, 50.0, 55.0 );
+			AddRes( index, typeof( Cloth ), 1044286, 60, 1044287 );
+				
 
-				index = AddCraft( typeof( BambooScreen ), 1044294, 1029428, 80.0, 105.0, typeof( Board ), 1015101, 75, 1044351 );
-				AddSkill( index, SkillName.Tailoring, 50.0, 55.0 );
-				AddRes( index, typeof( Cloth ), 1044286, 60, 1044287 );
-				 
-				index = AddCraft( typeof( FishingPole ), 1044294, 1023519, 68.4, 93.4, typeof( Board ), 1015101, 5, 1044351 ); //This is in the categor of Other during AoS
-				AddSkill( index, SkillName.Tailoring, 40.0, 45.0 );
-				AddRes( index, typeof( Cloth ), 1044286, 5, 1044287 );
+			index = AddCraft( typeof( BambooScreen ), 1044294, 1029428, 80.0, 105.0, typeof( Board ), 1015101, 75, 1044351 );
+			AddSkill( index, SkillName.Tailoring, 50.0, 55.0 );
+			AddRes( index, typeof( Cloth ), 1044286, 60, 1044287 );
+				
+			index = AddCraft( typeof( FishingPole ), 1044294, 1023519, 68.4, 93.4, typeof( Board ), 1015101, 5, 1044351 ); //This is in the categor of Other during AoS
+			AddSkill( index, SkillName.Tailoring, 40.0, 45.0 );
+			AddRes( index, typeof( Cloth ), 1044286, 5, 1044287 );
+			
+			index = AddCraft( typeof( TenFootPole ), 1044294, "ten foot pole", 66.3, 116.3, typeof( ReaperOil ), "Reaper Oil", 1, 1042081 );
+			AddRes( index, typeof( Board ), 1015101, 40, 1044351 );
+
+			// Batch begin
+			index = AddCraft( typeof( Kindling ), 1044294, "batch of kindling", 0.0, 00.0, typeof( Log ), 1015101, 1, 1044351 );
+			SetUseAllRes( index, true );
+			index = AddCraft( typeof( BarkFragment ),	1044294, "batch of bark fragments",	40.0, 70.0, typeof( Board ), 1015101, 1, 1044465 );
+			SetUseAllRes( index, true );
+
 
 			// Furniture
 			AddCraft( typeof( FootStool ),					1044291, 1022910,	11.0,  36.0,	typeof( Board ), 1015101,  9, 1044351 );

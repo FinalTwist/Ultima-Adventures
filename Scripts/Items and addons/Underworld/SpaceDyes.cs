@@ -76,11 +76,23 @@ namespace Server.Items
 					}
 					else if ( iDye.IsChildOf( from.Backpack ) )
 					{
-						iDye.Hue = m_Dye.vialHue;
-						from.RevealingAction();
-						from.PlaySound( 0x23E );
-						from.AddToBackpack( new Bottle() );
-						m_Dye.Consume();
+                        if (targeted is MagicPigment)
+                        {
+                            MagicPigment pigment = (MagicPigment)targeted;
+                            if (pigment.ApplyHue(from, m_Dye.Hue, 0x23E))
+                            {
+                                from.AddToBackpack(new Bottle());
+                                m_Dye.Consume();
+                            }
+                        }
+                        else
+                        {
+                            iDye.Hue = m_Dye.vialHue;
+                            from.RevealingAction();
+                            from.PlaySound(0x23E);
+                            from.AddToBackpack(new Bottle());
+                            m_Dye.Consume();
+                        }
 					}
 					else
 					{

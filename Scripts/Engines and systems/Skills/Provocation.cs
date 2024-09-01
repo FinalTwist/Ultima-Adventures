@@ -184,7 +184,7 @@ namespace Server.SkillHandlers
 				{
 					BaseCreature creature = (BaseCreature)targeted;
 
-					if ( !m_Instrument.IsChildOf( from.Backpack ) )
+					if ( !m_Instrument.IsChildOf( from.Backpack ) && ((Item)m_Instrument).Layer != Layer.Talisman )
 					{
 						from.SendLocalizedMessage( 1062488 ); // The instrument you are trying to play is no longer in your backpack!
 						from.NextSkillTime = Core.TickCount + 1000;
@@ -360,9 +360,6 @@ namespace Server.SkillHandlers
 								AOS.Damage( m_Creature, from, dmg, true, 100, 0, 0, 0, 0, 0, 0, false, false, false, false, true);
 								
 								from.SendMessage("The creature attacks itself!");
-								from.SendMessage("[testing] for " + min + " min " + max + " max damage.");
-								if (SkillHandlers.Discordance.IsDiscorded(m_Creature))
-									from.SendMessage("Discord bonus of " + stonebonus + " applied.");
 								
 								m_Instrument.PlayInstrumentWell( from );
 								m_Instrument.ConsumeUse( from );

@@ -21,59 +21,56 @@ namespace Server.Items
 			Hue = 0x31;
 		}
 
+        public override bool CanAdd( Mobile from, Item item)
+		{
+            if ( item is DDCopper || 
+				 item is DDSilver || 
+				 item is DDJewels ||
+				 item is DDXormite ||
+				 item is DDGemstones ||
+				 item is Gold ||
+				 item is DDGoldNuggets )
+			{
+				return true;
+			}
+
+			return false;
+		}
+
+
 		public override bool OnDragDropInto( Mobile from, Item dropped, Point3D p )
         {
+			if (CanAdd(from, dropped)) return base.OnDragDropInto(from, dropped, p);
+
 			if ( dropped is Container )
 			{
                 from.SendMessage("You can't add a container in this pouch.");
-                return false;
-			}
-            else if ( 	dropped is DDCopper || 
-						dropped is DDSilver || 
-						dropped is DDJewels ||
-						dropped is DDXormite ||
-						dropped is DDGemstones ||
-						dropped is Gold ||
-                        dropped is DDGoldNuggets )
-			{
-				return base.OnDragDropInto(from, dropped, p);
 			}
 			else
             {
                 from.SendMessage("This coin pouch is for currency only.");
-                return false;
             }
 
-            return base.OnDragDropInto(from, dropped, p);
+            return false;
         }
 
-		public override bool OnDragDrop( Mobile from, Item dropped )
+        public override bool OnDragDrop( Mobile from, Item dropped )
         {
+			if (CanAdd(from, dropped)) return base.OnDragDrop(from, dropped);
+				
 			if ( dropped is Container )
 			{
                 from.SendMessage("You can't add a container in this pouch.");
-                return false;
-			}
-            else if (   dropped is DDCopper || 
-						dropped is DDSilver || 
-						dropped is DDJewels ||
-						dropped is DDXormite ||
-						dropped is DDGemstones ||
-						dropped is Gold ||
-                        dropped is DDGoldNuggets )
-			{
-				return base.OnDragDrop(from, dropped);
 			}
 			else
             {
                 from.SendMessage("This coin pouch is for currency only.");
-                return false;
             }
 
-            return base.OnDragDrop(from, dropped);
+            return false;
         }
 
-		public CoinPouch( Serial serial ) : base( serial )
+        public CoinPouch( Serial serial ) : base( serial )
 		{
 		}
 

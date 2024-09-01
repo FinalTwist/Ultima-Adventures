@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Server;
 using System.Collections;
 using System.Collections.Generic;
@@ -30,7 +31,7 @@ namespace Server.Items
 		{
 			base.AddNameProperties(list);
 			list.Add( 1049644, "Contains: " + ShoppeGold.ToString() + " Gold");
-			if ( ShoppeOwner.Name == null ){ list.Add( 1070722, "Owner: " + ShoppeName + "" ); }
+			if ( ShoppeOwner == null || ShoppeOwner.Name == null ){ list.Add( 1070722, "Owner: " + ShoppeName + "" ); }
 			else { list.Add( 1070722, "Owner: " + ShoppeOwner.Name + "" ); }
 		}
 
@@ -272,47 +273,46 @@ namespace Server.Items
 			public override void OnClick()
 			{
 			    if( !( m_Mobile is PlayerMobile ) )
-				return;
-				
-				PlayerMobile mobile = (PlayerMobile) m_Mobile;
+					return;
+
+                PlayerMobile clickingPlayer = m_Mobile as PlayerMobile;
+                PlayerMobile owner = m_Shoppe.Shoppe_Owner as PlayerMobile;
+                if (owner == null || clickingPlayer == null)
+					return;
+
+                if ( m_Shoppe.ShoppeGold > 0 )
 				{
-					if ( m_Shoppe.ShoppeGold > 0 )
+					Titles.AwardFame( owner, (int)((double)m_Shoppe.ShoppeGold/30), true, false );
+
+					int cash = m_Shoppe.ShoppeGold;
+					if (owner.Avatar)
 					{
-						int barter = (int)m_Mobile.Skills[SkillName.ItemID].Value;
-						if ( mobile.NpcGuild == NpcGuild.MerchantsGuild ){ barter = barter + 25; } // FOR GUILD MEMBERS
+						bool isOwner = clickingPlayer == owner;
+						string message = owner.BalanceStatus != 0
+							? string.Format("{0} dedication to crafting affects the balance!", isOwner ? "Your" : "The owner's")
+							: string.Format("{0} dedication to crafting affects the balance, but {1} are not pledged to a side.", isOwner ? "Your" : "The owner's", isOwner ? "you" : "they");
+						clickingPlayer.SendMessage(message);
 
-						Titles.AwardFame( m_Mobile, (int)((double)m_Shoppe.ShoppeGold/30), true );
-
-						int cash = (int)( m_Shoppe.ShoppeGold + (m_Shoppe.ShoppeGold * (barter / 100) ) );
-
-						if (mobile.Avatar)
+						if (owner.Karma >= 0)
 						{
-							if (mobile.BalanceStatus != 0)					
-								m_Mobile.SendMessage("Your dedication to crafting affects the balance!" );
-							else
-								m_Mobile.SendMessage("Your dedication to crafting affects the balance, but you are not pledged to a side." );
-
-							if (mobile.Karma >= 0)
-							{
-								Titles.AwardKarma( m_Mobile, (int)((double)cash/30), true );
-								AetherGlobe.QuestEffect( cash, m_Mobile, true);
-							}
-							else
-							{
-								Titles.AwardKarma( m_Mobile, -((int) ((double)cash / 30)), true );
-								AetherGlobe.QuestEffect( cash, m_Mobile, false);
-							}
+							Titles.AwardKarma( owner, (int)((double)cash/30), true );
+							AetherGlobe.QuestEffect( cash, owner, true);
 						}
+						else
+						{
+							Titles.AwardKarma( owner, -((int) ((double)cash / 30)), true );
+							AetherGlobe.QuestEffect( cash, owner, false);
+						}
+					}
 
-						m_Mobile.AddToBackpack( new BankCheck( cash ) );
-						m_Mobile.SendMessage("You now have a check for " + cash.ToString() + " gold.");
-						m_Shoppe.ShoppeGold = 0;
-						m_Shoppe.InvalidateProperties();
-					}
-					else
-					{
-						m_Mobile.SendMessage("There is no gold in this shoppe!");
-					}
+                    clickingPlayer.AddToBackpack( new BankCheck( cash ) );
+                    clickingPlayer.SendMessage("You now have a check for " + cash.ToString() + " gold.");
+					m_Shoppe.ShoppeGold = 0;
+					m_Shoppe.InvalidateProperties();
+				}
+				else
+				{
+                    clickingPlayer.SendMessage("There is no gold in this shoppe!");
 				}
             }
         }
@@ -327,7 +327,7 @@ namespace Server.Items
 			else if ( ( dropped is BoltOfCloth || 
 						dropped is Cloth || 
 						dropped is UncutCloth ) && this is TailorShoppe ){ procResource = true; }
-			else if ( ( dropped is BottleOfParts ) && this is MorticianShoppe ){ procResource = true; }
+			else if ( ( dropped is EmbalmingFluid ) && this is MorticianShoppe ){ procResource = true; }
 			else if ( ( dropped is BlankScroll ) && this is LibrarianShoppe ){ procResource = true; }
 			else if ( ( dropped is Dough ) && this is BakerShoppe ){ procResource = true; }
 			else if ( ( dropped is BlankScroll || 
@@ -380,7 +380,8 @@ namespace Server.Items
 			//{
            //     from.SendMessage("This is useless since no one deals with murderers!");
 			//}
-			else if ( dropped is SurgeonsKnife || dropped is GardenTool )
+			else if ( (dropped is SurgeonsKnife && this is MorticianShoppe) 
+					|| (dropped is GardenTool && this is HerbalistShoppe) )
 			{
 				if ( ShoppeTools >= 1000 )
 				{
@@ -409,7 +410,11 @@ namespace Server.Items
 				}
 				else
 				{
-					ShoppeResources = ShoppeResources + dropped.Amount;
+					int amount = dropped.Amount;
+					if (dropped is BoltOfCloth) amount *= 50;
+					else if (dropped is EmbalmingFluid) amount *= 50;
+
+					ShoppeResources = ShoppeResources + amount;
 					if ( ShoppeResources >= 5000 )
 					{
 						ShoppeResources = 5000;
@@ -945,7 +950,7 @@ namespace Server.Items
 				AddHtml( 153, 468, 717, 20, @"<BODY><BIG><BASEFONT Color=#FFA200>Shows your chance to successfully fulfill a contract.</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddHtml( 153, 498, 717, 20, @"<BODY><BIG><BASEFONT Color=#FCFF00>Shows your shoppe's reputation at the top, or for each individual contract.</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 
-				AddHtml( 110, 112, 759, 200, @"<BODY><BIG><BASEFONT Color=#FCFF00>The world is filled with opportunity, where adventurers seek the help of other in order to achieve their goals. With filled coin purses, they seek experts in various crafts to acquire their skills. Some would need armor repaired, maps deciphered, potions concocted, scrolls translated, clothing fixed, or many other things. The merchants, in the cities and villages, often cannot keep up with the demand of these requests. This provides opportunity for those that practice a trade and have their own home from which to conduct business. Seek out a tradesman and see if they have an option for you to have them build you a Shoppe of your own. These Shoppes usually demand you to part with 10,000 gold, but they can quickly pay for themselves if you are good at your craft. You may only have one type of each Shoppe at any given time. So if you are skilled in two different types of crafts, then you can have a Shoppe for each. You will be the only one to use the Shoppe, but you may give permission to others to transfer the gold out into a bank check for themselves. Shoppes require to be stocked with tools and resources, and the Shoppe will indicate what those are at the bottom. Simply drop such things onto your Shoppe to amass an inventory. When you drop tools onto your Shoppe, the number of tool uses will add to the Shoppe's tool count. A Shoppe may only hold 1,000 tools and 5,000 resources. After a set period of time, customers will make requests of you which you can fulfill or refuse. Each request will display the task, who it is for, the amount of tools needed, the amount of resources required, your chance to fulfill the request (based on the difficulty and your skill), and the amount of reputation your Shoppe will acquire if you are successful.<br><br>If you fail to perform a selected task, or refuse to do it, your Shoppe's reputation will drop by that same value you would have been rewarded with. Word of mouth travels fast in the land and you will have less prestigious work if your reputation is low. If you find yourself reaching the lows of becoming a murderer, your Shoppe will be useless as no one deals with murderers. Any gold earned will stay within the Shoppe until you single click the Shoppe and Transfer the funds out of it. Your Shoppe can have no more than 500,000 gold at a time, and you will not be able to conduct any more business in it until you withdraw the funds so it can amass more. The reputation for the Shoppe cannot go below 0, and it cannot go higher than 10,000. Again, the higher the reputation, the more lucrative work you will be asked to do. If you are a member of the associated crafting guild, your reputation will have a bonus toward it based on your crafting skill.<br><br>If you want to earn more gold from your home, see the local provisioner and see if you can buy a merchant crate. These crates allow you to craft items, place them in the crate, and the Merchants Guild will pick up your wares after a set period of time. If you decide you want something back from the crate, make sure to take it out before the guild shows up.</BIG></BASEFONT></BODY>", (bool)false, (bool)true);
+				AddHtml( 110, 112, 759, 200, @"<BODY><BIG><BASEFONT Color=#FCFF00>The world is filled with opportunity, where adventurers seek the help of other in order to achieve their goals. With filled coin purses, they seek experts in various crafts to acquire their skills. Some would need armor repaired, maps deciphered, potions concocted, scrolls translated, clothing fixed, or many other things. The merchants, in the cities and villages, often cannot keep up with the demand of these requests. This provides opportunity for those that practice a trade and have their own home from which to conduct business. Seek out a tradesman and see if they have an option for you to have them build you a Shoppe of your own. These Shoppes usually demand you to part with 10,000 gold, but they can quickly pay for themselves if you are good at your craft. You may only have one type of each Shoppe at any given time. So if you are skilled in two different types of crafts, then you can have a Shoppe for each. You will be the only one to use the Shoppe, but you may give permission to others to transfer the gold out into a bank check for themselves. Shoppes require to be stocked with tools and resources, and the Shoppe will indicate what those are at the bottom. Simply drop such things onto your Shoppe to amass an inventory. When you drop tools onto your Shoppe, the number of tool uses will add to the Shoppe's tool count. A Shoppe may only hold 1,000 tools and 5,000 resources. After a set period of time, customers will make requests of you which you can fulfill or refuse. Each request will display the task, who it is for, the amount of tools needed, the amount of resources required, your chance to fulfill the request (based on the difficulty and your skill), and the amount of reputation your Shoppe will acquire if you are successful.<br><br>If you fail to perform a selected task, or refuse to do it, your Shoppe's reputation will drop by that same value you would have been rewarded with. Word of mouth travels fast in the land and you will have less prestigious work if your reputation is low. If you find yourself reaching the lows of becoming a murderer, your Shoppe will be useless as no one deals with murderers. Any gold earned will stay within the Shoppe until you single click the Shoppe and Transfer the funds out of it. Your Shoppe can have no more than 100,000 gold at a time, and you will not be able to conduct any more business in it until you withdraw the funds so it can amass more. The reputation for the Shoppe cannot go below 0, and it cannot go higher than 10,000. Again, the higher the reputation, the more lucrative work you will be asked to do. If you are a member of the associated crafting guild, your reputation will have a bonus toward it based on your crafting skill.<br><br>If you want to earn more gold from your home, see the local provisioner and see if you can buy a merchant crate. These crates allow you to craft items, place them in the crate, and the Merchants Guild will pick up your wares after a set period of time. If you decide you want something back from the crate, make sure to take it out before the guild shows up.</BIG></BASEFONT></BODY>", (bool)false, (bool)true);
 
 				AddImage(108, 538, 4023);
 				AddImage(108, 594, 4020);
@@ -988,29 +993,39 @@ namespace Server.Items
 
 				AddButton(837, 13, 3610, 3610, 3, GumpButtonType.Reply, 0); // HELP
 
-				if ( shoppe.ShoppePage == 1 )
-				{
-					AddButton(182, 69, 4014, 4014, 1, GumpButtonType.Reply, 0); // LEFT ARROW
-				}
-				else
-				{
-					AddButton(715, 70, 4005, 4005, 2, GumpButtonType.Reply, 0); // RIGHT ARROW
-				}
-
 				AddHtml( 219, 70, 489, 20, @"<BODY><BASEFONT Color=#FBFBFB><BIG><CENTER>" + shoppe.ShelfTitle + "</CENTER></BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 
 				AddItem(41, 384, shoppe.ShelfItem); // SHELF
 
 				// ------------------------------------------------------------------------------------
 
+				const string COLOR_ORANGE = "#FFA200";
+				const string COLOR_YELLOW = "#FCFF00";
+				const string COLOR_RED = "#FF0000";
+
+				string goldCapColor = shoppe.ShoppeGold < 80000
+					? COLOR_ORANGE // < 80k
+					: 95000 <= shoppe.ShoppeGold
+						? COLOR_RED // > 95k
+						: COLOR_YELLOW; // < 95k
+				string toolColor = shoppe.ShoppeTools > 100 
+					? COLOR_ORANGE // > 100
+					: shoppe.ShoppeTools <= 20 
+						? COLOR_RED // <= 20
+						: COLOR_YELLOW; // < 100
+				string resourceColor = shoppe.ShoppeResources > 100 
+					? COLOR_ORANGE // > 100
+					: shoppe.ShoppeResources <= 20 
+						? COLOR_RED // <= 20
+						: COLOR_YELLOW; // < 100
 				AddItem(93, 99, 3823);
-				AddHtml( 132, 100, 113, 20, @"<BODY><BIG><BASEFONT Color=#FFA200>" + shoppe.ShoppeGold + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false); // TOTAL GOLD
+				AddHtml( 132, 100, 113, 20, @"<BODY><BIG><BASEFONT Color=" + goldCapColor + ">" + shoppe.ShoppeGold + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false); // TOTAL GOLD
 
 				AddItem(328, 99, 10174);
-				AddHtml( 358, 100, 48, 20, @"<BODY><BIG><BASEFONT Color=#FFA200>" + shoppe.ShoppeTools + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false); // TOTAL TOOLS
+				AddHtml( 358, 100, 48, 20, @"<BODY><BIG><BASEFONT Color=" + toolColor + ">" + shoppe.ShoppeTools + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false); // TOTAL TOOLS
 
 				AddItem(476, 96, 3710);
-				AddHtml( 521, 100, 48, 20, @"<BODY><BIG><BASEFONT Color=#FFA200>" + shoppe.ShoppeResources + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false); // TOTAL RESOURCES
+				AddHtml( 521, 100, 48, 20, @"<BODY><BIG><BASEFONT Color=" + resourceColor + ">" + shoppe.ShoppeResources + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false); // TOTAL RESOURCES
 
 				int guildBonus = 0;
 				if ( ((PlayerMobile)from).NpcGuild == shoppe.ShelfGuild ){ guildBonus = 500 + (int)(Server.Items.BaseShoppe.GetSkillValue( shoppe.ShelfSkill, from ) * 5 ); }
@@ -1026,16 +1041,12 @@ namespace Server.Items
 				AddHtml( 393, 635, 485, 20, @"<BODY><BIG><BASEFONT Color=#FFA200>" + shoppe.ShoppeName + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 
 				AddItem(334, 667, 10174);
-				AddHtml( 364, 667, 209, 20, @"<BODY><BIG><BASEFONT Color=#FCFF00>" + shoppe.ShelfTools + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false); // NEEDED TOOLS
+				AddHtml( 364, 667, 209, 20, @"<BODY><BIG><BASEFONT Color=" + toolColor + ">" + shoppe.ShelfTools + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false); // NEEDED TOOLS
 
 				AddItem(597, 664, 3710);
-				AddHtml( 640, 669, 209, 20, @"<BODY><BIG><BASEFONT Color=#FCFF00>" + shoppe.ShelfResources + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false); // NEEDED RESOURCES
+				AddHtml( 640, 669, 209, 20, @"<BODY><BIG><BASEFONT Color=" + resourceColor + ">" + shoppe.ShelfResources + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false); // NEEDED RESOURCES
 
 				// ------------------------------------------------------------------------------------
-
-				int entries = 6;
-				int line = 0; if ( shoppe.ShoppePage == 1 ){ line = 6; }
-				string customer = shoppe.Customer01;
 
 				string taskJob = "";
 				string taskWho = "";
@@ -1047,20 +1058,23 @@ namespace Server.Items
 				int taskReputation = 0;
 				int y = 175;
 
-				while ( entries > 0 )
+				int customerCount = 0;
+				const int max_customer_slots = 6;
+				for (int line = 1; line <= 12; line++)
 				{
-					entries--;
-					line++;
-
-					int no = 100 + line;
-					int yes = 200 + line;
-
+					string customer = null;
 					if ( line == 1 ){ customer = shoppe.Customer01; }					else if ( line == 2 ){ customer = shoppe.Customer02; }
 					else if ( line == 3 ){ customer = shoppe.Customer03; }				else if ( line == 4 ){ customer = shoppe.Customer04; }
 					else if ( line == 5 ){ customer = shoppe.Customer05; }				else if ( line == 6 ){ customer = shoppe.Customer06; }
 					else if ( line == 7 ){ customer = shoppe.Customer07; }				else if ( line == 8 ){ customer = shoppe.Customer08; }
 					else if ( line == 9 ){ customer = shoppe.Customer09; }				else if ( line == 10 ){ customer = shoppe.Customer10; }
 					else if ( line == 11 ){ customer = shoppe.Customer11; }				else if ( line == 12 ){ customer = shoppe.Customer12; }
+
+					if (customer == "") continue;
+					if (max_customer_slots < ++customerCount) continue;
+
+					int no = 100 + line;
+					int yes = 200 + line;
 
 					taskJob = Server.Misc.Customers.GetDataElement( customer, 1 );
 					taskWho = Server.Misc.Customers.GetDataElement( customer, 2 );
@@ -1102,14 +1116,23 @@ namespace Server.Items
 						AddItem(786, y-5, 10283);
 						AddHtml( 811, y, 30, 20, @"<BODY><BIG><BASEFONT Color=#FFA200>" + taskReputation + "</BIG></BASEFONT></BODY>", (bool)false, (bool)false); // REPUTATION GAINED
 					}
-					else
-					{
-						AddHtml( 104, y-30, 780, 20, @"<BODY><BIG><BASEFONT Color=#284F9F>Done - Awaiting Next Customer</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
-					}
 
 					// ------------------------------------------------------------------------------------
 
 					y=y+80;
+				}
+
+				if (customerCount == 0)
+				{
+					AddHtml( 104, y-50, 780, 20, @"<BODY><BIG><BASEFONT Color=#284F9F>Done - Awaiting Next Customer</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				}
+				else
+				{
+					int customersRemaining = customerCount - max_customer_slots;
+					if (0 < customersRemaining)
+					{
+						AddHtml( 104, y-50, 780, 20, @"<BODY><BIG><BASEFONT Color=#284F9F> +" + customersRemaining + " Additional Customers...</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+					}
 				}
 			}
 		}
@@ -1117,6 +1140,12 @@ namespace Server.Items
 		public override void OnResponse( NetState sender, RelayInfo info )
 		{
 			Mobile from = sender.Mobile;
+
+			if (!from.InRange(m_Shop.Location, 3))
+			{
+				from.SendMessage("Your shoppe is too far away.");
+				return;
+			}
 
 			if ( info.ButtonID == 1 )
 			{

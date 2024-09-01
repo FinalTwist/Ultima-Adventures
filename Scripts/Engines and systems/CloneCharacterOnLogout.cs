@@ -34,9 +34,7 @@ namespace Felladrin.Automations
 
         static void OnLogout(LogoutEventArgs e)
         {
-            int totalstats = e.Mobile.RawStr + e.Mobile.RawInt + e.Mobile.RawDex;
-
-            if (e.Mobile.AccessLevel == AccessLevel.Player && Utility.RandomDouble() > 0.33 && totalstats > 175)
+            if (e.Mobile.AccessLevel == AccessLevel.Player && Utility.RandomDouble() > 0.33 && e.Mobile.RawStatTotal > CharacterClone.MinimumTotalStats)
                 CreateCloneOf(e.Mobile);
         }
 
@@ -64,6 +62,8 @@ namespace Felladrin.Automations
                 else if (etherealMount != null)
                     new EtherealMountClone(etherealMount).Rider = characterClone;
             }
+
+            characterClone.DistributeIfNecessary();
         }
 
         static void DeleteClonesOf(Mobile m)
@@ -75,17 +75,26 @@ namespace Felladrin.Automations
 
         static void CheckFirstRun()
         {
+            // Don't clone if at least one already exists
             foreach (var mobile in World.Mobiles.Values)
                 if (mobile is CharacterClone)
                     return;
 
             foreach (var mobile in new List<Mobile>(World.Mobiles.Values))
+            {
+                if (mobile.RawStatTotal < CharacterClone.MinimumTotalStats) continue;
+
                 if (mobile is PlayerMobile && mobile.Alive && mobile.AccessLevel == AccessLevel.Player)
+                {
                     CreateCloneOf(mobile);
+                }
+            }
         }
 
         public class CharacterClone : BaseCreature
         {
+            public const int MinimumTotalStats = 175;
+
             [CommandProperty(AccessLevel.GameMaster)]
             public Mobile Original { get; set; }
 
@@ -136,18 +145,32 @@ namespace Felladrin.Automations
 
             public override void Deserialize(GenericReader reader)
             {
-                base.Deserialize(reader);
-                reader.ReadInt();
-                Original = reader.ReadMobile();
+                try
+                {
+                    base.Deserialize(reader);
+                    reader.ReadInt();
+                    Original = reader.ReadMobile();
 
-                if (Original == null)
-                    Delete();
+                    if (Original == null)
+                        Delete();
 
+                    DistributeIfNecessary();
+                }
+                catch (System.Exception e)
+                {
+                    Console.WriteLine("Failed to deserialize clone. {0}", e.Message);
+                    Console.WriteLine(e.ToString());
+                    throw;
+                }
+            }
+
+            public void DistributeIfNecessary(int daysSinceLoginThreshold = 30)
+            {
                 Region reg = Region.Find( this.Location, this.Map );
                 if ( reg.IsPartOf( "the Bank" ) || reg.IsPartOf(typeof(SafeRegion) ) || reg.IsPartOf(typeof(PublicRegion)) )  
                 {
                     PlayerMobile pm = (PlayerMobile)Original;
-                    if ( pm.LastOnline < (DateTime.Now - TimeSpan.FromDays( 30 ) ) )
+                    if ( pm.LastOnline < (DateTime.Now - TimeSpan.FromDays( daysSinceLoginThreshold ) ) )
                     {
                         int whatever = Utility.RandomMinMax(1, 100);
                         String world = "";
@@ -164,7 +187,6 @@ namespace Felladrin.Automations
                         else 
                             world = "the Island of Umber Veil";
 
-                        // pick what to infect - 10% city, 60% overland, 30% dungeon
                         whatever = Utility.RandomMinMax(1, 100);
 
                         Point3D gagme;
@@ -228,7 +250,7 @@ namespace Felladrin.Automations
             public MountClone(BaseMount original) : base(original.Name,  original.BodyValue, original.ItemID, original.AI, original.FightMode, original.RangePerception, original.RangeFight, original.ActiveSpeed, original.PassiveSpeed)
             {
                 foreach (var property in (typeof(BaseMount)).GetProperties())
-                    if (property.CanRead && property.CanWrite && property.Name != "Rider")
+                    if (property.CanRead && property.CanWrite && property.Name != "Rider" && property.Name != "ControlMaster")
                         property.SetValue(this, property.GetValue(original, null), null);
             }
 
@@ -252,7 +274,7 @@ namespace Felladrin.Automations
             public EtherealMountClone(EtherealMount original) : base(original.RegularID, original.MountedID)
             {
                 foreach (var property in (typeof(EtherealMount)).GetProperties())
-                    if (property.CanRead && property.CanWrite && property.Name != "Rider")
+                    if (property.CanRead && property.CanWrite && property.Name != "Rider" && property.Name != "ControlMaster")
                         property.SetValue(this, property.GetValue(original, null), null);
             }
 

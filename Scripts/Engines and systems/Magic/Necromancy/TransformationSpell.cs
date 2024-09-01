@@ -25,11 +25,11 @@ namespace Server.Spells.Necromancy
 		public override bool BlockedByHorrificBeast{ get{ return false; } }
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if( !TransformationSpellHelper.CheckCast( Caster, this ) )
-				return false;
+        {
+            if (!base.CheckCast(caster))
+                return false;
 
-			return base.CheckCast( caster );
+            return TransformationSpellHelper.CheckCast( Caster, this );
 		}
 
 		public override void OnCast()

@@ -44,8 +44,11 @@ namespace Server.Spells.Ninjitsu
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if (!Caster.CanBeginAction(typeof(PolymorphSpell)))
+        {
+            if (!base.CheckCast(caster))
+                return false;
+
+            if (!Caster.CanBeginAction(typeof(PolymorphSpell)))
 			{
 				Caster.SendLocalizedMessage(1061628); // You can't do that while polymorphed.
 				return false;
@@ -61,7 +64,7 @@ namespace Server.Spells.Ninjitsu
 				return false;
 			}
 
-			return base.CheckCast( caster );
+			return true;
 		}
 
 		public override bool CheckDisturb(DisturbType type, bool firstCircle, bool resistable)

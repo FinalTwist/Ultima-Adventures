@@ -1,12 +1,13 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 using Server.Misc;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x1411, 0x141a )]
-	public class GiftWoodenPlateLegs : BaseGiftArmor ///////////////////////////////////////////////////////
-	{
+	public class GiftWoodenPlateLegs : BaseGiftArmor, ICarpentryRepairable ///////////////////////////////////////////////////////
+    {
 		public override int BasePhysicalResistance{ get{ return 5; } }
 		public override int BaseFireResistance{ get{ return 1; } }
 		public override int BaseColdResistance{ get{ return 2; } }
@@ -51,8 +52,8 @@ namespace Server.Items
 		}
 	}
 	[FlipableAttribute( 0x1414, 0x1418 )]
-	public class GiftWoodenPlateGloves : BaseGiftArmor ///////////////////////////////////////////////////
-	{
+	public class GiftWoodenPlateGloves : BaseGiftArmor, ICarpentryRepairable ///////////////////////////////////////////////////
+    {
 		public override int Hue{ get { return 0x840; } }
 
 		public override int BasePhysicalResistance{ get{ return 5; } }
@@ -98,8 +99,8 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class GiftWoodenPlateGorget : BaseGiftArmor ///////////////////////////////////////////////////
-	{
+	public class GiftWoodenPlateGorget : BaseGiftArmor, ICarpentryRepairable ///////////////////////////////////////////////////
+    {
 		public override int Hue{ get { return 0x840; } }
 
 		public override int BasePhysicalResistance{ get{ return 5; } }
@@ -146,8 +147,8 @@ namespace Server.Items
 		}
 	}
 	[FlipableAttribute( 0x1410, 0x1417 )]
-	public class GiftWoodenPlateArms : BaseGiftArmor ///////////////////////////////////////////////////////
-	{
+	public class GiftWoodenPlateArms : BaseGiftArmor, ICarpentryRepairable ///////////////////////////////////////////////////////
+    {
 		public override int Hue{ get { return 0x840; } }
 
 		public override int BasePhysicalResistance{ get{ return 5; } }
@@ -194,8 +195,8 @@ namespace Server.Items
 		}
 	}
 	[FlipableAttribute( 0x1415, 0x1416 )]
-	public class GiftWoodenPlateChest : BaseGiftArmor /////////////////////////////////////////////////////
-	{
+	public class GiftWoodenPlateChest : BaseGiftArmor, ICarpentryRepairable /////////////////////////////////////////////////////
+    {
 		public override int Hue{ get { return 0x840; } }
 
 		public override int BasePhysicalResistance{ get{ return 5; } }
@@ -241,8 +242,8 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class GiftWoodenPlateHelm : BaseGiftArmor ///////////////////////////////////////////////////////
-	{
+	public class GiftWoodenPlateHelm : BaseGiftArmor, ICarpentryRepairable ///////////////////////////////////////////////////////
+    {
 		public override int Hue{ get { return 0x840; } }
 
 		public override int BasePhysicalResistance{ get{ return 5; } }

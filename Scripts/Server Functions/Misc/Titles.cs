@@ -10,13 +10,13 @@ namespace Server.Misc
 	{
 		public const int MinFame = 0;
 
-		public static void AwardFame( Mobile m, int offset, bool message )
+		public static void AwardFame( Mobile m, int offset, bool message, bool awardSoulForce = true )
 		{
 
 			if (m == null || !(m is PlayerMobile) )
 				return;
 
-			if (((PlayerMobile)m).SoulBound)
+			if (awardSoulForce && ((PlayerMobile)m).SoulBound)
 			{
 				if ( offset > 0 )
 				{
@@ -193,7 +193,8 @@ namespace Server.Misc
 					/*|| (player.SoulForce >= MyServerSettings.FameCap() && player.Fame < MyServerSettings.FameCap())*/)
 					return;
 
-					double percentage =  (((double)player.Fame + (double)offset) / (double)player.SoulForce) * 0.75 ;
+					// Handle edge case where player has 0 SF to avoid divide by zero error
+					double percentage = player.SoulForce > 0 ? (((double)player.Fame + (double)offset) / (double)player.SoulForce) * 0.75 : 1;
 					if (percentage >1) 
 						percentage = 1;
 					double lessen =  percentage * (double)offset;

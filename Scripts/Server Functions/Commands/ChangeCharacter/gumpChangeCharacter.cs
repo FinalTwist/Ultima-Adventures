@@ -49,7 +49,7 @@ namespace Server.Gumps
             this.AddLabel(417, 234, 0, @"Skillpoints");
             this.AddLabel(503, 234, 0, @"Map");
             this.AddLabel(566, 234, 0, @"Gold");
-            
+
             this.AddImage(385, 264, 3501);
             this.AddImage(385, 284, 3501);
             this.AddImage(385, 304, 3501);
@@ -67,7 +67,7 @@ namespace Server.Gumps
             this.AddLabel(566, 252, 52, ns.Account[0].TotalGold.ToString());
 
 
-            if (ns.Account.Count > 1) 
+            if (ns.Account.Count > 1)
             {
                 try
                 {
@@ -76,79 +76,77 @@ namespace Server.Gumps
                     this.AddLabel(360, 272, 52, strCharStatus(ns.Account[1].Alive));
                     this.AddLabel(417, 272, 52, ns.Account[1].SkillsTotal.ToString());
                     this.AddLabel(503, 272, 52, strCharRegion(ns, 1));
-                    this.AddLabel(566, 272, 52, ns.Account[1].TotalGold.ToString()); 
+                    this.AddLabel(566, 272, 52, ns.Account[1].TotalGold.ToString());
                 }
                 catch
                 {
                 }
             }
+
             try
             {
-            if (ns.Account.Count > 2)  
-            {
-                this.AddButton(199, 296, 2224, 2224, (int)Buttons.btnChar3, GumpButtonType.Reply, 0);
-                this.AddLabel(226, 292, 52, ns.Account[2].Name);
-                this.AddLabel(360, 292, 52, strCharStatus(ns.Account[2].Alive));
-                this.AddLabel(417, 292, 52, ns.Account[2].SkillsTotal.ToString());
-                this.AddLabel(503, 292, 52, strCharRegion(ns, 2));
-                this.AddLabel(566, 292, 52, ns.Account[2].TotalGold.ToString());
-            }
-                            }
-                catch
+                if (ns.Account.Count > 2)
                 {
+                    this.AddButton(199, 296, 2224, 2224, (int)Buttons.btnChar3, GumpButtonType.Reply, 0);
+                    this.AddLabel(226, 292, 52, ns.Account[2].Name);
+                    this.AddLabel(360, 292, 52, strCharStatus(ns.Account[2].Alive));
+                    this.AddLabel(417, 292, 52, ns.Account[2].SkillsTotal.ToString());
+                    this.AddLabel(503, 292, 52, strCharRegion(ns, 2));
+                    this.AddLabel(566, 292, 52, ns.Account[2].TotalGold.ToString());
                 }
-        try
-            {
-            if (ns.Account.Count > 3) 
-            {
-                this.AddButton(199, 316, 2224, 2224, (int)Buttons.btnChar4, GumpButtonType.Reply, 0);
-                this.AddLabel(226, 312, 52, ns.Account[3].Name);
-                this.AddLabel(360, 312, 52, strCharStatus(ns.Account[3].Alive));
-                this.AddLabel(417, 312, 52, ns.Account[3].SkillsTotal.ToString());
-                this.AddLabel(503, 312, 52, strCharRegion(ns, 3));
-                this.AddLabel(566, 312, 52, ns.Account[3].TotalGold.ToString()); 
             }
-                    }
-                catch
-                {
-                }
-        try
+            catch
             {
-            if (ns.Account.Count > 4) 
-            {
-                this.AddButton(199, 336, 2224, 2224, (int)Buttons.btnChar5, GumpButtonType.Reply, 0);
-                this.AddLabel(226, 332, 52, ns.Account[4].Name);
-                this.AddLabel(360, 332, 52, strCharStatus(ns.Account[3].Alive));
-                this.AddLabel(417, 332, 52, ns.Account[4].SkillsTotal.ToString());
-                this.AddLabel(503, 332, 52, strCharRegion(ns, 3));
-                this.AddLabel(566, 332, 52, ns.Account[4].TotalGold.ToString()); 
             }
-                }
-                catch
+
+            try
+            {
+                if (ns.Account.Count > 3)
                 {
+                    this.AddButton(199, 316, 2224, 2224, (int)Buttons.btnChar4, GumpButtonType.Reply, 0);
+                    this.AddLabel(226, 312, 52, ns.Account[3].Name);
+                    this.AddLabel(360, 312, 52, strCharStatus(ns.Account[3].Alive));
+                    this.AddLabel(417, 312, 52, ns.Account[3].SkillsTotal.ToString());
+                    this.AddLabel(503, 312, 52, strCharRegion(ns, 3));
+                    this.AddLabel(566, 312, 52, ns.Account[3].TotalGold.ToString());
                 }
-                try
-                        {
-                    
-                        if (ns.Account.Count > 5) 
-                                    {
-                                        this.AddButton(199, 356, 2224, 2224, (int)Buttons.btnChar6, GumpButtonType.Reply, 0);
-                                        this.AddLabel(226, 352, 52, ns.Account[5].Name);
-                                        this.AddLabel(360, 352, 52, strCharStatus(ns.Account[5].Alive));
-                                        this.AddLabel(417, 352, 52, ns.Account[5].SkillsTotal.ToString());
-                                        this.AddLabel(503, 352, 52, strCharRegion(ns, 5));
-                                        this.AddLabel(566, 352, 52, ns.Account[5].TotalGold.ToString());
-                                    }
-                        }
-                catch
-                        {
-                        }
+            }
+            catch
+            {
+            }
 
+            try
+            {
+                if (ns.Account.Count > 4)
+                {
+                    this.AddButton(199, 336, 2224, 2224, (int)Buttons.btnChar5, GumpButtonType.Reply, 0);
+                    this.AddLabel(226, 332, 52, ns.Account[4].Name);
+                    this.AddLabel(360, 332, 52, strCharStatus(ns.Account[3].Alive));
+                    this.AddLabel(417, 332, 52, ns.Account[4].SkillsTotal.ToString());
+                    this.AddLabel(503, 332, 52, strCharRegion(ns, 3));
+                    this.AddLabel(566, 332, 52, ns.Account[4].TotalGold.ToString());
+                }
+            }
+            catch
+            {
+            }
 
+            try
+            {
 
-
-
-
+                if (ns.Account.Count > 5)
+                {
+                    this.AddButton(199, 356, 2224, 2224, (int)Buttons.btnChar6, GumpButtonType.Reply, 0);
+                    this.AddLabel(226, 352, 52, ns.Account[5].Name);
+                    this.AddLabel(360, 352, 52, strCharStatus(ns.Account[5].Alive));
+                    this.AddLabel(417, 352, 52, ns.Account[5].SkillsTotal.ToString());
+                    this.AddLabel(503, 352, 52, strCharRegion(ns, 5));
+                    this.AddLabel(566, 352, 52, ns.Account[5].TotalGold.ToString());
+                }
+            }
+            catch
+            {
+            }
         }
 
         public enum Buttons
@@ -192,6 +190,9 @@ namespace Server.Gumps
 
         public void DoSwap(NetState ns, Mobile CharSelect)
         {
+            if (CharSelect == null)
+                return;
+
             Mobile from = ns.Mobile;
 
             from.CloseAllGumps();

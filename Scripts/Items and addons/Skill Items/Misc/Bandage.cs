@@ -80,8 +80,11 @@ namespace Server.Items
 			from.RevealingAction();
 
 			if ( BandageContext.BeginHeal( from, from ) != null )
+			{
 				m_Bandage.Consume();
 				Server.Gumps.QuickBar.RefreshQuickBar( from );
+				Server.Gumps.CombatBar.Refresh( from );
+			}
 		}
 
 		// This method added for [bandother command to call.
@@ -153,6 +156,7 @@ namespace Server.Items
 						{
 							m_Bandage.Consume();
 							Server.Gumps.QuickBar.RefreshQuickBar( from );
+							Server.Gumps.CombatBar.Refresh( from );
 						}
 					}
 					else
@@ -553,6 +557,11 @@ namespace Server.Items
 */
 				m_Healer.CheckSkill( secondarySkill, 0.0, 120.0 );
 				m_Healer.CheckSkill( primarySkill, 0.0, 120.0 );
+
+				if (m_Patient is PlayerMobile)
+					BuffInfo.RemoveBuff(m_Healer, BuffIcon.Healing);
+				else
+					BuffInfo.RemoveBuff(m_Healer, BuffIcon.Veterinary);
 			}
 		}
 
@@ -669,7 +678,14 @@ namespace Server.Items
 
 				seconds *= 1000;
 				
-				context = new BandageContext( healer, patient, TimeSpan.FromMilliseconds( seconds ) );
+				TimeSpan delay = TimeSpan.FromMilliseconds( seconds );
+
+                if (patient is PlayerMobile)
+                    BuffInfo.AddBuff( healer, new BuffInfo(BuffIcon.Healing, 1002082, 1070722, delay, healer, String.Format("{0}", patient.Name)) );
+                else
+                    BuffInfo.AddBuff( healer, new BuffInfo(BuffIcon.Veterinary, 1002167, 1070722, delay, healer, String.Format("{0}", patient.Name)) );
+
+				context = new BandageContext( healer, patient, delay );
 
 				m_Table[healer] = context;
 

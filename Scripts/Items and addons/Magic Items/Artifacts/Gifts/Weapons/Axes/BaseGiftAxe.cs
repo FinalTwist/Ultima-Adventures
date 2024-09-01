@@ -6,10 +6,11 @@ using Server.ContextMenus;
 using System.Collections;
 using System.Collections.Generic;
 using Server.Gumps;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    public abstract class BaseGiftAxe : BaseAxe, IGiftable
+    public abstract class BaseGiftAxe : BaseAxe, IGiftable, IBlacksmithRepairable
     {
         public Mobile m_Owner;
         public string m_Gifter;

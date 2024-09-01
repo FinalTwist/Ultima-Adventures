@@ -70,15 +70,8 @@ namespace Server.Spells.Chivalry
 					t.Stop();
 
 				weapon.Consecrated = true;
-				
-				double delay = (double)ComputePowerValue( 1 ) / 60;
-				
-				if ( delay < 0.1 )
-					delay = 0.1;
-				else if ( delay > 0.2 )
-					delay = 0.2;
 
-				BuffInfo.AddBuff ( Caster, new BuffInfo ( BuffIcon.ConsecrateWeapon, 1060587, 1151386, TimeSpan.FromMinutes ( delay ), Caster ) );
+				BuffInfo.AddBuff ( Caster, new BuffInfo ( BuffIcon.ConsecrateWeapon, 1060587, 1151386, duration, Caster ) );
 
 				m_Table[weapon] = t = new ExpireTimer( weapon, duration );
 

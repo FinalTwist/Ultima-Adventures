@@ -1,13 +1,14 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 using Server.Items;
 using AMA = Server.Items.ArmorMeditationAllowance;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x13f0, 0x13f1 )]
-	public class PhoenixLegs : BaseArmor
-	{
+	public class PhoenixLegs : BaseArmor, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 13; } }
 		public override int BaseFireResistance{ get{ return 11; } }
 		public override int BaseColdResistance{ get{ return 12; } }

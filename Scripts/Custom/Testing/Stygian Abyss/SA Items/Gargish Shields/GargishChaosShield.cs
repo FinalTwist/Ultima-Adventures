@@ -1,13 +1,14 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 using Server.Guilds;
 
 namespace Server.Items
 {
 	// Based off a ChaosShield
 	[FlipableAttribute( 0x4228, 0x4229 )]
-	public class GargishChaosShield : BaseShield
-	{
+	public class GargishChaosShield : BaseShield, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 1; } }
 		public override int BaseFireResistance{ get{ return 0; } }
 		public override int BaseColdResistance{ get{ return 0; } }

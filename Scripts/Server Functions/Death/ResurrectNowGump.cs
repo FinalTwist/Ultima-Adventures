@@ -166,6 +166,7 @@ namespace Server.Gumps
             {
                 case ButtonType.Accept:
 					if (from.Alive) return;
+					if (!CanAutoResurrect(from)) return;
 
                     from.PlaySound(0x214);
                     from.FixedEffect(0x376A, 10, 16);
@@ -194,13 +195,22 @@ namespace Server.Gumps
 			}
         }
 
+		private static bool CanAutoResurrect(PlayerMobile mobile) 
+		{
+			if (mobile.Alive) return false;
+			
+			return mobile.LastAutoRes == null || mobile.LastAutoRes.AddMinutes(60) <= DateTime.UtcNow;
+		}
+
         public static void TryShowAutoResurrectGump(PlayerMobile mobile)
         {
 			if (mobile == null || mobile.SoulBound || mobile.Alive) return;
+			if (!CanAutoResurrect(mobile)) return;
 
             Timer.DelayCall(TimeSpan.FromSeconds(30), (m) =>
             {
 				if (m == null || m.SoulBound || m.Alive) return;
+				if (!CanAutoResurrect(m)) return;
 
                 m.CloseGump(typeof(ResurrectNowGump));
                 m.SendGump(new ResurrectNowGump(m));

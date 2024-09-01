@@ -9,14 +9,6 @@ namespace Server.Engines.BulkOrders
 {
 	public class LargeTailorBOD : LargeBOD
 	{
-		public static double[] m_TailoringMaterialChances = new double[]
-			{
-				0.857421875, // None
-				0.125000000, // Spined
-				0.015625000, // Horned
-				0.001953125  // Barbed
-			};
-
 		public override int ComputeFame()
 		{
 			return TailorRewardCalculator.Instance.ComputeFame( this );
@@ -27,30 +19,49 @@ namespace Server.Engines.BulkOrders
 			return TailorRewardCalculator.Instance.ComputeGold( this );
 		}
 
-		[Constructable]
-		public LargeTailorBOD()
+        [Constructable]
+        public LargeTailorBOD() : this(false)
+        {
+        }
+
+        [Constructable]
+        public LargeTailorBOD(bool useMaterials = false)
 		{
 			LargeBulkEntry[] entries;
-			bool useMaterials = false;
 
-			switch ( Utility.Random( 14 ) )
-			{
-				default:
-				case  0: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.Farmer );  break;
-				case  1: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.FemaleLeatherSet ); useMaterials = true; break;
-				case  2: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.FisherGirl ); break;
-				case  3: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.Gypsy );  break;
-				case  4: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.HatSet ); break;
-				case  5: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.Jester ); break;
-				case  6: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.Lady );  break;
-				case  7: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.MaleLeatherSet ); useMaterials = true; break;
-				case  8: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.Pirate ); break;
-				case  9: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.ShoeSet ); useMaterials = Core.ML; break;
-				case 10: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.StuddedSet ); useMaterials = true; break;
-				case 11: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.TownCrier ); break;
-				case 12: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.Wizard );  break;
-				case 13: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.BoneSet ); useMaterials = true; break;
+			if (!useMaterials)
+            {
+                switch (Utility.Random(14))
+                {
+                    default:
+                    case 0: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.Farmer); break;
+                    case 1: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.FemaleLeatherSet); break;
+                    case 2: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.FisherGirl); break;
+                    case 3: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.Gypsy); break;
+                    case 4: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.HatSet); break;
+                    case 5: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.Jester); break;
+                    case 6: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.Lady); break;
+                    case 7: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.MaleLeatherSet); break;
+                    case 8: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.Pirate); break;
+                    case 9: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.ShoeSet); break;
+                    case 10: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.StuddedSet); break;
+                    case 11: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.TownCrier); break;
+                    case 12: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.Wizard); break;
+                    case 13: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.BoneSet); break;
+                }
 			}
+			else
+			{
+                switch (Utility.Random(5))
+                {
+					default:
+                    case 0: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.FemaleLeatherSet); break;
+                    case 1: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.MaleLeatherSet); break;
+                    case 2: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.ShoeSet); break;
+                    case 3: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.StuddedSet); break;
+                    case 4: entries = LargeBulkEntry.ConvertEntries(this, LargeBulkEntry.BoneSet); break;
+                }
+            }
 
 			int hue = 0x483;
 			int amountMax = Utility.RandomList( 10, 15, 20, 20 );
@@ -59,7 +70,7 @@ namespace Server.Engines.BulkOrders
 			BulkMaterialType material;
 
 			if ( useMaterials )
-				material = GetRandomMaterial( BulkMaterialType.Spined, m_TailoringMaterialChances );
+				material = GetRandomMaterial( BulkMaterialType.Horned, BulkMaterialType.Alien );
 			else
 				material = BulkMaterialType.None;
 
@@ -122,7 +133,7 @@ namespace Server.Engines.BulkOrders
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 0 ); // version
+			writer.Write( (int) 1 ); // version
 		}
 
 		public override void Deserialize( GenericReader reader )
@@ -130,6 +141,18 @@ namespace Server.Engines.BulkOrders
 			base.Deserialize( reader );
 
 			int version = reader.ReadInt();
+			switch(version)
+			{
+				case 1:
+					break;
+
+				case 0:
+					if (Material != BulkMaterialType.None)
+					{
+                        Material += 7; // The number of Metals added ahead of it in the Enum
+                    }
+                    break;
+			}
 		}
 	}
 }

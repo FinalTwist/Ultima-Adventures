@@ -1,10 +1,11 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public class DoubleLaserSword : BaseSword
+	public class DoubleLaserSword : BaseSword, ITinkerRepairable
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.ArmorIgnore; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.DoubleStrike; } }

@@ -1587,12 +1587,16 @@ namespace Server
 				{
 					m_Hunger = value;
 
-					EventSink.InvokeHungerChanged( new HungerChangedEventArgs( this, oldValue ) );
+					OnHungerChange(oldValue);
 				}
 			}
-		}
+        }
 
-		[CommandProperty( AccessLevel.GameMaster )]
+        public virtual void OnHungerChange(int oldValue)
+        {
+        }
+
+        [CommandProperty( AccessLevel.GameMaster )]
 		public int Thirst
 		{
 			get
@@ -1600,12 +1604,22 @@ namespace Server
 				return m_Thirst;
 			}
 			set
-			{
-				m_Thirst = value;
-			}
-		}
+            {
+                int oldValue = m_Thirst;
 
-		[CommandProperty( AccessLevel.GameMaster )]
+                if (oldValue != value)
+                {
+                    m_Thirst = value;
+					OnThirstChange(oldValue);
+                }
+            }
+        }
+
+        public virtual void OnThirstChange(int oldValue)
+        {
+        }
+
+        [CommandProperty( AccessLevel.GameMaster )]
 		public int BAC
 		{
 			get
@@ -2549,14 +2563,20 @@ namespace Server
 			{
 				if( m_TithingPoints != value )
 				{
-					m_TithingPoints = value;
+					int oldValue = m_TithingPoints;
+                    m_TithingPoints = value;
 
 					Delta( MobileDelta.TithingPoints );
-				}
+					OnTithingPointsChange(oldValue);
+                }
 			}
 		}
 
-		[CommandProperty( AccessLevel.GameMaster )]
+        public virtual void OnTithingPointsChange(int oldValue)
+        {
+        }
+
+        [CommandProperty( AccessLevel.GameMaster )]
 		public int Followers
 		{
 			get
@@ -5214,6 +5234,11 @@ namespace Server
 		{
 			if( !CanBeDamaged() || m_Deleted )
 				return;
+
+            if (Core.DisablePlayerVsPlayer 
+				&& this != from && Player 
+				&& from != null && from.Player)
+                return;
 
 			if( !this.Region.OnDamage( this, ref amount ) )
 				return;
@@ -10562,15 +10587,43 @@ namespace Server
 			_processing = true;
 
 			if (m_DeltaQueue.Count >= 512) {
-				Parallel.ForEach(m_DeltaQueue, m => m.ProcessDelta());
+				Parallel.ForEach(m_DeltaQueue, mobile => {
+					if (mobile == null)
+					{
+						Console.WriteLine("Attempted to BATCH process delta for NULL mobile.");
+                        return;
+                    }
+
+                    mobile.ProcessDelta();
+				});
 				m_DeltaQueue.Clear();
 			} else {
-				while (m_DeltaQueue.Count > 0) m_DeltaQueue.Dequeue().ProcessDelta();
+				while (m_DeltaQueue.Count > 0)
+				{
+					var mobile = m_DeltaQueue.Dequeue();
+					if (mobile == null)
+					{
+						Console.WriteLine("Attempted to process delta for NULL mobile.");
+						continue;
+					}
+
+					mobile.ProcessDelta();
+				}
 		    }
 
 			_processing = false;
 
-			while (m_DeltaQueueR.Count > 0) m_DeltaQueueR.Dequeue().ProcessDelta();
+			while (m_DeltaQueueR.Count > 0)
+			{
+				var mobile = m_DeltaQueueR.Dequeue();
+				if (mobile == null)
+				{
+					Console.WriteLine("Attempted to process delta for NULL mobile (R).");
+					continue;
+				}
+
+				mobile.ProcessDelta();
+			}
 		}
 
 		[CommandProperty( AccessLevel.Counselor, AccessLevel.GameMaster )]

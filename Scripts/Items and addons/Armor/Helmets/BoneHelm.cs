@@ -1,11 +1,12 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x1451, 0x1456 )]
-	public class BoneHelm : BaseArmor
-	{
+	public class BoneHelm : BaseArmor, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 3; } }
 		public override int BaseFireResistance{ get{ return 3; } }
 		public override int BaseColdResistance{ get{ return 4; } }
@@ -20,7 +21,8 @@ namespace Server.Items
 
 		public override int ArmorBase{ get{ return 30; } }
 
-		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Plate; } }
+		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Bone; } }
+		public override CraftResource DefaultResource{ get{ return CraftResource.RegularLeather; } }
 
 		[Constructable]
 		public BoneHelm() : base( 0x1451 )

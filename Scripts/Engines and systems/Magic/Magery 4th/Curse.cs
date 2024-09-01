@@ -4,6 +4,7 @@ using Server.Targeting;
 using Server.Network;
 using Server.Mobiles;
 using Server.Items;
+using Server.Multis;
 
 namespace Server.Spells.Fourth
 {
@@ -30,38 +31,58 @@ namespace Server.Spells.Fourth
 		}
 
 		private static Hashtable m_UnderEffect = new Hashtable();
-		public static ArrayList Cursed = new ArrayList();
 
 		public static void RemoveEffect( object state )
 		{
 			Mobile m = (Mobile)state;
-			
-			if (m_UnderEffect.Contains( m ))
-				m_UnderEffect.Remove( m );
-				
-			if (Cursed.Contains(m))
-				Cursed.Remove(m);
+
+			m_UnderEffect.Remove( m );
 
 			m.UpdateResistances();
 		}
 
 		public static bool UnderEffect( Mobile m )
 		{
-			bool no = false;
-			if (Cursed.Contains(m)) // removed m_UnderEffect.Contains( m ) || 
-				no = true;
-			return no;
+			return m_UnderEffect.Contains( m );
 		}
+
+		public static void ApplyCurse(Mobile caster, Mobile target, int spellHue, int soundID)
+		{
+            SpellHelper.AddStatCurse(caster, target, StatType.Str); SpellHelper.DisableSkillCheck = true;
+            SpellHelper.AddStatCurse(caster, target, StatType.Dex);
+            SpellHelper.AddStatCurse(caster, target, StatType.Int); SpellHelper.DisableSkillCheck = false;
+
+            // Cancel the previous timer if it exists
+            Timer t = (Timer)m_UnderEffect[target];
+            if (t != null && t.Running)
+            {
+                t.Stop();
+            }
+
+            TimeSpan duration = SpellHelper.GetDuration(caster, target);
+
+            m_UnderEffect[target] = Timer.DelayCall(duration, new TimerStateCallback(RemoveEffect), target);
+            target.UpdateResistances();
+
+            if (target.Spell != null)
+                target.Spell.OnCasterHurt();
+
+            target.Paralyzed = false;
+
+            target.FixedParticles(0x374A, 10, 15, 5028, spellHue, 0, EffectLayer.Waist);
+            target.PlaySound(soundID);
+
+            int percentage = (int)(SpellHelper.GetOffsetScalar(caster, target, true) * 100);
+            TimeSpan length = SpellHelper.GetDuration(caster, target);
+
+            string args = String.Format("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}", percentage, percentage, percentage, 10, 10, 10, 10);
+
+            BuffInfo.AddBuff(target, new BuffInfo(BuffIcon.Curse, 1075835, 1075836, length, target, args.ToString()));
+        }
 
 		public void Target( Mobile m )
 		{
-			// cant get cursed when wearing those
-			if (m is PlayerMobile && ((PlayerMobile)m).Sorcerer())
-			{
-					Item pants = ((PlayerMobile)m).FindItemOnLayer( Layer.OuterLegs );
-					if (pants != null && pants is SkirtOfPower)
-						return;
-			}
+			if (SkirtOfPower.TryBlockCurse(m)) return;
 
 			if ( !Caster.CanSee( m ) )
 			{
@@ -73,38 +94,9 @@ namespace Server.Spells.Fourth
 
 				SpellHelper.CheckReflect( (int)this.Circle, Caster, ref m );
 
-				SpellHelper.AddStatCurse( Caster, m, StatType.Str ); SpellHelper.DisableSkillCheck = true;
-				SpellHelper.AddStatCurse( Caster, m, StatType.Dex );
-				SpellHelper.AddStatCurse( Caster, m, StatType.Int ); SpellHelper.DisableSkillCheck = false;
+				ApplyCurse(Caster, m, Server.Items.CharacterDatabase.GetMySpellHue(Caster, 0), 0x1E1);
 
-				Timer t = (Timer)m_UnderEffect[m];
-
-				if ( Caster.Player && m.Player /*&& Caster != m */ && t == null )	//On OSI you CAN curse yourself and get this effect.
-				{
-					TimeSpan duration = SpellHelper.GetDuration( Caster, m );
-					m_UnderEffect[m] = t = Timer.DelayCall( duration, new TimerStateCallback( RemoveEffect ), m );
-				}
-
-				if ( m.Spell != null )
-					m.Spell.OnCasterHurt();
-
-				m.Paralyzed = false;
-
-				Cursed.Add(m);
-
-				m.FixedParticles( 0x374A, 10, 15, 5028, Server.Items.CharacterDatabase.GetMySpellHue( Caster, 0 ), 0, EffectLayer.Waist );
-				m.PlaySound( 0x1E1 );
-
-				m.UpdateResistances();
-
-				int percentage = (int)(SpellHelper.GetOffsetScalar(Caster, m, true) * 100);
-				TimeSpan length = SpellHelper.GetDuration(Caster, m);
-
-				string args = String.Format("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}", percentage, percentage, percentage, 10, 10, 10, 10);
-
-				BuffInfo.AddBuff( m, new BuffInfo( BuffIcon.Curse, 1075835, 1075836, length, m, args.ToString() ) );
-
-				HarmfulSpell( m );
+                HarmfulSpell( m );
 			}
 
 			FinishSequence();

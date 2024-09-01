@@ -10,11 +10,12 @@ namespace Server.Gumps
 {
     public class SarcoNameGump : Gump
     {
+        const string DEFAULT_NAME = "Type here...";
         private Item m_gate;
 
         public SarcoNameGump(Mobile from, Item gate) : base(100, 100)
         {
-            Closable = false;
+            Closable = true;
             Disposable = false;
             Dragable = true;
             Resizable = false;
@@ -22,12 +23,12 @@ namespace Server.Gumps
 
             AddPage(0);
 
-            AddHtml(153, 135, 304, 113, @"Enter a name for this sarcophagus below.", (bool)true, (bool)false);
             AddBackground(137, 119, 334, 195, 9250);
             AddBackground(221, 264, 171, 29, 3000);
+            AddHtml(153, 135, 304, 113, @"Enter a name for this sarcophagus below.", (bool)true, (bool)false);
 
             AddLabel(153, 270, 0, @"New Name:");
-            AddTextEntry(224, 268, 163, 21, 0, 1, @"Type here...", 16); // 16 Character Limit
+            AddTextEntry(224, 268, 163, 21, 0, 1, DEFAULT_NAME, 16); // 16 Character Limit
             AddButton(395, 267, 4023, 4024, 1, GumpButtonType.Reply, 0); // Okay
         }
 
@@ -39,6 +40,8 @@ namespace Server.Gumps
 
         public override void OnResponse(NetState sender, RelayInfo info)
         {
+            if (info.ButtonID == 0) return;
+
             Mobile from = sender.Mobile;
             if (from == null || m_gate == null)
             {
@@ -46,25 +49,16 @@ namespace Server.Gumps
             }
 
             string name = GetString(info, 1);
-            if (name != null)
+            name = name != null ? name.Trim() : null;
+            if (!string.IsNullOrWhiteSpace(name) && name != DEFAULT_NAME)
             {
-                name = name.Trim();
+                from.SendMessage(0X22, "The sarcophagus is now called {0}.", name);
+                m_gate.Name = name;
+                return;
             }
             else
             {
-                from.SendMessage(0X22, "You must enter a name.");
-                from.SendGump(new SarcoNameGump(from, m_gate));
-            }
-
-            if (name != "")
-            {
-                    from.SendMessage(0X22, "The sarcophagus is now called {0}.", name);
-                    m_gate.Name = name;
-                    return;
-            }
-            else
-            {
-                from.SendMessage(0X22, "You must enter a name.");
+                from.SendMessage(0X22, "You may enter a name.");
             }
 
             from.SendGump(new SarcoNameGump(from, m_gate));

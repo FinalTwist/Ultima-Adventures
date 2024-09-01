@@ -113,7 +113,7 @@ namespace Server.Items
 					from.CheckSkill( SkillName.Poisoning, 95, 115 );
 				}
 
-				this.Consume();
+				this.Consume(from);
 			}
 		}
 
@@ -169,8 +169,8 @@ namespace Server.Items
 				if ( nThrown > 0 )
 				{
 					from.RevealingAction();
-					m_Potion.Consume();
-					from.AddToBackpack( new Bottle() );
+					m_Potion.Consume(from);
+
 					Misc.Titles.AwardKarma( from, -40, true );
 				}
 			}

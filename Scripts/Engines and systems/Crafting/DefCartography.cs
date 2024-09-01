@@ -82,14 +82,19 @@ namespace Server.Engines.Craft
 			// Blank Scrolls
 			int index;
 			index = AddCraft( typeof( BlankScroll ), 1044294, 1044377, 40.0, 70.0, typeof( BarkFragment ), 1073477, 1, 1073478 );
+			
+			// Batch begin
+			index = AddCraft( typeof( BlankScroll ), 1044294, "batch of blank scrolls", 40.0, 70.0, typeof( BarkFragment ), 1073477, 1, 1073478 );
 			SetUseAllRes( index, true );
-
+			
 			// WIZARD CHANGED IT BECAUSE THERE ARE NO TOWNS...REALLY
-			AddCraft( typeof( LocalMap ), 1044448, "small map", 10.0, 70.0, typeof( BlankMap ), 1044449, 1, 1044450 );
-			AddCraft( typeof(  CityMap ), 1044448, "large map", 25.0, 85.0, typeof( BlankMap ), 1044449, 1, 1044450 );
-			AddCraft( typeof( SeaChart ), 1044448, "sea chart", 35.0, 95.0, typeof( BlankMap ), 1044449, 1, 1044450 );
-			AddCraft( typeof( WorldMap ), 1044448, "huge map", 39.5, 99.5, typeof( BlankMap ), 1044449, 1, 1044450 );
+			AddCraft( typeof( BlankMap ), 1044448, "blank map", 00.0, 40.0, typeof( BlankScroll ), 1044377, 1, 1044378 );
+			AddCraft( typeof( LocalMap ), 1044448, "small map", 30.0, 70.0, typeof( BlankMap ), 1044449, 1, 1044450 );
+			AddCraft( typeof(  CityMap ), 1044448, "large map", 60.0, 90.0, typeof( BlankMap ), 1044449, 1, 1044450 );
+			AddCraft( typeof( SeaChart ), 1044448, "sea chart", 65.0, 95.0, typeof( BlankMap ), 1044449, 1, 1044450 );
+			AddCraft( typeof( WorldMap ), 1044448, "huge map", 80.0, 99.5, typeof( BlankMap ), 1044449, 1, 1044450 );
 			AddCraft( typeof( MapWorld ), 1044448, "world map", 89.5, 110.5, typeof( BlankMap ), 1044449, 1, 1044450 );
+
 		}
 	}
 }

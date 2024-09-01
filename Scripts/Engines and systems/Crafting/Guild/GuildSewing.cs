@@ -125,7 +125,7 @@ namespace Server.Items
 					GuildCraftingProcess process = new GuildCraftingProcess(from, (Item)obj);
 					process.BeginProcess();
 				}
-				else if ( item is BaseWeapon && ( item is ThrowingGloves || item is PugilistGlove || item is PugilistGloves || item is PugilistMits ) )
+				else if ( item is BaseWeapon && ( item is IThrowingGloves || item is IPugilistGloves ) )
 				{
 					GuildCraftingProcess process = new GuildCraftingProcess(from, (Item)obj);
 					process.BeginProcess();

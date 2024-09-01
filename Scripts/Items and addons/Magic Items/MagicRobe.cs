@@ -1,10 +1,11 @@
 using System;
 using Server;
 using Server.Misc;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public class MagicRobe : GoldRing
+	public class MagicRobe : GoldRing, IClothingStub, ITailorRepairable
 	{
 		[Constructable]
 		public MagicRobe()

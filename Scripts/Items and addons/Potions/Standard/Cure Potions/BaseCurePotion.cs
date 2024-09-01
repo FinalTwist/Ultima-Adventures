@@ -97,7 +97,7 @@ namespace Server.Items
 				from.FixedParticles( 0x373A, 10, 15, 5012, EffectLayer.Waist );
 				from.PlaySound( 0x1E0 );
 
-				this.Consume();
+				this.Consume(from);
 			}
 			else
 			{

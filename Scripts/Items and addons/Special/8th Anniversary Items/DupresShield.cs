@@ -1,9 +1,10 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public class DupresShield : BaseShield, ITokunoDyable
+	public class DupresShield : BaseShield, ITokunoDyable, IBlacksmithRepairable
 	{
 		public override int LabelNumber { get { return 1075196; } } // Dupre’s Shield
 

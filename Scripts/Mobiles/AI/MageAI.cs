@@ -1780,7 +1780,7 @@ namespace Server.Mobiles
 			{
 				toTarget = m_Mobile.Combatant;
 				
-				if (SmartAI && toTarget.Map != null && !toTarget.Deleted)
+				if (SmartAI && toTarget != null && toTarget.Map != null && !toTarget.Deleted)
 				{
 					//check if its a bunch of tames coming our way and are over 4 tiles away
 					if ( m_Mobile.GetDistanceToSqrt( toTarget ) > 4 ) 

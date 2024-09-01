@@ -4,6 +4,7 @@ using Server.Mobiles;
 using Server.Misc;
 using System.Globalization;
 using Server.Network;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
@@ -21,7 +22,7 @@ namespace Server.Items
 		Diamond
 	}
 
-	public abstract class BaseJewel : Item, ICraftable
+	public abstract class BaseJewel : Item, ICraftable, ITinkerRepairable
 	{
 		private int m_MaxHitPoints;
 		private int m_HitPoints;
@@ -402,6 +403,8 @@ namespace Server.Items
 
 			if ( m_HitPoints >= 0 && m_MaxHitPoints > 0 )
 				list.Add( 1060639, "{0}\t{1}", m_HitPoints, m_MaxHitPoints ); // durability ~1_val~ / ~2_val~
+
+			if (this is IClothingStub) list.Add("this item is considered clothing");
 		}
 
 		#region [Item Name Color]

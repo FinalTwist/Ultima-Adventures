@@ -17,7 +17,7 @@ namespace Server.Items
         {
             Locked = true;
             LockLevel = 10;
-		Name = "Delapitated Lockpicking Chest";
+		Name = "Dilapidated Lockpicking Chest";
             RequiredSkill = 10;
             Weight = 4.0;
 

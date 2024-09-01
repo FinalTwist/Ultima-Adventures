@@ -206,21 +206,14 @@ namespace Server.Items
 
 		public virtual void StartTeleport( Mobile m )
 		{
-			
-			
-			if ( Worlds.RegionAllowedTeleport( m_MapDest, m_PointDest, m_PointDest.X, m_PointDest.Y ) == false  )
+			if ( Worlds.RegionAllowedTeleport( m_MapDest, m_PointDest, m_PointDest.X, m_PointDest.Y ) == false 
+				|| Map != m_MapDest 
+				|| m.GetDistanceToSqrt(m_PointDest) > 100 )
 			{
 				m.SendMessage( "The destination seems magically unreachable." );
 			}
 			else if ( m_Delay == TimeSpan.Zero )
 			{
-				BaseHouse house = BaseHouse.FindHouseAt(this);
-				BaseHouse housedest = BaseHouse.FindHouseAt( m_PointDest, m_MapDest, m_PointDest.Z);
-
-				if ( ((PlayerMobile)m).Avatar && house != housedest )
-				{
-					AetherGlobe.ApplyCurse( m, this.Map, m_MapDest, 1 );
-				}
 				DoTeleport( m );
 			}
 			else

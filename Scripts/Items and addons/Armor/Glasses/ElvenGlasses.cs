@@ -1,9 +1,10 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public class ElvenGlasses : BaseArmor
+	public class ElvenGlasses : BaseArmor, ITinkerRepairable
 	{
 		public override int LabelNumber{ get{ return 1032216; } } //elven glasses
 

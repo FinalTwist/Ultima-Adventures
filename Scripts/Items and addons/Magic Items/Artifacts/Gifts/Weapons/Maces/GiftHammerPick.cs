@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x143D, 0x143C )]
-    public class GiftHammerPick : BaseGiftBashing
-	{
+    public class GiftHammerPick : BaseGiftBashing, IBlacksmithRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.ArmorIgnore; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.MortalStrike; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.SpinAttack; } }

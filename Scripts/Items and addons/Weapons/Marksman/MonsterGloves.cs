@@ -1,12 +1,13 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 using Server.Network;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x13C6, 0x13CE )]
-	public class MonsterGloves : BaseRanged
-	{
+	public class MonsterGloves : BaseRanged, ITailorRepairable
+    {
 		public string ThrowType;
 
 		public override int EffectID

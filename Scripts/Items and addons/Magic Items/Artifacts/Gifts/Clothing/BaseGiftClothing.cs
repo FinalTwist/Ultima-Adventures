@@ -6,17 +6,18 @@ using Server.ContextMenus;
 using System.Collections;
 using System.Collections.Generic;
 using Server.Gumps;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    public abstract class BaseGiftClothing : BaseClothing, IGiftable
+    public abstract class BaseGiftClothing : BaseClothing, IGiftable, ITailorRepairable
     {
         public Mobile m_Owner;
         public string m_Gifter;
         public string m_How;
         public int m_Points;
 
-		public BaseGiftClothing( int itemID, Layer layer ) : this( itemID, layer, 0 )
+        public BaseGiftClothing( int itemID, Layer layer ) : this( itemID, layer, 0 )
 		{
 		}
 

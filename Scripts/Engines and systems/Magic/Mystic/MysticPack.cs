@@ -25,34 +25,41 @@ namespace Server.Items
 			if ( owner != null ){ list.Add( 1070722, "Belongs to " + owner.Name + "" ); }
         }
 
-		public override void OnDoubleClick( Mobile from )
+        public override bool CanAdd( Mobile from, Item item )
 		{
 			if ( owner == from && from.Skills[SkillName.Wrestling].Value >= 100 && Server.Misc.GetPlayerInfo.isMonk( from ) )
-				Open( from );
-			else
-                from.SendMessage("You cannot seem to open the rucksack.");
+			{
+				return true;
+			}
+
+			return false;
+		}
+
+		public override void OnDoubleClick( Mobile from )
+		{
+			if (CanAdd(from, null))
+			{
+                Open(from);
+				return;
+            }
+
+            from.SendMessage("You cannot seem to open the rucksack.");
 		}
 
 		public override bool OnDragDropInto( Mobile from, Item dropped, Point3D p )
         {
-			if ( owner == from && from.Skills[SkillName.Wrestling].Value >= 100 && Server.Misc.GetPlayerInfo.isMonk( from ) )
-			{
-				return base.OnDragDropInto(from, dropped, p);
-			}
+			if (CanAdd(from, dropped)) return base.OnDragDropInto(from, dropped, p);
 
-                from.SendMessage("You cannot seem to open the rucksack.");
-                return false;
-            }
+			from.SendMessage("You cannot seem to open the rucksack.");
+			return false;
+		}
 
 		public override bool OnDragDrop( Mobile from, Item dropped )
         {
-			if ( owner == from && from.Skills[SkillName.Wrestling].Value >= 100 && Server.Misc.GetPlayerInfo.isMonk( from ) )
-			{
-				return base.OnDragDrop(from, dropped);
-			}
+			if (CanAdd(from, dropped)) return base.OnDragDrop(from, dropped);
 
-                from.SendMessage("You cannot seem to open the rucksack.");
-                return false;
+			from.SendMessage("You cannot seem to open the rucksack.");
+			return false;
         }
 
 		public MysticPack( Serial serial ) : base( serial )

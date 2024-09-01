@@ -1,12 +1,17 @@
 using System;
 using Server.Items;
 using Server.Network;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	[FlipableAttribute( 0x13C6, 0x13CE )]
-	public class ThrowingGloves : BaseRanged
+	public interface IThrowingGloves
 	{
+	}
+
+	[FlipableAttribute( 0x13C6, 0x13CE )]
+	public class ThrowingGloves : BaseRanged, ITailorRepairable, IThrowingGloves
+    {
 		public string GloveType;
 		
 		[CommandProperty(AccessLevel.Owner)]

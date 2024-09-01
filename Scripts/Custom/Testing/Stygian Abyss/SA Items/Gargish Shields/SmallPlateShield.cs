@@ -1,12 +1,13 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	// Based off a BronzeShield
 	[FlipableAttribute( 0x4202, 0x420A )]
-	public class SmallPlateShield : BaseShield
-	{
+	public class SmallPlateShield : BaseShield, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 0; } }
 		public override int BaseFireResistance{ get{ return 0; } }
 		public override int BaseColdResistance{ get{ return 1; } }

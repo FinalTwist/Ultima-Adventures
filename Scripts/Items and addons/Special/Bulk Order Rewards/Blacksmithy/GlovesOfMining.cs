@@ -1,10 +1,11 @@
+using Server.Engines.Craft;
 using System;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x13c6, 0x13ce )]
-	public class LeatherGlovesOfMining : BaseGlovesOfMining
-	{
+	public class LeatherGlovesOfMining : BaseGlovesOfMining, ITailorRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 2; } }
 		public override int BaseFireResistance{ get{ return 4; } }
 		public override int BaseColdResistance{ get{ return 3; } }
@@ -50,7 +51,7 @@ namespace Server.Items
 	}
 
 	[FlipableAttribute( 0x13d5, 0x13dd )]
-	public class StuddedGlovesOfMining : BaseGlovesOfMining
+	public class StuddedGlovesOfMining : BaseGlovesOfMining, ITailorRepairable
 	{
 		public override int BasePhysicalResistance{ get{ return 2; } }
 		public override int BaseFireResistance{ get{ return 4; } }
@@ -95,8 +96,8 @@ namespace Server.Items
 	}
 
 	[FlipableAttribute( 0x13eb, 0x13f2 )]
-	public class RingmailGlovesOfMining : BaseGlovesOfMining
-	{
+	public class RingmailGlovesOfMining : BaseGlovesOfMining, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 3; } }
 		public override int BaseFireResistance{ get{ return 3; } }
 		public override int BaseColdResistance{ get{ return 1; } }
@@ -141,7 +142,7 @@ namespace Server.Items
 	}
 
 	public abstract class BaseGlovesOfMining : BaseArmor
-	{
+    {
 		private int m_Bonus;
 		private SkillMod m_SkillMod;
 

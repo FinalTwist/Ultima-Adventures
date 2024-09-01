@@ -68,6 +68,8 @@ namespace Server
 
 		public static Slice Slice;
 
+        public static bool DisablePlayerVsPlayer { get { return true; } }
+
 		public static bool Profiling
 		{
 			get { return m_Profiling; }

@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x1439, 0x1438 )]
-	public class GiftWarHammer : BaseGiftBashing
-	{
+	public class GiftWarHammer : BaseGiftBashing, IBlacksmithRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.WhirlwindAttack; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.CrushingBlow; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.ZapIntStrike; } }

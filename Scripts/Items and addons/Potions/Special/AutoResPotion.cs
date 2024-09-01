@@ -12,8 +12,10 @@ namespace Server.Items
     public class AutoResPotion : Item
     {
         private static Dictionary<Mobile, AutoResPotion> m_ResList;
+        private static readonly object _lock = new object();
 
         private int m_Charges;
+        private Mobile m_Consumer;
 
         [CommandProperty(AccessLevel.GameMaster)]
         public int Charges
@@ -57,13 +59,23 @@ namespace Server.Items
                 return;
 
             if (m_ResList == null)
-                m_ResList = new Dictionary<Mobile, AutoResPotion>();
+            {
+                lock(_lock) 
+                {
+                    if (m_ResList == null) 
+                    {
+                        m_ResList = new Dictionary<Mobile, AutoResPotion>();
+                    }
+                }
+            }
 
             if (!IsChildOf(from.Backpack))
             {
                 from.SendMessage("This must be in your backpack to use.");
                 return;
             }
+
+            const string AlreadyWatched = "The spirits watch you already.";
             if (from is PlayerMobile)
             {
                 if (((PlayerMobile)from).SoulBound)
@@ -73,16 +85,30 @@ namespace Server.Items
                 }
                 else if (from != null && this != null)
                 {
-                    if (!m_ResList.ContainsValue(this))
+                    string message;
+                    lock(_lock)
                     {
-                        m_ResList.Add(from, this);
-                        from.SendMessage("You feel the spirits wathcing you, awaiting to send you back to your body.");
+                        if (m_ResList.ContainsKey(from))
+                        {
+                            message = AlreadyWatched;
+                        }
+                        else if (!m_ResList.ContainsValue(this))
+                        {
+                            m_ResList.Add(from, this);
+                            m_Consumer = from;
+                            message = "You feel the spirits watching you, awaiting to send you back to your body.";
+                            InvalidateProperties();
+                        }
+                        else
+                        {
+                            message = "The spirits of this potion are watching another";
+                        }
                     }
-                    else
-                        from.SendMessage("The spirits of this potion are watching another");
+
+                    from.SendMessage(message);
                 }
                 else
-                    from.SendMessage("The spirits watch you already.");
+                    from.SendMessage(AlreadyWatched);
             }
         }
 
@@ -95,16 +121,22 @@ namespace Server.Items
                 if (owner.Alive)
                     return;
 
-                if (m_ResList != null && m_ResList.ContainsKey(owner))
+                if (m_ResList != null)
                 {
-                    AutoResPotion arp = m_ResList[owner];
-                    if (arp == null || arp.Deleted)
+                    lock (_lock)
                     {
-                        m_ResList.Remove(owner);
-                        return;
+                        if (m_ResList != null && m_ResList.ContainsKey(owner))
+                        {
+                            AutoResPotion arp = m_ResList[owner];
+                            if (arp == null || arp.Deleted)
+                            {
+                                m_ResList.Remove(owner);
+                                return;
+                            }
+                            arp.m_Timer = Timer.DelayCall(m_Delay, new TimerStateCallback(Resurrect_OnTick), new object[] { owner, arp });
+                            m_ResList.Remove(owner);
+                        }
                     }
-                    arp.m_Timer = Timer.DelayCall(m_Delay, new TimerStateCallback(Resurrect_OnTick), new object[] { owner, arp });
-                    m_ResList.Remove(owner);
                 }
             }
         }
@@ -136,7 +168,11 @@ namespace Server.Items
         {
             base.AddNameProperties(list);
             list.Add(1070722, "Drink Anytime Before Death");
-            list.Add(1049644, "You Will Resurrect 30 Seconds Later");
+            list.Add(1070722, "Resurrect 30 Seconds Later");
+            if (m_Consumer != null)
+            {
+                list.Add(1049644, "This potion protects: " + m_Consumer.Name);
+            }
         }
 
         public override void Serialize(GenericWriter writer)

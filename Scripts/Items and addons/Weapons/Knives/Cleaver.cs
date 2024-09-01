@@ -1,11 +1,12 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0xEC3, 0xEC2 )]
-	public class Cleaver : BaseKnife
+	public class Cleaver : BaseKnife, ITinkerRepairable
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.BleedAttack; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.InfectiousStrike; } }

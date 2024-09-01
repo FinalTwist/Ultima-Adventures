@@ -23,12 +23,11 @@ namespace Server.Spells.Mystic
 
 		public override bool CheckCast(Mobile caster)
 		{
-			int mana = ScaleMana( RequiredMana );
-
 			if ( !base.CheckCast( caster ) )
 				return false;
 
-			if ( Caster.TithingPoints < RequiredTithing )
+            int mana = ScaleMana(RequiredMana);
+            if ( Caster.TithingPoints < RequiredTithing )
 			{
 				Caster.SendLocalizedMessage( 1060173, RequiredTithing.ToString() ); // You must have at least ~1_TITHE_REQUIREMENT~ Tithing Points to use this ability,
 				return false;
@@ -58,7 +57,7 @@ namespace Server.Spells.Mystic
 			{
 				Item oneHand = from.FindItemOnLayer( Layer.OneHanded );
 
-				if ( oneHand is GlovesOfThePugilist || oneHand is GiftPugilistGloves || oneHand is LevelPugilistGloves || oneHand is PugilistGloves || oneHand is PugilistGlove ){}
+				if ( oneHand is IPugilistGloves ){}
 				else if ( oneHand is BaseWeapon )
 					return false;
 			}

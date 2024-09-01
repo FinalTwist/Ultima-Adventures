@@ -61,8 +61,11 @@ namespace Server.Spells.Ninjitsu
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if ( Caster.Mounted )
+        {
+            if (!base.CheckCast(caster))
+                return false;
+
+            if ( Caster.Mounted )
 			{
 				Caster.SendLocalizedMessage( 1063132 ); // You cannot use this ability while mounted.
 				return false;
@@ -78,7 +81,7 @@ namespace Server.Spells.Ninjitsu
 				return false;
 			}
 
-			return base.CheckCast( caster );
+			return true;
 		}
 
 		public override bool CheckDisturb( DisturbType type, bool firstCircle, bool resistable )

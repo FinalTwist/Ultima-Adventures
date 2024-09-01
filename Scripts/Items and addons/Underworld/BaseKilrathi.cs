@@ -3,10 +3,11 @@ using Server.Items;
 using Server.Network;
 using Server.Spells;
 using Server.Mobiles;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public abstract class BaseKilrathi : BaseMeleeWeapon
+	public abstract class BaseKilrathi : BaseMeleeWeapon, ITinkerRepairable
 	{
 		public abstract int EffectID{ get; }
 		public abstract Type AmmoType{ get; }

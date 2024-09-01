@@ -400,6 +400,7 @@ namespace Server.Engines.Harvest
 							else if ( item is AgapiteOre ){ from.SendMessage( "You dig up some agapite ore."); }
 							else if ( item is VeriteOre ){ from.SendMessage( "You dig up some verite ore."); }
 							else if ( item is ValoriteOre ){ from.SendMessage( "You dig up some valorite ore."); }
+							else if ( item is DwarvenOre ){ from.SendMessage( "You dig up some dwarven ore."); }
 
 							else if ( item is Granite ){ from.SendMessage( "You dig up granite."); }
 							else if ( item is DullCopperGranite ){ from.SendMessage( "You dig up dull copper granite."); }
@@ -410,6 +411,7 @@ namespace Server.Engines.Harvest
 							else if ( item is AgapiteGranite ){ from.SendMessage( "You dig up agapite granite."); }
 							else if ( item is VeriteGranite ){ from.SendMessage( "You dig up verite granite."); }
 							else if ( item is ValoriteGranite ){ from.SendMessage( "You dig up valorite granite."); }
+							else if ( item is DwarvenGranite ){ from.SendMessage( "You dig up dwarven granite."); }
 
 							else if ( item is Log ){ from.SendMessage( "You chop some logs."); }
 							else if ( item is AshLog ){ from.SendMessage( "You chop some ash logs."); }

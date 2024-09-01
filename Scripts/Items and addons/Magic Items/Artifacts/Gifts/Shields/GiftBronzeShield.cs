@@ -1,9 +1,10 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    public class GiftBronzeShield : BaseGiftShield
+    public class GiftBronzeShield : BaseGiftShield, IBlacksmithRepairable
 	{
 		public override int BasePhysicalResistance{ get{ return 0; } }
 		public override int BaseFireResistance{ get{ return 0; } }
@@ -18,7 +19,7 @@ namespace Server.Items
 
 		public override int ArmorBase{ get{ return 10; } }
 
-		[Constructable]
+        [Constructable]
 		public GiftBronzeShield() : base( 0x1B72 )
 		{
 			Name = "round shield";

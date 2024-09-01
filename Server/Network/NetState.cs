@@ -603,16 +603,26 @@ namespace Server.Network {
 		private bool _sending;
 		private object _sendL = new object();
 
-		public virtual void Send( Packet p ) {
-			if ( m_Socket == null || m_BlockAllPackets ) {
-				p.OnSend();
+		public virtual void Send( Packet p )
+        {
+            string username = m_Account != null ? m_Account.Username : "";
+            PacketHistoryProfile history = !string.IsNullOrWhiteSpace(username) ? PacketHistoryProfile.Acquire(username) : null;
+            var preLength = p.UnderlyingStream != null ? p.UnderlyingStream.Length : -1;
+
+            if ( m_Socket == null || m_BlockAllPackets )
+            {
+                if (history != null) history.Add(p.PacketID, preLength, p.GetType());
+
+                p.OnSend();
 				return;
 			}
 
-			int length;
+            int length;
 			byte[] buffer = p.Compile( m_CompressionEnabled, out length );
+            if (preLength == -1) preLength = length;
+            if (history != null) history.Add(p.PacketID, preLength, p.GetType());
 
-			if ( buffer != null ) {
+            if ( buffer != null ) {
 				if ( buffer.Length <= 0 || length <= 0 ) {
 					p.OnSend();
 					return;
@@ -622,15 +632,15 @@ namespace Server.Network {
 				
 				if (Core.Profiling) prof = PacketSendProfile.Acquire(p.GetType());
 
-				if ( prof != null ) {
+                if ( prof != null ) {
 					prof.Start();
 				}
 
 				if ( m_Encoder != null ) {
 					m_Encoder.EncodeOutgoingPacket( this, ref buffer, ref length );
-				}
+                }
 
-				try {
+                try {
 					SendQueue.Gram gram;
 
 					lock (_sendL) {
@@ -645,7 +655,7 @@ namespace Server.Network {
 #else
 							try {
 									m_Socket.BeginSend(gram.Buffer, 0, gram.Length, SocketFlags.None, m_OnSend, m_Socket);
-							}
+                            }
 							catch (Exception ex) {
 								TraceException(ex);
 								Dispose(false);
@@ -939,9 +949,9 @@ namespace Server.Network {
 			Socket s = (Socket)asyncResult.AsyncState;
 
 			try {
-				int bytes = s.EndSend( asyncResult );
+                int bytes = s.EndSend( asyncResult );
 
-				if ( bytes <= 0 ) {
+                if ( bytes <= 0 ) {
 					Dispose( false );
 					return;
 				}
@@ -964,7 +974,7 @@ namespace Server.Network {
 				if (gram != null) {
 					try {
 						s.BeginSend(gram.Buffer, 0, gram.Length, SocketFlags.None, m_OnSend, s);
-					} catch (Exception ex) {
+                    } catch (Exception ex) {
 						TraceException(ex);
 						Dispose(false);
 					}
@@ -1034,7 +1044,7 @@ namespace Server.Network {
 					try {
 						_sending = true;
 						m_Socket.BeginSend(gram.Buffer, 0, gram.Length, SocketFlags.None, m_OnSend, m_Socket);
-						return true;
+                        return true;
 					} catch (Exception ex) {
 						TraceException(ex);
 						Dispose(false);

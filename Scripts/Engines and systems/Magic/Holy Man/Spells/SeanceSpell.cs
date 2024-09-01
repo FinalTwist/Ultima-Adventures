@@ -31,6 +31,9 @@ namespace Server.Spells.HolyMan
 
         public override bool CheckCast(Mobile caster)
         {
+            if (!base.CheckCast(caster))
+                return false;
+
             if (Caster.Mounted)
             {
                 Caster.SendLocalizedMessage(1042561); //Please dismount first.

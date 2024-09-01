@@ -59,7 +59,7 @@ namespace Custom.Jerbal.Jako
             return (uint)((GetStat(bc) - IncreasedBy) * CapScale);
         }
 
-        public virtual string DoOnClick(BaseCreature bc)
+        public virtual bool DoOnClick(BaseCreature bc, out string message)
         {
             uint fafa = 0;
             bool special = false;
@@ -83,16 +83,25 @@ namespace Custom.Jerbal.Jako
             if (fafa == 0)
                 fafa = AttributesGiven;
             if (MaxBonus(bc) <= (GetStat(bc) + fafa))
-                return "That would place this creature's stat above maximum.";
+            {
+                message = "That would place this creature's stat above maximum.";
+                return true;
+            }
+            
             if ((int)bc.Traits < PointsTaken)
-                return "You do not have enough traits to do that.";
+            {
+                message = "You do not have enough traits to do that.";
+                return true;
+            }
 
             if (IncBonus(bc, fafa, special))
-                return "Attribute adjusted.";
+            {
+                message = "Attribute adjusted.";
+                return true;
+            }
 
-            return "Error in IncBonus."; //Hopefully no one ever sees this, if they do, we know where it is.
-            
-
+            message = "Error in IncBonus."; //Hopefully no one ever sees this, if they do, we know where it is.
+            return false;
         }
 
         public virtual bool IncBonus(BaseCreature bc, uint byThis, bool special)

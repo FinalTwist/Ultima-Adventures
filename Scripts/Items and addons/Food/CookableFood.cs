@@ -848,7 +848,7 @@ namespace Server.Items
 		}
 	}
 
-	public class RawFishSteak : CookableFood
+	public class RawFishSteak : CookableFood, ICommodity
 	{
 		public override double DefaultWeight
 		{
@@ -870,6 +870,9 @@ namespace Server.Items
 		public RawFishSteak( Serial serial ) : base( serial )
 		{
 		}
+
+		int ICommodity.DescriptionNumber { get { return LabelNumber; } }
+		bool ICommodity.IsDeedable { get { return (Core.ML); } }
 
 		public override Food Cook()
 		{

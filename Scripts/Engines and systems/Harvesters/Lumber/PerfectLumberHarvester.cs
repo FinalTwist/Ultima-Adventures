@@ -17,8 +17,8 @@ namespace Server.Items
 			quality = Utility.RandomMinMax(9, 10);
 			NestSpawnType = "StrongSentry";
 			Movable = true;
-
 			
+			if (quality != 10) Name = "Nearly Perfect Lumber Harvester";
 		}
 
 		public PerfectLumberHarvester( Serial serial ) : base( serial )
@@ -29,7 +29,7 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 0 );
+			writer.Write( (int) 1 );
 		}
 
 		public override void Deserialize( GenericReader reader )
@@ -37,6 +37,10 @@ namespace Server.Items
 			base.Deserialize( reader );
 
 			int version = reader.ReadInt();
+			if (version == 0)
+			{
+				if (quality != 10) Name = "Nearly Perfect Lumber Harvester";
+			}
 		}
 	}
 }

@@ -26,8 +26,11 @@ namespace Server.Spells.Mystic
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if ( Server.Misc.WeightOverloading.IsOverloaded( Caster ) )
+        {
+            if (!base.CheckCast(caster))
+                return false;
+
+            if ( Server.Misc.WeightOverloading.IsOverloaded( Caster ) )
 			{
 				Caster.SendLocalizedMessage( 502359, "", 0x22 ); // Thou art too encumbered to move.
 				return false;

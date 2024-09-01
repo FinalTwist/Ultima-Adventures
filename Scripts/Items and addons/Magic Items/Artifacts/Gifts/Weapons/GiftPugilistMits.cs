@@ -1,11 +1,12 @@
 using System;
 using Server.Items;
 using Server.Network;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x13C6, 0x13C6 )]
-	public class GiftPugilistGloves : BaseGiftBashing
+	public class GiftPugilistGloves : BaseGiftBashing, ITailorRepairable, IPugilistGloves
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.Disarm; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.ParalyzingBlow; } }

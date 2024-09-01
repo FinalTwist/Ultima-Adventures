@@ -77,38 +77,36 @@ namespace Server.Items
 				int MyStealth = 100 - (int)m.Skills[SkillName.Stealth].Base;
 					if ( MyStealth < 0 ){ MyStealth = 0; }
 
-			object[] mods = new object[]
-			{
-				new DefaultSkillMod( SkillName.Hiding, true, MyHide ),
-				new DefaultSkillMod( SkillName.Stealth, true, MyStealth ),
-			};
-
-			m_Table[m] = mods;
-
-			m.AddSkillMod( (SkillMod)mods[0] );
-			m.AddSkillMod( (SkillMod)mods[1] );
-
-				foreach ( Mobile pet in World.Mobiles.Values )
+				object[] mods = new object[]
 				{
-					if ( pet is BaseCreature )
+					new DefaultSkillMod( SkillName.Hiding, true, MyHide ),
+					new DefaultSkillMod( SkillName.Stealth, true, MyStealth ),
+				};
+
+				m_Table[m] = mods;
+
+				m.AddSkillMod( (SkillMod)mods[0] );
+				m.AddSkillMod( (SkillMod)mods[1] );
+
+					foreach ( Mobile pet in World.Mobiles.Values )
 					{
-						BaseCreature bc = (BaseCreature)pet;
-						if ( bc.Controlled && bc.ControlMaster == m )
-							pet.Hidden = true;
+						if ( pet is BaseCreature )
+						{
+							BaseCreature bc = (BaseCreature)pet;
+							if ( bc.Controlled && bc.ControlMaster == m )
+								pet.Hidden = true;
+						}
 					}
-				}
 
-			new InternalTimer( m, TimeSpan.FromMinutes( 1 ) ).Start();
+				new InternalTimer( m, TimeSpan.FromMinutes( 1 ) ).Start();
 
-			BasePotion.PlayDrinkEffect( m );
+				BasePotion.PlayDrinkEffect( m );
 
-			m.Hidden = true;
+				m.Hidden = true;
 
-			m.BeginAction( typeof( LesserInvisibilityPotion ) );
+				m.BeginAction( typeof( LesserInvisibilityPotion ) );
 
-			this.Amount--;
-				if (this.Amount <= 0)
-				this.Delete();
+				Consume(m);
 		    }
 		}
 

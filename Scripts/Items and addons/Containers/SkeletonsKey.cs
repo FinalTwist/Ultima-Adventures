@@ -52,6 +52,53 @@ namespace Server.Items
 				CheckLOS = true;
 			}
 
+			private bool TryUnlockBoat(Mobile from, Plank plank)
+			{
+				if (plank == null || plank.Boat == null) return false;
+				if (plank.Boat.DecayLevel != Multis.BoatDecayLevel.IDOC) return false;
+
+				if (from.Skills[SkillName.Lockpicking].Value < 95)
+				{
+					from.PrivateOverheadMessage( 0, 1150, false,  "You don't see how that lock can be manipulated.", from.NetState );
+				}
+				else if (from.CheckTargetSkill( SkillName.Lockpicking, this, 90, 110 ) )
+				{
+					from.PlaySound( 0x4A );
+					plank.Boat.TakeOwnership(from);
+					m_Key.Consume();
+				}
+				else 
+				{
+					if ( Utility.Random( 4 ) == 0 )
+					{
+						from.PlaySound( 0x3A4 );
+						from.PrivateOverheadMessage( 0, 1150, false,  "You break the key.", from.NetState ); 
+						m_Key.Consume();
+					}
+					else 
+					{
+						from.PrivateOverheadMessage( 0, 1150, false,  "The key fails to fit the lock.", from.NetState ); 
+					}
+				}
+
+				return true;
+			}
+				
+			protected override void OnTargetOutOfRange( Mobile from, object targeted )
+			{
+				if ( targeted is Plank )
+				{
+					var plank = (Plank)targeted;
+					var loc = plank.GetWorldLocation();
+					if ( from.InRange( loc, 3 ) )
+					{
+						if ( TryUnlockBoat(from, plank) ) return;
+					}
+				}
+
+				base.OnTargetOutOfRange(from, targeted);
+			}
+
 			protected override void OnTarget( Mobile from, object targeted )
 			{
 				int number = -1;
@@ -128,39 +175,7 @@ namespace Server.Items
 					if (cont2 == null)
 					{
 						Plank plank = o as Plank;
-						if (plank != null && plank.Boat != null)
-						{
-							if (plank.Boat.DecayLevel == Multis.BoatDecayLevel.IDOC)
-							{
-								if (from.Skills[SkillName.Lockpicking].Value < 95)
-								{
-									from.PrivateOverheadMessage( 0, 1150, false,  "You don't see how that lock can be manipulated.", from.NetState );
-									return;
-								}
-							
-								if (from.CheckTargetSkill( SkillName.Lockpicking, this, 90, 110 ) )
-								{
-									from.PlaySound( 0x4A );
-									plank.Boat.TakeOwnership(from);
-									m_Key.Consume();
-								}
-								else 
-								{
-									if ( Utility.Random( 4 ) == 0 )
-									{
-										from.PlaySound( 0x3A4 );
-										from.PrivateOverheadMessage( 0, 1150, false,  "You break the key.", from.NetState ); 
-										m_Key.Consume();
-									}
-                                    else 
-									{
-										from.PrivateOverheadMessage( 0, 1150, false,  "The key fails to fit the lock.", from.NetState ); 
-									}
-								}
-
-								return;
-							}
-						}
+						if ( TryUnlockBoat(from, plank) ) return;
 
 						from.SendLocalizedMessage( 501666 ); // You can't unlock that!
 						return;

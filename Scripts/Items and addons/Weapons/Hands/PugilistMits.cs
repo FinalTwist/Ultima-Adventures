@@ -5,7 +5,7 @@ using Server.Network;
 namespace Server.Items
 {
 	[FlipableAttribute( 0x13C6, 0x13C6 )]
-	public class PugilistMits : PugilistGloves
+	public class PugilistMits : PugilistGloves, IPugilistGloves
 	{
 		[Constructable]
 		public PugilistMits()

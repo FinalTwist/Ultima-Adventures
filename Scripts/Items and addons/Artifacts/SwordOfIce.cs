@@ -9,11 +9,15 @@ namespace Server.Items
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.ArmorIgnore; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.InfectiousStrike; } }
+		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.ZapDexStrike; } }
+		public override WeaponAbility FourthAbility{ get{ return WeaponAbility.LightningStriker; } }
+		public override WeaponAbility FifthAbility{ get{ return WeaponAbility.ToxicStrike; } }
 
 		public override int AosStrengthReq{ get{ return 10; } }
 		public override int AosMinDamage{ get{ return 10; } }
 		public override int AosMaxDamage{ get{ return 12; } }
-		//public override int AosSpeed{ get{ return 53; } }
+		public override int AosSpeed{ get{ return 53; } }
+		public override float MlSpeed{ get{ return 2.00f; } }
 
 		public override int OldStrengthReq{ get{ return 10; } }
 		public override int OldMinDamage{ get{ return 3; } }
@@ -37,8 +41,8 @@ namespace Server.Items
 			Name = "Sword Of Ice";
             Hue = 1152;
             
-            HitPoints = Utility.RandomMinMax(100, 125);
-			MaxHitPoints = 150;
+			HitPoints = Utility.RandomMinMax(100, 125);
+			MaxHitPoints = Utility.RandomMinMax(126, 150);
               
             WeaponAttributes.HitColdArea = 75;
             WeaponAttributes.HitLeechMana = 45;

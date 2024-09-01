@@ -28,7 +28,7 @@ namespace Server.Items
 			ShelfSkill = 56;
 			ShelfGuild = NpcGuild.NecromancersGuild;
 			ShelfTools = "Surgeon Knives";
-			ShelfResources = "Jars of Body Parts";
+			ShelfResources = "Embalming Fluid";
 			ShelfSound = 0x240;
 		}
 
@@ -133,13 +133,17 @@ namespace Server.Items
 		public override void Serialize( GenericWriter writer )
 		{
 			base.Serialize( writer );
-			writer.Write( (int) 0 ); // version
+			writer.Write( (int) 1 ); // version
 		}
 
 		public override void Deserialize( GenericReader reader )
 		{
 			base.Deserialize( reader );
 			int version = reader.ReadInt();
+			if (version == 0)
+			{
+				ShelfResources = "Embalming Fluid";
+			}
 		}
 	}
 }

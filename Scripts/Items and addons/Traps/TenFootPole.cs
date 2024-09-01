@@ -38,20 +38,20 @@ namespace Server.Items
 
 			if ( weight < 40.0 )
 			{
-				if ( weight > 38.0 ){ chance = 53; }
-				else if ( weight > 37.0 ){ chance = 56; }
-				else if ( weight > 36.0 ){ chance = 59; }
-				else if ( weight > 35.0 ){ chance = 62; }
-				else if ( weight > 34.0 ){ chance = 65; }
-				else if ( weight > 33.0 ){ chance = 68; }
-				else if ( weight > 32.0 ){ chance = 71; }
-				else if ( weight > 31.0 ){ chance = 74; }
-				else if ( weight > 30.0 ){ chance = 77; }
-				else if ( weight > 29.0 ){ chance = 80; }
-				else if ( weight > 28.0 ){ chance = 83; }
-				else if ( weight > 27.0 ){ chance = 86; }
-				else if ( weight > 26.0 ){ chance = 89; }
-				else if ( weight > 25.0 ){ chance = 92; }
+				if ( weight > 38.0 ){ chance = 52; }
+				else if ( weight > 37.0 ){ chance = 54; }
+				else if ( weight > 36.0 ){ chance = 56; }
+				else if ( weight > 35.0 ){ chance = 58; }
+				else if ( weight > 34.0 ){ chance = 60; }
+				else if ( weight > 33.0 ){ chance = 62; }
+				else if ( weight > 32.0 ){ chance = 64; }
+				else if ( weight > 31.0 ){ chance = 66; }
+				else if ( weight > 30.0 ){ chance = 68; }
+				else if ( weight > 29.0 ){ chance = 74; }
+				else if ( weight > 28.0 ){ chance = 72; }
+				else if ( weight > 27.0 ){ chance = 74; }
+				else if ( weight > 26.0 ){ chance = 78; }
+				else if ( weight > 25.0 ){ chance = 83; }
 			}
 			return chance;
 		}

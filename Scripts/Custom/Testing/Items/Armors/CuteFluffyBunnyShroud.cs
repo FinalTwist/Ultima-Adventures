@@ -1,9 +1,10 @@
-using System; 
+using System;
+using Server.Engines.Craft;
 using Server.Items; 
 
 namespace Server.Items 
 { 
-   public class CuteFluffyBunnyShroud : BaseArmor
+   public class CuteFluffyBunnyShroud : BaseArmor, IClothingStub, ITailorRepairable
    { 
       public override int PhysicalResistance{ get{ return 5; } } 
       public override int FireResistance{ get{ return 5; } } 

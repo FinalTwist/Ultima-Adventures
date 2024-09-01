@@ -21,13 +21,6 @@ namespace Server.Spells.Herbalist
 		{
 		}
 
-		public override bool CheckCast(Mobile caster)
-		{
-			if ( !base.CheckCast( caster ) )
-				return false;
-			return true;
-		}
-
 		public override void OnCast()
 		{
 			Caster.Target = new InternalTarget( this );

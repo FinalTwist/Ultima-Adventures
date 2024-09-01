@@ -1,12 +1,13 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x2D32, 0x2D26 )]
-    public class GiftRuneBlade : BaseGiftSword
-	{
+    public class GiftRuneBlade : BaseGiftSword, IBlacksmithRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.Disarm; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.Bladeweave; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.TalonStrike; } }

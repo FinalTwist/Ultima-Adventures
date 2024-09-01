@@ -7,13 +7,14 @@
 
 
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x13cb, 0x13d2 )]
-	public class SlavePants : BaseArmor
-	{
+	public class SlavePants : BaseArmor, ITailorRepairable
+    {
 		public override int ArtifactRarity{ get{ return 1; } }
 		
 		public override int BasePhysicalResistance{ get{ return 0; } }

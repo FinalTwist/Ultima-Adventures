@@ -1,11 +1,12 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x13F6, 0x13F7 )]
-	public class ButcherKnife : BaseKnife
+	public class ButcherKnife : BaseKnife, ITinkerRepairable
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.InfectiousStrike; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.Disarm; } }

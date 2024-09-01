@@ -5,11 +5,12 @@ using System.Collections;
 using Server.Network;
 using Server.Items;
 using Server.Targeting;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x26C3 )]
-	public class WhipOfSubmission : BaseRanged
+	public class WhipOfSubmission : BaseRanged, IBowcraftFletchingRepairable
 	{
         public override int EffectID{ get{ return 0xF42; } }
 		public override Type AmmoType{ get{ return typeof( Arrow ); } }

@@ -9,6 +9,7 @@ using Server.Commands;
 using Server.Commands.Generic;
 using Server.Prompts;
 using Server.Gumps;
+using Server.Targeting;
 
 namespace Server.Misc
 {
@@ -47,11 +48,40 @@ namespace Server.Misc
 			DB.CharacterLoot = newSettings; 
 		}
 
+		public static void SetLootContainer( Mobile m, int origin )
+		{
+			var t = new InternalTarget(origin);
+			m.Target = t;
+		}
+
 		public static void InitializeLootChoice( Mobile m )
 		{
 			CharacterDatabase DB = Server.Items.CharacterDatabase.GetDB( m );
 			if ( DB.CharacterLoot == null ){ DB.CharacterLoot = "0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#"; }
 		}
+
+		private class InternalTarget : Target
+        {
+            public int m_Origin;
+
+            public InternalTarget(int origin) : base( 0, false, TargetFlags.None )
+			{
+			}
+
+			protected override void OnTarget( Mobile from, object targeted )
+            {
+				var item = targeted as Item;
+				var serial = from != targeted && item != null && item is Container ? item.Serial : Serial.Zero;
+                Server.Items.CharacterDatabase.SetAutolootContainer(from, serial);
+            }
+
+            protected override void OnTargetFinish(Mobile from)
+            {
+                base.OnTargetFinish(from);
+
+                from.SendGump(new LootChoices(from, m_Origin));
+            }
+        }
 	}
 }
 
@@ -119,9 +149,15 @@ namespace Server.Gumps
 
 			AddHtml( 253, 43, 94, 21, @"<BODY><BASEFONT Color=#FBFBFB><BIG><CENTER>LOOT</CENTER></BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 			AddHtml( 102, 85, 396, 124, @"<BODY><BASEFONT Color=#FBFBFB>Check the categories of items to automatically take from common dungeon chests or corpses and put them in your backpack. Magery and necromancer reagents are those used specifically by those characters. Alchemic reagents are unique to alchemy only. Herbalist reagents are plants that one may find, used in druidic herbalism.</BASEFONT></BODY>", (bool)false, (bool)false);
-			AddItem(257, 504, 2169);
-
-			string[] eachLoot = MySettings.Split('#');
+			
+			AddHtml( 320, 190, 130, 21, @"<BODY><BASEFONT Color=#FCFF00>Set Loot Container</BASEFONT></BODY>", (bool)false, (bool)false);
+			
+			int checkboxIcon = DB.CharacterAutolootContainer != 0 ? 2153 : 2151;
+            AddButton(465, 185, checkboxIcon, checkboxIcon, -100, GumpButtonType.Reply, 1); 
+			
+			AddItem(257, 504, 2169); // Treasure Hoard
+            
+            string[] eachLoot = MySettings.Split('#');
 			int nLine = 1;
 
 			AddHtml( 145, 225, 130, 21, @"<BODY><BASEFONT Color=#FCFF00>Coins & Nuggets</BASEFONT></BODY>", (bool)false, (bool)false);
@@ -187,6 +223,7 @@ namespace Server.Gumps
 			else if ( info.ButtonID == 14 ){ LootChoiceUpdates.UpdateLootChoice( from, 15 ); }
 			else if ( info.ButtonID == 15 ){ LootChoiceUpdates.UpdateLootChoice( from, 16 ); }
 			else if ( info.ButtonID == 16 ){ LootChoiceUpdates.UpdateLootChoice( from, 17 ); }
+			else if ( info.ButtonID == -100) { LootChoiceUpdates.SetLootContainer( from, m_Origin ); }
 
 			if ( info.ButtonID < 1 && m_Origin > 0 ){ from.SendSound( 0x4A ); from.SendGump( new Server.Engines.Help.HelpGump( from, 12 ) ); }
 			else if ( info.ButtonID < 1 ){ }

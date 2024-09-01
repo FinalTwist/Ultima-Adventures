@@ -1,11 +1,12 @@
 using System;
 using Server;
+using Server.Engines.Craft;
 using Server.Items;
 using Server.Targets;
 
 namespace Server.Items
 {
-	public abstract class BaseSword : BaseMeleeWeapon
+	public abstract class BaseSword : BaseMeleeWeapon, IBlacksmithRepairable
 	{
 		public override SkillName DefSkill{ get{ return SkillName.Swords; } }
 		public override WeaponType DefType{ get{ return WeaponType.Slashing; } }

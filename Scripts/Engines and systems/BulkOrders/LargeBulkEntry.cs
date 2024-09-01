@@ -15,117 +15,42 @@ namespace Server.Engines.BulkOrders
 		public int Amount{ get{ return m_Amount; } set{ m_Amount = value; if ( m_Owner != null ) m_Owner.InvalidateProperties(); } }
 		public SmallBulkEntry Details{ get{ return m_Details; } }
 
-		public static SmallBulkEntry[] LargeRing
-		{
-			get{ return GetEntries( "Blacksmith", "largering" ); }
-		}
+		// Blacksmith
+		public static SmallBulkEntry[] LargeRing { get { return GetEntries("Blacksmith", "largering"); } }
+		public static SmallBulkEntry[] LargePlate { get { return GetEntries("Blacksmith", "largeplate"); } }
+		public static SmallBulkEntry[] LargeChain { get { return GetEntries("Blacksmith", "largechain"); } }
+		public static SmallBulkEntry[] LargeAxes { get { return GetEntries("Blacksmith", "largeaxes"); } }
+		public static SmallBulkEntry[] LargeFencing { get { return GetEntries("Blacksmith", "largefencing"); } }
+		public static SmallBulkEntry[] LargeMaces { get { return GetEntries("Blacksmith", "largemaces"); } }
+		public static SmallBulkEntry[] LargePolearms { get { return GetEntries("Blacksmith", "largepolearms"); } }
+		public static SmallBulkEntry[] LargeSwords { get { return GetEntries("Blacksmith", "largeswords"); } }
 
-		public static SmallBulkEntry[] LargePlate
-		{
-			get{ return GetEntries( "Blacksmith", "largeplate" ); }
-		}
+		// Tailor
+		public static SmallBulkEntry[] BoneSet { get { return GetEntries("Tailoring", "boneset"); } }
+		public static SmallBulkEntry[] Farmer { get { return GetEntries("Tailoring", "farmer"); } }
+		public static SmallBulkEntry[] FemaleLeatherSet { get { return GetEntries("Tailoring", "femaleleatherset"); } }
+		public static SmallBulkEntry[] FisherGirl { get { return GetEntries("Tailoring", "fishergirl"); } }
+		public static SmallBulkEntry[] Gypsy { get { return GetEntries("Tailoring", "gypsy"); } }
+		public static SmallBulkEntry[] HatSet { get { return GetEntries("Tailoring", "hatset"); } }
+		public static SmallBulkEntry[] Jester { get { return GetEntries("Tailoring", "jester"); } }
+		public static SmallBulkEntry[] Lady { get { return GetEntries("Tailoring", "lady"); } }
+		public static SmallBulkEntry[] MaleLeatherSet { get { return GetEntries("Tailoring", "maleleatherset"); } }
+		public static SmallBulkEntry[] Pirate { get { return GetEntries("Tailoring", "pirate"); } }
+		public static SmallBulkEntry[] ShoeSet { get { return GetEntries("Tailoring", "shoeset"); } }
+		public static SmallBulkEntry[] StuddedSet { get { return GetEntries("Tailoring", "studdedset"); } }
+		public static SmallBulkEntry[] TownCrier { get { return GetEntries("Tailoring", "towncrier"); } }
+        public static SmallBulkEntry[] Wizard { get { return GetEntries("Tailoring", "wizard"); } }
+        
+		// Carpenter
+        public static SmallBulkEntry[] LargeArmor { get { return GetEntries("Carpenter", "largearmor"); } }
+        public static SmallBulkEntry[] LargeInstrument { get { return GetEntries("Carpenter", "largeinstrument"); } }
+        public static SmallBulkEntry[] LargePercussion { get { return GetEntries("Carpenter", "largepercussion"); } }
+        public static SmallBulkEntry[] LargeStaff { get { return GetEntries("Carpenter", "largestaff"); } }
+        public static SmallBulkEntry[] LargeString { get { return GetEntries("Carpenter", "largestring"); } }
 
-		public static SmallBulkEntry[] LargeChain
-		{
-			get{ return GetEntries( "Blacksmith", "largechain" ); }
-		}
-
-		public static SmallBulkEntry[] LargeAxes
-		{
-			get{ return GetEntries( "Blacksmith", "largeaxes" ); }
-		}
-
-		public static SmallBulkEntry[] LargeFencing
-		{
-			get{ return GetEntries( "Blacksmith", "largefencing" ); }
-		}
-
-		public static SmallBulkEntry[] LargeMaces
-		{
-			get{ return GetEntries( "Blacksmith", "largemaces" ); }
-		}
-
-		public static SmallBulkEntry[] LargePolearms
-		{
-			get{ return GetEntries( "Blacksmith", "largepolearms" ); }
-		}
-
-		public static SmallBulkEntry[] LargeSwords
-		{
-			get{ return GetEntries( "Blacksmith", "largeswords" ); }
-		}
-
-
-		public static SmallBulkEntry[] BoneSet
-		{
-			get{ return GetEntries( "Tailoring", "boneset" ); }
-		}
-
-		public static SmallBulkEntry[] Farmer
-		{
-			get{ return GetEntries( "Tailoring", "farmer" ); }
-		}
-
-		public static SmallBulkEntry[] FemaleLeatherSet
-		{
-			get{ return GetEntries( "Tailoring", "femaleleatherset" ); }
-		}
-
-		public static SmallBulkEntry[] FisherGirl
-		{
-			get{ return GetEntries( "Tailoring", "fishergirl" ); }
-		}
-
-		public static SmallBulkEntry[] Gypsy
-		{
-			get{ return GetEntries( "Tailoring", "gypsy" ); }
-		}
-
-		public static SmallBulkEntry[] HatSet
-		{
-			get{ return GetEntries( "Tailoring", "hatset" ); }
-		}
-
-		public static SmallBulkEntry[] Jester
-		{
-			get{ return GetEntries( "Tailoring", "jester" ); }
-		}
-
-		public static SmallBulkEntry[] Lady
-		{
-			get{ return GetEntries( "Tailoring", "lady" ); }
-		}
-
-		public static SmallBulkEntry[] MaleLeatherSet
-		{
-			get{ return GetEntries( "Tailoring", "maleleatherset" ); }
-		}
-
-		public static SmallBulkEntry[] Pirate
-		{
-			get{ return GetEntries( "Tailoring", "pirate" ); }
-		}
-
-		public static SmallBulkEntry[] ShoeSet
-		{
-			get{ return GetEntries( "Tailoring", "shoeset" ); }
-		}
-
-		public static SmallBulkEntry[] StuddedSet
-		{
-			get{ return GetEntries( "Tailoring", "studdedset" ); }
-		}
-
-		public static SmallBulkEntry[] TownCrier
-		{
-			get{ return GetEntries( "Tailoring", "towncrier" ); }
-		}
-
-		public static SmallBulkEntry[] Wizard
-		{
-			get{ return GetEntries( "Tailoring", "wizard" ); }
-		}
-
+		// Fletcher
+        public static SmallBulkEntry[] LargeBow { get { return GetEntries("Fletcher", "largebow"); } }
+        public static SmallBulkEntry[] LargeCrossBow { get { return GetEntries("Fletcher", "largecrossbow"); } }
 
 		private static Hashtable m_Cache;
 

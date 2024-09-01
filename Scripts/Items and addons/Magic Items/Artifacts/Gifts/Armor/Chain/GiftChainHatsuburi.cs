@@ -1,10 +1,11 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
-    public class GiftChainHatsuburi : BaseGiftArmor
-	{
+    public class GiftChainHatsuburi : BaseGiftArmor, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 5; } }
 		public override int BaseFireResistance{ get{ return 2; } }
 		public override int BaseColdResistance{ get{ return 2; } }
@@ -21,7 +22,7 @@ namespace Server.Items
 
 		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Chainmail; } }
 
-		[Constructable]
+        [Constructable]
 		public GiftChainHatsuburi() : base( 0x2774 )
 		{
 			Weight = 7.0;

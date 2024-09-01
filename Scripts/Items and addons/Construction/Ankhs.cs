@@ -35,15 +35,17 @@ namespace Server.Items
 			else if( m.Map != null && m.Map.CanFit( m.Location, 16, false, false ) )
 			{
 				int shrineType = 2;
-					if ( item is AltarDaemon ){ shrineType = 3; }
-					else if ( item is AltarEvil || item is AltarWizard || item is AltarGargoyle ){ shrineType = 4; }
-					else if ( item is AltarSea ){ shrineType = 5; }
-					else if (item is AltarPlayer && m is PlayerMobile)
-					{
-						m.Criminal = false;
-						m.Resurrect();
-						m.Hidden = true;
-					}
+				if ( item is AltarDaemon ){ shrineType = 3; }
+				else if ( item is AltarEvil || item is AltarWizard || item is AltarGargoyle ){ shrineType = 4; }
+				else if ( item is AltarSea ){ shrineType = 5; }
+				else if (item is AltarPlayer && m is PlayerMobile)
+				{
+					m.Criminal = false;
+					m.Resurrect();
+					m.Hidden = true;
+					return;
+				}
+
 				m.CloseGump( typeof( ResurrectCostGump ) );
 				m.SendGump( new ResurrectCostGump( m, shrineType ) );
 			}

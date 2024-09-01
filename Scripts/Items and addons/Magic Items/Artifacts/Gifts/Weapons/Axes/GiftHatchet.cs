@@ -1,12 +1,13 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 using Server.Network;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0xF43, 0xF44 )]
-    public class GiftHatchet : BaseGiftAxe
-	{
+    public class GiftHatchet : BaseGiftAxe, ITinkerRepairable
+    {
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.ArmorIgnore; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.Disarm; } }
 		public override WeaponAbility ThirdAbility{ get{ return WeaponAbility.MagicProtection2; } }

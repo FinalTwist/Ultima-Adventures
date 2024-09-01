@@ -1,11 +1,12 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x13f0, 0x13f1 )]
-    public class GiftRingmailLegs : BaseGiftArmor
-	{
+    public class GiftRingmailLegs : BaseGiftArmor, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 3; } }
 		public override int BaseFireResistance{ get{ return 3; } }
 		public override int BaseColdResistance{ get{ return 1; } }
@@ -24,7 +25,7 @@ namespace Server.Items
 
 		public override ArmorMaterialType MaterialType{ get{ return ArmorMaterialType.Ringmail; } }
 
-		[Constructable]
+        [Constructable]
 		public GiftRingmailLegs() : base( 0x13F0 )
 		{
 			Weight = 15.0;

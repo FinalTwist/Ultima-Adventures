@@ -21,58 +21,60 @@ namespace Server.Items
 			Hue = 0x95;
 		}
 
+        public override bool CanAdd( Mobile from, Item item)
+		{
+            if ( item is Log || 
+				item is AshLog ||
+				item is CherryLog ||
+				item is EbonyLog ||
+				item is GoldenOakLog ||
+				item is HickoryLog ||
+				item is MahoganyLog ||
+				item is OakLog ||
+				item is PineLog ||
+				item is RosewoodLog ||
+				item is WalnutLog ||
+				item is DriftwoodLog ||
+				item is GhostLog ||
+				item is PetrifiedLog ||
+				item is ElvenLog )
+			{
+				return true;
+			}
+
+			return false;
+		}
+
 		public override bool OnDragDropInto( Mobile from, Item dropped, Point3D p )
         {
+			if (CanAdd(from, dropped)) return base.OnDragDropInto(from, dropped, p);
+
 			if ( dropped is Container && !(dropped is LumberjackPouch) )
 			{
                 from.SendMessage("You can only use another lumberjacks rucksack within this sack.");
-                return false;
-			}
-            else if ( 	dropped is Log || 
-						dropped is AshLog ||
-						dropped is CherryLog ||
-						dropped is EbonyLog ||
-						dropped is GoldenOakLog ||
-						dropped is HickoryLog ||
-						dropped is MahoganyLog ||
-						dropped is OakLog ||
-						dropped is PineLog ||
-						dropped is RosewoodLog ||
-						dropped is WalnutLog ||
-						dropped is DriftwoodLog ||
-						dropped is GhostLog ||
-						dropped is PetrifiedLog ||
-						dropped is ElvenLog )
-			{
-				return base.OnDragDropInto(from, dropped, p);
 			}
 			else
             {
                 from.SendMessage("This rucksack is for lumber.");
-                return false;
             }
 
-            return base.OnDragDropInto(from, dropped, p);
+			return false;
         }
 
 		public override bool OnDragDrop( Mobile from, Item dropped )
         {
+			if (CanAdd(from, dropped)) return base.OnDragDrop(from, dropped);
+
 			if ( dropped is Container && !(dropped is LumberjackPouch) )
 			{
                 from.SendMessage("You can only use another lumberjacks rucksack within this sack.");
-                return false;
-			}
-            else if ( dropped is Log || dropped is AshLog || dropped is CherryLog || dropped is EbonyLog || dropped is GoldenOakLog || dropped is HickoryLog || dropped is MahoganyLog || dropped is OakLog || dropped is PineLog || dropped is RosewoodLog || dropped is WalnutLog || dropped is DriftwoodLog || dropped is GhostLog || dropped is PetrifiedLog || dropped is ElvenLog )
-			{
-				return base.OnDragDrop(from, dropped);
 			}
 			else
             {
                 from.SendMessage("This rucksack is for lumber.");
-                return false;
             }
 
-            return base.OnDragDrop(from, dropped);
+			return false;
         }
 
 		public LumberjackPouch( Serial serial ) : base( serial )

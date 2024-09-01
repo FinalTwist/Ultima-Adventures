@@ -9,6 +9,7 @@ namespace Server.Gumps
 {
     public class NameAlterGump : Gump
     {
+        const string DEFAULT_NAME = "Type here...";
         public NameAlterGump(Mobile from) : base(25, 25)
         {
             this.Closable=true;
@@ -32,7 +33,7 @@ namespace Server.Gumps
 			AddImage(257, 16, 130);
 			AddImage(552, 11, 143);
 			AddImage(16, 348, 159);
-			AddTextEntry(126, 238, 267, 20, 1511, 1, @"Type here...", 16);
+			AddTextEntry(126, 238, 267, 20, 1511, 1, DEFAULT_NAME, 16);
 			AddHtml( 175, 37, 349, 180, @"<BODY><BASEFONT Color=#FBFBFB><BIG>One of the main rules of this game is to have a unique fantasy name for your character. Don't name your character TacoChamp123 or Batman, for example. If you feel your name is appropriate, then retype your name here. Otherwise, delete the text below and enter a new name for yourself that is no longer than 16 characters.</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 			AddButton(90, 238, 4005, 4005, 1, GumpButtonType.Reply, 0);
         }
@@ -52,22 +53,12 @@ namespace Server.Gumps
             }
 
             string name = GetString(info, 1);
-            if (name != null)
-            {
-                name = name.Trim();
-            }
-            else
-            {
-                from.SendMessage(0X22, "You may enter a name.");
-                from.SendGump(new NameAlterGump(from));
-            }
-
-            if (name != "")
+            name = name != null ? name.Trim() : null;
+            if (!string.IsNullOrWhiteSpace(name) && name != DEFAULT_NAME)
             {
                 if (!NameVerification.Validate(name, 2, 16, true, false, true, 1, NameVerification.SpaceOnly))
                 {
                     from.SendMessage(0X22, "That name is unacceptable or already taken.");
-                    return;
                 }
                 else if ( CharacterCreation.CheckDupe(from, name) )
                 {
@@ -79,7 +70,6 @@ namespace Server.Gumps
                 else if ( CharacterCreation.CheckDupe(from, name) )
                 {
                     from.SendMessage(0X22, "That name is unacceptable or already taken.");
-                    return;
                 }
             }
             else

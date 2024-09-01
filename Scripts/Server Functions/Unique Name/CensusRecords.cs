@@ -49,6 +49,7 @@ namespace Server.Gumps
 {
     public class CensusGump : Gump
     {
+        const string DEFAULT_NAME = "Type here...";
         public CensusGump(Mobile from, bool legal) : base(25, 25)
         {
             this.Closable=true;
@@ -76,7 +77,7 @@ namespace Server.Gumps
 			AddImage(257, 16, 130);
 			AddImage(552, 11, 143);
 			AddImage(16, 348, 159);
-			AddTextEntry(126, 238, 267, 20, 1511, 1, @"Type here...", 16);
+			AddTextEntry(126, 238, 267, 20, 1511, 1, DEFAULT_NAME, 16);
 			AddHtml( 175, 37, 349, 180, @"<BODY><BASEFONT Color=#FBFBFB><BIG>" + text + " So if you have an idea for a new fantasy appropriate name, and are willing to spend 2,000 gold, then delete the text below and retype it. A new name can be no longer than 16 characters.</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 			AddButton(90, 238, 4005, 4005, 1, GumpButtonType.Reply, 0);
         }
@@ -98,15 +99,8 @@ namespace Server.Gumps
 			Container pack = from.Backpack;
 
             string name = GetString(info, 1);
-            if (name != null)
-            {
-                name = name.Trim();
-            }
-
-			if ( name == "Type here..." )
-			{
-			}
-            else if (name != "")
+            name = name != null ? name.Trim() : null;
+            if (!string.IsNullOrWhiteSpace(name) && name != DEFAULT_NAME)
             {
                 if (!NameVerification.Validate(name, 2, 16, true, false, true, 1, NameVerification.SpaceOnly))
                 {

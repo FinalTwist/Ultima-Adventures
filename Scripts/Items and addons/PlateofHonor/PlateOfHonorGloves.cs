@@ -1,11 +1,12 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 11020, 11021 )]
-	public class PlateOfHonorGloves : BaseArmor
-	{
+	public class PlateOfHonorGloves : BaseArmor, IBlacksmithRepairable
+    {
 		public override int LabelNumber{ get{ return 1074303; } } 
 		public override int BasePhysicalResistance{ get{ return 8; } }
 		public override int BaseFireResistance{ get{ return 5; } }

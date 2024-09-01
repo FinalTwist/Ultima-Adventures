@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Server.Network;
+using Server.Mobiles;
 using Server.Items;
 using Server.Targeting;
 using Server.Engines.PartySystem;
@@ -67,7 +68,7 @@ namespace Server.Spells.Fourth
 					{
 						Mobile m = targets[i];
 
-						if ( m == Caster || ( party != null && party.Contains( m ) ) )
+						if ( m == Caster || ( party != null && party.Contains( m ) ) || (m is Squire && ((Squire)m).ControlMaster == Caster))
 						{
 							Caster.DoBeneficial( m );
 							Spells.Second.ProtectionSpell.Toggle( Caster, m );

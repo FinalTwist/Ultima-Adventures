@@ -201,46 +201,29 @@ namespace Server.Engines.BulkOrders
 
 		public object GetMaterialName( BulkMaterialType mat, BODType type, Type itemType )
 		{
-			switch ( type )
+			if (mat == BulkMaterialType.None)
 			{
-				case BODType.Smith:
+				switch ( type )
 				{
-					switch ( mat )
+					case BODType.Carpenter:
+					case BODType.Fletcher:
+						return 1079435; // Wood
+					case BODType.Smith:
+						return 1062226; // Iron
+					case BODType.Tailor:
 					{
-						case BulkMaterialType.None: return 1062226;
-						case BulkMaterialType.DullCopper: return 1018332;
-						case BulkMaterialType.ShadowIron: return 1018333;
-						case BulkMaterialType.Copper: return 1018334;
-						case BulkMaterialType.Bronze: return 1018335;
-						case BulkMaterialType.Gold: return 1018336;
-						case BulkMaterialType.Agapite: return 1018337;
-						case BulkMaterialType.Verite: return 1018338;
-						case BulkMaterialType.Valorite: return 1018339;
+						if ( itemType.IsSubclassOf( typeof( BaseArmor ) ) || itemType.IsSubclassOf( typeof( BaseShoes ) ) )
+							return 1062235; // Leather
+
+						return 1044286; // Cloth
 					}
-
-					break;
-				}
-				case BODType.Tailor:
-				{
-					switch ( mat )
-					{
-						case BulkMaterialType.None:
-						{
-							if ( itemType.IsSubclassOf( typeof( BaseArmor ) ) || itemType.IsSubclassOf( typeof( BaseShoes ) ) )
-								return 1062235;
-
-							return 1044286;
-						}
-						case BulkMaterialType.Spined: return 1062236;
-						case BulkMaterialType.Horned: return 1062237;
-						case BulkMaterialType.Barbed: return 1062238;
-					}
-
-					break;
 				}
 			}
 
-			return "Invalid";
+			string material = SmallBODGump.GetMaterialStringFor(mat);
+
+			return System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(material);
+
 		}
 
 		public BOBGump( PlayerMobile from, BulkOrderBook book ) : this( from, book, 0, null )

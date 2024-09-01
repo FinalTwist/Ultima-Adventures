@@ -390,6 +390,7 @@ namespace Server.Items
 		{
 			Stackable = true;
 			Amount = amount;
+			Weight = 0.1;
 		}
 
 		public BarkFragment( Serial serial )
@@ -401,7 +402,7 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int)0 ); // version
+			writer.Write( (int)1 ); // version
 		}
 
 		public override void Deserialize( GenericReader reader )
@@ -409,6 +410,8 @@ namespace Server.Items
 			base.Deserialize( reader );
 
 			int version = reader.ReadInt();
+			if (version == 0)
+				Weight = 0.1;
 		}
 	}
 

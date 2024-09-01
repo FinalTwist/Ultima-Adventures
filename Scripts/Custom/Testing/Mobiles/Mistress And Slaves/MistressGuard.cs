@@ -1,11 +1,12 @@
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x1c0a, 0x1c0b )]
-	public class MistressGuard : BaseArmor
-	{
+	public class MistressGuard : BaseArmor, ITailorRepairable
+    {
 		public override int ArtifactRarity{ get{ return 58; } }
 
 		public override int BasePhysicalResistance{ get{ return 8; } }

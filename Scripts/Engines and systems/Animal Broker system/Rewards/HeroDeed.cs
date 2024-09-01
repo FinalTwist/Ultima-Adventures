@@ -16,7 +16,7 @@ namespace Server.Items
 	{
 		
 		[Constructable]
-		public HeroDeed() : base()
+		public HeroDeed() : base(0x14F0)
 		{
 			base.Weight = 0;
 			base.Name = "a heroic deed";
@@ -82,35 +82,21 @@ namespace Server.Items
 					if (targeted is StaticTarget)
 					{
 						StaticTarget targ = (StaticTarget)targeted;
-						if (targ.ItemID != 7264 && targ.ItemID != 7335)
+						IPoint3D p = targeted as IPoint3D;
+
+						BaseAddon addon = null;
+
+						if (targ.ItemID == 7264) addon = new HeroSarcoWE();
+						else if (targ.ItemID == 7335) addon = new HeroSarcoNS();
+
+						if (addon == null)
 						{
 							from.SendMessage("Target the bottom-right most tile of the sarcophagus.");
 							return;
 						}
 
-						IPoint3D p = targeted as IPoint3D;
-
-						Console.WriteLine(p.X + p.Y + p.Z);
-
-						if (from.Map == null )
-						{
-							from.SendMessage("map is null");
-							return;
-						}
-
-						if (targ.ItemID == 7264)
-						{
-							BaseAddon addon = new HeroSarcoWE(); 
-							addon.Map = Map.Trammel;
-							addon.MoveToWorld(new Point3D( p ), from.Map);
-						}
-						if (targ.ItemID == 7335)
-						{
-							BaseAddon addon = new HeroSarcoNS();
-							addon.Map = Map.Trammel;
-							addon.MoveToWorld(new Point3D( p), from.Map);
-						}
-
+						addon.MoveToWorld(new Point3D( p), from.Map);
+						addon.Z = 0;
 						m_Deed.Delete();
 					}
 				}

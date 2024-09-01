@@ -10,19 +10,6 @@ namespace Server.Engines.BulkOrders
 	[TypeAlias( "Scripts.Engines.BulkOrders.LargeSmithBOD" )]
 	public class LargeSmithBOD : LargeBOD
 	{
-		public static double[] m_BlacksmithMaterialChances = new double[]
-			{
-				0.301953125, // None
-				0.350000000, // Dull Copper
-				0.175000000, // Shadow Iron
-				0.087500000, // Copper
-				0.043750000, // Bronze
-				0.021875000, // Gold
-				0.010937500, // Agapite
-				0.005468750, // Verite
-				0.002734375  // Valorite
-			};
-
 		public override int ComputeFame()
 		{
 			return SmithRewardCalculator.Instance.ComputeFame( this );
@@ -34,10 +21,14 @@ namespace Server.Engines.BulkOrders
 		}
 
 		[Constructable]
-		public LargeSmithBOD()
+        public LargeSmithBOD() : this(false)
+		{
+		}
+
+        [Constructable]
+        public LargeSmithBOD(bool useMaterials = false)
 		{
 			LargeBulkEntry[] entries;
-			bool useMaterials = true;
 			
 			int rand = Utility.Random( 8 );
 
@@ -53,9 +44,6 @@ namespace Server.Engines.BulkOrders
 				case  6: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.LargePolearms );	 break;
 				case  7: entries = LargeBulkEntry.ConvertEntries( this, LargeBulkEntry.LargeSwords );	 break;
 			}
-			
-			if( rand > 2 && rand < 8 )
-				useMaterials = false;
 
 			int hue = 0x44E;
 			int amountMax = Utility.RandomList( 10, 15, 20, 20 );
@@ -65,7 +53,7 @@ namespace Server.Engines.BulkOrders
 
 			if ( useMaterials )
 			{
-				material = GetRandomMaterial( BulkMaterialType.DullCopper, m_BlacksmithMaterialChances );
+				material = GetRandomMaterial( BulkMaterialType.DullCopper, BulkMaterialType.Dwarven );
 			}
 			else
 				material = BulkMaterialType.None;

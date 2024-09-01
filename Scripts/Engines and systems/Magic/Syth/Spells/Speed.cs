@@ -29,24 +29,36 @@ namespace Server.Spells.Syth
 		{
 		}
 
-		public static Hashtable TableSythRunning = new Hashtable();
-
-		public static bool HasEffect( Mobile m )
-		{
-			return ( TableSythRunning[m] != null );
-		}
+        private static Hashtable m_Timers = new Hashtable();
 
 		public static bool UnderEffect( Mobile m )
 		{
-			return TableSythRunning.Contains( m );
+			return m_Timers.Contains( m );
 		}
 
 		public static void RemoveEffect( Mobile m )
 		{
-			m.Send(SpeedControl.Disable);
-			TableSythRunning.Remove( m );
-			m.EndAction( typeof( SythSpeed ) );
+			if (StopTimer( m ))
+			{
+				m.Send(SpeedControl.Disable);
+				m.EndAction( typeof( SythSpeed ) );
+				m.PlaySound( 0x64C ); // Cleansing winds
+				m.SendMessage("You feel the wind around you dissipate");
+			}
 		}
+
+        public static bool StopTimer(Mobile m)
+        {
+            Timer t = (Timer)m_Timers[m];
+
+            if (t != null)
+            {
+                t.Stop();
+                m_Timers.Remove(m);
+            }
+
+            return (t != null);
+        }
 
 		public override void OnCast()
 		{
@@ -68,18 +80,21 @@ namespace Server.Spells.Syth
 			{
 				if ( !Caster.CanBeginAction( typeof( SythSpeed ) ) )
 				{
-					SythSpeed.RemoveEffect( Caster );
+					StopTimer( Caster );
 				}
 
 				int TotalTime = (int)( GetSythDamage( Caster ) * 4 );
-					if ( TotalTime < 600 ){ TotalTime = 600; }
-				TableSythRunning[Caster] = SpeedControl.MountSpeed;
+				if ( TotalTime < 600 ){ TotalTime = 600; }
+                InternalTimer timer = new InternalTimer( Caster, TimeSpan.FromSeconds( TotalTime ) );
+
 				Caster.Send(SpeedControl.MountSpeed);
-				new InternalTimer( Caster, TimeSpan.FromSeconds( TotalTime ) ).Start();
 				Caster.BeginAction( typeof( SythSpeed ) );
 				Point3D air = new Point3D( ( Caster.X+1 ), ( Caster.Y+1 ), ( Caster.Z+5 ) );
 				Effects.SendLocationParticles(EffectItem.Create(air, Caster.Map, EffectItem.DefaultDuration), 0x37CC, 9, 32, 0xB00, 0, 5022, 0);
-				Caster.PlaySound( 0x654 );
+				Caster.PlaySound( 0x654 ); // Nether Cyclone
+
+				m_Timers[Caster] = timer;
+				timer.Start();
 			}
 
             FinishSequence();
@@ -88,21 +103,16 @@ namespace Server.Spells.Syth
 		private class InternalTimer : Timer
 		{
 			private Mobile m_m;
-			private DateTime m_Expire;
 
-			public InternalTimer( Mobile Caster, TimeSpan duration ) : base( TimeSpan.Zero, TimeSpan.FromSeconds( 0.1 ) )
+			public InternalTimer( Mobile Caster, TimeSpan duration ) : base( duration )
 			{
+				Priority = TimerPriority.OneSecond;
 				m_m = Caster;
-				m_Expire = DateTime.UtcNow + duration;
 			}
 
 			protected override void OnTick()
 			{
-				if ( DateTime.UtcNow >= m_Expire )
-				{
-					SythSpeed.RemoveEffect( m_m );
-					Stop();
-				}
+				RemoveEffect( m_m );
 			}
 		}
 	}

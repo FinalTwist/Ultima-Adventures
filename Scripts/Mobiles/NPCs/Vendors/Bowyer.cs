@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Server;
+using Server.Engines.BulkOrders;
 using System.Collections;
 using Server.Targeting;
 using Server.Items;
@@ -242,6 +243,42 @@ namespace Server.Mobiles
                     m_Bowyer.SayTo(from, "I cannot repair that.");
             }
         }
+
+		#region Bulk Orders
+
+		public override Item CreateBulkOrder(Mobile from, bool fromContextMenu)
+		{
+			PlayerMobile pm = from as PlayerMobile;
+
+			if ( pm != null && (fromContextMenu || 0.2 > Utility.RandomDouble()) )
+			{
+				double theirSkill = pm.Skills[SkillName.Fletching].Base;
+
+				if ( theirSkill >= 70.1 && ((theirSkill - 40.0) / 300.0) > Utility.RandomDouble() )
+					return new LargeFletcherBOD();
+
+				return SmallFletcherBOD.CreateRandomFor( from );
+			}
+
+			return null;
+		}
+
+		public override bool IsValidBulkOrder( Item item )
+		{
+			return ( item is SmallFletcherBOD || item is LargeFletcherBOD );
+		}
+
+		public override bool SupportsBulkOrders(Mobile from)
+		{
+			return (from is PlayerMobile && from.Skills[SkillName.Fletching].Base > 0);
+		}
+
+		public override TimeSpan GetNextBulkOrder( Mobile from )
+        {
+            return TimeSpan.Zero;
+        }
+
+		#endregion
 
 		public Bowyer( Serial serial ) : base( serial )
 		{

@@ -269,14 +269,9 @@ namespace Server.Items
 								item is MagicRobe || 
 								item is HairDyeBottle || 
 								item is HairDyePotion || 
-								item is ThrowingGloves || 
 								item is BagOfTricks || 
-								item is LevelPugilistGloves || 
-								item is LevelThrowingGloves || 
-								item is GiftPugilistGloves || 
-								item is GiftThrowingGloves || 
-								item is PugilistGlove || 
-								item is PugilistGloves )
+								item is IThrowingGloves || 
+								item is IPugilistGloves )
 					{
 						if ( !from.InRange( m_Tub.GetWorldLocation(), 1 ) || !from.InRange( item.GetWorldLocation(), 1 ) )
 						{

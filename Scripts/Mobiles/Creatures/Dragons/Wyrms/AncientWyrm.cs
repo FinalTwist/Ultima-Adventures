@@ -52,6 +52,10 @@ namespace Server.Mobiles
 			Karma = -22500;
 
 			VirtualArmor = 70;
+			
+			Tamable = true;
+			ControlSlots = 3;
+			MinTameSkill = 105;
 
 			Item Venom = new VenomSack();
 				Venom.Name = "venom sack";
@@ -93,6 +97,10 @@ namespace Server.Mobiles
 			Karma = -22500;
 
 			VirtualArmor = 70;
+			
+			Tamable = true;
+			ControlSlots = 3;
+			MinTameSkill = 109;
 
 			Item Venom = new VenomSack();
 				Venom.Name = "venom sack";
@@ -115,6 +123,8 @@ namespace Server.Mobiles
 		public override Poison PoisonImmune{ get{ return Poison.Regular; } }
 		public override Poison HitPoison{ get{ return Utility.RandomBool() ? Poison.Lesser : Poison.Regular; } }
 		public override int TreasureMapLevel{ get{ return 6; } }
+		public override FoodType FavoriteFood{ get{ return FoodType.Meat; } }
+		public override bool CanAngerOnTame { get { return true; } }
 
         public override int GetAngerSound()
         {

@@ -21,11 +21,11 @@ namespace Server.Misc
 
 			CharacterDatabase DB = Server.Items.CharacterDatabase.GetDB( m );
 
-			if ( DB.CharacterSkill == 55 )
+			if ( DB != null && DB.CharacterSkill == 55 )
 			{
 				return "Titan of Ether";
 			}
-			else if ( m.SkillsTotal > 0 )
+			else if ( DB != null && m.SkillsTotal > 0 )
 			{
 				Skill highest = GetShowingSkill( m, DB );
 
@@ -838,7 +838,11 @@ namespace Server.Misc
 		public static bool LuckyPlayer( int luck, Mobile from )
 		{
 			if (AdventuresFunctions.IsPuritain((object)from))
-				luck = 0;
+			{
+				//easiest luck calculation!
+				if (Utility.RandomDouble() > 0.90)
+					return true;
+			}
 
 			if (luck > 8000) //how is this even possible... but it is apparently
 				luck = 8000;
@@ -860,15 +864,15 @@ namespace Server.Misc
 
 				balance = balance / 200000; 
 				balancetweak += balance;
-            }
+            		}
 
-            double characterTypeModifier = 1.0;
-            if (from is PlayerMobile && ((PlayerMobile)from).BalanceStatus == 0) //observer, has penalty 20%
-                characterTypeModifier = 0.80;
-
-            realluck = (int)((double)realluck * balancetweak * characterTypeModifier);
-
-            if ( realluck <= 0 ) //sanity check
+		            double characterTypeModifier = 1.0;
+		            if (from is PlayerMobile && ((PlayerMobile)from).BalanceStatus == 0) //observer, has penalty 20%
+		                characterTypeModifier = 0.80;
+		
+		            realluck = (int)((double)realluck * balancetweak * characterTypeModifier);
+		
+		            if ( realluck <= 0 ) //sanity check
 				return false;
 
 			if ( realluck > MyServerSettings.LuckCap() ) //luck cap is 4k here, so 4k max now
@@ -876,7 +880,7 @@ namespace Server.Misc
 
 			int clover = (int)((double)realluck * 0.05); // RETURNS A MAX OF 200
 
-			if (  clover >= Utility.RandomMinMax( 1, 1000 ) ) //at max its 20%, this is 10% at mid 
+			if (  clover >= Utility.RandomMinMax( 1, 900 ) ) //at max its 20%, this is 10% at mid 
 			{
 				from.SendMessage( "You feel lucky!" );
 				return true;
@@ -902,6 +906,54 @@ namespace Server.Misc
 				return true;
 
 			return false;
+		}
+
+	    public static int LuckyPlayerArtifacts( int luck, Mobile from)
+		{
+
+			if (AdventuresFunctions.IsPuritain((object)from))
+			{
+				//easiest luck calculation!
+				if (Utility.RandomDouble() > 0.90)
+					return 20;
+			}
+
+			if (luck > 8000) //how is this even possible... but it is apparently
+				luck = 8000;
+
+			int realluck = Utility.RandomMinMax(1,2000) + (int)( (double)luck /2);	//max of 6000, however likely to be 4000 in most cases maxed
+
+			double balancetweak = 1;
+			double balance = (double)AetherGlobe.BalanceLevel; 
+
+			if (from is PlayerMobile )		
+			{
+				PlayerMobile pm = (PlayerMobile)from;
+
+				//adjusting for player alignment plus or minus 25% effect based on balance
+				if (pm.BalanceStatus < 0 || pm.Karma < 0)
+					balance = balance - 50000; 
+				else if ( pm.BalanceStatus > 0 || pm.Karma > 0 )
+					balance = 50000 - balance; 
+
+				balance = balance / 200000; 
+				balancetweak += balance;
+            		}
+
+		            double characterTypeModifier = 1.0;
+		            if (from is PlayerMobile && ((PlayerMobile)from).BalanceStatus == 0) //observer, has penalty 20%
+		                characterTypeModifier = 0.80;
+		
+		            realluck = (int)((double)realluck * balancetweak * characterTypeModifier);
+		
+		            if ( realluck <= 0 ) //sanity check
+				return 0;
+
+			if ( realluck > MyServerSettings.LuckCap() ) //luck cap is 4k here, so 4k max now
+			realluck = MyServerSettings.LuckCap();
+
+			int clover = (int)((double)realluck * 0.005); // RETURNS A MAX OF 20
+			return clover;
 		}
 
 		public static bool EvilPlayer( Mobile m )
@@ -966,41 +1018,6 @@ namespace Server.Misc
 		
 		*/
 		
-
-		public static int LuckyPlayerArtifacts( int luck, Mobile from)
-		{
-
-			if (AdventuresFunctions.IsPuritain((object)from) || luck > 8000)
-				luck = 0;
-
-			int realluck = Utility.RandomMinMax(1,2000) + (int)( (double)luck /2);	
-
-			double balancetweak = 1;
-			double balance = (double)AetherGlobe.BalanceLevel;
-
-			if (from is PlayerMobile && ((PlayerMobile)from).Avatar)		
-			{
-				PlayerMobile pm = (PlayerMobile)from;
-				if (pm.Karma < 0)
-					balance = 100000 - balance;
-
-				balance = (balance - 50000) / 200000;
-				balancetweak += balance;
-
-			}
-			
-			realluck = (int)((double)realluck * balancetweak);
-
-			if ( realluck <= 0 )
-				return 0;
-
-			if ( realluck > MyServerSettings.LuckCap() )
-				realluck = MyServerSettings.LuckCap();
-
-			int clover = (int)((double)realluck * 0.005); // RETURNS A MAX OF 20
-
-			return clover;
-		}
 
 		public static bool OrientalPlay( Mobile m )
 		{

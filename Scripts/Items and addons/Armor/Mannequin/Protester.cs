@@ -116,7 +116,7 @@ SpeechHue = Server.Misc.RandomThings.GetSpeechHue();
 				m_tick ++;
 			else 
 			{
-				int final = Utility.RandomMinMax(1, 21);
+				int final = Utility.RandomMinMax(1, 22);
 				if (final == 1)
 					this.Yell("Opening long-dead, decomposing bodies or bones should not be a Crime!!");
 				if (final == 2)
@@ -159,6 +159,8 @@ SpeechHue = Server.Misc.RandomThings.GetSpeechHue();
 					this.Yell("Things change - especially if they are SUPER POWERFUL... I Don't like change and I LOVE super powerful things, Don't change ANYTHING!");
 				if (final == 21)
 					this.Yell("This world has danger everywhere - That's not fair!  I should never die, never lose any items, and make gold all day everyday!");
+				if (final == 22)
+					this.Yell("There are dangerous infected creatures in the jungle west of Montor!  They can kill you and infect your body!  That's not fair!");
 				
 				m_tick = 0;
 			}

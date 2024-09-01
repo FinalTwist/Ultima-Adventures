@@ -1,11 +1,12 @@
 using System;
 using Server.Network;
 using Server.Items;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
 	[FlipableAttribute( 0x27A6, 0x27F1 )]
-	public class Tetsubo : BaseBashing
+	public class Tetsubo : BaseBashing, ICarpentryRepairable
 	{
 		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.FrenziedWhirlwind; } }
 		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.CrushingBlow; } }

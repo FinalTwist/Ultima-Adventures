@@ -237,6 +237,7 @@ namespace Server.Menus.Questions
 				else
 				{
 					m_Mobile.Frozen = false;
+					m_Mobile.CantWalk = false;
 					Stop();
 
 					int idx = Utility.Random( m_Destination.Locations.Length );

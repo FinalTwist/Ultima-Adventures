@@ -1,10 +1,11 @@
 //Made By Brad Poe
 using System;
+using Server.Engines.Craft;
 using Server.Items;
 
 namespace Server.Items
 {
-  public class FurBootsofTheBarbarian : BaseArmor
+  public class FurBootsofTheBarbarian : BaseArmor, ITailorRepairable
    {  
       public override int ArtifactRarity{ get{ return 21; } } 
 

@@ -111,7 +111,7 @@ namespace Server.Misc
 			if (from is FrankenFighter && ((BaseCreature)from).ControlMaster is PlayerMobile )
 			{
 				Mobile master = ((BaseCreature)from).ControlMaster;
-				if (((PlayerMobile)master).Alchemist()) //regen of mob is player's regen if greater
+				if (((PlayerMobile)master).MadChemist()) //regen of mob is player's regen if greater
 				{
 					int pt = AosAttributes.GetValue( master, AosAttribute.RegenHits );
 					if (pt > points)

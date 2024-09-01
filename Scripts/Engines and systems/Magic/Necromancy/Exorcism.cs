@@ -34,14 +34,17 @@ namespace Server.Spells.Necromancy
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if( Caster.Skills.SpiritSpeak.Value < 100.0 )
+        {
+            if (!base.CheckCast(caster))
+                return false;
+
+            if ( Caster.Skills.SpiritSpeak.Value < 100.0 )
 			{
 				Caster.SendLocalizedMessage( 1072112 ); // You must have GM Spirit Speak to use this spell
 				return false;
 			}
 
-			return base.CheckCast( caster );
+			return true;
 		}
 
 		public void Target( Mobile m )

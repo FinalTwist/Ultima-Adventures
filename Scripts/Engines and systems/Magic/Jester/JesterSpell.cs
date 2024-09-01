@@ -22,12 +22,11 @@ namespace Server.Spells.Jester
 
 		public override bool CheckCast(Mobile caster)
 		{
-			int mana = ScaleMana( RequiredMana );
-
 			if ( !base.CheckCast( caster ) )
 				return false;
 
-			if ( Server.Items.BagOfTricks.GetPranks( Caster ) < RequiredTithing )
+            int mana = ScaleMana(RequiredMana);
+            if ( Server.Items.BagOfTricks.GetPranks( Caster ) < RequiredTithing )
 			{
 				Caster.SendMessage( "You must have at least " + RequiredTithing.ToString() + " pranks to use this ability" );
 				return false;

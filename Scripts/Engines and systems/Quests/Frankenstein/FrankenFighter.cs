@@ -125,22 +125,22 @@ namespace Server.Mobiles
 			if (scalar < 0.1 )
 				scalar = 0.1;
 
-			double chemist = 1;
+			double chemistBonus = 1;
 
 			if (this.ControlMaster != null && this.ControlMaster is PlayerMobile )
 			{
 				PlayerMobile pm = (PlayerMobile)ControlMaster;
-				if (pm.Alchemist())
-					chemist = pm.AlchemistBonus();
+				if (pm.MadChemist())
+					chemistBonus = pm.AlchemistBonus();
 			}
 
-			SetStr( (int)(200*scalar*chemist) );
-			SetDex( (int)(100*scalar*chemist) );
-			SetInt( (int)(60*scalar*chemist) );
+			SetStr( (int)(200*scalar*chemistBonus) );
+			SetDex( (int)(100*scalar*chemistBonus) );
+			SetInt( (int)(60*scalar*chemistBonus) );
 
-			SetHits( (int)(210*scalar*(chemist)) );
+			SetHits( (int)(210*scalar*(chemistBonus)) );
 
-			SetDamage( (int)(5*scalar*chemist), (int)(10*scalar*chemist) );
+			SetDamage( (int)(5*scalar*chemistBonus), (int)(10*scalar*chemistBonus) );
 
 			SetDamageType( ResistanceType.Physical, 100 );
 
@@ -174,9 +174,9 @@ namespace Server.Mobiles
 			if (dropped is BaseExplosionPotion && this.ControlMaster is PlayerMobile)
 			{
 				PlayerMobile pm = (PlayerMobile)ControlMaster;
-				if (!pm.Alchemist())
+				if (!pm.MadChemist())
 				{
-					from.SendMessage("Only Chemists may direct their reanimation to use potions.");
+					from.SendMessage("Only Mad Scientists may direct their reanimation to use potions.");
 					return false;
 				}
 
@@ -199,7 +199,7 @@ namespace Server.Mobiles
 		{
 			base.OnThink();
 
-			if (!m_Threwpot && ( m_lesspots > 0 || m_greatpots > 0 || m_pots > 0 ) && ControlMaster != null && ControlMaster is PlayerMobile && ((PlayerMobile)ControlMaster).Alchemist() && Utility.RandomDouble() > 0.85)
+			if (!m_Threwpot && ( m_lesspots > 0 || m_greatpots > 0 || m_pots > 0 ) && ControlMaster != null && ControlMaster is PlayerMobile && ((PlayerMobile)ControlMaster).MadChemist() && Utility.RandomDouble() > 0.85)
 			{
 				if (this.Combatant != null && InLOS( this.Combatant ) && (int)GetDistanceToSqrt( this.Combatant ) > 3 && (int)GetDistanceToSqrt( this.Combatant ) < 15 )
 				{

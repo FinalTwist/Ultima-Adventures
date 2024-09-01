@@ -39,7 +39,6 @@ namespace Server
 	public delegate void LoginEventHandler( LoginEventArgs e );
 	public delegate void ServerListEventHandler( ServerListEventArgs e );
 	public delegate void MovementEventHandler( MovementEventArgs e );
-	public delegate void HungerChangedEventHandler( HungerChangedEventArgs e );
 	public delegate void CrashedEventHandler( CrashedEventArgs e );
 	public delegate void ShutdownEventHandler( ShutdownEventArgs e );
 	public delegate void HelpRequestEventHandler( HelpRequestEventArgs e );
@@ -566,21 +565,6 @@ namespace Server
 		}
 	}
 
-	public class HungerChangedEventArgs : EventArgs
-	{
-		private Mobile m_Mobile;
-		private int m_OldValue;
-
-		public Mobile Mobile{ get{ return m_Mobile; } }
-		public int OldValue{ get{ return m_OldValue; } }
-
-		public HungerChangedEventArgs( Mobile mobile, int oldValue )
-		{
-			m_Mobile = mobile;
-			m_OldValue = oldValue;
-		}
-	}
-
 	public class MovementEventArgs : EventArgs
 	{
 		private Mobile m_Mobile;
@@ -840,7 +824,6 @@ namespace Server
 		public static event LoginEventHandler Login;
 		public static event ServerListEventHandler ServerList;
 		public static event MovementEventHandler Movement;
-		public static event HungerChangedEventHandler HungerChanged;
 		public static event CrashedEventHandler Crashed;
 		public static event ShutdownEventHandler Shutdown;
 		public static event HelpRequestEventHandler HelpRequest;
@@ -994,6 +977,12 @@ namespace Server
 
 		public static void InvokeAggressiveAction( AggressiveActionEventArgs e )
 		{
+			if (Core.DisablePlayerVsPlayer
+				&& e.Aggressed != e.Aggressor 
+				&& e.Aggressed != null && e.Aggressed.Player
+				&& e.Aggressor != null && e.Aggressor.Player)
+				return;
+
 			if ( AggressiveAction != null )
 				AggressiveAction( e );
 		}
@@ -1135,12 +1124,6 @@ namespace Server
 				Crashed( e );
 		}
 
-		public static void InvokeHungerChanged( HungerChangedEventArgs e )
-		{
-			if ( HungerChanged != null )
-				HungerChanged( e );
-		}
-
 		public static void InvokeMovement( MovementEventArgs e )
 		{
 			if ( Movement != null )
@@ -1213,7 +1196,6 @@ namespace Server
 			Login = null;
 			ServerList = null;
 			Movement = null;
-			HungerChanged = null;
 			Crashed = null;
 			Shutdown = null;
 			HelpRequest = null;

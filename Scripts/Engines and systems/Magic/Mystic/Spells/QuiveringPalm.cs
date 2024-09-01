@@ -30,11 +30,7 @@ namespace Server.Spells.Mystic
 		{
 			BaseWeapon weapon = Caster.Weapon as BaseWeapon;
 
-			if ( weapon == null || weapon is Fists )
-			{
-				Caster.SendMessage( "You must be wearing some type of pugilist gloves!" );
-			}
-			else if ( !( weapon is GlovesOfThePugilist || weapon is GiftPugilistGloves || weapon is LevelPugilistGloves || weapon is PugilistGloves || weapon is PugilistGlove ) )
+			if ( weapon == null || weapon is Fists || !( weapon is IPugilistGloves ) )
 			{
 				Caster.SendMessage( "You must be wearing some type of pugilist gloves!" );
 			}

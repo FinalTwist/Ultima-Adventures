@@ -1,11 +1,12 @@
 using System;
 using Server;
 using Server.Guilds;
+using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    public class GiftOrderShield : BaseGiftShield
-	{
+    public class GiftOrderShield : BaseGiftShield, IBlacksmithRepairable
+    {
 		public override int BasePhysicalResistance{ get{ return 1; } }
 		public override int BaseFireResistance{ get{ return 0; } }
 		public override int BaseColdResistance{ get{ return 0; } }
@@ -19,7 +20,7 @@ namespace Server.Items
 
 		public override int ArmorBase{ get{ return 30; } }
 
-		[Constructable]
+        [Constructable]
 		public GiftOrderShield() : base( 0x1BC4 )
 		{
 			Weight = 7.0;

@@ -28,8 +28,11 @@ namespace Server.Spells.Fifth
 		}
 
 		public override bool CheckCast(Mobile caster)
-		{
-			if ( !Caster.CanBeginAction( typeof( IncognitoSpell ) ) )
+        {
+            if (!base.CheckCast(caster))
+                return false;
+
+            if ( !Caster.CanBeginAction( typeof( IncognitoSpell ) ) )
 			{
 				Caster.SendLocalizedMessage( 1005559 ); // This spell is already in effect.
 				return false;

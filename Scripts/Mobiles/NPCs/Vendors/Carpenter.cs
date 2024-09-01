@@ -255,6 +255,43 @@ if (ba.MaxHitPoints > 10)
         }
 		///////////////////////////////////////////////////////////////////////////
 
+
+		#region Bulk Orders
+
+		public override Item CreateBulkOrder(Mobile from, bool fromContextMenu)
+		{
+			PlayerMobile pm = from as PlayerMobile;
+
+			if ( pm != null && (fromContextMenu || 0.2 > Utility.RandomDouble()) )
+			{
+				double theirSkill = pm.Skills[SkillName.Carpentry].Base;
+
+				if ( theirSkill >= 70.1 && ((theirSkill - 40.0) / 300.0) > Utility.RandomDouble() )
+					return new LargeCarpenterBOD();
+
+				return SmallCarpenterBOD.CreateRandomFor( from );
+			}
+
+			return null;
+		}
+
+		public override bool IsValidBulkOrder( Item item )
+		{
+			return ( item is SmallCarpenterBOD || item is LargeCarpenterBOD );
+		}
+
+		public override bool SupportsBulkOrders(Mobile from)
+		{
+			return (from is PlayerMobile && from.Skills[SkillName.Carpentry].Base > 0);
+		}
+
+		public override TimeSpan GetNextBulkOrder( Mobile from )
+        {
+            return TimeSpan.Zero;
+        }
+
+		#endregion
+
 		public Carpenter( Serial serial ) : base( serial )
 		{
 		}

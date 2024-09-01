@@ -51,7 +51,7 @@ namespace Server.Items
 		public override void GetProperties( ObjectPropertyList list )
 		{
 			base.GetProperties( list );
-			list.Add( "Price Per Item Dyed: 100 Gold" );
+			list.Add( "Price Per Item Dyed: 500 Gold" );
 
 			if ( Charged )
 			{
@@ -138,7 +138,7 @@ namespace Server.Items
 				{
 					Item item = (Item) targeted;
 
-					if ( ( item is BaseWeapon ) && ( from.Backpack != null && from.Backpack.ConsumeTotal( typeof( Gold ), 100 ) ) )
+					if ( ( item is BaseWeapon ) && ( from.Backpack != null && from.Backpack.ConsumeTotal( typeof( Gold ), 500 ) ) )
 					{
 						if( !item.IsChildOf(from.Backpack) )
 						{

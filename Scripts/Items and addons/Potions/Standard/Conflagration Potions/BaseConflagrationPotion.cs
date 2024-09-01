@@ -20,10 +20,12 @@ namespace Server.Items
 
 		public BaseConflagrationPotion( PotionEffect effect ) : base( 0x180F, effect )
 		{
+			ReturnBottleOnUse = false;
 		}
 
 		public BaseConflagrationPotion( Serial serial ) : base( serial )
 		{
+			ReturnBottleOnUse = false;
 		}
 
 		public override void Drink( Mobile from )
@@ -86,7 +88,7 @@ namespace Server.Items
 			if ( Deleted || map == null )
 				return;
 
-			Consume();
+			Consume(from);
 			
 			// Check if any other players are using this potion
 			for ( int i = 0; i < m_Users.Count; i ++ )
@@ -122,10 +124,10 @@ namespace Server.Items
 			if ( timer != null )
 				timer.Stop();
 
-            //Quicker Cooldown for alchemists based on enhance potion
+            //Quicker Cooldown for Alchemists based on Enhance Potion and Dex
             double scalar = 1.0;
             if (m is PlayerMobile && ((PlayerMobile)m).Alchemist())
-                scalar = 1.0 + (0.02 * EnhancePotions(m));
+                scalar = 1.0 + (0.01 * EnhancePotions(m)) + 1.3 * ((double)((PlayerMobile)m).Dex/500);
 
 
             m_Delay[ m ] = Timer.DelayCall( TimeSpan.FromSeconds( 30 / scalar) , new TimerStateCallback( EndDelay_Callback ), m );	

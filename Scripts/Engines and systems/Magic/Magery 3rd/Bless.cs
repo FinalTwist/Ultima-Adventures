@@ -46,6 +46,7 @@ namespace Server.Spells.Third
 					if (Utility.RandomBool())
 					{
 						CurseSpell.RemoveEffect(m);
+                        BuffInfo.RemoveBuff(m, BuffIcon.Curse);
 						m.SendMessage("You are no longer cursed!");
 						m.UpdateResistances();
 					}

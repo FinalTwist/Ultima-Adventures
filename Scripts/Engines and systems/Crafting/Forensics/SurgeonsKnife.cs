@@ -102,6 +102,7 @@ namespace Server.Items
 							}
 
 							from.AddToBackpack( piece );
+							c.VisitedByTaxidermist = true;
 						}
 
 						if ( m_Knife.HitPoints < 1 )
@@ -970,6 +971,7 @@ namespace Server.Items
 								from.AddToBackpack( guts );
 								if ( from.Skills[SkillName.Forensics].Value < Utility.RandomMinMax( 1, 110 ) ) { m_Knife.HitPoints = m_Knife.HitPoints - 1; }
 								from.SendMessage("You get a " + guts.Name + " from the corpse.");
+								c.VisitedByTaxidermist = true;
 							}
 							else
 							{

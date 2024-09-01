@@ -76,16 +76,16 @@ namespace Server.Items
 
 		public override void OnSingleClick( Mobile from )
 		{
-			DisplayDurabilityTo( from );
+			//DisplayDurabilityTo( from );
 
 			base.OnSingleClick( from );
 		}
 
 		public override void OnDoubleClick( Mobile from )
 		{
-			if ( IsChildOf( from.Backpack ) )
-				from.Target = new InternalTarget( this );
-			else
+			//if ( IsChildOf( from.Backpack ) )
+			//	from.Target = new InternalTarget( this );
+			//else
 				from.SendLocalizedMessage( 1042001 ); // That must be in your pack for you to use it.
 		}
 
