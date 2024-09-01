@@ -31,7 +31,7 @@ namespace Server.Misc
 			// THESE REQUIRED FILES SHOULD BE INCLUDED IN THE "Files" FOLDER OF THE PACKAGE
 			// SET THE BELOW PATH TO WHERE THIS FOLDER IS LOCATED
 
-			return @"C:\Ultima-Adventures\Files";
+			return @"./Files";
 		}
 
 		public static bool AllowSaveFunction()
