@@ -16,7 +16,6 @@ namespace Server.Items
 
 
 			WeightReduction = 100;
-			DamageIncrease = 50;
 			Attributes.WeaponSpeed = 50;
 			LowerAmmoCost = 75;
 		}

@@ -81,7 +81,7 @@ namespace Server.Spells.Fifth
 			FinishSequence();
 		}
 
-		private class InternalTarget : Target
+		public class InternalTarget : Target
 		{
 			private BladeSpiritsSpell m_Owner;
 

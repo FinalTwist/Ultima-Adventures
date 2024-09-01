@@ -8,6 +8,10 @@ using Server.ContextMenus;
 
 namespace Server.Items
 {
+	public interface IAnkh
+	{
+	}
+
 	public class Ankhs
 	{
 		public const int ResurrectRange = 4;
@@ -20,9 +24,7 @@ namespace Server.Items
 				list.Add( new LockKarmaEntry( (PlayerMobile)from ) );
 
 			list.Add( new ResurrectEntry( from, item ) );
-
-			if ( Core.AOS && from.Karma >= 0 )
-				list.Add( new TitheEntry( from ) );
+			list.Add( new TitheEntry( from ) );
 		}
 
 		public static void Resurrect( Mobile m, Item item )
@@ -111,7 +113,7 @@ namespace Server.Items
 		}
 	}
 
-	public class AnkhWest : Item
+	public class AnkhWest : Item, IAnkh
 	{
 		private InternalItem m_Item;
 
@@ -278,7 +280,7 @@ namespace Server.Items
 	}
 
 	[TypeAlias( "Server.Items.AnkhEast" )]
-	public class AnkhNorth : Item
+	public class AnkhNorth : Item, IAnkh
 	{
 		private InternalItem m_Item;
 

@@ -9,28 +9,30 @@ namespace Server.Items
 	{
 		public override CraftSystem CraftSystem{ get{ return DefBowFletching.CraftSystem; } }
 
-		public override void AddNameProperties( ObjectPropertyList list )
-		{
-			base.AddNameProperties( list );
+        public override int LabelNumber
+        {
+            get
+            {
+                return 1044166; // fletcher's tools
+            }
+        }
 
-			int index = CraftResources.GetIndex( Resource );
+        public override void AddNameProperties(ObjectPropertyList list)
+        {
+            base.AddNameProperties(list);
 
-			if ( index >= 1 && index <= 8 )
-				return;
+            if (!CraftResources.IsStandard(Resource))
+            {
+                int num = CraftResources.GetLocalizationNumber(Resource);
 
-			if ( !CraftResources.IsStandard( Resource ) )
-			{
-				int num = CraftResources.GetLocalizationNumber( Resource );
+                if (num > 0)
+                    list.Add(num);
+                else
+                    list.Add(CraftResources.GetName(Resource));
+            }
+        }
 
-				if ( num > 0 )
-					list.Add( num );
-				else
-					list.Add( CraftResources.GetName( Resource ) );
-			}
-		}
-
-
-		[Constructable]
+        [Constructable]
 		public RunicFletcherTools( CraftResource resource ) : base( resource, 0x1F2C )
 		{
 			Weight = 2.0;

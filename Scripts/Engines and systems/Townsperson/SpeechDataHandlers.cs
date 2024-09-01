@@ -109,6 +109,8 @@ namespace Server.Mobiles.Data
                 if (isEmpty(temp))
                     return new SpeechResponse(blockedReplies[Utility.Random(blockedReplies.Length)], Speaker, 0, 0, null, null);
 
+                string bestMatch = null;
+                bool bestMatchIsWord = false;
                 temp = ' ' + temp + ' ';
                 foreach (DataRow dr in SpeechData.dsSpeechRules.Tables["dtTriggers"].Rows)
                 {
@@ -118,13 +120,22 @@ namespace Server.Mobiles.Data
                     if (isWord)
                         test = ' ' + test + ' ';
 
+                    // Search for a substring
                     if (temp.IndexOf(test) >= 0)
                     {
-                        drFound = dr;
+                        if (
+                            bestMatch == null // First match found
+                            || (bestMatchIsWord && !isWord) // Replace - Phrase > Single word
+                            || bestMatch.Length < test.Length // Replace - Longer > Shorter
+                        )
+                        {
+                            bestMatch = test;
+                            bestMatchIsWord = isWord;
+                            drFound = dr;
+                        }
+
                         if (Townsperson.Logging == Townsperson.LogLevel.Debug)
                             TownspersonLogging.WriteLine(Speaker, "Trigger matched: \"{0}\" : \"{1}\"", test, temp);
-
-                        break;
                     }
                 }
 

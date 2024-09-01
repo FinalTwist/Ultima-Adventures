@@ -15,7 +15,6 @@ namespace Server.Items
 			Hue = 0xEB;
 			
 			WeightReduction = 100;
-			DamageIncrease = 50;
 			LowerAmmoCost = 75;
 		}
 

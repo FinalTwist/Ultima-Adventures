@@ -53,8 +53,6 @@ namespace Server.Mobiles
 
 			if ( fee < 2000 ){ fee = 2000; }
 
-			if ( GetPlayerInfo.isFromSpace( m ) ){ fee = fee * 4; }
-
 			return fee;
 		}
 
@@ -124,6 +122,15 @@ namespace Server.Mobiles
 				SayPriceTo( player, guildmaster );
 		}
 
+		public static void SetNewGuildCost(Mobile player)
+		{
+			CharacterDatabase DB = Server.Items.CharacterDatabase.GetDB( player );
+
+			DB.CharacterGuilds = DB.CharacterGuilds > 0
+				? DB.CharacterGuilds * 2 // Double it after the first time
+				: 4000;
+		}
+
 		public static void ResignGuild( Mobile player, Mobile guildmaster )
 		{
 			PlayerMobile pm = (PlayerMobile)player;
@@ -136,18 +143,7 @@ namespace Server.Mobiles
 			{
 				guildmaster.SayTo( player, 501054 ); // I accept thy resignation.
 				pm.NpcGuild = NpcGuild.None;
-
-				CharacterDatabase DB = Server.Items.CharacterDatabase.GetDB( player );
-
-				if ( DB.CharacterGuilds > 0 )
-				{
-					int fees = DB.CharacterGuilds;
-					DB.CharacterGuilds = (int)(fees * 1.5);
-				}
-				else
-				{
-					DB.CharacterGuilds = 4000;
-				}
+				BaseGuildmaster.SetNewGuildCost(player);
 
 				ArrayList targets = new ArrayList();
 				foreach ( Item item in World.Items.Values )

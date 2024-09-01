@@ -40,7 +40,7 @@ namespace Server.Items
 			
 			base.AddNameProperties( list );	
 			
-			if (!(this is Monocle))
+			if (GetType() == typeof(Shovel))
 				list.Add( "Say 'I wish to start mining' near cave/mountain to mine automatically." ); 
 		}
 

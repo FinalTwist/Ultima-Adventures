@@ -79,7 +79,7 @@ namespace Server.Spells.Necromancy
 			FinishSequence();
 		}
 
-		private class InternalTarget : Target
+		public class InternalTarget : Target
 		{
 			private VengefulSpiritSpell m_Owner;
 

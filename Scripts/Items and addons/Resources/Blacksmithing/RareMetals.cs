@@ -59,14 +59,16 @@ namespace Server.Items
 
 		public override void OnDoubleClick( Mobile from )
 		{
+            if (from.IsPlayer() && !from.InRange(this, 2))
+            {
+                from.LocalOverheadMessage(MessageType.Regular, 0x3B2, 1019045); // I can't reach that.
+                return;
+            }
+
 			bool anvil, forge;
 			Server.Engines.Craft.DefBlacksmithy.CheckAnvilAndForge( from, 2, out anvil, out forge );
 
-			if ( !IsChildOf( from.Backpack ) )
-			{
-				from.SendLocalizedMessage( 1060640 ); // The item must be in your backpack to use it.
-			}
-			else if ( !forge )
+			if ( !forge )
 			{
 				from.SendMessage( "You need to be near a forge to smelt that." );
 			}

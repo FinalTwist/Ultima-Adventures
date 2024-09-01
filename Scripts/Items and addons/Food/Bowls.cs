@@ -529,4 +529,34 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
+
+    public class WoodenBowlOfLobsterBisque : Food
+    {
+        [Constructable]
+        public WoodenBowlOfLobsterBisque() : base(0x1606)
+        {
+            Stackable = false;
+			Name = "lobster bisque";
+            Weight = 1.0;
+            FillFactor = 2;
+        }
+
+        public WoodenBowlOfLobsterBisque(Serial serial) : base(serial)
+        {
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
 }

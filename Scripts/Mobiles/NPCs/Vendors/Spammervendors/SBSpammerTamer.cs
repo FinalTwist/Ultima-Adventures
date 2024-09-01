@@ -77,10 +77,10 @@ namespace Server.Mobiles
 				Add( new AnimalBuyInfo( 1, typeof( IronBeetle ), 200000, 10, 204, 0 ) );
 				}
 
-				if ( Utility.RandomDouble() < 0.10 )
-				{
-				Add( new AnimalBuyInfo( 1, typeof( Daemon ), 3000000, 10, 204, 0 ) );
-				}
+				// if ( Utility.RandomDouble() < 0.10 )
+				// {
+				// Add( new AnimalBuyInfo( 1, typeof( Daemon ), 3000000, 10, 204, 0 ) );
+				// }
 
 				if ( Utility.RandomDouble() < 0.10 )
 				{

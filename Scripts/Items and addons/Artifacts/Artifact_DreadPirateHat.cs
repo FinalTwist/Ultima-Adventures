@@ -18,7 +18,7 @@ namespace Server.Items
 		{
 			Hue = 0x497;
 
-
+			Name = "Dread Pirate Hat";
 			SkillBonuses.SetValues( 0, Utility.RandomCombatSkill(), 10.0 );
 			SkillBonuses.SetValues( 0, SkillName.Fishing, 20 );
 

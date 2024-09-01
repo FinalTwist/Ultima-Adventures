@@ -34,6 +34,7 @@ namespace Server.Mobiles
 		{
 			m_SBInfos.Add( new SBSage() ); 
 			m_SBInfos.Add( new SBBuyArtifacts() ); 
+			m_SBInfos.Add( new SBReadOnlyArtifacts() );
 		}
 
 		public override VendorShoeType ShoeType

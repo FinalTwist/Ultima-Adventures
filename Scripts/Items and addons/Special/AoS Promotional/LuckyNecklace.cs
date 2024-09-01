@@ -13,6 +13,12 @@ namespace Server.Items
 		{
 			base.Attributes.Luck = 300;
 		}
+		
+        public override void AddNameProperties(ObjectPropertyList list)
+		{
+            base.AddNameProperties(list);
+			list.Add( 1070722, "Artifact");
+        }
 
 		public LuckyNecklace( Serial serial ) : base( serial )
 		{

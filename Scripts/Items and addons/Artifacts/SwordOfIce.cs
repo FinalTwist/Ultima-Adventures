@@ -52,6 +52,12 @@ namespace Server.Items
               
             Slayer = SlayerName.ElementalBan;
 		}
+		
+        public override void AddNameProperties(ObjectPropertyList list)
+		{
+            base.AddNameProperties(list);
+			list.Add( 1070722, "Artifact");
+        }
 
 		public SwordOfIce( Serial serial ) : base( serial )
 		{

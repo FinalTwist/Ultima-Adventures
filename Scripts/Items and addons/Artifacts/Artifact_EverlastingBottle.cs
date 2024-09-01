@@ -37,12 +37,12 @@ namespace Server.Items
 		{
 			if (DateTime.UtcNow > timer && from.Thirst < 20)
 			{
-				timer = DateTime.Now + TimeSpan.FromHours(4);
+				timer = DateTime.UtcNow + TimeSpan.FromHours(1);
 				from.Thirst = 20;
 				from.SendMessage( "You take a healthy drink from the bottle...and it magically begins to refill." );
 				from.PlaySound( Utility.RandomList( 0x30, 0x2D6 ) );
 			}
-			else if (from.Thirst > 20)
+			else if (from.Thirst >= 20)
 				from.SendMessage("You are not thirsty!");
 			else
 				from.SendMessage("The bottle isn't full yet.");

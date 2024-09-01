@@ -29,28 +29,28 @@ namespace Server.Items
 		[CommandProperty( AccessLevel.GameMaster )]
 		public Mobile Owner { get{ return owner; } set{ owner = value; } }
 
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.Administrator)]
 		public string Search_Message { get { return SearchMessage; } set { SearchMessage = value; InvalidateProperties(); } }
 
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.Administrator)]
 		public string Search_Dungeon { get { return SearchDungeon; } set { SearchDungeon = value; InvalidateProperties(); } }
 
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.Administrator)]
 		public Map Dungeon_Map { get { return DungeonMap; } set { DungeonMap = value; InvalidateProperties(); } }
 
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.Administrator)]
 		public string Search_World { get { return SearchWorld; } set { SearchWorld = value; InvalidateProperties(); } }
 
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.Administrator)]
 		public string Search_Type { get { return SearchType; } set { SearchType = value; InvalidateProperties(); } }
 
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.Administrator)]
 		public string Search_Item { get { return SearchItem; } set { SearchItem = value; InvalidateProperties(); } }
 
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.Administrator)]
 		public int Legend_Real { get { return LegendReal; } set { LegendReal = value; InvalidateProperties(); } }
 
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.Administrator)]
 		public int Legend_Percent { get { return LegendPercent; } set { LegendPercent = value; InvalidateProperties(); } }
 
 		[Constructable]

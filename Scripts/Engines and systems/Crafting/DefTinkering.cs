@@ -143,6 +143,10 @@ namespace Server.Engines.Craft
 				AddRes( index, typeof( Log ), 1015101, 8, 1044351 );
 				 
 			}
+
+            index = AddCraft( typeof( FishingTrap ), 1044042, "fishing trap", 45.0, 65.0, typeof( Board ), 1015101, 4, 1044351 );
+            AddSkill( index, SkillName.Fishing, 45.0, 65.0 );
+            AddRes( index, typeof( SpoolOfThread ), 1024000, 10, 1073463);
 			#endregion
 
 			#region Tools

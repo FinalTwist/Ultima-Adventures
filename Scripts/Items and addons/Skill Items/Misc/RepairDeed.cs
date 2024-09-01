@@ -7,8 +7,15 @@ using Server.Regions;
 
 namespace Server.Items
 {
-	public class RepairDeed : Item
+	public interface IRepairDeed
 	{
+        double SkillLevel { get; }
+        bool Check(Mobile from);
+		void Delete();
+    }
+
+    public class RepairDeed : Item, IRepairDeed
+    {
 		private class RepairSkillInfo
 		{
 			private CraftSystem m_System;

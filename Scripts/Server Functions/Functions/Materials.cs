@@ -1001,7 +1001,7 @@ namespace Server.Misc
 
 		public static void ColorPlainMetal( Item item )
 		{
-			switch ( Utility.RandomMinMax( 0, 13 ) ) 
+			switch ( Utility.RandomMinMax( 0, 14 ) ) 
 			{
 				case 0: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "silver", "", 0 ); item.Name = "silver " + item.Name;			break;
 				case 1: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "dull copper", "", 0 ); item.Name = "dull copper " + item.Name;	break;
@@ -1017,6 +1017,28 @@ namespace Server.Misc
 				case 11: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "nepturite", "", 0 ); item.Name = "nepturite " + item.Name;	break;
 				case 12: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "mithril", "", 0 ); item.Name = "mithril " + item.Name;		break;
 				case 13: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "caddellite", "", 0 ); item.Name = "caddellite " + item.Name;	break;
+				case 14: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "dwarven", "", 0 ); item.Name = "dwarven " + item.Name;	break;
+			}
+		}
+
+		public static void ColorPlainWood( Item item )
+		{
+			switch ( Utility.RandomMinMax( 0, 13 ) ) 
+			{
+				case 0: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "ash", "", 0 ); item.Name = "ash " + item.Name;			break;
+				case 1: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "cherry", "", 0 ); item.Name = "cherry " + item.Name;	break;
+				case 2: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "ebony", "", 0 ); item.Name = "ebony " + item.Name;	break;
+				case 3: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "golden oak", "", 0 ); item.Name = "golden oak " + item.Name;		break;
+				case 4: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "hickory", "", 0 ); item.Name = "hickory " + item.Name;		break;
+				case 5: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "mahogany", "", 0 ); item.Name = "mahogany " + item.Name;			break;
+				case 6: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "oak", "", 0 ); item.Name = "oak " + item.Name;		break;
+				case 7: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "pine", "", 0 ); item.Name = "pine " + item.Name;		break;
+				case 8: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "ghostwood", "", 0 ); item.Name = "ghostwood " + item.Name;		break;
+				case 9: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "rosewood", "", 0 ); item.Name = "rosewood " + item.Name;			break;
+				case 10: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "walnut", "", 0 ); item.Name = "walnut " + item.Name;		break;
+				case 11: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "petrified", "", 0 ); item.Name = "petrified " + item.Name;	break;
+				case 12: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "driftwood", "", 0 ); item.Name = "driftwood " + item.Name;		break;
+				case 13: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "elven", "", 0 ); item.Name = "elven " + item.Name;	break;
 			}
 		}
 

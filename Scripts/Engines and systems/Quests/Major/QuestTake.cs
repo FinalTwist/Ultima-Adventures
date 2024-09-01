@@ -521,9 +521,14 @@ namespace Server.Items
 			book.VillainTitle = RandomThings.RandomEvilTitle();
 		}
 
-		public static void DropChest( Mobile m )
+		public static bool IsBossCandidate( Mobile m )
 		{
-			if ( m.Fame == 0 && m.Karma == 0 && m.Title != "" && ((BaseCreature)m).Home.X == 0 && ((BaseCreature)m).Home.Y == 0 )
+			return m.Fame == 0 && m.Karma == 0 && m.Title != "" && ((BaseCreature)m).Home.X == 0 && ((BaseCreature)m).Home.Y == 0;
+        }
+
+		public static void DropChest( Mobile m)
+        {
+			if ( IsBossCandidate(m) )
 			{
 				bool BookExists = false;
 				QuestTome book = null;

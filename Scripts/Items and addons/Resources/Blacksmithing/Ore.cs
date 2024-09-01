@@ -20,6 +20,8 @@ namespace Server.Items
 
 		int ICommodity.DescriptionNumber { get { return LabelNumber; } }
 		bool ICommodity.IsDeedable { get { return true; } }
+        public bool IsTinyOre { get { return ItemID == 0x19B7; } }
+        public bool IsLargeOre { get { return ItemID == 0x19B9; } }
 
 		public abstract BaseIngot GetIngot();
 
@@ -112,6 +114,8 @@ namespace Server.Items
 				else
 					list.Add( CraftResources.GetName( m_Resource ) );
 			}
+
+			list.Add( "Say 'I wish to start smelting ore' to smelt automatically." ); 
 		}
 
 		public override int LabelNumber
@@ -129,13 +133,8 @@ namespace Server.Items
 		{
 			if ( !Movable )
 				return;
-			
-			if ( RootParent is BaseCreature )
-			{
-				from.SendLocalizedMessage( 500447 ); // That is not accessible
-				return;
-			}
-			else if ( from.InRange( this.GetWorldLocation(), 2 ) )
+
+			if ( from.InRange( this.GetWorldLocation(), 2 ) )
 			{
 				from.SendLocalizedMessage( 501971 ); // Select the forge on which to smelt the ore, or another pile of ore with which to combine it.
 				from.Target = new InternalTarget( this );
@@ -252,108 +251,98 @@ namespace Server.Items
 
 				if ( Server.Engines.Craft.DefBlacksmithy.IsForge( targeted ) )
 				{
-					double difficulty;
-
-					switch ( m_Ore.Resource )
-					{
-						default: difficulty = 50.0; break;
-						case CraftResource.DullCopper: difficulty = 65.0; break;
-						case CraftResource.ShadowIron: difficulty = 70.0; break;
-						case CraftResource.Copper: difficulty = 75.0; break;
-						case CraftResource.Bronze: difficulty = 80.0; break;
-						case CraftResource.Gold: difficulty = 85.0; break;
-						case CraftResource.Agapite: difficulty = 90.0; break;
-						case CraftResource.Verite: difficulty = 95.0; break;
-						case CraftResource.Valorite: difficulty = 99.0; break;
-						case CraftResource.Nepturite: difficulty = 99.0; break;
-						case CraftResource.Obsidian: difficulty = 99.0; break;
-						case CraftResource.Mithril: difficulty = 99.0; break;
-						case CraftResource.Xormite: difficulty = 99.0; break;
-						case CraftResource.Dwarven: difficulty = 101.0; break;
-					}
-
-					double minSkill = difficulty - 25.0;
-					double maxSkill = difficulty + 25.0;
-					
-					if ( difficulty > 50.0 && difficulty > from.Skills[SkillName.Mining].Value )
-					{
-						from.SendLocalizedMessage( 501986 ); // You have no idea how to smelt this strange ore!
-						return;
-					}
-					
-					if ( m_Ore.Amount <= 1 && m_Ore.ItemID == 0x19B7 )
-					{
-						from.SendLocalizedMessage( 501987 ); // There is not enough metal-bearing ore in this pile to make an ingot.
-						return;
-					}
-
-					if ( from.CheckTargetSkill( SkillName.Mining, targeted, minSkill, maxSkill ) )
-					{
-						if ( m_Ore.Amount <= 0 )
-						{
-							from.SendLocalizedMessage( 501987 ); // There is not enough metal-bearing ore in this pile to make an ingot.
-						}
-						else
-						{
-							int amount = m_Ore.Amount;
-							if ( m_Ore.Amount > 30000 )
-								amount = 30000;
-
-							BaseIngot ingot = m_Ore.GetIngot();
-							
-							if ( m_Ore.ItemID == 0x19B7 )
-							{
-								if ( m_Ore.Amount % 2 == 0 )
-								{
-									amount /= 2;
-									m_Ore.Delete();
-								}
-								else
-								{
-									amount /= 2;
-									m_Ore.Amount = 1;
-								}
-							}
-								
-							else if ( m_Ore.ItemID == 0x19B9 )
-							{
-								amount *= 2;
-								m_Ore.Delete();
-							}
-							
-							else
-							{
-								amount /= 1;
-								m_Ore.Delete();
-							}
-
-							ingot.Amount = amount;
-							from.AddToBackpack( ingot );
-							from.PlaySound( 0x208 );
-
-							from.SendLocalizedMessage( 501988 ); // You smelt the ore removing the impurities and put the metal in your backpack.
-						}
-					}
-					else if ( m_Ore.Amount < 2 && m_Ore.ItemID == 0x19B9 )
-					{
-						from.SendLocalizedMessage( 501990 ); // You burn away the impurities but are left with less useable metal.
-						m_Ore.ItemID = 0x19B8;
-						from.PlaySound( 0x208 );
-					}
-					else if ( m_Ore.Amount < 2 && m_Ore.ItemID == 0x19B8 || m_Ore.ItemID == 0x19BA )
-					{
-						from.SendLocalizedMessage( 501990 ); // You burn away the impurities but are left with less useable metal.
-						m_Ore.ItemID = 0x19B7;
-						from.PlaySound( 0x208 );
-					}
-					else
-					{
-						from.SendLocalizedMessage( 501990 ); // You burn away the impurities but are left with less useable metal.
-						m_Ore.Amount /= 2;
-						from.PlaySound( 0x208 );
-					}
+					m_Ore.Smelt(from, targeted, m_Ore.Amount);
 				}
 			}
+		}
+
+		public static bool IsForge(object targeted)
+		{
+			return targeted != null && DefBlacksmithy.IsForge(targeted);
+		}
+
+        public bool Smelt(Mobile from, object targeted, int amountRequested)
+		{
+			if ( Deleted ) return false;
+
+			if ( !from.InRange( GetWorldLocation(), 2 ) )
+			{
+				from.SendMessage( "The ore is too far away." );
+				return false;
+			}
+
+			if ( !IsForge( targeted ) )
+			{
+				from.SendMessage("That is not a forge.");
+				return false;
+			}
+
+			var itemForge = targeted as Item; // Might also be StaticTarget
+			if (itemForge != null && itemForge.Deleted) return false; // Forge is gone...
+
+			if ( Amount < 2 && IsTinyOre)
+			{
+				from.SendLocalizedMessage( 501987 ); // There is not enough metal-bearing ore in this pile to make an ingot.
+				return false ;
+			}
+
+			// Clamp to 30k for some reason
+			if ( amountRequested > 30000 )
+				amountRequested = 30000;
+
+            amountRequested = Math.Min(Amount, amountRequested);
+            if (IsTinyOre) amountRequested -= amountRequested % 2; // Tiny ore might have a trailing amount
+
+            double difficulty = CraftResources.GetMetalProcessDifficulty(Resource);
+	
+			if ( difficulty > 50.0 && difficulty > from.Skills[SkillName.Mining].Value )
+			{
+				from.SendLocalizedMessage( 501986 ); // You have no idea how to smelt this strange ore!
+				return false;
+			}
+
+			double minSkill = difficulty - 25.0;
+			double maxSkill = difficulty + 25.0;
+			if ( from.CheckTargetSkill( SkillName.Mining, targeted, minSkill, maxSkill ) )
+            {
+                Amount -= amountRequested;
+                int ingotCount = IsTinyOre
+					? amountRequested / 2 // Small ore is 1:2
+					: IsLargeOre
+                        ? amountRequested * 2 // Big ore is 2:1
+                        : amountRequested; // Middle ores are 1:1
+
+                BaseIngot ingot = GetIngot();
+				ingot.Amount = ingotCount;
+				from.AddToBackpack(ingot);
+				from.PlaySound( 0x208 );
+				from.SendLocalizedMessage( 501988 ); // You smelt the ore removing the impurities and put the metal in your backpack.
+			}
+			else if (amountRequested == 1 && Amount == 1 && ItemID == 0x19B9 ) // Check full stack
+			{
+				from.SendLocalizedMessage( 501990 ); // You burn away the impurities but are left with less useable metal.
+				ItemID = 0x19B8; // Downgrade, don't deduct
+				from.PlaySound( 0x208 );
+			}
+			else if ( amountRequested == 1 && Amount == 1 && (ItemID == 0x19B8 || ItemID == 0x19BA) ) // Check full stack
+			{
+				from.SendLocalizedMessage( 501990 ); // You burn away the impurities but are left with less useable metal.
+				ItemID = 0x19B7; // Downgrade, don't deduct
+				from.PlaySound( 0x208 );
+			}
+			else
+			{
+				from.SendLocalizedMessage( 501990 ); // You burn away the impurities but are left with less useable metal.
+                Amount -= 1 + (amountRequested / 2); // Lose half, rounded up
+                from.PlaySound( 0x208 );
+			}
+
+            if (Amount < 1)
+			{
+				Delete();
+			}
+
+			return true;
 		}
 	}
 

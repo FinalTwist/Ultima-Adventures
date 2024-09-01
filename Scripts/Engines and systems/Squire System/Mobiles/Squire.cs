@@ -1747,7 +1747,7 @@ namespace Server.Mobiles
                         if (DateTime.UtcNow > m_MeditateDelay)
                         {
                             UseSkill(SkillName.Meditation);
-                            m_MeditateDelay = DateTime.Now + TimeSpan.FromSeconds(10.0);
+                            m_MeditateDelay = DateTime.UtcNow + TimeSpan.FromSeconds(10.0);
                         }
                         else
                         {
@@ -1767,7 +1767,7 @@ namespace Server.Mobiles
                         {
                             if (m_SquireBeQuiet == false)
                             {
-                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoChivalryBook, null, null);
+                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoBushidoBook, null, null);
                             }
                         }
                         else
@@ -1817,7 +1817,7 @@ namespace Server.Mobiles
                         {
                             if (m_SquireBeQuiet == false)
                             {
-                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoChivalryBook, null, null);
+                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoBushidoBook, null, null);
                             }
                         }
                         else
@@ -1867,7 +1867,7 @@ namespace Server.Mobiles
                         {
                             if (m_SquireBeQuiet == false)
                             {
-                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoChivalryBook, null, null);
+                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoBushidoBook, null, null);
                             }
                         }
                         else
@@ -1917,7 +1917,7 @@ namespace Server.Mobiles
                         {
                             if (m_SquireBeQuiet == false)
                             {
-                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoChivalryBook, null, null);
+                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoBushidoBook, null, null);
                             }
                         }
                         else
@@ -1967,7 +1967,7 @@ namespace Server.Mobiles
                         {
                             if (m_SquireBeQuiet == false)
                             {
-                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoChivalryBook, null, null);
+                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoBushidoBook, null, null);
                             }
                         }
                         else
@@ -2017,7 +2017,7 @@ namespace Server.Mobiles
                         {
                             if (m_SquireBeQuiet == false)
                             {
-                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoChivalryBook, null, null);
+                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoBushidoBook, null, null);
                             }
                         }
                         else
@@ -2067,7 +2067,7 @@ namespace Server.Mobiles
                         {
                             if (m_SquireBeQuiet == false)
                             {
-                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoChivalryBook, null, null);
+                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoNecroBook, null, null);
                             }
                         }
                         else
@@ -2117,7 +2117,7 @@ namespace Server.Mobiles
                         {
                             if (m_SquireBeQuiet == false)
                             {
-                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoChivalryBook, null, null);
+                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoNecroBook, null, null);
                             }
                         }
                         else
@@ -2173,7 +2173,7 @@ namespace Server.Mobiles
                         {
                             if (m_SquireBeQuiet == false)
                             {
-                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoChivalryBook, null, null);
+                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoNecroBook, null, null);
                             }
                         }
                         else
@@ -2224,7 +2224,7 @@ namespace Server.Mobiles
                         {
                             if (m_SquireBeQuiet == false)
                             {
-                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoChivalryBook, null, null);
+                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoNecroBook, null, null);
                             }
                         }
                         else
@@ -2281,7 +2281,7 @@ namespace Server.Mobiles
                         {
                             if (m_SquireBeQuiet == false)
                             {
-                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoChivalryBook, null, null);
+                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoNecroBook, null, null);
                             }
                         }
                         else
@@ -2332,7 +2332,7 @@ namespace Server.Mobiles
                         {
                             if (m_SquireBeQuiet == false)
                             {
-                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoChivalryBook, null, null);
+                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoNecroBook, null, null);
                             }
                         }
                         else
@@ -2383,7 +2383,7 @@ namespace Server.Mobiles
                         {
                             if (m_SquireBeQuiet == false)
                             {
-                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoChivalryBook, null, null);
+                                SquireDialog.DoSquireDialog(from, this, SquireDialogTree.NoNecroBook, null, null);
                             }
                         }
                         else
@@ -3146,6 +3146,8 @@ namespace Server.Mobiles
 
         public override void OnThink()
         {
+            if (!IsBonded) { IsBonded = true; }
+
             base.OnThink();
             if (!this.Controlled)   // should fix null reference exception when released, but dunno why that happen
                 return;
@@ -4002,6 +4004,13 @@ namespace Server.Mobiles
             }
         }
 
+        public override bool OnBeforeDeath()
+        {
+            if (!IsBonded) { IsBonded = true; }
+
+            return base.OnBeforeDeath();
+        }
+
         public override void OnDeath(Container c)
         {
             Item deathShroud = new SquireDeathShroud();
@@ -4305,7 +4314,7 @@ namespace Server.Mobiles
 
             foreach (Item item in GetItemsInRange(8))
             {
-                if (item is AnkhNorth || item is AnkhWest)
+                if (item is IAnkh)
                 {
                     AnkhNearby = true;
                     break;

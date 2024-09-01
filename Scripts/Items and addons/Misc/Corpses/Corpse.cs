@@ -517,6 +517,9 @@ namespace Server.Items
 
 			Corpse c = new Corpse( owner, hair, facialhair, shouldFillCorpse ? equipItems : new List<Item>() );
 
+			if (owner is CreatureReanimation) // Reanimations cannot be carved
+				c.Carved = true;
+
 			owner.Corpse = c;
 
 			if ( shouldFillCorpse )
@@ -532,6 +535,16 @@ namespace Server.Items
 
 					if ( owner.Player && Core.AOS )
 						c.SetRestoreInfo( item, item.Location );
+				}
+
+				Mobile killer = owner.LastKiller as PlayerMobile;
+				if (killer != null && killer.InRange(owner.Location, 2))
+				{
+					Item weapon = killer.Weapon as Item;
+					if (weapon is AdvancedSkinningKnife || weapon is GargoylesSkinningKnife)
+					{
+						c.Carve(killer, weapon);
+					}
 				}
 			}
 			else
@@ -1576,12 +1589,14 @@ namespace Server.Items
 			}
 			else if ( dead is BaseCreature )
 			{
+				var creature = (BaseCreature)dead;
+
 				string myWork = "";
-				if ( ((BaseCreature)dead).midrace >0 && ((BaseCreature)dead).SpeechType == InhumanSpeech.Lizardman)
+				if ( creature.midrace >0 && creature.SpeechType == InhumanSpeech.Lizardman)
 					myWork = "Lizardman";	
-				if ( ((BaseCreature)dead).midrace >0 && ( (dead is Gargoyle) || (dead is AncientGargoyle) || (dead is CosmicGargoyle) || (dead is FireGargoyle) || (dead is GargoyleAmethyst) || (dead is GargoyleEmerald)|| (dead is GargoyleMarble)|| (dead is GargoyleOnyx)|| (dead is GargoyleRuby)|| (dead is GargoyleSapphire)|| (dead is GargoyleWarrior)|| (dead is MutantGargoyle) || (dead is StoneGargoyle)|| (dead is StygianGargoyle)|| (dead is StygianGargoyleLord) ) )
+				if ( creature.midrace >0 && ( (dead is Gargoyle) || (dead is AncientGargoyle) || (dead is CosmicGargoyle) || (dead is FireGargoyle) || (dead is GargoyleAmethyst) || (dead is GargoyleEmerald)|| (dead is GargoyleMarble)|| (dead is GargoyleOnyx)|| (dead is GargoyleRuby)|| (dead is GargoyleSapphire)|| (dead is GargoyleWarrior)|| (dead is MutantGargoyle) || (dead is StoneGargoyle)|| (dead is StygianGargoyle)|| (dead is StygianGargoyleLord) ) )
 					myWork = "Gargoyle";	
-				if ( ((BaseCreature)dead).midrace >0 && ((BaseCreature)dead).SpeechType == InhumanSpeech.Orc)
+				if ( creature.midrace >0 && creature.SpeechType == InhumanSpeech.Orc)
 					myWork = "Orc";	
 
 				if ( myWork != "" ) 
@@ -1596,13 +1611,26 @@ namespace Server.Items
 					if (myWork == "Lizard")
 						head.ItemID = 0x4D02;
 						
-					if (dead is BaseCreature && ((BaseCreature)dead).midrace > 0){head.midrace = ((BaseCreature)dead).midrace;}
+					if (creature.midrace > 0){head.midrace = creature.midrace;}
 
 					Corpse bodyBag = (Corpse)this;
 					bodyBag.AddCarvedItem( head, from );
 				}
 
-				((BaseCreature)dead).OnCarve( from, this, item );
+				creature.OnCarve( from, this, item );
+
+				if (item is GargoylesSkinningKnife && dead is BaseCreature && 0.1 > Utility.RandomDouble()) // Same as Gargoyle's Pickaxe
+				{
+					if (!(dead is CreatureReanimation) && 0 < creature.Hides)
+					{
+						var shade = new CreatureReanimation(creature);
+
+						// Move the items
+						List<Item> items = new List<Item>(Items);
+						foreach (Item i in items) { shade.PackItem(i); }
+						shade.MoveToWorld(from.Location, from.Map); // Use the skinner's location. The corpse may not be in the world yet.
+					}
+				}
 			}
 			else
 			{

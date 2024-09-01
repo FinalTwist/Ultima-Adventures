@@ -34,7 +34,7 @@ namespace Server.Spells.Sixth
 			{
 				Caster.SendLocalizedMessage( 500237 ); // Target can not be seen.
 			}
-			else if ( m is Mobiles.BaseVendor || m is Mobiles.PlayerVendor || m is Mobiles.PlayerBarkeeper || m.AccessLevel > Caster.AccessLevel )
+			else if ( m is Mobiles.BaseVendor || m is Mobiles.PlayerVendor || m is Mobiles.PlayerBarkeeper  || m is Mobiles.RoomAttendant || m.AccessLevel > Caster.AccessLevel )
 			{
 				Caster.SendLocalizedMessage( 501857 ); // This spell won't work on that!
 			}

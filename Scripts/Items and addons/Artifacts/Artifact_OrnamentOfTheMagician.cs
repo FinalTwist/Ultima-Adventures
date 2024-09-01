@@ -12,6 +12,7 @@ namespace Server.Items
 		[Constructable]
 		public OrnamentOfTheMagician()
 		{
+			Name = "Ornament of the Maagician";
 			Hue = 0x554;
 			ItemID = 0x4CF0;
 			Attributes.CastRecovery = 3;

@@ -13,10 +13,33 @@ namespace Server.Items
 		{
 			get{ return m_Resource; }
 			set{ m_Resource = value; InvalidateProperties(); }
-		}
-		
-		int ICommodity.DescriptionNumber { get { return LabelNumber; } }
-		bool ICommodity.IsDeedable { get { return true; } }
+        }
+
+        int ICommodity.DescriptionNumber
+        {
+            get
+            {
+                switch (m_Resource)
+                {
+					case CraftResource.RegularLeather: return LabelNumber;
+                    case CraftResource.HornedLeather: return LabelNumber;
+                    case CraftResource.BarbedLeather: return LabelNumber;
+                    case CraftResource.NecroticLeather: return 1034405;
+                    case CraftResource.VolcanicLeather: return 1034416;
+                    case CraftResource.FrozenLeather: return 1034427;
+                    case CraftResource.SpinedLeather: return LabelNumber;
+                    case CraftResource.GoliathLeather: return 1034372;
+                    case CraftResource.DraconicLeather: return 1034383;
+                    case CraftResource.HellishLeather: return 1034394;
+                    case CraftResource.DinosaurLeather: return LabelNumber;
+                    case CraftResource.AlienLeather: return 1034446;
+				}
+
+                return LabelNumber;
+            }
+        }
+
+        bool ICommodity.IsDeedable { get { return true; } }
 
 		public override void Serialize( GenericWriter writer )
 		{

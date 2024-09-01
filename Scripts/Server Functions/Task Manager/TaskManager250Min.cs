@@ -217,8 +217,9 @@ namespace Server.Items
 				World.Broadcast( 0x35, true, "Dungeon doors have been randomized!" );
 				lastrun = DateTime.UtcNow;
 			}
-			//if (AetherGlobe.invasionstage == 2 && Utility.RandomBool() )
-			//		AdventuresFunctions.InvasionRoutine();
+			
+			if (AetherGlobe.invasionstage == 2 && Utility.RandomBool() )
+				AdventuresFunctions.InvasionRoutine();
 
 			AetherGlobe.VendorCurse = AetherGlobe.BalanceLevel;
 			

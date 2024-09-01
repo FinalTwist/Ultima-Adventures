@@ -692,7 +692,11 @@ namespace Server.Accounting
 
 				m.SendAsciiMessage( "You will enjoy the benefits and relatively safe status of a young player for {0} more hour{1}.", hours, hours != 1 ? "s" : "" );
 			}
-		}
+
+			// Tsai: This is a hack in hopes of bandaging the "mysterious weight" bug
+			m.UpdateTotals();
+			if (m.Backpack != null) m.Backpack.UpdateTotals(); // Not sure if it needs to be called separately
+        }
 
 		public void RemoveYoungStatus( int message )
 		{

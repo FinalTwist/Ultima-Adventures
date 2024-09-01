@@ -57,6 +57,34 @@ namespace Server.Items
 		{
 		}
 
+		public static void Reset(Mobile frank)
+		{
+			ArrayList targets = new ArrayList();
+			foreach ( Item item in World.Items.Values )
+			{
+				if ( item is FrankenPorterItem )
+				{
+					FrankenPorterItem henchItem = (FrankenPorterItem)item;
+					if ( henchItem.PorterSerial == frank.Serial )
+					{
+						targets.Add( item );
+					}
+				}
+			}
+
+			for ( int i = 0; i < targets.Count; ++i )
+			{
+				Item item = ( Item )targets[ i ];
+				FrankenPorterItem henchThing = (FrankenPorterItem)item;
+				henchThing.LootType = LootType.Regular;
+				henchThing.PorterSerial = 0;
+				henchThing.PorterName = frank.Name;
+				henchThing.Visible = true;
+				henchThing.Hue = frank.Hue;
+				henchThing.InvalidateProperties();
+			}
+		}
+
 		public override void OnDoubleClick( Mobile from )
 		{
 			if ( !IsChildOf( from.Backpack ) )
@@ -109,10 +137,9 @@ namespace Server.Items
 				ConsumeCharge( from );
 				this.InvalidateProperties();
 
-				BaseCreature friend = new FrankenPorter();
-				((FrankenPorter)friend).PorterLevel = this.PorterLevel;
-
-				if ( this.PorterType > 0 ){ friend.Delete(); friend = new FrankenFighter(); ((FrankenFighter)friend).FighterLevel = this.PorterLevel; }
+				BaseCreature friend;
+				if ( this.PorterType > 0 ) { friend = new FrankenFighter(); ((FrankenFighter)friend).FighterLevel = this.PorterLevel; }
+				else { friend = new FrankenPorter(); ((FrankenPorter)friend).PorterLevel = this.PorterLevel; }
 
 				bool validLocation = false;
 				Point3D loc = from.Location;

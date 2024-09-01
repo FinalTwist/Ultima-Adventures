@@ -73,17 +73,17 @@ namespace Server.SkillHandlers
 				else if ( from.CheckTargetSkill( SkillName.ArmsLore, targeted, (Utility.RandomMinMax(-5, 70)), 120 ) || automatic )
 				{
 					Container pack = (Container)relic;
-						List<Item> items = new List<Item>();
-						foreach (Item item in pack.Items)
-						{
-							items.Add(item);
-						}
-						foreach (Item item in items)
-						{
-							from.AddToBackpack ( item );
-						}
+					List<Item> items = new List<Item>();
+					foreach (Item item in pack.Items)
+					{
+						items.Add(item);
+					}
+					foreach (Item item in items)
+					{
+						ItemIdentification.ReplaceItemOrAddToBackpack(examine, item, from);
+					}
 
-						from.SendMessage("You successfully identify the item.");
+					from.SendMessage("You successfully identify the item.");
 					relic.Delete();
 				}
 				else

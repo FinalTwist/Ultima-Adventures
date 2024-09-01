@@ -91,6 +91,10 @@ namespace Server.Engines.Craft
 				}
 			}
 
+			AncientCraftingGloves gloves = from.FindItemOnLayer(Layer.OneHanded) as AncientCraftingGloves;
+			if (gloves != null)
+				gloves.ConsumeCharge(from, craftSystem);
+
 			int phys = 0, fire = 0, cold = 0, pois = 0, nrgy = 0;
 			int dura = 0, luck = 0, lreq = 0, dinc = 0;
 			int baseChance = 0;

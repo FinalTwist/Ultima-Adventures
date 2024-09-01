@@ -101,7 +101,7 @@ namespace Server.Items
 		{
 			Console.WriteLine( "Beginning Hourly Tasks" );
 			LoggingFunctions.LogServer( "Start - Moving Vendors Back" );
-			
+
 			// SWITCH UP THE MAGIC MIRRORS
 			Server.Items.MagicMirror.SetMirrors();
 
@@ -109,7 +109,7 @@ namespace Server.Items
 			ArrayList vendors = new ArrayList();
 			ArrayList citizens = new ArrayList();
 			foreach ( Mobile vendor in World.Mobiles.Values )
-			if ( vendor is BaseVendor && vendor.WhisperHue != 999 && !(vendor is PlayerVendor) && !(vendor is PlayerBarkeeper) )
+			if ( vendor is BaseVendor && vendor.WhisperHue != 999 && !(vendor is PlayerVendor || vendor is PlayerBarkeeper || vendor is RoomAttendant) )
 			{
 				vendors.Add( vendor );
 			}

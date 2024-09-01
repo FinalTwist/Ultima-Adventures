@@ -2,8 +2,11 @@ using System;
 
 namespace Server.Items
 {
-	public class DDCopper : Item
+	public class DDCopper : Item, ICommodity
 	{
+		int ICommodity.DescriptionNumber { get { return 1023819; } } // Copper coins
+		bool ICommodity.IsDeedable { get { return true; } }
+
 		public override double DefaultWeight
 		{
 			get { return ( Core.ML ? ( 0.02 / 3 ) : 0.02 ); }
@@ -78,6 +81,20 @@ namespace Server.Items
 			}
 		}
 
+        public override void OnDelete()
+        {
+            base.OnDelete();
+
+			Engines.ExpirationTracker.Remove(Serial);
+        }
+
+        public override bool OnDragLift(Mobile from)
+        {
+			Engines.ExpirationTracker.Remove(Serial); // As soon as someone interacts with it, disable auto-delete
+
+            return base.OnDragLift(from);
+        }
+
 		public override void Serialize( GenericWriter writer )
 		{
 			base.Serialize( writer );
@@ -96,8 +113,11 @@ namespace Server.Items
 
 	// -----------------------------------------------------------------------------------------------------------------------
 
-	public class DDSilver : Item
+	public class DDSilver : Item, ICommodity
 	{
+		int ICommodity.DescriptionNumber { get { return LabelNumber; } }
+		bool ICommodity.IsDeedable { get { return true; } }
+
 		public override double DefaultWeight
 		{
 			get { return ( Core.ML ? ( 0.02 / 3 ) : 0.02 ); }
@@ -171,6 +191,20 @@ namespace Server.Items
 				from.SendLocalizedMessage( 1047026 ); // That must be in your bank box to use it.
 			}
 		}
+
+        public override void OnDelete()
+        {
+            base.OnDelete();
+
+			Engines.ExpirationTracker.Remove(Serial);
+        }
+
+        public override bool OnDragLift(Mobile from)
+        {
+			Engines.ExpirationTracker.Remove(Serial); // As soon as someone interacts with it, disable auto-delete
+
+            return base.OnDragLift(from);
+        }
 
 		public override void Serialize( GenericWriter writer )
 		{
@@ -246,6 +280,20 @@ namespace Server.Items
 			}
 		}
 
+        public override void OnDelete()
+        {
+            base.OnDelete();
+
+			Engines.ExpirationTracker.Remove(Serial);
+        }
+
+        public override bool OnDragLift(Mobile from)
+        {
+			Engines.ExpirationTracker.Remove(Serial); // As soon as someone interacts with it, disable auto-delete
+
+            return base.OnDragLift(from);
+        }
+
 		public override void Serialize( GenericWriter writer )
 		{
 			base.Serialize( writer );
@@ -318,6 +366,20 @@ namespace Server.Items
 			}
 		}
 
+        public override void OnDelete()
+        {
+            base.OnDelete();
+
+			Engines.ExpirationTracker.Remove(Serial);
+        }
+
+        public override bool OnDragLift(Mobile from)
+        {
+			Engines.ExpirationTracker.Remove(Serial); // As soon as someone interacts with it, disable auto-delete
+
+            return base.OnDragLift(from);
+        }
+
 		public override void Serialize( GenericWriter writer )
 		{
 			base.Serialize( writer );
@@ -389,6 +451,20 @@ namespace Server.Items
 			}
 		}
 
+        public override void OnDelete()
+        {
+            base.OnDelete();
+
+			Engines.ExpirationTracker.Remove(Serial);
+        }
+
+        public override bool OnDragLift(Mobile from)
+        {
+			Engines.ExpirationTracker.Remove(Serial); // As soon as someone interacts with it, disable auto-delete
+
+            return base.OnDragLift(from);
+        }
+
 		public override void Serialize( GenericWriter writer )
 		{
 			base.Serialize( writer );
@@ -459,6 +535,20 @@ namespace Server.Items
 				from.SendLocalizedMessage( 1047026 ); // That must be in your bank box to use it.
 			}
 		}
+
+        public override void OnDelete()
+        {
+            base.OnDelete();
+
+			Engines.ExpirationTracker.Remove(Serial);
+        }
+
+        public override bool OnDragLift(Mobile from)
+        {
+			Engines.ExpirationTracker.Remove(Serial); // As soon as someone interacts with it, disable auto-delete
+
+            return base.OnDragLift(from);
+        }
 
 		public override void Serialize( GenericWriter writer )
 		{

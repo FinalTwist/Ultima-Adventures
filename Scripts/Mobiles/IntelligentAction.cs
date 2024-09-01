@@ -121,7 +121,7 @@ namespace Server.Misc
 			if ( m is PlayerMobile && me is BaseVendor && (  (Server.Misc.Worlds.GetRegionName( me.Map, me.Location ) == "the Basement") || (Server.Misc.Worlds.GetRegionName( me.Map, me.Location ) == "The Pit") || (Server.Misc.Worlds.GetRegionName( me.Map, me.Location ) == "the Town of Skara Brae") || (Server.Misc.Worlds.GetRegionName( me.Map, me.Location ) == "Lamut County") || (Server.Misc.Worlds.GetRegionName( me.Map, me.Location ) == "the Ruins of Tenebrae") || reg.IsPartOf(typeof(UmbraRegion) ) || reg.IsPartOf(typeof(SafeRegion) ) || reg.IsPartOf(typeof(PublicRegion)) ) && ( m.Kills > 2 || m.Karma <=  -5000) || (Server.Misc.Worlds.GetRegionName( me.Map, me.Location ) == "Arena Royale") )
 				return false;
 
-			if ( m is BasePerson || m is BaseVendor || m is PlayerVendor || m is BaseBlue || m is Townsperson || m is Citizens || m is PlayerBarkeeper )
+			if ( m is BasePerson || m is BaseVendor || m is PlayerVendor || m is BaseBlue || m is Townsperson || m is Citizens || m is PlayerBarkeeper || m is RoomAttendant )
 				return false;
 
 			if ( m is BaseCreature && ((BaseCreature)m).FightMode == FightMode.Evil ) 
@@ -560,7 +560,7 @@ namespace Server.Misc
 			if ( m is PlayerMobile && me is BaseVendor && (  (Server.Misc.Worlds.GetRegionName( me.Map, me.Location ) == "the Basement") || (Server.Misc.Worlds.GetRegionName( me.Map, me.Location ) == "The Pit") || (Server.Misc.Worlds.GetRegionName( me.Map, me.Location ) == "the Town of Skara Brae") || (Server.Misc.Worlds.GetRegionName( me.Map, me.Location ) == "Lamut County") || (Server.Misc.Worlds.GetRegionName( me.Map, me.Location ) == "the Ruins of Tenebrae") || reg.IsPartOf(typeof(SafeRegion) ) || reg.IsPartOf(typeof(PublicRegion)) ) && ( m.Kills > 0 || m.Karma <=  -5000) || (Server.Misc.Worlds.GetRegionName( me.Map, me.Location ) == "Arena Royale") )
 				return false;
 
-			if ( m is BasePerson || m is BaseVendor || m is PlayerVendor || m is BaseBlue || m is Townsperson || m is Citizens || m is PlayerBarkeeper )
+			if ( m is BasePerson || m is BaseVendor || m is PlayerVendor || m is BaseBlue || m is Townsperson || m is Citizens || m is PlayerBarkeeper || m is RoomAttendant)
 				return false;
 
 			if ( m is BaseCreature && ((BaseCreature)m).FightMode == FightMode.Evil ) 

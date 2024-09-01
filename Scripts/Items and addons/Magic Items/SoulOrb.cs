@@ -6,6 +6,8 @@ using Server.Prompts;
 using Server.Network;
 using System.Collections;
 using System.Collections.Generic;
+using Server.Gumps;
+using System.Globalization;
 
 namespace Server.Items
 {
@@ -31,6 +33,17 @@ namespace Server.Items
         public static void Initialize()
         {
             EventSink.PlayerDeath += new PlayerDeathEventHandler(EventSink_Death);
+			EventSink.Login += new LoginEventHandler(e => 
+                {
+                    PlayerMobile owner = e.Mobile as PlayerMobile;
+                    if (owner == null) return;
+
+                    SoulOrb orb;
+                    if (m_ResList == null || !m_ResList.ContainsKey(owner) || !m_ResList.TryGetValue(owner, out orb)) return;
+
+                    orb.StartTimer();
+                }
+            );
         }
 
         [Constructable]
@@ -43,6 +56,11 @@ namespace Server.Items
 		}
 
         public SoulOrb(Serial serial) : base(serial){}
+		
+        public static bool IsProtected(Mobile from)
+        {
+            return m_ResList != null && m_ResList.ContainsKey(from);
+        }
 
 		public static void OnSummoned( Mobile from, SoulOrb orb )
 		{
@@ -57,7 +75,7 @@ namespace Server.Items
 				m_ResList.Add(from, orb);
 			}
 		}
-		
+
 		private static void EventSink_Death(PlayerDeathEventArgs e)
         {
             PlayerMobile owner = e.Mobile as PlayerMobile;
@@ -75,14 +93,43 @@ namespace Server.Items
 						m_ResList.Remove(owner);
 						return;
 					}
-					BuffInfo.AddBuff( owner, new BuffInfo( BuffIcon.GiftOfLife, 1015222,TimeSpan.FromSeconds(30), owner, String.Format("You will resurrect within 30 seconds of your death"),true ) );
-					arp.m_Timer = Timer.DelayCall(m_Delay, new TimerStateCallback(Resurrect_OnTick), new object[] { owner, arp });
-					m_ResList.Remove(owner);
+
+                    arp.StartTimer();
 				}
             }
         }
 
-        private static void Resurrect_OnTick(object state)
+        private void StartTimer()
+        {
+            if (Deleted || Owner.Alive) { return; }
+            
+            if (m_Timer != null)
+                m_Timer.Stop();
+
+            BuffInfo.AddBuff( Owner, new BuffInfo( BuffIcon.GiftOfLife, 1015222,TimeSpan.FromSeconds(30), Owner, String.Format("You will resurrect within 30 seconds of your death"),true ) );
+            m_Timer = Timer.DelayCall(m_Delay, new TimerStateCallback(Resurrect_OnTick), new object[] { Owner, this });
+        }
+
+        private void DoUse()
+        {
+            if (Deleted || Owner.Alive) { return; }
+            
+            if ( Name == "blood of a vampire" ){ Owner.SendMessage("The blood pours out of the bottle, restoring your life."); }
+            else if ( Name == "cloning crystal" ){ Owner.SendMessage("The crystal forms a clone of your body, restoring your life."); }
+            else { Owner.SendMessage("The orb glows, releasing your soul."); }
+
+            Owner.Resurrect();
+            Owner.FixedEffect( 0x376A, 10, 16, Server.Items.CharacterDatabase.GetMySpellHue( Owner, 0 ), 0 );
+            Server.Misc.Death.Penalty( Owner, false );
+            BuffInfo.RemoveBuff(Owner, BuffIcon.GiftOfLife);
+            if (m_Timer != null)
+                m_Timer.Stop();
+            if (m_ResList != null) 
+                m_ResList.Remove(Owner);
+            Delete();
+        }
+
+        private void Resurrect_OnTick(object state)
         {
             object[] states = (object[])state;
             PlayerMobile owner = (PlayerMobile)states[0];
@@ -91,16 +138,16 @@ namespace Server.Items
             {
                 if (!owner.Alive)
                 {
-                    if ( arp.Name == "blood of a vampire" ){ owner.SendMessage("The blood pours out of the bottle, restoring your life."); }
-                    else if ( arp.Name == "cloning crystal" ){ owner.SendMessage("The crystal forms a clone of your body, restoring your life."); }
-                    else { owner.SendMessage("The orb glows, releasing your soul."); }
-                    owner.Resurrect();
-                    owner.FixedEffect( 0x376A, 10, 16, Server.Items.CharacterDatabase.GetMySpellHue( owner, 0 ), 0 );
-                    Server.Misc.Death.Penalty( owner, false );
-                    BuffInfo.RemoveBuff(owner, BuffIcon.GiftOfLife);
+                    TextInfo cultInfo = new CultureInfo("en-US", false).TextInfo;
+    				var confirmationGump = new ConfirmationGump(
+                        owner, 
+                        cultInfo.ToTitleCase(arp.Name),
+                        "The spirits offer their aid.<br>Do you accept?", 
+                        arp.DoUse,
+                        arp.StartTimer
+                    );
+                    owner.SendGump(confirmationGump);
                 }
-
-                arp.Delete();
             }
         }
 

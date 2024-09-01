@@ -2168,39 +2168,7 @@ namespace Server.Mobiles
 			}
 			else if( m_Mobile is FrankenPorter || m_Mobile is FrankenFighter ) // WIZARD ADDED THIS FOR FLESH GOLEMS
 			{
-				ArrayList targets = new ArrayList();
-				foreach ( Item item in World.Items.Values )
-				if ( item is FrankenPorterItem )
-				{
-					FrankenPorterItem henchItem = (FrankenPorterItem)item;
-					if ( henchItem.PorterSerial == m_Mobile.Serial )
-					{
-						targets.Add( item );
-					}
-				}
-				for ( int i = 0; i < targets.Count; ++i )
-				{
-					Item item = ( Item )targets[ i ];
-					FrankenPorterItem henchThing = (FrankenPorterItem)item;
-					henchThing.LootType = LootType.Regular;
-					henchThing.PorterSerial = 0;
-					henchThing.PorterName = m_Mobile.Name;
-					henchThing.Visible = true;
-					henchThing.Hue = m_Mobile.Hue;
-					henchThing.InvalidateProperties();
-				}
-
-				if ( m_Mobile is FrankenPorter )
-				{
-					ArrayList bagitems = new ArrayList(m_Mobile.Backpack.Items);
-					foreach (Item item in bagitems)
-					{
-						if ((item.Layer != Layer.Bank) && (item.Layer != Layer.Backpack) && (item.Layer != Layer.Hair) && (item.Layer != Layer.FacialHair) && (item.Layer != Layer.Mount))
-						{
-							item.MoveToWorld(m_Mobile.Location, m_Mobile.Map);
-						}
-					}
-				}
+				FrankenPorterItem.Reset(m_Mobile);
 			}
 			else if( m_Mobile is GolemPorter || m_Mobile is GolemFighter ) // WIZARD ADDED THIS FOR GOLEMS
 			{

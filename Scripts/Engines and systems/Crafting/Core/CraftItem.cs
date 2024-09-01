@@ -1075,30 +1075,21 @@ namespace Server.Engines.Craft
 						if ( hammer.UsesRemaining < 1 )
 							hammer.Delete();
 					}
-				}
+                }
 
-				if ( tool.UsesRemaining < 1 )
+                AncientCraftingGloves gloves = from.FindItemOnLayer(Layer.OneHanded) as AncientCraftingGloves;
+				if (gloves != null)
+                    gloves.ConsumeCharge(from, craftSystem);
+
+                if ( tool.UsesRemaining < 1 )
 					toolBroken = true;
 
-				if ( toolBroken )
+                Container outputContainer = tool.Parent is PlayerMobile ? ((Mobile)tool.Parent).Backpack : tool.Parent as Container;
+
+                if ( toolBroken )
 					tool.Delete();
 
 				int num = 0;
-				
-				// Prior to crafting, find the relevant resource so we can place the item in the same container
-				// Warning: No guarantee if there are multiple stacks found
-				Container outputContainer = null;
-				if (0 < m_arCraftRes.Count && from != null && from.Backpack != null)
-				{
-					var craftRes = m_arCraftRes.GetAt(0);
-					var baseType = craftRes.ItemType;
-					var resCol = ( m_UseSubRes2 ? craftSystem.CraftSubRes2 : craftSystem.CraftSubRes );
-					if (typeRes != null && baseType == resCol.ResType) baseType = typeRes; // Find non-basic resource if necessary
-
-					var resource = from != null && from.Backpack != null ? from.Backpack.FindItemByType(baseType, true) : null;
-					outputContainer = resource != null ? resource.Parent as Container : null;
-				}
-
                 Item item;
 				if ( customCraft != null )
 				{
@@ -1531,7 +1522,6 @@ namespace Server.Engines.Craft
 							case CraftResource.Dwarven: color = MaterialInfo.GetMaterialColor( "dwarven", "classic", 0 ); material = "Dwarven"; break;
 						}
 
-						((HorseArmor)item).ArmorMaterial = material;
 						item.Hue = color;
 					}
 					else if ( item is BaseStatue )

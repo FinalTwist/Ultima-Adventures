@@ -234,7 +234,7 @@ namespace Server.Misc
 
 		public static int MobileNotoriety( Mobile source, Mobile target )
 		{
-			if( Core.AOS && (target.Blessed || (target is BaseVendor && ((BaseVendor)target).IsInvulnerable) || target is PlayerVendor || target is PlayerBarkeeper ) )
+			if( Core.AOS && (target.Blessed || (target is BaseVendor && ((BaseVendor)target).IsInvulnerable) || target is PlayerVendor || target is PlayerBarkeeper || target is RoomAttendant) )
 				return Notoriety.Invulnerable;
 
 			if( target is BasePerson || target is BaseNPC || target is BaseBlue )

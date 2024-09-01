@@ -28,41 +28,53 @@ namespace Server.Spells.Research
 		{
 		}
 
-		public static Hashtable TableStoneFlesh = new Hashtable();
-
-		public static bool HasEffect( Mobile m )
-		{
-			return ( TableStoneFlesh[m] != null );
-		}
+		private static Hashtable m_TableStoneFlesh = new Hashtable();
+        private static Hashtable m_Timers = new Hashtable();
 
 		public static bool UnderEffect( Mobile m )
 		{
-			return TableStoneFlesh.Contains( m );
+			return m_Timers.Contains( m );
 		}
 
 		public static void RemoveEffect( Mobile m )
 		{
-			if (m.Map == null)
-				return;
-			
-			m.HueMod = -1;
-			m.BodyMod = 0;
-			m.SendMessage( "Your flesh turns back to normal." );
-
-			ResistanceMod[] mods = (ResistanceMod[])TableStoneFlesh[m];
-			TableStoneFlesh.Remove( m );
-			if (mods.Length > 0)
+			if (StopTimer( m ))
 			{
-				for ( int i = 0; i < mods.Length; ++i )
-					m.RemoveResistanceMod( mods[i] );
+				if (m.Map == null)
+					return;
+				
+				m.HueMod = -1;
+				m.BodyMod = 0;
+				m.SendMessage( "Your flesh turns back to normal." );
+
+				ResistanceMod[] mods = (ResistanceMod[])m_TableStoneFlesh[m];
+				m_TableStoneFlesh.Remove( m );
+				if (mods.Length > 0)
+				{
+					for ( int i = 0; i < mods.Length; ++i )
+						m.RemoveResistanceMod( mods[i] );
+				}
+
+				Point3D hands = new Point3D( ( m.X+1 ), ( m.Y+1 ), ( m.Z+8 ) );
+				Effects.SendLocationParticles(EffectItem.Create(hands, m.Map, EffectItem.DefaultDuration), 0x3837, 9, 32, Server.Items.CharacterDatabase.GetMySpellHue( m, 0xB7F ), 0, 5022, 0);
+				m.PlaySound( 0x65A );
+
+				m.EndAction( typeof( ResearchRockFlesh ) );
 			}
-
-			Point3D hands = new Point3D( ( m.X+1 ), ( m.Y+1 ), ( m.Z+8 ) );
-			Effects.SendLocationParticles(EffectItem.Create(hands, m.Map, EffectItem.DefaultDuration), 0x3837, 9, 32, Server.Items.CharacterDatabase.GetMySpellHue( m, 0xB7F ), 0, 5022, 0);
-			m.PlaySound( 0x65A );
-
-			m.EndAction( typeof( ResearchRockFlesh ) );
 		}
+
+        private static bool StopTimer(Mobile m)
+        {
+            Timer t = (Timer)m_Timers[m];
+
+            if (t != null)
+            {
+                t.Stop();
+                m_Timers.Remove(m);
+            }
+
+            return (t != null);
+        }
 
 		public override void OnCast()
 		{
@@ -71,27 +83,25 @@ namespace Server.Spells.Research
 				ResearchRockFlesh.RemoveEffect( Caster );
 			}
 
-			ResistanceMod[] mods = (ResistanceMod[])TableStoneFlesh[Caster];
-
-			mods = new ResistanceMod[1]
+			ResistanceMod[] mods = new ResistanceMod[1]
 				{
 					new ResistanceMod( ResistanceType.Physical, 90 )
 				};
 
-			TableStoneFlesh[Caster] = mods;
+			m_TableStoneFlesh[Caster] = mods;
 
 			for ( int i = 0; i < mods.Length; ++i )
 				Caster.AddResistanceMod( mods[i] );
 
 			double TotalTime = DamagingSkill( Caster )*4;
-			new InternalTimer( Caster, TimeSpan.FromSeconds( TotalTime ) ).Start();
+			Timer timer = new InternalTimer( Caster, TimeSpan.FromSeconds( TotalTime ) );
 
 			Caster.BodyMod = 14;
 			Caster.HueMod = 0xB80;
 
 			Mobiles.IMount mt = Caster.Mount;
-				if ( mt != null )
-					mt.Rider = null;
+			if ( mt != null )
+				mt.Rider = null;
 
 			Caster.SendMessage( "Your flesh turns to stone." );
 
@@ -103,27 +113,25 @@ namespace Server.Spells.Research
 			Effects.SendLocationParticles(EffectItem.Create(hands, Caster.Map, EffectItem.DefaultDuration), 0x3837, 9, 32, Server.Items.CharacterDatabase.GetMySpellHue( Caster, 0xB7F ), 0, 5022, 0);
 			Caster.PlaySound( 0x65A );
 
+			m_Timers[Caster] = timer;
+			timer.Start();
+
             FinishSequence();
 		}
 
 		private class InternalTimer : Timer
 		{
 			private Mobile m_m;
-			private DateTime m_Expire;
 
-			public InternalTimer( Mobile Caster, TimeSpan duration ) : base( TimeSpan.Zero, TimeSpan.FromSeconds( 0.1 ) )
+			public InternalTimer( Mobile Caster, TimeSpan duration ) : base( duration )
 			{
+				Priority = TimerPriority.OneSecond;
 				m_m = Caster;
-				m_Expire = DateTime.UtcNow + duration;
 			}
 
 			protected override void OnTick()
 			{
-				if ( DateTime.UtcNow >= m_Expire )
-				{
-					ResearchRockFlesh.RemoveEffect( m_m );
-					Stop();
-				}
+				RemoveEffect( m_m );
 			}
 		}
 	}

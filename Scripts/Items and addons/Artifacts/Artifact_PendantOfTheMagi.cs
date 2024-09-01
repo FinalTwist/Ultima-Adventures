@@ -11,6 +11,7 @@ namespace Server.Items
 		[Constructable]
 		public PendantOfTheMagi()
 		{
+			Name = "Pendant of the Magi";
 			Hue = 0x48D;
 			Attributes.BonusInt = 10;
 			Attributes.RegenMana = 3;

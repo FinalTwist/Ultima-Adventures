@@ -41,7 +41,12 @@ namespace Server.Items
 		{
 		}
 
-		public override bool OnMoveOver( Mobile m )
+        public override void OnDoubleClick(Mobile from)
+        {
+            from.UseSkill(SkillName.RemoveTrap);
+        }
+
+        public override bool OnMoveOver( Mobile m )
 		{
 			string sTrapType = "";
 
@@ -515,13 +520,13 @@ namespace Server.Items
 
 						List<Item> items = new List<Item>();
 
-						Item handy = m.FindItemOnLayer( Layer.OneHanded );
+						Item handy = TryGetDestroyableItem( m, Layer.OneHanded );
 						if ( handy is Spellbook )
 						{
 							items.Add(handy); nDull = 1;
 						}
 
-						Item tally = m.FindItemOnLayer( Layer.Talisman );
+						Item tally = TryGetDestroyableItem( m, Layer.Talisman );
 						if ( tally is Spellbook )
 						{
 							items.Add(tally); nDull = 1;
@@ -849,18 +854,18 @@ namespace Server.Items
 						{
 							if ( j is BaseJewel && IsJewelryItem( j ) )
 							{
-								if ( j.LootType != LootType.Blessed )
+								if ( !CheckInsuranceOnTrap(j, m) )
 									jewelry.Add(j);
 							}
 						}
 
 						Item jw;
 
-						if ( m.FindItemOnLayer( Layer.Bracelet ) != null ) { jw = m.FindItemOnLayer( Layer.Bracelet ); if ( jw.LootType != LootType.Blessed && jw is BaseJewel && IsJewelryItem( jw ) ){ jewelry.Add(jw); } }
-						if ( m.FindItemOnLayer( Layer.Ring ) != null ) { jw = m.FindItemOnLayer( Layer.Ring ); if ( jw.LootType != LootType.Blessed && jw is BaseJewel && IsJewelryItem( jw ) ){ jewelry.Add(jw); } }
-						if ( m.FindItemOnLayer( Layer.Helm ) != null ) { jw = m.FindItemOnLayer( Layer.Helm ); if ( jw.LootType != LootType.Blessed && jw is BaseJewel && IsJewelryItem( jw ) ){ jewelry.Add(jw); } }
-						if ( m.FindItemOnLayer( Layer.Neck ) != null ) { jw = m.FindItemOnLayer( Layer.Neck ); if ( jw.LootType != LootType.Blessed && jw is BaseJewel && IsJewelryItem( jw ) ){ jewelry.Add(jw); } }
-						if ( m.FindItemOnLayer( Layer.Earrings ) != null ) { jw = m.FindItemOnLayer( Layer.Earrings ); if ( jw.LootType != LootType.Blessed && jw is BaseJewel && IsJewelryItem( jw ) ){ jewelry.Add(jw); } }
+						jw = TryGetDestroyableItem(m, Layer.Bracelet) as BaseJewel; if ( jw != null && IsJewelryItem( jw ) ) { jewelry.Add(jw); }
+						jw = TryGetDestroyableItem(m, Layer.Ring) as BaseJewel; if ( jw != null && IsJewelryItem( jw ) ) { jewelry.Add(jw); }
+						jw = TryGetDestroyableItem(m, Layer.Helm) as BaseJewel; if ( jw != null && IsJewelryItem( jw ) ) { jewelry.Add(jw); }
+						jw = TryGetDestroyableItem(m, Layer.Neck) as BaseJewel; if ( jw != null && IsJewelryItem( jw ) ) { jewelry.Add(jw); }
+						jw = TryGetDestroyableItem(m, Layer.Earrings) as BaseJewel; if ( jw != null && IsJewelryItem( jw ) ) { jewelry.Add(jw); }
 
 						foreach ( Item jl in jewelry )
 						{
@@ -1021,12 +1026,16 @@ namespace Server.Items
 			}
 			return IsSlayer;
 		}
+
+		/// <summary>
+		/// Check if the item is safe from being destroyed
+		/// </summary>
+		/// <returns>'False' if the item failed the check.</returns>
 		public static bool CheckInsuranceOnTrap( Item item, Mobile m )
 		{
-			if ( item.LootType == LootType.Blessed )
-			{
-				return true;
-			}
+            if (item == null) return true;
+            if (item.LootType == LootType.Blessed) return true;
+            if (item is ILevelable) return true;
 			
 			return false;
 		}
@@ -1267,11 +1276,8 @@ namespace Server.Items
         private static Item TryGetDestroyableItem(Mobile m, Layer layer)
         {
             var item = m.FindItemOnLayer(layer);
-            if (item == null) return null;
-            if (item.LootType == LootType.Blessed) return null;
-            if (item is ILevelable) return null;
 
-            return item;
+            return CheckInsuranceOnTrap(item, m) ? null : item;
         }
 
         private static readonly Layer[] _layers = new[]

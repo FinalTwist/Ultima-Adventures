@@ -92,6 +92,22 @@ namespace Server.Mobiles
 			if ( PorterLevel >= 65 ){ Body = 999; }
 		}
 
+        public override void OnDelete()
+        {
+			FrankenPorterItem.Reset(this);
+	
+			ArrayList bagitems = new ArrayList(Backpack.Items);
+			foreach (Item item in bagitems)
+			{
+				if ((item.Layer != Layer.Bank) && (item.Layer != Layer.Backpack) && (item.Layer != Layer.Hair) && (item.Layer != Layer.FacialHair) && (item.Layer != Layer.Mount))
+				{
+					item.MoveToWorld(Location, Map);
+				}
+			}
+
+            base.OnDelete();
+        }
+
 		public override void Serialize( GenericWriter writer ) 
 		{ 
 			base.Serialize( writer ); 

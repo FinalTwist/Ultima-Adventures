@@ -33,7 +33,7 @@ namespace Server.Mobiles
 			{
 			    case 0: Emote("Greets, " + m.Name + " "); break;
 			    case 1: Emote("" + m.Name + ""); break;
-			    case 2: Emote("Move along," + m.Name ); break;
+			    case 2: Emote("Move along, " + m.Name ); break;
 			    case 3: Emote("Behave here " + m.Name ); break;
 			    case 4: Emote("We keep the peace here."); break;
 			    case 5: Emote("*nods*"); break;

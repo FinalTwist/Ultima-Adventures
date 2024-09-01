@@ -10,6 +10,7 @@ namespace Server.Items
 {
 	public class SearchBook : Item
 	{
+		public const int MaxArtifactNumber = 315;
 		public Mobile owner;
 		public int LegendLore;
 
@@ -198,6 +199,11 @@ namespace Server.Items
 
 		public static string GetArtifactListForBook( int artifact, int part )
 		{
+			if (MaxArtifactNumber < artifact)
+			{
+				Console.WriteLine("Warning: Artifact shouldn't exist. If you're adding more artifacts, please update the MaxArtifactNumber.");
+			}
+
 			string item = "";
 			string name = "";
 			int arty = 1;
@@ -435,7 +441,7 @@ namespace Server.Items
 			if ( artifact == arty) { name="QuiverOfElements"; item="Quiver of Elements"; } arty++;
 			if ( artifact == arty) { name="QuiverOfFire"; item="Quiver of Fire"; } arty++;
 			if ( artifact == arty) { name="QuiverOfIce"; item="Quiver of Ice"; } arty++;
-			if ( artifact == arty) { name="QuiverOfInfinity"; item="Quiver of Infinity"; } arty++;
+			// if ( artifact == arty) { name="QuiverOfInfinity"; item="Quiver of Infinity"; } arty++; // Now via BODs
 			if ( artifact == arty) { name="QuiverOfLightning"; item="Quiver of Lightning"; } arty++;
 			if ( artifact == arty) { name="QuiverOfRage"; item="Quiver of Rage"; } arty++;
 			if ( artifact == arty) { name="RamusNecromanticScalpel"; item="Ramus' Necromantic Scalpel"; } arty++;

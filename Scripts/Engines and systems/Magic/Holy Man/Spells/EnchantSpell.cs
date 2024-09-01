@@ -35,15 +35,16 @@ namespace Server.Spells.HolyMan
 
         public void Target( object o )
         {
-			if ( o is BaseWeapon )
+			bool success = false;
+			var item = o as Item;
+			if ( Apply(item, true) )
 			{
-				BaseWeapon weapon = (BaseWeapon)o;
-
-				if ( Caster.Backpack.FindItemByType( typeof ( EnchantSpellStone ) ) != null )
+				var pearl = Caster.Backpack.FindItemByType( typeof ( MysticalPearl ) );
+				if (pearl == null || pearl.Deleted)
 				{
-					DoFizzle();
+					Caster.SendMessage( "You need a mystical pearl to cast this spell!" );
 				}
-				else if (!Caster.CanSee(weapon))
+				else if (!Caster.CanSee(item))
 				{
 					Caster.SendLocalizedMessage(500237); // Target can not be seen.
 				}
@@ -51,50 +52,76 @@ namespace Server.Spells.HolyMan
 				{
 					Caster.SendLocalizedMessage(1005559); // This spell is already in effect.
 				}
-				else if ( !weapon.IsChildOf( Caster.Backpack ) )
+				else if ( !item.IsChildOf( Caster.Backpack ) )
 				{
 					Caster.SendMessage( "The weapon must be in your pack to enchant." );
 				}
 				else if (CheckSequence())
 				{
-					EnchantSpellStone orb = new EnchantSpellStone();
-					Caster.AddToBackpack( orb );
+					success = Apply(item, false);
+					if (success)
+					{
+						pearl.Delete();
+						string name = item.Name;
+						if ( item.Name != null && item.Name != "" ){ name = item.Name; }
+						if ( name == null ){ name = MorphingItem.AddSpacesToSentence( (item.GetType()).Name ); }
+						item.Name = name + " [enchanted]";
+						item.Hue = 0x9C4;
 
-					string name = weapon.Name;
-					if ( weapon.Name != null && weapon.Name != "" ){ name = weapon.Name; }
-					if ( name == null ){ name = MorphingItem.AddSpacesToSentence( (weapon.GetType()).Name ); }
-
-					orb.EnchantOwner = Caster;
-					orb.EnchantSerial = weapon.Serial;
-					orb.EnchantName = name;
-					orb.EnchantDmg = weapon.Attributes.WeaponDamage;
-					orb.EnchantHue = weapon.Hue;
-					orb.EnchantSlayer1 = weapon.Slayer;
-					orb.EnchantSlayer2 = weapon.Slayer2;
-
-					weapon.Name = "" + name + " [enchanted]";
-					weapon.Hue = 0x9C4;
-					weapon.Attributes.WeaponDamage += 50;
-					weapon.Slayer = SlayerName.Silver;
-					weapon.Slayer2 = SlayerName.Exorcism;
-
-					Caster.FixedParticles( 0x375A, 9, 20, 5027, EffectLayer.Waist );
-					Caster.PlaySound( 0x1F7 );
-
-					int val = (int)Caster.Skills[SkillName.Healing].Value;
-
-					if (val > 100)
-						val = 100;
-
-					new InternalTimer( Caster, TimeSpan.FromMinutes( val ) ).Start();
+						Caster.FixedParticles( 0x375A, 9, 20, 5027, EffectLayer.Waist );
+						Caster.PlaySound( 0x1F7 );
+					}
 				}
 			}
-			else
+
+			if (!success)
 			{
-				Caster.SendMessage( "You can only enchant weapons with this spell." );
+				Caster.SendMessage( "You can only enchant instruments, weapons, and spellbooks with this spell." );
 			}
+
             FinishSequence();
         }
+
+		private bool Apply(Item item, bool checkOnly)
+		{
+			if (item != null && item.CanAugment() && (item is BaseInstrument || item is BaseWeapon || item is Spellbook))
+			{
+				if (checkOnly) return true;
+
+				if (item is BaseInstrument)
+				{
+					return item.AugmentInstrument(i =>
+						{
+							i.Attributes.SpellDamage = 50;
+							i.Slayer = SlayerName.Silver;
+							i.Slayer2 = SlayerName.Exorcism;
+						});
+				}
+				
+				if (item is Spellbook)
+				{
+					return item.AugmentSpellbook(i =>
+						{
+							i.Attributes.SpellDamage = 50;
+							i.Slayer = SlayerName.Silver;
+							i.Slayer2 = SlayerName.Exorcism;
+						});
+				}
+
+				if (item is BaseWeapon)
+				{
+					return item.AugmentWeapon(i =>
+						{
+							i.Attributes.SpellDamage = 50;
+							i.Slayer = SlayerName.Silver;
+							i.Slayer2 = SlayerName.Exorcism;
+						});
+				}
+				
+			}
+
+			return false;
+		}
 
         private class InternalTarget : Target
         {
@@ -122,6 +149,13 @@ namespace Server.Spells.HolyMan
                 m_Owner.FinishSequence();
             }
         }
+    }
+}
+
+namespace Server.Items
+{
+	public class EnchantSpellStone : Item
+	{
 
 		private class InternalTimer : Timer
 		{
@@ -144,7 +178,7 @@ namespace Server.Spells.HolyMan
 			}
 		}
 
-		public static void EndEffects( Mobile m )
+		private static void EndEffects( Mobile m )
 		{
 			int serial = 0;
 			string name = "";
@@ -172,7 +206,7 @@ namespace Server.Spells.HolyMan
 			{
 				Item item = ( Item )targets[ i ];
 				item.Delete();
-			}
+				}
 
 			foreach ( Item item in World.Items.Values )
 			{
@@ -191,13 +225,7 @@ namespace Server.Spells.HolyMan
 
 			if ( m != null ){ m.PlaySound( 0x1F8 ); }
 		}
-    }
-}
 
-namespace Server.Items
-{
-	public class EnchantSpellStone : Item
-	{
 		[Constructable]
 		public EnchantSpellStone() : base( 0x3199 )
 		{
@@ -254,7 +282,7 @@ namespace Server.Items
 
 			protected override void OnTick() 
 			{
-				Server.Spells.HolyMan.EnchantSpell.EndEffects( null );
+				EndEffects( null );
 			} 
 		}
 

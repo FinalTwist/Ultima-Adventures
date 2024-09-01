@@ -167,7 +167,11 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Muffins), 1044497, 1022539, 60.0, 110.0, typeof(SweetDough), 1044475, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(Quiche), 1044497, 1041345, 60.0, 100.0, typeof(UnbakedQuiche), 1044518, 1, 1044253);
+            index = AddCraft(typeof(CornBreadMuffins), 1044497, "corn bread muffins", 60.0, 110.0, typeof(SweetDough), 1044475, 1, 1044253);
+            AddRes(index, typeof(Corn), "corn", 1, 1044253);
+            SetNeedOven(index, true);
+
+            index = AddCraft(typeof(Quiche), 1044497, 1041345, 60.0, 100.0, typeof(UnbakedQuiche), 1044518, 1, 1044253);
 			SetNeedOven(index, true);
 
 			index = AddCraft(typeof(MeatPie), 1044497, 1041347, 60.0, 110.0, typeof(UnbakedMeatPie), 1044519, 1, 1044253);
@@ -336,6 +340,22 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(CarvedPumpkin15), "Halloween", "jack-o-lantern", 95.0, 120.0, typeof(PumpkinGreen), "Green Pumpkin", 1, 1042081);
 
 			AddCraft(typeof(CarvedPumpkin20), "Halloween", "jack-o-lantern", 99.0, 125.0, typeof(PumpkinGiant), "Giant Pumpkin", 1, 1042081);
-		}
-	}
+
+            /* Start Nox's Seafood */
+            index = AddCraft(typeof(FishFilet), "Seafood", "fish filet", 45.0, 85.0, typeof(Fish), "fish", 1, 1044253);
+            SetNeedOven(index, true);
+            index = AddCraft(typeof(SteamedLobster), "Seafood", "steamed lobster", 45.0, 85.0, typeof(Lobster), "lobster", 1, 1044253);
+            SetNeedOven(index, true);
+            index = AddCraft(typeof(SteamedCrab), "Seafood", "steamed crab", 45.0, 85.0, typeof(Crab), 1035000, 1, 1044253);
+            SetNeedOven(index, true);
+            index = AddCraft(typeof(WoodenBowlOfLobsterBisque), "Seafood", "lobster bisque", 45.0, 85.0, typeof(Lobster), "lobster", 4, 1044253);
+            SetNeedOven(index, true);
+            index = AddCraft(typeof(CrabCakes), "Seafood", "crab cakes", 70.0, 100.0, typeof(Crab), 1035000, 1, 1044253);
+            AddRes(index, typeof(Dough), 1044469, 1, 1044253);
+            SetNeedOven(index, true); 
+            index = AddCraft(typeof(CrabRangoon), "Seafood", "crab rangoon", 70.0, 100.0, typeof(Crab), 1035000, 1, 1044253);
+            AddRes(index, typeof(Dough), 1044469, 1, 1044253);
+            SetNeedOven(index, true);
+        }
+    }
 }

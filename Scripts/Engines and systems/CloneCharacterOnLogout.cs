@@ -170,7 +170,7 @@ namespace Felladrin.Automations
                 if ( reg.IsPartOf( "the Bank" ) || reg.IsPartOf(typeof(SafeRegion) ) || reg.IsPartOf(typeof(PublicRegion)) )  
                 {
                     PlayerMobile pm = (PlayerMobile)Original;
-                    if ( pm.LastOnline < (DateTime.Now - TimeSpan.FromDays( daysSinceLoginThreshold ) ) )
+                    if ( pm.LastOnline < (DateTime.UtcNow - TimeSpan.FromDays( daysSinceLoginThreshold ) ) )
                     {
                         int whatever = Utility.RandomMinMax(1, 100);
                         String world = "";

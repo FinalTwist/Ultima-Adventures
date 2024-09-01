@@ -75,7 +75,7 @@ namespace Server.Mobiles
 			{
 				if ( Insensitive.Contains( e.Speech, "murders") || Insensitive.Contains( e.Speech, "bribe") || Insensitive.Contains( e.Speech, "kills") )  
 				{
-					Say("Yes... I might be able to help you.. for a price.  We will accept 10,000 gold pieces per bribe for a total of " + (e.Mobile.Kills * 5000 ) +".  Do you accept?");
+					Say("Yes... I might be able to help you.. for a price.  We will accept 10,000 gold pieces per bribe for a total of " + (e.Mobile.Kills * 10000 ) +".  Do you accept?");
 				}
 				if ( Insensitive.Contains( e.Speech, "accept") )  
 				{

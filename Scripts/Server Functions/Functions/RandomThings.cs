@@ -103,7 +103,7 @@ namespace Server.Misc
 		public static int GetRandomMetalColor()
 		{
 			int hue = 0;
-			switch( Utility.RandomMinMax( 0, 14 ) )
+			switch( Utility.RandomMinMax( 0, 15 ) )
 			{
 				case 1: hue = MaterialInfo.GetMaterialColor( "agapite", "classic", 0 ); break;
 				case 2: hue = MaterialInfo.GetMaterialColor( "brass", "classic", 0 ); break;
@@ -119,6 +119,7 @@ namespace Server.Misc
 				case 12: hue = MaterialInfo.GetMaterialColor( "steel", "classic", 0 ); break;
 				case 13: hue = MaterialInfo.GetMaterialColor( "valorite", "classic", 0 ); break;
 				case 14: hue = MaterialInfo.GetMaterialColor( "verite", "classic", 0 ); break;
+				case 15: hue = MaterialInfo.GetMaterialColor( "xormite", "classic", 0 ); break;
 			}
 
 			return hue;		}

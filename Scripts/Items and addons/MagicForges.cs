@@ -795,7 +795,7 @@ namespace Server.Items
 								{
 									if ( enchant.X>=5203 && enchant.Y>=1301 && enchant.X<=5205 && enchant.Y<=1305 )
 									{
-										if ( enchant is BaseWeapon )
+										if ( enchant is BaseWeapon && enchant.CanAugment() )
 										{
 											BaseWeapon weapon = (BaseWeapon)enchant;
 											if (	Server.Misc.MaterialInfo.IsAnyKindOfMetalItem( enchant ) || 
@@ -805,11 +805,12 @@ namespace Server.Items
 												MorphingItem.MorphMyItem( weapon, "Blessed by the Rangers", "Golden Ranger", "IGNORED", MorphingTemplates.TemplateRanger("weapons") );
 												Effects.SendLocationParticles( EffectItem.Create( weapon.Location, weapon.Map, EffectItem.DefaultDuration ), 0x376A, 9, 32, 5008 );
 												Effects.PlaySound( weapon.Location, weapon.Map, 0x1ED );
+												weapon.IsAugmented = true;
 											}
 
 											RidOf = 1;
 										}
-										else if ( enchant is BaseArmor )
+										else if ( enchant is BaseArmor && enchant.CanAugment() )
 										{
 											BaseArmor armor = (BaseArmor)enchant;
 											if (	Server.Misc.MaterialInfo.IsAnyKindOfMetalItem( enchant ) || 
@@ -819,6 +820,7 @@ namespace Server.Items
 												MorphingItem.MorphMyItem( armor, "IGNORED", "Golden Ranger", "IGNORED", MorphingTemplates.TemplateRanger("armors") );
 												Effects.SendLocationParticles( EffectItem.Create( armor.Location, armor.Map, EffectItem.DefaultDuration ), 0x376A, 9, 32, 5008 );
 												Effects.PlaySound( armor.Location, armor.Map, 0x1ED );
+												armor.IsAugmented = true;
 											}
 
 											RidOf = 1;

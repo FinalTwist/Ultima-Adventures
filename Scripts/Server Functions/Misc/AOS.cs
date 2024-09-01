@@ -61,7 +61,7 @@ namespace Server
 
 		public static int Damage( Mobile m, Mobile from, int damage, bool ignoreArmor, int phys, int fire, int cold, int pois, int nrgy, int chaos, int direct, bool keepAlive, bool archer, bool deathStrike )
 		{
-			return Damage(m, from, damage, ignoreArmor, phys, fire, cold, pois, nrgy, 0, 0, keepAlive, archer, deathStrike, false);
+			return Damage(m, from, damage, ignoreArmor, phys, fire, cold, pois, nrgy, chaos, direct, keepAlive, archer, deathStrike, false);
 		}
 		
 		public static int Damage( Mobile m, Mobile from, int damage, bool ignoreArmor, int phys, int fire, int cold, int pois, int nrgy, int chaos, int direct, bool keepAlive, bool archer, bool deathStrike, bool magic )

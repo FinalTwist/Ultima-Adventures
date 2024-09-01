@@ -166,7 +166,14 @@ namespace Server.Mobiles
 			return false;
 		}
 
-		public override bool OnDragDrop( Mobile from, Item dropped )
+        public override void OnDelete()
+        {
+			FrankenPorterItem.Reset(this);
+
+            base.OnDelete();
+        }
+
+        public override bool OnDragDrop( Mobile from, Item dropped )
 		{  
 			if (dropped == null || from == null || !(from is PlayerMobile) || this.ControlMaster == null)
 				return false;

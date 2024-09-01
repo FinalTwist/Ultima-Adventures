@@ -173,6 +173,20 @@ namespace Server.Items
 			list.Add( 1049644, "Found In " + ContainerLocation + "" ); // PARENTHESIS
         }
 
+        public override void OnDelete()
+        {
+            base.OnDelete();
+
+			Engines.ExpirationTracker.Remove(Serial);
+        }
+
+        public override bool OnDragLift(Mobile from)
+        {
+			Engines.ExpirationTracker.Remove(Serial); // As soon as someone interacts with it, disable auto-delete
+
+            return base.OnDragLift(from);
+        }
+
 		public override void Serialize( GenericWriter writer )
 		{
 			base.Serialize( writer );
@@ -187,7 +201,7 @@ namespace Server.Items
             writer.Write( ContainerLocation );
 		}
 
-		public override void Deserialize( GenericReader reader )
+        public override void Deserialize( GenericReader reader )
 		{
 			base.Deserialize( reader );
 			int version = reader.ReadInt();

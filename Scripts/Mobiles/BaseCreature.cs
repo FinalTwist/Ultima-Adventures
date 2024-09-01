@@ -123,9 +123,9 @@ namespace Server.Mobiles
 	public enum HideType
 	{
 		Regular,
-		Spined,
-		Horned,
-		Barbed,
+		Spined, // Deep Sea
+		Horned, // Lizard
+		Barbed, // Serpent
 		Necrotic,
 		Volcanic,
 		Frozen,
@@ -831,8 +831,14 @@ namespace Server.Mobiles
 		}
 
 		public void DoFinalBreathAttack( Mobile target, int form, bool cycle )
-		{
-			int physDamage = BreathPhysicalDamage;
+        {
+            int breathDamage = BreathComputeDamage();
+            if (Controlled && target == ControlMaster && !cycle) // Lower pet damage to owner
+            {
+				breathDamage = (int)(breathDamage * (MaxLoyalty - ((Loyalty * Loyalty) / 100d)) / 100);
+            }
+
+            int physDamage = BreathPhysicalDamage;
 			int fireDamage = BreathFireDamage;
 			int coldDamage = BreathColdDamage;
 			int poisDamage = BreathPoisonDamage;
@@ -857,7 +863,7 @@ namespace Server.Mobiles
 			Point3D blast4w = new Point3D( ( target.X ), ( target.Y-2 ), target.Z );
 			Point3D blast5w = new Point3D( ( target.X ), ( target.Y+2 ), target.Z );
 
-			AOS.Damage( target, this, BreathComputeDamage(), physDamage, fireDamage, coldDamage, poisDamage, nrgyDamage );
+			AOS.Damage( target, this, breathDamage, physDamage, fireDamage, coldDamage, poisDamage, nrgyDamage );
 
 			if ( form == 1 ) // CRYSTAL DRAGONS -----------------------------------------------------------------------------------------------------
 			{
@@ -2158,13 +2164,6 @@ namespace Server.Mobiles
 
 		public virtual bool IsEnemy( Mobile m )
 		{
-		
-			//adding special here for animate dead cast by mage ai mobs
-			if (this is SummonedCorpse && ((SummonedCorpse)this).MobSummon && ( m is PlayerMobile || ( m is BaseCreature && ((BaseCreature)m).Controlled && ((BaseCreature)m).ControlMaster is PlayerMobile ) ) )
-				return true;
-			else if (this is SummonedCorpse && ((SummonedCorpse)this).MobSummon)
-				return false;
-
 			if (Controlled && !m_goferal && m is BaseCreature && !((BaseCreature)m).GoFeral && ((BaseCreature)m).ControlMaster == ControlMaster && ((BaseCreature)m).Combatant != this )
 				return false;
 			
@@ -4504,6 +4503,7 @@ namespace Server.Mobiles
 
 		public void DynamicFameKarma() //final - no more arbitrary fame/karma values! Set Karma/Fame standard based on an algo
 		{
+            if (QuestTake.IsBossCandidate(this)) return;
 
 			//darkmoor vendors
 			if (this.Map == Map.Ilshenar && this.X <= 1007 && this.Y <= 1280 && ( this is BasePerson || this is BaseGuildmaster || this is TownHerald || this is BaseVendor || this is AnimalTrainerLord || this is Townsperson || this is PlayerVendor || this.Blessed || this.FightMode == FightMode.None || this is Citizens) )
@@ -5293,7 +5293,6 @@ namespace Server.Mobiles
 				else
 				{
 					from.SendLocalizedMessage( 500485 ); // You see nothing useful to carve from the corpse.
-					Console.WriteLine("basecr");
 				}
 			}
 			else
@@ -5334,7 +5333,26 @@ namespace Server.Mobiles
 					meat *= 2;
 					scales *= 2;
 					furs *= 2;
-				}					
+				}
+
+				if (with is AdvancedSkinningKnife)
+				{
+					AdvancedSkinningKnife knife = (AdvancedSkinningKnife) with;
+					if (0 < knife.YieldBonus) 
+					{
+						feathers += (feathers * knife.YieldBonus) / 100;
+						wool += (wool * knife.YieldBonus) / 100;
+						hides += (hides * knife.YieldBonus) / 100;
+						meat += (meat * knife.YieldBonus) / 100;
+						scales += (scales * knife.YieldBonus) / 100;
+						furs += (furs * knife.YieldBonus) / 100;
+					}
+
+					if (--knife.UsesRemaining < 1)
+					{
+						knife.Delete();
+					}
+				}
 
 				new Blood( 0x122D ).MoveToWorld( corpse.Location, corpse.Map );
 
@@ -5377,11 +5395,22 @@ namespace Server.Mobiles
 				if ( hides != 0 )
 				{
 					Item holding = from.Weapon as Item;
-					if ( Core.AOS && ( holding is SkinningKnife /* TODO: || holding is ButcherWarCleaver || with is ButcherWarCleaver */ ) )
+					HideType hideType = HideType;
+					bool usedGargoyleKnife = with is GargoylesSkinningKnife || holding is GargoylesSkinningKnife;
+					if (usedGargoyleKnife)
+					{
+						GargoylesSkinningKnife knife = with as GargoylesSkinningKnife;
+						if (knife == null) knife = (GargoylesSkinningKnife)holding;
+
+						hideType = knife.Upgrade(from, hideType);
+						// hides += Math.Min(25, (int)(0.25 * hides)); // Cap the hides ... No bonus hides
+					}
+
+					if ( Core.AOS && ( holding is SkinningKnife || usedGargoyleKnife /* TODO: || holding is ButcherWarCleaver || with is ButcherWarCleaver */ ) )
 					{
 						Item leather = null;
 
-						switch ( HideType )
+						switch ( hideType )
 						{
 							case HideType.Regular: leather = new Leather( hides ); break;
 							case HideType.Spined: leather = new SpinedLeather( hides ); break;
@@ -5399,7 +5428,7 @@ namespace Server.Mobiles
 
 						if ( leather != null )
 						{
-							if ( !from.PlaceInBackpack( leather ) )
+							if (usedGargoyleKnife || !from.PlaceInBackpack( leather ) )
 							{
 								corpse.DropItem( leather );
 								from.SendLocalizedMessage( 500471 ); // You skin it, and the hides are now in the corpse.
@@ -5410,31 +5439,25 @@ namespace Server.Mobiles
 					}
 					else
 					{
-						if ( HideType == HideType.Regular )
-							corpse.DropItem( new Hides( hides ) );
-						else if ( HideType == HideType.Spined )
-							corpse.DropItem( new SpinedHides( hides ) );
-						else if ( HideType == HideType.Horned )
-							corpse.DropItem( new HornedHides( hides ) );
-						else if ( HideType == HideType.Barbed )
-							corpse.DropItem( new BarbedHides( hides ) );
-						else if ( HideType == HideType.Necrotic )
-							corpse.DropItem( new NecroticHides( hides ) );
-						else if ( HideType == HideType.Volcanic )
-							corpse.DropItem( new VolcanicHides( hides ) );
-						else if ( HideType == HideType.Frozen )
-							corpse.DropItem( new FrozenHides( hides ) );
-						else if ( HideType == HideType.Goliath )
-							corpse.DropItem( new GoliathHides( hides ) );
-						else if ( HideType == HideType.Draconic )
-							corpse.DropItem( new DraconicHides( hides ) );
-						else if ( HideType == HideType.Hellish )
-							corpse.DropItem( new HellishHides( hides ) );
-						else if ( HideType == HideType.Dinosaur )
-							corpse.DropItem( new DinosaurHides( hides ) );
-						else if ( HideType == HideType.Alien )
-							corpse.DropItem( new AlienHides( hides ) );
+						Item leather = null;
 
+						switch ( hideType )
+						{
+							case HideType.Regular: leather = new Hides( hides ); break;
+							case HideType.Spined: leather = new SpinedHides( hides ); break;
+							case HideType.Horned: leather = new HornedHides( hides ); break;
+							case HideType.Barbed: leather = new BarbedHides( hides ); break;
+							case HideType.Necrotic: leather = new NecroticHides( hides ); break;
+							case HideType.Volcanic: leather = new VolcanicHides( hides ); break;
+							case HideType.Frozen: leather = new FrozenHides( hides ); break;
+							case HideType.Goliath: leather = new GoliathHides( hides ); break;
+							case HideType.Draconic: leather = new DraconicHides( hides ); break;
+							case HideType.Hellish: leather = new HellishHides( hides ); break;
+							case HideType.Dinosaur: leather = new DinosaurHides( hides ); break;
+							case HideType.Alien: leather = new AlienHides( hides ); break;
+						}
+						
+						corpse.DropItem( leather );
 						from.SendLocalizedMessage( 500471 ); // You skin it, and the hides are now in the corpse.
 					}
 				}
@@ -9779,7 +9802,6 @@ namespace Server.Mobiles
 				{
 					QuestTome.FoundItem( killer, 1, null );
 				}
-
 			}
 
 			Server.Misc.DropRelic.DropSpecialItem( this, killer, c ); // SOME DROP RARE ITEMS
@@ -10154,7 +10176,7 @@ namespace Server.Mobiles
 		public override bool CanBeHarmful( Mobile target, bool message, bool ignoreOurBlessedness )
 		{
 
-			if ( (target is BaseVendor && ((BaseVendor)target).IsInvulnerable) || target is PlayerVendor || target is PlayerBarkeeper )
+			if ( (target is BaseVendor && ((BaseVendor)target).IsInvulnerable) || target is PlayerVendor || target is PlayerBarkeeper || target is RoomAttendant )
 			{
 				if ( message )
 				{
@@ -10837,7 +10859,7 @@ namespace Server.Mobiles
 			}
 
 
-			if ( (  this is TownHerald || ( this is BaseVendor && this.WhisperHue != 999 && !(this is PlayerVendor) && !(this is PlayerBarkeeper) ) ) // GUARDS/MERCHANTS SHOULD MOVE BACK TO THEIR POST
+			if ( (  this is TownHerald || ( this is BaseVendor && this.WhisperHue != 999 && !(this is PlayerVendor || this is PlayerBarkeeper || this is RoomAttendant) ) ) // GUARDS/MERCHANTS SHOULD MOVE BACK TO THEIR POST
 				&& 
 				( Math.Abs( this.X-this.Home.X ) > 8 || Math.Abs( this.Y-this.Home.Y ) > 8 || Math.Abs( this.Z-this.Home.Z ) > 8 )
 				&& 

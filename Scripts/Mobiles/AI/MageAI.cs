@@ -77,12 +77,13 @@ namespace Server.Mobiles
 					if (bw != null)
 						relevantskill = m_Mobile.Skills[ bw.Skill ].Value; 
 				}
-
 				if (m_Mobile is BaseCreature && ((BaseCreature)m_Mobile).Controlled )
 				{	
 					if (m_Mobile.Str > m_Mobile.Int)
 						return true;
 				}
+				else if ( m_Mobile is DemonKnight || m_Mobile is BaseChampion || m_Mobile is Widow)
+					return true;
 				else if ( Insensitive.Contains( m_Mobile.Name, "unicorn" ) || Insensitive.Contains( m_Mobile.Name, "steed" ) || Insensitive.Contains( m_Mobile.Name, "drake" ) || Insensitive.Contains( m_Mobile.Name, "dragon" ) || Insensitive.Contains( m_Mobile.Name, "balron" ) || Insensitive.Contains( m_Mobile.Name, "primeval" ) || Insensitive.Contains( m_Mobile.Name, "beetle" ) )
 					return true;
 				else if (m_Mobile.Combatant != null)
@@ -752,10 +753,10 @@ namespace Server.Mobiles
 				{
 					if (Utility.RandomBool())
 						spell = GetRandomMassSpell();
-					else
+					else if (Utility.RandomBool())
 						spell = GetRandomFieldSpell();
 				}
-				if (spell == null && !CurseSpell.UnderEffect( c ) && dist < 4 && m_Mobile.Mana > 40 && GetMaxCircle(m_Mobile) >= 6 && odds < 0.25)
+				if (spell == null && !CurseSpell.UnderEffect( c ) && dist < 4 && m_Mobile.Mana > 40 && GetMaxCircle(m_Mobile) >= 6 && odds > 0.85)
 				{
 					spell = new MassCurseSpell(m_Mobile, null);
 				}
@@ -1239,7 +1240,7 @@ namespace Server.Mobiles
 
 				if( toDispel != null )
 				{
-					if( !m_Mobile.InRange( toDispel, Core.ML ? 10 : 12 ) )
+					if( !m_Mobile.InRange( toDispel, 15 ) )
 						DistanceCheck( toDispel );
 				}
 
@@ -1349,7 +1350,7 @@ namespace Server.Mobiles
 
 				Mobile comb = m_Mobile.Combatant;
 
-				if( comb != null && !comb.Deleted && comb.Alive && !comb.IsDeadBondedPet && m_Mobile.InRange( comb, Core.ML ? 10 : 12 ) && CanDispel( comb ) )
+				if( comb != null && !comb.Deleted && comb.Alive && !comb.IsDeadBondedPet && m_Mobile.InRange( comb, 15 ) && CanDispel( comb ) )
 				{
 					active = comb;
 					activePrio = m_Mobile.GetDistanceToSqrt( comb );
@@ -1363,7 +1364,7 @@ namespace Server.Mobiles
 					AggressorInfo info = aggressed[ i ];
 					Mobile m = info.Defender;
 
-					if( m != comb && m.Combatant == m_Mobile && m_Mobile.InRange( m, Core.ML ? 10 : 12 ) && CanDispel( m ) )
+					if( m != comb && m.Combatant == m_Mobile && m_Mobile.InRange( m, 15 ) && CanDispel( m ) )
 					{
 						double prio = m_Mobile.GetDistanceToSqrt( m );
 
@@ -1383,7 +1384,7 @@ namespace Server.Mobiles
 					AggressorInfo info = aggressors[ i ];
 					Mobile m = info.Attacker;
 
-					if( m != comb && m.Combatant == m_Mobile && m_Mobile.InRange( m, Core.ML ? 10 : 12 ) && CanDispel( m ) )
+					if( m != comb && m.Combatant == m_Mobile && m_Mobile.InRange( m, 15 ) && CanDispel( m ) )
 					{
 						double prio = m_Mobile.GetDistanceToSqrt( m );
 
@@ -1417,7 +1418,7 @@ namespace Server.Mobiles
 						actPrio = inactPrio = m_Mobile.GetDistanceToSqrt( comb );
 					}
 
-					foreach( Mobile m in m_Mobile.GetMobilesInRange( Core.ML ? 10 : 12 ) )
+					foreach( Mobile m in m_Mobile.GetMobilesInRange( 15 ) )
 					{
 						if( m != m_Mobile && CanDispel( m ) )
 						{
@@ -1736,6 +1737,8 @@ namespace Server.Mobiles
 			bool isBeneficial = ( targ is InvisibilitySpell.InternalTarget || targ is BlessSpell.InternalTarget || targ is CunningSpell.InternalTarget || targ is AgilitySpell.InternalTarget);
 			bool isAnimate = ( targ is AnimateDeadSpell.InternalTarget );
 			bool isField = ( targ is FireFieldSpell.InternalTarget || targ is PoisonFieldSpell.InternalTarget || targ is WallOfStoneSpell.InternalTarget || targ is ParalyzeFieldSpell.InternalTarget || targ is EnergyFieldSpell.InternalTarget );//Smart AI for field casting
+			bool isSummon = ( targ is EnergyVortexSpell.InternalTarget || targ is BladeSpiritsSpell.InternalTarget );
+			bool isVengefulSummon = ( targ is VengefulSpiritSpell.InternalTarget );
 			bool teleportAway = false;
 
 			Mobile toTarget;
@@ -1776,6 +1779,33 @@ namespace Server.Mobiles
 						DistanceCheck( toTarget );
 				}
 			}
+			else if (isVengefulSummon)
+			{
+				toTarget = m_Mobile.Combatant;
+
+			}
+			else if (isSummon)
+			{
+				toTarget = m_Mobile.Combatant;
+				
+				if( toTarget == null || !m_Mobile.InLOS(m_Mobile.Combatant))
+				{
+					toTarget = m_Mobile;
+				}
+
+				if (toTarget != null && toTarget.Map != null && toTarget.Map != Map.Internal)
+				{
+					LandTarget lt = new LandTarget( toTarget.Location, toTarget.Map );
+					targ.Invoke( m_Mobile, lt );
+						return true;
+				}
+				else
+				{
+					targ.Cancel( m_Mobile, TargetCancelType.Canceled );
+					return false;
+				}
+
+			}
 			else if (isField )
 			{
 				toTarget = m_Mobile.Combatant;
@@ -1791,7 +1821,7 @@ namespace Server.Mobiles
 						if( map == null )
 						{
 							targ.Cancel( m_Mobile, TargetCancelType.Canceled );
-							return true;
+							return false;
 						}
 
 						int rx = (m_Mobile.X - toTarget.X)/2;//half way distance
@@ -1835,7 +1865,10 @@ namespace Server.Mobiles
 				Item corpse = FindCorpseToAnimate();				
 
 				if ( corpse != null )
+				{
 					targ.Invoke( m_Mobile, corpse );
+					return true;
+				}
 
 				toTarget = null;
 			}

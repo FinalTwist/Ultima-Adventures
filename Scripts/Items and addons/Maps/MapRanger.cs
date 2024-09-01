@@ -97,8 +97,7 @@ namespace Server.Items
 			}
 			else if ( CanUseMap == false )
 			{
-				from.SendMessage( "Not knowing how to get to this world, you throw the map away." );
-				this.Delete();
+				from.SendMessage( "You don't recognize the location on the map." );
 				return;
 			}
 			else if ( IsChildOf( from.Backpack ) && Charges > 0 ) 

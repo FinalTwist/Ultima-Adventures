@@ -31,9 +31,11 @@ namespace Server.Mobiles
             if (MyServerSettings.SellVeryRareChance() ){multiple = 3; Add(new GenericBuyInfo(typeof(DJ_SE_AnimalTaming), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellVeryRareChance() ){multiple = 3; Add(new GenericBuyInfo(typeof(DJ_SE_Archery), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellChance()) { Add(new GenericBuyInfo(typeof(DJ_SE_ArmsLore), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
+            if (MyServerSettings.SellRareChance() ){multiple = 2; Add(new GenericBuyInfo(typeof(DJ_SE_Begging), (int)(baseprice * multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellVeryRareChance() ){multiple = 3; Add(new GenericBuyInfo(typeof(DJ_SE_Blacksmith), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellVeryRareChance() ){multiple = 3; Add(new GenericBuyInfo(typeof(DJ_SE_Fletching), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellChance()) { Add(new GenericBuyInfo(typeof(DJ_SE_Bushido), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
+            if (MyServerSettings.SellRareChance() ){multiple = 2; Add(new GenericBuyInfo(typeof(DJ_SE_Camping), (int)(baseprice * multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellVeryRareChance() ){multiple = 3; Add(new GenericBuyInfo(typeof(DJ_SE_Carpentry), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellChance()) { Add(new GenericBuyInfo(typeof(DJ_SE_Cartography), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellRareChance() ){multiple = 2; Add(new GenericBuyInfo(typeof(DJ_SE_Chivalry), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
@@ -44,8 +46,11 @@ namespace Server.Mobiles
             if (MyServerSettings.SellVeryRareChance() ){multiple = 3; Add(new GenericBuyInfo(typeof(DJ_SE_Fencing), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellChance()) { Add(new GenericBuyInfo(typeof(DJ_SE_Fishing), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellChance()) { Add(new GenericBuyInfo(typeof(DJ_SE_Focus), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
+            if (MyServerSettings.SellRareChance()) { Add(new GenericBuyInfo(typeof(DJ_SE_Forensics), (int)(baseprice * multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellRareChance() ){multiple = 2; Add(new GenericBuyInfo(typeof(DJ_SE_Healing), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
+            if (MyServerSettings.SellVeryRareChance() ){multiple = 3; Add(new GenericBuyInfo(typeof(DJ_SE_Herding), (int)(baseprice * multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellVeryRareChance() ){multiple = 3; Add(new GenericBuyInfo(typeof(DJ_SE_Inscribe), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
+            if (MyServerSettings.SellRareChance() ){multiple = 2; Add(new GenericBuyInfo(typeof(DJ_SE_ItemID), (int)(baseprice * multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellRareChance() ){multiple = 2; Add(new GenericBuyInfo(typeof(DJ_SE_Lockpicking), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellChance()) { Add(new GenericBuyInfo(typeof(DJ_SE_Hiding), (int)(baseprice * multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellRareChance() ){multiple = 2; Add(new GenericBuyInfo(typeof(DJ_SE_Lumberjacking), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
@@ -69,6 +74,7 @@ namespace Server.Mobiles
             if (MyServerSettings.SellVeryRareChance() ){multiple = 3; Add(new GenericBuyInfo(typeof(DJ_SE_Swords), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellChance()) { Add(new GenericBuyInfo(typeof(DJ_SE_Tactics), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellVeryRareChance() ){multiple = 3; Add(new GenericBuyInfo(typeof(DJ_SE_Tailoring), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
+            if (MyServerSettings.SellRareChance() ){multiple = 2; Add(new GenericBuyInfo(typeof(DJ_SE_TasteID), (int)(baseprice * multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellVeryRareChance() ){multiple = 3; Add(new GenericBuyInfo(typeof(DJ_SE_Tinkering), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellChance()) { Add(new GenericBuyInfo(typeof(DJ_SE_Tracking), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
             if (MyServerSettings.SellRareChance() ){multiple = 2; Add(new GenericBuyInfo(typeof(DJ_SE_Veterinary), (int)(baseprice* multiple), 1, 0x14F0, 0x481)); }
@@ -128,6 +134,12 @@ namespace Server.Mobiles
 				if ( MyServerSettings.BuyRareChance() ){Add( typeof( DJ_SE_Tracking ), 1600 );}
 				if ( MyServerSettings.BuyChance() ) {Add( typeof( DJ_SE_Veterinary ), 4000 );}
 				if ( MyServerSettings.BuyChance() ) {Add( typeof( DJ_SE_Wrestling ), 4000 );}
+				// if ( MyServerSettings.BuyChance() ){Add( typeof( DJ_SE_Begging ), 0000 );}
+				// if ( MyServerSettings.BuyChance() ){Add( typeof( DJ_SE_Camping ), 0000 );}
+				// if ( MyServerSettings.BuyChance() ){Add( typeof( DJ_SE_Forensics ), 0000 );}
+				// if ( MyServerSettings.BuyChance() ){Add( typeof( DJ_SE_Herding ), 0000 );}
+				// if ( MyServerSettings.BuyChance() ){Add( typeof( DJ_SE_TasteID ), 0000 );}
+				// if ( MyServerSettings.BuyChance() ){Add( typeof( DJ_SE_ItemID ), 0000 );}
 			} 
 		} 
 	} 

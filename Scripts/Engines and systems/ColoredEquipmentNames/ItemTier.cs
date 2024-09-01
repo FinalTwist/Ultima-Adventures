@@ -552,55 +552,7 @@ namespace ItemNameHue
 	    {
 		attrsMod += 1000;
 
-		switch ( bw.Resource )
-		{
-		    case CraftResource.DullCopper: attrsMod = (int)( attrsMod * 1.25 ); break;
-		    case CraftResource.ShadowIron: attrsMod = (int)( attrsMod * 1.5 ); break;
-		    case CraftResource.Copper: attrsMod = (int)( attrsMod * 1.75 ); break;
-		    case CraftResource.Bronze: attrsMod = (int)( attrsMod * 2 ); break;
-		    case CraftResource.Gold: attrsMod = (int)( attrsMod * 2.25 ); break;
-		    case CraftResource.Agapite: attrsMod = (int)( attrsMod * 2.50 ); break;
-		    case CraftResource.Verite: attrsMod = (int)( attrsMod * 2.75 ); break;
-		    case CraftResource.Valorite: attrsMod = (int)( attrsMod * 3 ); break;
-		    case CraftResource.Nepturite: attrsMod = (int)( attrsMod * 3.10 ); break;
-		    case CraftResource.Obsidian: attrsMod = (int)( attrsMod * 3.10 ); break;
-		    case CraftResource.Steel: attrsMod = (int)( attrsMod * 3.25 ); break;
-		    case CraftResource.Brass: attrsMod = (int)( attrsMod * 3.5 ); break;
-		    case CraftResource.Mithril: attrsMod = (int)( attrsMod * 3.75 ); break;
-		    case CraftResource.Xormite: attrsMod = (int)( attrsMod * 3.75 ); break;
-		    case CraftResource.Dwarven: attrsMod = (int)( attrsMod * 7.50 ); break;
-		    case CraftResource.SpinedLeather: attrsMod = (int)( attrsMod * 1.5 ); break;
-		    case CraftResource.HornedLeather: attrsMod = (int)( attrsMod * 1.75 ); break;
-		    case CraftResource.BarbedLeather: attrsMod = (int)( attrsMod * 2.0 ); break;
-		    case CraftResource.NecroticLeather: attrsMod = (int)( attrsMod * 2.25 ); break;
-		    case CraftResource.VolcanicLeather: attrsMod = (int)( attrsMod * 2.5 ); break;
-		    case CraftResource.FrozenLeather: attrsMod = (int)( attrsMod * 2.75 ); break;
-		    case CraftResource.GoliathLeather: attrsMod = (int)( attrsMod * 3.0 ); break;
-		    case CraftResource.DraconicLeather: attrsMod = (int)( attrsMod * 3.25 ); break;
-		    case CraftResource.HellishLeather: attrsMod = (int)( attrsMod * 3.5 ); break;
-		    case CraftResource.DinosaurLeather: attrsMod = (int)( attrsMod * 3.75 ); break;
-		    case CraftResource.AlienLeather: attrsMod = (int)( attrsMod * 3.75 ); break;
-		    case CraftResource.RedScales: attrsMod = (int)( attrsMod * 1.25 ); break;
-		    case CraftResource.YellowScales: attrsMod = (int)( attrsMod * 1.25 ); break;
-		    case CraftResource.BlackScales: attrsMod = (int)( attrsMod * 1.5 ); break;
-		    case CraftResource.GreenScales: attrsMod = (int)( attrsMod * 1.5 ); break;
-		    case CraftResource.WhiteScales: attrsMod = (int)( attrsMod * 1.5 ); break;
-		    case CraftResource.BlueScales: attrsMod = (int)( attrsMod * 1.5 ); break;
-		    case CraftResource.AshTree: attrsMod = (int)( attrsMod * 1.25 ); break;
-		    case CraftResource.CherryTree: attrsMod = (int)( attrsMod * 1.45 ); break;
-		    case CraftResource.EbonyTree: attrsMod = (int)( attrsMod * 1.65 ); break;
-		    case CraftResource.GoldenOakTree: attrsMod = (int)( attrsMod * 1.85 ); break;
-		    case CraftResource.HickoryTree: attrsMod = (int)( attrsMod * 2.05 ); break;
-		    case CraftResource.MahoganyTree: attrsMod = (int)( attrsMod * 2.25 ); break;
-		    case CraftResource.DriftwoodTree: attrsMod = (int)( attrsMod * 2.25 ); break;
-		    case CraftResource.OakTree: attrsMod = (int)( attrsMod * 2.45 ); break;
-		    case CraftResource.PineTree: attrsMod = (int)( attrsMod * 2.65 ); break;
-		    case CraftResource.GhostTree: attrsMod = (int)( attrsMod * 2.65 ); break;
-		    case CraftResource.RosewoodTree: attrsMod = (int)( attrsMod * 2.85 ); break;
-		    case CraftResource.WalnutTree: attrsMod = (int)( attrsMod * 3 ); break;
-		    case CraftResource.ElvenTree: attrsMod = (int)( attrsMod * 6 ); break;
-		    case CraftResource.PetrifiedTree: attrsMod = (int)( attrsMod * 3.25 ); break;
-		}
+                attrsMod = (int)(attrsMod * CraftResources.GetValueMultiplier(bw.Resource));
 
 		attrsMod -= (50 - bw.UsesRemaining) * 30;
 		if (attrsMod < 0)

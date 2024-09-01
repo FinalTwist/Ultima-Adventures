@@ -11,7 +11,6 @@ namespace Server.Items
         {
 			Name = "Pestilence";
 			Hue = 1151;
-            DamageIncrease = 5;
 			Attributes.DefendChance = 5;
 			Attributes.AttackChance = 5;
 			LowerAmmoCost = 5;

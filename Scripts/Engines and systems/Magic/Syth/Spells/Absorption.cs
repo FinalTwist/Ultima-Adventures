@@ -61,7 +61,7 @@ namespace Server.Spells.Syth
 			}
 			else if ( CheckSequence() )
 			{
-				if ( Caster.BeginAction( typeof( DefensiveSpell ) ) && CheckFizzle() )
+				if ( Caster.BeginAction( typeof( DefensiveSpell ) ) )
 				{
 					int min = 15;
 					int max = (int)( GetSythDamage( Caster ) / 4 );
@@ -74,9 +74,9 @@ namespace Server.Spells.Syth
 				{
 					Caster.SendMessage( "Your essence cannot absorb more at this time!" );
 				}
-
-				FinishSequence();
 			}
+
+			FinishSequence();
 		}
 	}
 }

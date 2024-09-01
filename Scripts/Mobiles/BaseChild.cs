@@ -484,32 +484,40 @@ namespace Server.Mobiles
 		public override void OnDoubleClick( Mobile from )
 		{
 			from.RevealingAction(); 
-            if ( (from.AccessLevel > AccessLevel.Player || m_stole == from) && this.Backpack != null)
+            if ( from.AccessLevel >= AccessLevel.GameMaster && !Body.IsHuman )
 			{
+				Container pack = this.Backpack;
 
-				if ( from.InRange(this, 1) && InLOS( from ))
-				{
-					from.SendMessage("You grab the thief and look through his posessions!");
-					this.Backpack.DisplayTo( from );
-					int time = Utility.RandomMinMax(3,5);
-					this.Paralyze( TimeSpan.FromSeconds( time ) );
-					from.PlaySound( 0x204 );
-				}
+				if ( pack != null )
+					pack.DisplayTo( from );
+			}
+			// Removed because it's triggered by accidentally double-clicking the wall of text that children spam you with
+            // if ( (from.AccessLevel > AccessLevel.Player || m_stole == from) && this.Backpack != null)
+			// {
 
-			}
-			else if (Utility.RandomBool() && from.InRange(this, 1) && InLOS( from ) )
-			{
-				switch (Utility.Random(6))
-								{
-											case 0: Say("Help! this person's trying to molest me!"); break;
-											case 1: Say("This person tried to touch my private parts!"); break;
-											case 2: Say("AAAAAAAAAAAH!"); break;
-											case 3: Say("Help! Help!"); break;
-											case 4: Say("A stranger touched me!!"); break;
-											case 5: Say("aah!"); break;
-								}
-				from.CriminalAction( true );
-			}
+			// 	if ( from.InRange(this, 1) && InLOS( from ))
+			// 	{
+			// 		from.SendMessage("You grab the thief and look through his posessions!");
+			// 		this.Backpack.DisplayTo( from );
+			// 		int time = Utility.RandomMinMax(3,5);
+			// 		this.Paralyze( TimeSpan.FromSeconds( time ) );
+			// 		from.PlaySound( 0x204 );
+			// 	}
+
+			// }
+			// else if (Utility.RandomBool() && from.InRange(this, 1) && InLOS( from ) )
+			// {
+			// 	switch (Utility.Random(6))
+			// 					{
+			// 								case 0: Say("Help! this person's trying to molest me!"); break;
+			// 								case 1: Say("This person tried to touch my private parts!"); break;
+			// 								case 2: Say("AAAAAAAAAAAH!"); break;
+			// 								case 3: Say("Help! Help!"); break;
+			// 								case 4: Say("A stranger touched me!!"); break;
+			// 								case 5: Say("aah!"); break;
+			// 					}
+			// 	from.CriminalAction( true );
+			// }
 		}
 
 		public void BeAnnoying( Mobile target)

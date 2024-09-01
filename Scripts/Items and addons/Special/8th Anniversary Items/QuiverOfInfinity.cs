@@ -12,7 +12,7 @@ namespace Server.Items
 			Weight = 8.0;
 			Name = "Almost Infinite Quiver";
 			WeightReduction = 100;
-			DamageIncrease = 50;
+			DamageIncrease = 15;
 			LowerAmmoCost = 90; // game actually changes this ingame back to 90 if set to 100 when youfire an arrow
 		}
 		
@@ -30,7 +30,7 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.WriteEncodedInt( 1 ); //version
+			writer.WriteEncodedInt( 2 ); //version
 		}
 
 		public override void Deserialize( GenericReader reader )
@@ -38,11 +38,8 @@ namespace Server.Items
 			base.Deserialize( reader );
 
 			int version = reader.ReadEncodedInt();
-
-			//if( version < 1 && DamageIncrease == 0 )
-			//{
-			//	DamageIncrease = 50;
-			//}
+			if (version == 1)
+            	DamageIncrease = 15; // All "Damage Modifier" have been reduced to 10%, this gets 15%
 		}
 	}
 }

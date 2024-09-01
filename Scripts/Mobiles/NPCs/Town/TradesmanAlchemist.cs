@@ -124,53 +124,100 @@ namespace Server.Items
 		public string Crate_Item { get { return CrateItem; } set { CrateItem = value; InvalidateProperties(); } }
 
 		[Constructable]
-		public CrateOfReagents() : base( 0x5095 )
+		public CrateOfReagents() : base( 0x0E3C )
 		{
 			Name = "crate of reagents";
 			Weight = 10;
 		}
-
 		public CrateOfReagents( Serial serial ) : base( serial )
 		{
 		}
 
-		public override void OnDoubleClick( Mobile from )
+		public static CrateOfReagents CreateRandom()
 		{
-			if ( !IsChildOf( from.Backpack ) ) 
+			CrateOfReagents crate = new CrateOfReagents();
+			string reagent = null;
+			switch (Utility.RandomMinMax(0, 24))
 			{
-				from.SendMessage( "This must be in your backpack to open." );
+				case 0: crate.ItemID = 0x508E; reagent = "bloodmoss"; break;
+				case 1: crate.ItemID = 0x508F; reagent = "black pearl"; break;
+				case 2: crate.ItemID = 0x5098; reagent = "garlic"; break;
+				case 3: crate.ItemID = 0x5099; reagent = "ginseng"; break;
+				case 4: crate.ItemID = 0x509A; reagent = "mandrake root"; break;
+				case 5: crate.ItemID = 0x509B; reagent = "nightshade"; break;
+				case 6: crate.ItemID = 0x509C; reagent = "sulfurous ash"; break;
+				case 7: crate.ItemID = 0x509D; reagent = "spider silk"; break;
+				case 8: reagent = "swamp berry"; break;
+				case 9: reagent = "bat wing"; break;
+				case 10: reagent = "beetle shell"; break;
+				case 11: reagent = "brimstone"; break;
+				case 12: reagent = "butterfly"; break;
+				case 13: reagent = "daemon blood"; break;
+				case 14: reagent = "toad eyes"; break;
+				case 15: reagent = "fairy eggs"; break;
+				case 16: reagent = "gargoyle ears"; break;
+				case 17: reagent = "grave dust"; break;
+				case 18: reagent = "moon crystals"; break;
+				case 19: reagent = "nox crystal"; break;
+				case 20: reagent = "silver widow"; break;
+				case 21: reagent = "pig iron"; break;
+				case 22: reagent = "pixie skull"; break;
+				case 23: reagent = "red lotus"; break;
+				case 24: reagent = "sea salt"; break;
+			}
+
+			crate.Crate_Item = reagent;
+			crate.Name = "crate of " + reagent + "";
+
+			return crate;
+		}
+
+		public override void OnDoubleClick(Mobile from)
+		{
+			if (!IsChildOf(from.Backpack))
+			{
+				from.SendMessage("This must be in your backpack to open.");
 				return;
 			}
 			else
 			{
-				from.PlaySound( 0x02D );
-				from.AddToBackpack ( new LargeCrate() );
+				from.PlaySound(0x02D);
+				from.AddToBackpack(new LargeCrate());
 
-				if ( ItemID == 0x508E ){ from.AddToBackpack ( new Bloodmoss( CrateQty ) ); }
-				else if ( ItemID == 0x508F ){ from.AddToBackpack ( new BlackPearl( CrateQty ) ); }
-				else if ( ItemID == 0x5098 ){ from.AddToBackpack ( new Garlic( CrateQty ) ); }
-				else if ( ItemID == 0x5099 ){ from.AddToBackpack ( new Ginseng( CrateQty ) ); }
-				else if ( ItemID == 0x509A ){ from.AddToBackpack ( new MandrakeRoot( CrateQty ) ); }
-				else if ( ItemID == 0x509B ){ from.AddToBackpack ( new Nightshade( CrateQty ) ); }
-				else if ( ItemID == 0x509C ){ from.AddToBackpack ( new SulfurousAsh( CrateQty ) ); }
-				else if ( ItemID == 0x509D ){ from.AddToBackpack ( new SpidersSilk( CrateQty ) ); }
-				else if ( ItemID == 0x568A ){ from.AddToBackpack ( new SwampBerries( CrateQty ) ); }
-				else if ( ItemID == 0x55E0 ){ from.AddToBackpack ( new BatWing( CrateQty ) ); }
-				else if ( ItemID == 0x55E1 ){ from.AddToBackpack ( new BeetleShell( CrateQty ) ); }
-				else if ( ItemID == 0x55E2 ){ from.AddToBackpack ( new Brimstone( CrateQty ) ); }
-				else if ( ItemID == 0x55E3 ){ from.AddToBackpack ( new ButterflyWings( CrateQty ) ); }
-				else if ( ItemID == 0x55E4 ){ from.AddToBackpack ( new DaemonBlood( CrateQty ) ); }
-				else if ( ItemID == 0x55E5 ){ from.AddToBackpack ( new EyeOfToad( CrateQty ) ); }
-				else if ( ItemID == 0x55E6 ){ from.AddToBackpack ( new FairyEgg( CrateQty ) ); }
-				else if ( ItemID == 0x55E7 ){ from.AddToBackpack ( new GargoyleEar( CrateQty ) ); }
-				else if ( ItemID == 0x55E8 ){ from.AddToBackpack ( new GraveDust( CrateQty ) ); }
-				else if ( ItemID == 0x55E9 ){ from.AddToBackpack ( new MoonCrystal( CrateQty ) ); }
-				else if ( ItemID == 0x55EA ){ from.AddToBackpack ( new NoxCrystal( CrateQty ) ); }
-				else if ( ItemID == 0x55EB ){ from.AddToBackpack ( new SilverWidow( CrateQty ) ); }
-				else if ( ItemID == 0x55EC ){ from.AddToBackpack ( new PigIron( CrateQty ) ); }
-				else if ( ItemID == 0x55ED ){ from.AddToBackpack ( new PixieSkull( CrateQty ) ); }
-				else if ( ItemID == 0x55EE ){ from.AddToBackpack ( new RedLotus( CrateQty ) ); }
-				else if ( ItemID == 0x55EF ){ from.AddToBackpack ( new SeaSalt( CrateQty ) ); }
+				Item item = null;
+				if (CrateItem == "bloodmoss") item = new Bloodmoss(CrateQty);
+				if (CrateItem == "black pearl") item = new BlackPearl(CrateQty);
+				if (CrateItem == "garlic") item = new Garlic(CrateQty);
+				if (CrateItem == "ginseng") item = new Ginseng(CrateQty);
+				if (CrateItem == "mandrake root") item = new MandrakeRoot(CrateQty);
+				if (CrateItem == "nightshade") item = new Nightshade(CrateQty);
+				if (CrateItem == "sulfurous ash") item = new SulfurousAsh(CrateQty);
+				if (CrateItem == "spider silk") item = new SpidersSilk(CrateQty);
+				if (CrateItem == "swamp berry") item = new SwampBerries(CrateQty);
+				if (CrateItem == "bat wing") item = new BatWing(CrateQty);
+				if (CrateItem == "beetle shell") item = new BeetleShell(CrateQty);
+				if (CrateItem == "brimstone") item = new Brimstone(CrateQty);
+				if (CrateItem == "butterfly") item = new ButterflyWings(CrateQty);
+				if (CrateItem == "daemon blood") item = new DaemonBlood(CrateQty);
+				if (CrateItem == "toad eyes") item = new EyeOfToad(CrateQty);
+				if (CrateItem == "fairy eggs") item = new FairyEgg(CrateQty);
+				if (CrateItem == "gargoyle ears") item = new GargoyleEar(CrateQty);
+				if (CrateItem == "grave dust") item = new GraveDust(CrateQty);
+				if (CrateItem == "moon crystals") item = new MoonCrystal(CrateQty);
+				if (CrateItem == "nox crystal") item = new NoxCrystal(CrateQty);
+				if (CrateItem == "silver widow") item = new SilverWidow(CrateQty);
+				if (CrateItem == "pig iron") item = new PigIron(CrateQty);
+				if (CrateItem == "pixie skull") item = new PixieSkull(CrateQty);
+				if (CrateItem == "red lotus") item = new RedLotus(CrateQty);
+				if (CrateItem == "sea salt") item = new SeaSalt(CrateQty);
+
+				if (item == null)
+				{
+					from.PrivateOverheadMessage(MessageType.Regular, 0x14C, false, "You separate the reagents into your backpack", from.NetState);
+					return;
+				}
+
+				from.AddToBackpack(item);
 
 				from.PrivateOverheadMessage(MessageType.Regular, 0x14C, false, "You separate the reagents into your backpack", from.NetState);
 				this.Delete();

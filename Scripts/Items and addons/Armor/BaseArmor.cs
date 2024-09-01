@@ -13,7 +13,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-	public abstract class BaseArmor : Item, IScissorable, ICraftable, IWearableDurability, IRepairable
+	public abstract class BaseArmor : Item, IScissorable, ICraftable, IWearableDurability, IRepairable, IAugmentableItem
 	{
 
 
@@ -752,9 +752,11 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 8 ); // version added wear
-			
-			writer.Write( (int) m_wear);
+			writer.Write( (int) 9 ); // version added wear
+
+            writer.Write(IsAugmented);
+
+            writer.Write( (int) m_wear);
 
 			SaveFlag flags = SaveFlag.None;
 
@@ -864,6 +866,11 @@ namespace Server.Items
 
 			switch ( version )
 			{
+				case 9:
+				{
+					IsAugmented = reader.ReadBool();
+					goto case 8;
+				}
 				case 8:
 				{
 					m_wear = reader.ReadInt();
@@ -1264,8 +1271,7 @@ namespace Server.Items
 
 			if ( this.Layer == Layer.Gloves )
 			{
-				if (	( from.FindItemOnLayer( Layer.OneHanded ) is IPugilistGloves ) || 
-						( from.FindItemOnLayer( Layer.OneHanded ) is IThrowingGloves )  )
+				if ( from.FindItemOnLayer( Layer.OneHanded ) is IMainHandGloves )
 					{ Item oneHand = from.FindItemOnLayer( Layer.OneHanded ); from.Backpack.DropItem( oneHand ); //BaseContainer.DropItemFix( oneHand, from, from.Backpack.ItemID, from.Backpack.GumpID ); 
 					}
 				else if ( ( from.FindItemOnLayer( Layer.FirstValid ) is IPugilistGloves ) )
@@ -1729,7 +1735,10 @@ m_MaxHits
 			set{ base.Hue = value; InvalidateProperties(); }
 		}
 
-		public override void AddNameProperty( ObjectPropertyList list )
+        [CommandProperty(AccessLevel.GameMaster)]
+        public bool IsAugmented { get; set; }
+
+        public override void AddNameProperty( ObjectPropertyList list )
 		{
 		    #region [Item Name Color]
 		    string resourceName = CraftResources.GetName(m_Resource);

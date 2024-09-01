@@ -10,7 +10,7 @@ namespace Server.Items
 		public LevelQuiver() : base()
 		{
 			WeightReduction = 0;
-			DamageIncrease = 0;
+			DamageIncrease = 0; // Special logic in BaseQuiver for this
 			LowerAmmoCost = 0;
 		}
 

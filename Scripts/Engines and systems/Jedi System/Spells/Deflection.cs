@@ -61,7 +61,7 @@ namespace Server.Spells.Jedi
 			}
 			else if ( CheckSequence() )
 			{
-				if ( Caster.BeginAction( typeof( DefensiveSpell ) ) && CheckFizzle() )
+				if ( Caster.BeginAction( typeof( DefensiveSpell ) ) )
 				{
 					int min = 15;
 					int max = (int)( GetJediDamage( Caster ) / 4 );
@@ -74,9 +74,9 @@ namespace Server.Spells.Jedi
 				{
 					Caster.SendMessage( "Your essence cannot deflect more at this time!" );
 				}
-
-				FinishSequence();
 			}
+
+			FinishSequence();
 		}
 	}
 }

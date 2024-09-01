@@ -111,12 +111,12 @@ namespace Server.Engines.Harvest
 			from.SendLocalizedMessage( 500972 ); // You are already fishing.
 		}
 
-		public static void FishingSkill( Mobile from, int c )
+		public static void FishingSkill( Mobile from, int c, int maxSkill = 125 )
 		{
 			while ( c > 0 )
 			{
 				c--;
-				from.CheckSkill( SkillName.Fishing, 0, 125 );
+				from.CheckSkill( SkillName.Fishing, 0, maxSkill );
 			}
 		}
 

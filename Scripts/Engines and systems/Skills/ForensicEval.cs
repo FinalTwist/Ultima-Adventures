@@ -112,16 +112,20 @@ namespace Server.SkillHandlers
 						from.SendLocalizedMessage( 501001 );//You cannot determine anything useful.
 					}
 				}
-				else if ( target is ILockpickable )
+				else
 				{
-					ILockpickable p = (ILockpickable)target;
-					if ( p.Picker != null )
-						from.SendLocalizedMessage( 1042749, p.Picker.Name );//This lock was opened by ~1_PICKER_NAME~
-					else
-						from.SendLocalizedMessage( 501003 );//You notice nothing unusual.
+					if (target is ILockpickable)
+					{
+						ILockpickable p = (ILockpickable)target;
+						if (p.Picker != null)
+							from.SendLocalizedMessage(1042749, p.Picker.Name);//This lock was opened by ~1_PICKER_NAME~
+						else
+							from.SendLocalizedMessage(501003);//You notice nothing unusual.
+					}
+
+					if (target is Item && !string.IsNullOrWhiteSpace(((Item)target).LastTouched))
+						from.SendMessage("The last person to touch this item was " + ((Item)target).LastTouched);
 				}
-				else if (target is Item && ((Item)target).LastTouched != "")
-					from.SendMessage("The last person to touch this item was " + ((Item)target).LastTouched );
 			}
 		}
 	}

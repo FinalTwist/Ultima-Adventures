@@ -68,12 +68,6 @@ namespace Server.Mobiles
 		public override FurType FurType{ get{ return FurType.Regular; } }
 		public override FoodType FavoriteFood{ get{ return FoodType.FruitsAndVegies | FoodType.GrainsAndHay; } }
 
-		public override bool OnBeforeDeath()
-		{
-			Server.Items.HorseArmor.DropArmor( this );
-			return base.OnBeforeDeath();
-		}
-
 		public Stallion( Serial serial ) : base( serial )
 		{
 		}

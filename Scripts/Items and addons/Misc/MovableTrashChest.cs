@@ -23,7 +23,7 @@ namespace Server.Items
 		{
 			Name = "Trash Chest";
 			Movable = true;
-			Weight = 50;
+			Weight = 10;
 		}
 
 		public MovableTrashChest(Serial serial) : base(serial)
@@ -39,13 +39,17 @@ namespace Server.Items
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);
-			writer.Write((int)0); // version
+			writer.Write((int)1); // version
 		}
 
 		public override void Deserialize(GenericReader reader)
 		{
 			base.Deserialize(reader);
 			int version = reader.ReadInt();
+
+			if (version == 0)
+				Weight = 10;
+
 			if (Items.Count > 0)
 			{
 				m_Timer = new EmptyTimer(this);

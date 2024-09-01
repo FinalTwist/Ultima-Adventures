@@ -107,7 +107,7 @@ namespace Server.Gumps
 			else if ( page == 4 )
 			{
 				AddHtml( 128, 99, 201, 223, @"Enchant<BR><BR>Piety: 180<BR><BR>Skill: 90<BR><BR>Mana: 45<BR><BR>Bishop Leantre rests in the Kuldar Cemetery<BR><BR>  Mantra: fascinare</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
-				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Temporarily imbues a weapon with holy powers.<br><br>Command Word: [Enchant</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
+				AddHtml( 361, 99, 201, 223, @"<BODY><BASEFONT Color=#111111><BIG>Imbues an instrument, spellbook, or weapon with holy powers.<br><br>Command Word: [Enchant</BIG></BASEFONT></BODY>", (bool)false, (bool)false);
 				AddImage(280, 102, 0x967, 1071);
 			}
 			else if ( page == 5 )

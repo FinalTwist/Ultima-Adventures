@@ -232,7 +232,7 @@ namespace Server.Multis
 
 			list = new ArrayList( PlayerBarkeepers );
 
-			foreach ( PlayerBarkeeper barkeeper in list )
+			foreach ( IEntity barkeeper in list )
 				barkeeper.Delete();
 		}
 

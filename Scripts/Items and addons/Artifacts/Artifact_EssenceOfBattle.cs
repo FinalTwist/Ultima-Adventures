@@ -11,6 +11,7 @@ namespace Server.Items
 		[Constructable]
 		public EssenceOfBattle()
 		{
+			Name = "Essence of Battle";
 			Hue = 0x550;
 			ItemID = 0x4CF6;
 			Attributes.BonusDex = 7;

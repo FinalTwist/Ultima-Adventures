@@ -58,11 +58,58 @@ namespace Server.Engines.Craft
 			from.SendLocalizedMessage( 1044276 ); // Target an item to repair.
 		}
 
-		private class InternalTarget : Target
+		public static void Do( Mobile from, IRepairDeed deed )
+		{
+			from.Target = new InternalTarget( null, deed );
+			from.SendLocalizedMessage( 1044276 ); // Target an item to repair.
+		}
+
+        public static bool IsRepairable(Item item, CraftSystem craftSystem)
+        {
+            if (item is INotRepairable) return false;
+
+            if (craftSystem is DefBlacksmithy) return item is IBlacksmithRepairable || (Server.Misc.MaterialInfo.IsAnyKindOfMetalItem(item));
+            if (craftSystem is DefBowFletching) return item is IBowcraftFletchingRepairable || (Server.Misc.MaterialInfo.IsAnyKindOfWoodItem(item) && (item is BaseRanged));
+            if (craftSystem is DefCarpentry) return item is ICarpentryRepairable || (Server.Misc.MaterialInfo.IsAnyKindOfWoodItem(item) && !(item is BaseRanged));
+            if (craftSystem is DefTailoring) return item is ITailorRepairable || (Server.Misc.MaterialInfo.IsAnyKindOfClothItem(item));
+
+            if (craftSystem is DefTinkering)
+            {
+                if (!(item is ITinkerRepairable)) return false;
+
+                // A bunch of items incorrectly inherit GoldRing (which is ITinkerRepairable)
+                // Let's make sure we aren't triggering a false positive
+                if (item is IBowcraftFletchingRepairable ||
+                    item is ICarpentryRepairable ||
+                    item is ITailorRepairable) return false;
+
+                // Hatchets are made (and therefore repairable) by Blacksmithy and Tinkering
+                if (item is IBlacksmithRepairable) return item is Hatchet || item is GiftHatchet;
+
+                return true;
+            }
+
+            return false;
+        }
+
+        public static CraftSystem GetCraftingSystem(Item item)
+        {
+            if (item == null || item is INotRepairable) return null;
+
+            if (item is IBlacksmithRepairable || (Server.Misc.MaterialInfo.IsAnyKindOfMetalItem(item))) return DefBlacksmithy.CraftSystem;
+            if (item is IBowcraftFletchingRepairable || (Server.Misc.MaterialInfo.IsAnyKindOfWoodItem(item) && (item is BaseRanged))) return DefBowFletching.CraftSystem;
+            if (item is ICarpentryRepairable || (Server.Misc.MaterialInfo.IsAnyKindOfWoodItem(item) && !(item is BaseRanged))) return DefCarpentry.CraftSystem;
+            if (item is ITailorRepairable || (Server.Misc.MaterialInfo.IsAnyKindOfClothItem(item))) return DefTailoring.CraftSystem;
+            if (item is ITinkerRepairable) return DefTinkering.CraftSystem;
+
+            return null;
+        }
+
+        private class InternalTarget : Target
 		{
 			private CraftSystem m_CraftSystem;
 			private BaseTool m_Tool;
-			private RepairDeed m_Deed;
+			private IRepairDeed m_Deed;
 
 			public InternalTarget( CraftSystem craftSystem, BaseTool tool ) :  base ( 2, false, TargetFlags.None )
 			{
@@ -70,7 +117,7 @@ namespace Server.Engines.Craft
 				m_Tool = tool;
 			}
 
-			public InternalTarget( CraftSystem craftSystem, RepairDeed deed ) : base( 2, false, TargetFlags.None )
+			public InternalTarget( CraftSystem craftSystem, IRepairDeed deed ) : base( 2, false, TargetFlags.None )
 			{
 				m_CraftSystem = craftSystem;
 				m_Deed = deed;
@@ -133,39 +180,19 @@ namespace Server.Engines.Craft
 				return true;
 			}
 
-            private bool IsRepairable(Item item)
-            {
-				if (item is INotRepairable) return false;
-
-                if (m_CraftSystem is DefBlacksmithy) return item is IBlacksmithRepairable || (Server.Misc.MaterialInfo.IsAnyKindOfMetalItem(item));
-                if (m_CraftSystem is DefBowFletching) return item is IBowcraftFletchingRepairable || (Server.Misc.MaterialInfo.IsAnyKindOfWoodItem(item) && (item is BaseRanged));
-                if (m_CraftSystem is DefCarpentry) return item is ICarpentryRepairable || (Server.Misc.MaterialInfo.IsAnyKindOfWoodItem(item) && !(item is BaseRanged));
-                if (m_CraftSystem is DefTailoring) return item is ITailorRepairable || (Server.Misc.MaterialInfo.IsAnyKindOfClothItem(item));
-                
-				if (m_CraftSystem is DefTinkering)
-				{
-					if (!(item is ITinkerRepairable)) return false;
-
-					// A bunch of items incorrectly inherit GoldRing (which is ITinkerRepairable)
-					// Let's make sure we aren't triggering a false positive
-					if (item is IBowcraftFletchingRepairable ||
-						item is ICarpentryRepairable ||
-						item is ITailorRepairable) return false;
-
-					// Hatchets are made (and therefore repairable) by Blacksmithy and Tinkering
-					if (item is IBlacksmithRepairable) return item is Hatchet || item is GiftHatchet;
-
-					return true;
-				}
-
-                return false;
-            }
-
             protected override void OnTarget( Mobile from, object targeted )
 			{
 				if( !CheckDeed( from ) ) return;
 
-				bool usingDeed = m_Deed != null;
+                // Allow automagic craft system resolution
+                m_CraftSystem = m_CraftSystem ?? GetCraftingSystem(targeted as Item);
+                if (m_CraftSystem == null)
+				{
+                    from.SendLocalizedMessage(500426); // You can't repair that.
+                    return;
+                }
+
+                bool usingDeed = m_Deed != null;
 				bool toDelete = false;
 				int number;
 				if ( m_CraftSystem.CanCraft( from, m_Tool, targeted.GetType() ) == 1044267 )
@@ -266,7 +293,7 @@ namespace Server.Engines.Craft
                             toWeaken = 3;
                     }
 
-                    if (m_CraftSystem.CraftItems.SearchForSubclass(item.GetType()) == null && !IsRepairable((Item)targeted))
+                    if (m_CraftSystem.CraftItems.SearchForSubclass(item.GetType()) == null && !IsRepairable((Item)targeted, m_CraftSystem))
                     {
                         number = (usingDeed) ? 1061136 : 1044277; // That item cannot be repaired. // You cannot repair that item with this type of repair contract.
                     }

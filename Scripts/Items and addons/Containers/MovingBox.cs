@@ -2,6 +2,7 @@ using System;
 using Server;
 using Server.Regions;
 using Server.Mobiles;
+using Server.Multis;
 
 namespace Server.Items
 {
@@ -26,113 +27,96 @@ namespace Server.Items
 			Hue = 0xAC0;
 		}
 
-		public override void OnDoubleClick( Mobile from )
+		private bool CanOpen(Mobile from)
 		{
-			Region reg = Region.Find( from.Location, from.Map );
-
 			if ( !IsEnabled() )
 			{
                 from.SendMessage("The crate doesn't seem to open as the wood is warped.");
+                return false;
 			}
-			else if ( !Movable || IsSecure )
+
+			if (owner != null && from != owner)
 			{
-                from.SendMessage("The crate cannot be locked down if you want to open it.");
-				return;
+				from.SendMessage("Only the crate owner can open this, and only while in a home or bank.");
+				return false;
 			}
-			else if (from.Backpack != null && this.Parent == from.Backpack && !reg.IsPartOf( "the Bank" ) )
+			
+			if ( !Movable || IsSecure )
 			{
-				from.SendMessage("The crate is too heavy to open from your backpack here, maybe at the bank?");
-				return;
+                from.SendMessage("The crate cannot be locked down if you want to use it.");
+				return false;
 			}
-			else if ( from == owner && ( from.Region is HouseRegion || reg.IsPartOf( "the Bank" ) ) )
+
+			// Must at least be in the bank or a House they're co-owner of
+			Region region = Region.Find( GetWorldLocation(), Map );
+			if ( !region.IsPartOf( "the Bank" ) )
 			{
-				Open( from );
+				BaseHouse house = BaseHouse.FindHouseAt(this);
+				if (house == null || !house.IsCoOwner(from))
+				{
+					from.SendMessage("The crate is magically sealed.");
+					return false;
+				}
 			}
-			else
-            {
-                from.SendMessage("Only the crate owner can open this, and while in a home or bank.");
-            }
+
+			return true;
 		}
-
-		public override bool OnDragDropInto( Mobile from, Item dropped, Point3D p )
-        {
-			Region reg = Region.Find( from.Location, from.Map );
-
-			if ( !IsEnabled() )
-			{
-                from.SendMessage("The crate doesn't seem to open as the wood is warped.");
-                return false;
-			}
-			else if ( !Movable || IsSecure )
-			{
-                from.SendMessage("The crate cannot be locked down if you want to open it.");
-				return false;
-			}
-			else if (from.Backpack != null && this.Parent == from.Backpack && !reg.IsPartOf( "the Bank" ))
-			{
-				from.SendMessage("The crate is too heavy use from your backpack here, maybe at the bank?");
-				return false;
-			}
-			else if ( from == owner && ( from.Region is HouseRegion || reg.IsPartOf( "the Bank" ) ) )
-			{
-				return base.OnDragDropInto(from, dropped, p);
-			}
-			else
-            {
-                from.SendMessage("Only the crate owner can open this, and while in a home or bank.");
-                return false;
-            }
-
-            return base.OnDragDropInto(from, dropped, p);
-        }
-
-		public override bool OnDragDrop( Mobile from, Item dropped )
-        {
-			Region reg = Region.Find( from.Location, from.Map );
-
-			if ( !IsEnabled() )
-			{
-                from.SendMessage("The crate doesn't seem to open as the wood is warped.");
-                return false;
-			}
-			else if ( !Movable )
-			{
-                from.SendMessage("The crate cannot be locked down if you want to open it.");
-				return false;
-			}
-			else if (from.Backpack != null && this.Parent == from.Backpack && !reg.IsPartOf( "the Bank" ))
-			{
-				from.SendMessage("The crate is too heavy use from your backpack here, maybe at the bank?");
-				return false;
-			}
-			else if ( from == owner && ( from.Region is HouseRegion || reg.IsPartOf( "the Bank" ) ) )
-			{
-				return base.OnDragDrop(from, dropped);
-			}
-			else
-            {
-                from.SendMessage("Only the crate owner can open this, and while in a home or bank.");
-                return false;
-            }
-
-            return base.OnDragDrop(from, dropped);
-        }
 
         public override void AddNameProperties(ObjectPropertyList list)
 		{
             base.AddNameProperties(list);
 			if ( owner != null ){ list.Add( 1070722, "Belongs to " + owner.Name + "" ); }
+			list.Add( 1049644, "Only usable in a house or bank"); // PARENTHESIS
         }
+
+		public override void OnDoubleClick( Mobile from )
+		{
+			if (!from.IsStaff() && !CanOpen(from)) return;
+
+			// If there is a root container, it has to be the bank
+			if (RootParent != null)
+			{
+				var bankbox = from.FindBankNoCreate();
+				if (bankbox != null)
+				{
+					// Check ancestors
+					var success = false;
+					Container container = this;
+					while (container != null)
+					{
+						if (container == bankbox)
+						{
+							success = true;
+							break;
+						}
+
+						container = container.Parent as Container;
+					}
+
+					if (!success)
+					{
+						from.SendMessage("You should put this down before you open it.");
+						return;
+					}
+				}
+			}
+
+			Open( from );
+		}
+
+		public bool CheckDrop(Mobile from)
+		{
+
+			return true;
+		}
 
 		public override bool OnDragLift( Mobile from )
 		{
-			Region reg = Region.Find( from.Location, from.Map );
-			if (from.Backpack != null && this.Parent == from.Backpack && !reg.IsPartOf( "the Bank" ))
-			{
-				from.SendMessage("The crate is too heavy use from your backpack here, maybe at the bank?");
-				return false;
-			}
-			else if ( owner == null ){ owner = from; }
+			if (from.IsStaff()) return true;
+			if (!CanOpen(from)) return false;
+
+			if ( owner == null ){ owner = from; }
+
 			return true;
 		}
 

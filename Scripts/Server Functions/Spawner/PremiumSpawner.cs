@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 using Server;
@@ -1316,6 +1317,8 @@ namespace Server.Mobiles
 					{
 							amount += Utility.RandomMinMax(1,2);
 					}
+
+					amount = ClampSpawns(m_Creatures, amount);
 				}
 			}
 
@@ -1435,6 +1438,8 @@ namespace Server.Mobiles
 					{
 							amount += Utility.RandomMinMax(1,2);
 					}
+
+					amount = ClampSpawns(m_CreaturesA, amount);
 				}
 			}
 
@@ -1524,7 +1529,7 @@ namespace Server.Mobiles
 			}
 		}
 
-		public void SpawnB( int index )
+        public void SpawnB( int index )
 		{
 			Map map = Map;
 
@@ -1555,6 +1560,8 @@ namespace Server.Mobiles
 					{
 							amount += Utility.RandomMinMax(1,2);
 					}
+
+					amount = ClampSpawns(m_CreaturesB, amount);
 				}
 			}
 
@@ -1962,6 +1969,18 @@ namespace Server.Mobiles
 			m_Timer = new InternalTimer( this, delay );
 			m_Timer.Start();
 		}
+
+        private static int ClampSpawns(List<IEntity> creatures, int amount)
+        {
+			BaseCreature firstCreature = creatures.FirstOrDefault(c => c is BaseCreature) as BaseCreature;
+			bool hasBreathAttack = firstCreature != null && firstCreature.HasBreath;
+			if (!hasBreathAttack) return amount; // Can still split
+
+			const int Max_Breath_Attacker_Spawns = 3;
+			return Max_Breath_Attacker_Spawns < creatures.Count 
+				? Math.Min(amount, Max_Breath_Attacker_Spawns - creatures.Count) // Allow no more than +3 in this slot
+				: 1; // Let it spawn the original
+        }
 
 		private class InternalTimer : Timer
 		{

@@ -327,7 +327,11 @@ namespace Server.Spells.Necromancy
 						}
 						
 						if (Caster is BaseCreature && ((BaseCreature)Caster).AI == AIType.AI_Mage)
+						{
 							((SummonedCorpse)creature).MobSummon = true;
+							((SummonedCorpse)creature).MobBoss = Caster;
+						}
+
 
 						creature.Location = c.Location;
 						Effects.SendLocationEffect( creature.Location, creature.Map, 0x3400, 60, 0, 0 );

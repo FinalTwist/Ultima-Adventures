@@ -21,7 +21,7 @@ namespace Server.Items
 		SlayerName Slayer2 { get; set; }
 	}
 
-	public abstract class BaseWeapon : Item, IWeapon, ICraftable, ISlayer, IDurability, IRepairable
+	public abstract class BaseWeapon : Item, IWeapon, ICraftable, ISlayer, IDurability, IRepairable, IAugmentableItem
     {
 		private string m_EngravedText;
 		
@@ -3239,9 +3239,11 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 10 ); // version 10 added wear
+			writer.Write( (int) 11 ); // version 10 added wear
 
-			writer.Write((int) m_wear);
+            writer.Write(IsAugmented);
+
+            writer.Write((int) m_wear);
 
 			SaveFlag flags = SaveFlag.None;
 
@@ -3365,9 +3367,6 @@ namespace Server.Items
 
 			if( GetSaveFlag( flags, SaveFlag.EngravedText ) )
 				writer.Write( (string) m_EngravedText );
-
-
-
 		}
 
 		[Flags]
@@ -3415,6 +3414,9 @@ namespace Server.Items
 
 			switch ( version )
 			{
+				case 11:
+					IsAugmented = reader.ReadBool();
+					goto case 10;
 				case 10:
 					m_wear = reader.ReadInt();
 					goto case 5;
@@ -4316,9 +4318,12 @@ m_Hits
 			set{ m_Fists = value; }
 		}
 
-		#region ICraftable Members
+		[CommandProperty( AccessLevel.GameMaster )]
+        public bool IsAugmented { get; set; }
 
-		public int OnCraft( int quality, bool makersMark, Mobile from, CraftSystem craftSystem, Type typeRes, BaseTool tool, CraftItem craftItem, int resHue )
+        #region ICraftable Members
+
+        public int OnCraft( int quality, bool makersMark, Mobile from, CraftSystem craftSystem, Type typeRes, BaseTool tool, CraftItem craftItem, int resHue )
 		{
 			Quality = (WeaponQuality)quality;
 

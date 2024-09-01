@@ -11,11 +11,6 @@ namespace Server.Items
 		{
 			get
 			{
-				int index = CraftResources.GetIndex( Resource );
-
-				if ( index >= 1 && index <= 6 )
-					return 1072633 + index;
-
 				return 1011196; // dovetail saw
 			}
 		}
@@ -23,11 +18,6 @@ namespace Server.Items
 		public override void AddNameProperties( ObjectPropertyList list )
 		{
 			base.AddNameProperties( list );
-
-			int index = CraftResources.GetIndex( Resource );
-
-			if ( index >= 1 && index <= 6 )
-				return;
 
 			if ( !CraftResources.IsStandard( Resource ) )
 			{

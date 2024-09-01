@@ -1017,8 +1017,11 @@ namespace Server.Mobiles
 			{
 				IBuyItemInfo buyItem = (IBuyItemInfo)buyInfo[idx];
 
-				if ( buyItem.Amount <= 0 || list.Count >= 250 )
-					continue;
+                int sales = 250;
+                if (this is Sage) { sales = 500; } // Warning: Added for showing Artifacts on Sage. I have no idea what kind of blowback this may have.
+
+                if (buyItem.Amount <= 0 || list.Count >= sales)
+                    continue;
 
 				// NOTE: Only GBI supported; if you use another implementation of IBuyItemInfo, this will crash
 				GenericBuyInfo gbi = (GenericBuyInfo)buyItem;
@@ -1472,7 +1475,6 @@ namespace Server.Mobiles
 						dropped.Delete();
 						return true;
 					}
-					return false;
 				}
 				else if ( dropped is DugUpCoal && this is Blacksmith && Server.Misc.Worlds.GetMyWorld( from.Map, from.Location, from.X, from.Y ) == "the Savaged Empire" )
 				{
@@ -1910,7 +1912,7 @@ namespace Server.Mobiles
 					{
 						if( ((PlayerMobile)from).NextBODTurnInTime > DateTime.UtcNow )
 						{
-							SayTo( from, 1079976 );	//
+							SayTo( from, 1079976 );	// You'll have to wait a few seconds while I inspect the last order
 							return false;
 						}
 					}
@@ -2018,7 +2020,7 @@ namespace Server.Mobiles
             
 					OnSuccessfulBulkOrderReceive( from );
 
-					((PlayerMobile)from).NextBODTurnInTime = DateTime.Now + TimeSpan.FromSeconds( 10.0 );
+					((PlayerMobile)from).NextBODTurnInTime = DateTime.UtcNow + TimeSpan.FromSeconds( 10.0 );
 
 					dropped.Delete();
 					return true;
@@ -2047,29 +2049,73 @@ namespace Server.Mobiles
 			if (!from.Player || from.Backpack == null)
 				return;
 
-			if ( ( this is Tailor || this is TailorGuildmaster) && ((PlayerMobile)from).TailorBOD <= 0)
+
+            BODType type;
+			if (this is Blacksmith || this is BlacksmithGuildmaster) type = BODType.Smith;
+			else if (this is Carpenter || this is CarpenterGuildmaster) type = BODType.Carpenter;
+			else if (this is Bowyer || this is ArcherGuildmaster || this is RangerGuildmaster) type = BODType.Fletcher;
+			else if (this is Tailor || this is TailorGuildmaster) type = BODType.Tailor;
+			else return; // Not supported
+
+            PlayerMobile player = (PlayerMobile)from;
+
+            // Try to claim all if no number was specified
+            if (amount == 0)
+ 			{
+                switch (type)
+                {
+                    case BODType.Smith: amount = player.BlacksmithBOD; break;
+                    case BODType.Carpenter: amount = player.CarpenterBOD; break;
+                    case BODType.Fletcher: amount = player.FletcherBOD; break;
+                    case BODType.Tailor: amount = player.TailorBOD; break;
+                }
+            }
+
+            int cost;
+            int tier = BulkOrderRewardTable.TryGetRewardTier(amount, out cost);
+            if (tier < 1)
+            {
+				Say("I wouldn't even give you my pocket lint!");
+                this.PlaySound(this.Female ? 802 : 1074); // No!
 				return;
-				
-			if ( ( this is Blacksmith || this is BlacksmithGuildmaster) && ((PlayerMobile)from).BlacksmithBOD <= 0)
-				return;
-		
-			this.Say("Thank you for your help!");
+            }
+
+			if (!HasEnoughCredits(player, type, cost))
+            {
+                Say("You should a few more orders. Your quality isn't THAT good..");
+                return;
+			}
+
+            this.Say("Thank you for your help!");
 			this.Say("Let me see what I can find for you... ");
 			
-			Timer.DelayCall( TimeSpan.FromSeconds( 2 ), new TimerStateCallback ( LookForReward ), new object[]{ from, amount }  );
+			Timer.DelayCall( TimeSpan.FromSeconds( 2 ), new TimerStateCallback ( LookForReward ), new object[]{ from, type, cost }  );
+        }
 
-		}
-		
-		public void LookForReward( object state )
+		private bool HasEnoughCredits(PlayerMobile player, BODType type, int cost)
+		{
+			switch (type)
+			{
+				case BODType.Smith: return cost <= player.BlacksmithBOD;
+				case BODType.Carpenter: return cost <= player.CarpenterBOD;
+				case BODType.Fletcher: return cost <= player.FletcherBOD;
+				case BODType.Tailor: return cost <= player.TailorBOD;
+			}
+
+			return false;
+        }
+
+        public void LookForReward( object state )
 		{
 			if (this.Deleted || this == null)
 				return;
 
 			object[] states = (object[])state;
-			Mobile from = (Mobile)states[0];
-			int amount = (int)states[1];
-			
-			if (!(from is PlayerMobile) || from == null)
+            PlayerMobile from = (PlayerMobile)states[0];
+            BODType type = (BODType)states[1];
+			int amount = (int)states[2];
+
+            if (!(from is PlayerMobile) || from == null)
 				return;
 				
 			switch (Utility.Random(5))
@@ -2082,409 +2128,66 @@ namespace Server.Mobiles
 			}
 			
 			if (Utility.RandomDouble() > 0.75)
-				GiveReward(from, amount);
+				GiveReward(from, type, amount);
 			else 
-				Timer.DelayCall( TimeSpan.FromSeconds( 2 ), new TimerStateCallback ( LookForReward ), new object[]{ from, amount } );
+				Timer.DelayCall( TimeSpan.FromSeconds( 2 ), new TimerStateCallback ( LookForReward ), new object[]{ from, type, amount } );
 		}
 				
-		
-		private void GiveReward(Mobile from, int amount)
-		{ 
-			//determine the type of credit rewards
-			int credittype = 1; // backsmith
-			if (this is Tailor || this is TailorGuildmaster)
-				credittype = 2;
-			
-			int credits = 0;
-            if (amount >= 1)
-            {
-                if (credittype == 1)
-                {
-                    if (amount > ((PlayerMobile)from).BlacksmithBOD)
-                        return;
+		private void GiveReward(PlayerMobile from, BODType type, int amount)
+		{
+			if (from == null) return;
 
-                    credits = amount;
-                    ((PlayerMobile)from).BlacksmithBOD -= credits;
-                }
-                else if (credittype == 2)
-                {
-                    if (amount > ((PlayerMobile)from).TailorBOD)
-                        return;
-
-                    credits = amount;
-                    ((PlayerMobile)from).TailorBOD -= credits;
-                }
-            }
-            else if (credittype == 1)
+			BulkOrderRewardTable table;
+            switch (type)
             {
-                credits = ((PlayerMobile)from).BlacksmithBOD;
-                ((PlayerMobile)from).BlacksmithBOD -= credits;
-            }
-            else //tailor
-            {
-                credits = ((PlayerMobile)from).TailorBOD;
-                ((PlayerMobile)from).TailorBOD -= credits;
+                case BODType.Smith: table = BlacksmithRewardTable.Instance; break;
+                case BODType.Carpenter: table = CarpentryRewardTable.Instance; break;
+                case BODType.Fletcher: table = FletchingRewardTable.Instance; break;
+                case BODType.Tailor: table = TailoringRewardTable.Instance; break;
+				default: return; // No idea ... but let's not risk it.
             }
 
-			Titles.AwardFame( from, (credits/50), true );
-			
-			this.Say("Here you go.");
-			from.SendMessage("You have redeemed "+ credits+ " credits from the Guild.");
-		
-			Item reward = null;
-			int gold = 0;
-			
-			//add variability
-			if (Utility.RandomDouble() < 33)
-				credits = (int)((double)credits * 0.85);
-			else if (Utility.RandomDouble() > 0.80)
-				credits = (int)((double)credits * 1.15);
-			
-			AdventuresFunctions.DiminishingReturns( credits, 12000 );
-			
-			if (credittype == 1)//smith
-			{
-				int basecred = 20; // variable which makes editing all reward values much easier for balancing
-				
-				if (credits <= (basecred *4))
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new SturdyShovel(); break;
-						case 1: reward = new SturdyPickaxe(); break;
-						case 2: reward = new LeatherGlovesOfMining( 1 ); break;
-					}
-				}
-				else if (credits <= (basecred *10))
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new GargoylesPickaxe(); break;
-						case 1: reward = new ProspectorsTool(); break;
-						case 2: reward = new StuddedGlovesOfMining( 3 ); break;
-					}
-				}
-				else if (credits <= (basecred *20))
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new ColoredAnvil(); break;
-						case 1: reward = new ProspectorsTool(); break;
-						case 2: reward = new RingmailGlovesOfMining( 5 ); break;
-					}
-				}
-				else if (credits <= (basecred *34))
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new RunicHammer( CraftResource.Iron + 1, ( 55 - (1*5) ) ); break;
-						case 1: reward = new ProspectorsTool(); break;
-						case 2: reward = new RunicHammer( CraftResource.Iron + 2, ( 55 - (2*5) ) ); break;
-					}
-				}
-				else if (credits <= (basecred *70))//+18
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new RunicHammer( CraftResource.Iron + 2, ( 55 - (2*5) ) ); break;
-						case 1: reward = new ColoredAnvil(); break;
-						case 2: reward = new RunicHammer( CraftResource.Iron + 3, ( 55 - (3*5) ) ); break;
-					}
-				}
-				else if (credits <= (basecred *92)) //+22
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new RunicHammer( CraftResource.Iron + 2, ( 55 - (2*5) ) ); break;
-						case 1: reward = new ColoredAnvil(); break;
-						case 2: reward = new RunicHammer( CraftResource.Iron + 3, ( 55 - (3*5) ) ); break;
-					}
-				}
-				else if (credits <= (basecred *118)) //+26
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new RunicHammer( CraftResource.Iron + 3, ( 55 - (3*5) ) ); break;
-						case 1: reward = new ColoredAnvil(); break;
-						case 2: reward = new RunicHammer( CraftResource.Iron + 4, ( 55 - (4*5) ) ); break;
-					}
-				}
-				else if (credits <= (basecred *148)) //+30
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new RunicHammer( CraftResource.Iron + 4, ( 55 - (4*5) ) ); break;
-						case 1: reward = new DwarvenForge(); break;
-						case 2: reward = new EnhancementDeed(); break;
-					}
-				}
-				else if (credits <= (basecred *172)) //+34
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new AncientSmithyHammer( 10 ); break;
-						case 1: reward = new DwarvenForge(); break;
-						case 2: reward = new EnhancementDeed(); break;
-					}
-				}
-				else if (credits <= (basecred *200)) //+38
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new AncientSmithyHammer( 15 ); break;
-						case 1: reward = new DwarvenForge(); break;
-						case 2: reward = new EnhancementDeed(); break;
-					}
-				}
-				else if (credits <= (basecred *230)) //+38
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new AncientSmithyHammer( 15 ); break;
-						case 1: reward = new ElvenForgeDeed(); break;
-						case 2: reward = new RunicHammer( CraftResource.Iron + 5, ( 55 - (5*5) ) ); break;
-					}
-				}
-				else if (credits <= (basecred *262)) //+42
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new AncientSmithyHammer( 20 ); break;
-						case 1: reward = new ElvenForgeDeed(); break;
-						case 2: reward = new RunicHammer( CraftResource.Iron + 6, ( 55 - (6*5) ) ); break;
-					}
-				}
-				else if (credits <= (basecred *308)) //+46
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new AncientSmithyHammer( 20 ); break;
-						case 1: reward = new PowerScroll( SkillName.Blacksmith, 100 + 5 ); break;
-						case 2: reward = new RunicHammer( CraftResource.Iron + 7, ( 55 - (7*5) ) ); break;
-					}
-				}
-				else if (credits <= (basecred *358)) //+50
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new AncientSmithyHammer( 25 ); break;
-						case 1: reward = new PowerScroll( SkillName.Blacksmith, 100 + 5 ); break;
-						case 2: reward = new RunicHammer( CraftResource.Iron + 8, ( 55 - (8*5) ) ); break;
-					}
-				}
-				else if (credits <= (basecred *412)) //+54
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new OneHandedDeed(); break;
-						case 1: reward = new PowerScroll( SkillName.Blacksmith, 100 + 10 ); break;
-						case 2: reward = new RunicHammer( CraftResource.Iron + 8, ( 55 - (8*5) ) ); break;
-					}
-				}
-				else if (credits <= (basecred *470)) //+58
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new OneHandedDeed(); break;
-						case 1: reward = new PowerScroll( SkillName.Blacksmith, 100 + 10 ); break;
-						case 2: reward = new ItemBlessDeed(); break;
-					}
-				}
-				else if (credits > (basecred *470)) //only powerscrolls from here
-				{
-					double odds = Utility.RandomDouble();
-					if (odds >= 0.97)
-						reward = new PowerScroll( SkillName.Blacksmith, 100 + 25 );
-					else if (odds >= 0.90)
-						reward = new PowerScroll( SkillName.Blacksmith, 100 + 20 );
-					else if (odds >= 0.75)
-						reward = new PowerScroll( SkillName.Blacksmith, 100 + 15 );
-					else if (odds >= 0.20)
-						reward = new PowerScroll( SkillName.Blacksmith, 100 + 10 );
-					else 
-						reward = new PowerScroll( SkillName.Blacksmith, 100 + 5 );
-				}
-			
-			}
-			else if (credittype == 2)//tailor
-			{
-				int basecred = 20; // variable which makes editing all reward values much easier for balancing
-				
-				if (credits <= (basecred *4))
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new SmallStretchedHideEastDeed(); break;
-						case 1: reward = new SmallStretchedHideSouthDeed(); break;
-						case 2: reward = new TallBannerEast(); break;
-					}
-				}
-				else if (credits <= (basecred *10))
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new MediumStretchedHideEastDeed(); break;
-						case 1: reward = new MediumStretchedHideSouthDeed(); break;
-						case 2: reward = new TallBannerNorth(); break;
-					}
-				}
-				else if (credits <= (basecred *20))
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new LightFlowerTapestryEastDeed(); break;
-						case 1: reward = new LightFlowerTapestrySouthDeed(); break;
-						case 2: reward = new SalvageBag(); break;
-					}
-				}
-				else if (credits <= (basecred *34))
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new BrownBearRugEastDeed(); break;
-						case 1: reward = new BrownBearRugSouthDeed(); break;
-						case 2: reward = new SalvageBag(); break;
-					}
-				}
-				else if (credits <= (basecred *70))//+18
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new PolarBearRugEastDeed(); break;
-						case 1: reward = new PolarBearRugSouthDeed(); break;
-						case 2: reward = new SalvageBag(); break;
-					}
-				}
-				else if (credits <= (basecred *92)) //+22
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new DarkFlowerTapestryEastDeed(); break;
-						case 1: reward = new DarkFlowerTapestrySouthDeed(); break;
-						case 2: reward = new RunicSewingKit( CraftResource.RegularLeather + 1, 60 - (1*15) ); break;
-					}
-				}
-				else if (credits <= (basecred *118)) //+26
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new MagicScissors(); break;
-						case 1: reward = new TallBannerEast(); break;
-						case 2: reward = new GuildedTallBannerEast(); break;
-					}
-				}
-				else if (credits <= (basecred *148)) //+30
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new GuildedTallBannerNorth(); break;
-						case 1: reward = new TallBannerNorth(); break;
-						case 2: reward = new MagicScissors(); break;
-					}
-				}
-				else if (credits <= (basecred *182)) //+34
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new EnhancementDeed(); break;
-						case 1: reward = new GuildedTallBannerEast(); break;
-						case 2: reward = new EnhancementDeed(); break;
-					}
-				}
-				else if (credits <= (basecred *220)) //+38
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new RunicSewingKit( CraftResource.RegularLeather + 2, 60 - (2*15) ); break;
-						case 1: reward = new GuildedTallBannerNorth(); break;
-						case 2: reward = new EnhancementDeed(); break;
-					}
-				}
-				else if (credits <= (basecred *220)) //+38
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new EnhancementDeed(); break;
-						case 1: reward = new RunicSewingKit( CraftResource.RegularLeather + 2, 60 - (2*15) ); break;
-						case 2: reward = new CathedralWindow1(); break;
-					}
-				}
-				else if (credits <= (basecred *262)) //+42
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new CathedralWindow3(); break;
-						case 1: reward = new RunicSewingKit( CraftResource.RegularLeather + 2, 60 - (2*15) ); break;
-						case 2: reward = new CathedralWindow2(); break;
-					}
-				}
-				else if (credits <= (basecred *308)) //+46
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new CathedralWindow4(); break;
-						case 1: reward = new RunicSewingKit( CraftResource.RegularLeather + 2, 60 - (2*15) ); break;
-						case 2: reward = new CathedralWindow5(); break;
-					}
-				}
-				else if (credits <= (basecred *358)) //+50
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new LegsOfMusicalPanache(); break;
-						case 1: reward = new RunicSewingKit( CraftResource.RegularLeather + 3, 60 - (3*15) ); break;
-						case 2: reward = new SkirtOfPower(); break;
-					}
-				}
-				else if (credits <= (basecred *412)) //+54
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new ClothingBlessDeed(); break;
-						case 1: reward = new PowerScroll( SkillName.Tailoring, 100 + 5 ); break;
-						case 2: reward = new RunicSewingKit( CraftResource.RegularLeather + 3, 60 - (3*15) ); break;
-					}
-				}
-				else if (credits <= (basecred *470)) //+58
-				{
-					switch (Utility.Random(3))
-					{
-						case 0: reward = new ItemBlessDeed(); break;
-						case 1: reward = new PowerScroll( SkillName.Tailoring, 100 + 5 ); break;
-						case 2: reward = new RunicSewingKit( CraftResource.RegularLeather + 3, 60 - (3*15) );; break;
-					}
-				}
-				else if (credits > (basecred *470)) //only powerscrolls from here
-				{
-					double odds = Utility.RandomDouble();
-					if (odds >= 0.97)
-						reward = new PowerScroll( SkillName.Tailoring, 100 + 25 );
-					else if (odds >= 0.90)
-						reward = new PowerScroll( SkillName.Tailoring, 100 + 20 );
-					else if (odds >= 0.75)
-						reward = new PowerScroll( SkillName.Tailoring, 100 + 15 );
-					else if (odds >= 0.20)
-						reward = new PowerScroll( SkillName.Tailoring, 100 + 10 );
-					else 
-						reward = new PowerScroll( SkillName.Tailoring, 100 + 5 );
-				}
-			}
-						
-			if ( reward != null )
-			{
-				from.AddToBackpack( reward );
-			}
-				
-			gold = credits * Utility.RandomMinMax(4,7);
-					
-			if (AdventuresFunctions.IsPuritain((object)this))
-				gold /= 2;
+            Item item;
+			int cost;
+            var success = table.TryClaim(amount, out item, out cost);
+            if (!success)
+            {
+				Say("Err, what was I looking for again?");
+                return;
+            }
 
-			if ( gold > 2500 )
-				Banker.Deposit(from, gold );
-			else if ( gold > 0 )
-				from.AddToBackpack( new Gold( gold ) );	
-				
+			// Verify credits
+			if (!HasEnoughCredits(from, type, cost))
+			{
+				item.Delete();
+                return;
+            }
+
+			// Deduct cost
+            switch (type)
+            {
+                case BODType.Smith: from.BlacksmithBOD -= cost; break;
+                case BODType.Carpenter: from.CarpenterBOD -= cost; break;
+                case BODType.Fletcher: from.FletcherBOD -= cost; break;
+                case BODType.Tailor: from.TailorBOD -= cost; break;
+            }
+
+            // Yay, give them things!
+            from.AddToBackpack(item);
+
+            Titles.AwardFame(from, (cost / 50), true);
+
+            Say("Here you go.");
+            from.SendMessage("You have redeemed " + cost + " credits from the Guild.");
+            int gold = cost * Utility.RandomMinMax(4, 7);
+
+            if (AdventuresFunctions.IsPuritain(this))
+                gold /= 2;
+
+            if (gold > 2500)
+                Banker.Deposit(from, gold);
+            else if (gold > 0)
+                from.AddToBackpack(new Gold(gold));
 		}
 
         private void ProcessSinglePurchase( BuyItemResponse buy, IBuyItemInfo bii, List<BuyItemResponse> validBuy, ref int controlSlots, ref bool fullPurchase, ref int totalCost )
@@ -2525,7 +2228,7 @@ namespace Server.Mobiles
 
 			IEntity o = bii.GetEntity();
 
-			if ( o is Item )
+            if ( o is Item )
 			{
 				Item item = (Item)o;
 
@@ -2619,7 +2322,8 @@ namespace Server.Mobiles
 			bool fullPurchase = true;
 			int controlSlots = buyer.FollowersMax - buyer.Followers;
 
-			foreach ( BuyItemResponse buy in list )
+            bool neverBuyable = false;
+            foreach ( BuyItemResponse buy in list )
 			{
 				Serial ser = buy.Serial;
 				int amount = buy.Amount;
@@ -2634,8 +2338,14 @@ namespace Server.Mobiles
 					GenericBuyInfo gbi = LookupDisplayObject( item );
 
 					if ( gbi != null )
-					{
-						ProcessSinglePurchase( buy, gbi, validBuy, ref controlSlots, ref fullPurchase, ref totalCost );
+                    {
+                        if (gbi is INeverBuyable)
+                        {
+                            neverBuyable = true;
+                            break;
+                        }
+
+                        ProcessSinglePurchase( buy, gbi, validBuy, ref controlSlots, ref fullPurchase, ref totalCost );
 					}
 					else if ( item != this.BuyPack && item.IsChildOf( this.BuyPack ) )
 					{
@@ -2671,9 +2381,19 @@ namespace Server.Mobiles
 					if ( gbi != null )
 						ProcessSinglePurchase( buy, gbi, validBuy, ref controlSlots, ref fullPurchase, ref totalCost );
 				}
-			}//foreach
+            }//foreach
 
-			if ( fullPurchase && validBuy.Count == 0 )
+            if (neverBuyable)
+            {
+				string message = "No! That's not for sale, go find your own!!";
+				if (this is Sage) message = "That Artifact is for Research purposes only. Go find your own!";
+
+                SayTo(buyer, true, message);
+                this.PlaySound(this.Female ? 802 : 1074);
+                return false;
+            }
+
+            if ( fullPurchase && validBuy.Count == 0 )
 				SayTo( buyer, 500190 ); // Thou hast bought nothing!
 			else if ( validBuy.Count == 0 )
 				SayTo( buyer, 500187 ); // Your order cannot be fulfilled, please try again.
@@ -2694,8 +2414,7 @@ namespace Server.Mobiles
 
 			if ( !bought && totalCost >= 2000 )
 			{
-				cont = buyer.FindBankNoCreate();
-				if ( cont != null && cont.ConsumeTotal( typeof( Gold ), totalCost ) )
+				if ( Banker.Withdraw(buyer, totalCost) )
 				{
 					bought = true;
 					fromBank = true;
@@ -3186,7 +2905,7 @@ namespace Server.Mobiles
 		{
 			return !IsInvulnerable;
 		}
-	}
+    }
 }
 
 namespace Server.ContextMenus

@@ -61,6 +61,8 @@ namespace Server.Items
 				else
 					list.Add( CraftResources.GetName( m_Resource ) );
 			}
+			
+			list.Add( "Say 'I wish to start cutting logs' to make boards automatically." ); 
 		}
 
 		public BaseLog( Serial serial ) : base( serial )
@@ -102,12 +104,7 @@ namespace Server.Items
 			if ( !Movable )
 				return;
 			
-			if ( RootParent is BaseCreature )
-			{
-				from.SendLocalizedMessage( 500447 ); // That is not accessible
-				return;
-			}
-			else if ( from.InRange( this.GetWorldLocation(), 2 ) )
+			if ( from.InRange( this.GetWorldLocation(), 2 ) )
 			{
 				from.SendMessage( "Select the saw mill on which to cut the logs." );
 				from.Target = new InternalTarget( this );
@@ -118,115 +115,119 @@ namespace Server.Items
 			}
 		}
 
+		public static bool IsSawmill( object obj )
+		{
+			if ( obj is Item )
+			{
+				Item saw = (Item)obj;
+
+				if ( saw.Name == "saw mill" && 
+					( saw.ItemID == 1928 || saw.ItemID == 4525 || saw.ItemID == 7130 || saw.ItemID == 4530 || saw.ItemID == 7127 )
+					)
+					return true;
+				else
+					return false;
+			}
+
+			return false;
+		}
+
+		public bool Cut(Mobile from, object targeted, int amountRequested)
+		{
+			if ( Deleted ) return false;
+
+			if ( !from.InRange( GetWorldLocation(), 2 ) )
+			{
+				from.SendMessage( "The logs are too far away." );
+				return false;
+			}
+
+			int cuttable = Math.Min(Amount, amountRequested);
+			if (cuttable < 1) return false;
+
+			if ( !IsSawmill( targeted ) )
+			{
+				from.SendMessage("That is not a saw mill.");
+				return false;
+			}
+
+			if (((Item)targeted).Deleted) return false; // Sawmill is gone...
+
+			double difficulty;
+			switch ( Resource )
+			{
+				default: difficulty = 40.0; break;
+				case CraftResource.AshTree: difficulty = 55.0; break;
+				case CraftResource.CherryTree: difficulty = 60.0; break;
+				case CraftResource.EbonyTree: difficulty = 65.0; break;
+				case CraftResource.GoldenOakTree: difficulty = 70.0; break;
+				case CraftResource.HickoryTree: difficulty = 75.0; break;
+				case CraftResource.MahoganyTree: difficulty = 80.0; break;
+				case CraftResource.DriftwoodTree: difficulty = 80.0; break;
+				case CraftResource.OakTree: difficulty = 85.0; break;
+				case CraftResource.PineTree: difficulty = 90.0; break;
+				case CraftResource.GhostTree: difficulty = 90.0; break;
+				case CraftResource.RosewoodTree: difficulty = 95.0; break;
+				case CraftResource.WalnutTree: difficulty = 99.0; break;
+				case CraftResource.PetrifiedTree: difficulty = 99.9; break;
+				case CraftResource.ElvenTree: difficulty = 100.1; break;
+			}
+			
+			if ( difficulty > 50.0 && difficulty > from.Skills[SkillName.Lumberjacking].Value )
+			{
+				from.SendMessage( "You have no idea how to best cut this type of wood!" );
+				return false;
+			}
+
+			double minSkill = difficulty - 25.0;
+			double maxSkill = difficulty + 25.0;
+			if (from.CheckTargetSkill(SkillName.Lumberjacking, targeted, minSkill, maxSkill))
+			{
+				BaseWoodBoard wood = GetLog();
+				wood.Amount = cuttable;
+				from.AddToBackpack(wood);
+				from.PlaySound(0x21C);
+				from.SendMessage("You cut the logs and put some boards in your backpack.");
+
+				Amount -= cuttable;
+			}
+			else
+			{
+				int lose = Utility.RandomMinMax(1, cuttable);
+				Amount -= lose;
+
+				if (lose == cuttable)
+				{
+					from.SendMessage("You try to cut the logs but ruin all of the wood.");
+				}
+				else
+				{
+					from.SendMessage("You try to cut the logs but ruin some of the wood.");
+				}
+
+				from.PlaySound(0x21C);
+			}
+			
+			if (Amount < 1)
+			{
+				Delete();
+			}
+
+			return true;
+		}
+
 		private class InternalTarget : Target
 		{
-			private BaseLog m_Log;
+			private readonly BaseLog m_Log;
 
 			public InternalTarget( BaseLog log ) :  base ( 2, false, TargetFlags.None )
 			{
 				m_Log = log;
 			}
 
-			private bool IsMill( object obj )
-			{
-				if ( obj is Item )
-				{
-					Item saw = (Item)obj;
-
-					if ( saw.Name == "saw mill" && 
-						( saw.ItemID == 1928 || saw.ItemID == 4525 || saw.ItemID == 7130 || saw.ItemID == 4530 || saw.ItemID == 7127 )
-					   )
-						return true;
-					else
-						return false;
-				}
-
-				return false;
-			}
-
 			protected override void OnTarget( Mobile from, object targeted )
 			{
-				if ( m_Log.Deleted )
-					return;
-
-				if ( !from.InRange( m_Log.GetWorldLocation(), 2 ) )
-				{
-					from.SendMessage( "The logs are too far away." );
-					return;
-				}
-
-				if ( IsMill( targeted ) )
-				{
-					double difficulty;
-
-					switch ( m_Log.Resource )
-					{
-						default: difficulty = 40.0; break;
-						case CraftResource.AshTree: difficulty = 55.0; break;
-						case CraftResource.CherryTree: difficulty = 60.0; break;
-						case CraftResource.EbonyTree: difficulty = 65.0; break;
-						case CraftResource.GoldenOakTree: difficulty = 70.0; break;
-						case CraftResource.HickoryTree: difficulty = 75.0; break;
-						case CraftResource.MahoganyTree: difficulty = 80.0; break;
-						case CraftResource.DriftwoodTree: difficulty = 80.0; break;
-						case CraftResource.OakTree: difficulty = 85.0; break;
-						case CraftResource.PineTree: difficulty = 90.0; break;
-						case CraftResource.GhostTree: difficulty = 90.0; break;
-						case CraftResource.RosewoodTree: difficulty = 95.0; break;
-						case CraftResource.WalnutTree: difficulty = 99.0; break;
-						case CraftResource.PetrifiedTree: difficulty = 99.9; break;
-						case CraftResource.ElvenTree: difficulty = 100.1; break;
-					}
-
-					double minSkill = difficulty - 25.0;
-					double maxSkill = difficulty + 25.0;
-					
-					if ( difficulty > 50.0 && difficulty > from.Skills[SkillName.Lumberjacking].Value )
-					{
-						from.SendMessage( "You have no idea how to best cut this type of wood!" );
-						return;
-					}
-
-					if ( from.CheckTargetSkill( SkillName.Lumberjacking, targeted, minSkill, maxSkill ) )
-					{
-						if ( m_Log.Amount <= 0 )
-						{
-							from.SendMessage( "There is not enough wood in this pile to make a board." );
-						}
-						else
-						{
-							int amount = m_Log.Amount;
-							BaseWoodBoard wood = m_Log.GetLog();
-							m_Log.Delete();
-							wood.Amount = amount;
-							from.AddToBackpack( wood );
-							from.PlaySound( 0x21C );
-							from.SendMessage( "You cut the logs and put some boards in your backpack." );
-						}
-					}
-					else
-					{
-						int amount = m_Log.Amount;
-						int lose = Utility.RandomMinMax( 1, amount );
-
-						if ( amount < 2 || lose == amount )
-						{
-							m_Log.Delete();
-							from.SendMessage( "You try to cut the logs but ruin all of the wood." );
-						}
-						else
-						{
-							m_Log.Amount = amount - lose;
-							from.SendMessage( "You try to cut the logs but ruin some of the wood." );
-						}
-
-						from.PlaySound( 0x21C );
-					}
-				}
-				else
-				{
-					from.SendMessage( "That is not a saw mill." );
-				}
+				m_Log.Cut(from, targeted, m_Log.Amount);
 			}
 		}
 	}

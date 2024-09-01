@@ -18,6 +18,14 @@ namespace Server.Mobiles
 		    set{ m_MobSummon = value; }
 		}
 
+		private Mobile m_MobBoss;
+		[CommandProperty( AccessLevel.GameMaster )]
+		public Mobile MobBoss
+		{
+		    get{ return m_MobBoss; }
+		    set{ m_MobBoss = value; }
+		}
+
 		public override double DispelDifficulty{ get{ return 117.5; } }
 		public override double DispelFocus{ get{ return 45.0; } }
 		public override bool DeleteCorpseOnDeath{ get{ return true; } }
@@ -80,28 +88,15 @@ namespace Server.Mobiles
 				return null;
 			}
 		}
-		
-		public override bool IsEnemy( Mobile m )
+
+		public override void OnThink()
 		{
-			//adding special here for animate dead cast by mage ai mobs
-			if (m_MobSummon && ( m is PlayerMobile || ( m is BaseCreature && ((BaseCreature)m).Controlled && ((BaseCreature)m).ControlMaster is PlayerMobile ) ) )
-				return true;
-			else if (m_MobSummon)
-				return false;
-			
-			return base.IsEnemy(m);
-		}
-		
-		public override bool CanBeHarmful( Mobile target, bool message, bool ignoreOurBlessedness )
-		{
-			if (m_MobSummon)
+			base.OnThink();
+			if (MobSummon && MobBoss != null)
 			{
-				if ( target is PlayerMobile || ( target is BaseCreature && ((BaseCreature)target).Controlled && ((BaseCreature)target).ControlMaster is PlayerMobile ) )
-					return true;
-				else
-					return false;
+				if (((BaseCreature)MobBoss).Combatant != null && InLOS( ((BaseCreature)MobBoss).Combatant ))
+					this.Combatant = ((BaseCreature)MobBoss).Combatant;
 			}
-			return base.CanBeHarmful( target, message, ignoreOurBlessedness );
 		}
 
 		public SummonedCorpse( Serial serial ) : base( serial )

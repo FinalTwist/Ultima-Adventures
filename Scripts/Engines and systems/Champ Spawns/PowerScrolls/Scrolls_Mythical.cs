@@ -2783,4 +2783,341 @@ namespace Server.Items
 		}
 	}
 
+	public class DJ_SM_Begging : PowerScroll
+	{
+		private SkillName m_Skill;
+		private int m_Value;
+		private static SkillName[] m_Skills = new SkillName[]
+		{
+			SkillName.Begging
+		};
+		public static SkillName[] Skills { get { return m_Skills; } }
+		[Constructable]
+		public DJ_SM_Begging(): base(SkillName.Begging, 115)
+		{
+		}
+		[Constructable]
+		public DJ_SM_Begging(SkillName skill, int value): base(0x14F0)
+		{
+			Name = "Mythical Scroll of Begging";
+			Hue = 0x481;
+			Weight = 1.0;
+			LootType = LootType.Cursed;
+			m_Skill = skill;
+			m_Value = value;
+		}
+
+		public DJ_SM_Begging(Serial serial): base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+			writer.Write((int)0); // version
+			writer.Write((int)m_Skill);
+			writer.Write((int)m_Value);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+			int version = reader.ReadInt();
+
+			switch (version)
+			{
+				case 0:
+				{
+					m_Skill = (SkillName)reader.ReadInt();
+					m_Value = reader.ReadInt();
+					break;
+				}
+			}
+			if (LootType != LootType.Cursed)
+				LootType = LootType.Cursed;
+			
+				
+		}
+	}
+
+	public class DJ_SM_Camping : PowerScroll
+	{
+		private SkillName m_Skill;
+		private int m_Value;
+		private static SkillName[] m_Skills = new SkillName[]
+		{
+			SkillName.Camping
+		};
+		public static SkillName[] Skills { get { return m_Skills; } }
+		[Constructable]
+		public DJ_SM_Camping(): base(SkillName.Camping, 115)
+		{
+		}
+		[Constructable]
+		public DJ_SM_Camping(SkillName skill, int value): base(0x14F0)
+		{
+			Name = "Mythical Scroll of Camping";
+			Hue = 0x481;
+			Weight = 1.0;
+			LootType = LootType.Cursed;
+			m_Skill = skill;
+			m_Value = value;
+		}
+
+		public DJ_SM_Camping(Serial serial): base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+			writer.Write((int)0); // version
+			writer.Write((int)m_Skill);
+			writer.Write((int)m_Value);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+			int version = reader.ReadInt();
+
+			switch (version)
+			{
+				case 0:
+				{
+					m_Skill = (SkillName)reader.ReadInt();
+					m_Value = reader.ReadInt();
+					break;
+				}
+			}
+			if (LootType != LootType.Cursed)
+				LootType = LootType.Cursed;
+			
+				
+		}
+	}
+
+	public class DJ_SM_Forensics : PowerScroll
+	{
+		private SkillName m_Skill;
+		private int m_Value;
+		private static SkillName[] m_Skills = new SkillName[]
+		{
+			SkillName.Forensics
+		};
+		public static SkillName[] Skills { get { return m_Skills; } }
+		[Constructable]
+		public DJ_SM_Forensics(): base(SkillName.Forensics, 115)
+		{
+		}
+		[Constructable]
+		public DJ_SM_Forensics(SkillName skill, int value): base(0x14F0)
+		{
+			Name = "Mythical Scroll of Forensic Evaluation";
+			Hue = 0x481;
+			Weight = 1.0;
+			LootType = LootType.Cursed;
+			m_Skill = skill;
+			m_Value = value;
+		}
+
+		public DJ_SM_Forensics(Serial serial): base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+			writer.Write((int)0); // version
+			writer.Write((int)m_Skill);
+			writer.Write((int)m_Value);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+			int version = reader.ReadInt();
+
+			switch (version)
+			{
+				case 0:
+				{
+					m_Skill = (SkillName)reader.ReadInt();
+					m_Value = reader.ReadInt();
+					break;
+				}
+			}
+			if (LootType != LootType.Cursed)
+				LootType = LootType.Cursed;
+		}
+	}
+
+	public class DJ_SM_Herding : PowerScroll
+	{
+		private SkillName m_Skill;
+		private int m_Value;
+		private static SkillName[] m_Skills = new SkillName[]
+		{
+			SkillName.Herding
+		};
+		public static SkillName[] Skills { get { return m_Skills; } }
+		[Constructable]
+		public DJ_SM_Herding(): base(SkillName.Herding, 115)
+		{
+		}
+		[Constructable]
+		public DJ_SM_Herding(SkillName skill, int value): base(0x14F0)
+		{
+			Name = "Mythical Scroll of Herding";
+			Hue = 0x481;
+			Weight = 1.0;
+			LootType = LootType.Cursed;
+			m_Skill = skill;
+			m_Value = value;
+		}
+
+		public DJ_SM_Herding(Serial serial): base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+			writer.Write((int)0); // version
+			writer.Write((int)m_Skill);
+			writer.Write((int)m_Value);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+			int version = reader.ReadInt();
+
+			switch (version)
+			{
+				case 0:
+				{
+					m_Skill = (SkillName)reader.ReadInt();
+					m_Value = reader.ReadInt();
+					break;
+				}
+			}
+			if (LootType != LootType.Cursed)
+				LootType = LootType.Cursed;
+			
+				
+		}
+	}
+
+	public class DJ_SM_ItemID : PowerScroll
+	{
+		private SkillName m_Skill;
+		private int m_Value;
+		private static SkillName[] m_Skills = new SkillName[]
+		{
+			SkillName.ItemID
+		};
+		public static SkillName[] Skills { get { return m_Skills; } }
+		[Constructable]
+		public DJ_SM_ItemID(): base(SkillName.ItemID, 115)
+		{
+		}
+		[Constructable]
+		public DJ_SM_ItemID(SkillName skill, int value): base(0x14F0)
+		{
+			Name = "Mythical Scroll of Item Identification";
+			Hue = 0x481;
+			Weight = 1.0;
+			LootType = LootType.Cursed;
+			m_Skill = skill;
+			m_Value = value;
+		}
+
+		public DJ_SM_ItemID(Serial serial): base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+			writer.Write((int)0); // version
+			writer.Write((int)m_Skill);
+			writer.Write((int)m_Value);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+			int version = reader.ReadInt();
+
+			switch (version)
+			{
+				case 0:
+				{
+					m_Skill = (SkillName)reader.ReadInt();
+					m_Value = reader.ReadInt();
+					break;
+				}
+			}
+			if (LootType != LootType.Cursed)
+				LootType = LootType.Cursed;
+			
+				
+		}
+	}
+
+	public class DJ_SM_TasteID : PowerScroll
+	{
+		private SkillName m_Skill;
+		private int m_Value;
+		private static SkillName[] m_Skills = new SkillName[]
+		{
+			SkillName.TasteID
+		};
+		public static SkillName[] Skills { get { return m_Skills; } }
+		[Constructable]
+		public DJ_SM_TasteID(): base(SkillName.TasteID, 115)
+		{
+		}
+		[Constructable]
+		public DJ_SM_TasteID(SkillName skill, int value): base(0x14F0)
+		{
+			Name = "Mythical Scroll of Taste Identification";
+			Hue = 0x481;
+			Weight = 1.0;
+			LootType = LootType.Cursed;
+			m_Skill = skill;
+			m_Value = value;
+		}
+
+		public DJ_SM_TasteID(Serial serial): base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+			writer.Write((int)0); // version
+			writer.Write((int)m_Skill);
+			writer.Write((int)m_Value);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+			int version = reader.ReadInt();
+
+			switch (version)
+			{
+				case 0:
+				{
+					m_Skill = (SkillName)reader.ReadInt();
+					m_Value = reader.ReadInt();
+					break;
+				}
+			}
+			if (LootType != LootType.Cursed)
+				LootType = LootType.Cursed;
+		}
+	}
 }

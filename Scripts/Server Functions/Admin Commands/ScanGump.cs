@@ -46,6 +46,7 @@ namespace Server.Gumps
 
             Mobile watchedPlayer = GetPlayer(currentIndex);
             caller.Location = watchedPlayer.Location;
+            caller.Map = watchedPlayer.Map;
 
 			AddPage(0);
 			AddBackground(293, 206, 195, 118, 9270);

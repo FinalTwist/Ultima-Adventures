@@ -30,6 +30,10 @@ namespace Server.Spells.Research
 
 		public static void RemoveEffect( Mobile m )
 		{
+			if (!UnderEffect(m)) return;
+
+			m.PublicOverheadMessage( MessageType.Emote, m.EmoteHue, false, "*Lowers gently to the ground*" );
+			m.PlaySound( 0x014 );
 			m.EndAction( typeof( ResearchAirWalk ) );
 		}
 
@@ -48,13 +52,20 @@ namespace Server.Spells.Research
 				ResearchAirWalk.RemoveEffect( Caster );
 			}
 
-			int TotalTime = (int)( ( DamagingSkill( Caster ) * 20 ) / 60 );
-			new InternalTimer( Caster, TimeSpan.FromSeconds( TotalTime ) ).Start();
+			/*
+				65 (min) = 252s
+				100 x4 = 763s
+				125 x4 = 1203s
+			*/
+			double x = 2 * DamagingSkill( Caster );
+			int durationSeconds = (int)(0.0066 * (x * x) - 1.543 * x + 325);
+			new InternalTimer( Caster, TimeSpan.FromSeconds( durationSeconds ) ).Start();
 			Caster.BeginAction( typeof( ResearchAirWalk ) );
 			Point3D air = new Point3D( ( Caster.X+1 ), ( Caster.Y+1 ), ( Caster.Z+5 ) );
 			Effects.SendLocationParticles(EffectItem.Create(air, Caster.Map, EffectItem.DefaultDuration), 0x2007, 9, 32, Server.Items.CharacterDatabase.GetMySpellHue( Caster, 0 ), 0, 5022, 0);
 			Caster.PlaySound( 0x014 );
 			Server.Misc.Research.ConsumeScroll( Caster, true, spellID, false );
+			Caster.PublicOverheadMessage( MessageType.Emote, Caster.EmoteHue, false, "*Raises off the ground*" );
 
             FinishSequence();
 		}

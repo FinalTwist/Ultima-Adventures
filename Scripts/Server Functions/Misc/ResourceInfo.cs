@@ -25,9 +25,9 @@ namespace Server.Items
 		Dwarven,
 
 		RegularLeather = 101,
-		SpinedLeather, 
-		HornedLeather, 
-		BarbedLeather, 
+		SpinedLeather, // Deep Sea
+		HornedLeather, // Lizard
+		BarbedLeather, // Serpent
 		NecroticLeather, 
 		VolcanicLeather, 
 		FrozenLeather, 
@@ -139,641 +139,635 @@ namespace Server.Items
 		{
 			Blank = new CraftAttributeInfo();
 
-			CraftAttributeInfo dullCopper = DullCopper = new CraftAttributeInfo();
-
-			dullCopper.ArmorPhysicalResist = 2; // 7
-			dullCopper.ArmorEnergyResist = 5;
-			dullCopper.ArmorDurability = 30;
-			dullCopper.ArmorLowerRequirements = 20;
-			dullCopper.WeaponDurability = 30;
-			dullCopper.WeaponLowerRequirements = 50;
-			dullCopper.RunicMinAttributes = 1;
-			dullCopper.RunicMaxAttributes = 2;
-				dullCopper.RunicMinIntensity = 40;
-				dullCopper.RunicMaxIntensity = 60;
-
-			CraftAttributeInfo shadowIron = ShadowIron = new CraftAttributeInfo();
-
-			shadowIron.ArmorPhysicalResist = 2; // 9
-			shadowIron.ArmorPoisonResist = 2;
-			shadowIron.ArmorEnergyResist = 5;
-			shadowIron.ArmorDurability = 10;
-			shadowIron.WeaponColdDamage = 20;
-			shadowIron.WeaponDurability = 50;
-			shadowIron.RunicMinAttributes = 1;
-			shadowIron.RunicMaxAttributes = 3;
-				shadowIron.RunicMinIntensity = 45;
-				shadowIron.RunicMaxIntensity = 70;
-
-
-			CraftAttributeInfo copper = Copper = new CraftAttributeInfo();
-
-			copper.ArmorPhysicalResist = 3; //11
-			copper.ArmorFireResist = 2;
-			copper.ArmorPoisonResist = 4;
-			copper.ArmorEnergyResist = 2;
-			copper.WeaponPoisonDamage = 10;
-			copper.WeaponEnergyDamage = 20;
-			copper.RunicMinAttributes = 2;
-			copper.RunicMaxAttributes = 3;
-				copper.RunicMinIntensity = 50;
-				copper.RunicMaxIntensity = 75;
-
-			CraftAttributeInfo bronze = Bronze = new CraftAttributeInfo();
-
-			bronze.ArmorPhysicalResist = 3; //13
-			bronze.ArmorColdResist = 5;
-			bronze.ArmorPoisonResist = 2;
-			bronze.ArmorEnergyResist = 3;
-			bronze.WeaponFireDamage = 40;
-			bronze.RunicMinAttributes = 2;
-			bronze.RunicMaxAttributes = 4;
-				bronze.RunicMinIntensity = 55;
-				bronze.RunicMaxIntensity = 80;
-
-			CraftAttributeInfo golden = Golden = new CraftAttributeInfo();
-
-			golden.ArmorPhysicalResist = 4; //15
-			golden.ArmorFireResist = 5;
-			golden.ArmorColdResist = 2;
-			golden.ArmorEnergyResist = 4;
-			golden.ArmorLuck = 40;
-			golden.ArmorLowerRequirements = 30;
-			golden.WeaponLuck = 40;
-			golden.WeaponLowerRequirements = 50;
-			golden.RunicMinAttributes = 3;
-			golden.RunicMaxAttributes = 6;
-				golden.RunicMinIntensity = 60;
-				golden.RunicMaxIntensity = 90;
-
-			CraftAttributeInfo agapite = Agapite = new CraftAttributeInfo();
-
-			agapite.ArmorPhysicalResist = 5; //17
-			agapite.ArmorFireResist = 3;
-			agapite.ArmorColdResist = 3;
-			agapite.ArmorPoisonResist = 3;
-			agapite.ArmorEnergyResist = 3;
-			agapite.WeaponColdDamage = 30;
-			agapite.WeaponEnergyDamage = 20;
-			agapite.RunicMinAttributes = 3;
-			agapite.RunicMaxAttributes = 7;
-
-				agapite.RunicMinIntensity = 65;
-				agapite.RunicMaxIntensity = 90;
-
-			CraftAttributeInfo verite = Verite = new CraftAttributeInfo();
-
-			verite.ArmorPhysicalResist = 5; //19
-			verite.ArmorFireResist = 4;
-			verite.ArmorColdResist = 4;
-			verite.ArmorPoisonResist = 5;
-			verite.ArmorEnergyResist = 1;
-			verite.WeaponPoisonDamage = 40;
-			verite.WeaponEnergyDamage = 20;
-			verite.RunicMinAttributes = 4;
-			verite.RunicMaxAttributes = 8;
-				verite.RunicMinIntensity = 80;
-				verite.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo valorite = Valorite = new CraftAttributeInfo();
-
-			valorite.ArmorPhysicalResist = 6; //21
-			valorite.ArmorColdResist = 5;
-			valorite.ArmorPoisonResist = 5;
-			valorite.ArmorEnergyResist = 5;
-			valorite.ArmorDurability = 15;
-			valorite.WeaponFireDamage = 10;
-			valorite.WeaponColdDamage = 20;
-			valorite.WeaponPoisonDamage = 10;
-			valorite.WeaponEnergyDamage = 20;
-			valorite.RunicMinAttributes = 5;
-			valorite.RunicMaxAttributes = 9;
-				valorite.RunicMinIntensity = 90;
-				valorite.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo nepturite = Nepturite = new CraftAttributeInfo();
-
-			nepturite.ArmorPhysicalResist = 6; //24
-			nepturite.ArmorColdResist = 8;
-			nepturite.ArmorPoisonResist = 10;
-			nepturite.ArmorDurability = 20;
-			nepturite.WeaponColdDamage = 25;
-			nepturite.WeaponPoisonDamage = 25;
-			nepturite.RunicMinAttributes = 5;
-			nepturite.RunicMaxAttributes = 6;
-				nepturite.RunicMinIntensity = 80;
-				nepturite.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo obsidian = Obsidian = new CraftAttributeInfo();
-
-			obsidian.ArmorPhysicalResist = 7; //27
-			obsidian.ArmorColdResist = 4;
-			obsidian.ArmorPoisonResist = 4;
-			obsidian.ArmorFireResist = 12;
-			obsidian.ArmorEnergyResist = 9;
-			obsidian.ArmorDurability = 25;
-			obsidian.WeaponFireDamage = 20;
-			obsidian.WeaponEnergyDamage = 10;
-			obsidian.RunicMinAttributes = 5;
-			obsidian.RunicMaxAttributes = 6;
-				obsidian.RunicMinIntensity = 85;
-				obsidian.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo steel = Steel = new CraftAttributeInfo();
-
-			steel.ArmorPhysicalResist = 5;  //13
-			steel.ArmorColdResist = 3;
-			steel.ArmorPoisonResist = 3;
-			steel.ArmorEnergyResist = 2;
-			steel.ArmorDurability = 10;
-			steel.RunicMinAttributes = 5;
-			steel.RunicMaxAttributes = 7;
-			steel.WeaponDurability = 10;
-			steel.WeaponLowerRequirements = 25;
-			steel.ArmorLowerRequirements = 25;
-				steel.RunicMinIntensity = 85;
-				steel.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo brass = Brass = new CraftAttributeInfo();
-
-			brass.ArmorPhysicalResist = 6; //17
-			brass.ArmorColdResist = 4;
-			brass.ArmorPoisonResist = 4;
-			brass.ArmorEnergyResist = 3;
-			brass.ArmorDurability = 10;
-			brass.WeaponFireDamage = 20;
-			brass.WeaponEnergyDamage = 20;
-			brass.RunicMinAttributes = 5;
-			brass.RunicMaxAttributes = 7;
-			brass.WeaponDurability = 10;
-			brass.WeaponLowerRequirements = 45;
-			brass.ArmorLowerRequirements = 45;
-				brass.RunicMinIntensity = 90;
-				brass.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo mithril = Mithril = new CraftAttributeInfo();
-
-			mithril.ArmorPhysicalResist = 15; //30
-			mithril.ArmorColdResist = 15;
-			mithril.ArmorLuck = 100;
-			mithril.WeaponLuck = 100;
-			mithril.ArmorPoisonResist = 9;
-			mithril.ArmorEnergyResist = 9;
-			mithril.ArmorDurability = 30;
-			mithril.WeaponEnergyDamage = 30;
-			mithril.RunicMinAttributes = 6;
-			mithril.RunicMaxAttributes = 7;
-			mithril.WeaponDurability = 30;
-			mithril.WeaponLowerRequirements = 75;
-			mithril.ArmorLowerRequirements = 75;
-				mithril.RunicMinIntensity = 90;
-				mithril.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo dwarven = Dwarven = new CraftAttributeInfo();
-
-			dwarven.ArmorPhysicalResist = 16; //33
-			dwarven.ArmorFireResist = 10;
-			dwarven.ArmorColdResist = 7;
-			dwarven.ArmorDurability = 35;
-			dwarven.RunicMinAttributes = 6;
-			dwarven.RunicMaxAttributes = 7;
-			dwarven.WeaponDurability = 35;
-				dwarven.RunicMinIntensity = 100;
-				dwarven.RunicMaxIntensity = 120;
-
-			CraftAttributeInfo xormite = Xormite = new CraftAttributeInfo();
-
-			xormite.ArmorPhysicalResist = 15; //54
-			xormite.ArmorColdResist = 8;
-			xormite.ArmorPoisonResist = 8;
-			xormite.ArmorFireResist = 8;
-			xormite.ArmorEnergyResist = 15;
-			xormite.ArmorDurability = 20;
-			xormite.WeaponDirectDamage = 30;
-			xormite.RunicMinAttributes = 6;
-			xormite.RunicMaxAttributes = 8;
-			xormite.WeaponDurability = 20;
-			xormite.WeaponLowerRequirements = 75;
-			xormite.ArmorLowerRequirements = 75;
-				xormite.RunicMinIntensity = 100;
-				xormite.RunicMaxIntensity = 150;
-
-
-			CraftAttributeInfo spined = Spined = new CraftAttributeInfo();
-
-			spined.ArmorDurability = 5;
-			spined.WeaponDurability = 5;
-			spined.ArmorPhysicalResist = 0; // 5
-			spined.ArmorColdResist = 2;
-			spined.ArmorPoisonResist = 2;
-			spined.ArmorEnergyResist = 1;
-			spined.ArmorLuck = 40;
-			spined.WeaponLuck = 40;
-			spined.WeaponPoisonDamage = 20;
-			spined.RunicMinAttributes = 1;
-			spined.RunicMaxAttributes = 2;
-				spined.RunicMinIntensity = 40;
-				spined.RunicMaxIntensity = 60;
-
-
-			CraftAttributeInfo horned = Horned = new CraftAttributeInfo();
-
-			horned.ArmorDurability = 10;
-			horned.WeaponDurability = 10;
-			horned.ArmorPhysicalResist = 1; //7
-			horned.ArmorColdResist = 3;
-			horned.ArmorPoisonResist = 3;
-			horned.RunicMinAttributes = 2;
-			horned.RunicMaxAttributes = 4;
-				horned.RunicMinIntensity = 60;
-				horned.RunicMaxIntensity = 90;
-
-			CraftAttributeInfo barbed = Barbed = new CraftAttributeInfo();
-
-			barbed.ArmorDurability = 20;
-			barbed.WeaponDurability = 20;
-			barbed.ArmorPhysicalResist = 1; //9
-			barbed.ArmorFireResist = 3;
-			barbed.ArmorColdResist = 3;
-			barbed.ArmorPoisonResist = 2;
-			barbed.WeaponPoisonDamage = 70;
-			barbed.RunicMinAttributes = 4;
-			barbed.RunicMaxAttributes = 8;
-				barbed.RunicMinIntensity = 90;
-				barbed.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo necrotic = Necrotic = new CraftAttributeInfo();
-
-			necrotic.ArmorDurability = 5;
-			necrotic.WeaponDurability = 5;
-			necrotic.ArmorPhysicalResist = 1; //10
-			necrotic.ArmorColdResist = 4;
-			necrotic.ArmorPoisonResist = 3;
-			necrotic.ArmorEnergyResist = 2;
-			necrotic.WeaponFireDamage = 50;
-			necrotic.RunicMinAttributes = 4;
-			necrotic.RunicMaxAttributes = 6;
-				necrotic.RunicMinIntensity = 80;
-				necrotic.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo volcanic = Volcanic = new CraftAttributeInfo();
-
-			volcanic.ArmorDurability = 15;
-			volcanic.WeaponDurability = 15;
-			volcanic.ArmorPhysicalResist = 2; //11
-			volcanic.ArmorFireResist = 6;
-			volcanic.ArmorPoisonResist = 3;
-			volcanic.WeaponFireDamage = 50;
-			volcanic.RunicMinAttributes = 4;
-			volcanic.RunicMaxAttributes = 6;
-				volcanic.RunicMinIntensity = 90;
-				volcanic.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo frozen = Frozen = new CraftAttributeInfo();
-
-			frozen.ArmorDurability = 10;
-			frozen.WeaponDurability = 10;
-			frozen.ArmorPhysicalResist = 2; //12
-			frozen.ArmorColdResist = 6;
-			frozen.ArmorEnergyResist = 4;
-			frozen.WeaponColdDamage = 50;
-			frozen.RunicMinAttributes = 4;
-			frozen.RunicMaxAttributes = 6;
-				frozen.RunicMinIntensity = 90;
-				frozen.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo goliath = Goliath = new CraftAttributeInfo();
-
-			goliath.ArmorDurability = 25;
-			goliath.WeaponDurability = 25;
-			goliath.ArmorPhysicalResist = 4; //13
-			goliath.ArmorFireResist = 3;
-			goliath.ArmorColdResist = 3;
-			goliath.ArmorEnergyResist = 3;
-			goliath.WeaponEnergyDamage = 25;
-			goliath.RunicMinAttributes = 4;
-			goliath.RunicMaxAttributes = 6;
-				goliath.RunicMinIntensity = 90;
-				goliath.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo draconic = Draconic = new CraftAttributeInfo();
-
-			draconic.ArmorDurability = 25;
-			draconic.WeaponDurability = 25;
-			draconic.ArmorPhysicalResist = 2; //14
-			draconic.ArmorFireResist = 6;
-			draconic.ArmorPoisonResist = 3;
-			draconic.ArmorEnergyResist = 3;
-			draconic.WeaponFireDamage = 25;
-			draconic.RunicMinAttributes = 4;
-			draconic.RunicMaxAttributes = 6;
-				draconic.RunicMinIntensity = 90;
-				draconic.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo hellish = Hellish = new CraftAttributeInfo();
-
-			hellish.ArmorDurability = 10;
-			hellish.WeaponDurability = 10;
-			hellish.ArmorPhysicalResist = 3; //15
-			hellish.ArmorColdResist = 4;
-			hellish.ArmorPoisonResist = 2;
-			hellish.ArmorEnergyResist = 6;
-			hellish.WeaponFireDamage = 50;
-			hellish.RunicMinAttributes = 4;
-			hellish.RunicMaxAttributes = 6;
-				hellish.RunicMinIntensity = 90;
-				hellish.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo dinosaur = Dinosaur = new CraftAttributeInfo();
-
-			dinosaur.ArmorDurability = 40;
-			dinosaur.WeaponDurability = 40;
-			dinosaur.ArmorPhysicalResist = 3; //16
-			dinosaur.ArmorFireResist = 4;
-			dinosaur.ArmorColdResist = 4;
-			dinosaur.ArmorPoisonResist = 5;
-			dinosaur.RunicMinAttributes = 5;
-			dinosaur.RunicMaxAttributes = 7;
-				dinosaur.RunicMinIntensity = 90;
-				dinosaur.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo alien = Alien = new CraftAttributeInfo();
-
-			alien.ArmorDurability = 30;
-			alien.WeaponDurability = 30;
-			alien.ArmorPhysicalResist = 5; //17
-			alien.ArmorFireResist = 7;
-			alien.ArmorColdResist = 7;
-			alien.ArmorPoisonResist = 6;
-			alien.ArmorEnergyResist = 7;
-			alien.RunicMinAttributes = 6;
-			alien.RunicMaxAttributes = 8;
-				alien.RunicMinIntensity = 100;
-				alien.RunicMaxIntensity = 150;
-
-			CraftAttributeInfo red = RedScales = new CraftAttributeInfo();
-
-			red.ArmorPhysicalResist = 5; //25
-			red.ArmorFireResist = 8;
-			red.ArmorColdResist = 8;
-			red.ArmorPoisonResist = 2;
-			red.ArmorEnergyResist = 2;
-
-			CraftAttributeInfo yellow = YellowScales = new CraftAttributeInfo();
-
-			yellow.ArmorPhysicalResist = 5; //25
-			yellow.ArmorFireResist = 4;
-			yellow.ArmorColdResist = 4;
-			yellow.ArmorPoisonResist = 4;
-			yellow.ArmorEnergyResist = 4;
-            yellow.ArmorGoldIncrease = 4;
-
-            CraftAttributeInfo black = BlackScales = new CraftAttributeInfo();
-
-			black.ArmorPhysicalResist = 6; //30
-			black.ArmorFireResist = 3;
-			black.ArmorColdResist = 3;
-			black.ArmorPoisonResist = 9;
-			black.ArmorEnergyResist = 9;
-
-			CraftAttributeInfo green = GreenScales = new CraftAttributeInfo();
-
-			green.ArmorPhysicalResist = 6; //30
-			green.ArmorFireResist = 3;
-			green.ArmorColdResist = 9;
-			green.ArmorPoisonResist = 9;
-			green.ArmorEnergyResist = 3;
-
-			CraftAttributeInfo white = WhiteScales = new CraftAttributeInfo();
-
-			white.ArmorPhysicalResist = 6; //30
-			white.ArmorFireResist = 9;
-			white.ArmorColdResist = 3;
-			white.ArmorPoisonResist = 3;
-			white.ArmorEnergyResist = 9;
-
-			CraftAttributeInfo blue = BlueScales = new CraftAttributeInfo();
-
-			blue.ArmorPhysicalResist = 9; //30
-			blue.ArmorFireResist = 9;
-			blue.ArmorColdResist = 3;
-			blue.ArmorPoisonResist = 3;
-			blue.ArmorEnergyResist = 6;
-
-			CraftAttributeInfo dino = DinosaurScales = new CraftAttributeInfo();
-
-			dino.ArmorPhysicalResist = 11; //35
-			dino.ArmorFireResist = 6;
-			dino.ArmorColdResist = 6;
-			dino.ArmorPoisonResist = 6;
-			dino.ArmorEnergyResist = 6;
-
-			CraftAttributeInfo ashtree = AshTree = new CraftAttributeInfo();
-
-			ashtree.ArmorPhysicalResist = 1; //5
-			ashtree.ArmorFireResist = 1;
-			ashtree.ArmorColdResist = 1;
-			ashtree.ArmorPoisonResist = 1;
-			ashtree.ArmorEnergyResist = 1;
-			ashtree.WeaponFireDamage = 5;
-			ashtree.WeaponColdDamage = 5;
-			ashtree.WeaponPoisonDamage = 5;
-			ashtree.WeaponEnergyDamage = 5;
-			ashtree.RunicMinAttributes = 1;
-			ashtree.RunicMaxAttributes = 2;
-				ashtree.RunicMinIntensity = 45;
-				ashtree.RunicMaxIntensity = 60;
-
-			CraftAttributeInfo cherrytree = CherryTree = new CraftAttributeInfo();
-
-			cherrytree.ArmorPhysicalResist = 1; //7
-			cherrytree.ArmorFireResist = 2;
-			cherrytree.ArmorColdResist = 1;
-			cherrytree.ArmorPoisonResist = 2;
-			cherrytree.ArmorEnergyResist = 1;
-			cherrytree.WeaponPoisonDamage = 10;
-			cherrytree.WeaponEnergyDamage = 20;
-			cherrytree.RunicMinAttributes = 1;
-			cherrytree.RunicMaxAttributes = 2;
-				cherrytree.RunicMinIntensity = 50;
-				cherrytree.RunicMaxIntensity = 80;
-
-			CraftAttributeInfo ebonytree = EbonyTree = new CraftAttributeInfo();
-
-			ebonytree.ArmorPhysicalResist = 3; //8
-			ebonytree.ArmorFireResist = 3;
-			ebonytree.ArmorEnergyResist = 2;
-			ebonytree.ArmorDurability = 20;
-			ebonytree.WeaponColdDamage = 20;
-			ebonytree.WeaponDurability = 20;
-			ebonytree.RunicMinAttributes = 2;
-			ebonytree.RunicMaxAttributes = 2;
-				ebonytree.RunicMinIntensity = 50;
-				ebonytree.RunicMaxIntensity = 80;
-
-			CraftAttributeInfo goldenoaktree = GoldenOakTree = new CraftAttributeInfo();
-
-			goldenoaktree.ArmorPhysicalResist = 3; //10
-			goldenoaktree.ArmorFireResist = 2;
-			goldenoaktree.ArmorColdResist = 3;
-			goldenoaktree.ArmorEnergyResist = 2;
-			goldenoaktree.ArmorLuck = 40;
-			goldenoaktree.ArmorLowerRequirements = 30;
-			goldenoaktree.WeaponLuck = 40;
-			goldenoaktree.WeaponLowerRequirements = 50;
-			goldenoaktree.RunicMinAttributes = 2;
-			goldenoaktree.RunicMaxAttributes = 3;
-				goldenoaktree.RunicMinIntensity = 60;
-				goldenoaktree.RunicMaxIntensity = 80;
-
-			CraftAttributeInfo hickorytree = HickoryTree = new CraftAttributeInfo();
-
-			hickorytree.ArmorPhysicalResist = 5; //12
-			goldenoaktree.ArmorColdResist = 7;
-			hickorytree.ArmorDurability = 20;
-			hickorytree.ArmorLowerRequirements = 20;
-			hickorytree.WeaponDurability = 20;
-			hickorytree.WeaponLowerRequirements = 50;
-			hickorytree.RunicMinAttributes = 2;
-			hickorytree.RunicMaxAttributes = 3;
-				hickorytree.RunicMinIntensity = 60;
-				hickorytree.RunicMaxIntensity = 80;
-
-			CraftAttributeInfo mahoganytree = MahoganyTree = new CraftAttributeInfo();
-
-			mahoganytree.ArmorPhysicalResist = 7; //15
-			mahoganytree.ArmorFireResist = 3;
-			mahoganytree.ArmorPoisonResist = 3;
-			mahoganytree.ArmorEnergyResist = 2;
-			mahoganytree.WeaponPoisonDamage = 10;
-			mahoganytree.WeaponEnergyDamage = 20;
-			mahoganytree.RunicMinAttributes = 2;
-			mahoganytree.RunicMaxAttributes = 3;
-				mahoganytree.RunicMinIntensity = 60;
-				mahoganytree.RunicMaxIntensity = 80;
-
-			CraftAttributeInfo oaktree = OakTree = new CraftAttributeInfo();
-
-			oaktree.ArmorPhysicalResist = 3; //16
-			oaktree.ArmorColdResist = 5;
-			oaktree.ArmorPoisonResist = 5;
-			oaktree.ArmorEnergyResist = 3;
-			oaktree.WeaponFireDamage = 40;
-			oaktree.RunicMinAttributes = 3;
-			oaktree.RunicMaxAttributes = 3;
-				oaktree.RunicMinIntensity = 70;
-				oaktree.RunicMaxIntensity = 90;
-
-			CraftAttributeInfo pinetree = PineTree = new CraftAttributeInfo();
-
-			pinetree.ArmorPhysicalResist = 3; //19
-			pinetree.ArmorFireResist = 3;
-			pinetree.ArmorColdResist = 3;
-			pinetree.ArmorPoisonResist = 5;
-			pinetree.ArmorEnergyResist = 5;
-			pinetree.WeaponColdDamage = 30;
-			pinetree.WeaponEnergyDamage = 20;
-			pinetree.RunicMinAttributes = 3;
-			pinetree.RunicMaxAttributes = 4;
-				pinetree.RunicMinIntensity = 70;
-				pinetree.RunicMaxIntensity = 90;
-
-			CraftAttributeInfo rosewoodtree = RosewoodTree = new CraftAttributeInfo();
-
-			rosewoodtree.ArmorPhysicalResist = 5; //24
-			rosewoodtree.ArmorFireResist = 5;
-			rosewoodtree.ArmorColdResist = 3;
-			rosewoodtree.ArmorPoisonResist = 8;
-			rosewoodtree.ArmorEnergyResist = 3;
-			rosewoodtree.WeaponPoisonDamage = 40;
-			rosewoodtree.WeaponEnergyDamage = 20;
-			rosewoodtree.RunicMinAttributes = 3;
-			rosewoodtree.RunicMaxAttributes = 5;
-				rosewoodtree.RunicMinIntensity = 70;
-				rosewoodtree.RunicMaxIntensity = 90;
-
-			CraftAttributeInfo walnuttree = WalnutTree = new CraftAttributeInfo(); 
-
-			walnuttree.ArmorPhysicalResist = 10;//23
-			walnuttree.ArmorColdResist = 5;
-			walnuttree.ArmorPoisonResist = 4;
-			walnuttree.ArmorEnergyResist = 4;
-			walnuttree.ArmorDurability = 10;
-			walnuttree.WeaponFireDamage = 10;
-			walnuttree.WeaponColdDamage = 20;
-			walnuttree.WeaponPoisonDamage = 10;
-			walnuttree.WeaponEnergyDamage = 20;
-			walnuttree.RunicMinAttributes = 4;
-			walnuttree.RunicMaxAttributes = 5;
-				walnuttree.RunicMinIntensity = 70;
-				walnuttree.RunicMaxIntensity = 100;
-
-
-			CraftAttributeInfo driftwoodtree = DriftwoodTree = new CraftAttributeInfo(); //4
-
-			driftwoodtree.ArmorPhysicalResist = 9; //33
-			driftwoodtree.ArmorColdResist = 8;
-			driftwoodtree.ArmorPoisonResist = 10;
-			driftwoodtree.ArmorEnergyResist = 5;
-			driftwoodtree.ArmorDurability = 5;
-			driftwoodtree.WeaponFireDamage = 10;
-			driftwoodtree.WeaponColdDamage = 10;
-			driftwoodtree.WeaponPoisonDamage = 20;
-			driftwoodtree.WeaponEnergyDamage = 10;
-			driftwoodtree.RunicMinAttributes = 5;
-			driftwoodtree.RunicMaxAttributes = 6;
-				driftwoodtree.RunicMinIntensity = 90;
-				driftwoodtree.RunicMaxIntensity = 100;
-				
-				
-			CraftAttributeInfo ghosttree = GhostTree = new CraftAttributeInfo(); //3
-
-			ghosttree.ArmorPhysicalResist = 9; //20
-			ghosttree.ArmorFireResist = 5;
-			ghosttree.ArmorColdResist = 9;
-			ghosttree.ArmorPoisonResist = 9;
-			ghosttree.ArmorEnergyResist = 6;
-			ghosttree.WeaponColdDamage = 25;
-			ghosttree.WeaponEnergyDamage = 25;
-			ghosttree.RunicMinAttributes = 3;
-			ghosttree.RunicMaxAttributes = 4;
-				ghosttree.RunicMinIntensity = 70;
-				ghosttree.RunicMaxIntensity = 90;
-				
-				
-			CraftAttributeInfo petrifiedtree = PetrifiedTree = new CraftAttributeInfo(); //2
-
-			petrifiedtree.ArmorPhysicalResist = 10; //30
-			petrifiedtree.ArmorColdResist = 5;
-			petrifiedtree.ArmorPoisonResist = 5;
-			petrifiedtree.ArmorEnergyResist = 10;
-			petrifiedtree.ArmorDurability = 30;
-			petrifiedtree.WeaponColdDamage = 25;
-			petrifiedtree.RunicMinAttributes = 5;
-			petrifiedtree.RunicMaxAttributes = 5;
-				petrifiedtree.RunicMinIntensity = 80;
-				petrifiedtree.RunicMaxIntensity = 100;
-
-
-			CraftAttributeInfo elventree = ElvenTree = new CraftAttributeInfo(); //1
-
-			elventree.ArmorPhysicalResist = 10;   //39
-			elventree.ArmorFireResist = 3;			
-			elventree.ArmorPoisonResist = 11;
-			elventree.ArmorEnergyResist = 15;
-			elventree.ArmorDurability = 25;
-			elventree.ArmorLuck = 100;
-			elventree.WeaponLuck = 100;
-			elventree.WeaponFireDamage = 0;
-			elventree.WeaponColdDamage = 0;
-			elventree.WeaponPoisonDamage = 0;
-			elventree.WeaponEnergyDamage = 0;
-			elventree.RunicMinAttributes = 6;
-			elventree.RunicMaxAttributes = 8;
-				elventree.RunicMinIntensity = 100;
-				elventree.RunicMaxIntensity = 150;
-		}
-	}
+            DullCopper = new CraftAttributeInfo
+            {
+				// 7
+                ArmorPhysicalResist = 2,
+                ArmorEnergyResist = 5,
+                ArmorDurability = 30,
+                ArmorLowerRequirements = 20,
+
+                WeaponDurability = 30,
+                WeaponLowerRequirements = 50,
+            };
+
+            ShadowIron = new CraftAttributeInfo
+            {
+                // 9
+                ArmorPhysicalResist = 2,
+                ArmorPoisonResist = 2,
+                ArmorEnergyResist = 5,
+                ArmorDurability = 10,
+
+                WeaponColdDamage = 20,
+                WeaponDurability = 50,
+            };
+
+            Copper = new CraftAttributeInfo
+            {
+				// 11
+                ArmorPhysicalResist = 3,
+                ArmorFireResist = 2,
+                ArmorPoisonResist = 4,
+                ArmorEnergyResist = 2,
+
+                WeaponPoisonDamage = 10,
+                WeaponEnergyDamage = 20,
+            };
+
+            Bronze = new CraftAttributeInfo
+            {
+				// 13
+                ArmorPhysicalResist = 3,
+                ArmorColdResist = 5,
+                ArmorPoisonResist = 2,
+                ArmorEnergyResist = 3,
+
+                WeaponFireDamage = 40,
+            };
+
+            Golden = new CraftAttributeInfo
+            {
+				// 15
+                ArmorPhysicalResist = 4,
+                ArmorFireResist = 5,
+                ArmorColdResist = 2,
+                ArmorEnergyResist = 4,
+                ArmorLuck = 40,
+                ArmorLowerRequirements = 30,
+
+                WeaponLuck = 40,
+                WeaponLowerRequirements = 50,
+            };
+
+            Agapite = new CraftAttributeInfo
+            {
+				// 17
+                ArmorPhysicalResist = 5,
+                ArmorFireResist = 3,
+                ArmorColdResist = 3,
+                ArmorPoisonResist = 3,
+                ArmorEnergyResist = 3,
+
+                WeaponColdDamage = 30,
+                WeaponEnergyDamage = 20,
+            };
+
+            Verite = new CraftAttributeInfo
+            {
+				// 19
+                ArmorPhysicalResist = 5,
+                ArmorFireResist = 4,
+                ArmorColdResist = 4,
+                ArmorPoisonResist = 5,
+                ArmorEnergyResist = 1,
+
+                WeaponPoisonDamage = 40,
+                WeaponEnergyDamage = 20,
+            };
+
+            Valorite = new CraftAttributeInfo
+            {
+                ArmorPhysicalResist = 6, //21
+                ArmorColdResist = 5,
+                ArmorPoisonResist = 5,
+                ArmorEnergyResist = 5,
+                ArmorDurability = 15,
+
+                WeaponFireDamage = 10,
+                WeaponColdDamage = 20,
+                WeaponPoisonDamage = 10,
+                WeaponEnergyDamage = 20,
+            };
+
+            Nepturite = new CraftAttributeInfo
+            {
+				// 24
+                ArmorPhysicalResist = 6,
+                ArmorColdResist = 8,
+                ArmorPoisonResist = 10,
+                ArmorDurability = 20,
+
+                WeaponColdDamage = 25,
+                WeaponPoisonDamage = 25,
+            };
+
+            Obsidian = new CraftAttributeInfo
+            {
+				// 27
+                ArmorPhysicalResist = 7,
+                ArmorColdResist = 4,
+                ArmorPoisonResist = 4,
+                ArmorFireResist = 12,
+                ArmorEnergyResist = 9,
+                ArmorDurability = 25,
+
+                WeaponFireDamage = 20,
+                WeaponEnergyDamage = 10,
+            };
+
+            Steel = new CraftAttributeInfo
+            {
+				// 13
+                ArmorPhysicalResist = 5,
+                ArmorColdResist = 3,
+                ArmorPoisonResist = 3,
+                ArmorEnergyResist = 2,
+                ArmorDurability = 10,
+                ArmorLowerRequirements = 25,
+
+                WeaponDurability = 10,
+                WeaponLowerRequirements = 25,
+            };
+
+            Brass = new CraftAttributeInfo
+            {
+				// 17
+                ArmorPhysicalResist = 6,
+                ArmorColdResist = 4,
+                ArmorPoisonResist = 4,
+                ArmorEnergyResist = 3,
+                ArmorDurability = 10,
+                ArmorLowerRequirements = 45,
+
+                WeaponFireDamage = 20,
+                WeaponEnergyDamage = 20,
+                WeaponDurability = 10,
+                WeaponLowerRequirements = 45,
+            };
+
+            Mithril = new CraftAttributeInfo
+            {
+				// 48
+                ArmorPhysicalResist = 15,
+                ArmorColdResist = 15,
+                ArmorPoisonResist = 9,
+                ArmorEnergyResist = 9,
+                ArmorLuck = 100,
+                ArmorDurability = 30,
+                ArmorLowerRequirements = 75,
+
+                WeaponLuck = 100,
+                WeaponEnergyDamage = 30,
+                WeaponDurability = 30,
+                WeaponLowerRequirements = 75,
+            };
+
+            Dwarven = new CraftAttributeInfo
+            {
+				// 33
+                ArmorPhysicalResist = 16,
+                ArmorFireResist = 10,
+                ArmorColdResist = 7,
+                ArmorDurability = 35,
+
+                WeaponDurability = 35,
+            };
+
+            Xormite = new CraftAttributeInfo
+            {
+				// 54
+                ArmorPhysicalResist = 15,
+                ArmorColdResist = 8,
+                ArmorPoisonResist = 8,
+                ArmorFireResist = 8,
+                ArmorEnergyResist = 15,
+                ArmorDurability = 20,
+                ArmorLowerRequirements = 75,
+
+                WeaponDirectDamage = 30,
+                WeaponDurability = 20,
+                WeaponLowerRequirements = 75,
+            };
+
+            Spined = new CraftAttributeInfo // Deep sea
+            {
+				// 5
+                ArmorPhysicalResist = 0,
+                ArmorColdResist = 2,
+                ArmorPoisonResist = 2,
+                ArmorEnergyResist = 1,
+                ArmorLuck = 40,
+                ArmorDurability = 5,
+
+                WeaponDurability = 5,
+                WeaponLuck = 40,
+                WeaponPoisonDamage = 20,
+            };
+
+            Horned = new CraftAttributeInfo // Lizard
+            {
+				// 7
+                ArmorPhysicalResist = 1,
+                ArmorColdResist = 3,
+                ArmorPoisonResist = 3,
+                ArmorDurability = 10,
+
+                WeaponDurability = 10,
+            };
+
+            Barbed = new CraftAttributeInfo // Serpent
+            {
+				// 9
+                ArmorPhysicalResist = 1,
+                ArmorFireResist = 3,
+                ArmorColdResist = 3,
+                ArmorPoisonResist = 2,
+                ArmorDurability = 20,
+
+                WeaponDurability = 20,
+                WeaponPoisonDamage = 70,
+            };
+
+            Necrotic = new CraftAttributeInfo
+            {
+				// 10
+                ArmorPhysicalResist = 1,
+                ArmorColdResist = 4,
+                ArmorPoisonResist = 3,
+                ArmorEnergyResist = 2,
+                ArmorDurability = 5,
+
+                WeaponDurability = 5,
+                WeaponFireDamage = 50,
+            };
+
+            Volcanic = new CraftAttributeInfo
+            {
+				// 11
+                ArmorPhysicalResist = 2,
+                ArmorFireResist = 6,
+                ArmorPoisonResist = 3,
+                ArmorDurability = 15,
+
+                WeaponDurability = 15,
+                WeaponFireDamage = 50,
+            };
+
+            Frozen = new CraftAttributeInfo
+            {
+				// 12
+                ArmorPhysicalResist = 2,
+                ArmorColdResist = 6,
+                ArmorEnergyResist = 4,
+                ArmorDurability = 10,
+
+                WeaponDurability = 10,
+                WeaponColdDamage = 50,
+            };
+
+            Goliath = new CraftAttributeInfo
+            {
+				// 13
+                ArmorPhysicalResist = 4,
+                ArmorFireResist = 3,
+                ArmorColdResist = 3,
+                ArmorEnergyResist = 3,
+                ArmorDurability = 25,
+
+                WeaponDurability = 25,
+                WeaponEnergyDamage = 25,
+            };
+
+            Draconic = new CraftAttributeInfo
+            {
+				// 14
+                ArmorPhysicalResist = 2,
+                ArmorFireResist = 6,
+                ArmorPoisonResist = 3,
+                ArmorEnergyResist = 3,
+                ArmorDurability = 25,
+
+                WeaponDurability = 25,
+                WeaponFireDamage = 25,
+            };
+
+            Hellish = new CraftAttributeInfo
+            {
+				// 15
+                ArmorPhysicalResist = 3,
+                ArmorColdResist = 4,
+                ArmorPoisonResist = 2,
+                ArmorEnergyResist = 6,
+                ArmorDurability = 10,
+
+                WeaponDurability = 10,
+                WeaponFireDamage = 50,
+            };
+
+            Dinosaur = new CraftAttributeInfo
+            {
+				// 16
+                ArmorPhysicalResist = 3,
+                ArmorFireResist = 4,
+                ArmorColdResist = 4,
+                ArmorPoisonResist = 5,
+                ArmorDurability = 40,
+
+                WeaponDurability = 40,
+            };
+
+            Alien = new CraftAttributeInfo
+            {
+				// 32
+                ArmorPhysicalResist = 5, 
+                ArmorFireResist = 7,
+                ArmorColdResist = 7,
+                ArmorPoisonResist = 6,
+                ArmorEnergyResist = 7,
+                ArmorDurability = 30,
+
+                WeaponDurability = 30,
+            };
+
+            RedScales = new CraftAttributeInfo
+            {
+				// 25
+                ArmorPhysicalResist = 5,
+                ArmorFireResist = 8,
+                ArmorColdResist = 8,
+                ArmorPoisonResist = 2,
+                ArmorEnergyResist = 2
+            };
+
+            YellowScales = new CraftAttributeInfo
+            {
+				// 21
+                ArmorPhysicalResist = 5,
+                ArmorFireResist = 4,
+                ArmorColdResist = 4,
+                ArmorPoisonResist = 4,
+                ArmorEnergyResist = 4,
+                ArmorGoldIncrease = 4
+            };
+
+            BlackScales = new CraftAttributeInfo
+            {
+				// 30
+                ArmorPhysicalResist = 6,
+                ArmorFireResist = 3,
+                ArmorColdResist = 3,
+                ArmorPoisonResist = 9,
+                ArmorEnergyResist = 9
+            };
+
+            GreenScales = new CraftAttributeInfo
+            {
+				// 30
+                ArmorPhysicalResist = 6,
+                ArmorFireResist = 3,
+                ArmorColdResist = 9,
+                ArmorPoisonResist = 9,
+                ArmorEnergyResist = 3
+            };
+
+            WhiteScales = new CraftAttributeInfo
+            {
+				// 30
+                ArmorPhysicalResist = 6,
+                ArmorFireResist = 9,
+                ArmorColdResist = 3,
+                ArmorPoisonResist = 3,
+                ArmorEnergyResist = 9
+            };
+
+            BlueScales = new CraftAttributeInfo
+            {
+				// 30
+                ArmorPhysicalResist = 9,
+                ArmorFireResist = 9,
+                ArmorColdResist = 3,
+                ArmorPoisonResist = 3,
+                ArmorEnergyResist = 6
+            };
+
+            DinosaurScales = new CraftAttributeInfo
+            {
+				// 35
+                ArmorPhysicalResist = 11,
+                ArmorFireResist = 6,
+                ArmorColdResist = 6,
+                ArmorPoisonResist = 6,
+                ArmorEnergyResist = 6
+            };
+
+            AshTree = new CraftAttributeInfo
+            {
+				// 5
+                ArmorPhysicalResist = 1,
+                ArmorFireResist = 1,
+                ArmorColdResist = 1,
+                ArmorPoisonResist = 1,
+                ArmorEnergyResist = 1,
+
+                WeaponFireDamage = 5,
+                WeaponColdDamage = 5,
+                WeaponPoisonDamage = 5,
+                WeaponEnergyDamage = 5,
+            };
+
+            CherryTree = new CraftAttributeInfo
+            {
+                // 7
+                ArmorPhysicalResist = 1,
+                ArmorFireResist = 2,
+                ArmorColdResist = 1,
+                ArmorPoisonResist = 2,
+                ArmorEnergyResist = 1,
+
+                WeaponPoisonDamage = 10,
+                WeaponEnergyDamage = 20,
+            };
+
+            EbonyTree = new CraftAttributeInfo
+            {
+                // 8
+                ArmorPhysicalResist = 3,
+                ArmorFireResist = 3,
+                ArmorEnergyResist = 2,
+                ArmorDurability = 20,
+
+                WeaponColdDamage = 20,
+                WeaponDurability = 20,
+            };
+
+            GoldenOakTree = new CraftAttributeInfo
+            {
+                // 10
+                ArmorPhysicalResist = 3, 
+                ArmorFireResist = 2,
+                ArmorColdResist = 3,
+                ArmorEnergyResist = 2,
+                ArmorLuck = 40,
+                ArmorLowerRequirements = 30,
+
+                WeaponLuck = 40,
+                WeaponLowerRequirements = 50,
+            };
+
+            HickoryTree = new CraftAttributeInfo
+            {
+                // 12
+                ArmorPhysicalResist = 5,
+                ArmorColdResist = 7,
+                ArmorDurability = 20,
+                ArmorLowerRequirements = 20,
+
+                WeaponDurability = 20,
+                WeaponLowerRequirements = 50,
+            };
+
+            MahoganyTree = new CraftAttributeInfo
+            {
+                // 15
+                ArmorPhysicalResist = 7,
+                ArmorFireResist = 3,
+                ArmorPoisonResist = 3,
+                ArmorEnergyResist = 2,
+
+                WeaponPoisonDamage = 10,
+                WeaponEnergyDamage = 20,
+            };
+
+            OakTree = new CraftAttributeInfo
+            {
+                // 16
+                ArmorPhysicalResist = 3,
+                ArmorColdResist = 5,
+                ArmorPoisonResist = 5,
+                ArmorEnergyResist = 3,
+
+                WeaponFireDamage = 40,
+            };
+
+            PineTree = new CraftAttributeInfo
+            {
+                // 19
+                ArmorPhysicalResist = 3,
+                ArmorFireResist = 3,
+                ArmorColdResist = 3,
+                ArmorPoisonResist = 5,
+                ArmorEnergyResist = 5,
+
+                WeaponColdDamage = 30,
+                WeaponEnergyDamage = 20,
+            };
+
+            RosewoodTree = new CraftAttributeInfo
+            {
+                // 24
+                ArmorPhysicalResist = 5,
+                ArmorFireResist = 5,
+                ArmorColdResist = 3,
+                ArmorPoisonResist = 8,
+                ArmorEnergyResist = 3,
+
+                WeaponPoisonDamage = 40,
+                WeaponEnergyDamage = 20,
+            };
+
+            WalnutTree = new CraftAttributeInfo
+            {
+                // 23
+                ArmorPhysicalResist = 10,
+                ArmorColdResist = 5,
+                ArmorPoisonResist = 4,
+                ArmorEnergyResist = 4,
+                ArmorDurability = 10,
+
+                WeaponFireDamage = 10,
+                WeaponColdDamage = 20,
+                WeaponPoisonDamage = 10,
+                WeaponEnergyDamage = 20,
+            };
+
+            DriftwoodTree = new CraftAttributeInfo
+            {
+                // 32
+                ArmorPhysicalResist = 9,
+                ArmorColdResist = 8,
+                ArmorPoisonResist = 10,
+                ArmorEnergyResist = 5,
+                ArmorDurability = 5,
+
+                WeaponFireDamage = 10,
+                WeaponColdDamage = 10,
+                WeaponPoisonDamage = 20,
+                WeaponEnergyDamage = 10,
+            };
+
+            GhostTree = new CraftAttributeInfo
+            {
+                // 38
+                ArmorPhysicalResist = 9,
+                ArmorFireResist = 5,
+                ArmorColdResist = 9,
+                ArmorPoisonResist = 9,
+                ArmorEnergyResist = 6,
+
+                WeaponColdDamage = 25,
+                WeaponEnergyDamage = 25,
+            };
+
+            PetrifiedTree = new CraftAttributeInfo
+            {
+                // 30
+                ArmorPhysicalResist = 10,
+                ArmorColdResist = 5,
+                ArmorPoisonResist = 5,
+                ArmorEnergyResist = 10,
+                ArmorDurability = 30,
+
+                WeaponColdDamage = 25,
+            };
+
+            ElvenTree = new CraftAttributeInfo
+            {
+                // 39
+                ArmorPhysicalResist = 10,
+                ArmorFireResist = 3,
+                ArmorPoisonResist = 11,
+                ArmorEnergyResist = 15,
+                ArmorDurability = 25,
+                ArmorLuck = 100,
+
+                WeaponLuck = 100,
+            };
+
+            // Runics
+            // SetRunicAttributes(minProps, maxProps, minIntensity, maxIntensity, ...resources... );
+            SetRunicAttributes(1, 1, 60,  70,   DullCopper,  Spined,    AshTree);
+            SetRunicAttributes(1, 2, 70,  80,   ShadowIron,  Horned,    CherryTree);
+            SetRunicAttributes(2, 3, 70,  80,   Copper,      Barbed,    EbonyTree);
+            SetRunicAttributes(2, 4, 70,  80,   Bronze,      Necrotic,  GoldenOakTree);
+            SetRunicAttributes(3, 4, 70,  80,   Golden,      Volcanic,  HickoryTree);
+            SetRunicAttributes(3, 5, 80,  90,   Agapite,     Frozen,    MahoganyTree);
+            SetRunicAttributes(4, 6, 80,  100,  Verite,      Goliath,   OakTree);
+            SetRunicAttributes(5, 9, 90,  100,  Valorite,    Draconic,  PineTree);
+
+			// Warning: These runics have not been balanced:
+            SetRunicAttributes(5, 6, 80,  100,  Nepturite,   null,      GhostTree);
+            SetRunicAttributes(5, 6, 85,  100,  Obsidian,    null,      RosewoodTree);
+            SetRunicAttributes(5, 7, 85,  100,  Steel,       Hellish,   WalnutTree);
+            SetRunicAttributes(5, 7, 90,  100,  Brass,       null,      PetrifiedTree);
+            SetRunicAttributes(6, 7, 90,  100,  Mithril,     Dinosaur,  DriftwoodTree);
+            SetRunicAttributes(6, 7, 100, 120,  Xormite,     null,      null);
+            SetRunicAttributes(6, 8, 100, 150,  Dwarven,     Alien,     ElvenTree);
+        }
+
+		private static void SetRunicAttributes(int runicMinAttributes, int runicMaxAttributes, int runicMinIntensity, int runicMaxIntensity, params CraftAttributeInfo[] attributes)
+        {
+			foreach (var attribute in attributes)
+			{
+				if (attribute == null) continue; // To help align things above
+
+				attribute.RunicMinAttributes = runicMinAttributes;
+				attribute.RunicMaxAttributes = runicMaxAttributes;
+				attribute.RunicMinIntensity = runicMinIntensity;
+				attribute.RunicMaxIntensity = runicMaxIntensity;
+            }
+        }
+    }
 
 	public class CraftResourceInfo
 	{
@@ -1159,6 +1153,87 @@ namespace Server.Items
 			}
 
 			return GetFromOreInfo( info );
+		}
+
+		public static double GetValueMultiplier(CraftResource resource)
+		{
+			switch ( resource )
+			{
+				case CraftResource.DullCopper:      return 1.25;
+				case CraftResource.ShadowIron:      return 1.5;
+				case CraftResource.Copper:          return 1.75;
+				case CraftResource.Bronze:          return 2;
+				case CraftResource.Gold:            return 2.25;
+				case CraftResource.Agapite:         return 2.50;
+				case CraftResource.Verite:          return 2.75;
+				case CraftResource.Valorite:        return 3;
+				case CraftResource.Nepturite:       return 3.10;
+				case CraftResource.Obsidian:        return 3.10;
+				case CraftResource.Steel:           return 3.25;
+				case CraftResource.Brass:           return 3.5;
+				case CraftResource.Mithril:         return 3.75;
+				case CraftResource.Xormite:         return 3.75;
+				case CraftResource.Dwarven:         return 7.50;
+
+				case CraftResource.SpinedLeather:   return 1.5;
+				case CraftResource.HornedLeather:   return 1.75;
+				case CraftResource.BarbedLeather:   return 2.0;
+				case CraftResource.NecroticLeather: return 2.25;
+				case CraftResource.VolcanicLeather: return 2.5;
+				case CraftResource.FrozenLeather:   return 2.75;
+				case CraftResource.GoliathLeather:  return 3.0;
+				case CraftResource.DraconicLeather: return 3.25;
+				case CraftResource.HellishLeather:  return 3.5;
+				case CraftResource.DinosaurLeather: return 3.75;
+				case CraftResource.AlienLeather:    return 3.75;
+
+				case CraftResource.RedScales:       return 1.25;
+				case CraftResource.YellowScales:    return 1.25;
+				case CraftResource.BlackScales:     return 1.5;
+				case CraftResource.GreenScales:     return 1.5;
+				case CraftResource.WhiteScales:     return 1.5;
+				case CraftResource.BlueScales:      return 1.5;
+
+				case CraftResource.AshTree:         return 1.25;
+				case CraftResource.CherryTree:      return 1.45;
+				case CraftResource.EbonyTree:       return 1.65;
+				case CraftResource.GoldenOakTree:   return 1.85;
+				case CraftResource.HickoryTree:     return 2.05;
+				case CraftResource.MahoganyTree:    return 2.25;
+				case CraftResource.DriftwoodTree:   return 2.25;
+				case CraftResource.OakTree:         return 2.45;
+				case CraftResource.PineTree:        return 2.65;
+				case CraftResource.GhostTree:       return 2.65;
+				case CraftResource.RosewoodTree:    return 2.85;
+				case CraftResource.WalnutTree:      return 3;
+				case CraftResource.PetrifiedTree:   return 3.25;
+				case CraftResource.ElvenTree:       return 6;
+			}
+			
+			return 1;
+		}
+
+		public static double GetMetalProcessDifficulty(CraftResource resource)
+		{
+			switch ( resource )
+			{
+				case CraftResource.DullCopper: return 65.0;
+				case CraftResource.ShadowIron: return 70.0;
+				case CraftResource.Copper: return 75.0;
+				case CraftResource.Bronze: return 80.0;
+				case CraftResource.Gold: return 85.0;
+				case CraftResource.Agapite: return 90.0;
+				case CraftResource.Verite: return 95.0;
+				case CraftResource.Valorite: return 99.0;
+				case CraftResource.Nepturite: return 99.0;
+				case CraftResource.Obsidian: return 99.0;
+				case CraftResource.Steel: return 99.0;
+				case CraftResource.Brass: return 105.0;
+				case CraftResource.Mithril: return 99.0;
+				case CraftResource.Xormite: return 99.0;
+				case CraftResource.Dwarven: return 101.0;
+				default: return 50.0;
+			}
 		}
 	}
 

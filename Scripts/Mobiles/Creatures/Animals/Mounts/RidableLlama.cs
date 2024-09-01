@@ -17,7 +17,7 @@ namespace Server.Mobiles
 			if (Utility.RandomDouble() > 0.90)
 		{
 			BaseSoundID = 0x3F3;
-Name = "a sturdy riddable llama";
+Name = "a sturdy ridable llama";
 			SetStr( 21, 99 );
 			SetDex( 56, 175 );
 			SetInt( 16, 30 );

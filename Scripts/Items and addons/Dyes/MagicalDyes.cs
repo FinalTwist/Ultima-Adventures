@@ -163,7 +163,16 @@ namespace Server.Items
 								from.AddToBackpack( new Bottle() );
 								m_Dye.Consume();
 							}
-						} 
+						}
+						else if ( targeted is PaintPaletteBase )
+						{
+							PaintPaletteBase pigment = (PaintPaletteBase)targeted;
+							if (pigment.ApplyHue(from, m_Dye.Hue, 0x23E))
+							{
+								from.AddToBackpack( new Bottle() );
+								m_Dye.Consume();
+							}
+						}
 						else 
 						{
 							iDye.Hue = m_Dye.Hue;

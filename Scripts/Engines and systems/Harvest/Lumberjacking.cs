@@ -142,9 +142,15 @@ namespace Server.Engines.Harvest
 
 		public override HarvestVein MutateVein( Mobile from, Item tool, HarvestDefinition def, HarvestBank bank, object toHarvest, HarvestVein vein )
 		{
-			if ( tool is LumberAxe ) // WIZARD ADDED
+			if ( tool is GargoylesAxe )
 			{
 				int veinIndex = Array.IndexOf( def.Veins, vein );
+
+				if ( veinIndex >= 0 && veinIndex < (def.Veins.Length - 1) )
+					return def.Veins[veinIndex + 1];
+			}
+			else if ( tool is LumberAxe ) // WIZARD ADDED
+			{
 				return def.Veins[0];
 			}
 

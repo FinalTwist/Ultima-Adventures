@@ -22,7 +22,7 @@ namespace Server.Mobiles
 			public InternalBuyInfo()
 			{  
 				// Add( new GenericBuyInfo( typeof( PowderOfTemperament ), 2000000, 20, 0x973, 0 ) );
-				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( "Leather",typeof( Leather ), 15, 10000, 0x1BD7, 0 ) ); }
+				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( "Leather",typeof( Leather ), 15, 10000, 0x1081, 0 ) ); }
 				Add( new GenericBuyInfo( "Spined Leather", typeof( SpinedLeather ), 75, 10000, 0x1081, 0 ) );
 				if (Utility.RandomBool())
 					Add( new GenericBuyInfo( "Horned Leather", typeof( HornedLeather ), 150, 10000, 0x1081,0 ) );
@@ -54,7 +54,7 @@ namespace Server.Mobiles
 
 				Add( new GenericBuyInfo( typeof( BlankScroll ), 25, 10000, 0x0E34, 0 ) );
 
-				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( "Throwing Weapons",typeof( ThrowingWeapon ), 15, 10000, 0x1BD7, 0 ) ); }
+				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( "Throwing Weapons",typeof( ThrowingWeapon ), 15, 10000, 0x10B2, 0 ) ); }
 	
 
 				if ( MyServerSettings.SellChance() ){Add( new GenericBuyInfo( typeof( BlackPearl ), 15, Utility.Random( 1000,5000 ), 0x266F, 0 ) ); }

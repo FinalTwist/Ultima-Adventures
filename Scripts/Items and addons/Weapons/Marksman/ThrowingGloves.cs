@@ -5,8 +5,8 @@ using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	public interface IThrowingGloves
-	{
+	public interface IThrowingGloves: IMainHandGloves
+    {
 	}
 
 	[FlipableAttribute( 0x13C6, 0x13CE )]

@@ -41,98 +41,109 @@ namespace Server.Misc
 				dungeons--;
 				area++;
 
-				if ( area == 1 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Mage Mansion
-				else if ( area == 2 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Isle of the Lich
-				else if ( area == 3 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Altar of the Blood God
-				else if ( area == 4 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the City of the Dead
-				else if ( area == 5 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Mausoleum
-				else if ( area == 6 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Valley of Dark Druids
-				else if ( area == 7 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Vordo's Castle
-				else if ( area == 8 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Crypts of Kuldar
-				else if ( area == 9 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Caverns of Poseidon
-				else if ( area == 10 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Zealan Tombs
-				else if ( area == 11 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Argentrock Castle
-				else if ( area == 12 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Hall of the Mountain King
-				else if ( area == 13 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Depths of Carthax Lake
-				else if ( area == 14 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Morgaelin's Inferno
-				else if ( area == 15 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Tower of Brass
-				else if ( area == 16 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Kuldara Sewers
-				else if ( area == 17 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Daemon's Crag
-				else if ( area == 18 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ratmen Lair
-				else if ( area == 19 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ancient Pyramid
-				else if ( area == 20 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Exodus
-				else if ( area == 21 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Cave of Banished Mages
-				else if ( area == 22 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Clues
-				else if ( area == 23 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dardin's Pit
-				else if ( area == 24 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Doom
-				else if ( area == 25 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Fires of Hell
-				else if ( area == 26 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Mines of Morinia
-				else if ( area == 27 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Perinian Depths
-				else if ( area == 28 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Dungeon of Time Awaits
-				else if ( area == 29 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Pirate Cave
-				else if ( area == 30 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Dragon's Maw
-				else if ( area == 31 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Cave of the Zuluu
-				else if ( area == 32 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Vault of the Black Knight
-				else if ( area == 33 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Undersea Pass
-				else if ( area == 34 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Castle of Dracula
-				else if ( area == 35 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Crypts of Dracula
-				else if ( area == 36 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Lodoria Catacombs
-				else if ( area == 37 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Covetous
-				else if ( area == 38 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Deceit
-				else if ( area == 39 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Despise
-				else if ( area == 40 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Destard
-				else if ( area == 41 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the City of Embers
-				else if ( area == 42 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Hythloth
-				else if ( area == 43 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Frozen Hells
-				else if ( area == 44 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ice Fiend Lair
-				else if ( area == 45 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Halls of Undermountain
-				else if ( area == 46 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Shame
-				else if ( area == 47 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Terathan Keep
-				else if ( area == 48 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Volcanic Cave
-				else if ( area == 49 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Wrong
-				else if ( area == 50 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Blood Temple
-				else if ( area == 51 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ice Queen Fortress
-				else if ( area == 52 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon of the Mad Archmage
-				else if ( area == 53 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon of the Lich King
-				else if ( area == 54 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Halls of Ogrimar
-				else if ( area == 55 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ratmen Mines
-				else if ( area == 56 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Rock
-				else if ( area == 57 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Storm Giant Lair
-				else if ( area == 58 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Corrupt Pass
-				else if ( area == 59 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Tombs
-				else if ( area == 60 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ancient Prison
-				else if ( area == 61 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Cave of Fire
-				else if ( area == 62 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Cave of Souls
-				else if ( area == 63 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Ankh
-				else if ( area == 64 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Bane
-				else if ( area == 65 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Hate
-				else if ( area == 66 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Scorn
-				else if ( area == 67 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Torment
-				else if ( area == 68 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Vile
-				else if ( area == 69 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Wicked
-				else if ( area == 70 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Wrath
-				else if ( area == 71 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Flooded Temple
-				else if ( area == 72 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Gargoyle Crypts
-				else if ( area == 73 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Serpent Sanctum
-				else if ( area == 74 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Tomb of the Fallen Wizard
-				else if ( area == 75 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Vordo's Dungeon
-				else if ( area == 76 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Forgotten Halls
-				else if ( area == 77 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ancient Elven Mine
-				else if ( area == 78 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Tomb of Kazibal
-				else if ( area == 79 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Scurvy Reef
-				else if ( area == 80 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Stonegate Castle
-				else if ( area == 81 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Undersea Castle
-				else if ( area == 82 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Catacombs of Azerok
-				else if ( area == 83 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Azure Castle
-				else if ( area == 84 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Glacial Scar
-				else if ( area == 85 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Temple of Osirus
-				else if ( area == 86 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Stygian Abyss
-				else if ( area == 87 ){ pedestal = new SearchBase(0); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Sanctum of Saltmarsh
-				else if ( area == 88 ){ pedestal = new SearchBase(1); MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ancient Sky Ship
+				bool success = false;
+				int maxRetry = 10;
+				int attempt = 0;
+				while (!success && ++attempt < maxRetry )
+				{
+					if ( area == 1 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Mage Mansion
+					else if ( area == 2 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Isle of the Lich
+					else if ( area == 3 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Altar of the Blood God
+					else if ( area == 4 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the City of the Dead
+					else if ( area == 5 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Mausoleum
+					else if ( area == 6 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Valley of Dark Druids
+					else if ( area == 7 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Vordo's Castle
+					else if ( area == 8 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Crypts of Kuldar
+					else if ( area == 9 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Caverns of Poseidon
+					else if ( area == 10 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Zealan Tombs
+					else if ( area == 11 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Argentrock Castle
+					else if ( area == 12 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Hall of the Mountain King
+					else if ( area == 13 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Depths of Carthax Lake
+					else if ( area == 14 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Morgaelin's Inferno
+					else if ( area == 15 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Tower of Brass
+					else if ( area == 16 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Kuldara Sewers
+					else if ( area == 17 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Daemon's Crag
+					else if ( area == 18 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ratmen Lair
+					else if ( area == 19 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ancient Pyramid
+					else if ( area == 20 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Exodus
+					else if ( area == 21 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Cave of Banished Mages
+					else if ( area == 22 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Clues
+					else if ( area == 23 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dardin's Pit
+					else if ( area == 24 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Doom
+					else if ( area == 25 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Fires of Hell
+					else if ( area == 26 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Mines of Morinia
+					else if ( area == 27 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Perinian Depths
+					else if ( area == 28 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Dungeon of Time Awaits
+					else if ( area == 29 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Pirate Cave
+					else if ( area == 30 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Dragon's Maw
+					else if ( area == 31 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Cave of the Zuluu
+					else if ( area == 32 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Vault of the Black Knight
+					else if ( area == 33 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Undersea Pass
+					else if ( area == 34 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Castle of Dracula
+					else if ( area == 35 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Crypts of Dracula
+					else if ( area == 36 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Lodoria Catacombs
+					else if ( area == 37 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Covetous
+					else if ( area == 38 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Deceit
+					else if ( area == 39 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Despise
+					else if ( area == 40 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Destard
+					else if ( area == 41 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the City of Embers
+					else if ( area == 42 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Hythloth
+					else if ( area == 43 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Frozen Hells
+					else if ( area == 44 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ice Fiend Lair
+					else if ( area == 45 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Halls of Undermountain
+					else if ( area == 46 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Shame
+					else if ( area == 47 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Terathan Keep
+					else if ( area == 48 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Volcanic Cave
+					else if ( area == 49 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Wrong
+					else if ( area == 50 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Blood Temple
+					else if ( area == 51 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ice Queen Fortress
+					else if ( area == 52 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon of the Mad Archmage
+					else if ( area == 53 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon of the Lich King
+					else if ( area == 54 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Halls of Ogrimar
+					else if ( area == 55 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ratmen Mines
+					else if ( area == 56 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Rock
+					else if ( area == 57 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Storm Giant Lair
+					else if ( area == 58 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Corrupt Pass
+					else if ( area == 59 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Tombs
+					else if ( area == 60 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ancient Prison
+					else if ( area == 61 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Cave of Fire
+					else if ( area == 62 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Cave of Souls
+					else if ( area == 63 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Ankh
+					else if ( area == 64 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Bane
+					else if ( area == 65 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Hate
+					else if ( area == 66 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Scorn
+					else if ( area == 67 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Torment
+					else if ( area == 68 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Vile
+					else if ( area == 69 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Wicked
+					else if ( area == 70 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Dungeon Wrath
+					else if ( area == 71 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Flooded Temple
+					else if ( area == 72 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Gargoyle Crypts
+					else if ( area == 73 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Serpent Sanctum
+					else if ( area == 74 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Tomb of the Fallen Wizard
+					else if ( area == 75 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Vordo's Dungeon
+					else if ( area == 76 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Forgotten Halls
+					else if ( area == 77 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ancient Elven Mine
+					else if ( area == 78 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Tomb of Kazibal
+					else if ( area == 79 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Scurvy Reef
+					else if ( area == 80 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // Stonegate Castle
+					else if ( area == 81 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Undersea Castle
+					else if ( area == 82 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Catacombs of Azerok
+					else if ( area == 83 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Azure Castle
+					else if ( area == 84 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Glacial Scar
+					else if ( area == 85 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Temple of Osirus
+					else if ( area == 86 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Stygian Abyss
+					else if ( area == 87 ){ pedestal = new SearchBase(0); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Sanctum of Saltmarsh
+					else if ( area == 88 ){ pedestal = new SearchBase(1); success = MoveQuestPedestals( pedestal, area ); prisoner = new Prisoner(); MoveQuestPedestals( prisoner, area ); } // the Ancient Sky Ship
+					else break; // Idk why people trying to do this
+				}
+
+				// Log once
+				if (attempt > 1)
+					World.Broadcast( 0x35, true, "Failed to place quest pedestal. Check the server to see if someone is being naughty..." );
 			}
 		}
 
-		public static void MoveQuestPedestals( Item item, int area )
+		public static bool MoveQuestPedestals( Item item, int area )
 		{
 			Point3D loc = new Point3D(0, 0, 0);
 			Map map = null;
@@ -783,11 +794,17 @@ namespace Server.Misc
 			if ( item != null && loc.X > 0 && loc.Y > 0 && map != null && CanUseSpot( loc, map, AlwaysAllow ) )
 			{
 				item.MoveToWorld(loc, map);
+				return true;
 			}
 			else if ( item != null )
 			{
+				if (item is SearchBase)
+					Console.WriteLine("Failed to place pedestal for area {0} (facet #{4}) at ({1}, {2}, {3})", area, loc.X, loc.Y, loc.Z, (int)map.MapID);
+
 				item.Delete();
 			}
+			
+			return false;
 		}
 
 		public static bool CanUseSpot( Point3D loc, Map map, int priority )

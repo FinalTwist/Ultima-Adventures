@@ -886,7 +886,12 @@ namespace Server.Mobiles
 						}
 					}
 				}
-				else if ( this is BaseVendor && (this is Blacksmith || this is BlacksmithGuildmaster || this is Tailor || this is TailorGuildmaster) && (Insensitive.Contains(said, "claim") || Insensitive.Contains(said, "cash in")|| Insensitive.Contains(said, "redeem")))
+				else if ( this is BaseVendor && (
+					this is Blacksmith || this is BlacksmithGuildmaster 
+					|| this is Tailor || this is TailorGuildmaster
+					|| this is Carpenter || this is CarpenterGuildmaster
+					|| this is Bowyer || this is ArcherGuildmaster || this is RangerGuildmaster
+					) && (Insensitive.Contains(said, "claim") || Insensitive.Contains(said, "cash in")|| Insensitive.Contains(said, "redeem")))
 				{
 					String number = Regex.Match(e.Speech, @"\d+").Value;
 

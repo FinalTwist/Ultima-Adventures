@@ -63,7 +63,7 @@ namespace Server.Mobiles
 
 				for ( int i = Items.Count - 1; i >= 0; --i )
 					if ( i < Items.Count )
-						Items[i].Delete();
+                        Items[i].Delete();
 
 				if ( m_Cache == this )
 					m_Cache = null;
@@ -93,7 +93,7 @@ namespace Server.Mobiles
 
 				for ( int i = Items.Count - 1; i >= 0; --i )
 					if ( i < Items.Count )
-						Items[i].Delete();
+                        Items[i].Delete();
 
 				if ( m_Cache == null )
 					m_Cache = this;
@@ -147,14 +147,20 @@ namespace Server.Mobiles
 				m_DisplayEntity = DisplayCache.Cache.Lookup( m_Type );
 
 			if ( m_DisplayEntity == null || IsDeleted( m_DisplayEntity ) )
-				m_DisplayEntity = GetEntity();
+				m_DisplayEntity = CreateDisplayEntity();
 
 			DisplayCache.Cache.Store( m_Type, m_DisplayEntity, canCache );
 
 			return m_DisplayEntity;
-		}
+        }
 
-		public Type Type
+        public virtual IEntity CreateDisplayEntity()
+        {
+			// Pass through, but allows override
+			return GetEntity();
+        }
+
+        public Type Type
 		{
 			get{ return m_Type; }
 			set{ m_Type = value; }

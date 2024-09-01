@@ -29,6 +29,8 @@ namespace Server.Items
 		public static int skinningdelay = 8;
 		public static int millingdelay = 6;
 		public static int craftingdelay = 3;
+		public static int cutLogsDelay = 1;
+		public static int smeltOreDelay = 1;
 
 		public static int globaltasktimer;
 		private int m_OneTimeType;
@@ -106,6 +108,7 @@ namespace Server.Items
 				pm.Say("I can do the following actions:");
 				pm.Say("Fishing, Mining, lumberjacking");
 				pm.Say("milling, skinning");
+				pm.Say("smelting ore, cutting logs");
 				return;
 			}
 
@@ -308,6 +311,48 @@ namespace Server.Items
 				delay = craftingdelay;
 				TaskString.Add(pm, "bread");
 			}
+			else if (Insensitive.Contains(speech, "smelting ore"))
+			{
+				Item forge = null;
+				foreach (Item item in pm.Map.GetItemsInRange(pm.Location, 2))
+				{
+					if (!DefBlacksmithy.IsForge(item)) continue;
+
+					forge = item;
+					break;
+				}
+
+				if (forge == null)
+				{
+					pm.SendMessage("You need a forge nearby to smelt ore.");
+					return;
+				}
+
+				tool = forge;
+				delay = craftingdelay;
+				TaskString.Add(pm, "smelting ore");
+			}
+			else if (Insensitive.Contains(speech, "cutting logs"))
+			{
+				Item sawmill = null;
+				foreach (Item item in pm.Map.GetItemsInRange(pm.Location, 2))
+				{
+					if (!BaseLog.IsSawmill(item)) continue;
+
+					sawmill = item;
+					break;
+				}
+
+				if (sawmill == null)
+				{
+					pm.SendMessage("You need a sawmill nearby to cut logs.");
+					return;
+				}
+
+				tool = sawmill;
+				delay = craftingdelay;
+				TaskString.Add(pm, "cutting logs");
+			}
 
 			PlayerTool.Add(pm, tool);
 
@@ -318,7 +363,6 @@ namespace Server.Items
 
 			PlayerLoc.Add(pm, pm.Location);
 			DoAction(pm);
-
 		}
 
 		public static Item FindCraftTool(PlayerMobile pm, string make)
@@ -624,6 +668,16 @@ namespace Server.Items
 				MillSomething(pm);
 				return;
 			}
+			else if (action == "smelting ore")
+			{
+				SmeltOre(pm);
+				return;
+			}
+			else if (action == "cutting logs")
+			{
+				CutLogs(pm);
+				return;
+			}
 
 			Item tool = null; // get tool from hashtable
 			foreach (DictionaryEntry de in PlayerTool)
@@ -795,6 +849,60 @@ namespace Server.Items
 				SetNextAction(pm, millingdelay);
 			}
 
+		}
+		
+		public static void SmeltOre(PlayerMobile pm)
+		{
+			bool didAction = false;
+			Item forge = PlayerTool[pm] as Item;
+			if (forge != null && BaseOre.IsForge(forge))
+			{
+                foreach (var item in pm.Backpack.FindItemsByType(typeof(BaseOre)))
+				{
+					var ore = (BaseOre)item;
+					int amount = ore.ItemID == 0x19B7 ? 2 : 1;
+					if (!ore.Smelt(pm, forge, amount)) continue;
+
+					didAction = true;
+					break;
+				}
+			}
+
+			if (!didAction)
+			{
+				pm.Say("I'm all done here.");
+				AdventuresAutomation.StopAction(pm);
+			}
+			else
+			{
+				SetNextAction(pm, smeltOreDelay);
+			}
+		}
+
+		public static void CutLogs(PlayerMobile pm)
+		{
+			bool didAction = false;
+			Item sawmill = PlayerTool[pm] as Item;
+			if (sawmill != null && BaseLog.IsSawmill(sawmill))
+			{
+                foreach (var item in pm.Backpack.FindItemsByType(typeof(BaseLog)))
+				{
+					if (!((BaseLog)item).Cut(pm, sawmill, 1)) continue;
+
+					didAction = true;
+					break;
+				}
+			}
+
+			if (!didAction)
+			{
+				pm.Say("I'm all done here.");
+				AdventuresAutomation.StopAction(pm);
+			}
+			else
+			{
+				SetNextAction(pm, cutLogsDelay);
+			}
 		}
 
 		public static void MakeDough(PlayerMobile pm, Item tool)

@@ -314,7 +314,8 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(NecromancerSpellbook), 1044294, 1028787, 50.0, 126, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 5, 1044253 );
 
-			index = AddCraft(typeof(SongBook), 1044294, 1028787, 50.0, 126, typeof(BlankScroll), 1044377, 10, 1044378);
+			//index = AddCraft(typeof(SongBook), 1044294, 1028787, 50.0, 126, typeof(BlankScroll), 1044377, 10, 1044378); //nox change
+			index = AddCraft(typeof(SongBook), 1044294, "Song Book", 50.0, 126, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 5, 1044253 );
 
 			MarkOption = true;
@@ -409,6 +410,11 @@ namespace Server.Engines.Craft
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Archery, 70.0, 80.0 );
 
+			index = AddCraft( typeof(StandardArmsLoreStudyBook), "Expert Study Books", "Expert Arms Lore", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
+			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
+			AddSkill( index, SkillName.ArmsLore, 70.0, 80.0 );
+
 			index = AddCraft( typeof(StandardBeggingStudyBook), "Expert Study Books", "Expert Begging", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
@@ -428,6 +434,11 @@ namespace Server.Engines.Craft
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Camping, 70.0, 80.0 );
+
+			index = AddCraft( typeof(StandardCarpentryStudyBook), "Expert Study Books", "Expert Carpentry", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
+			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
+			AddSkill( index, SkillName.Carpentry, 70.0, 80.0 );
 
 			index = AddCraft( typeof(StandardCartographyStudyBook), "Expert Study Books", "Expert Cartography", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
@@ -678,6 +689,12 @@ namespace Server.Engines.Craft
 			AddRes( index, typeof( ElixirArchery ), "archery elixir", 1, 1044253 );
 			AddSkill( index, SkillName.Archery, 100.0, 100.0 );
 
+			index = AddCraft( typeof(AdvancedArmsLoreStudyBook), "Grandmaster Study Books", "Grandmaster Arms Lore", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
+			AddRes( index, typeof( ElixirArmsLore ), "arms lore elixir", 1, 1044253 );
+			AddSkill( index, SkillName.ArmsLore, 100.0, 100.0 );
+
 			index = AddCraft( typeof(AdvancedBeggingStudyBook), "Grandmaster Study Books", "Grandmaster Begging", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
 			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
@@ -701,6 +718,12 @@ namespace Server.Engines.Craft
 			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
 			AddRes( index, typeof( ElixirCamping ), "camping elixir", 1, 1044253 );
 			AddSkill( index, SkillName.Camping, 100.0, 100.0 );
+
+			index = AddCraft( typeof(AdvancedCarpentryStudyBook), "Grandmaster Study Books", "Grandmaster Carpentry", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
+			AddRes( index, typeof( ElixirCarpentry ), "carpentry elixir", 1, 1044253 );
+			AddSkill( index, SkillName.Carpentry, 100.0, 100.0 );	
 
 			index = AddCraft( typeof(AdvancedCartographyStudyBook), "Grandmaster Study Books", "Grandmaster Cartography", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
@@ -962,12 +985,12 @@ namespace Server.Engines.Craft
 
 
 			//Legendary Study Books
-			index = AddCraft( typeof(AdvancedAlchemyStudyBook), "Legendary Study Books", "Legendary Alchemy", 120.0, 120.0, typeof(BlankScroll), 1044377, 10, 1044378);
-			AddRes( index, typeof( Beeswax ), 1025154, 5, 1044253 );
-			AddRes( index, typeof( ArcaneGem ), "arcane gem", 5, 1044253 );
-			AddRes( index, typeof( ElixirAlchemy ), "alchemy elixir", 1, 1044253 );
-			AddSkill( index, SkillName.Alchemy, 120.0, 120.0 );
-			SetManaReq(index, 150);		
+			// index = AddCraft( typeof(AdvancedAlchemyStudyBook), "Legendary Study Books", "Legendary Alchemy", 120.0, 120.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			// AddRes( index, typeof( Beeswax ), 1025154, 5, 1044253 );
+			// AddRes( index, typeof( ArcaneGem ), "arcane gem", 5, 1044253 );
+			// AddRes( index, typeof( ElixirAlchemy ), "alchemy elixir", 1, 1044253 );
+			// AddSkill( index, SkillName.Alchemy, 120.0, 120.0 );
+			// SetManaReq(index, 150);		
 
 
 

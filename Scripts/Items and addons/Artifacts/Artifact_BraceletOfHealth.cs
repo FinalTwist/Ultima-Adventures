@@ -12,6 +12,7 @@ namespace Server.Items
 		[Constructable]
 		public BraceletOfHealth()
 		{
+			Name = "Bracelet of Health";
 			Hue = 0x21;
 			Attributes.BonusHits = 30;
 			Attributes.RegenHits = 15;

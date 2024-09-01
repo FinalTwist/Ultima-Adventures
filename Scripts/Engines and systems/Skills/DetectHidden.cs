@@ -128,6 +128,15 @@ namespace Server.SkillHandlers
 					foundAnyone = true;
 				}
 			}
+			else if ( item is KillerTile )
+			{
+				if ( m.Alive && ( !skillCheck || m.CheckSkill( SkillName.DetectHidden, 0, 100 ) ) )
+				{
+					Effects.SendLocationParticles( EffectItem.Create( item.Location, item.Map, EffectItem.DefaultDuration ), 0x376A, 9, 32, 5024 );
+					Effects.PlaySound( item.Location, item.Map, 0x1FA );
+					foundAnyone = true;
+				}
+			}
 			else if ( item is BaseDoor && (	item.ItemID == 0x35E || 
 											item.ItemID == 0xF0 || 
 											item.ItemID == 0xF2 || 
@@ -248,6 +257,7 @@ namespace Server.SkillHandlers
 						coins.MoveToWorld( loc, map );
 						Effects.SendLocationParticles( EffectItem.Create( coins.Location, coins.Map, EffectItem.DefaultDuration ), 0x376A, 9, 32, 5024 );
 						Effects.PlaySound( coins.Location, coins.Map, 0x1FA );
+						Engines.ExpirationTracker.AutoDelete(coins.Serial, TimeSpan.FromDays(2));
 					}
 					else
 					{
@@ -257,6 +267,7 @@ namespace Server.SkillHandlers
 						mBox.MoveToWorld( loc, map );
 						Effects.SendLocationParticles( EffectItem.Create( mBox.Location, mBox.Map, EffectItem.DefaultDuration ), 0x376A, 9, 32, 5024 );
 						Effects.PlaySound( mBox.Location, mBox.Map, 0x1FA );
+						Engines.ExpirationTracker.AutoDelete(mBox.Serial, TimeSpan.FromDays(2));
 					}
 
 					foundAnyone = true;

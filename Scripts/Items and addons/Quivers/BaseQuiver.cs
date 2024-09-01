@@ -132,7 +132,7 @@ namespace Server.Items
 
 			m_Attributes = new AosAttributes( this );
 
-			DamageIncrease = 15;
+			DamageIncrease = 10;
 			ItemID = Utility.RandomList( 0x2B02, 0x2B03 );
 		}
 
@@ -490,7 +490,7 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.Write( 0 ); // version
+			writer.Write( 1 ); // version
 
 			SaveFlag flags = SaveFlag.None;
 
@@ -546,7 +546,11 @@ namespace Server.Items
 				m_WeightReduction = reader.ReadInt();
 
 			if ( GetSaveFlag( flags, SaveFlag.DamageIncrease ) )
+			{
 				m_DamageIncrease = reader.ReadInt();
+				if (version == 0)
+					m_DamageIncrease = 10; // All "Damage Modifier" have been reduced to 10%
+			}
 
 			if ( GetSaveFlag( flags, SaveFlag.Crafter ) )
 				m_Crafter = reader.ReadMobile();

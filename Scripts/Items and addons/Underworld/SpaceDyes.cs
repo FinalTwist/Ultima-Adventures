@@ -10,11 +10,6 @@ namespace Server.Items
 {
 	public class SpaceDyes : Item
 	{
-		public int vialHue;
-		
-		[CommandProperty(AccessLevel.Owner)]
-		public int vial_Hue { get { return vialHue; } set { vialHue = value; InvalidateProperties(); } }
-
 		[Constructable]
 		public SpaceDyes() : this( 1 )
 		{
@@ -85,9 +80,18 @@ namespace Server.Items
                                 m_Dye.Consume();
                             }
                         }
+						else if ( targeted is PaintPaletteBase )
+						{
+							PaintPaletteBase pigment = (PaintPaletteBase)targeted;
+							if (pigment.ApplyHue(from, m_Dye.Hue, 0x23E))
+							{
+								from.AddToBackpack( new Bottle() );
+								m_Dye.Consume();
+							}
+						}
                         else
                         {
-                            iDye.Hue = m_Dye.vialHue;
+                            iDye.Hue = m_Dye.Hue;
                             from.RevealingAction();
                             from.PlaySound(0x23E);
                             from.AddToBackpack(new Bottle());
@@ -113,15 +117,17 @@ namespace Server.Items
 		public override void Serialize( GenericWriter writer )
 		{
 			base.Serialize( writer );
-			writer.Write( ( int) 0 ); // version
-            writer.Write( vialHue );
+			writer.Write( ( int) 1 ); // version
 		}
 
 		public override void Deserialize( GenericReader reader )
 		{
 			base.Deserialize( reader );
 			int version = reader.ReadInt();
-            vialHue = reader.ReadInt();
+            if (version == 0)
+			{
+				reader.ReadInt(); // Vial hue
+			}
 		}
 	}
 }

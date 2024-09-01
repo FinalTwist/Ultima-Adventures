@@ -22,7 +22,7 @@ namespace Server.Items
 			Stackable = true;
 			Amount = amount;
 
-			switch ( Utility.RandomMinMax( 0, 10 ) )
+			switch ( Utility.RandomMinMax( 0, 12 ) )
 			{
 				case 0:		Name = "oil of wood polish ( oak )";			Hue = MaterialInfo.GetMaterialColor( "oak", "", 0 ); break;
 				case 1:		Name = "oil of wood polish ( ash )";			Hue = MaterialInfo.GetMaterialColor( "ash", "", 0 ); break;
@@ -34,7 +34,9 @@ namespace Server.Items
 				case 7:		Name = "oil of wood polish ( pine )";			Hue = MaterialInfo.GetMaterialColor( "pine", "", 0 ); break;
 				case 8:		Name = "oil of wood polish ( rosewood )";		Hue = MaterialInfo.GetMaterialColor( "rosewood", "", 0 ); break;
 				case 9:		Name = "oil of wood polish ( mahogany )";		Hue = MaterialInfo.GetMaterialColor( "mahogany", "", 0 ); break;
-				case 10:	Name = "oil of wood polish ( driftwood )";		Hue = MaterialInfo.GetMaterialColor( "driftwood", "", 0 ); break;
+				case 10:	Name = "oil of wood polish ( ghost )";		Hue = MaterialInfo.GetMaterialColor( "ghost", "", 0 ); break;
+				case 11:	Name = "oil of wood polish ( petrified )";		Hue = MaterialInfo.GetMaterialColor( "petrified", "", 0 ); break;
+				case 12:	Name = "oil of wood polish ( driftwood )";		Hue = MaterialInfo.GetMaterialColor( "driftwood", "", 0 ); break;
 			}
 		}
 
@@ -102,6 +104,8 @@ namespace Server.Items
 						else if ( m_Oil.Name == "oil of wood polish ( pine )" ) { xOil.Resource = CraftResource.PineTree; }
 						else if ( m_Oil.Name == "oil of wood polish ( rosewood )" ) { xOil.Resource = CraftResource.RosewoodTree; }
 						else if ( m_Oil.Name == "oil of wood polish ( mahogany )" ) { xOil.Resource = CraftResource.MahoganyTree; }
+						else if ( m_Oil.Name == "oil of wood polish ( ghost )" ) { xOil.Resource = CraftResource.GhostTree; }
+						else if ( m_Oil.Name == "oil of wood polish ( petrified )" ) { xOil.Resource = CraftResource.PetrifiedTree; }
 						else if ( m_Oil.Name == "oil of wood polish ( driftwood )" ) { xOil.Resource = CraftResource.DriftwoodTree; }
 
 						from.RevealingAction();
@@ -135,6 +139,8 @@ namespace Server.Items
 						else if ( m_Oil.Name == "oil of wood polish ( pine )" ){ xOil.Resource = CraftResource.PineTree; }
 						else if ( m_Oil.Name == "oil of wood polish ( rosewood )" ){ xOil.Resource = CraftResource.RosewoodTree; }
 						else if ( m_Oil.Name == "oil of wood polish ( mahogany )" ){ xOil.Resource = CraftResource.MahoganyTree; }
+						else if ( m_Oil.Name == "oil of wood polish ( ghost )" ) { xOil.Resource = CraftResource.GhostTree; }
+						else if ( m_Oil.Name == "oil of wood polish ( petrified )" ) { xOil.Resource = CraftResource.PetrifiedTree; }
 						else if ( m_Oil.Name == "oil of wood polish ( driftwood )" ){ xOil.Resource = CraftResource.DriftwoodTree; }
 
 						from.RevealingAction();

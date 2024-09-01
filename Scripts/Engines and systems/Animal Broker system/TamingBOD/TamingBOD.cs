@@ -101,148 +101,143 @@ namespace Server.Items
 			}
 		}
 
+		private static Item TryGetItem(int goldAmount)
+		{
+			int reward = 0;
+			if (goldAmount < 2500)
+				reward = Utility.RandomMinMax(0, 60); // 100% nothing
+			else if (goldAmount < 5000)
+				reward = Utility.RandomMinMax(50, 250); // 20% nothing, 80% easy
+			else if (goldAmount < 10000)
+				reward = Utility.RandomMinMax(100, 350); // 60% easy // 40% medium
+			else if (goldAmount < 30000)
+				reward = Utility.RandomMinMax(200, 400); // 25% easy // 62% medium // 13% rare
+			else if (goldAmount < 60000)
+				reward = Utility.RandomMinMax(300, 500); // 37% medium // 48% rare // 15% impossible
+			else if (goldAmount < 100000)
+				reward = Utility.RandomMinMax(400, 510); // 70% rare // 30% impossible
+			else if (goldAmount < 150000)
+				reward = Utility.RandomMinMax(450, 525); // 40% rare // 60% impossible
+			else if (goldAmount >= 150000)
+				reward = Utility.RandomMinMax(490, 600); // 40% rare // 60% impossible
+				
+			if (500 < reward)  // impossible finds
+			{
+				switch ( Utility.Random( 62 ) ) // 8%
+				{
+					case 0: return new ParagonPetDeed();
+					case 1: return new PetSlotDeed();
+					case 2: return new PowerScroll( SkillName.AnimalLore, 120);
+					case 3: return new PowerScroll( SkillName.AnimalTaming, 120);
+					case 4: return Construct( m_MegaRareMorph ) as Item;
+				}
+			}
+
+			if (470 < reward)  // impossible finds
+			{
+				switch ( Utility.Random( 280 ) ) // 5%
+				{
+					case 0: return new ParagonPetDeed();
+					case 1: return new PetSlotDeed();
+					case 2: return new PetDyeTub();
+					case 3: return new PowerScroll( SkillName.AnimalLore, 115);
+					case 4: return new PowerScroll( SkillName.AnimalTaming, 115);
+					case 11: return new PetGrowthDeedStrong( );
+					case 12: return Construct( m_MegaRareMorph ) as Item;
+					case 13: return Construct( m_RareMorph ) as Item;
+				}
+			}
+
+			if (375 < reward) // rare finds
+			{
+				switch ( Utility.Random( 150 ) ) // 10%
+				{						
+					case 0: return new PetEasingDeed();
+					case 1: return new PetBondDeed();
+					case 2: return new BallOfSummoning();
+					case 3: return new BraceletOfBinding();
+					case 4: return new PowerScroll( SkillName.AnimalLore, 110);
+					case 5: return new PowerScroll( SkillName.AnimalTaming, 110);
+					case 6: return new AlienEgg( );
+					case 7: return new CorruptedEgg( );
+					case 8: return new DragonEgg( );
+					case 9: return new FeyEgg( );
+					case 10: return new ReptilianEgg( );
+					case 11: return new PrehistoricEgg( );
+					case 12: return new PetGrowthDeedMid( );
+					case 13: return Construct( m_MidMorph ) as Item;
+					case 14: return Construct( m_RareMorph ) as Item;
+				}
+			}
+
+			if (250 < reward) // medium finds
+			{
+				switch ( Utility.Random( 140 ) ) // 10%
+				{
+					case 0: return new PetTrainer();
+					case 1: return new MossGreenPetDye();
+					case 2: return new FrostBluePetDye();
+					case 3: return new BlazePetDye();
+					case 4: return new IceWhitePetDye();
+					case 5: return new IceBluePetDye();
+					case 6: return new IceGreenPetDye();
+					case 7: return new PetControlDeed();
+					case 8: return new PowerScroll( SkillName.AnimalLore, 105);
+					case 9: return new PowerScroll( SkillName.AnimalTaming, 105);
+					case 10: return new EarthyEgg( );
+					case 11: return new PetGrowthDeedWeak( );
+					case 12: return Construct( m_LowMorph ) as Item;
+					case 13: return Construct( m_MidMorph ) as Item;
+				}
+			}
+			
+			if (100 < reward)// easy finds
+			{
+				switch ( Utility.Random( 150 ) ) // 10% chance
+				{
+					case 0: return new BluePetDye();
+					case 1: return new GreenPetDye();
+					case 2: return new OrangePetDye();
+					case 3: return new PurplePetDye();
+					case 4: return new RedPetDye();
+					case 5: return new YellowPetDye();
+					case 6: return new BlackPetDye();
+					case 7: return new WhitePetDye();
+					case 8: return new BloodPetDye();
+					case 9: return new GoldPetDye();
+					case 10: return new PinkPetDye();
+					case 11: return new PowderOfTranslocation(10);
+					case 12: return new PetGrowthDeedWeak( );
+					case 13: return Construct( m_LowMorph ) as Item;
+					case 14: return Construct( m_LowMorph ) as Item;
+				}									
+			}
+
+			return null;
+		}
+
 		public static bool PayRewardTo ( Mobile m_from, TamingBOD MCparent )
 		{
-
 			if ( MCparent.AmountTamed >= MCparent.AmountToTame)
+			{
+				Item shelf = TryGetItem(MCparent.Reward);
+				Container backpack = m_from.Backpack;
+				if (shelf != null)
 				{
-					
-									Item shelf = null;
-									int reward = 0;
-									
-									if (MCparent.Reward <2500)
-										reward = Utility.RandomMinMax(0, 60); // 84% nothing // 16% easy
-									else if (MCparent.Reward <5000)
-										reward = Utility.RandomMinMax(50, 250); // 100% easy
-									else if (MCparent.Reward <10000)
-										reward = Utility.RandomMinMax(100, 350); // 60% easy // 40% medium
-									else if (MCparent.Reward <30000)
-										reward = Utility.RandomMinMax(200, 400); // 25% easy // 62% medium // 13% rare
-									else if (MCparent.Reward <60000)
-										reward = Utility.RandomMinMax(300, 500); // 37% medium // 48% rare // 15% impossible
-									else if (MCparent.Reward < 100000)
-										reward = Utility.RandomMinMax(400, 510); // 70% rare // 30% impossible
-									else if (MCparent.Reward < 150000)
-										reward = Utility.RandomMinMax(450, 525); // 40% rare // 60% impossible
-									else if (MCparent.Reward >= 150000)
-										reward = Utility.RandomMinMax(490, 600); // 40% rare // 60% impossible
-									
-									if (reward <= 100 )// nada
-									{
-										shelf = null;
-									}
-
-									else if (reward <= 250 )// easy finds
-									{
-										switch ( Utility.Random( 150 ) ) // 10% chance
-										{
-												case 0: shelf = new BluePetDye(); break;
-												case 1: shelf = new GreenPetDye(); break;
-												case 2: shelf = new OrangePetDye(); break;
-												case 3: shelf = new PurplePetDye(); break;
-												case 4: shelf = new RedPetDye(); break;
-												case 5: shelf = new YellowPetDye(); break;
-												case 6: shelf = new BlackPetDye(); break;
-												case 7: shelf = new WhitePetDye(); break;
-												case 8: shelf = new BloodPetDye(); break;	
-												case 9: shelf = new GoldPetDye(); break;
-												case 10: shelf = new PinkPetDye(); break;
-												case 11: shelf = new PowderOfTranslocation(10); break;
-												case 12: shelf = new PetGrowthDeedWeak( ); break;
-												case 13: shelf = Construct( m_LowMorph ) as Item; break;
-												case 14: shelf = Construct( m_LowMorph ) as Item; break;
-										}									
-									}
-
-									else if (reward <=375) // medium finds
-									{
-											switch ( Utility.Random( 140 ) ) // 10%
-											{
-												case 0: shelf = new PetTrainer(); break;
-												case 1: shelf = new MossGreenPetDye(); break;
-												case 2: shelf = new FrostBluePetDye(); break;		
-												case 3: shelf = new BlazePetDye(); break;
-												case 4: shelf = new IceWhitePetDye(); break;
-												case 5: shelf = new IceBluePetDye(); break;
-												case 6: shelf = new IceGreenPetDye(); break;
-												case 7: shelf = new PetControlDeed(); break;
-												case 8: shelf = new PowerScroll( SkillName.AnimalLore, 105); break;
-												case 9: shelf = new PowerScroll( SkillName.AnimalTaming, 105); break;
-												case 10: shelf = new EarthyEgg( ); break;
-												case 11: shelf = new PetGrowthDeedWeak( ); break;
-												case 12: shelf = Construct( m_LowMorph ) as Item; break;
-												case 13: shelf = Construct( m_MidMorph ) as Item; break;
-												
-											}				
-									}
-
-									else if (reward <= 470) // rare finds
-									{
-											switch ( Utility.Random( 150 ) ) // 10%
-											{						
-												case 0: shelf = new PetEasingDeed(); break;	
-												case 1: shelf = new PetBondDeed(); break;
-												case 2: shelf = new BallOfSummoning(); break;
-												case 3: shelf = new BraceletOfBinding(); break;	
-												case 4: shelf = new PowerScroll( SkillName.AnimalLore, 110); break;
-												case 5: shelf = new PowerScroll( SkillName.AnimalTaming, 110); break;
-												case 6: shelf = new AlienEgg( ); break;
-												case 7: shelf = new CorruptedEgg( ); break;
-												case 8: shelf = new DragonEgg( ); break;
-												case 9: shelf = new FeyEgg( ); break;
-												case 10: shelf = new ReptilianEgg( ); break;
-												case 11: shelf = new PrehistoricEgg( ); break;
-												case 12: shelf = new PetGrowthDeedMid( ); break;
-												case 13: shelf = Construct( m_MidMorph ) as Item; break;
-												case 14: shelf = Construct( m_RareMorph ) as Item; break;
-										
-											}
-									}
-									
-
-									else if (reward <= 500)  // impossible finds
-									{
-											switch ( Utility.Random( 280 ) ) // 5%
-											{
-												case 0: shelf = new ParagonPetDeed(); break;
-												case 1: shelf = new PetSlotDeed(); break;
-												case 2: shelf = new PetDyeTub(); break;	
-												case 3: shelf = new PowerScroll( SkillName.AnimalLore, 115); break;
-												case 4: shelf = new PowerScroll( SkillName.AnimalTaming, 115); break;
-												case 11: shelf = new PetGrowthDeedStrong( ); break;
-												case 12: shelf = Construct( m_MegaRareMorph ) as Item; break;
-												case 13: shelf = Construct( m_RareMorph ) as Item; break;
-											}
-									}
-
-									else if (reward <= 600)  // impossible finds
-									{
-											switch ( Utility.Random( 62 ) ) // 8%
-											{
-												case 0: shelf = new ParagonPetDeed(); break;
-												case 1: shelf = new PetSlotDeed(); break;
-												case 2: shelf = new PowerScroll( SkillName.AnimalLore, 120); break;
-												case 3: shelf = new PowerScroll( SkillName.AnimalTaming, 120); break;
-												case 4: shelf = Construct( m_MegaRareMorph ) as Item; break;
-											}
-									}
-									Container backpack = m_from.Backpack;
-									if (shelf != null)
-									{
-										backpack.DropItem( shelf );	
-										m_from.SendMessage("You got a special drop!");		
-									}										
-									backpack.DropItem( new BankCheck( MCparent.Reward ) );	
-									m_from.SendMessage("Your reward was placed in your bag.");	
-									return true;
-				}
+					backpack.DropItem( shelf );	
+					m_from.SendMessage("You got a special drop!");		
+				}			
+						
+				backpack.DropItem( new BankCheck( MCparent.Reward ) );	
+				m_from.SendMessage("Your reward was placed in your bag.");	
+				return true;
+			}
 			else
 			{
 				m_from.SendMessage("There is something wrong with this deed.");		
-				
 			}	
-			return false;				
 
+			return false;				
 		}
 
 		private static Type[] m_LowMorph = new Type[]

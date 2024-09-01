@@ -25,9 +25,9 @@ namespace Server.Items
 		public override void AddNameProperty( ObjectPropertyList list )
 		{
 			if (m_chew != "" )
-				list.Add( 1075200, String.Format( "a slimy and disfigured item chewed up by " + m_chew) );
+				list.Add( 1049644, String.Format( "a slimy and disfigured item chewed up by " + m_chew) ); // PARENTHESIS
 			else
-				list.Add( 1075200, String.Format( "a slimy and disfigured item") );
+				list.Add( 1049644, String.Format( "a slimy and disfigured item") ); // PARENTHESIS
 		}
 
 		public ChewedItem( Serial serial ) : base( serial )

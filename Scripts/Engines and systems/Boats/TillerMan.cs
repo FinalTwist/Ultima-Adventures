@@ -70,6 +70,11 @@ namespace Server.Items
 			PublicOverheadMessage( MessageType.Regular, 0x3B2, number );
 		}
 
+		public void Say( string text )
+		{
+			PublicOverheadMessage( MessageType.Regular, 0x3B2, false, text );
+		}
+
 		public void Say( int number, string args )
 		{
 			PublicOverheadMessage( MessageType.Regular, 0x3B2, number, args );

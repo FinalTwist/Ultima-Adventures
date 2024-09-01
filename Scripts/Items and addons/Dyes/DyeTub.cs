@@ -262,6 +262,7 @@ namespace Server.Items
 								item is ResearchBag || 
 								item is ColoredWallTorch || 
 								item is MagicPigment || 
+								item is PaintPaletteBase ||
 								item is BaseQuiver || 
 								item is MagicBelt || 
 								item is MagicSash || 
@@ -284,6 +285,16 @@ namespace Server.Items
 						else if ( item.Parent is Mobile )
 						{
 							from.SendLocalizedMessage( 500861 ); // Can't Dye clothing that is being worn.
+						}
+						else if ( item is MagicPigment )
+						{
+							MagicPigment pigment = (MagicPigment)item;
+							pigment.ApplyHue(from, m_Tub.DyedHue, 0x23E);
+						}
+						else if ( item is PaintPaletteBase )
+						{
+							PaintPaletteBase pigment = (PaintPaletteBase)item;
+							pigment.ApplyHue(from, m_Tub.DyedHue, 0x23E);
 						}
 						else
 						{

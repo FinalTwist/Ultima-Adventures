@@ -211,7 +211,7 @@ namespace Server.Items
 			}
 		}
 
-		protected void Spawn( Point3D p, Map map, BaseCreature spawn, int onBoat )
+		protected static void Spawn( Point3D p, Map map, BaseCreature spawn, int onBoat )
 		{
 			if ( map == null )
 			{
@@ -238,35 +238,31 @@ namespace Server.Items
 					}
 				}
 			}
+
 			spawn.MoveToWorld( new Point3D( x, y, p.Z ), map );
 		}
 
-		protected virtual void FinishEffect( Point3D p, Map map, Mobile from )
+		public static void SpawnCreature(Mobile from, Point3D destination, int count)
 		{
-			from.RevealingAction();
-			Server.Engines.Harvest.Fishing.FishingSkill( from, 5 );
-
-			int count = Utility.RandomMinMax( 1, 6 );
 			int onBoat = 0;
 			string monster = "";
-			Point3D SpawnAt = p;
 			switch ( Utility.Random( 12 ) )
 			{
-				case 0: monster = "AquaticGhoul"; SpawnAt = from.Location; onBoat = 1; break;
-				case 1: monster = "SeaWeeder"; SpawnAt = from.Location; onBoat = 1; break;
+				case 0: monster = "AquaticGhoul"; destination = from.Location; onBoat = 1; break;
+				case 1: monster = "SeaWeeder"; destination = from.Location; onBoat = 1; break;
 				case 2: monster = "SeaSnake"; break;
 				case 3: monster = "WaterBeetleRiding"; break;
 				case 4: monster = "WaterStrider"; break;
 				case 5: monster = "OilSlick"; break;
 				case 6: monster = "FloatingEye"; break;
-				case 7: monster = "SeaTroll"; SpawnAt = from.Location; onBoat = 1; break;
+				case 7: monster = "SeaTroll"; destination = from.Location; onBoat = 1; break;
 				case 8: monster = "WaterElemental"; break;
 				case 9: monster = "GiantCrab"; break;
 				case 10: monster = "GiantLamprey"; break;
-				case 11: monster = "Locathah"; SpawnAt = from.Location; onBoat = 1; break;
+				case 11: monster = "Locathah"; destination = from.Location; onBoat = 1; break;
 			}
 
-			for ( int i = 0; map != null && i < count; ++i )
+			for ( int i = 0; from.Map != null && i < count; ++i )
 			{
 				BaseCreature spawn = new AquaticGhoul();
 
@@ -283,11 +279,19 @@ namespace Server.Items
 				else if ( monster == "GiantLamprey" ){ spawn = new GiantLamprey(); }
 				else if ( monster == "Locathah" ){ spawn = new Locathah(); }
 
-				Spawn( SpawnAt, map, spawn, onBoat );
+				Spawn( destination, from.Map, spawn, onBoat );
 
 				spawn.WhisperHue = 999; // SO TASK MANAGER DELETES THEM EVENTUALLY
 				spawn.Combatant = from;
 			}
+		}
+
+		protected virtual void FinishEffect( Point3D p, Map map, Mobile from )
+		{
+			from.RevealingAction();
+			Server.Engines.Harvest.Fishing.FishingSkill( from, 5 );
+			int count = Utility.RandomMinMax( 1, 6 );
+			SpawnCreature(from, p, count);
 
 			Delete();
 		}

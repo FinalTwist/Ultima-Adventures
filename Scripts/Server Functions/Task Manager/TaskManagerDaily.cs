@@ -92,7 +92,7 @@ namespace Server.Items
 						
 			if ( DateTime.UtcNow > ( lastrun + TimeSpan.FromHours( 23.0 )) ) 			
 			{
-				//World.Broadcast( 0x35, true, "Begin daily tasks" );
+				World.Broadcast( 0x35, true, "Executing daily routine" ); // Let the players know lag is incoming
 				Console.WriteLine( "Begin Daily Tasks" );
 				LoggingFunctions.LogServer( "Start - Arrange Quest Search Crates" );
 				
@@ -440,6 +440,11 @@ namespace Server.Items
 					AetherGlobe.EvilChamp = (Mobile)evilchamp;
 					evilchamp.InvalidateProperties();
 				}
+
+				if (AetherGlobe.GoodChamp != null)
+					World.Broadcast( 0, true, goodchamp.Name + " valiantly fights for the side of Good" );
+				if (AetherGlobe.EvilChamp != null)
+					World.Broadcast( 0, true, evilchamp.Name + " continues to cause anarchy" );
 
 				AdventuresFunctions.CheckInfection();
 				if (AetherGlobe.invasionstage == 1)

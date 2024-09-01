@@ -142,38 +142,26 @@ namespace Server.Engines.Craft
 			AddCraft( typeof( WritingTable ),				1044291, 1022890,	63.1,  88.1,	typeof( Board ), 1015101, 17, 1044351 );
 			AddCraft( typeof( YewWoodTable ),				1044291, 1044307,	63.1,  88.1,	typeof( Board ), 1015101, 23, 1044351 );
 			AddCraft( typeof( LargeTable ),					1044291, 1044308,	84.2, 109.2,	typeof( Board ), 1015101, 27, 1044351 );
+    
+			AddCraft( typeof( ElegantLowTable ),			1044291, 1030265,	80.0, 105.0,	typeof( Board ), 1044041, 35, 1044351 );
+			AddCraft( typeof( PlainLowTable ),				1044291, 1030266,	80.0, 105.0,	typeof( Board ), 1044041, 35, 1044351 );
+			AddCraft( typeof( OrnateElvenChair ),			1044291, 1072870, 	80.0, 105.0, 	typeof( Board ), 1044041, 30, 1044351 );
 
-				index = AddCraft( typeof( ElegantLowTable ),	1044291, 1030265,	80.0, 105.0,	typeof( Log ), 1044041, 35, 1044351 );
+			AddCraft( typeof( WoodenBox ),					1044292, 1023709,	21.0,  46.0,	typeof( Board ), 1044041, 10, 1044351 );
+			AddCraft( typeof( SmallCrate ),					1044292, 1044309,	10.0,  35.0,	typeof( Board ), 1044041, 8 , 1044351 );
+			AddCraft( typeof( MediumCrate ),				1044292, 1044310,	31.0,  56.0,	typeof( Board ), 1044041, 15, 1044351 );
+			AddCraft( typeof( LargeCrate ),					1044292, 1044311,	47.3,  72.3,	typeof( Board ), 1044041, 18, 1044351 );
+			AddCraft( typeof( WoodenChest ),				1044292, 1023650,	73.6,  98.6,	typeof( Board ), 1044041, 20, 1044351 );
+			AddCraft( typeof( EmptyBookcase ),				1044292, 1022718,	31.5,  56.5,	typeof( Board ), 1044041, 25, 1044351 );
+			AddCraft( typeof( FancyArmoire ),				1044292, 1044312,	84.2, 109.2,	typeof( Board ), 1044041, 35, 1044351 );
+			AddCraft( typeof( Armoire ),					1044292, 1022643,	84.2, 109.2,	typeof( Board ), 1044041, 35, 1044351 );
 
-				index = AddCraft( typeof( PlainLowTable ),		1044291, 1030266,	80.0, 105.0,	typeof( Log ), 1044041, 35, 1044351 );
-
-				index = AddCraft( typeof( OrnateElvenChair ), 1044291, 1072870, 80.0, 105.0, typeof( Log ), 1044041, 30, 1044351 );
-
-			AddCraft( typeof( WoodenBox ),					1044292, 1023709,	21.0,  46.0,	typeof( Log ), 1044041, 10, 1044351 );
-			AddCraft( typeof( SmallCrate ),					1044292, 1044309,	10.0,  35.0,	typeof( Log ), 1044041, 8 , 1044351 );
-			AddCraft( typeof( MediumCrate ),				1044292, 1044310,	31.0,  56.0,	typeof( Log ), 1044041, 15, 1044351 );
-			AddCraft( typeof( LargeCrate ),					1044292, 1044311,	47.3,  72.3,	typeof( Log ), 1044041, 18, 1044351 );
-			AddCraft( typeof( WoodenChest ),				1044292, 1023650,	73.6,  98.6,	typeof( Log ), 1044041, 20, 1044351 );
-			AddCraft( typeof( EmptyBookcase ),				1044292, 1022718,	31.5,  56.5,	typeof( Log ), 1044041, 25, 1044351 );
-			AddCraft( typeof( FancyArmoire ),				1044292, 1044312,	84.2, 109.2,	typeof( Log ), 1044041, 35, 1044351 );
-			AddCraft( typeof( Armoire ),					1044292, 1022643,	84.2, 109.2,	typeof( Log ), 1044041, 35, 1044351 );
-
-			index = AddCraft( typeof( ElegantLowTable ),	1044291, 1030265,	80.0, 105.0,	typeof( Board ), 1015101, 35, 1044351 );
-			 
-
-			index = AddCraft( typeof( PlainLowTable ),		1044291, 1030266,	80.0, 105.0,	typeof( Board ), 1015101, 35, 1044351 );
-			 
-
-				index = AddCraft( typeof( PlainWoodenChest ),	1044292, 1030251, 90.0, 115.0,	typeof( Log ), 1044041, 30, 1044351 );
-
-				index = AddCraft( typeof( FinishedWoodenChest ),1044292, 1030259, 90.0, 115.0,	typeof( Log ), 1044041, 30, 1044351 );
-
-				index = AddCraft( typeof( TallCabinet ),	1044292, 1030261, 90.0, 115.0,	typeof( Log ), 1044041, 35, 1044351 );
-
-
-				index = AddCraft( typeof( ShortCabinet ),	1044292, 1030263, 90.0, 115.0,	typeof( Log ), 1044041, 35, 1044351 );
-
-			
+			AddCraft( typeof( ElegantLowTable ),			1044291, 1030265,	80.0, 105.0,	typeof( Board ), 1015101, 35, 1044351 );
+			AddCraft( typeof( PlainLowTable ),				1044291, 1030266,	80.0, 105.0,	typeof( Board ), 1015101, 35, 1044351 );
+			AddCraft( typeof( PlainWoodenChest ),			1044292, 1030251, 	90.0, 115.0,	typeof( Board ), 1044041, 30, 1044351 );
+			AddCraft( typeof( FinishedWoodenChest ),		1044292, 1030259, 	90.0, 115.0,	typeof( Board ), 1044041, 30, 1044351 );
+			AddCraft( typeof( TallCabinet ),				1044292, 1030261, 	90.0, 115.0,	typeof( Board ), 1044041, 35, 1044351 );
+			AddCraft( typeof( ShortCabinet ),				1044292, 1030263, 	90.0, 115.0,	typeof( Board ), 1044041, 35, 1044351 );
 
 			// Barrels
 			index = AddCraft( typeof( Keg ), "Barrels", 1023711, 57.8, 82.8, typeof( BarrelStaves ), 1044288, 3, 1044253 );
@@ -190,13 +178,9 @@ namespace Server.Engines.Craft
 			AddCraft( typeof( GnarledStaff ), 1044295, 1025112, 78.9, 103.9, typeof( Board ), 1015101, 7, 1044351 );
 			AddCraft( typeof( WoodenShield ), 1044295, 1027034, 52.6, 77.6, typeof( Board ), 1015101, 9, 1044351 );
 
-				index = AddCraft( typeof( Bokuto ), 1044295, 1030227, 70.0, 95.0, typeof( Board ), 1015101, 6, 1044351 );
-				 
-
-				index = AddCraft( typeof( Fukiya ), 1044295, 1030229, 60.0, 85.0, typeof( Board ), 1015101, 6, 1044351 );
-				 
-
-				index = AddCraft( typeof( Tetsubo ), 1044295, 1030225, 80.0, 140.3, typeof( Board ), 1015101, 10, 1044351 );
+			AddCraft( typeof( Bokuto ), 1044295, 1030227, 70.0, 95.0, typeof( Board ), 1015101, 6, 1044351 );
+			AddCraft( typeof( Fukiya ), 1044295, 1030229, 60.0, 85.0, typeof( Board ), 1015101, 6, 1044351 );
+			AddCraft( typeof( Tetsubo ), 1044295, 1030225, 80.0, 140.3, typeof( Board ), 1015101, 10, 1044351 );
 
 			index = AddCraft( typeof( WoodenPlateArms ), 1044295, "wooden arms", 66.3, 116.3, typeof( ReaperOil ), "Reaper Oil", 2, 1042081 );
 			AddRes( index, typeof( MysticalTreeSap ), "Mystical Tree Sap", 2, 1042081 );
@@ -304,8 +288,8 @@ namespace Server.Engines.Craft
 			AddSkill( index, SkillName.Magery, 50.0, 55.0 );
 			AddRes( index, typeof( IronIngot ), 1044036, 40, 1044037 );
 
-				AddCraft( typeof( PlayerBBEast ), 1044290, 1062420, 85.0, 110.0, typeof( Board ), 1015101, 50, 1044351 );
-				AddCraft( typeof( PlayerBBSouth ), 1044290, 1062421, 85.0, 110.0, typeof( Board ), 1015101, 50, 1044351 );
+			AddCraft( typeof( PlayerBBEast ), 1044290, 1062420, 85.0, 110.0, typeof( Board ), 1015101, 50, 1044351 );
+			AddCraft( typeof( PlayerBBSouth ), 1044290, 1062421, 85.0, 110.0, typeof( Board ), 1015101, 50, 1044351 );
 
 			// Blacksmithy
 			index = AddCraft( typeof( SmallForgeDeed ), 1044296, 1044330, 73.6, 98.6, typeof( Board ), 1015101, 5, 1044351 );

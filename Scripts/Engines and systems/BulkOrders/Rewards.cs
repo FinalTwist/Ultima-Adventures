@@ -687,8 +687,9 @@ namespace Server.Engines.BulkOrders
 
 			// Large BOD bonus
 			if (1 < itemCount) points += 100;
+			if (1 < itemCount && exceptional) points += 200; // Added bonus because exceptional is notably more difficult with 90 - 130
 
-			// Material bonus
+            // Material bonus
             if (material >= BulkMaterialType.Ash)
             {
 				int materialBaseline = (int)BulkMaterialType.Ash - 1; // Normalize "None" to just below Ash

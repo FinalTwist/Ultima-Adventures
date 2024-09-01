@@ -6,6 +6,8 @@ using Server.Prompts;
 using Server.Network;
 using System.Collections;
 using System.Collections.Generic;
+using Server.Gumps;
+using System.Globalization;
 
 namespace Server.Items
 {
@@ -33,6 +35,17 @@ namespace Server.Items
         public static void Initialize()
         {
             EventSink.PlayerDeath += new PlayerDeathEventHandler(EventSink_Death);
+			EventSink.Login += new LoginEventHandler(e => 
+                {
+                    PlayerMobile owner = e.Mobile as PlayerMobile;
+                    if (owner == null) return;
+
+                    AutoResPotion arp;
+                    if (m_ResList == null || !m_ResList.ContainsKey(owner) || !m_ResList.TryGetValue(owner, out arp)) return;
+
+                    arp.StartTimer();
+                }
+            );
         }
 
         [Constructable]
@@ -51,6 +64,11 @@ namespace Server.Items
 
         public AutoResPotion(Serial serial) : base(serial)
         {
+        }
+
+        public static bool IsProtected(Mobile from)
+        {
+            return m_ResList != null && m_ResList.ContainsKey(from);
         }
 
         public override void OnDoubleClick(Mobile from)
@@ -133,12 +151,24 @@ namespace Server.Items
                                 m_ResList.Remove(owner);
                                 return;
                             }
-                            arp.m_Timer = Timer.DelayCall(m_Delay, new TimerStateCallback(Resurrect_OnTick), new object[] { owner, arp });
-                            m_ResList.Remove(owner);
+
+                            arp.StartTimer();
                         }
                     }
                 }
             }
+        }
+
+        private void StartTimer()
+        {
+            Mobile owner = m_Consumer;
+            if (Deleted || owner.Alive) { return; }
+            
+            if (m_Timer != null)
+                m_Timer.Stop();
+
+            BuffInfo.AddBuff( owner, new BuffInfo( BuffIcon.GiftOfLife, 1015222,TimeSpan.FromSeconds(30), owner, String.Format("You will resurrect within 30 seconds of your death"),true ) );
+            m_Timer = Timer.DelayCall(m_Delay, new TimerStateCallback(Resurrect_OnTick), new object[] { owner, this });
         }
 
         private static void Resurrect_OnTick(object state)
@@ -151,17 +181,38 @@ namespace Server.Items
                 if (owner.Alive || arp.m_Charges < 1)
                     return;
 
-                owner.SendMessage("You died under the watch of the spirits, they have offered you another chance at life.");
-                owner.Resurrect();
-                Server.Misc.Death.Penalty(owner, false);
-
-                arp.m_Charges--;
-
-                arp.InvalidateProperties();
-
-                if (arp.m_Charges < 1)
-                    arp.Delete();
+                TextInfo cultInfo = new CultureInfo("en-US", false).TextInfo;
+                var confirmationGump = new ConfirmationGump(
+                    owner, 
+                    cultInfo.ToTitleCase(arp.Name),
+                    "The spirits offer their aid.<br>Do you accept?", 
+                    arp.DoUse,
+                    arp.StartTimer
+                );
+                owner.SendGump(confirmationGump);
             }
+        }
+
+        private void DoUse()
+        {
+            Mobile owner = m_Consumer;
+            if (Deleted || owner == null || owner.Alive) { return; }
+            
+            owner.SendMessage("You died under the watch of the spirits, they have offered you another chance at life.");
+
+            owner.Resurrect();
+            Server.Misc.Death.Penalty( owner, false );
+            BuffInfo.RemoveBuff(owner, BuffIcon.GiftOfLife);
+            if (m_Timer != null)
+                m_Timer.Stop();
+            if (m_ResList != null) 
+                m_ResList.Remove(owner);
+
+            m_Charges--;
+            InvalidateProperties();
+
+            if (m_Charges < 1)
+                Delete();
         }
 
         public override void AddNameProperties(ObjectPropertyList list)

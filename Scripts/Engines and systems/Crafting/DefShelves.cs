@@ -338,9 +338,18 @@ namespace Server.Engines.Craft
 			AddCraft( typeof( NewWizardShelfB ), "Wood Shelves", "wizard shelf", 41.5, 66.5, typeof( Board ), 1015101, 35, 1044351 );
 			AddCraft( typeof( NewWizardShelfA ), "Wood Shelves", "wizard shelf, tall", 41.5, 66.5, typeof( Board ), 1015101, 35, 1044351 );
 
+			AddCraft( typeof( CounterStained ), "Tables and Counters", "stained counter", 41.5, 66.5, typeof(Board), 1015101, 15, 1044351);
+			AddCraft( typeof(CounterStainedMiddle), "Tables and Counters", "stained counter, middle", 41.5, 66.5, typeof(Board), 1015101, 11, 1044351);
+            index = AddCraft( typeof(CounterStainedCloth), "Tables and Counters", "stained counter with runner", 41.5, 66.5, typeof(Board), 1015101, 15, 1044351);
+			AddRes(index, typeof(Cloth), 1044286, 5, "cloth");
+            index = AddCraft( typeof(CounterStainedMiddleCloth), "Tables and Counters", "stained counter with runner, middle", 41.5, 66.5, typeof(Board), 1015101, 11, 1044351);
+            AddRes(index, typeof(Cloth), 1044286, 5, "cloth");
+            index = AddCraft(typeof(CounterCloth), "Tables and Counters", "counter with runner", 41.5, 66.5, typeof(Board), 1015101, 15, 1044351);
+            AddRes(index, typeof(Cloth), 1044286, 5, "cloth");
+            index = AddCraft(typeof(CounterMiddleCloth), "Tables and Counters", "counter with runner, middle", 41.5, 66.5, typeof(Board), 1015101, 11, 1044351);
+            AddRes(index, typeof(Cloth), 1044286, 5, "cloth");
 
-
-			Repair = true;
+            Repair = true;
 			MarkOption = true;
 			CanEnhance = Core.AOS;
 

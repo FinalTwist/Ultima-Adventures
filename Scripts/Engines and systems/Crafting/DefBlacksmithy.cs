@@ -389,7 +389,7 @@ namespace Server.Engines.Craft
 
 			AddCraft( typeof( AssassinSpike ), "Bladed", "assassin dagger", 10.0, 49.6, typeof( IronIngot ), 1044036, 3, 1044037 );
 			AddCraft( typeof( ElvenSpellblade ), "Bladed", "assassin sword", 44.1, 94.1, typeof( IronIngot ), 1044036, 8, 1044037 );
-			AddCraft( typeof( VikingSword ), "Bladed", "barbarian sword", 24.3, 74.3, typeof( IronIngot ), 1044036, 14, 1044037 );
+			AddCraft( typeof( VikingSword ), "Bladed", "barbarian sword (viking sword)", 24.3, 74.3, typeof( IronIngot ), 1044036, 14, 1044037 );
 			AddCraft( typeof( Broadsword ), "Bladed", 1023934, 35.4, 85.4, typeof( IronIngot ), 1044036, 10, 1044037 );
 			AddCraft( typeof( CrescentBlade ), "Bladed", 1029921, 45.0, 95.0, typeof( IronIngot ), 1044036, 14, 1044037 );
 			AddCraft( typeof( Cutlass ), "Bladed", 1025185, 24.3, 74.3, typeof( IronIngot ), 1044036, 8, 1044037 );

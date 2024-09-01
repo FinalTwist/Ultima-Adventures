@@ -30,7 +30,7 @@ namespace Server.SkillHandlers
 
 		public static bool IsGonnaAttack( Mobile m )
 		{
-			if ( m is BasePerson || m is BaseVendor || m is PlayerBarkeeper || m is PlayerVendor || m is Citizens )
+			if ( m is BasePerson || m is BaseVendor || m is PlayerBarkeeper || m is PlayerVendor || m is RoomAttendant || m is Citizens )
 
 				return false;
 

@@ -55,6 +55,7 @@ namespace Server.Items
 		[Constructable]
 		public GargoylesPickaxe( int uses ) : base( 0xE85 + Utility.Random( 2 ))
 		{
+			Hue = 0xB73;
 			Weight = 11.0;
 			UsesRemaining = uses;
 			ShowUsesRemaining = true;
@@ -76,7 +77,7 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 0 ); // version
+			writer.Write( (int) 1 ); // version
 		}
 
 		public override void Deserialize( GenericReader reader )
@@ -84,9 +85,8 @@ namespace Server.Items
 			base.Deserialize( reader );
 
 			int version = reader.ReadInt();
-			
-			if ( Hue == 0x973 )
-				Hue = 0x0;
+			if (version == 0 && Hue == 0x0)
+				Hue = 0xB73;
 		}
 	}
 }

@@ -313,55 +313,7 @@ namespace Server.Items
 				else if ( armor.Quality == ArmorQuality.Exceptional )
 					price = (int)( price * 1.25 );
 
-				switch ( armor.Resource )
-					{
-						case CraftResource.DullCopper: price = (int)( price * 1.25 ); break;
-						case CraftResource.ShadowIron: price = (int)( price * 1.5 ); break;
-						case CraftResource.Copper: price = (int)( price * 1.75 ); break;
-						case CraftResource.Bronze: price = (int)( price * 2 ); break;
-						case CraftResource.Gold: price = (int)( price * 2.25 ); break;
-						case CraftResource.Agapite: price = (int)( price * 2.50 ); break;
-						case CraftResource.Verite: price = (int)( price * 2.75 ); break;
-						case CraftResource.Valorite: price = (int)( price * 3 ); break;
-						case CraftResource.Nepturite: price = (int)( price * 3.10 ); break;
-						case CraftResource.Obsidian: price = (int)( price * 3.10 ); break;
-						case CraftResource.Steel: price = (int)( price * 3.25 ); break;
-						case CraftResource.Brass: price = (int)( price * 3.5 ); break;
-						case CraftResource.Mithril: price = (int)( price * 3.75 ); break;
-						case CraftResource.Xormite: price = (int)( price * 3.75 ); break;
-						case CraftResource.Dwarven: price = (int)( price * 7.50 ); break;
-						case CraftResource.SpinedLeather: price = (int)( price * 1.5 ); break;
-						case CraftResource.HornedLeather: price = (int)( price * 1.75 ); break;
-						case CraftResource.BarbedLeather: price = (int)( price * 2.0 ); break;
-						case CraftResource.NecroticLeather: price = (int)( price * 2.25 ); break;
-						case CraftResource.VolcanicLeather: price = (int)( price * 2.5 ); break;
-						case CraftResource.FrozenLeather: price = (int)( price * 2.75 ); break;
-						case CraftResource.GoliathLeather: price = (int)( price * 3.0 ); break;
-						case CraftResource.DraconicLeather: price = (int)( price * 3.25 ); break;
-						case CraftResource.HellishLeather: price = (int)( price * 3.5 ); break;
-						case CraftResource.DinosaurLeather: price = (int)( price * 3.75 ); break;
-						case CraftResource.AlienLeather: price = (int)( price * 3.75 ); break;
-						case CraftResource.RedScales: price = (int)( price * 1.25 ); break;
-						case CraftResource.YellowScales: price = (int)( price * 1.25 ); break;
-						case CraftResource.BlackScales: price = (int)( price * 1.5 ); break;
-						case CraftResource.GreenScales: price = (int)( price * 1.5 ); break;
-						case CraftResource.WhiteScales: price = (int)( price * 1.5 ); break;
-						case CraftResource.BlueScales: price = (int)( price * 1.5 ); break;
-						case CraftResource.AshTree: price = (int)( price * 1.25 ); break;
-						case CraftResource.CherryTree: price = (int)( price * 1.45 ); break;
-						case CraftResource.EbonyTree: price = (int)( price * 1.65 ); break;
-						case CraftResource.GoldenOakTree: price = (int)( price * 1.85 ); break;
-						case CraftResource.HickoryTree: price = (int)( price * 2.05 ); break;
-						case CraftResource.MahoganyTree: price = (int)( price * 2.25 ); break;
-						case CraftResource.DriftwoodTree: price = (int)( price * 2.25 ); break;
-						case CraftResource.OakTree: price = (int)( price * 2.45 ); break;
-						case CraftResource.PineTree: price = (int)( price * 2.65 ); break;
-						case CraftResource.GhostTree: price = (int)( price * 2.65 ); break;
-						case CraftResource.RosewoodTree: price = (int)( price * 2.85 ); break;
-						case CraftResource.WalnutTree: price = (int)( price * 3 ); break;
-						case CraftResource.PetrifiedTree: price = (int)( price * 3.25 ); break;
-						case CraftResource.ElvenTree: price = (int)( price * 6 ); break;
-					}
+				price = (int)(price * CraftResources.GetValueMultiplier(armor.Resource));
 
 				price += 100 * (int)armor.Durability;
 
@@ -381,38 +333,7 @@ namespace Server.Items
 				else if ( weapon.Quality == WeaponQuality.Exceptional )
 					price = (int)( price * 1.25 );
 
-                switch ( weapon.Resource )
-                    {
-                        case CraftResource.DullCopper: price = (int)( price * 1.25 ); break;
-                        case CraftResource.ShadowIron: price = (int)( price * 1.5 ); break;
-                        case CraftResource.Copper: price = (int)( price * 1.75 ); break;
-                        case CraftResource.Bronze: price = (int)( price * 2 ); break;
-                        case CraftResource.Gold: price = (int)( price * 2.25 ); break;
-                        case CraftResource.Agapite: price = (int)( price * 2.50 ); break;
-                        case CraftResource.Verite: price = (int)( price * 2.75 ); break;
-                        case CraftResource.Valorite: price = (int)( price * 3 ); break;
-						case CraftResource.Nepturite: price = (int)( price * 3.10 ); break;
-						case CraftResource.Obsidian: price = (int)( price * 3.10 ); break;
-						case CraftResource.Steel: price = (int)( price * 3.25 ); break;
-						case CraftResource.Brass: price = (int)( price * 3.5 ); break;
-						case CraftResource.Mithril: price = (int)( price * 3.75 ); break;
-						case CraftResource.Xormite: price = (int)( price * 3.75 ); break;
-						case CraftResource.Dwarven: price = (int)( price * 7.50 ); break;
-						case CraftResource.AshTree: price = (int)( price * 1.25 ); break;
-						case CraftResource.CherryTree: price = (int)( price * 1.45 ); break;
-						case CraftResource.EbonyTree: price = (int)( price * 1.65 ); break;
-						case CraftResource.GoldenOakTree: price = (int)( price * 1.85 ); break;
-						case CraftResource.HickoryTree: price = (int)( price * 2.05 ); break;
-						case CraftResource.MahoganyTree: price = (int)( price * 2.25 ); break;
-						case CraftResource.DriftwoodTree: price = (int)( price * 2.25 ); break;
-						case CraftResource.OakTree: price = (int)( price * 2.45 ); break;
-						case CraftResource.PineTree: price = (int)( price * 2.65 ); break;
-						case CraftResource.GhostTree: price = (int)( price * 2.65 ); break;
-						case CraftResource.RosewoodTree: price = (int)( price * 2.85 ); break;
-						case CraftResource.WalnutTree: price = (int)( price * 3 ); break;
-						case CraftResource.PetrifiedTree: price = (int)( price * 3.25 ); break;
-						case CraftResource.ElvenTree: price = (int)( price * 6 ); break;
-                    }
+                price = (int)(price * CraftResources.GetValueMultiplier(weapon.Resource));
 
 				price += 100 * (int)weapon.DurabilityLevel;
 
@@ -432,38 +353,7 @@ namespace Server.Items
 				else if ( lute.Quality == InstrumentQuality.Exceptional )
 					price = (int)( price * 1.25 );
 
-                switch ( lute.Resource )
-                    {
-                        case CraftResource.DullCopper: price = (int)( price * 1.25 ); break;
-                        case CraftResource.ShadowIron: price = (int)( price * 1.5 ); break;
-                        case CraftResource.Copper: price = (int)( price * 1.75 ); break;
-                        case CraftResource.Bronze: price = (int)( price * 2 ); break;
-                        case CraftResource.Gold: price = (int)( price * 2.25 ); break;
-                        case CraftResource.Agapite: price = (int)( price * 2.50 ); break;
-                        case CraftResource.Verite: price = (int)( price * 2.75 ); break;
-                        case CraftResource.Valorite: price = (int)( price * 3 ); break;
-						case CraftResource.Nepturite: price = (int)( price * 3.10 ); break;
-						case CraftResource.Obsidian: price = (int)( price * 3.10 ); break;
-						case CraftResource.Steel: price = (int)( price * 3.25 ); break;
-						case CraftResource.Brass: price = (int)( price * 3.5 ); break;
-						case CraftResource.Mithril: price = (int)( price * 3.75 ); break;
-						case CraftResource.Xormite: price = (int)( price * 3.75 ); break;
-						case CraftResource.Dwarven: price = (int)( price * 7.50 ); break;
-						case CraftResource.AshTree: price = (int)( price * 1.25 ); break;
-						case CraftResource.CherryTree: price = (int)( price * 1.45 ); break;
-						case CraftResource.EbonyTree: price = (int)( price * 1.65 ); break;
-						case CraftResource.GoldenOakTree: price = (int)( price * 1.85 ); break;
-						case CraftResource.HickoryTree: price = (int)( price * 2.05 ); break;
-						case CraftResource.MahoganyTree: price = (int)( price * 2.25 ); break;
-						case CraftResource.DriftwoodTree: price = (int)( price * 2.25 ); break;
-						case CraftResource.OakTree: price = (int)( price * 2.45 ); break;
-						case CraftResource.PineTree: price = (int)( price * 2.65 ); break;
-						case CraftResource.GhostTree: price = (int)( price * 2.65 ); break;
-						case CraftResource.RosewoodTree: price = (int)( price * 2.85 ); break;
-						case CraftResource.WalnutTree: price = (int)( price * 3 ); break;
-						case CraftResource.PetrifiedTree: price = (int)( price * 3.25 ); break;
-						case CraftResource.ElvenTree: price = (int)( price * 6 ); break;
-                    }
+                price = (int)(price * CraftResources.GetValueMultiplier(lute.Resource));
 
 				if ( price < 1 )
 					price = 1;

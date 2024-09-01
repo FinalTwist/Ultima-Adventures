@@ -61,6 +61,20 @@ namespace Server.Items
 			return baseTotal;
 		}
 
+        public override void OnDelete()
+        {
+            base.OnDelete();
+
+			Engines.ExpirationTracker.Remove(Serial);
+        }
+
+        public override bool OnDragLift(Mobile from)
+        {
+			Engines.ExpirationTracker.Remove(Serial); // As soon as someone interacts with it, disable auto-delete
+
+            return base.OnDragLift(from);
+        }
+
 		public override void Serialize( GenericWriter writer )
 		{
 			base.Serialize( writer );

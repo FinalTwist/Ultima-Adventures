@@ -423,13 +423,13 @@ namespace Server
 
 		public static Map[] Maps { get { return m_Maps; } }
 
-		public static Map Felucca { get { return m_Maps[0]; } }
-		public static Map Trammel { get { return m_Maps[1]; } }
-		public static Map Ilshenar { get { return m_Maps[2]; } }
-		public static Map Malas { get { return m_Maps[3]; } }
-		public static Map Tokuno { get { return m_Maps[4]; } }
-		public static Map TerMur { get { return m_Maps[5]; } }
-		public static Map Internal { get { return m_Maps[0x7F]; } }
+		public static Map Felucca { get { return m_Maps[0]; } } // Lodoria
+		public static Map Trammel { get { return m_Maps[1]; } } // Sosaria
+		public static Map Ilshenar { get { return m_Maps[2]; } } // Darkmoor
+		public static Map Malas { get { return m_Maps[3]; } } // Serpent Island
+		public static Map Tokuno { get { return m_Maps[4]; } } // Isle of Dread
+		public static Map TerMur { get { return m_Maps[5]; } } // Savaged Empire
+		public static Map Internal { get { return m_Maps[0x7F]; } } //
 		
 		#region custommaps
 		public static Map Gaia { get { return m_Maps[33]; } }

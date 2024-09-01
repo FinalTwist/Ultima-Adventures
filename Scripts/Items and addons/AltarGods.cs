@@ -8,7 +8,7 @@ using Server.ContextMenus;
 
 namespace Server.Items
 {
-	public class AltarGodsEast : Item
+	public class AltarGodsEast : Item, IAnkh
 	{
 		[Constructable]
 		public AltarGodsEast( ) : base( 0x2FF9 )
@@ -61,7 +61,7 @@ namespace Server.Items
 		}
 	}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public class AltarGodsSouth : Item
+	public class AltarGodsSouth : Item, IAnkh
 	{
 		[Constructable]
 		public AltarGodsSouth( ) : base( 0x2FFA )
@@ -114,7 +114,7 @@ namespace Server.Items
 		}
 	}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public class AltarShrineEast : Item
+	public class AltarShrineEast : Item, IAnkh
 	{
 		[Constructable]
 		public AltarShrineEast( ) : base( 0xED5 )
@@ -167,7 +167,7 @@ namespace Server.Items
 		}
 	}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public class AltarShrineSouth : Item
+	public class AltarShrineSouth : Item, IAnkh
 	{
 		[Constructable]
 		public AltarShrineSouth( ) : base( 0xED4 )
@@ -220,7 +220,7 @@ namespace Server.Items
 		}
 	}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public class AltarStatue : Item
+	public class AltarStatue : Item, IAnkh
 	{
 		[Constructable]
 		public AltarStatue( ) : base( 0x40BC )
@@ -273,7 +273,7 @@ namespace Server.Items
 		}
 	}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public class AltarSea : Item
+	public class AltarSea : Item, IAnkh
 	{
 		[Constructable]
 		public AltarSea( ) : base( 0x507A )
@@ -327,7 +327,7 @@ namespace Server.Items
 		}
 	}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public class AltarEvil : Item
+	public class AltarEvil : Item, IAnkh
 	{
 		[Constructable]
 		public AltarEvil( ) : base( 0x52B3 )
@@ -373,7 +373,7 @@ namespace Server.Items
 		}
 	}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public class AltarDaemon : Item
+	public class AltarDaemon : Item, IAnkh
 	{
 		[Constructable]
 		public AltarDaemon( ) : base( 0x4B46 )
@@ -429,7 +429,7 @@ namespace Server.Items
 		}
 	}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public class AltarWizard : Item
+	public class AltarWizard : Item, IAnkh
 	{
 		[Constructable]
 		public AltarWizard( ) : base( 0x5465 )
@@ -476,7 +476,7 @@ namespace Server.Items
 		}
 	}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public class AltarPlayer : Item
+	public class AltarPlayer : Item, IAnkh
 	{
 		[Constructable]
 		public AltarPlayer( ) : base( 0x121C )
@@ -523,7 +523,7 @@ namespace Server.Items
 		}
 	}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public class AltarGargoyle : Item
+	public class AltarGargoyle : Item, IAnkh
 	{
 		[Constructable]
 		public AltarGargoyle( ) : base( 0x4B46 )

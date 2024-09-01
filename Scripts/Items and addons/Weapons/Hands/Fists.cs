@@ -4,12 +4,16 @@ using Server.Network;
 
 namespace Server.Items
 {
-	public interface IFistWeapon
-	{
-	}
+    public interface IFistWeapon
+    {
+    }
 
-	public interface IPugilistGloves : IFistWeapon
-	{
+    public interface IMainHandGloves
+    {
+    }
+
+    public interface IPugilistGloves : IFistWeapon, IMainHandGloves
+    {
 	}
 	
 	public class Fists : BaseMeleeWeapon, IFistWeapon

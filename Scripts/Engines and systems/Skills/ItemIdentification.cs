@@ -47,6 +47,30 @@ namespace Server.Items
 			}
 		}
 
+		public static void ReplaceItemOrAddToBackpack(Item unidentifiedItem, Item newItem, Mobile identifier)
+		{
+			if (unidentifiedItem != null && unidentifiedItem.Parent is Container)
+			{
+				Container parent = (Container)unidentifiedItem.Parent;
+				if (newItem.Stackable && parent.TryDropItem(identifier, newItem, false)) // Try to stack
+				{
+					if (newItem.Deleted) return; // Auto-stacked
+				}
+				else
+					parent.AddItem(newItem); // If it bounced, force-add it back (it was there before being ID'd)
+
+				newItem.Location = unidentifiedItem.Location; // Match the existing item's location
+			}
+			else
+			{
+				if (!identifier.AddToBackpack(newItem)) return; // Bounced to the world
+				if (newItem.Deleted) return; // Auto-stacked
+
+				Rectangle2D bounds = identifier.Backpack.Bounds;
+				newItem.Location = new Point3D(bounds.X, bounds.Y, 0);
+			}
+		}
+
 		public static void IDItem( Mobile from, Item examine, object o, bool automatic )
 		{
 			if ( !examine.Movable )
@@ -122,104 +146,106 @@ namespace Server.Items
 						}
 
 						string paperName = "";
-
-						if ( paperType == 1 ){ from.AddToBackpack( new ReactiveArmorScroll() ); paperName = "reactive armor"; }
-						else if ( paperType == 2 ){ from.AddToBackpack( new ClumsyScroll() ); paperName = "clumsy"; }
-						else if ( paperType == 3 ){ from.AddToBackpack( new CreateFoodScroll() ); paperName = "create food"; }
-						else if ( paperType == 4 ){ from.AddToBackpack( new FeeblemindScroll() ); paperName = "feeblemind"; }
-						else if ( paperType == 5 ){ from.AddToBackpack( new HealScroll() ); paperName = "heal"; }
-						else if ( paperType == 6 ){ from.AddToBackpack( new MagicArrowScroll() ); paperName = "magic arrow"; }
-						else if ( paperType == 7 ){ from.AddToBackpack( new NightSightScroll() ); paperName = "night sight"; }
-						else if ( paperType == 8 ){ from.AddToBackpack( new WeakenScroll() ); paperName = "weaken"; }
-						else if ( paperType == 9 ){ from.AddToBackpack( new AgilityScroll() ); paperName = "agility"; }
-						else if ( paperType == 10 ){ from.AddToBackpack( new CunningScroll() ); paperName = "cunning"; }
-						else if ( paperType == 11 ){ from.AddToBackpack( new CureScroll() ); paperName = "cure"; }
-						else if ( paperType == 12 ){ from.AddToBackpack( new HarmScroll() ); paperName = "harm"; }
-						else if ( paperType == 13 ){ from.AddToBackpack( new MagicTrapScroll() ); paperName = "magic trap"; }
-						else if ( paperType == 14 ){ from.AddToBackpack( new MagicUnTrapScroll() ); paperName = "magic untrap"; }
-						else if ( paperType == 15 ){ from.AddToBackpack( new ProtectionScroll() ); paperName = "protection"; }
-						else if ( paperType == 16 ){ from.AddToBackpack( new StrengthScroll() ); paperName = "strength"; }
-						else if ( paperType == 17 ){ from.AddToBackpack( new BlessScroll() ); paperName = "bless"; }
-						else if ( paperType == 18 ){ from.AddToBackpack( new FireballScroll() ); paperName = "fireball"; }
-						else if ( paperType == 19 ){ from.AddToBackpack( new MagicLockScroll() ); paperName = "magic lock"; }
-						else if ( paperType == 20 ){ from.AddToBackpack( new PoisonScroll() ); paperName = "poison"; }
-						else if ( paperType == 21 ){ from.AddToBackpack( new TelekinisisScroll() ); paperName = "telekinesis"; }
-						else if ( paperType == 22 ){ from.AddToBackpack( new TeleportScroll() ); paperName = "teleport"; }
-						else if ( paperType == 23 ){ from.AddToBackpack( new UnlockScroll() ); paperName = "unlock"; }
-						else if ( paperType == 24 ){ from.AddToBackpack( new WallOfStoneScroll() ); paperName = "wall of stone"; }
-						else if ( paperType == 25 ){ from.AddToBackpack( new ArchCureScroll() ); paperName = "arch cure"; }
-						else if ( paperType == 26 ){ from.AddToBackpack( new ArchProtectionScroll() ); paperName = "arch protection"; }
-						else if ( paperType == 27 ){ from.AddToBackpack( new CurseScroll() ); paperName = "curse"; }
-						else if ( paperType == 28 ){ from.AddToBackpack( new FireFieldScroll() ); paperName = "fire field"; }
-						else if ( paperType == 29 ){ from.AddToBackpack( new GreaterHealScroll() ); paperName = "greater heal"; }
-						else if ( paperType == 30 ){ from.AddToBackpack( new LightningScroll() ); paperName = "lightning"; }
-						else if ( paperType == 31 ){ from.AddToBackpack( new ManaDrainScroll() ); paperName = "mana drain"; }
-						else if ( paperType == 32 ){ from.AddToBackpack( new RecallScroll() ); paperName = "recall"; }
-						else if ( paperType == 33 ){ from.AddToBackpack( new BladeSpiritsScroll() ); paperName = "blade spirits"; }
-						else if ( paperType == 34 ){ from.AddToBackpack( new DispelFieldScroll() ); paperName = "dispel field"; }
-						else if ( paperType == 35 ){ from.AddToBackpack( new IncognitoScroll() ); paperName = "incognito"; }
-						else if ( paperType == 36 ){ from.AddToBackpack( new MagicReflectScroll() ); paperName = "magic reflect"; }
-						else if ( paperType == 37 ){ from.AddToBackpack( new MindBlastScroll() ); paperName = "mind blast"; }
-						else if ( paperType == 38 ){ from.AddToBackpack( new ParalyzeScroll() ); paperName = "paralyze"; }
-						else if ( paperType == 39 ){ from.AddToBackpack( new PoisonFieldScroll() ); paperName = "poison field"; }
-						else if ( paperType == 40 ){ from.AddToBackpack( new SummonCreatureScroll() ); paperName = "summon creature"; }
-						else if ( paperType == 41 ){ from.AddToBackpack( new DispelScroll() ); paperName = "dispel"; }
-						else if ( paperType == 42 ){ from.AddToBackpack( new EnergyBoltScroll() ); paperName = "energy bolt"; }
-						else if ( paperType == 43 ){ from.AddToBackpack( new ExplosionScroll() ); paperName = "explosion"; }
-						else if ( paperType == 44 ){ from.AddToBackpack( new InvisibilityScroll() ); paperName = "invisibility"; }
-						else if ( paperType == 45 ){ from.AddToBackpack( new MarkScroll() ); paperName = "mark"; }
-						else if ( paperType == 46 ){ from.AddToBackpack( new MassCurseScroll() ); paperName = "mass curse"; }
-						else if ( paperType == 47 ){ from.AddToBackpack( new ParalyzeFieldScroll() ); paperName = "paralyze field"; }
-						else if ( paperType == 48 ){ from.AddToBackpack( new RevealScroll() ); paperName = "reveal"; }
-						else if ( paperType == 49 ){ from.AddToBackpack( new ChainLightningScroll() ); paperName = "chain lightning"; }
-						else if ( paperType == 50 ){ from.AddToBackpack( new EnergyFieldScroll() ); paperName = "energy field"; }
-						else if ( paperType == 51 ){ from.AddToBackpack( new FlamestrikeScroll() ); paperName = "flamestrike"; }
-						else if ( paperType == 52 ){ from.AddToBackpack( new GateTravelScroll() ); paperName = "gate travel"; }
-						else if ( paperType == 53 ){ from.AddToBackpack( new ManaVampireScroll() ); paperName = "mana vampire"; }
-						else if ( paperType == 54 ){ from.AddToBackpack( new MassDispelScroll() ); paperName = "mass dispel"; }
-						else if ( paperType == 55 ){ from.AddToBackpack( new MeteorSwarmScroll() ); paperName = "meteor swarm"; }
-						else if ( paperType == 56 ){ from.AddToBackpack( new PolymorphScroll() ); paperName = "polymorph"; }
-						else if ( paperType == 57 ){ from.AddToBackpack( new EarthquakeScroll() ); paperName = "earthquake"; }
-						else if ( paperType == 58 ){ from.AddToBackpack( new EnergyVortexScroll() ); paperName = "energy vortex"; }
-						else if ( paperType == 59 ){ from.AddToBackpack( new ResurrectionScroll() ); paperName = "resurrection"; }
-						else if ( paperType == 60 ){ from.AddToBackpack( new SummonAirElementalScroll() ); paperName = "summon air elemental"; }
-						else if ( paperType == 61 ){ from.AddToBackpack( new SummonDaemonScroll() ); paperName = "summon daemon"; }
-						else if ( paperType == 62 ){ from.AddToBackpack( new SummonEarthElementalScroll() ); paperName = "summon earth elemental"; }
-						else if ( paperType == 63 ){ from.AddToBackpack( new SummonFireElementalScroll() ); paperName = "summon fire elemental"; }
-						else if ( paperType == 64 ){ from.AddToBackpack( new SummonWaterElementalScroll() ); paperName = "summon water elemental"; }
-						else if ( paperType == 65 ){ from.AddToBackpack( new CurseWeaponScroll() ); paperName = "curse weapon"; }
-						else if ( paperType == 66 ){ from.AddToBackpack( new BloodOathScroll() ); paperName = "blood oath"; }
-						else if ( paperType == 67 ){ from.AddToBackpack( new CorpseSkinScroll() ); paperName = "corpse skin"; }
-						else if ( paperType == 68 ){ from.AddToBackpack( new EvilOmenScroll() ); paperName = "evil omen"; }
-						else if ( paperType == 69 ){ from.AddToBackpack( new PainSpikeScroll() ); paperName = "pain spike"; }
-						else if ( paperType == 70 ){ from.AddToBackpack( new WraithFormScroll() ); paperName = "wraith form"; }
-						else if ( paperType == 71 ){ from.AddToBackpack( new MindRotScroll() ); paperName = "mind rot"; }
-						else if ( paperType == 72 ){ from.AddToBackpack( new SummonFamiliarScroll() ); paperName = "summon familiar"; }
-						else if ( paperType == 73 ){ from.AddToBackpack( new AnimateDeadScroll() ); paperName = "animate dead"; }
-						else if ( paperType == 74 ){ from.AddToBackpack( new HorrificBeastScroll() ); paperName = "horrific beast"; }
-						else if ( paperType == 75 ){ from.AddToBackpack( new PoisonStrikeScroll() ); paperName = "poison strike"; }
-						else if ( paperType == 76 ){ from.AddToBackpack( new WitherScroll() ); paperName = "wither"; }
-						else if ( paperType == 77 ){ from.AddToBackpack( new StrangleScroll() ); paperName = "strangle"; }
-						else if ( paperType == 78 ){ from.AddToBackpack( new LichFormScroll() ); paperName = "lich form"; }
-						else if ( paperType == 79 ){ from.AddToBackpack( new ExorcismScroll() ); paperName = "exorcism"; }
-						else if ( paperType == 80 ){ from.AddToBackpack( new VengefulSpiritScroll() ); paperName = "vengeful spirit"; }
-						else if ( paperType == 81 ){ from.AddToBackpack( new VampiricEmbraceScroll() ); paperName = "vampiric embrace"; }
-						else if ( paperType == 82 ){ from.AddToBackpack( new ArmysPaeonScroll() ); paperName = "army's paeon sheet music"; }
-						else if ( paperType == 83 ){ from.AddToBackpack( new EnchantingEtudeScroll() ); paperName = "enchanting etude sheet music"; }
-						else if ( paperType == 84 ){ from.AddToBackpack( new EnergyCarolScroll() ); paperName = "energy carol sheet music"; }
-						else if ( paperType == 85 ){ from.AddToBackpack( new EnergyThrenodyScroll() ); paperName = "energy threnody sheet music"; }
-						else if ( paperType == 86 ){ from.AddToBackpack( new FireCarolScroll() ); paperName = "fire carol sheet music"; }
-						else if ( paperType == 87 ){ from.AddToBackpack( new FireThrenodyScroll() ); paperName = "fire threnody sheet music"; }
-						else if ( paperType == 88 ){ from.AddToBackpack( new FoeRequiemScroll() ); paperName = "foe requiem sheet music"; }
-						else if ( paperType == 89 ){ from.AddToBackpack( new IceCarolScroll() ); paperName = "ice carol sheet music"; }
-						else if ( paperType == 90 ){ from.AddToBackpack( new IceThrenodyScroll() ); paperName = "ice threnody sheet music"; }
-						else if ( paperType == 91 ){ from.AddToBackpack( new KnightsMinneScroll() ); paperName = "knight's minne sheet music"; }
-						else if ( paperType == 92 ){ from.AddToBackpack( new MagesBalladScroll() ); paperName = "mage's ballad sheet music"; }
-						else if ( paperType == 93 ){ from.AddToBackpack( new MagicFinaleScroll() ); paperName = "magic finale sheet music"; }
-						else if ( paperType == 94 ){ from.AddToBackpack( new PoisonCarolScroll() ); paperName = "poison carol sheet music"; }
-						else if ( paperType == 95 ){ from.AddToBackpack( new PoisonThrenodyScroll() ); paperName = "poison threnody sheet music"; }
-						else if ( paperType == 96 ){ from.AddToBackpack( new SheepfoeMamboScroll() ); paperName = "shepherd's dance sheet music"; }
-						else { from.AddToBackpack( new SinewyEtudeScroll() ); paperName = "sinewy etude sheet music"; }
+						Item item;
+						if ( paperType == 1 ){ item = new ReactiveArmorScroll(); paperName = "reactive armor"; }
+						else if ( paperType == 2 ){ item = new ClumsyScroll(); paperName = "clumsy"; }
+						else if ( paperType == 3 ){ item = new CreateFoodScroll(); paperName = "create food"; }
+						else if ( paperType == 4 ){ item = new FeeblemindScroll(); paperName = "feeblemind"; }
+						else if ( paperType == 5 ){ item = new HealScroll(); paperName = "heal"; }
+						else if ( paperType == 6 ){ item = new MagicArrowScroll(); paperName = "magic arrow"; }
+						else if ( paperType == 7 ){ item = new NightSightScroll(); paperName = "night sight"; }
+						else if ( paperType == 8 ){ item = new WeakenScroll(); paperName = "weaken"; }
+						else if ( paperType == 9 ){ item = new AgilityScroll(); paperName = "agility"; }
+						else if ( paperType == 10 ){ item = new CunningScroll(); paperName = "cunning"; }
+						else if ( paperType == 11 ){ item = new CureScroll(); paperName = "cure"; }
+						else if ( paperType == 12 ){ item = new HarmScroll(); paperName = "harm"; }
+						else if ( paperType == 13 ){ item = new MagicTrapScroll(); paperName = "magic trap"; }
+						else if ( paperType == 14 ){ item = new MagicUnTrapScroll(); paperName = "magic untrap"; }
+						else if ( paperType == 15 ){ item = new ProtectionScroll(); paperName = "protection"; }
+						else if ( paperType == 16 ){ item = new StrengthScroll(); paperName = "strength"; }
+						else if ( paperType == 17 ){ item = new BlessScroll(); paperName = "bless"; }
+						else if ( paperType == 18 ){ item = new FireballScroll(); paperName = "fireball"; }
+						else if ( paperType == 19 ){ item = new MagicLockScroll(); paperName = "magic lock"; }
+						else if ( paperType == 20 ){ item = new PoisonScroll(); paperName = "poison"; }
+						else if ( paperType == 21 ){ item = new TelekinisisScroll(); paperName = "telekinesis"; }
+						else if ( paperType == 22 ){ item = new TeleportScroll(); paperName = "teleport"; }
+						else if ( paperType == 23 ){ item = new UnlockScroll(); paperName = "unlock"; }
+						else if ( paperType == 24 ){ item = new WallOfStoneScroll(); paperName = "wall of stone"; }
+						else if ( paperType == 25 ){ item = new ArchCureScroll(); paperName = "arch cure"; }
+						else if ( paperType == 26 ){ item = new ArchProtectionScroll(); paperName = "arch protection"; }
+						else if ( paperType == 27 ){ item = new CurseScroll(); paperName = "curse"; }
+						else if ( paperType == 28 ){ item = new FireFieldScroll(); paperName = "fire field"; }
+						else if ( paperType == 29 ){ item = new GreaterHealScroll(); paperName = "greater heal"; }
+						else if ( paperType == 30 ){ item = new LightningScroll(); paperName = "lightning"; }
+						else if ( paperType == 31 ){ item = new ManaDrainScroll(); paperName = "mana drain"; }
+						else if ( paperType == 32 ){ item = new RecallScroll(); paperName = "recall"; }
+						else if ( paperType == 33 ){ item = new BladeSpiritsScroll(); paperName = "blade spirits"; }
+						else if ( paperType == 34 ){ item = new DispelFieldScroll(); paperName = "dispel field"; }
+						else if ( paperType == 35 ){ item = new IncognitoScroll(); paperName = "incognito"; }
+						else if ( paperType == 36 ){ item = new MagicReflectScroll(); paperName = "magic reflect"; }
+						else if ( paperType == 37 ){ item = new MindBlastScroll(); paperName = "mind blast"; }
+						else if ( paperType == 38 ){ item = new ParalyzeScroll(); paperName = "paralyze"; }
+						else if ( paperType == 39 ){ item = new PoisonFieldScroll(); paperName = "poison field"; }
+						else if ( paperType == 40 ){ item = new SummonCreatureScroll(); paperName = "summon creature"; }
+						else if ( paperType == 41 ){ item = new DispelScroll(); paperName = "dispel"; }
+						else if ( paperType == 42 ){ item = new EnergyBoltScroll(); paperName = "energy bolt"; }
+						else if ( paperType == 43 ){ item = new ExplosionScroll(); paperName = "explosion"; }
+						else if ( paperType == 44 ){ item = new InvisibilityScroll(); paperName = "invisibility"; }
+						else if ( paperType == 45 ){ item = new MarkScroll(); paperName = "mark"; }
+						else if ( paperType == 46 ){ item = new MassCurseScroll(); paperName = "mass curse"; }
+						else if ( paperType == 47 ){ item = new ParalyzeFieldScroll(); paperName = "paralyze field"; }
+						else if ( paperType == 48 ){ item = new RevealScroll(); paperName = "reveal"; }
+						else if ( paperType == 49 ){ item = new ChainLightningScroll(); paperName = "chain lightning"; }
+						else if ( paperType == 50 ){ item = new EnergyFieldScroll(); paperName = "energy field"; }
+						else if ( paperType == 51 ){ item = new FlamestrikeScroll(); paperName = "flamestrike"; }
+						else if ( paperType == 52 ){ item = new GateTravelScroll(); paperName = "gate travel"; }
+						else if ( paperType == 53 ){ item = new ManaVampireScroll(); paperName = "mana vampire"; }
+						else if ( paperType == 54 ){ item = new MassDispelScroll(); paperName = "mass dispel"; }
+						else if ( paperType == 55 ){ item = new MeteorSwarmScroll(); paperName = "meteor swarm"; }
+						else if ( paperType == 56 ){ item = new PolymorphScroll(); paperName = "polymorph"; }
+						else if ( paperType == 57 ){ item = new EarthquakeScroll(); paperName = "earthquake"; }
+						else if ( paperType == 58 ){ item = new EnergyVortexScroll(); paperName = "energy vortex"; }
+						else if ( paperType == 59 ){ item = new ResurrectionScroll(); paperName = "resurrection"; }
+						else if ( paperType == 60 ){ item = new SummonAirElementalScroll(); paperName = "summon air elemental"; }
+						else if ( paperType == 61 ){ item = new SummonDaemonScroll(); paperName = "summon daemon"; }
+						else if ( paperType == 62 ){ item = new SummonEarthElementalScroll(); paperName = "summon earth elemental"; }
+						else if ( paperType == 63 ){ item = new SummonFireElementalScroll(); paperName = "summon fire elemental"; }
+						else if ( paperType == 64 ){ item = new SummonWaterElementalScroll(); paperName = "summon water elemental"; }
+						else if ( paperType == 65 ){ item = new CurseWeaponScroll(); paperName = "curse weapon"; }
+						else if ( paperType == 66 ){ item = new BloodOathScroll(); paperName = "blood oath"; }
+						else if ( paperType == 67 ){ item = new CorpseSkinScroll(); paperName = "corpse skin"; }
+						else if ( paperType == 68 ){ item = new EvilOmenScroll(); paperName = "evil omen"; }
+						else if ( paperType == 69 ){ item = new PainSpikeScroll(); paperName = "pain spike"; }
+						else if ( paperType == 70 ){ item = new WraithFormScroll(); paperName = "wraith form"; }
+						else if ( paperType == 71 ){ item = new MindRotScroll(); paperName = "mind rot"; }
+						else if ( paperType == 72 ){ item = new SummonFamiliarScroll(); paperName = "summon familiar"; }
+						else if ( paperType == 73 ){ item = new AnimateDeadScroll(); paperName = "animate dead"; }
+						else if ( paperType == 74 ){ item = new HorrificBeastScroll(); paperName = "horrific beast"; }
+						else if ( paperType == 75 ){ item = new PoisonStrikeScroll(); paperName = "poison strike"; }
+						else if ( paperType == 76 ){ item = new WitherScroll(); paperName = "wither"; }
+						else if ( paperType == 77 ){ item = new StrangleScroll(); paperName = "strangle"; }
+						else if ( paperType == 78 ){ item = new LichFormScroll(); paperName = "lich form"; }
+						else if ( paperType == 79 ){ item = new ExorcismScroll(); paperName = "exorcism"; }
+						else if ( paperType == 80 ){ item = new VengefulSpiritScroll(); paperName = "vengeful spirit"; }
+						else if ( paperType == 81 ){ item = new VampiricEmbraceScroll(); paperName = "vampiric embrace"; }
+						else if ( paperType == 82 ){ item = new ArmysPaeonScroll(); paperName = "army's paeon sheet music"; }
+						else if ( paperType == 83 ){ item = new EnchantingEtudeScroll(); paperName = "enchanting etude sheet music"; }
+						else if ( paperType == 84 ){ item = new EnergyCarolScroll(); paperName = "energy carol sheet music"; }
+						else if ( paperType == 85 ){ item = new EnergyThrenodyScroll(); paperName = "energy threnody sheet music"; }
+						else if ( paperType == 86 ){ item = new FireCarolScroll(); paperName = "fire carol sheet music"; }
+						else if ( paperType == 87 ){ item = new FireThrenodyScroll(); paperName = "fire threnody sheet music"; }
+						else if ( paperType == 88 ){ item = new FoeRequiemScroll(); paperName = "foe requiem sheet music"; }
+						else if ( paperType == 89 ){ item = new IceCarolScroll(); paperName = "ice carol sheet music"; }
+						else if ( paperType == 90 ){ item = new IceThrenodyScroll(); paperName = "ice threnody sheet music"; }
+						else if ( paperType == 91 ){ item = new KnightsMinneScroll(); paperName = "knight's minne sheet music"; }
+						else if ( paperType == 92 ){ item = new MagesBalladScroll(); paperName = "mage's ballad sheet music"; }
+						else if ( paperType == 93 ){ item = new MagicFinaleScroll(); paperName = "magic finale sheet music"; }
+						else if ( paperType == 94 ){ item = new PoisonCarolScroll(); paperName = "poison carol sheet music"; }
+						else if ( paperType == 95 ){ item = new PoisonThrenodyScroll(); paperName = "poison threnody sheet music"; }
+						else if ( paperType == 96 ){ item = new SheepfoeMamboScroll(); paperName = "shepherd's dance sheet music"; }
+						else { item = new SinewyEtudeScroll(); paperName = "sinewy etude sheet music"; }
+						
+						ItemIdentification.ReplaceItemOrAddToBackpack(examine, item, from);
 
 						from.SendMessage("This seems to be a scroll of " + paperName + ".");
 					}
@@ -247,10 +273,10 @@ namespace Server.Items
 						from.FixedParticles( 0x374A, 10, 15, 5021, EffectLayer.Waist );
 						from.PlaySound( 0x205 );
 						int nPoison = Utility.RandomMinMax( 0, 10 );
-							if ( nPoison > 9 ) { from.ApplyPoison( from, Poison.Deadly ); }
-							else if ( nPoison > 7 ) { from.ApplyPoison( from, Poison.Greater ); }
-							else if ( nPoison > 4 ) { from.ApplyPoison( from, Poison.Regular ); }
-							else { from.ApplyPoison( from, Poison.Lesser ); }
+						if ( nPoison > 9 ) { from.ApplyPoison( from, Poison.Deadly ); }
+						else if ( nPoison > 7 ) { from.ApplyPoison( from, Poison.Greater ); }
+						else if ( nPoison > 4 ) { from.ApplyPoison( from, Poison.Regular ); }
+						else { from.ApplyPoison( from, Poison.Lesser ); }
 						from.SendMessage( "You accidentally trigger a poison spell!" );
 					}
 					else if ( nReaction > 6 )
@@ -318,15 +344,15 @@ namespace Server.Items
 				else if ( from.CheckTargetSkill( SkillName.ItemID, o, (Utility.RandomMinMax(-5, 70)), 120 ) || automatic )
 				{
 					Container pack = (Container)relic;
-						List<Item> items = new List<Item>();
-						foreach (Item item in pack.Items)
-						{
-							items.Add(item);
-						}
-						foreach (Item item in items)
-						{
-							from.AddToBackpack ( item );
-						}
+					List<Item> items = new List<Item>();
+					foreach (Item item in pack.Items)
+					{
+						items.Add(item);
+					}
+					foreach (Item item in items)
+					{
+						ItemIdentification.ReplaceItemOrAddToBackpack(examine, item, from);
+					}
 
 					from.SendMessage("You successfully identify the artifact.");
 					relic.Delete();
@@ -353,15 +379,15 @@ namespace Server.Items
 				else if ( from.CheckTargetSkill( SkillName.ItemID, o, (Utility.RandomMinMax(-5, 70)), 120 ) || automatic )
 				{
 					Container pack = (Container)relic;
-						List<Item> items = new List<Item>();
-						foreach (Item item in pack.Items)
-						{
-							items.Add(item);
-						}
-						foreach (Item item in items)
-						{
-							from.AddToBackpack ( item );
-						}
+					List<Item> items = new List<Item>();
+					foreach (Item item in pack.Items)
+					{
+						items.Add(item);
+					}
+					foreach (Item item in items)
+					{
+						ItemIdentification.ReplaceItemOrAddToBackpack(examine, item, from);
+					}
 
 					from.SendMessage("You successfully identify the item.");
 					relic.Delete();

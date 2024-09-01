@@ -98,7 +98,22 @@ namespace Server.Items
             writer.Write( IDAttempt );
 		}
 
-		public override void Deserialize( GenericReader reader )
+        public override int GetTotal(TotalType type)
+        {
+			switch(type)
+			{
+				case TotalType.Weight:
+				case TotalType.Items:
+					// Hack: Reduce by 1 to account for wrapping container
+					return Math.Max(base.GetTotal(type) - 1, 0);
+
+				case TotalType.Gold:
+				default:
+					return base.GetTotal(type);
+			}
+        }
+
+        public override void Deserialize( GenericReader reader )
 		{
 			base.Deserialize( reader );
 			int version = reader.ReadInt();

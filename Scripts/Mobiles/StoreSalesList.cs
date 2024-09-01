@@ -1121,6 +1121,7 @@ namespace Server.Mobiles
 				if ( MyServerSettings.BuyChance() ){Add( typeof( Bow ), 17 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( Crossbow ), 25 ); }  
 				if ( MyServerSettings.BuyChance() ){Add( typeof( CompositeBow ), 23 ); } 
+				if ( MyServerSettings.BuyChance() ){Add( typeof( Yumi ), 26 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( RepeatingCrossbow ), 22 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( MagicalShortbow ), 18 ); } 
 				if ( MyServerSettings.BuyChance() ){Add( typeof( ElvenCompositeLongbow ), 18 ); } 
@@ -1363,7 +1364,6 @@ namespace Server.Mobiles
 				Add( typeof( LeftLeg ), Utility.RandomMinMax( 5, 10 ) );
 				Add( typeof( RightLeg ), Utility.RandomMinMax( 5, 10 ) );
 				Add( typeof( TastyHeart ), Utility.RandomMinMax( 10, 20 ) );
-				Add( typeof( BodyPart ), Utility.RandomMinMax( 30, 90 ) );
 				Add( typeof( Head ), Utility.RandomMinMax( 10, 20 ) );
 				Add( typeof( LeftArm ), Utility.RandomMinMax( 5, 10 ) );
 				Add( typeof( RightArm ), Utility.RandomMinMax( 5, 10 ) );
@@ -6476,7 +6476,6 @@ namespace Server.Mobiles
 				Add( typeof( LeftLeg ), Utility.RandomMinMax( 5, 10 ) );
 				Add( typeof( RightLeg ), Utility.RandomMinMax( 5, 10 ) );
 				Add( typeof( TastyHeart ), Utility.RandomMinMax( 10, 20 ) );
-				Add( typeof( BodyPart ), Utility.RandomMinMax( 30, 90 ) );
 				Add( typeof( Head ), Utility.RandomMinMax( 10, 20 ) );
 				Add( typeof( LeftArm ), Utility.RandomMinMax( 5, 10 ) );
 				Add( typeof( RightArm ), Utility.RandomMinMax( 5, 10 ) );
@@ -6654,7 +6653,6 @@ namespace Server.Mobiles
 				if ( MyServerSettings.BuyRareChance() ){Add( typeof( MyNecromancerSpellbook ), Utility.Random( 250,1000 ) ); } 
 				Add( typeof( CorpseSailor ), Utility.RandomMinMax( 50, 300 ) );
 				Add( typeof( CorpseChest ), Utility.RandomMinMax( 50, 300 ) );
-				Add( typeof( BodyPart ), Utility.RandomMinMax( 30, 90 ) );
 				Add( typeof( BuriedBody ), Utility.RandomMinMax( 50, 300 ) );
 				Add( typeof( BoneContainer ), Utility.RandomMinMax( 50, 300 ) );
 				Add( typeof( LeftLeg ), Utility.RandomMinMax( 5, 10 ) );
@@ -6786,7 +6784,6 @@ namespace Server.Mobiles
 				Add( typeof( CorpseSailor ), Utility.RandomMinMax( 50, 300 ) );
 				Add( typeof( CorpseChest ), Utility.RandomMinMax( 50, 300 ) );
 				Add( typeof( BuriedBody ), Utility.RandomMinMax( 50, 300 ) );
-				Add( typeof( BodyPart ), Utility.RandomMinMax( 30, 90 ) );
 				Add( typeof( BoneContainer ), Utility.RandomMinMax( 50, 300 ) );
 				Add( typeof( LeftLeg ), Utility.RandomMinMax( 5, 10 ) );
 				Add( typeof( RightLeg ), Utility.RandomMinMax( 5, 10 ) );
@@ -6879,7 +6876,6 @@ namespace Server.Mobiles
 				Add( typeof( CorpseSailor ), Utility.RandomMinMax( 50, 300 ) );
 				Add( typeof( CorpseChest ), Utility.RandomMinMax( 50, 300 ) );
 				Add( typeof( BuriedBody ), Utility.RandomMinMax( 50, 300 ) );
-				Add( typeof( BodyPart ), Utility.RandomMinMax( 30, 90 ) );
 				Add( typeof( BoneContainer ), Utility.RandomMinMax( 50, 300 ) );
 				Add( typeof( LeftLeg ), Utility.RandomMinMax( 5, 10 ) );
 				Add( typeof( RightLeg ), Utility.RandomMinMax( 5, 10 ) );
@@ -7581,7 +7577,9 @@ namespace Server.Mobiles
 				if ( MyServerSettings.BuyRareChance() ){Add( typeof( ValasCompromise ), Utility.Random( 20000,30000 ) ); }
 				if ( MyServerSettings.BuyRareChance() ){Add( typeof( Valicious ), Utility.Random( 20000,30000 ) ); }
 				if ( MyServerSettings.BuyRareChance() ){Add( typeof( WizardsStrongArm ), Utility.Random( 20000,30000 ) ); }
-				
+				if ( MyServerSettings.BuyRareChance() ){Add( typeof( MangarsRobe ), Utility.Random( 20000,30000 ) ); }
+				if ( MyServerSettings.BuyRareChance() ){Add( typeof( MangarsNecroRobe ), Utility.Random( 20000,30000 ) ); }
+				if ( MyServerSettings.BuyRareChance() ){Add( typeof( BardicFeatheredHat ), Utility.Random( 20000,30000 ) ); }
 			}
 		}
 	}
@@ -10030,4 +10028,42 @@ namespace Server.Mobiles
 			}
 		}
 	}
+	
+	public class SBReadOnlyArtifacts : SBInfo
+	{
+		private List<GenericBuyInfo> m_BuyInfo = new InternalBuyInfo();
+		private IShopSellInfo m_SellInfo = new InternalSellInfo();
+
+		public SBReadOnlyArtifacts()
+		{
+		}
+
+		public override IShopSellInfo SellInfo { get { return m_SellInfo; } }
+		public override List<GenericBuyInfo> BuyInfo { get { return m_BuyInfo; } }
+
+		public class InternalBuyInfo : List<GenericBuyInfo>
+		{
+			public InternalBuyInfo()
+			{
+				for(int i = 1; i < Server.Items.SearchBook.MaxArtifactNumber; i++)
+				{
+					string artifact = Server.Items.SearchBook.GetArtifactListForBook(i, 2);
+					if (string.IsNullOrWhiteSpace(artifact)) continue;
+
+					ArtifactBuyInfo buyInfo = ArtifactBuyInfo.Create(artifact);
+					if (buyInfo == null) continue;
+
+					Add(buyInfo);
+				}
+			}
+		}
+
+		public class InternalSellInfo : GenericSellInfo
+		{
+			public InternalSellInfo()
+			{
+			}
+		}
+	}	
+	
 }

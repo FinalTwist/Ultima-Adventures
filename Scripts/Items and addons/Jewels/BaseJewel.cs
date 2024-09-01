@@ -22,7 +22,7 @@ namespace Server.Items
 		Diamond
 	}
 
-	public abstract class BaseJewel : Item, ICraftable, ITinkerRepairable
+	public abstract class BaseJewel : Item, ICraftable, ITinkerRepairable, IAugmentableItem
 	{
 		private int m_MaxHitPoints;
 		private int m_HitPoints;
@@ -149,7 +149,10 @@ namespace Server.Items
 
 		public virtual int ArtifactRarity{ get{ return 0; } }
 
-		public BaseJewel( int itemID, Layer layer ) : base( itemID )
+        [CommandProperty(AccessLevel.GameMaster)]
+        public bool IsAugmented { get; set; }
+
+        public BaseJewel( int itemID, Layer layer ) : base( itemID )
 		{
 			m_AosAttributes = new AosAttributes( this );
 			m_AosResistances = new AosElementAttributes( this );
@@ -445,9 +448,11 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 4 ); // version
+			writer.Write( (int) 5 ); // version
 
-			writer.WriteEncodedInt( (int) m_Quality );
+            writer.Write(IsAugmented);
+
+            writer.WriteEncodedInt( (int) m_Quality );
 			writer.Write( (Mobile) m_Crafter );
 
 			writer.WriteEncodedInt( (int) m_MaxHitPoints );
@@ -469,6 +474,11 @@ namespace Server.Items
 
 			switch ( version )
 			{
+				case 5:
+				{
+					IsAugmented = reader.ReadBool();
+					goto case 4;
+				}
 				case 4:
 				{
 					m_Quality = (ArmorQuality)reader.ReadEncodedInt();

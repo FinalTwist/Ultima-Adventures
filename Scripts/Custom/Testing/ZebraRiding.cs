@@ -52,12 +52,6 @@ namespace Server.Mobiles
 				base.OnDoubleClick( from );
 		}
 
-		public override bool OnBeforeDeath()
-		{
-			Server.Items.HorseArmor.DropArmor( this );
-			return base.OnBeforeDeath();
-		}
-
 		public ZebraRiding( Serial serial ) : base( serial )
 		{
 		}

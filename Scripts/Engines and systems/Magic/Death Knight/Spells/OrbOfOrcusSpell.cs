@@ -60,7 +60,7 @@ namespace Server.Spells.DeathKnight
 			}
 			else if ( CheckSequence() )
 			{
-				if ( Caster.BeginAction( typeof( DefensiveSpell ) ) && CheckFizzle() )
+				if ( Caster.BeginAction( typeof( DefensiveSpell ) ) )
 				{
 					int value = (int)( GetKarmaPower( Caster ) / 4 );
 
@@ -73,9 +73,9 @@ namespace Server.Spells.DeathKnight
 				{
 					Caster.SendLocalizedMessage( 1005385 ); // The spell will not adhere to you at this time.
 				}
-
-				FinishSequence();
 			}
+
+			FinishSequence();
 		}
 	}
 }

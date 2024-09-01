@@ -159,7 +159,9 @@ namespace Server.Mobiles
 		TooSoonToCastASpell,
 		NotEnoughSpellSkill,
 		NoExplosionPotion,
-		SquireHasANewTeam // Added 1.9.7
+		SquireHasANewTeam, // Added 1.9.7
+		NoBushidoBook,
+		NoNecroBook,
 	}
 	
 	public class SquireDialog
@@ -1800,16 +1802,40 @@ namespace Server.Mobiles
 					case 0: squire.Say( "I am too low on mana to cast this." ); break;
 				}
 			}
+			else if( dialog == SquireDialogTree.NoBushidoBook )
+			{
+				switch( Utility.Random( 6 ) )
+				{
+					case 5: squire.Say( "I would struggle casting that, " + squire.m_MasterNickname + ", I need a Bushido book." ); break;
+					case 4: squire.Emote( "*Does not have a Bushido book.*" ); break;
+					case 3: squire.Say( "Will need a Bushido book to cast this." ); break;
+					case 2: squire.Say( "Sorry, I don't seem to have a Bushido book on me." ); break;
+					case 1: squire.Say( "I am unfamiliar with that spell, " + squire.m_MasterNickname + ", I will need a Bushido book." ); break;
+					case 0: squire.Say( "I will need a Bushido book to cast that." ); break;
+				}
+			}
 			else if( dialog == SquireDialogTree.NoChivalryBook )
 			{
 				switch( Utility.Random( 6 ) )
 				{
-					case 5: squire.Say( "I would struggle casting that, " + squire.m_MasterNickname + ", I need a chivalry, Bushido or Necro book." ); break;
-					case 4: squire.Emote( "*Does not have a chivalry, Bushido or Necro book.*" ); break;
-					case 3: squire.Say( "Will need a chivalry, Bushido or Necro book to cast this." ); break;
-					case 2: squire.Say( "Sorry, I don't seem to have a book of chivalry on me." ); break;
-					case 1: squire.Say( "I am unfamiliar with that spell, " + squire.m_MasterNickname + ", I will need a chivalry, Bushido or Necro book." ); break;
-					case 0: squire.Say( "I will need a book of chivalry, Bushido or Necro to cast that." ); break;
+					case 5: squire.Say( "I would struggle casting that, " + squire.m_MasterNickname + ", I need a Chivalry book." ); break;
+					case 4: squire.Emote( "*Does not have a Chivalry book.*" ); break;
+					case 3: squire.Say( "Will need a Chivalry book to cast this." ); break;
+					case 2: squire.Say( "Sorry, I don't seem to have a Chivalry book on me." ); break;
+					case 1: squire.Say( "I am unfamiliar with that spell, " + squire.m_MasterNickname + ", I will need a Chivalry book." ); break;
+					case 0: squire.Say( "I will need a Chivalry book to cast that." ); break;
+				}
+			}
+			else if( dialog == SquireDialogTree.NoNecroBook )
+			{
+				switch( Utility.Random( 6 ) )
+				{
+					case 5: squire.Say( "I would struggle casting that, " + squire.m_MasterNickname + ", I need a Necro book." ); break;
+					case 4: squire.Emote( "*Does not have a Necro book.*" ); break;
+					case 3: squire.Say( "Will need a Necro book to cast this." ); break;
+					case 2: squire.Say( "Sorry, I don't seem to have a Necro book on me." ); break;
+					case 1: squire.Say( "I am unfamiliar with that spell, " + squire.m_MasterNickname + ", I will need a Necro book." ); break;
+					case 0: squire.Say( "I will need a Necro book to cast that." ); break;
 				}
 			}
 			else if( dialog == SquireDialogTree.TooSoonToMeditate )

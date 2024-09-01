@@ -186,7 +186,7 @@ namespace Server.Items
 		[Constructable]
 		public GreenTeaBasket() : base( 0x284B )
 		{
-			Weight = 10.0;
+			Weight = 3.0;
 		}
 
 		public GreenTeaBasket( Serial serial ) : base( serial )

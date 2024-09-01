@@ -110,7 +110,7 @@ namespace Server.Items
 					int RegCount = weed.RegAmount;
 					if ( RegCount < 1 ){ RegCount = 1; }
 
-					Server.Items.UnknownReagent.GiveReagent( from, RegCount );
+					Server.Items.UnknownReagent.GiveReagent( from, RegCount, weed );
 
 					weed.Delete();
 				}
@@ -126,7 +126,7 @@ namespace Server.Items
 				{
 					useCharges = true;
 					Item brew = targeted as Item;
-					Server.Items.UnknownLiquid.GivePotion( from );
+					Server.Items.UnknownLiquid.GivePotion( from, brew );
 					brew.Delete();
 				}
 				else if ( ( iBook.IsChildOf( from.Backpack ) ) && ( iBook is UnknownKeg ) ) //////////////////////////////////////////////////////////////////////////

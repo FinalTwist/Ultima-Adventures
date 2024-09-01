@@ -220,7 +220,7 @@ namespace Server.Commands
 				
 				foreach ( Mobile m in World.Mobiles.Values )
 				{
-                			if (m is PlayerMobile && ((PlayerMobile)m).LastOnline > (DateTime.Now - TimeSpan.FromDays( 60 ) ))  
+                			if (m is PlayerMobile && ((PlayerMobile)m).LastOnline > (DateTime.UtcNow - TimeSpan.FromDays( 60 ) ))  
                 			{
                    				PlayerMobile p = (PlayerMobile)m;
 						int wealth = 0;
@@ -700,6 +700,9 @@ namespace Server.Misc
 			double chance = 0.05;
 
 			chance += from.Fame / 70000;
+
+			if ( from is DemonKnight || from is BaseChampion || from is Widow)
+					return true;
 
 			if (Utility.RandomDouble() < chance)
 				return true;
@@ -1471,14 +1474,22 @@ namespace Server.Misc
                 {
                     BaseCreature bc = (BaseCreature)m;
                     if (bc.ControlMaster != null) continue; // Don't risk deleting a player's pet
-
+					
                     if ( !bc.Controlled && !bc.IsHitchStabled && !bc.Breeding && !bc.IsStabled && bc.Map == null) 
                     {
 						nullmobs.Add( bc );
                     }
 					Point3D loc = bc.Location;
 					if (loc.X == 0 && loc.Y == 0)
-						nullmobs.Add( bc );
+					{ 
+						if (bc is BaseMount)
+						{
+							var bm = (BaseMount)bc;
+							if (bm.Rider != null) continue;
+						}
+
+						nullmobs.Add(bc); 
+					}
                 }
             }
 			for ( int i = 0; i < nullmobs.Count; ++i )
@@ -1496,7 +1507,7 @@ namespace Server.Misc
 
 			ArrayList toRemove = new ArrayList();
 
-			DateTime cutoffDate = DateTime.Now.AddYears(0 - 1);
+			DateTime cutoffDate = DateTime.UtcNow.AddYears(0 - 1);
 			foreach (Mobile m in World.Mobiles.Values)
 			{
 				if (m is PlayerMobile && ((PlayerMobile)m).LastOnline < cutoffDate)

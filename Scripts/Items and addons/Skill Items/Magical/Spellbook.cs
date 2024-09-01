@@ -26,7 +26,7 @@ namespace Server.Items
 		Jedi
 	}
 
-	public class Spellbook : Item, ICraftable, ISlayer
+	public class Spellbook : Item, ICraftable, ISlayer, IAugmentableItem
 	{
 		public static void Initialize()
 		{
@@ -837,12 +837,17 @@ namespace Server.Items
 			set { m_Slayer2 = value; InvalidateProperties(); }
 		}
 
-		public override void Serialize( GenericWriter writer )
+		[CommandProperty( AccessLevel.GameMaster )]
+        public bool IsAugmented { get; set; }
+
+        public override void Serialize( GenericWriter writer )
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 3 ); // version
-			writer.Write( m_Crafter );
+			writer.Write( (int) 4 ); // version
+            writer.Write(IsAugmented);
+
+            writer.Write( m_Crafter );
 
 			writer.Write( (int)m_Slayer );
 			writer.Write( (int)m_Slayer2 );
@@ -862,6 +867,11 @@ namespace Server.Items
 
 			switch ( version )
 			{
+				case 4:
+				{
+					IsAugmented = reader.ReadBool();
+					goto case 3;
+				}
 				case 3:
 				{
 					m_Crafter = reader.ReadMobile();

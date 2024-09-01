@@ -11,8 +11,9 @@ namespace Server.Items
 		[Constructable]
 		public ColoredAnvil() : base( 0xFAF )
 		{
+			Name = "Anvil";
 			Server.Misc.MaterialInfo.ColorPlainMetal( this );
-			Weight = 100;
+			Weight = 10; // BOD reward. Reduced weight.
 		}
 
 		public ColoredAnvil( Serial serial ) : base( serial )

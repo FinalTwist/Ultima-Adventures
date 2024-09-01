@@ -14,6 +14,7 @@ namespace Server.Items
 		[Constructable]
 		public ResilientBracer()
 		{
+			Name = "Resilient Bracer";
 			Hue = 0x488;
 
 

@@ -183,7 +183,7 @@ namespace Server.Items
 			if ( switches.Length == 0 )
 				return;
 
-			if ( m_From.Combatant != null && m_From.InRange( m_From.Combatant.Location, 7 ) && m_From.Combatant.InLOS( m_From ) );
+			if ( m_From.Combatant != null && m_From.InRange( m_From.Combatant.Location, 7 ) && m_From.Combatant.InLOS( m_From ) )
 			{
 				m_From.SendMessage("You can't disguise yourself in the middle of a fight.");
 				return;

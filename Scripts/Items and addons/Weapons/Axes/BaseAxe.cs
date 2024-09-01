@@ -124,10 +124,9 @@ namespace Server.Items
 
 		public override void AddNameProperties( ObjectPropertyList list )
 		{
-			
 			base.AddNameProperties( list );	
 
-			if (!(this is Pickaxe) && !(this is SturdyPickaxe)&& !(this is GargoylesPickaxe))
+			if (!IsMiningTool(this))
 				list.Add( "Say 'I wish to start lumberjacking' near a tree to chop it automatically." ); 
 		}
 

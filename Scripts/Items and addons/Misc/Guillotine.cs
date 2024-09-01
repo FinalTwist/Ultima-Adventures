@@ -41,7 +41,7 @@ namespace Server.Items
 
 				Timer.DelayCall( TimeSpan.FromSeconds( 5.00 ), new TimerCallback( BackUp ) );
 
-				m_NextUse = DateTime.Now + TimeSpan.FromSeconds( 10.0 );
+				m_NextUse = DateTime.UtcNow + TimeSpan.FromSeconds( 10.0 );
 			}
 		}
 

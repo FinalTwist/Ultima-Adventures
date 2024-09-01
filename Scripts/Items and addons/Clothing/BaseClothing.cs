@@ -30,7 +30,7 @@ namespace Server.Items
 		int MaxArcaneCharges{ get; set; }
 	}
 
-	public abstract class BaseClothing : Item, IDyable, IScissorable, ICraftable, IWearableDurability, ITailorRepairable
+	public abstract class BaseClothing : Item, IDyable, IScissorable, ICraftable, IWearableDurability, ITailorRepairable, IAugmentableItem
 	{
 
 		public override bool OnEquip( Mobile from )
@@ -242,7 +242,10 @@ namespace Server.Items
 		public virtual bool AllowFemaleWearer{ get{ return true; } }
 		public virtual bool CanBeBlessed{ get{ return true; } }
 
-		public int ComputeStatReq( StatType type )
+        [CommandProperty(AccessLevel.GameMaster)]
+        public bool IsAugmented { get; set; }
+
+        public int ComputeStatReq( StatType type )
 		{
 			int v;
 
@@ -823,9 +826,11 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 5 ); // version
+			writer.Write( (int) 6 ); // version
 
-			SaveFlag flags = SaveFlag.None;
+            writer.Write(IsAugmented);
+
+            SaveFlag flags = SaveFlag.None;
 
 			SetSaveFlag( ref flags, SaveFlag.Resource,			m_Resource != DefaultResource );
 			SetSaveFlag( ref flags, SaveFlag.Attributes,		!m_AosAttributes.IsEmpty );
@@ -880,6 +885,11 @@ namespace Server.Items
 
 			switch ( version )
 			{
+				case 6:
+				{
+					IsAugmented = reader.ReadBool();
+					goto case 5;
+				}
 				case 5:
 				{
 					SaveFlag flags = (SaveFlag)reader.ReadEncodedInt();

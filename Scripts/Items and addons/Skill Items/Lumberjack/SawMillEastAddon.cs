@@ -69,7 +69,7 @@ namespace Server.Items
 		{
 			get
 			{
-				return new SawMillEastAddon();
+				return new SawMillEastAddon(){ Hue = this.Hue };
 			}
 		}
 

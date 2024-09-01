@@ -230,8 +230,10 @@ namespace Server.Items
 				typeof( NecromancerBarrel ),	typeof( PotionOfMight ),				typeof( PotionOfWisdom ),
                 typeof( RoughWeightingStone ),  typeof( DenseWeightingStone ),          typeof( ElementalWeightingStone ),
                 typeof( HeavyWeightingStone ),  typeof( ConsecratedWeightingStone ),
-                typeof( PotionOfDexterity ),	typeof( CarpetBuild ),					typeof( DwarvenForge )
-			};
+                typeof( PotionOfDexterity ),	typeof( CarpetBuild ),					typeof( DwarvenForge ),
+                typeof( RoughBowString ),       typeof( DenseBowString ),               typeof( ElementalBowString ),
+                typeof( HeavyBowString ),       typeof( ConsecratedBowString ),
+            };
 
 		public static Type[] DungeonRareTypes{ get{ return m_DungeonRareTypes; } }
 

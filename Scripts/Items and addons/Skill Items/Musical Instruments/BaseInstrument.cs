@@ -17,7 +17,7 @@ namespace Server.Items
 		Exceptional
 	}
 
-	public abstract class BaseInstrument : Item, ICraftable, ISlayer
+	public abstract class BaseInstrument : Item, ICraftable, ISlayer, IAugmentableItem
 	{
 		private int m_WellSound, m_BadlySound;
 		private SlayerName m_Slayer, m_Slayer2;
@@ -449,7 +449,10 @@ namespace Server.Items
 
 		public virtual int ArtifactRarity{ get{ return 0; } }
 
-		public BaseInstrument( int itemID, int wellSound, int badlySound ) : base( itemID )
+        [CommandProperty(AccessLevel.GameMaster)]
+        public bool IsAugmented { get; set; }
+
+        public BaseInstrument( int itemID, int wellSound, int badlySound ) : base( itemID )
 		{
 			m_WellSound = wellSound;
 			m_BadlySound = badlySound;
@@ -737,9 +740,11 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 3 ); // version
+			writer.Write( (int) 4 ); // version
 
-			writer.Write( m_ReplenishesCharges );
+            writer.Write(IsAugmented);
+
+            writer.Write( m_ReplenishesCharges );
 			if( m_ReplenishesCharges )
 				writer.Write( m_LastReplenished );
 
@@ -769,6 +774,9 @@ namespace Server.Items
 			base.Deserialize( reader );
 
 			int version = reader.ReadInt();
+
+			if (version >= 4)
+				IsAugmented = reader.ReadBool();
 
 			m_ReplenishesCharges = reader.ReadBool();
 			if( m_ReplenishesCharges )
@@ -900,6 +908,11 @@ namespace Server.Items
 
 			if ( context != null && context.DoNotColor )
 				Hue = 0;
+
+			if ( Core.AOS && tool is BaseRunicTool )
+			{
+				((BaseRunicTool)tool).ApplyAttributesTo( this );
+			}
 
 			return quality;
 		}

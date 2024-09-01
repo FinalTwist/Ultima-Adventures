@@ -1075,7 +1075,29 @@ namespace Server.Spells
 
 					Target originalTarget = m_Spell.m_Caster.Target;
 
-					m_Spell.OnCast();
+					// Let negative karma users still get skill gains but no benefits (for Death Knight)
+					if ( m_Spell is PaladinSpell && m_Spell.m_Caster.Karma < 0 )
+					{
+						if (m_Spell.CheckSequence())
+							m_Spell.m_Caster.SendMessage("You unenthusiastically utter your prayer and no one answers.");
+
+						m_Spell.FinishSequence();
+
+						return;
+					}
+					else if ( m_Spell is NecromancerSpell && 0 < m_Spell.m_Caster.Karma)
+					{
+						if (m_Spell.CheckSequence())
+							m_Spell.m_Caster.SendMessage("You perform the ritual, but your call to the dead remains unanswered.");
+
+						m_Spell.FinishSequence();
+
+						return;
+					} 
+					else
+					{
+						m_Spell.OnCast();
+					}
 
 					if ( m_Spell.m_Caster.Player && m_Spell.m_Caster.Target != originalTarget && m_Spell.Caster.Target != null )
 						m_Spell.m_Caster.Target.BeginTimeout( m_Spell.m_Caster, TimeSpan.FromSeconds( 30.0 ) );

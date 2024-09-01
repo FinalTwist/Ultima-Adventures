@@ -40,10 +40,10 @@ namespace Server.Items
 
 		public override void AddNameProperties( ObjectPropertyList list )
 		{
-			
 			base.AddNameProperties( list );	
-			
-			list.Add( "Say 'I wish to start skinning' near a corpse to butcher automatically." ); 
+		
+			if (GetType() == typeof(SkinningKnife))
+				list.Add( "Say 'I wish to start skinning' near a corpse to butcher automatically." ); 
 		}
 
 		public override void Serialize( GenericWriter writer )

@@ -410,19 +410,26 @@ namespace Server.Items
 				}
 				else
 				{
-					int amount = dropped.Amount;
-					if (dropped is BoltOfCloth) amount *= 50;
-					else if (dropped is EmbalmingFluid) amount *= 50;
+					int amountMultiplier = dropped is BoltOfCloth || dropped is EmbalmingFluid ? 50 : 1;
+					var amountMissing = (int)(amountMultiplier * Math.Ceiling((5000f - ShoppeResources) / amountMultiplier));
+					var amount = Math.Min(amountMissing, dropped.Amount * amountMultiplier) / amountMultiplier;
+					dropped.Amount -= amount;
+					ShoppeResources += amount * amountMultiplier;
 
-					ShoppeResources = ShoppeResources + amount;
 					if ( ShoppeResources >= 5000 )
 					{
 						ShoppeResources = 5000;
 						from.SendMessage( "You add more resources but now your shoppe is full." );
 					}
 					from.PlaySound( 0x42 );
-					dropped.Delete();
-					return true;
+
+					if (dropped.Amount < 1)
+					{
+						dropped.Delete();
+						return true;
+					}
+
+					return false;
 				}
 			}
 			else if ( procTools )
@@ -668,103 +675,103 @@ namespace Server.Items
 		public string Shoppe_Name { get{ return ShoppeName; } set{ ShoppeName = value; InvalidateProperties(); } }
 
 		public int ShoppeGold;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public int Shoppe_Gold{ get { return ShoppeGold; } set { ShoppeGold = value; InvalidateProperties(); } }
 
 		public int ShoppeTools;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public int Shoppe_Tools{ get { return ShoppeTools; } set { ShoppeTools = value; InvalidateProperties(); } }
 
 		public int ShoppeResources;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public int Shoppe_Resources{ get { return ShoppeResources; } set { ShoppeResources = value; InvalidateProperties(); } }
 
 		public int ShoppeReputation;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public int Shoppe_Reputation{ get { return ShoppeReputation; } set { ShoppeReputation = value; InvalidateProperties(); } }
 
 		public int ShoppePage;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public int Shoppe_Page{ get { return ShoppePage; } set { ShoppePage = value; InvalidateProperties(); } }
 
 		// ------------------------------------------------------------------------------------------------------------------------------------------
 
 		public string ShelfTitle;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Shelf_Title{ get { return ShelfTitle; } set { ShelfTitle = value; InvalidateProperties(); } }
 
 		public int ShelfItem;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public int Shelf_Item{ get { return ShelfItem; } set { ShelfItem = value; InvalidateProperties(); } }
 
 		public int ShelfSkill;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public int Shelf_Skill{ get { return ShelfSkill; } set { ShelfSkill = value; InvalidateProperties(); } }
 
 		public NpcGuild ShelfGuild;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public NpcGuild Shelf_Guild{ get { return ShelfGuild; } set { ShelfGuild = value; InvalidateProperties(); } }
 
 		public string ShelfTools;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Shelf_Tools{ get { return ShelfTools; } set { ShelfTools = value; InvalidateProperties(); } }
 
 		public string ShelfResources;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Shelf_Resources{ get { return ShelfResources; } set { ShelfResources = value; InvalidateProperties(); } }
 
 		public int ShelfSound;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public int Shelf_Sound{ get { return ShelfSound; } set { ShelfSound = value; InvalidateProperties(); } }
 
 		// ------------------------------------------------------------------------------------------------------------------------------------------
 
 		public string Customer01;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Customer_01{ get { return Customer01; } set { Customer01 = value; InvalidateProperties(); } }
 
 		public string Customer02;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Customer_02{ get { return Customer02; } set { Customer02 = value; InvalidateProperties(); } }
 
 		public string Customer03;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Customer_03{ get { return Customer03; } set { Customer03 = value; InvalidateProperties(); } }
 
 		public string Customer04;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Customer_04{ get { return Customer04; } set { Customer04 = value; InvalidateProperties(); } }
 
 		public string Customer05;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Customer_05{ get { return Customer05; } set { Customer05 = value; InvalidateProperties(); } }
 
 		public string Customer06;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Customer_06{ get { return Customer06; } set { Customer06 = value; InvalidateProperties(); } }
 
 		public string Customer07;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Customer_07{ get { return Customer07; } set { Customer07 = value; InvalidateProperties(); } }
 
 		public string Customer08;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Customer_08{ get { return Customer08; } set { Customer08 = value; InvalidateProperties(); } }
 
 		public string Customer09;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Customer_09{ get { return Customer09; } set { Customer09 = value; InvalidateProperties(); } }
 
 		public string Customer10;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Customer_10{ get { return Customer10; } set { Customer10 = value; InvalidateProperties(); } }
 
 		public string Customer11;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Customer_11{ get { return Customer11; } set { Customer11 = value; InvalidateProperties(); } }
 
 		public string Customer12;
-		[CommandProperty(AccessLevel.Owner)]
+		[CommandProperty(AccessLevel.GameMaster)]
 		public string Customer_12{ get { return Customer12; } set { Customer12 = value; InvalidateProperties(); } }
 
 		public static int GetSkillValue( int job, Mobile from )

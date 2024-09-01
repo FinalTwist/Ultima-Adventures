@@ -2575,7 +2575,7 @@ namespace Server.Gumps
 			AddImageTiled( 10, 10, 440, 402, 2624 ); 
 			AddAlphaRegion( 10, 10, 440, 402 ); 
 
-			AddHtml( 120, 10, 210, 18, String.Format( "<basefont color = #FFFFFF><center><i>{0}</i></center></basefont>", c.Name ), false, false );
+			AddHtml( 120, 10, 210, 18, String.Format( "<basefont color=#FFFFFF><center><i>{0}</i></center></basefont>", c.Name ), false, false );
 
 			int pages = ( Core.AOS ? 5 : 3 );
 			int buttonID1, buttonID2;
@@ -2583,9 +2583,9 @@ namespace Server.Gumps
 			if ( page == SquireTitlePage.PageOne )
 			{
 				//Middle Display
-				AddHtml( 145, 24, 160, 18, "<basefont color = #FFD57A><center>Titles Page: One</center></basefont>", false, false );
+				AddHtml( 145, 24, 160, 18, "<basefont color=#FFD57A><center>Titles Page: One</center></basefont>", false, false );
 				
-				AddHtml( 49, 20, 160, 18, "<basefont color = #FFD57A>None</basefont>", false, false );
+				AddHtml( 49, 20, 160, 18, "<basefont color=#FFD57A>None</basefont>", false, false );
 				AddButton( 20, 14, 0x9A8, 0x9AA, GetButtonID( 3, 1 ), GumpButtonType.Reply, 0 );
 				
 				//First Third
@@ -2594,226 +2594,226 @@ namespace Server.Gumps
 				
 				if( c.Skills.Anatomy.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Biologist</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Biologist</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 1 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.AnimalLore.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Naturalist</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Naturalist</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 2 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Parry.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Duelist</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Duelist</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 3 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Peacemaking.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Pacifier</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Pacifier</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 4 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Discordance.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Demoralizer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Demoralizer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 5 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Healer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Healer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 6 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Hiding.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Shade</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Shade</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 7 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Provocation.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Rouser</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Rouser</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 8 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Lockpicking.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Infiltrator</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Infiltrator</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 9 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Tactics.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Tactician</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Tactician</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 10 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Musicianship.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Bard</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Bard</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 11 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 100.0 && c.Str >= 125 && !c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>He-Man</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>He-Man</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 23 ), GumpButtonType.Reply, 0 );
 				}
 				else if( c.Skills.Swords.Base >= 100.0 && c.Str >= 125 && c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Shield Maiden</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Shield Maiden</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 23 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Musicianship.Base >= 100.0 && c.Skills.Peacemaking.Base >= 100.0 && c.Skills.Discordance.Base >= 100.0 && c.Skills.Provocation.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Musical Genius</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Musical Genius</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 25 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Hiding.Base >= 100.0 && c.Skills.Stealing.Base >= 100.0 && c.Skills.Lockpicking.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Shadow</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Shadow</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 27 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Parry.Base >= 100.0 && c.Skills.Swords.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Knight</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Knight</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 29 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Parry.Base >= 100.0 && c.Skills.Wrestling.Base >= 100.0 && c.Str >= 100 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Captain Britannia</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Captain Britannia</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 31 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Hiding.Base >= 100.0 && c.Skills.Fencing.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Piercing Shade</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Piercing Shade</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 33 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Hiding.Base >= 100.0 && c.Skills.Archery.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Shooting Shade</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Shooting Shade</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 35 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 100.0 && c.Skills.Wrestling.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Monk</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Monk</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 37 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Archery.Base >= 70.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Ranger</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Ranger</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 39 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
@@ -2823,221 +2823,221 @@ namespace Server.Gumps
 				
 				if( c.Skills.Archery.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Archer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Archer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 12 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.SpiritSpeak.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Medium</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Medium</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 13 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Stealing.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Pickpocket</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Pickpocket</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 14 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.EvalInt.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Scholar</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Scholar</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 15 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Veterinary.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Veterinarian</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Veterinarian</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 16 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Swordsman</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Swordsman</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 17 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Macing.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Armsman</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Armsman</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 18 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Fencing.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Fencer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Fencer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 19 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Wrestling.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Wrestler</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Wrestler</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 20 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Focus.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Driven</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Driven</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 21 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Meditation.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Stoic</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Stoic</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 22 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 90.0 && c.Skills.Macing.Base >= 90.0 && c.Skills.Archery.Base >= 90.0 && c.Skills.Fencing.Base >= 90.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Weapon Master</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Weapon Master</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 24 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Wrestling.Base >= 80.0 && c.Str >= 125 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Pugilist</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Pugilist</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 26 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Parry.Base >= 80.0 && ( c.Skills.Swords.Base >= 80.0 || c.Skills.Macing.Base >= 80.0 ) )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Templar</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Templar</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 28 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Fencing.Base >= 100.0 && c.Skills.Parry.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Piercing Shield</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Piercing Shield</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 30 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Hiding.Base >= 100.0 && c.Skills.Swords.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Striking Shade</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Striking Shade</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 32 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Hiding.Base >= 100.0 && c.Skills.Macing.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Crushing Shade</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Crushing Shade</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 34 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Hiding.Base >= 100.0 && c.Skills.Musicianship.Base >= 100.0 )
 				{ // Corrected incorrect "Crushing Shade" display to "Singing Shade" 1.9.5
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Singing Shade</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Singing Shade</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 36 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 50.0 && c.Skills.Swords.Base >= 50.0 && c.Skills.Parry.Base >= 50.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Protector</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Protector</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 38 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 80.0 && c.Skills.Veterinary.Base >= 80.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Dedicated Healer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Dedicated Healer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 40 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
@@ -3047,236 +3047,236 @@ namespace Server.Gumps
 				
 				if( c.Str >= 125 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Strong</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Strong</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 41 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Dex >= 125 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Dexterous</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Dexterous</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 42 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Int >= 125 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Intelligent</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Intelligent</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 43 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 80.0 && c.Skills.Musicianship.Base >= 80.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Bardic Healer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Bardic Healer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 44 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 80.0 && c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Priestess</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Priestess</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 45 ), GumpButtonType.Reply, 0 );
 				}
 				else if( c.Skills.Healing.Base >= 80.0 && !c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Priest</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Priest</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 45 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Str >= 10 && c.Dex >= 40 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Cup Bearer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Cup Bearer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 46 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Str >= 50 && c.Dex >= 40 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Dapifer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Dapifer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 47 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( ( c.Skills.Swords.Base >= 60.0 || c.Skills.Fencing.Base >= 60.0 || c.Skills.Macing.Base >= 60.0 || c.Skills.Archery.Base >= 60.0 ) && c.Skills.Tactics.Base >= 60.0 && c.Str >= 70 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Doorward</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Doorward</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 48 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( ( c.Skills.Swords.Base >= 60.0 || c.Skills.Fencing.Base >= 60.0 || c.Skills.Macing.Base >= 60.0 || c.Skills.Archery.Base >= 60.0 ) && c.Skills.Tactics.Base >= 60.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Pursuivant</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Pursuivant</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 49 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( ( c.Skills.Swords.Base >= 90.0 || c.Skills.Fencing.Base >= 90.0 || c.Skills.Macing.Base >= 90.0 || c.Skills.Archery.Base >= 90.0 ) && c.Skills.Tactics.Base >= 90.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Herald</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Herald</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 50 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Str >= 20 && c.Dex >= 10 && c.Int >= 20 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Jester</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Jester</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 51 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Int >= 60 && c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Lady in Waiting</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Lady in Waiting</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 52 ), GumpButtonType.Reply, 0 );
 				}
 				else if( c.Int >= 60 && !c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Gentleman in Waiting</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Gentleman in Waiting</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 52 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Int >= 50 && c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Maid of Honor</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Maid of Honor</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 53 ), GumpButtonType.Reply, 0 );
 				}
 				else if( c.Int >= 50 && !c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Gentleman of Honor</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Gentleman of Honor</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 53 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( ( c.Skills.Swords.Base >= 30.0 || c.Skills.Fencing.Base >= 30.0 || c.Skills.Macing.Base >= 30.0 || c.Skills.Archery.Base >= 30.0 ) && c.Skills.Tactics.Base >= 30.0 && c.Str >= 30 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Page</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Page</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 54 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( ( c.Skills.Swords.Base >= 50.0 || c.Skills.Fencing.Base >= 50.0 || c.Skills.Macing.Base >= 50.0 || c.Skills.Archery.Base >= 50.0 ) && c.Skills.Tactics.Base >= 30.0 && c.Str >= 40 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Pantler</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Pantler</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 55 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
-				AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Squire</basefont>", false, false );
+				AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Squire</basefont>", false, false );
 				AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 56 ), GumpButtonType.Reply, 0 );
 				Downwards = Downwards + 18;
 				
 				if( ( c.Skills.Swords.Base >= 70.0 || c.Skills.Fencing.Base >= 70.0 || c.Skills.Macing.Base >= 70.0 || c.Skills.Archery.Base >= 70.0 ) && c.Skills.Tactics.Base >= 70.0 && c.Str >= 60 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Steward</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Steward</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 60 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Musicianship.Base >= 30.0 && c.Skills.Provocation.Base >= 30.0 && c.Skills.Peacemaking.Base >= 30.0 && c.Skills.Discordance.Base >= 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Jongleur</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Jongleur</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 59 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Musicianship.Base >= 50.0 && c.Skills.Provocation.Base >= 50.0 && c.Skills.Peacemaking.Base >= 50.0 && c.Skills.Discordance.Base >= 50.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Minstrel</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Minstrel</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 57 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Musicianship.Base >= 90.0 && c.Skills.Provocation.Base >= 90.0 && c.Skills.Peacemaking.Base >= 90.0 && c.Skills.Discordance.Base >= 90.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Troubadour</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Troubadour</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 2, 58 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				//Navigation
 				if( ( c.Controlled && from == c.ControlMaster ) || from.AccessLevel >= AccessLevel.GameMaster )
 				{
-					AddHtml( 353, 20, 160, 18, "<basefont color = #FFD57A>Page Two</basefont>", false, false );
+					AddHtml( 353, 20, 160, 18, "<basefont color=#FFD57A>Page Two</basefont>", false, false );
 					AddButton( 417, 22, 5601, 5605, GetButtonID( 1, 2 ), GumpButtonType.Reply, 0 );
 				}
 			}
@@ -3284,9 +3284,9 @@ namespace Server.Gumps
 			if ( page == SquireTitlePage.PageTwo )
 			{
 				//Middle Display
-				AddHtml( 145, 24, 160, 18, "<basefont color = #FFD57A><center>Titles Page: Two</center></basefont>", false, false );
+				AddHtml( 145, 24, 160, 18, "<basefont color=#FFD57A><center>Titles Page: Two</center></basefont>", false, false );
 				
-				AddHtml( 49, 20, 160, 18, "<basefont color = #FFD57A>None</basefont>", false, false );
+				AddHtml( 49, 20, 160, 18, "<basefont color=#FFD57A>None</basefont>", false, false );
 				AddButton( 20, 14, 0x9A8, 0x9AA, GetButtonID( 3, 1 ), GumpButtonType.Reply, 0 );
 				
 				//First Third
@@ -3295,241 +3295,241 @@ namespace Server.Gumps
 				
 				if( c.Int >= 40 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Dreamer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Dreamer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 1 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 80.0 && c.Skills.Tactics.Base >= 80.0 && c.Skills.Parry.Base >= 80.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Landsknect</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Landsknect</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 2 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Archery.Base >= 80.0 && c.Skills.Tactics.Base >= 80.0 && !c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Crossbow-man</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Crossbow-man</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 3 ), GumpButtonType.Reply, 0 );
 				}
 				else if( c.Skills.Archery.Base >= 80.0 && c.Skills.Tactics.Base >= 80.0 && c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Crossbow-maiden</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Crossbow-maiden</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 3 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Archery.Base >= 80.0 && c.Skills.Tactics.Base >= 80.0 && !c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Longbow-man</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Longbow-man</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 4 ), GumpButtonType.Reply, 0 );
 				}
 				else if( c.Skills.Archery.Base >= 80.0 && c.Skills.Tactics.Base >= 80.0 && c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Longbow-maiden</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Longbow-maiden</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 4 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 90.0 && c.Skills.Tactics.Base >= 90.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Lancer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Lancer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 5 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 110.0 && c.Skills.Tactics.Base >= 110.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Dragoon</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Dragoon</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 6 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Archery.Base >= 110.0 && c.Skills.Tactics.Base >= 110.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Calvary Archer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Calvary Archer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 7 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Int >= 50 && c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Maid</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Maid</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 8 ), GumpButtonType.Reply, 0 );
 				}
 				else if( c.Int >= 50 && !c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Gentleman</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Gentleman</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 8 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Dex >= 60 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Runner</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Runner</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 9 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Dex >= 90 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Sprinter</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Sprinter</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 10 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Macing.Base >= 110.0 && c.Str >= 125 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Hammerdon</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Hammerdon</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 11 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 110.0 && c.Skills.Anatomy.Base >= 110.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Healing Touch</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Healing Touch</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 12 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 110.0 && c.Skills.Hiding.Base >= 110.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Light Shade</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Light Shade</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 13 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( !c.Female && c.Skills.Swords.Base >= 60.0 && c.Skills.Archery.Base >= 60.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Yeoman</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Yeoman</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 14 ), GumpButtonType.Reply, 0 );
 				}
 				else if( c.Female && c.Skills.Swords.Base >= 60.0 && c.Skills.Archery.Base >= 60.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Yeomaiden</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Yeomaiden</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 14 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Tactics.Base >= 50.0 && c.Skills.Healing.Base >= 60.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Attendant</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Attendant</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 15 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Wrestling.Base >= 80.0 && c.Skills.Musicianship.Base >= 80.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Dancer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Dancer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 16 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 80.0 && c.Skills.Wrestling.Base >= 80.0 && c.Skills.Fencing.Base >= 80.0 && c.Skills.Tactics.Base >= 80.0 && c.Skills.Anatomy.Base >= 80.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Warrior</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Warrior</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 17 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 50.0 && c.Skills.Wrestling.Base >= 50.0 && c.Skills.Fencing.Base >= 50.0 && c.Skills.Tactics.Base >= 50.0 && c.Skills.Anatomy.Base >= 50.0 && c.Skills.Archery.Base >= 50.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Freelancer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Freelancer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 18 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Hiding.Base >= 50.0 && c.Skills.Stealing.Base >= 50.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Thief</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Thief</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 19 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Hiding.Base >= 90.0 && c.Skills.Stealing.Base >= 50.0 && c.Skills.Parry.Base >= 70.0 && ( c.Skills.Swords.Base >= 100.0 || c.Skills.Macing.Base >= 100.0 ) )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Dark Knight</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Dark Knight</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 20 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
@@ -3539,221 +3539,221 @@ namespace Server.Gumps
 				
 				if( c.Skills.Wrestling.Base >= 110.0 && c.Skills.Tactics.Base >= 110.0 && c.Skills.Anatomy.Base >= 110.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Black Belt</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Black Belt</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 21 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 110.0 && c.Skills.Anatomy.Base >= 110.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Devout</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Devout</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 22 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Archery.Base >= 110.0 && c.Skills.Tactics.Base >= 110.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Hunter</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Hunter</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 23 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Parry.Base >= 70.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Defender</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Defender</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 24 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Parry.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Wall</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Wall</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 25 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Parry.Base >= 100.0 && c.Skills.Swords.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Gladiator</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Gladiator</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 26 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Archery.Base >= 120.0 && c.Skills.Tactics.Base >= 120.0 && c.Dex >= 125 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Sniper</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Sniper</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 27 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 60.0 && c.Skills.Anatomy.Base >= 60.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Medic</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Medic</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 28 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 80.0 && c.Skills.Anatomy.Base >= 80.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Field Medic</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Field Medic</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 29 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 100.0 && c.Str >= 100 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Berserker</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Berserker</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 30 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Macing.Base >= 100.0 && c.Str >= 100 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Ravager</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Ravager</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 31 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 120.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Sword</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Sword</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 32 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Macing.Base >= 120.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Hammer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Hammer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 33 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Archery.Base >= 120.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Bow</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Bow</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 34 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Fencing.Base >= 120.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Point</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Point</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 35 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 120.0 || c.Skills.Veterinary.Base >= 120.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Bandage</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Bandage</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 36 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Parry.Base >= 120.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Shield</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Shield</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 37 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Stealing.Base >= 120.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Knife</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Knife</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 38 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Hiding.Base >= 120.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Cloak</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Cloak</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 39 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Str >= 10.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Weak</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Weak</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 40 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
@@ -3763,228 +3763,228 @@ namespace Server.Gumps
 				
 				if( c.Dex >= 10.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Slow</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Slow</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 41 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Int >= 10.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Dim</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Dim</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 42 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Hiding.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Hidden</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Hidden</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 43 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 75.0 && c.Skills.Swords.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Healing Blade</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Healing Blade</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 44 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Musicianship.Base >= 75.0 && c.Skills.Swords.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Song Sword</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Song Sword</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 45 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Veterinary.Base >= 75.0 && c.Skills.Swords.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Caring Blade</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Caring Blade</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 46 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Meditation.Base >= 75.0 && c.Skills.Swords.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Resting Sword</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Resting Sword</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 47 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.SpiritSpeak.Base >= 75.0 && c.Skills.Swords.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Channeled Blade</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Channeled Blade</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 48 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Stealing.Base >= 75.0 && c.Skills.Swords.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Stolen Sword</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Stolen Sword</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 49 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Stealing.Base >= 75.0 && c.Skills.Swords.Base >= 75.0 && c.Skills.Hiding.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Cutthroat</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Cutthroat</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 50 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.SpiritSpeak.Base >= 90.0 && c.Skills.Healing.Base >= 90.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Spirit Channeler</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Spirit Channeler</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 51 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.SpiritSpeak.Base >= 90.0 && c.Skills.Meditation.Base >= 90.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Fortune Teller</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Fortune Teller</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 52 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Macing.Base >= 75.0 && c.Skills.Meditation.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Hammer of Rest</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Hammer of Rest</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 53 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Macing.Base >= 75.0 && c.Skills.SpiritSpeak.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Channeled Hammer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Channeled Hammer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 54 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Macing.Base >= 75.0 && c.Skills.Musicianship.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Hammer of Song</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Hammer of Song</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 55 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Macing.Base >= 75.0 && c.Skills.Healing.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Healing Hammer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Healing Hammer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 56 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Macing.Base >= 75.0 && c.Skills.Veterinary.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Caring Hammer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Caring Hammer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 57 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Archery.Base >= 75.0 && c.Skills.Musicianship.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Singing Shot</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Singing Shot</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 58 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Archery.Base >= 75.0 && c.Skills.SpiritSpeak.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Channeled Shot</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Channeled Shot</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 59 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Archery.Base >= 75.0 && c.Skills.Healing.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Healing Shot</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Healing Shot</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 4, 60 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				//Navigation
 				if( ( c.Controlled && from == c.ControlMaster ) || from.AccessLevel >= AccessLevel.GameMaster )
 				{
-					AddHtml( 353, 20, 160, 18, "<basefont color = #FFD57A>Page Three</basefont>", false, false );
+					AddHtml( 353, 20, 160, 18, "<basefont color=#FFD57A>Page Three</basefont>", false, false );
 					AddButton( 417, 22, 5601, 5605, GetButtonID( 1, 3 ), GumpButtonType.Reply, 0 );
 				}
 			}
@@ -3992,9 +3992,9 @@ namespace Server.Gumps
 			if ( page == SquireTitlePage.PageThree ) // Added 1.9.5
 			{
 				//Middle Display
-				AddHtml( 145, 24, 160, 18, "<basefont color = #FFD57A><center>Titles Page: Three</center></basefont>", false, false );
+				AddHtml( 145, 24, 160, 18, "<basefont color=#FFD57A><center>Titles Page: Three</center></basefont>", false, false );
 				
-				AddHtml( 49, 20, 160, 18, "<basefont color = #FFD57A>None</basefont>", false, false );
+				AddHtml( 49, 20, 160, 18, "<basefont color=#FFD57A>None</basefont>", false, false );
 				AddButton( 20, 14, 0x9A8, 0x9AA, GetButtonID( 3, 1 ), GumpButtonType.Reply, 0 );
 				
 				//First Third
@@ -4003,221 +4003,221 @@ namespace Server.Gumps
 				
 				if( c.Skills.Poisoning.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Assassin</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Assassin</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 1 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 100.0 && c.Skills.Hiding.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Toxic Shade</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Toxic Shade</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 2 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 100.0 && c.Skills.Swords.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Venomous Blade</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Venomous Blade</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 3 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 100.0 && c.Skills.Archery.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Poison Shot</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Poison Shot</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 4 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 100.0 && c.Skills.Healing.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Traitorous Healer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Traitorous Healer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 5 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 100.0 && c.Skills.Fencing.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Poisonous Point</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Poisonous Point</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 6 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Musicianship.Base >= 75.0 && c.Skills.Fencing.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Singing Stab</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Singing Stab</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 7 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 75.0 && c.Skills.Fencing.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Healing Point</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Healing Point</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 8 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.SpiritSpeak.Base >= 75.0 && c.Skills.Fencing.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Channelled Stab</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Channelled Stab</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 9 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Parry.Base >= 75.0 && c.Skills.Fencing.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Protected Point</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Protected Point</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 10 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Meditation.Base >= 75.0 && c.Skills.Fencing.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Rested Point</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Rested Point</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 11 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 75.0 && c.Skills.Fencing.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Serpent's Tooth</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Serpent's Tooth</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 12 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 75.0 && c.Skills.Fencing.Base >= 75.0 && c.Skills.Tactics.Base >= 75.0 && c.Dex >= 70 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Serpent's Fang</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Serpent's Fang</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 13 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 80.0 && c.Str >= 75 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Strong Poison</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Strong Poison</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 14 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 80.0 && c.Dex >= 75 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Quick Poison</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Quick Poison</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 15 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 80.0 && c.Int >= 75 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Smart Poison</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Smart Poison</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 16 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 75.0 && c.Skills.SpiritSpeak.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Channelled Venom</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Channelled Venom</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 17 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 100.0 && c.Skills.Hiding.Base >= 100.0 && c.Skills.Stealing.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Villain</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Villain</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 18 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 75.0 && c.Skills.Macing.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Blunt Poison</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Blunt Poison</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 19 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 75.0 && c.Skills.Stealing.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Stolen Venom</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Stolen Venom</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 20 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
@@ -4227,221 +4227,221 @@ namespace Server.Gumps
 				
 				if( c.Skills.Veterinary.Base >= 75.0 && c.Skills.Fencing.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Caring Point</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Caring Point</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 21 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Veterinary.Base >= 75.0 && c.Skills.Archery.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Caring Shot</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Caring Shot</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 22 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 75.0 && c.Skills.Archery.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Healing Shot</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Healing Shot</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 23 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Parry.Base >= 100.0 && c.Skills.MagicResist.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>True Defender</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>True Defender</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 24 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Parry.Base >= 110.0 && c.Skills.MagicResist.Base >= 110.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Resistant Wall</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Resistant Wall</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 25 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.SpiritSpeak.Base >= 80.0 && c.Skills.MagicResist.Base >= 80.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Channelled Bubble</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Channelled Bubble</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 26 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 90.0 && c.Skills.MagicResist.Base >= 90.0 && c.Skills.Parry.Base >= 90.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Protector</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Protector</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 27 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.MagicResist.Base >= 30.0 && c.Skills.Meditation.Base >= 30.0 && c.Skills.SpiritSpeak.Base >= 30.0 && c.Skills.Healing.Base >= 30.0 && c.Skills.Veterinary.Base >= 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Disciple</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Disciple</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 29 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 20.0 && c.Skills.Fencing.Base >= 20.0 && c.Skills.Macing.Base >= 20.0 && c.Skills.Archery.Base >= 20.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Recruit</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Recruit</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 33 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 35.0 && c.Skills.Fencing.Base >= 35.0 && c.Skills.Macing.Base >= 35.0 && c.Skills.Archery.Base >= 35.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Initiate</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Initiate</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 34 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 50.0 && c.Skills.Fencing.Base >= 50.0 && c.Skills.Macing.Base >= 50.0 && c.Skills.Archery.Base >= 50.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Soldier</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Soldier</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 28 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 70.0 || c.Skills.Fencing.Base >= 70.0 || c.Skills.Macing.Base >= 70.0 || c.Skills.Archery.Base >= 70.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Mercenary</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Mercenary</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 30 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 95.0 && c.Skills.Fencing.Base >= 95.0 && c.Skills.Macing.Base >= 95.0 && c.Skills.Archery.Base >= 95.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Veteran</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Veteran</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 31 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.SkillsTotal >= 700.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Mentor</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Mentor</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 32 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 95.0 && c.Skills.Fencing.Base >= 95.0 && c.Skills.Hiding.Base >= 95.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>True Assassin</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>True Assassin</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 35 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Dex >= 80 && c.Int >= 80 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Thrifty</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Thrifty</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 36 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.TotalGold <= 100 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Poor</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Poor</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 37 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.TotalGold >= 1000 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Moderately Wealthy</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Moderately Wealthy</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 38 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.TotalGold >= 5000 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Wealthy</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Wealthy</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 39 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.TotalGold >= 10000 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Pretty Rich</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Pretty Rich</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 40 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
@@ -4451,233 +4451,233 @@ namespace Server.Gumps
 				
 				if( c.TotalGold >= 50000 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Rich</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Rich</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 41 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.TotalGold >= 100000 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Filthy Rich</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Filthy Rich</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 42 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.SpiritSpeak.Base >= 90 && c.Skills.Hiding.Base >= 90 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Mysterious</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Mysterious</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 43 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.SpiritSpeak.Base >= 90 && c.Skills.Hiding.Base >= 90 && c.Skills.Poisoning.Base >= 90 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Toxic Mystery</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Toxic Mystery</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 44 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Str >= 100 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Athlete</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Athlete</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 45 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Dex >= 100 && c.Skills.Archery.Base >= 100.0 && c.Skills.Tactics.Base >= 100.0 && c.Skills.Stealing.Base >= 50.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Desperado</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Desperado</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 46 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Dex >= 100 && c.Skills.Hiding.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Sneaky</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Sneaky</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 47 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Fencing.Base >= 100.0 && c.Skills.Swords.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Sword Artist</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Sword Artist</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 48 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Archery.Base >= 100.0 && c.Skills.Swords.Base >= 100.0 && c.Female == false )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Hunter</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Hunter</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 49 ), GumpButtonType.Reply, 0 );
 				}
 				else if( c.Skills.Archery.Base >= 100.0 && c.Skills.Swords.Base >= 100.0 && c.Female == true )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Huntress</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Huntress</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 49 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Stealing.Base >= 60.0 && c.Skills.Poisoning.Base >= 60.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Troublesome</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Troublesome</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 50 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Healing.Base >= 60.0 && c.Skills.Veterinary.Base >= 60.0 && c.Skills.SpiritSpeak.Base >= 60.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Acolyte</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Acolyte</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 51 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( ( c.Skills.Swords.Base >= 90.0 || c.Skills.Macing.Base >= 90.0  || c.Skills.Fencing.Base >= 90.0  || c.Skills.Archery.Base >= 90.0 ) && c.Skills.Tactics.Base >= 120.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Wingleader</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Wingleader</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 52 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Str >= 110 && c.Int >= 70 && c.Dex >= 90 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Mama Jama</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Mama Jama</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 53 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Dex >= 40 && c.Skills.Stealing.Base >= 50.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Rum Thief</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Rum Thief</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 54 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Dex >= 80 && c.Skills.Stealing.Base >= 80.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Red-Hand</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Red-Hand</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 55 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Dex >= 90 && c.Skills.Stealing.Base >= 90.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Heretic</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Heretic</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 56 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 90.0 && c.Skills.Stealing.Base >= 90.0 && c.Skills.Hiding.Base >= 90.0 && c.Int >= 80 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Sly</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Sly</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 57 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Parry.Base >= 100.0 && c.Skills.MagicResist.Base >= 100.0 && c.Str >= 120 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Glorious</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Glorious</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 58 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Hiding.Base >= 70.0 && c.Dex >= 90 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Stalker</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Stalker</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 59 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Archery.Base >= 120.0 && c.Dex >= 125 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Deadeye</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Deadeye</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 5, 60 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				// Changed Navigation To Lead To Page Four 1.9.7
 				//Navigation
 				if( ( c.Controlled && from == c.ControlMaster ) || from.AccessLevel >= AccessLevel.GameMaster )
 				{
-					AddHtml( 353, 20, 160, 18, "<basefont color = #FFD57A>Page Four</basefont>", false, false );
+					AddHtml( 353, 20, 160, 18, "<basefont color=#FFD57A>Page Four</basefont>", false, false );
 					AddButton( 417, 22, 5601, 5605, GetButtonID( 1, 4 ), GumpButtonType.Reply, 0 );
 				}
 			}
@@ -4685,9 +4685,9 @@ namespace Server.Gumps
 			if ( page == SquireTitlePage.PageFour )
 			{
 				//Middle Display
-				AddHtml( 145, 24, 160, 18, "<basefont color = #FFD57A><center>Titles Page: Four</center></basefont>", false, false );
+				AddHtml( 145, 24, 160, 18, "<basefont color=#FFD57A><center>Titles Page: Four</center></basefont>", false, false );
 				
-				AddHtml( 49, 20, 160, 18, "<basefont color = #FFD57A>None</basefont>", false, false );
+				AddHtml( 49, 20, 160, 18, "<basefont color=#FFD57A>None</basefont>", false, false );
 				AddButton( 20, 14, 0x9A8, 0x9AA, GetButtonID( 3, 1 ), GumpButtonType.Reply, 0 );
 				
 				//First Third
@@ -4696,221 +4696,221 @@ namespace Server.Gumps
 				
 				if( c.Skills.Chivalry.Base > 30.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Paladin</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Paladin</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 1 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base > 75.0 && c.Skills.Swords.Base > 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Sword</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Sword</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 2 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base > 75.0 && c.Skills.Macing.Base > 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Hammer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Hammer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 3 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base > 75.0 && c.Skills.Fencing.Base > 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Striker</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Striker</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 4 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base > 75.0 && c.Skills.SpiritSpeak.Base > 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Channel</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Channel</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 5 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base > 75.0 && c.Skills.Hiding.Base > 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Shade</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Shade</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 6 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base > 75.0 && c.Skills.Healing.Base > 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Healer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Healer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 7 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base > 75.0 && c.Skills.Parry.Base > 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Shield</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Shield</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 8 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.TithingPoints > 0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Slightly Devoted</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Slightly Devoted</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 9 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.TithingPoints > 1000 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Kinda Devoted</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Kinda Devoted</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 10 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.TithingPoints > 10000 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Devoted</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Devoted</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 11 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.TithingPoints > 50000 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Very Devoted</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Very Devoted</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 12 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.TithingPoints > 100000 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Extremely Devoted</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Extremely Devoted</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 13 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Skills.Swords.Base >= 100.0 && c.Skills.Parry.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>True Paladin</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>True Paladin</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 14 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Skills.Poisoning.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Toxin</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Toxin</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 15 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 75.0 && c.Skills.Archery.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Shot</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Shot</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 16 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Skills.Archery.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Blessed Ranger</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Blessed Ranger</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 17 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 75.0 && c.Skills.Veterinary.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Caring Light</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Caring Light</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 18 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 75.0 && c.Skills.Veterinary.Base >= 75.0 && c.Skills.Healing.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Light</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Light</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 19 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 75.0 && c.Skills.Musicianship.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Song</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Song</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 20 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
@@ -4920,231 +4920,231 @@ namespace Server.Gumps
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Str >= 100 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Strong Paladin</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Strong Paladin</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 21 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Int >= 100 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Smart Paladin</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Smart Paladin</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 22 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Dex >= 100 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Quick Paladin</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Quick Paladin</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 23 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 50.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Worthy</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Worthy</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 24 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 50.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Despicable</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Despicable</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 25 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 75.0 && c.Skills.Chivalry.Base >= 75.0 && c.Skills.Hiding.Base >= 75.0 && c.Skills.Stealing.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Shining Shadow</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Shining Shadow</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 26 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Poisoning.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Foetid</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Foetid</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 27 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && ( c.Skills.Swords.Base >= 100.0 || c.Skills.Macing.Base >= 100.0 || c.Skills.Fencing.Base >= 100.0 ) )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Warrior</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Warrior</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 28 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Vixen</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Vixen</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 29 ), GumpButtonType.Reply, 0 );
 				}
 				else if( !c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Fox</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Fox</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 29 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Focus.Base >= 100.0 && c.Skills.Chivalry.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Focus</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Focus</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 30 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Tactics.Base >= 100.0 && c.Skills.Chivalry.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Tactician</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Tactician</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 31 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Stealing.Base >= 100.0 && c.Skills.Chivalry.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Thief</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Thief</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 32 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base == 0.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Faithless</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Faithless</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 33 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 25.0 && c.Skills.Healing.Base >= 25.0 && c.Skills.Veterinary.Base >= 25.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Humble</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Humble</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 34 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Female && c.Skills.Chivalry.Base >= 50.0 && c.Skills.Healing.Base >= 50.0 && c.Skills.Veterinary.Base >= 50.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Nun</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Nun</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 35 ), GumpButtonType.Reply, 0 );
 				}
 				else if( c.Skills.Chivalry.Base >= 50.0 && c.Skills.Healing.Base >= 50.0 && c.Skills.Veterinary.Base >= 50.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Priest</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Priest</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 35 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 75.0 && c.Skills.Healing.Base >= 75.0 && c.Skills.Veterinary.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>True Healer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>True Healer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 36 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Skills.Healing.Base >= 100.0 && c.Skills.Veterinary.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>True Holy Healer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>True Holy Healer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 37 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 100.0 && c.Skills.Stealing.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Ruffian</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Ruffian</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 38 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Skills.Healing.Base >= 100.0 && c.Skills.Stealing.Base == 0.0 && c.Skills.Poisoning.Base == 0.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Pure</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Pure</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 39 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 80.0 && c.Skills.Parry.Base >= 80.0 && ( c.Skills.Swords.Base >= 80.0 || c.Skills.Macing.Base >= 80.0 ) )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Templar</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Templar</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 40 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
@@ -5154,248 +5154,248 @@ namespace Server.Gumps
 				
 				if( c.Skills.Provocation.Base >= 110.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Invoker</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Invoker</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 41 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Skills.Peacemaking.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Peacemaker</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Peacemaker</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 42 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Skills.Peacemaking.Base >= 100.0 && c.Skills.Healing.Base >= 100.0 && c.Skills.Veterinary.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>True Hope</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>True Hope</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 43 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 70.0 && c.Skills.Archery.Base >= 70.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Adventurous</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Adventurous</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 44 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Swords.Base >= 70.0 && c.Skills.Archery.Base >= 70.0 && c.Skills.Macing.Base >= 70.0 && c.Skills.Fencing.Base >= 70.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Fighter</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Fighter</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 45 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.SkillsTotal >= 6000 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Skilled</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Skilled</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 46 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Race == Race.Human )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Human</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Human</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 47 ), GumpButtonType.Reply, 0 );
 				}
 				else if( c.Race == Race.Elf )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Elf</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Elf</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 47 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Girl</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Girl</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 48 ), GumpButtonType.Reply, 0 );
 				}
 				else if( !c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Boy</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Boy</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 48 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Woman</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Woman</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 49 ), GumpButtonType.Reply, 0 );
 				}
 				else if( !c.Female )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Man</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Man</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 49 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Female && c.Skills.Chivalry.Base >= 110.0 && c.Skills.Swords.Base >= 110.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Heroine</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Heroine</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 50 ), GumpButtonType.Reply, 0 );
 				}
 				else if( !c.Female && c.Skills.Chivalry.Base >= 110.0 && c.Skills.Swords.Base >= 110.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Hero</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Hero</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 50 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 90.0 && c.Skills.Poisoning.Base >= 90.0 && c.Skills.Swords.Base >= 90.0 && c.Skills.Archery.Base >= 90.0 && c.Skills.Macing.Base >= 90.0 && c.Skills.Fencing.Base >= 90.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Tempest</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Tempest</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 51 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Skills.Swords.Base >= 100.0 && c.Skills.Archery.Base >= 100.0 && c.Skills.Macing.Base >= 100.0 && c.Skills.Fencing.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Uber</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Uber</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 52 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 80.0 && c.Skills.Parry.Base >= 80.0 && c.Skills.MagicResist.Base >= 80.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Tank</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Tank</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 53 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 75.0 && c.Skills.MagicResist.Base >= 75.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Holy Bubble</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Holy Bubble</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 54 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Skills.MagicResist.Base >= 100.0 && c.Skills.Parry.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Panzer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Panzer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 55 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Skills.MagicResist.Base >= 100.0 && c.Skills.Parry.Base >= 100.0 && c.Skills.Swords.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Great Paladin</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Great Paladin</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 56 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Skills.MagicResist.Base >= 100.0 && c.Skills.Parry.Base >= 100.0 && c.Skills.Macing.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Great Hammerdin</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Great Hammerdin</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 57 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Skills.MagicResist.Base >= 100.0 && c.Skills.Parry.Base >= 100.0 && c.Skills.Wrestling.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Great Defender</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Great Defender</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 58 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Skills.MagicResist.Base >= 100.0 && c.Skills.Parry.Base >= 100.0 && c.Skills.Fencing.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Great Piercer</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Great Piercer</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 59 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				if( c.Skills.Chivalry.Base >= 100.0 && c.Skills.MagicResist.Base >= 100.0 && c.Skills.Archery.Base >= 100.0 )
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #FFD57A>Great Ranger</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#FFD57A>Great Ranger</basefont>", false, false );
 					AddButton( Sideways, Downwards + 2, 0x845, 0x846, GetButtonID( 6, 60 ), GumpButtonType.Reply, 0 );
 				}
 				else
 				{
-					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color = #808080>???</basefont>", false, false );
+					AddHtml( Sideways + 18, Downwards, 160, 18, "<basefont color=#808080>???</basefont>", false, false );
 				}
 				Downwards = Downwards + 18;
 				
 				//Navigation
 				if( ( c.Controlled && from == c.ControlMaster ) || from.AccessLevel >= AccessLevel.GameMaster )
 				{
-					AddHtml( 353, 20, 160, 18, "<basefont color = #FFD57A>Page One</basefont>", false, false );
+					AddHtml( 353, 20, 160, 18, "<basefont color=#FFD57A>Page One</basefont>", false, false );
 					AddButton( 417, 22, 5601, 5605, GetButtonID( 1, 1 ), GumpButtonType.Reply, 0 );
 				}
 			}

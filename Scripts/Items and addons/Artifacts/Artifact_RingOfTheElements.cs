@@ -12,6 +12,7 @@ namespace Server.Items
 		[Constructable]
 		public RingOfTheElements()
 		{
+			Name = "Ring of the Elements";
 			Hue = 0x4E9;
 			ItemID = 0x4CF6;
 			Attributes.Luck = 200;

@@ -204,7 +204,6 @@ namespace Server.Items
 			SpaceDyes vial = new SpaceDyes();
 			vial.Name = name;
 			vial.Hue = color;
-			vial.vialHue = color;
 			
 			from.AddToBackpack( vial );
 

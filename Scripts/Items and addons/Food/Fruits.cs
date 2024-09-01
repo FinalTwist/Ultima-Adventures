@@ -542,7 +542,7 @@ namespace Server.Items
 		[Constructable]
 		public SmallWatermelon( int amount ) : base( amount, 0xC5D )
 		{
-			this.Weight = 5.0;
+			this.Weight = 3.0;
 			this.FillFactor = 5;
 		}
 

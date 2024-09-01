@@ -22,15 +22,22 @@ namespace Server.Spells.Research
 
 		public static double CastingSkill( Mobile from )
 		{
-			double skill = from.Skills[SkillName.Necromancy].Value;
-				if ( from.Skills[SkillName.Magery].Value > skill ){ skill = from.Skills[SkillName.Magery].Value; }
+			double skill;
+			if (from.Karma < 0) skill = from.Skills[SkillName.Necromancy].Value;
+			else skill = from.Skills[SkillName.Chivalry].Value;
+
+			if ( from.Skills[SkillName.Magery].Value > skill ){ skill = from.Skills[SkillName.Magery].Value; }
 
 			return skill;
 		}
 
 		public static double DamagingSkill( Mobile from )
 		{
-			return ( from.Skills[SkillName.Necromancy].Value + from.Skills[SkillName.Magery].Value + from.Skills[SkillName.SpiritSpeak].Value + from.Skills[SkillName.EvalInt].Value ) / 2;
+			double skill;
+			if (from.Karma < 0) skill = from.Skills[SkillName.Necromancy].Value;
+			else skill = from.Skills[SkillName.Chivalry].Value;
+
+			return ( skill + from.Skills[SkillName.Magery].Value + from.Skills[SkillName.SpiritSpeak].Value + from.Skills[SkillName.EvalInt].Value ) / 2;
 		}
 
 		public static void KarmaMod( Mobile from, int mod )
@@ -142,7 +149,11 @@ namespace Server.Spells.Research
 			if ( from == null )
 				return 0;
 
-			int v = (int) Math.Sqrt( ( from.Karma * -1 ) + 20000 + ( ( from.Skills.Necromancy.Fixed + from.Skills.Magery.Fixed ) * 10 ) );
+			double skill;
+			if (from.Karma < 0) skill = from.Skills.Necromancy.Fixed;
+			else skill = from.Skills.Chivalry.Fixed;
+
+			int v = (int) Math.Sqrt( ( from.Karma * -1 ) + 20000 + ( ( skill + from.Skills.Magery.Fixed ) * 10 ) );
 
 			return v / div;
 		}

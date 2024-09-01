@@ -37,21 +37,6 @@ namespace Server.Spells.Necromancy
 			max = Scroll != null ? min : RequiredSkill + 40.0;
 		}
 
-		public override bool CheckCast(Mobile caster)
-        {
-            if (!base.CheckCast(caster))
-                return false;
-
-            if ( Caster.Karma > 0 )
-			{
-				Caster.SendMessage( "Your positive karma prevents you from casting this spell." );
-				return false;
-			}
-
-
-			return true;
-		}
-
 		public override bool ConsumeReagents()
 		{
 			if( base.ConsumeReagents() )

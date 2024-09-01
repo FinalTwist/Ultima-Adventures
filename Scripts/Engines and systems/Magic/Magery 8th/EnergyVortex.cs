@@ -74,7 +74,7 @@ namespace Server.Spells.Eighth
 			FinishSequence();
 		}
 
-		private class InternalTarget : Target
+		public class InternalTarget : Target
 		{
 			private EnergyVortexSpell m_Owner;
 

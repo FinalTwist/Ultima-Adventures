@@ -12,7 +12,7 @@ namespace Server
 		public static void Initialize()
 		{
 			EventSink.PlayerDeath += new PlayerDeathEventHandler(e => ResurrectNowGump.TryShowAutoResurrectGump(e.Mobile as PlayerMobile));
-			EventSink.Login += new LoginEventHandler(e => ResurrectNowGump.TryShowAutoResurrectGump(e.Mobile as PlayerMobile));
+			EventSink.Login += new LoginEventHandler(e => ResurrectNowGump.TryShowAutoResurrectGump(e.Mobile as PlayerMobile, true));
         }
 	}
 }
@@ -202,10 +202,11 @@ namespace Server.Gumps
 			return mobile.LastAutoRes == null || mobile.LastAutoRes.AddMinutes(60) <= DateTime.UtcNow;
 		}
 
-        public static void TryShowAutoResurrectGump(PlayerMobile mobile)
+        public static void TryShowAutoResurrectGump(PlayerMobile mobile, bool ignoreOtherGumps = false)
         {
 			if (mobile == null || mobile.SoulBound || mobile.Alive) return;
 			if (!CanAutoResurrect(mobile)) return;
+			if (!ignoreOtherGumps && (AutoResPotion.IsProtected(mobile) || SoulOrb.IsProtected(mobile))) return;
 
             Timer.DelayCall(TimeSpan.FromSeconds(30), (m) =>
             {

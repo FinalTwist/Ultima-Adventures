@@ -81,7 +81,7 @@ namespace Server.Items
         public override void AddNameProperties(ObjectPropertyList list)
 		{
             base.AddNameProperties(list);
-			list.Add( 1070722, "Scrap Iron");
+			list.Add( 1070722, "Scrap Metal");
         }
 
 		public override void OnDoubleClick( Mobile from )
@@ -115,25 +115,41 @@ namespace Server.Items
 				if ( Server.Engines.Craft.DefBlacksmithy.IsForge( targeted ) )
 				{
 					int weight = (int)(m_Rusted.Weight);
-						if ( weight < 1 ){ weight = 1; }
-					double difficulty = 50.0;
-					double minSkill = difficulty - 25.0;
-					double maxSkill = difficulty + 25.0;
-					
+					if ( weight < 1 ){ weight = 1; }
+
+					CraftResource resource = (CraftResource)Utility.RandomMinMax( (int)CraftResource.Iron, (int)CraftResource.Valorite );
+					double difficulty = CraftResources.GetMetalProcessDifficulty(resource);
+
+					// Fall back to Iron if the player can't process the metal
+					if (from.Skills[SkillName.Mining].Value < difficulty) 
+					{
+						resource = CraftResource.Iron;
+						difficulty = CraftResources.GetMetalProcessDifficulty(resource);
+					}
+
 					if ( difficulty > from.Skills[SkillName.Mining].Value )
 					{
 						from.SendMessage("You have no idea how to smelt this item!");
 						return;
 					}
 
-					if ( from.CheckTargetSkill( SkillName.Mining, targeted, minSkill, maxSkill ) )
+					Item ingot = null;
+					CraftResourceInfo info = CraftResources.GetInfo( resource );
+					if ( info != null && 0 < info.ResourceTypes.Length )
 					{
-						IronIngot ingot = new IronIngot(1);
+						Type resourceType = info.ResourceTypes[ 0 ];
+						ingot = (Item)Activator.CreateInstance( resourceType );
+					}
+
+					double minSkill = difficulty - 25.0;
+					double maxSkill = difficulty + 25.0;
+					if ( ingot != null && from.CheckTargetSkill( SkillName.Mining, targeted, minSkill, maxSkill ) )
+					{
 						ingot.Amount = weight;
 						from.AddToBackpack( ingot );
 						from.PlaySound( 0x208 );
-						if ( weight == 1 ){ from.SendMessage("You smelt the rusty metal into a usable iron ingot!"); }
-						else { from.SendMessage("You smelt the rusty metal into usable iron ingots!"); }
+						if ( weight == 1 ){ from.SendMessage("You smelt the rusty metal into a usable " + info.Name + " ingot!"); }
+						else { from.SendMessage("You smelt the rusty metal into usable " + info.Name + " ingots!"); }
 						m_Rusted.Delete();
 					}
 					else

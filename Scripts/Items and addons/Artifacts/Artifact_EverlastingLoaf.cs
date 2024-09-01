@@ -39,7 +39,7 @@ namespace Server.Items
 			{
 				from.Hunger = 20;
 				from.SendMessage( "You take a healthy bite from the bread...and it magically begins to reform." );
-				timer = DateTime.Now + TimeSpan.FromHours(4);
+				timer = DateTime.Now + TimeSpan.FromHours(1);
 
 
 				// Play a random "eat" sound
@@ -49,7 +49,7 @@ namespace Server.Items
 				if ( from.Body.IsHuman && !from.Mounted )
 					from.Animate( 34, 5, 1, true, false, 0 );
 			}
-			else if (from.Hunger > 20)
+			else if (from.Hunger >= 20)
 				from.SendMessage("The loaf can't fill you any more.");
 			else
 				from.SendMessage("The loaf hasn't reformed itself yet.");

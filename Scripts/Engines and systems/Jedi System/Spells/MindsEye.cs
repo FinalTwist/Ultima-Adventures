@@ -68,6 +68,11 @@ namespace Server.Spells.Jedi
 						Effects.PlaySound( item.Location, item.Map, 0x1FA );
 						Caster.SendMessage( "There is a trap nearby! " + sTrap + "" );
 					}
+					else if ( item is KillerTile )
+					{
+						Effects.SendLocationParticles( EffectItem.Create( item.Location, item.Map, EffectItem.DefaultDuration ), 0x376A, 9, 32, 0xB41, 0, 5024, 0 );
+						Effects.PlaySound( item.Location, item.Map, 0x1FA );
+					}
 					else if ( item is HiddenTrap )
 					{
 						Effects.SendLocationParticles( EffectItem.Create( item.Location, item.Map, EffectItem.DefaultDuration ), 0x376A, 9, 32, 0xB41, 0, 5024, 0 );
@@ -110,6 +115,7 @@ namespace Server.Spells.Jedi
 							mBox.MoveToWorld( loc, Caster.Map );
 							Effects.SendLocationParticles( EffectItem.Create( mBox.Location, mBox.Map, EffectItem.DefaultDuration ), 0x376A, 9, 32, 0xB41, 0, 5024, 0 );
 							Effects.PlaySound( mBox.Location, mBox.Map, 0x1FA );
+							Engines.ExpirationTracker.AutoDelete(mBox.Serial, TimeSpan.FromDays(2));
 						}
 						else
 						{
@@ -119,6 +125,7 @@ namespace Server.Spells.Jedi
 							coins.MoveToWorld( loc, Caster.Map );
 							Effects.SendLocationParticles( EffectItem.Create( coins.Location, coins.Map, EffectItem.DefaultDuration ), 0x376A, 9, 32, 0xB41, 0, 5024, 0 );
 							Effects.PlaySound( coins.Location, coins.Map, 0x1FA );
+							Engines.ExpirationTracker.AutoDelete(coins.Serial, TimeSpan.FromDays(2));
 						}
 
 						item.Delete();

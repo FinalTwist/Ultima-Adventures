@@ -365,15 +365,15 @@ namespace Server.Items
 
 	public class ArcheryButteDeed : BaseAddonDeed
 	{
-		public override BaseAddon Addon{ get{ return new ArcheryButteAddon(); } }
-		public override int LabelNumber{ get{ return 1024106; } } // archery butte
+		public override BaseAddon Addon{ get{ return new ArcheryButteAddon() { Hue = this.Hue }; } }
 
 		[Constructable]
 		public ArcheryButteDeed()
 		{
-		}
+            Name = "Archery Butte";
+        }
 
-		public ArcheryButteDeed( Serial serial ) : base( serial )
+        public ArcheryButteDeed( Serial serial ) : base( serial )
 		{
 		}
 

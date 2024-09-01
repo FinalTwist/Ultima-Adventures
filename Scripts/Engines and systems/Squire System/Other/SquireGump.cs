@@ -338,57 +338,57 @@ namespace Server.Gumps
         {
             Skill skill = c.Skills[name];
 
-            //			return String.Format( "<basefont color = #000000><div align='right'>{0:F1} <basefont color = #83d783>({1:F1})</basefont>/{2}</div></basefont>", skill.Value, skill.Base, skill.Cap ); 
+            //			return String.Format( "<basefont color=#FFFFFF><div align='right'>{0:F1} <basefont color=#83d783>({1:F1})</basefont>/{2}</div></basefont>", skill.Value, skill.Base, skill.Cap ); 
             if (skill.Value == 20 && skill.Base < 20)
-                return String.Format("<basefont color = #000000><div align='right'>{0:F1}/{1}</div></basefont>", skill.Base, skill.Cap);
+                return String.Format("<basefont color=#FFFFFF><div align=right>{0:F1}/{1}</div></basefont>", skill.Base, skill.Cap);
             else
-                return String.Format("<basefont color = #000000><div align='right'>{0:F1}/{1}</div></basefont>", skill.Value, skill.Cap);
+                return String.Format("<basefont color=#FFFFFF><div align=right>{0:F1}/{1}</div></basefont>", skill.Value, skill.Cap);
         }
 
         private static string FormatAttributes(int cur, int max)
         {
             if (max == 0)
-                return "<basefont color = #000000><div align=right>---</div></basefont>";
+                return "<basefont color=#FFFFFF><div align=right>---</div></basefont>";
 
-            return String.Format("<basefont color = #000000><div align=right>{0}/{1}</div></basefont>", cur, max);
+            return String.Format("<basefont color=#FFFFFF><div align=right>{0}/{1}</div></basefont>", cur, max);
         }
 
         private static string FormatStat(int val)
         {
             if (val == 0)
-                return "<basefont color = #000000><div align=right>---</div></basefont>";
+                return "<basefont color=#FFFFFF><div align=right>---</div></basefont>";
 
-            return String.Format("<basefont color = #000000><div align=right>{0}</div></basefont>", val);
+            return String.Format("<basefont color=#FFFFFF><div align=right>{0}</div></basefont>", val);
         }
 
         private static string FormatDouble(double val)
         {
             if (val == 0)
-                return "<basefont color = #000000><div align=right>---</div></basefont>";
+                return "<basefont color=#FFFFFF><div align=right>---</div></basefont>";
 
-            return String.Format("<basefont color = #A3D7FF><div align=right>{0:F1}</div></basefont>", val);
+            return String.Format("<basefont color=#A3D7FF><div align=right>{0:F1}</div></basefont>", val);
         }
 
         private static string FormatElement(int val)
         {
             if (val <= 0)
-                return "<basefont color = #000000><div align=right>---</div></basefont>";
+                return "<basefont color=#FFFFFF><div align=right>---</div></basefont>";
 
-            return String.Format("<basefont color = #000000><div align=right>{0}%</div></basefont>", val);
+            return String.Format("<basefont color=#FFFFFF><div align=right>{0}%</div></basefont>", val);
         }
 
         #region Mondain's Legacy
         private static string FormatDamage(int min, int max)
         {
             if (min <= 0 || max <= 0)
-                return "<basefont color = #000000><div align=right>---</div></basefont>";
+                return "<basefont color=#FFFFFF><div align=right>---</div></basefont>";
 
-            return String.Format("<basefont color = #A3D7FF><div align=right>{0}-{1}</div></basefont>", min, max);
+            return String.Format("<basefont color=#A3D7FF><div align=right>{0}-{1}</div></basefont>", min, max);
         }
         #endregion
 
         //		private const int LabelColor = 0x7FFF;
-        private const int LabelColor = 0x1;
+        private const int LabelColor = 0xFFFFFF;
         private Mobile m_Squire;
         private Mobile m_From;
 
@@ -1080,7 +1080,7 @@ namespace Server.Gumps
 			AddAlphaRegion( 10, 10, 400, 352 );
 			*/
 
-            AddHtml(100, 14, 210, 18, String.Format("<basefont color = #FFFFFF><center><i>{0}</i></center></basefont>", c.Name), false, false);
+            AddHtml(100, 14, 210, 18, String.Format("<basefont color=#FFFFFF><center><i>{0}</i></center></basefont>", c.Name), false, false);
 
             int pages = (Core.AOS ? 5 : 3);
             int buttonID1, buttonID2;
@@ -1090,12 +1090,12 @@ namespace Server.Gumps
             {
                 // Added 1.9.7
                 // Background Setup
-                AddBackground(0, 0, 420, 372, 9250);
+                AddImageTiled(0, 0, 420, 372, 163);
                 //			AddImageTiled( 10, 10, 400, 352, 2624 );
                 //			AddAlphaRegion( 10, 10, 400, 352 );
 
                 //First Half
-                AddHtml(20, 40, 160, 18, "<basefont color = #FFD57A>Attributes</basefont>", false, false); // Attributes
+                AddHtml(20, 40, 160, 18, "<basefont color=#FFD57A>Attributes</basefont>", false, false); // Attributes
 
                 AddHtmlLocalized(20, 58, 160, 18, 1049578, LabelColor, false, false); // Hits
                 AddHtml(127, 58, 75, 18, FormatAttributes(c.Hits, c.HitsMax), false, false);
@@ -1115,11 +1115,11 @@ namespace Server.Gumps
                 AddHtmlLocalized(20, 148, 160, 18, 3000112, LabelColor, false, false); // Intelligence
                 AddHtml(167, 148, 35, 18, FormatStat(c.Int), false, false);
                 // Added 1.9.7
-                AddHtml(20, 166, 160, 18, "<basefont color = #FFD57A>Tithing Points: </basefont>", false, false); // Team Added 1.9.7
-                AddHtml(107, 166, 160, 18, "<basefont color = #FFFFFF>" + ((Squire)c).TithingPoints + "</basefont>", false, false);
+                AddHtml(20, 166, 160, 18, "<basefont color=#FFD57A>Tithing Points: </basefont>", false, false); // Team Added 1.9.7
+                AddHtml(127, 166, 75, 18, FormatStat(c.TithingPoints), false, false); // ???
 
                 // Moved Damages Section Down By Two Spaces 1.9.7
-                AddHtml(20, 220, 160, 18, "<basefont color = #FFD57A>Damage</basefont>", false, false); // Damage
+                AddHtml(20, 220, 160, 18, "<basefont color=#FFD57A>Damage</basefont>", false, false); // Damage
 
                 AddHtmlLocalized(20, 238, 160, 18, 1061646, LabelColor, false, false); // Physical
                 AddHtml(167, 238, 35, 18, FormatElement(c.PhysicalDamage), false, false);
@@ -1137,28 +1137,28 @@ namespace Server.Gumps
                 AddHtml(167, 310, 35, 18, FormatElement(c.EnergyDamage), false, false);
 
                 //Middle Display
-                AddHtml(125, 28, 160, 18, "<basefont color = #FFD57A><center>Stats</center></basefont>", false, false);
+                AddHtml(125, 28, 160, 18, "<basefont color=#FFD57A><center>Stats</center></basefont>", false, false);
 
                 //Second Half
-                AddHtml(220, 40, 160, 18, "<basefont color = #FFD57A>Loyalty Rating</basefont>", false, false); // Loyalty Rating
+                AddHtml(220, 40, 160, 18, "<basefont color=#FFD57A>Loyalty Rating</basefont>", false, false); // Loyalty Rating
                 AddHtmlLocalized(220, 58, 160, 18, (!c.Controlled || c.Loyalty == 0) ? 1061643 : 1049595 + (c.Loyalty / 10), LabelColor, false, false);
 
                 if (c is Squire)
                 {
-                    AddHtml(220, 76, 160, 18, "<basefont color = #FFD57A>Master's Nickname</basefont>", false, false); // Loyalty Rating
-                    AddHtml(220, 94, 160, 18, "<basefont color = #FFFFFF>" + ((Squire)c).m_MasterNickname + "</basefont>", false, false);
+                    AddHtml(220, 76, 160, 18, "<basefont color=#FFD57A>Master's Nickname</basefont>", false, false); // Loyalty Rating
+                    AddHtml(220, 94, 160, 18, "<basefont color=#FFFFFF>" + ((Squire)c).m_MasterNickname + "</basefont>", false, false);
 
-                    AddHtml(220, 112, 160, 18, "<basefont color = #FFD57A>" + ((Squire)c).Name + "'s Nickname</basefont>", false, false); // Loyalty Rating
-                    AddHtml(220, 130, 160, 18, "<basefont color = #FFFFFF>" + ((Squire)c).m_SquireNickname + "</basefont>", false, false);
+                    AddHtml(220, 112, 160, 18, "<basefont color=#FFD57A>" + ((Squire)c).Name + "'s Nickname</basefont>", false, false); // Loyalty Rating
+                    AddHtml(220, 130, 160, 18, "<basefont color=#FFFFFF>" + ((Squire)c).m_SquireNickname + "</basefont>", false, false);
 
-                    AddHtml(220, 148, 160, 18, "<basefont color = #FFD57A>" + ((Squire)c).Name + "'s Title</basefont>", false, false);
-                    AddHtml(220, 166, 160, 18, "<basefont color = #FFFFFF>" + ((Squire)c).Title + "</basefont>", false, false);
+                    AddHtml(220, 148, 160, 18, "<basefont color=#FFD57A>" + ((Squire)c).Name + "'s Title</basefont>", false, false);
+                    AddHtml(220, 166, 160, 18, "<basefont color=#FFFFFF>" + ((Squire)c).Title + "</basefont>", false, false);
 
-                    AddHtml(220, 184, 160, 18, "<basefont color = #FFD57A>" + ((Squire)c).Name + "'s Team</basefont>", false, false); // Team Added 1.9.7
-                    AddHtml(220, 202, 160, 18, "<basefont color = #FFFFFF>" + ((Squire)c).m_SquireTeam + "</basefont>", false, false);
+                    AddHtml(220, 184, 160, 18, "<basefont color=#FFD57A>" + ((Squire)c).Name + "'s Team</basefont>", false, false); // Team Added 1.9.7
+                    AddHtml(220, 202, 160, 18, "<basefont color=#FFFFFF>" + ((Squire)c).m_SquireTeam + "</basefont>", false, false);
                 }
                 // Moved Resistances Down 1.9.7
-                AddHtml(220, 220, 160, 18, "<basefont color = #FFD57A>Resistances</basefont>", false, false); // Resistances
+                AddHtml(220, 220, 160, 18, "<basefont color=#FFD57A>Resistances</basefont>", false, false); // Resistances
 
                 AddHtmlLocalized(220, 238, 160, 18, 1061646, LabelColor, false, false); // Physical
                 AddHtml(357, 238, 35, 18, FormatElement(c.PhysicalResistance), false, false);
@@ -1176,12 +1176,12 @@ namespace Server.Gumps
                 AddHtml(357, 310, 35, 18, FormatElement(c.EnergyResistance), false, false);
 
                 //Navigation
-                AddHtml(347, 20, 160, 18, "<basefont color = #FFD57A>Skills</basefont>", false, false);
+                AddHtml(347, 20, 160, 18, "<basefont color=#FFD57A>Skills</basefont>", false, false);
                 AddButton(377, 22, 5601, 5605, GetButtonID(2, 1), GumpButtonType.Reply, 0);
 
                 if ((c.Controlled && from == c.ControlMaster) || from.AccessLevel >= AccessLevel.GameMaster)
                 {
-                    AddHtml(40, 20, 160, 18, "<basefont color = #FFD57A>Switches</basefont>", false, false);
+                    AddHtml(40, 20, 160, 18, "<basefont color=#FFD57A>Switches</basefont>", false, false);
                     AddButton(20, 21, 5603, 5607, GetButtonID(2, 3), GumpButtonType.Reply, 0);
                 }
             }
@@ -1192,12 +1192,12 @@ namespace Server.Gumps
             {
                 // Added 1.9.7
                 // Background Setup
-                AddBackground(0, 0, 420, 372, 9250);
+                AddImageTiled(0, 0, 420, 372, 163);
                 //		AddImageTiled( 10, 10, 400, 352, 2624 );
                 //		AddAlphaRegion( 10, 10, 400, 352 );
 
                 //First Half
-                AddHtml(20, 40, 160, 18, "<basefont color = #FFD57A>Combat Skills</basefont>", false, false); // Combat Ratings
+                AddHtml(20, 40, 160, 18, "<basefont color=#FFD57A>Combat Skills</basefont>", false, false); // Combat Ratings
 
                 AddHtmlLocalized(20, 58, 160, 18, 1044103, LabelColor, false, false); // Wrestling
                 AddHtml(100, 58, 90, 18, FormatSkill(c, SkillName.Wrestling), false, false);
@@ -1225,7 +1225,7 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(20, 94, 160, 18, "<basefont color = #FFFFFF>Spell resist</basefont>", false, false); // Swords
+                AddHtml(20, 94, 160, 18, "<basefont color=#FFFFFF>Spell resist</basefont>", false, false); // Swords
                 AddHtml(100, 94, 90, 18, FormatSkill(c, SkillName.MagicResist), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1251,7 +1251,7 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(20, 130, 160, 18, "<basefont color = #FFFFFF>Swordsmanship</basefont>", false, false); // Swords
+                AddHtml(20, 130, 160, 18, "<basefont color=#FFFFFF>Swordsmanship</basefont>", false, false); // Swords
                 AddHtml(100, 130, 90, 18, FormatSkill(c, SkillName.Swords), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1264,7 +1264,7 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(20, 148, 160, 18, "<basefont color = #FFFFFF>Macefighting</basefont>", false, false); // Macing
+                AddHtml(20, 148, 160, 18, "<basefont color=#FFFFFF>Macefighting</basefont>", false, false); // Macing
                 AddHtml(100, 148, 90, 18, FormatSkill(c, SkillName.Macing), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1277,7 +1277,7 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(20, 166, 160, 18, "<basefont color = #FFFFFF>Fencing</basefont>", false, false); // Fencing
+                AddHtml(20, 166, 160, 18, "<basefont color=#FFFFFF>Fencing</basefont>", false, false); // Fencing
                 AddHtml(100, 166, 90, 18, FormatSkill(c, SkillName.Fencing), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1290,7 +1290,7 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(20, 184, 160, 18, "<basefont color = #FFFFFF>Archery</basefont>", false, false); // Archery
+                AddHtml(20, 184, 160, 18, "<basefont color=#FFFFFF>Archery</basefont>", false, false); // Archery
                 AddHtml(100, 184, 90, 18, FormatSkill(c, SkillName.Archery), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1303,7 +1303,7 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(20, 202, 160, 18, "<basefont color = #FFFFFF>Parrying</basefont>", false, false); // Parrying
+                AddHtml(20, 202, 160, 18, "<basefont color=#FFFFFF>Parrying</basefont>", false, false); // Parrying
                 AddHtml(100, 202, 90, 18, FormatSkill(c, SkillName.Parry), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1316,7 +1316,7 @@ namespace Server.Gumps
                     }
                 }
                 // Added 1.9.6
-                AddHtml(20, 220, 160, 18, "<basefont color = #FFFFFF>Chivalry</basefont>", false, false); // Chivalry
+                AddHtml(20, 220, 160, 18, "<basefont color=#FFFFFF>Chivalry</basefont>", false, false); // Chivalry
                 AddHtml(100, 220, 90, 18, FormatSkill(c, SkillName.Chivalry), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1329,35 +1329,35 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(20, 292, 160, 18, "<basefont color = #FFFFFF>Bushido</basefont>", false, false); // Bushido
+                AddHtml(20, 292, 160, 18, "<basefont color=#FFFFFF>Bushido</basefont>", false, false); // Bushido
                 AddHtml(100, 292, 90, 18, FormatSkill(c, SkillName.Bushido), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
                     switch (c.Skills[SkillName.Bushido].Lock)
                     {
                         default:
-                        case SkillLock.Up: AddButton(195, 296, 0x983, 0x983, GetButtonID(1, 25), GumpButtonType.Reply, 0); break;
-                        case SkillLock.Down: AddButton(195, 296, 0x985, 0x985, GetButtonID(1, 25), GumpButtonType.Reply, 0); break;
-                        case SkillLock.Locked: AddButton(195, 295, 0x82C, 0x82C, GetButtonID(1, 25), GumpButtonType.Reply, 0); break;
+                        case SkillLock.Up: AddButton(195, 296, 0x983, 0x983, GetButtonID(1, 26), GumpButtonType.Reply, 0); break;
+                        case SkillLock.Down: AddButton(195, 296, 0x985, 0x985, GetButtonID(1, 26), GumpButtonType.Reply, 0); break;
+                        case SkillLock.Locked: AddButton(195, 295, 0x82C, 0x82C, GetButtonID(1, 26), GumpButtonType.Reply, 0); break;
                     }
                 }
 
-                AddHtml(20, 310, 160, 18, "<basefont color = #FFFFFF>Necromancy</basefont>", false, false); // Necromancy
+                AddHtml(20, 310, 160, 18, "<basefont color=#FFFFFF>Necromancy</basefont>", false, false); // Necromancy
                 AddHtml(100, 310, 90, 18, FormatSkill(c, SkillName.Necromancy), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
                     switch (c.Skills[SkillName.Necromancy].Lock)
                     {
                         default:
-                        case SkillLock.Up: AddButton(195, 314, 0x983, 0x983, GetButtonID(1, 25), GumpButtonType.Reply, 0); break;
-                        case SkillLock.Down: AddButton(195, 314, 0x985, 0x985, GetButtonID(1, 25), GumpButtonType.Reply, 0); break;
-                        case SkillLock.Locked: AddButton(195, 313, 0x82C, 0x82C, GetButtonID(1, 25), GumpButtonType.Reply, 0); break;
+                        case SkillLock.Up: AddButton(195, 314, 0x983, 0x983, GetButtonID(1, 27), GumpButtonType.Reply, 0); break;
+                        case SkillLock.Down: AddButton(195, 314, 0x985, 0x985, GetButtonID(1, 27), GumpButtonType.Reply, 0); break;
+                        case SkillLock.Locked: AddButton(195, 313, 0x82C, 0x82C, GetButtonID(1, 27), GumpButtonType.Reply, 0); break;
                     }
                 }
                 // Begin Adjusted Down 1.9.6
-                AddHtml(20, 238, 160, 18, "<basefont color = #FFD57A>Healing Abilities</basefont>", false, false); // Healing Abilities
+                AddHtml(20, 238, 160, 18, "<basefont color=#FFD57A>Healing Abilities</basefont>", false, false); // Healing Abilities
 
-                AddHtml(20, 256, 160, 18, "<basefont color = #FFFFFF>Healing</basefont>", false, false); // Healing
+                AddHtml(20, 256, 160, 18, "<basefont color=#FFFFFF>Healing</basefont>", false, false); // Healing
                 AddHtml(100, 256, 90, 18, FormatSkill(c, SkillName.Healing), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1370,7 +1370,7 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(20, 274, 160, 18, "<basefont color = #FFFFFF>Veterinary</basefont>", false, false); // Veterinary
+                AddHtml(20, 274, 160, 18, "<basefont color=#FFFFFF>Veterinary</basefont>", false, false); // Veterinary
                 AddHtml(100, 274, 90, 18, FormatSkill(c, SkillName.Veterinary), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1384,12 +1384,12 @@ namespace Server.Gumps
                 }
                 // End Adjusted Down 1.9.6
                 //Middle Display
-                AddHtml(125, 28, 160, 18, "<basefont color = #FFD57A><center>Skills</center></basefont>", false, false);
+                AddHtml(125, 28, 160, 18, "<basefont color=#FFD57A><center>Skills</center></basefont>", false, false);
 
                 //Secnd Half
-                AddHtml(220, 40, 160, 18, "<basefont color = #FFD57A>Lore & Knowledge</basefont>", false, false); // Lore & Knowledge
+                AddHtml(220, 40, 160, 18, "<basefont color=#FFD57A>Lore & Knowledge</basefont>", false, false); // Lore & Knowledge
 
-                AddHtml(220, 58, 160, 18, "<basefont color = #FFFFFF>Eval Int</basefont>", false, false);
+                AddHtml(220, 58, 160, 18, "<basefont color=#FFFFFF>Eval Int</basefont>", false, false);
                 AddHtml(300, 58, 90, 18, FormatSkill(c, SkillName.EvalInt), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1415,7 +1415,7 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(220, 94, 160, 18, "<basefont color = #FFFFFF>Animal Lore</basefont>", false, false); // Animal Lore
+                AddHtml(220, 94, 160, 18, "<basefont color=#FFFFFF>Animal Lore</basefont>", false, false); // Animal Lore
                 AddHtml(300, 94, 90, 18, FormatSkill(c, SkillName.AnimalLore), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1428,9 +1428,9 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(220, 112, 160, 18, "<basefont color = #FFD57A>Miscellaneous</basefont>", false, false); // Misc
+                AddHtml(220, 112, 160, 18, "<basefont color=#FFD57A>Miscellaneous</basefont>", false, false); // Misc
 
-                AddHtml(220, 130, 160, 18, "<basefont color = #FFFFFF>Focus</basefont>", false, false); // Focus
+                AddHtml(220, 130, 160, 18, "<basefont color=#FFFFFF>Focus</basefont>", false, false); // Focus
                 AddHtml(300, 130, 90, 18, FormatSkill(c, SkillName.Focus), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1443,7 +1443,7 @@ namespace Server.Gumps
                     }
                 }
                 // Added 1.9.2
-                AddHtml(220, 148, 160, 18, "<basefont color = #FFFFFF>Spirit Speak</basefont>", false, false); // Spirit Speak
+                AddHtml(220, 148, 160, 18, "<basefont color=#FFFFFF>Spirit Speak</basefont>", false, false); // Spirit Speak
                                                                                                                //				AddHtml( 357, 148, 35, 18, FormatSkill( c, SkillName.SpiritSpeak ), false, false );
                 AddHtml(300, 148, 90, 18, FormatSkill(c, SkillName.SpiritSpeak), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
@@ -1457,9 +1457,9 @@ namespace Server.Gumps
                     }
                 }
                 //The rest was adjusted downwards
-                AddHtml(220, 166, 160, 18, "<basefont color = #FFD57A>Barding</basefont>", false, false); // Barding
+                AddHtml(220, 166, 160, 18, "<basefont color=#FFD57A>Barding</basefont>", false, false); // Barding
 
-                AddHtml(220, 184, 160, 18, "<basefont color = #FFFFFF>Musicianship</basefont>", false, false); // Musicianship
+                AddHtml(220, 184, 160, 18, "<basefont color=#FFFFFF>Musicianship</basefont>", false, false); // Musicianship
                 AddHtml(300, 184, 90, 18, FormatSkill(c, SkillName.Musicianship), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1472,7 +1472,7 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(220, 202, 160, 18, "<basefont color = #FFFFFF>Peacemaking</basefont>", false, false); // Peacemaking
+                AddHtml(220, 202, 160, 18, "<basefont color=#FFFFFF>Peacemaking</basefont>", false, false); // Peacemaking
                 AddHtml(300, 202, 90, 18, FormatSkill(c, SkillName.Peacemaking), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1485,7 +1485,7 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(220, 220, 160, 18, "<basefont color = #FFFFFF>Discordance</basefont>", false, false); // Discordance
+                AddHtml(220, 220, 160, 18, "<basefont color=#FFFFFF>Discordance</basefont>", false, false); // Discordance
                 AddHtml(300, 220, 90, 18, FormatSkill(c, SkillName.Discordance), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1498,7 +1498,7 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(220, 238, 160, 18, "<basefont color = #FFFFFF>Provocation</basefont>", false, false); // Provocation
+                AddHtml(220, 238, 160, 18, "<basefont color=#FFFFFF>Provocation</basefont>", false, false); // Provocation
                 AddHtml(300, 238, 90, 18, FormatSkill(c, SkillName.Provocation), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1511,9 +1511,9 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(220, 256, 160, 18, "<basefont color = #FFD57A>Thievery</basefont>", false, false); // Thievery
+                AddHtml(220, 256, 160, 18, "<basefont color=#FFD57A>Thievery</basefont>", false, false); // Thievery
 
-                AddHtml(220, 274, 160, 18, "<basefont color = #FFFFFF>Hiding</basefont>", false, false); // Hiding
+                AddHtml(220, 274, 160, 18, "<basefont color=#FFFFFF>Hiding</basefont>", false, false); // Hiding
                 AddHtml(300, 274, 90, 18, FormatSkill(c, SkillName.Hiding), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1526,7 +1526,7 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(220, 292, 160, 18, "<basefont color = #FFFFFF>Stealing</basefont>", false, false); // Stealing
+                AddHtml(220, 292, 160, 18, "<basefont color=#FFFFFF>Stealing</basefont>", false, false); // Stealing
                 AddHtml(300, 292, 90, 18, FormatSkill(c, SkillName.Stealing), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1539,7 +1539,7 @@ namespace Server.Gumps
                     }
                 }
 
-                AddHtml(220, 310, 160, 18, "<basefont color = #FFFFFF>Lockpicking</basefont>", false, false); // Lockpicking
+                AddHtml(220, 310, 160, 18, "<basefont color=#FFFFFF>Lockpicking</basefont>", false, false); // Lockpicking
                 AddHtml(300, 310, 90, 18, FormatSkill(c, SkillName.Lockpicking), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1552,7 +1552,7 @@ namespace Server.Gumps
                     }
                 }
                 // Added 1.9.5
-                AddHtml(220, 328, 160, 18, "<basefont color = #FFFFFF>Poisoning</basefont>", false, false); // Poisoning
+                AddHtml(220, 328, 160, 18, "<basefont color=#FFFFFF>Poisoning</basefont>", false, false); // Poisoning
                 AddHtml(300, 328, 90, 18, FormatSkill(c, SkillName.Poisoning), false, false);
                 if ((c.Controlled && m_From == c.ControlMaster) || m_From.AccessLevel >= AccessLevel.GameMaster)
                 {
@@ -1566,67 +1566,67 @@ namespace Server.Gumps
                 }
 
                 //Navigation
-                AddHtml(40, 20, 160, 18, "<basefont color = #FFD57A>Stats</basefont>", false, false);
+                AddHtml(40, 20, 160, 18, "<basefont color=#FFD57A>Stats</basefont>", false, false);
                 AddButton(20, 21, 5603, 5607, GetButtonID(2, 2), GumpButtonType.Reply, 0);
 
                 if ((c.Controlled && from == c.ControlMaster) || from.AccessLevel >= AccessLevel.GameMaster)
                 {
-                    AddHtml(327, 20, 160, 18, "<basefont color = #FFD57A>Switches</basefont>", false, false);
+                    AddHtml(327, 20, 160, 18, "<basefont color=#FFD57A>Switches</basefont>", false, false);
                     AddButton(377, 22, 5601, 5605, GetButtonID(2, 3), GumpButtonType.Reply, 0);
                 }
             }
             else if (page == SquireLorePage.Switches)
             {
-                AddBackground(0, 0, 420, 400, 9250);
+                AddImageTiled(0, 0, 420, 400, 163);
 
                 var squire = (Squire)m_Squire;
 
                 // First column
                 int rowNumber = 0;
                 int column = 1;
-                AddStatsOption(column, ++rowNumber, squire.m_Inspectable, 3, 1, "<basefont color = #FFD57A>Inspectable</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoPickupAmmo, 3, 3, "<basefont color = #FFD57A>Auto Pickup Ammo</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_SquireBeQuiet, 3, 5, "<basefont color = #FFD57A>Be Quiet</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_DesperateMasterRun, 3, 7, "<basefont color = #FFD57A>Desperate Master Run</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoUseHealthPotion, 3, 9, "<basefont color = #FFD57A>Auto Use Health Potion</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoUsePowerScroll, 3, 11, "<basefont color = #FFD57A>Auto Use Power Scroll</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoEquipLoot, 3, 13, "<basefont color = #FFD57A>Auto Equip Loot</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoRezAlly, 3, 15, "<basefont color = #FFD57A>Auto Rez Ally</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoCastCloseWounds, 3, 17, "<basefont color = #FFD57A>Close Wounds Self</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoCastCloseWoundsMaster, 3, 25, "<basefont color = #FFD57A>Close Wounds Master</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoCastCloseWoundsAlly, 3, 27, "<basefont color = #FFD57A>Close Wounds Ally</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_OnlyLootGoldAndMap, 5, 1, "<basefont color = #FFD57A>Loot Only Select Items</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoLoot, 5, 3, "<basefont color = #FFD57A>Auto Loot</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_LootGold, 5, 9, "<basefont color = #FFD57A>Loot Gold</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_LootMap, 5, 11, "<basefont color = #FFD57A>Loot Treasure Maps</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_Inspectable, 3, 1, "<basefont color=#FFFFFF>Inspectable</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoPickupAmmo, 3, 3, "<basefont color=#FFFFFF>Auto Pickup Ammo</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_SquireBeQuiet, 3, 5, "<basefont color=#FFFFFF>Be Quiet</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_DesperateMasterRun, 3, 7, "<basefont color=#FFFFFF>Desperate Master Run</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoUseHealthPotion, 3, 9, "<basefont color=#FFFFFF>Auto Use Health Potion</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoUsePowerScroll, 3, 11, "<basefont color=#FFFFFF>Auto Use Power Scroll</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoEquipLoot, 3, 13, "<basefont color=#FFFFFF>Auto Equip Loot</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoRezAlly, 3, 15, "<basefont color=#FFFFFF>Auto Rez Ally</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoCastCloseWounds, 3, 17, "<basefont color=#FFFFFF>Close Wounds Self</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoCastCloseWoundsMaster, 3, 25, "<basefont color=#FFFFFF>Close Wounds Master</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoCastCloseWoundsAlly, 3, 27, "<basefont color=#FFFFFF>Close Wounds Ally</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_OnlyLootGoldAndMap, 5, 1, "<basefont color=#FFFFFF>Loot Only Select Items</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoLoot, 5, 3, "<basefont color=#FFFFFF>Auto Loot</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_LootGold, 5, 9, "<basefont color=#FFFFFF>Loot Gold</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_LootMap, 5, 11, "<basefont color=#FFFFFF>Loot Treasure Maps</basefont>");
 
                 // Second column
                 ++column;
                 rowNumber = 0;
-                AddStatsOption(column, ++rowNumber, squire.m_AutoHealSelf, 4, 1, "<basefont color = #FFD57A>Auto Heal Self</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoHealMaster, 4, 3, "<basefont color = #FFD57A>Auto Heal Master</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoHealOther, 4, 5, "<basefont color = #FFD57A>Auto Heal Others</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoHealAnimals, 4, 7, "<basefont color = #FFD57A>Auto Heal Animals</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoUseCurePotion, 4, 9, "<basefont color = #FFD57A>Auto Use Cure Potion</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoUseTScroll, 4, 11, "<basefont color = #FFD57A>Auto Use Trainig Scrl</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoUseSpiritSpeak, 4, 13, "<basefont color = #FFD57A>Auto Spirit Speak</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoRezMaster, 4, 15, "<basefont color = #FFD57A>Auto Rez Master</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoCastCleanseByFire, 3, 19, "<basefont color = #FFD57A>Cleanse By Fire Self</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoCastCleanseByFireMaster, 3, 21, "<basefont color = #FFD57A>Cleanse By Fire Master</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoCastCleanseByFireAlly, 3, 23, "<basefont color = #FFD57A>Cleanse By Fire Ally</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_AutoVampiricEmbrace, 5, 5, "<basefont color = #FFD57A>Auto Cast Vampire</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_ConvenientStackable, 5, 7, "<basefont color = #FFD57A>Convenient Stackable Loot</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_LootZoogiFungus, 5, 13, "<basefont color = #FFD57A>Loot Zoogi Fungus</basefont>");
-                AddStatsOption(column, ++rowNumber, squire.m_LootDaemonBone, 5, 15, "<basefont color = #FFD57A>Loot Daemon Bone</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoHealSelf, 4, 1, "<basefont color=#FFFFFF>Auto Heal Self</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoHealMaster, 4, 3, "<basefont color=#FFFFFF>Auto Heal Master</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoHealOther, 4, 5, "<basefont color=#FFFFFF>Auto Heal Others</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoHealAnimals, 4, 7, "<basefont color=#FFFFFF>Auto Heal Animals</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoUseCurePotion, 4, 9, "<basefont color=#FFFFFF>Auto Use Cure Potion</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoUseTScroll, 4, 11, "<basefont color=#FFFFFF>Auto Use Trainig Scrl</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoUseSpiritSpeak, 4, 13, "<basefont color=#FFFFFF>Auto Spirit Speak</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoRezMaster, 4, 15, "<basefont color=#FFFFFF>Auto Rez Master</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoCastCleanseByFire, 3, 19, "<basefont color=#FFFFFF>Cleanse By Fire Self</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoCastCleanseByFireMaster, 3, 21, "<basefont color=#FFFFFF>Cleanse By Fire Master</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoCastCleanseByFireAlly, 3, 23, "<basefont color=#FFFFFF>Cleanse By Fire Ally</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_AutoVampiricEmbrace, 5, 5, "<basefont color=#FFFFFF>Auto Cast Vampire</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_ConvenientStackable, 5, 7, "<basefont color=#FFFFFF>Convenient Stackable Loot</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_LootZoogiFungus, 5, 13, "<basefont color=#FFFFFF>Loot Zoogi Fungus</basefont>");
+                AddStatsOption(column, ++rowNumber, squire.m_LootDaemonBone, 5, 15, "<basefont color=#FFFFFF>Loot Daemon Bone</basefont>");
 
                 //Middle Display
-                AddHtml(125, 28, 160, 18, "<basefont color = #FFD57A><center>Switches</center></basefont>", false, false);
+                AddHtml(125, 28, 160, 18, "<basefont color=#FFD57A><center>Switches</center></basefont>", false, false);
 
                 //Navigation
-                AddHtml(40, 20, 160, 18, "<basefont color = #FFD57A>Stats</basefont>", false, false);
+                AddHtml(40, 20, 160, 18, "<basefont color=#FFD57A>Stats</basefont>", false, false);
                 AddButton(20, 21, 5603, 5607, GetButtonID(2, 2), GumpButtonType.Reply, 0);
 
-                AddHtml(347, 20, 160, 18, "<basefont color = #FFD57A>Skills</basefont>", false, false);
+                AddHtml(347, 20, 160, 18, "<basefont color=#FFD57A>Skills</basefont>", false, false);
                 AddButton(377, 22, 5601, 5605, GetButtonID(2, 1), GumpButtonType.Reply, 0);
             }
             #endregion

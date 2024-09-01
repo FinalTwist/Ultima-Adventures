@@ -106,9 +106,7 @@ namespace Server.Mobiles
 
 		public static void GiveArtifactTo( Mobile m )
 		{
-			Item item = new UnidentifiedArtifact();
-			if ( MyServerSettings.GetUnidentifiedChance() >= Utility.RandomMinMax( 1, 100 ) ){ item = Loot.RandomArty(); } // WIZARD WANTS A UNIFIED ARTY LISTING
-
+			Item item = ArtifactBuilder.CreateArtifact("");
 			if ( item == null )
 				return;
 

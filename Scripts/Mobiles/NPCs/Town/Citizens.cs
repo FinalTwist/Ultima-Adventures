@@ -672,44 +672,8 @@ namespace Server.Mobiles
 				dungeon = RandomThings.MadeUpDungeon();
 				city = RandomThings.MadeUpCity();
 
-				CrateOfReagents crate = new CrateOfReagents();
-
-				string reagent = "bloodmoss";
-				int bottle = 0x508E;
-
-				switch ( Utility.RandomMinMax( 0, 24 ) )
-				{
-					case 0:	bottle = 0x508E; reagent = "bloodmoss"; break;
-					case 1:	bottle = 0x508F; reagent = "black pearl"; break;
-					case 2:	bottle = 0x5098; reagent = "garlic"; break;
-					case 3:	bottle = 0x5099; reagent = "ginseng"; break;
-					case 4:	bottle = 0x509A; reagent = "mandrake root"; break;
-					case 5:	bottle = 0x509B; reagent = "nightshade"; break;
-					case 6:	bottle = 0x509C; reagent = "sulfurous ash"; break;
-					case 7:	bottle = 0x509D; reagent = "spider silk"; break;
-					case 8:		bottle = 0x568A; reagent = "swamp berry"; break;
-					case 9:		bottle = 0x55E0; reagent = "bat wing"; break;
-					case 10:	bottle = 0x55E1; reagent = "beetle shell"; break;
-					case 11:	bottle = 0x55E2; reagent = "brimstone"; break;
-					case 12:	bottle = 0x55E3; reagent = "butterfly"; break;
-					case 13:	bottle = 0x55E4; reagent = "daemon blood"; break;
-					case 14:	bottle = 0x55E5; reagent = "toad eyes"; break;
-					case 15:	bottle = 0x55E6; reagent = "fairy eggs"; break;
-					case 16:	bottle = 0x55E7; reagent = "gargoyle ears"; break;
-					case 17:	bottle = 0x55E8; reagent = "grave dust"; break;
-					case 18:	bottle = 0x55E9; reagent = "moon crystals"; break;
-					case 19:	bottle = 0x55EA; reagent = "nox crystal"; break;
-					case 20:	bottle = 0x55EB; reagent = "silver widow"; break;
-					case 21:	bottle = 0x55EC; reagent = "pig iron"; break;
-					case 22:	bottle = 0x55ED; reagent = "pixie skull"; break;
-					case 23:	bottle = 0x55EE; reagent = "red lotus"; break;
-					case 24:	bottle = 0x55EF; reagent = "sea salt"; break;
-				}
-
+				CrateOfReagents crate = CrateOfReagents.CreateRandom();
 				crate.CrateQty = Utility.RandomMinMax( 400, 1200 );
-				crate.CrateItem = reagent;
-				crate.ItemID = bottle;
-				crate.Name = "crate of " + reagent + "";
 				crate.Weight = crate.CrateQty * 0.1;
 				CitizenCost = crate.CrateQty * 5;
 
@@ -732,12 +696,12 @@ namespace Server.Mobiles
 
 				switch ( Utility.RandomMinMax( 0, 5 ) )
 				{
-					case 0:	CitizenPhrase = phrase + " I have " + crate.CrateQty + " " + reagent + " I " + found + " in " + dungeon + " that I am " + sell + " for G~G~G~G~G gold."; break;
-					case 1:	CitizenPhrase = phrase + " I have " + crate.CrateQty + " " + reagent + " I " + found + " deep within " + dungeon + " that I am " + sell + " for G~G~G~G~G gold."; break;
-					case 2:	CitizenPhrase = phrase + " I have " + crate.CrateQty + " " + reagent + " I " + found + " somewhere in " + dungeon + " that I am " + sell + " for G~G~G~G~G gold."; break;
-					case 3:	CitizenPhrase = phrase + " I have " + crate.CrateQty + " " + reagent + " I " + bought + " in " + city + " that I am " + sell + " for G~G~G~G~G gold."; break;
-					case 4:	CitizenPhrase = phrase + " I have " + crate.CrateQty + " " + reagent + " I " + bought + " near " + city + " that I am " + sell + " for G~G~G~G~G gold."; break;
-					case 5:	CitizenPhrase = phrase + " I have " + crate.CrateQty + " " + reagent + " I " + bought + " somewhere in " + city + " that I am " + sell + " for G~G~G~G~G gold."; break;
+					case 0:	CitizenPhrase = phrase + " I have " + crate.CrateQty + " " + crate.CrateItem + " I " + found + " in " + dungeon + " that I am " + sell + " for G~G~G~G~G gold."; break;
+					case 1:	CitizenPhrase = phrase + " I have " + crate.CrateQty + " " + crate.CrateItem + " I " + found + " deep within " + dungeon + " that I am " + sell + " for G~G~G~G~G gold."; break;
+					case 2:	CitizenPhrase = phrase + " I have " + crate.CrateQty + " " + crate.CrateItem + " I " + found + " somewhere in " + dungeon + " that I am " + sell + " for G~G~G~G~G gold."; break;
+					case 3:	CitizenPhrase = phrase + " I have " + crate.CrateQty + " " + crate.CrateItem + " I " + bought + " in " + city + " that I am " + sell + " for G~G~G~G~G gold."; break;
+					case 4:	CitizenPhrase = phrase + " I have " + crate.CrateQty + " " + crate.CrateItem + " I " + bought + " near " + city + " that I am " + sell + " for G~G~G~G~G gold."; break;
+					case 5:	CitizenPhrase = phrase + " I have " + crate.CrateQty + " " + crate.CrateItem + " I " + bought + " somewhere in " + city + " that I am " + sell + " for G~G~G~G~G gold."; break;
 				}
 				CitizenPhrase = CitizenPhrase + " You can look in my backpack to examine the reagents if you wish. If you want to trade, then hand me the gold and I will give you the reagents.";
 
@@ -1152,7 +1116,7 @@ namespace Server.Mobiles
 			ArrayList wanderers = new ArrayList();
 			foreach ( Mobile wanderer in World.Mobiles.Values )
 			{
-				if ( wanderer is Citizens && !( wanderer is HouseVisitor || wanderer is AdventurerWest || wanderer is AdventurerSouth || wanderer is AdventurerNorth || wanderer is AdventurerEast || wanderer is TavernPatronWest || wanderer is TavernPatronSouth || wanderer is TavernPatronNorth || wanderer is TavernPatronEast ) )
+				if ( wanderer is Citizens && ( wanderer is DragonRider || wanderer.GetType() == typeof(Citizens) ) )
 				{
 					wanderers.Add( wanderer );
 				}
@@ -1553,6 +1517,7 @@ namespace Server.Mobiles
 					}
 				}
 
+				mount.SetControlMaster(m);
 				Server.Mobiles.BaseMount.Ride( mount, m );
 			}
 		}

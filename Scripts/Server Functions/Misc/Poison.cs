@@ -78,7 +78,7 @@ namespace Server
 
 			public Mobile From{ get{ return m_From; } set{ m_From = value; } }
 
-			public PoisonTimer( Mobile m, PoisonImpl p ) : base( p.m_Delay, p.m_Interval )
+			public PoisonTimer( Mobile m, PoisonImpl p) : base( p.m_Delay, p.m_Interval )
 			{
 				m_From = m;
 				m_Mobile = m;
@@ -139,6 +139,21 @@ namespace Server
 					honorTarget.ReceivedHonorContext.OnTargetPoisoned();
 
 				AOS.Damage( m_Mobile, m_From, damage, 0, 0, 0, 100, 0 );
+
+				if (Utility.RandomBool() && m_From is PlayerMobile && m_Mobile is BaseCreature && !((BaseCreature)m_Mobile).Controlled && m_Mobile.CanBeHarmful( m_From, false )) // give some skill to the poisoner!
+				{
+					int diff = 10;
+					if (m_Poison.Name =="Regular")
+						diff = 30;
+					else if (m_Poison.Name == "Greater")
+						diff = 50;
+					else if (m_Poison.Name == "Deadly")
+						diff = 70;
+					else if (m_Poison.Name == "Lethal")
+						diff = 90;
+
+					m_From.CheckTargetSkill( SkillName.Poisoning, m_Mobile, diff - 5, diff + 5 ); 
+				}
 
 				if ( 0.60 <= Utility.RandomDouble() ) // OSI: randomly revealed between first and third damage tick, guessing 60% chance
 						m_Mobile.RevealingAction();

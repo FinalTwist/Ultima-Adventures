@@ -1670,7 +1670,7 @@ namespace Server.Items
 		[Constructable]
 		public FoodPotato( int amount ) : base( amount, 0x9D2 )
 		{
-			this.Name = "FoodPotato";
+			this.Name = "Potato";
 			this.Hue = 0xB98;
 			this.Weight = 1.0;
 			this.FillFactor = 2;
@@ -1885,7 +1885,187 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	/* End Rations */
+    /* End Rations */
 
-	
+    public class CornBreadMuffins : Food
+    {
+		[Constructable]
+		public CornBreadMuffins() : base(0x9eb)
+        {
+            Stackable = false;
+			this.Name = "corn bread muffins";
+			this.Weight = 1.0;
+            this.FillFactor = 4;
+        }
+
+        public CornBreadMuffins(Serial serial) : base(serial)
+        {
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class CrabCakes : Food
+    {
+        [Constructable]
+        public CrabCakes() : base(0x9eb)
+        {
+            Stackable = false;
+			this.Name = "crab cakes";
+            this.Weight = 1.0;
+            this.FillFactor = 4;
+        }
+
+        public CrabCakes(Serial serial) : base(serial)
+        {
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class CrabRangoon : Food
+    {
+        [Constructable]
+        public CrabRangoon() : base(0x097c)
+        {
+            Stackable = true;
+			this.Name = "crab rangoon";
+            this.Weight = 1.0;
+            this.FillFactor = 4;
+        }
+
+        public CrabRangoon(Serial serial) : base(serial)
+        {
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class SteamedLobster : Food
+    {
+        [Constructable]
+        public SteamedLobster() : base(0x44D3)
+        {
+            Stackable = true;
+			this.Name = "steamed lobster";
+			this.Hue = 0x26;
+            this.Weight = 1.0;
+            this.FillFactor = 2;
+        }
+
+        public SteamedLobster(Serial serial) : base(serial)
+        {
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class SteamedCrab : Food
+    {
+        [Constructable]
+        public SteamedCrab() : base(0x44D2)
+        {
+            Stackable = true;
+			this.Name = "steamed crab";
+			this.Hue = 0x96;
+            this.Weight = 1.0;
+            this.FillFactor = 2;
+        }
+
+        public SteamedCrab(Serial serial) : base(serial)
+        {
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+
+    public class FishFilet : Food
+    {
+        [Constructable]
+        public FishFilet() : base(0x1E1C)
+        {
+            Stackable = true;
+			this.Name = "fish filet";
+            this.Weight = 1.0;
+            this.FillFactor = 2;
+        }
+
+        public FishFilet(Serial serial) : base(serial)
+        {
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
 }

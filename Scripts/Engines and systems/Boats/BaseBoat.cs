@@ -31,6 +31,8 @@ namespace Server.Multis
 
 	public abstract class BaseBoat : BaseMulti
 	{
+		const string CLEAR_THE_DECK = "clear the deck";
+
 		// THE LAST TWO INTEGERS ARE THE SEA WIDTH AND HEIGHT //
 		private static Rectangle2D[] m_FelWrap = new Rectangle2D[]{ new Rectangle2D( 16, 16, 5120-32, 4096-32 ) };
 		private static Rectangle2D[] m_TramWrap = new Rectangle2D[]{ new Rectangle2D( 16, 16, 5120-32, 3127-32 ) };
@@ -1516,6 +1518,7 @@ namespace Server.Multis
 
 			Mobile from = e.Mobile;
 
+			bool handled = false;
 			if ( CanCommand( from ) && Contains( from ) )
 			{
 				for ( int i = 0; i < e.Keywords.Length; ++i )
@@ -1568,9 +1571,42 @@ namespace Server.Multis
 							case 0x64: StartCourse( e.Speech, true, true ); break; // single*
 						}
 
+						handled = true;
 						break;
 					}
 				}
+
+				if (Insensitive.Contains(e.Speech, CLEAR_THE_DECK))
+				{
+					bool foundItem = false;
+					foreach(var entity in GetMovingEntities())
+					{
+						if ((entity is Item) == false) continue;
+
+						if (entity is Corpse)
+						{
+							entity.Delete();
+						}
+						else
+						{
+							foundItem = true;
+						}
+					}
+
+					if (foundItem)
+					{
+						m_TillerMan.Say("That item might be precious sir!");
+					}
+
+					handled = true;
+				}
+			}
+
+			if (handled) return;
+
+			if (from is PlayerMobile && Utility.Random( 4 ) == 1 && Contains(e.Mobile))
+			{
+				m_TillerMan.Say(string.Format("I can always '{0}' sir!", CLEAR_THE_DECK));
 			}
 		}
 
@@ -2150,7 +2186,7 @@ namespace Server.Multis
 
 			foreach ( object o in map.GetObjectsInBounds( new Rectangle2D( X + mcl.Min.X, Y + mcl.Min.Y, mcl.Width, mcl.Height ) ) )
 			{
-				if ( o == this || o is TillerMan || o is Hold || o is Plank )
+				if ( o == this || o is TillerMan || o is Hold || o is Plank || o is BoatDoor )
 					continue;
 
 				if ( o is Item )

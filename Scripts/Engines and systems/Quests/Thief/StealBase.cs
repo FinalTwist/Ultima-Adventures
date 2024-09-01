@@ -624,7 +624,7 @@ namespace Server.Items
             return pcst;
         }
 
-        public void SubmitSolution(Mobile m, PuzzleChestSolution solution)
+        public void SubmitSolution(Mobile m, PuzzleChestSolution solution, Mobile from, StealBase chest, int pedestal)
         {
             int correctCylinders, correctColors;
 
@@ -639,7 +639,7 @@ namespace Server.Items
 				m_Tries++;
                 m_Guesses[m] = new PuzzleChestSolutionAndTime(DateTime.UtcNow, solution);
 
-                m.SendGump(new StatusGump(correctCylinders, correctColors));
+                m.SendGump(new StatusGump(correctCylinders, correctColors, from, chest, solution, pedestal));
 
                 DoDamage(m);
             }
@@ -999,7 +999,6 @@ namespace Server.Items
                 m_Chest = chest;
                 m_Solution = solution;
 
-                Dragable = false;
                 AddBackground(25, 0, 500, 410, 0x53);
 
                 AddImage(62, 20, 0x67);
@@ -1079,21 +1078,20 @@ namespace Server.Items
                 //    return;
                // }
 
+                if (info.Switches.Length == 0)
+                    return;
+
+                int pedestal = info.Switches[0];
+                if (pedestal < 0 || pedestal >= m_Solution.Cylinders.Length)
+                    return;
+                
+                
                 if (info.ButtonID == 1)
                 {
-					
-					
-                    m_Chest.SubmitSolution(m_From, m_Solution);
+                    m_Chest.SubmitSolution(m_From, m_Solution, m_From, m_Chest, pedestal);
                 }
                 else
                 {
-                    if (info.Switches.Length == 0)
-                        return;
-
-                    int pedestal = info.Switches[0];
-                    if (pedestal < 0 || pedestal >= m_Solution.Cylinders.Length)
-                        return;
-
                     PuzzleChestCylinder cylinder;
                     switch ( info.ButtonID )
                     {
@@ -1176,7 +1174,12 @@ namespace Server.Items
 
         public class StatusGump : Gump
         {
-            public StatusGump(int correctCylinders, int correctColors)
+            private readonly int m_Pedestal;
+            private readonly Mobile m_From;
+            private readonly StealBase m_Chest;
+            private readonly PuzzleChestSolution m_Solution;
+
+            public StatusGump(int correctCylinders, int correctColors, Mobile from, StealBase chest, PuzzleChestSolution solution, int pedestal)
                 : base(50, 50)
             {
                 AddBackground(15, 250, 305, 163, 0x53);
@@ -1190,8 +1193,22 @@ namespace Server.Items
                 AddHtmlLocalized(35, 323, 250, 24, 1018316, false, false); // Used colors in wrong slots:
                 AddLabel(285, 323, 0x44, correctColors.ToString());
 
-                AddButton(152, 369, 0xFA5, 0xFA7, 0, GumpButtonType.Reply, 0);
+                AddButton(152, 369, 0xFA5, 0xFA7, 1, GumpButtonType.Reply, 0);
+
+                m_From = from;
+                m_Chest = chest;
+                m_Solution = solution;
+                m_Pedestal = pedestal;
             }
+            
+            public override void OnResponse(NetState sender, RelayInfo info)
+            {
+                if (m_Chest.Deleted || info.ButtonID == 0 || !m_From.CheckAlive())
+                    return;
+                
+                m_From.SendGump(new PuzzleGump(m_From, m_Chest, m_Solution, m_Pedestal));
+            }
+
         }
 
         private void InitHints()

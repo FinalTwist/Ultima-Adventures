@@ -79,9 +79,9 @@ namespace Server.Items
 		public CommodityDeed( Item commodity ) : base( 0x14F0 )
 		{
 			Weight = 1.0;
-			Hue = 0x47;
+			Hue = commodity != null ? 0x592 : 0x47;
 
-			m_Commodity = commodity;
+            m_Commodity = commodity;
 
 			//LootType = LootType.Blessed;
 		}

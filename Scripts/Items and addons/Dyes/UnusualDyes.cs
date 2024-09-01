@@ -106,6 +106,15 @@ namespace Server.Items
 						m_Dye.Consume();
 					}
 				}
+				else if ( targeted is PaintPaletteBase )
+				{
+					PaintPaletteBase pigment = (PaintPaletteBase)targeted;
+					if (pigment.ApplyHue(from, m_Dye.Hue, 0x23E))
+					{
+						from.AddToBackpack( new Bottle() );
+						m_Dye.Consume();
+					}
+				}
 				else
 				{
 					from.SendLocalizedMessage( 500857 ); // Use this on a dye tub.

@@ -841,10 +841,7 @@ namespace Server.Items
 			AosAttributes primary = quiver.Attributes;
 
 			m_Props.SetAll( false );
-
-			int dmgIncrease = 0;
-				if ( LootPack.CheckLuck( m_LuckChance ) || max >= Utility.RandomMinMax( 1, 50 ) ){ dmgIncrease = 5 + Utility.RandomMinMax( min, max ); }
-				if ( dmgIncrease > 50 ){ dmgIncrease = 50; }
+			
 			int lowAmmo = 0;
 				if ( LootPack.CheckLuck( m_LuckChance ) || max >= Utility.RandomMinMax( 1, 50 ) ){ lowAmmo = 5 + Utility.RandomMinMax( min, max ); }
 				if ( lowAmmo > 75 ){ lowAmmo = 75; }
@@ -852,7 +849,6 @@ namespace Server.Items
 				if ( LootPack.CheckLuck( m_LuckChance ) || max >= Utility.RandomMinMax( 1, 50 ) ){ weightReduce = weightReduce + Utility.RandomMinMax( min, max ); }
 				if ( weightReduce > 100 ){ weightReduce = 100; }
 
-			quiver.DamageIncrease = dmgIncrease;
 			quiver.LowerAmmoCost = lowAmmo;
 			quiver.WeightReduction = weightReduce;
 
@@ -889,9 +885,28 @@ namespace Server.Items
 					case 21: ApplyAttribute( primary,	min, max, AosAttribute.WeaponSpeed,				1, 2 ); break;
 				}
 			}
-		}
+        }
 
-		public static void ApplyAttributesTo( BaseInstrument lute, int attributeCount, int min, int max )
+        public void ApplyAttributesTo( BaseInstrument lute )
+        {
+            CraftResourceInfo resInfo = CraftResources.GetInfo(m_Resource);
+
+            if (resInfo == null)
+                return;
+
+            CraftAttributeInfo attrs = resInfo.AttributeInfo;
+
+            if (attrs == null)
+                return;
+
+            int attributeCount = Utility.RandomMinMax(attrs.RunicMinAttributes, attrs.RunicMaxAttributes);
+            int min = attrs.RunicMinIntensity;
+            int max = attrs.RunicMaxIntensity;
+
+            ApplyAttributesTo(lute, true, 0, attributeCount, min, max);
+        }
+
+        public static void ApplyAttributesTo( BaseInstrument lute, int attributeCount, int min, int max )
 		{
 			ApplyAttributesTo( lute, false, 0, attributeCount, min, max );
 		}
@@ -948,6 +963,7 @@ namespace Server.Items
 					case 29: ApplySkillBonus( skills,	min, max, 2,									1, 15 ); break;
 					case 30: ApplySkillBonus( skills,	min, max, 3,									1, 15 ); break;
 					case 31: ApplySkillBonus( skills,	min, max, 4,									1, 15 ); break;
+					case 32: lute.Slayer = GetRandomSlayer(); break;
 				}
 			}
 		}

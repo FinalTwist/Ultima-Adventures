@@ -7183,7 +7183,7 @@ namespace Server
 
 			int n = Notoriety.Compute( this, target );
 
-			return (n == Notoriety.Criminal || n == Notoriety.Murderer);
+			return (n == Notoriety.Criminal); // || n == Notoriety.Murderer);
 		}
 
 		/// <summary>

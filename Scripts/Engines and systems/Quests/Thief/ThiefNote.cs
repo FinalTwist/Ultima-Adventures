@@ -12,12 +12,16 @@ using Server.Commands;
 using System.Globalization;
 using Server.Regions;
 using Server.Accounting;
+using Server.SkillHandlers;
 
 
 namespace Server.Items
 {
 	public class ThiefNote : Item
 	{
+		public const int HollowStumpType = 1;
+		public const int HayCrateType = 2;
+
 		public Mobile NoteOwner;
 		[CommandProperty( AccessLevel.GameMaster )]
 		public Mobile Note_Owner { get{ return NoteOwner; } set{ NoteOwner = value; } }
@@ -270,7 +274,7 @@ namespace Server.Items
 			note.NoteItem = QuestCharacters.QuestItems( true );
 			note.NoteItemGot = 0;
 			note.NoteItemPerson = ContainerFunctions.GetOwner( "Pilfer" );
-			note.NoteDeliverType = Utility.RandomMinMax( 1, 2 );
+			note.NoteDeliverType = Utility.RandomBool() ? ThiefNote.HollowStumpType : ThiefNote.HayCrateType;
 
 			if ( Utility.RandomBool() ) // STEAL FROM TOWN
 			{
@@ -281,27 +285,25 @@ namespace Server.Items
 					case 0:		searchLocation = "the Land of Sosaria";			break;
 					case 1:		searchLocation = "the Land of Sosaria";			break;
 					case 2:		searchLocation = "the Land of Sosaria";			break;
-					case 3:		searchLocation = "the Land of Lodoria";			rewardMod = 2;	if ( !( CharacterDatabase.GetDiscovered( m, "the Land of Lodoria" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
-					case 4:		searchLocation = "the Land of Lodoria";			rewardMod = 2;	if ( !( CharacterDatabase.GetDiscovered( m, "the Land of Lodoria" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
-					case 5:		searchLocation = "the Land of Lodoria";			rewardMod = 2;	if ( !( CharacterDatabase.GetDiscovered( m, "the Land of Lodoria" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
-					case 6:		searchLocation = "the Serpent Island";			rewardMod = 3;	if ( !( CharacterDatabase.GetDiscovered( m, "the Serpent Island" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
-					case 7:		searchLocation = "the Serpent Island";			rewardMod = 3;	if ( !( CharacterDatabase.GetDiscovered( m, "the Serpent Island" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
-					case 8:		searchLocation = "the Serpent Island";			rewardMod = 3;	if ( !( CharacterDatabase.GetDiscovered( m, "the Serpent Island" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
-					case 9:		searchLocation = "the Isles of Dread";			rewardMod = 4;	if ( !( CharacterDatabase.GetDiscovered( m, "the Isles of Dread" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
-					case 10:	searchLocation = "the Savaged Empire";			rewardMod = 5;	if ( !( CharacterDatabase.GetDiscovered( m, "the Savaged Empire" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
-					case 11:	searchLocation = "the Savaged Empire";			rewardMod = 5;	if ( !( CharacterDatabase.GetDiscovered( m, "the Savaged Empire" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
-					case 12:	searchLocation = "the Island of Umber Veil";	rewardMod = 2;	if ( !( CharacterDatabase.GetDiscovered( m, "the Island of Umber Veil" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
-					case 13:	searchLocation = "the Bottle World of Kuldar";	rewardMod = 4;	if ( !( CharacterDatabase.GetDiscovered( m, "the Bottle World of Kuldar" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
-					case 14:	searchLocation = "DarkMoor";					rewardMod = 3;	if ( !( CharacterDatabase.GetDiscovered( m, "DarkMoor" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
+					case 3:		searchLocation = "the Land of Lodoria";			rewardMod = 2; break;
+					case 4:		searchLocation = "the Land of Lodoria";			rewardMod = 2; break;
+					case 5:		searchLocation = "the Land of Lodoria";			rewardMod = 2; break;
+					case 6:		searchLocation = "the Serpent Island";			rewardMod = 3; break;
+					case 7:		searchLocation = "the Serpent Island";			rewardMod = 3; break;
+					case 8:		searchLocation = "the Serpent Island";			rewardMod = 3; break;
+					case 9:		searchLocation = "the Isles of Dread";			rewardMod = 4; break;
+					case 10:	searchLocation = "the Savaged Empire";			rewardMod = 5; break;
+					case 11:	searchLocation = "the Savaged Empire";			rewardMod = 5; break;
+					case 12:	searchLocation = "the Island of Umber Veil";	rewardMod = 2; break;
+					case 13:	searchLocation = "the Bottle World of Kuldar";	rewardMod = 4; break;
+					case 14:	searchLocation = "DarkMoor";					rewardMod = 3; break;
 				}
 
-				if ( !( CharacterDatabase.GetDiscovered( m, "the Land of Sosaria" ) ) && searchLocation == "the Land of Sosaria" )
+				if ( !( CharacterDatabase.GetDiscovered( m, searchLocation ) ))
 				{
-					if ( m.Skills.Cap == 11000 ){ searchLocation = "the Savaged Empire"; }
-					else { searchLocation = "the Land of Lodoria"; }
+					rewardMod = 1;
+					searchLocation = "the Land of Sosaria";
 				}
-
-				if ( searchLocation == "the Land of Sosaria" ){ rewardMod = 1; }
 
 				int aCount = 0;
 				ArrayList targets = new ArrayList();
@@ -350,7 +352,7 @@ namespace Server.Items
 					case 11:	searchLocation = "the Savaged Empire";			if ( !( CharacterDatabase.GetDiscovered( m, "the Savaged Empire" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
 					case 12:	searchLocation = "the Island of Umber Veil";	if ( !( CharacterDatabase.GetDiscovered( m, "the Island of Umber Veil" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
 					case 13:	searchLocation = "the Bottle World of Kuldar";	if ( !( CharacterDatabase.GetDiscovered( m, "the Bottle World of Kuldar" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
-					case 14:	searchLocation = "the Underworld";				if ( !( CharacterDatabase.GetDiscovered( m, "the Underworld" ) ) ){ searchLocation = "the Underworld"; } break;
+					case 14:	searchLocation = "the Underworld";				if ( !( CharacterDatabase.GetDiscovered( m, "the Underworld" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
 					case 15:	searchLocation = "the Land of Ambrosia";		if ( !( CharacterDatabase.GetDiscovered( m, "the Land of Ambrosia" ) ) ){ searchLocation = "the Land of Sosaria"; } break;
 				}
 
@@ -419,7 +421,7 @@ namespace Server.Items
 			int dCount = 0;
 			ArrayList drops = new ArrayList();
 			foreach ( Item target in World.Items.Values )
-			if ( ( (note.NoteDeliverType == 1 && target is HollowStump) || (note.NoteDeliverType == 2 && target is HayCrate) ) && Worlds.GetMyWorld( target.Map, target.Location, target.X, target.Y ) == dropLocation )
+			if ( ( (note.NoteDeliverType == ThiefNote.HollowStumpType && target is HollowStump) || (note.NoteDeliverType == ThiefNote.HayCrateType && target is HayCrate) ) && Worlds.GetMyWorld( target.Map, target.Location, target.X, target.Y ) == dropLocation )
 			{
 				drops.Add( target ); dCount++;
 			}
@@ -476,7 +478,7 @@ namespace Server.Items
 				}
 
 			string container = "crate of hay in";
-			if ( note.NoteDeliverType == 1 ){ container = "hollow stump near"; }
+			if ( note.NoteDeliverType == ThiefNote.HollowStumpType ){ container = "hollow stump near"; }
 
 			string location = note.NoteItemArea;
 				if ( note.NoteItemCategory != "" && note.NoteItemCategory != null ){ location = "the " + note.NoteItemCategory + " in " + note.NoteItemArea; }
@@ -486,6 +488,58 @@ namespace Server.Items
 			note.NoteStory = note.NoteStory + " There you will also find your payment of " + note.NoteReward + " gold and instructions for your next job.";
 
 			note.InvalidateProperties();
+		}
+
+		public static bool TryGetReward(Mobile from, ThiefNote envelope, string town, int noteType)
+		{
+			if (envelope.NoteOwner == from && envelope.NoteItemGot > 0 && town == envelope.NoteDeliverTo && envelope.NoteDeliverType == noteType)
+			{
+				int modded = Server.Misc.AdventuresFunctions.DiminishingReturns(envelope.Consecutive, 200);
+				envelope.Consecutive += 1;
+				LoggingFunctions.LogStandard(from, "has stolen " + envelope.NoteItem + ".");
+
+				AetherGlobe.QuestEffect(envelope.NoteReward, from, false);
+
+				if (envelope.NoteReward < 5000 && envelope.NoteReward > 0)
+					from.AddToBackpack(new Gold(envelope.NoteReward));
+				else if (envelope.NoteReward > 0)
+					from.AddToBackpack(new BankCheck(envelope.NoteReward));
+
+				Titles.AwardFame(from, ((int)(envelope.NoteReward / 25)), true);
+				Titles.AwardKarma(from, -((int)(envelope.NoteReward / 25)), true);
+				Server.Items.ThiefNote.SetupNote(envelope, from, envelope.Consecutive);
+				from.LocalOverheadMessage(MessageType.Emote, 1150, true, "You collected your reward.");
+				from.SendMessage("You found another secret note for you.");
+				from.SendSound(0x3D);
+				from.CloseGump(typeof(Server.Items.ThiefNote.NoteGump));
+				Server.Items.ThiefNote.ThiefTimeAllowed(from);
+				Item rngitem = null;
+
+				if (envelope.Consecutive == 50 || envelope.Consecutive == 100 || envelope.Consecutive == 150 || envelope.Consecutive == 200 || envelope.Consecutive == 250 || envelope.Consecutive == 300 || envelope.Consecutive == 350)
+					rngitem = Loot.RandomArty();
+
+				else if (rngitem == null && Utility.RandomDouble() < (0.03 + ((double)modded / 300)))
+				{
+					switch (Utility.Random(6)) //
+					{
+						case 0: rngitem = Loot.RandomArty(); break;
+						case 1: rngitem = Loot.RandomArmorOrShieldOrWeaponOrJewelryOrClothing(); Stealing.ItemMutate(from, from.Luck, rngitem, (int)(modded / 10)); break;
+						case 2: rngitem = Loot.RandomInstrument(); Stealing.ItemMutate(from, from.Luck, rngitem, (int)(modded / 10)); break;
+						case 3: rngitem = Loot.RandomQuiver(); Stealing.ItemMutate(from, from.Luck, rngitem, (int)(modded / 10)); break;
+						case 4: rngitem = Loot.RandomWand(); Stealing.ItemMutate(from, from.Luck, rngitem, (int)(modded / 10)); break;
+						case 5: rngitem = Loot.RandomJewelry(); Stealing.ItemMutate(from, from.Luck, rngitem, (int)(modded / 10)); break;
+					}
+					if (rngitem != null)
+					{
+						from.AddToBackpack(rngitem);
+						from.SendMessage("The guild offers you a special gift.  May it help you stay in the shadows.");
+					}
+				}
+
+				return true;
+			}
+
+			return false;
 		}
 	}
 }

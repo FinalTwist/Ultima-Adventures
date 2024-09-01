@@ -91,7 +91,7 @@ namespace Server.Mobiles
 
 	#endregion
 
-	public partial class PlayerMobile : Mobile, IHonorTarget
+    public partial class PlayerMobile : Mobile, IHonorTarget
 	{
 
 
@@ -396,7 +396,7 @@ namespace Server.Mobiles
 			get { return m_BalanceStatus; }
             set { m_BalanceStatus = value; InvalidateProperties(); }
         }
-		
+
 		public bool IsEvil { get { return m_BalanceStatus == -1; } }
 		public bool IsGood { get { return m_BalanceStatus == 1; } }
         public bool IsPledged { get { return IsEvil || IsGood; } }
@@ -465,7 +465,7 @@ namespace Server.Mobiles
 			get { return m_BalanceEffect; }
 			set { m_BalanceEffect = value; }
 		}
-		
+
 		private int m_THC;
 
 		[CommandProperty( AccessLevel.GameMaster )]
@@ -474,7 +474,7 @@ namespace Server.Mobiles
 			get { return m_THC; }
 			set { m_THC = value; }
 		}
-		
+
 		private int m_BlacksmithBOD;
 
 		[CommandProperty( AccessLevel.GameMaster )]
@@ -483,7 +483,7 @@ namespace Server.Mobiles
 			get { return m_BlacksmithBOD; }
 			set { m_BlacksmithBOD = value; }
 		}
-		
+
 		private int m_TailorBOD;
 
 		[CommandProperty( AccessLevel.GameMaster )]
@@ -500,7 +500,7 @@ namespace Server.Mobiles
             get { return m_CarpenterBOD; }
             set { m_CarpenterBOD = value; }
         }
-		
+
         private int m_FletcherBOD;
         [CommandProperty(AccessLevel.GameMaster)]
         public int FletcherBOD
@@ -622,7 +622,7 @@ namespace Server.Mobiles
 			get{ return m_Flags; }
 			set{ m_Flags = value; }
 		}
-		
+
 		private bool m_IsZen;
 		[CommandProperty( AccessLevel.GameMaster )]
         public bool IsZen
@@ -630,7 +630,7 @@ namespace Server.Mobiles
             get{ return m_IsZen; }
             set{ m_IsZen = value; }
         }
-		
+
 		private int m_FastGain;
 		[CommandProperty( AccessLevel.GameMaster )]
         public int FastGain
@@ -710,7 +710,7 @@ namespace Server.Mobiles
 			get{ return GetFlag( PlayerFlag.Avatar ); }
 			set{ SetFlag( PlayerFlag.Avatar, value ); m_avatar = value; InvalidateMyRunUO(); }
 		}
-		
+
 		public bool PublicMyRunUO
 		{
 			get{ return GetFlag( PlayerFlag.PublicMyRunUO ); }
@@ -933,6 +933,8 @@ namespace Server.Mobiles
 			BaseHouse house = BaseHouse.FindHouseAt( location, Map, 2 );
 			if (house != null && house.IsCoOwner((Mobile)this))
 			{
+				if (item is MovingBox) return true;
+
 				int amt = 1 + item.TotalItems;
 				if (!house.CheckAosLockdowns( amt ) || !house.CheckAosStorage( amt ))
 				{
@@ -942,7 +944,7 @@ namespace Server.Mobiles
 				else if (!(item is Container))
 					house.LockDown( (Mobile)this, item );
 					//house.SetLockdown( item, true );.
-				else 
+				else
 					house.AddSecure( (Mobile)this, item );
 					//house.LockDown( (Mobile)this, item );
 					//house.SetSecure((Mobile)this, item);
@@ -981,7 +983,7 @@ namespace Server.Mobiles
 					{
 						//if (item is Container)
 						//	house.ReleaseSecure( (Mobile)this, item );
-						//else 
+						//else
 
 						house.Release( (Mobile)this, item );
 						//item.Movable = true;
@@ -990,7 +992,7 @@ namespace Server.Mobiles
 					}
 				}
 			}
-			
+
 			base.Lift(item, amount, out rejected, out reject);
 		}
 
@@ -1059,7 +1061,7 @@ namespace Server.Mobiles
 					PlayerMobile pm = (PlayerMobile)m;
 
 					if((
-						( !pm.Mounted || 
+						( !pm.Mounted ||
 						( pm.Mount != null && pm.Mount is EtherealMount )) && ( pm.AllFollowers.Count > pm.AutoStabled.Count )) ||
 						( pm.Mounted && ( pm.AllFollowers.Count  > ( pm.AutoStabled.Count +1 ))))
 					{
@@ -1106,7 +1108,7 @@ namespace Server.Mobiles
 
 			if ( type != ResistanceType.Physical && 60 < max && Spells.Fourth.CurseSpell.UnderEffect( this ) )
 				max = 60;
-				
+
 			if ( type != ResistanceType.Physical && !Spells.Fourth.CurseSpell.UnderEffect( this ) && max == 60) //bug where a player had stuck at 60
 				max = 70;
 
@@ -1125,8 +1127,8 @@ namespace Server.Mobiles
 			UpdateResistances();
 		}
 
-		public override int MaxWeight { get 
-		{ 
+		public override int MaxWeight { get
+		{
 			if (AdventuresFunctions.IsPuritain((object)this))
 				return (((Core.ML && this.Race == Race.Human) ? 80 : 40) + (int)(3 * this.Str));
 
@@ -1145,17 +1147,17 @@ namespace Server.Mobiles
             bool seen = false;
 			if (!Hidden)
 			{
-				foreach ( Mobile witness in this.GetMobilesInRange( 12 ) ) 
+				foreach ( Mobile witness in this.GetMobilesInRange( 12 ) )
 				{
 					if (witness is BaseCreature && ((BaseCreature)witness).CanSee(this) && ( witness.Body.IsHuman || witness is BaseBlue || witness is BaseChild || witness is Townsperson || witness is BaseRed || witness is BasePerson || witness is BaseVendor || witness is BaseCursed ) && !((BaseCreature)witness).IsEnemy(this) )
 					{
-						seen = true; 		
+						seen = true;
 					}
 				}
 			}
 			if (!seen)
 			{
-				this.SendMessage( 0,  "Your criminal act hasn't been seen." ); 
+				this.SendMessage( 0,  "Your criminal act hasn't been seen." );
 				return;
 			}
 			if (seen)
@@ -1322,19 +1324,19 @@ namespace Server.Mobiles
 					phylactery.UpdateOwnerSoul(player);
 					if (phylactery.Temporary) {
 						phylactery.Delete();
-					}					
+					}
 				}
 				player.ClaimAutoStabledPets();
 				player.UpdateResistances();
 				player.UpdateFollowers();
 
 				if (player.GetFlag( PlayerFlag.IsAutomated ))
-					AdventuresAutomation.StopAction(player); 
+					AdventuresAutomation.StopAction(player);
 
-				player.LastLogin = DateTime.Now;
+				player.LastLogin = DateTime.UtcNow;
 				if ( player.GetFlag( PlayerFlag.InBed ) )
 				{
-					if ( (DateTime.Now - player.LastLogout) > TimeSpan.FromHours( 8 ) )
+					if ( (DateTime.UtcNow - player.LastLogout) > TimeSpan.FromHours( 8 ) )
 						player.SetFlag( PlayerFlag.WellRested, true );
 				}
 
@@ -1347,6 +1349,11 @@ namespace Server.Mobiles
 					player.High = false;
 
                 CustomClasses.Activate(player);
+
+				if (!player.Alive)
+				{
+					player.Send(SpeedControl.MountSpeed);
+				}
             }
         }
 
@@ -1361,7 +1368,7 @@ namespace Server.Mobiles
 
 					if (pet == null || pet.ControlMaster == null || pet.IsHitchStabled)
                         continue;
-					
+
 					total += pet.ControlSlots;
 
 				}
@@ -1371,7 +1378,7 @@ namespace Server.Mobiles
 
 
 
-		
+
 
 		public Phylactery FindPhylactery() {
 			Container backpack = this.Backpack;
@@ -1582,7 +1589,7 @@ namespace Server.Mobiles
 		private static void OnLogout( LogoutEventArgs e )
 		{
 			if( e.Mobile is PlayerMobile ) {
-				((PlayerMobile)e.Mobile).LastLogout = DateTime.Now;
+				((PlayerMobile)e.Mobile).LastLogout = DateTime.UtcNow;
 				((PlayerMobile)e.Mobile).AutoStablePets();
 			}
 		}
@@ -1669,7 +1676,7 @@ namespace Server.Mobiles
 			Item ring = this.FindItemOnLayer( Layer.Ring );
 			if (ring != null && ring is OneRing)
 				return;
-				
+
 			base.RevealingAction();
 
 			m_IsStealthing = false; // IsStealthing should be moved to Server.Mobiles
@@ -1719,7 +1726,7 @@ namespace Server.Mobiles
 			if ( m_DesignContext != null || (target is PlayerMobile && ((PlayerMobile)target).m_DesignContext != null) )
 				return false;
 
-			if ( (target is BaseVendor && ((BaseVendor)target).IsInvulnerable) || target is PlayerVendor || target is PlayerBarkeeper )
+			if ( (target is BaseVendor && ((BaseVendor)target).IsInvulnerable) || target is PlayerVendor || target is PlayerBarkeeper || target is RoomAttendant )
 			{
 				if ( message )
 				{
@@ -1854,24 +1861,24 @@ namespace Server.Mobiles
 		[CommandProperty( AccessLevel.GameMaster )]
 		public override int StamMax
 		{
-			get{ 
+			get{
 				int stamOffs = Server.Misc.AdventuresFunctions.DiminishingReturns( AosAttributes.GetValue( this, AosAttribute.BonusStam ), MyServerSettings.StatBonusCap());
 				if (stamOffs > MyServerSettings.StatBonusCap() && AccessLevel <= AccessLevel.Player) {
 					stamOffs = MyServerSettings.StatBonusCap();
 				}
-				return ( Server.Misc.MyServerSettings.PlayerLevelMod( base.StamMax, this ) ) + stamOffs; 
+				return ( Server.Misc.MyServerSettings.PlayerLevelMod( base.StamMax, this ) ) + stamOffs;
 			}
 		}
 
 		[CommandProperty( AccessLevel.GameMaster )]
 		public override int ManaMax
 		{
-			get{ 
+			get{
 				int manaOffs = Server.Misc.AdventuresFunctions.DiminishingReturns( AosAttributes.GetValue( this, AosAttribute.BonusMana ), MyServerSettings.StatBonusCap());
 				if (manaOffs > MyServerSettings.StatBonusCap() && AccessLevel <= AccessLevel.Player) {
 					manaOffs = MyServerSettings.StatBonusCap();
 				}
-				return ( Server.Misc.MyServerSettings.PlayerLevelMod( base.ManaMax, this ) ) + manaOffs; 
+				return ( Server.Misc.MyServerSettings.PlayerLevelMod( base.ManaMax, this ) ) + manaOffs;
 			}
 		}
 		#endregion
@@ -1928,15 +1935,15 @@ namespace Server.Mobiles
 
 		#endregion
 
-		private DateTime m_NextSound;	
+		private DateTime m_NextSound;
 		public DateTime NextSound{ get{ return m_NextSound; } set{ m_NextSound = value; } }
 
 		public override bool Move( Direction d )
-		{	
+		{
 
 			FlavorText( false );
 			AmbientSounds( false );
-							
+
 			NetState ns = this.NetState;
 
 			if ( ns != null )
@@ -2003,9 +2010,9 @@ namespace Server.Mobiles
 
 				// sounds
 				if ( DateTime.UtcNow >= m_NextSound && MyServerSettings.EnableAmbientSoundEffects() && !(Worlds.IsOnBoat( this )) )
-				{		
+				{
 					int sound =0;
-					
+
 					if (category != "")
 					{
 						if (category == "city")
@@ -2148,10 +2155,10 @@ namespace Server.Mobiles
 								case 3: this.PlaySound( 0x026 ); break;
 								case 4: this.PlaySound( 0x364 ); break;
 							}
-						}	
+						}
 					}
-					m_NextSound = (DateTime.UtcNow + TimeSpan.FromSeconds( Utility.RandomMinMax(30, 240)) );	
-				} 
+					m_NextSound = (DateTime.UtcNow + TimeSpan.FromSeconds( Utility.RandomMinMax(30, 240)) );
+				}
 			}
 		}
 
@@ -2179,7 +2186,7 @@ namespace Server.Mobiles
 				// flavor text
 
 				string flavortext = "";
-				
+
 				//situational awareness of mobiles
 				foreach ( Mobile mobile in this.GetMobilesInRange( 5 ) )
 				{
@@ -2237,7 +2244,7 @@ namespace Server.Mobiles
 						}
 						if (mobile is BaseChild)
 						{
-							switch (Utility.Random(10))// 
+							switch (Utility.Random(10))//
 							{
 								case 0: flavortext = "A child nearby sobs, then cries gently - missing his parents no doubt and having been kicked out from his home."; break;
 								case 1: flavortext = "A child nearby looks at your intently, wondering if you have anything of value..."; break;
@@ -2389,7 +2396,7 @@ namespace Server.Mobiles
 
 
 				}
-				if (flavortext == "" && Utility.RandomBool()) 
+				if (flavortext == "" && Utility.RandomBool())
 				{
 					if ( reg.IsPartOf( typeof( TownRegion ) ) || reg.IsPartOf( typeof( VillageRegion ) ) )
 					{
@@ -2540,7 +2547,7 @@ namespace Server.Mobiles
 					{
 						if (category != "")
 						{
-							
+
 							if (category == "forest")
 							{
 								switch (Utility.Random(10)) //
@@ -2652,7 +2659,7 @@ namespace Server.Mobiles
 A slight breeze makes the grass move gently in the wind.
 A little mouse catches sight of you and flees into a small hole in the ground.*/
 
-								
+
 							}
 							else if (category == "snow")
 							{
@@ -2691,7 +2698,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 								}
 							}
 						}
-					}	
+					}
 				}
 
 				if (flavortext != "")
@@ -2816,10 +2823,10 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 				if (Alive)
 				{
-					list.Add( new CallbackEntry(1079452, new ContextCallback(delegate 
+					list.Add( new CallbackEntry(1079452, new ContextCallback(delegate
 					{
 						from.CloseGump(typeof(StoryItemGump));
-						from.SendGump(new StoryItemGump(null, this, 0));	
+						from.SendGump(new StoryItemGump(null, this, 0));
 					}
 					)));
 				}
@@ -2902,20 +2909,20 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				return;
 
 			if (!m_SbRes)
-			{				
-				if ( HasGump( typeof( ResurrectGump ) ) ) 
+			{
+				if ( HasGump( typeof( ResurrectGump ) ) )
 				{
 					CloseGump( typeof( ResurrectGump ) );
 				}
-				if ( HasGump( typeof( ResurrectCostGump ) ) ) 
+				if ( HasGump( typeof( ResurrectCostGump ) ) )
 				{
 					CloseGump( typeof( ResurrectCostGump ) );
-				} 
-				if ( HasGump( typeof( ResurrectNowGump ) ) ) 
+				}
+				if ( HasGump( typeof( ResurrectNowGump ) ) )
 				{
 					CloseGump( typeof( ResurrectNowGump ) );
 				}
-			
+
 				m.SendMessage("Your soul needs more time to recover from your last incarnation.");
 
 				if (!m_SbResTimer)
@@ -2923,7 +2930,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 					new SbResTick( this ).Start();
 					m_SbResTimer = true;
 				}
-				
+
 				return;
 
 			}
@@ -2941,7 +2948,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				if ( creature is BaseCreature )
 				{
 					if ( ((BaseCreature)creature).Controlled && ((BaseCreature)creature).ControlMaster == this)
-					{  
+					{
 						BaseCreature c = (BaseCreature)creature;
 
 						if (c is HenchmanWizard || c is HenchmanMonster || c is HenchmanFighter || c is HenchmanArcher || c is Squire || c is PackBeast || c is GolemFighter || c is GolemPorter || c is FrankenPorter)
@@ -2954,12 +2961,12 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 							c.BondingBegin = DateTime.MinValue;
 							c.OwnerAbandonTime = DateTime.MinValue;
 							c.ControlTarget = null;
-							
+
 							c.AIObject.DoOrderRelease(); // this will prevent no release of creatures left alone with AI disabled (and consequent bug of Followers)
 						}
 					}
 					if ( ((BaseCreature)creature).Summoned && ((BaseCreature)creature).SummonMaster == this)
-					{  
+					{
 						BaseCreature c = (BaseCreature)creature;
 
 						tames.Add(c);
@@ -2994,8 +3001,8 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			{
 				m.Skills[s].Base = 0;
 			}
-			Template template = Template.GetRandomTemplate(this);			
-			m.Karma = Utility.RandomMinMax ( 10, 200);	
+			Template template = Template.GetRandomTemplate(this);
+			m.Karma = Utility.RandomMinMax ( 10, 200);
 			this.BalanceStatus = 0;
 			this.BalanceEffect = 0;
 			this.BAC = 0;
@@ -3009,7 +3016,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				this.High = false;
 			else
 				this.High = true;
-			
+
 			if (this == AetherGlobe.EvilChamp )
 				AetherGlobe.EvilChamp = null;
 			if (this == AetherGlobe.GoodChamp)
@@ -3032,17 +3039,17 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			Item robe = this.FindItemOnLayer( Layer.OuterTorso );
 			if (robe != null)
 				robe.Delete();
-			
+
 			//setup the new char
-			if ( Female = Utility.RandomBool() ) 
-			{ 
-			Body = 401; 
+			if ( Female = Utility.RandomBool() )
+			{
+			Body = 401;
 			Name = NameList.RandomName( "female" );
 			}
-			else 
-			{ 
-			Body = 400; 			
-			Name = NameList.RandomName( "male" ); 
+			else
+			{
+			Body = 400;
+			Name = NameList.RandomName( "male" );
 			}
 
 			Title = TavernPatrons.GetTitle();
@@ -3118,7 +3125,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 						pack.DropItem(item);
 					}
 				}
-				
+
 				if ( Utility.RandomMinMax( 1, 10 ) > 3 )
 				{
 					switch ( Utility.RandomMinMax( 0, 5 ) )
@@ -3184,9 +3191,9 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				pack.DropItem( new Torch() );
 				pack.DropItem( new BlueBook() );
 			}
-			
+
 			m_soulbounddate = DateTime.UtcNow;
-			
+
 		}
 
 		private class SbResTick : Timer
@@ -3295,7 +3302,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 					this.Paralyze( TimeSpan.FromSeconds( time ) );
 					Timer.DelayCall( TimeSpan.FromSeconds( time ), new TimerCallback ( nolongercaught ) );
 					from.PlaySound( 0x204 );
-					this.PlaySound( 0x204 ); 
+					this.PlaySound( 0x204 );
 				}
 			}
 
@@ -3441,7 +3448,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 
 
-		protected override void OnLocationChange( Point3D oldLocation ) 
+		protected override void OnLocationChange( Point3D oldLocation )
 		{
 			if ( !( Server.Misc.Worlds.IsMainRegion( Server.Misc.Worlds.GetRegionName( this.Map, oldLocation ) ) ) && Server.Misc.Worlds.IsMainRegion( Server.Misc.Worlds.GetRegionName( this.Map, this.Location ) ) )
 			{
@@ -3534,7 +3541,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				}
 				else if (contexts != null && contexts.SpeedBoost)
 					this.Send(SpeedControl.MountSpeed);
-				
+
 			}
 			else if ( mountAble && !Mounted && Alive )
 			{
@@ -3619,7 +3626,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			m_PreviousMapBlock = BlockQuery.QueryMobile(this, m_PreviousMapBlock);
 			}
 			/* End UltimaLive Mod */
-			
+
 			if ( oldMap != this.Map && Server.Misc.Worlds.IsMainRegion( Server.Misc.Worlds.GetRegionName( this.Map, this.Location ) ) )
 			{
 				Server.Misc.Worlds.EnteredTheLand( this );
@@ -3655,7 +3662,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			if ( !IsBeneficialCriminal(this) && !IsBeneficialCriminal(target) )
 				base.OnBeneficialAction( target, isCriminal );
-				
+
 		}
 
 		public override void OnDamage( int amount, Mobile from, bool willKill ) //player receives damage?
@@ -3694,7 +3701,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			if ( willKill && from is PlayerMobile )
 				Timer.DelayCall( TimeSpan.FromSeconds( 10 ), new TimerCallback( ((PlayerMobile) from).RecoverAmmo ) );
-			
+
 			if ( from != null && ((double)this.Hits / (double)this.HitsMax) <= 0.15 && this.BodyMod == 263 ) // minotaur morph
 				MinotaurCloak.UseMinotaurAbility( this );
 
@@ -3704,7 +3711,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				willKill = false;
 				SendMessage("You barely survived that! Now run!");
 			}
-			
+
 			base.OnDamage( amount, from, willKill );
 		}
 
@@ -3718,6 +3725,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			bool wasAlive = this.Alive;
 
+			Send(SpeedControl.Disable);
 			base.Resurrect();
 
 			this.Hunger = 10;
@@ -3745,7 +3753,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			if ( this.Alive && !wasAlive )
 			{
 				Item deathRobe = new DeathRobe();
-				
+
 				if ( !EquipItem( deathRobe ) )
 					deathRobe.Delete();
 			}
@@ -3797,7 +3805,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 		private bool FindItems_Callback(Item item)
 		{
-			if (!item.Deleted 
+			if (!item.Deleted
 				&& (
 					(item.LootType == LootType.Blessed && !this.SoulBound)
 						||
@@ -3851,18 +3859,18 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				}
             }
             //Zombiex end
-			
+
             else if (FindMostRecentDamager(true) is PlayerMobile )
 			{
 				PlayerMobile killer = (PlayerMobile)FindMostRecentDamager(true);
-				
+
 				if (killer.BodyMod == 84 && Utility.RandomBool() ) // Final: Widow's morphing armor addition
 				{
 					WidowSpawn spawn = new WidowSpawn();
 					spawn.NewSpawn(this, FindMostRecentDamager(true));
-				}	
+				}
 			}
-			
+
 			if ( Server.Misc.SeeIfJewelInBag.IHaveAJewel( this ) == true ) // FOR THE JEWEL OF IMMORTALITY
 			{
 				return false;
@@ -3881,15 +3889,15 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			if (Backpack != null && !Backpack.Deleted)
 			{
-				// reach in and grab all the items recursively so they can be saved 
+				// reach in and grab all the items recursively so they can be saved
 				List<Item> ilist = Backpack.FindItemsByType<Item>(FindItems_Callback);
 				for (int i = 0; i < ilist.Count; i++)
 				{
 					Item poop = (Item)ilist[i];
 					if (!(poop is Phylactery) && !(poop is SoulTome))
 						Backpack.DropItem(ilist[i]);
-					
-				}	
+
+				}
 				if (this.SoulBound) {
 					List<Item> itemsToDelete = new List<Item>(Backpack.Items);
 					Phylactery phylactery = this.FindPhylactery();
@@ -3906,18 +3914,18 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 								item.Amount = (int)Math.Ceiling((item.Amount*0.50));
 							}
 							undead.AddItem(item);
-						} else if (!CanRemainOnHardcoreCorpse(item) && item.LootType != LootType.Ensouled) 
+						} else if (!CanRemainOnHardcoreCorpse(item) && item.LootType != LootType.Ensouled)
 						{
 							if (Utility.RandomDouble() > 0.33)
 								item.Delete();
 							else if (item.LootType == LootType.Blessed)
 								item.Delete();
-							else 
+							else
 								undead.AddItem( item );
 						}
 					}
 					undead.MoveToWorld(new Point3D(this.X, this.Y, this.Z), this.Map);
-					undead.SayTo( this, "Thisss body is now mmiiine." );	
+					undead.SayTo( this, "Thisss body is now mmiiine." );
 				}
 			}
 
@@ -3925,7 +3933,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			Mobile mob = this.LastKiller;
 			if ( mob != null ){ LoggingFunctions.LogDeaths( this, mob ); }
-			
+
 			BaseWeapon.DamageItems((Mobile)this);
 
 			return base.OnBeforeDeath();
@@ -3935,7 +3943,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			if (item is BaseClothing) {
 				BaseClothing clothing = (BaseClothing)item;
 				return (clothing.Attributes.IsEmpty && clothing.ClothingAttributes.IsEmpty && clothing.Resistances.IsEmpty && clothing.SkillBonuses.IsEmpty);
-			} 
+			}
 			if (item is Phylactery || item is SoulTome)
 				return true;
 
@@ -3982,7 +3990,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			if (this.SoulBound)
 			{
 				m_SbRes = false;
-				
+
 				new SbResTick( this ).Start();
 				m_SbResTimer = true;
 
@@ -3992,9 +4000,9 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 						foreach (Item item in items)
 						{
 							if (!(this.CanRemainOnHardcoreCorpse(item))) {
-								item.Delete();	
+								item.Delete();
 							}
-						} 
+						}
 					}
 				}
 			}
@@ -4072,18 +4080,18 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			double changechange = 0;
 			if (this.BalanceStatus != 0)
-				changechange = (double)this.Karma / 750; 
+				changechange = (double)this.Karma / 750;
 			else if (this.Avatar)
-				changechange = (double)this.Karma / 1500; 
+				changechange = (double)this.Karma / 1500;
 			else
-				changechange = (double)this.Karma / 10000; 
+				changechange = (double)this.Karma / 10000;
 
 			m_BalanceEffect += (int)changechange;
-			AetherGlobe.ChangeCurse( (int)changechange );	
+			AetherGlobe.ChangeCurse( (int)changechange );
 
 			if ( GetFlag( PlayerFlag.WellRested ) )
 				SetFlag( PlayerFlag.WellRested, false );
-				
+
 			if( c.Items.Count > 0 ) //player died, chance of losing durability for their items
 			{
 				List<Item> list = new List<Item>( c.Items );
@@ -4100,7 +4108,8 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				if (reduced)
 					SendMessage("Your demise damaged your items!");
 			}
-		
+
+			Send(SpeedControl.MountSpeed);
 		}
 
 		private List<Mobile> m_PermaFlags;
@@ -4292,8 +4301,8 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 								string junk = "";
 								switch (Utility.Random(7))
 								{
-									case 0: newspeech += "man" + " "; break; 
-									case 1: newspeech += "dude" + " "; break; 
+									case 0: newspeech += "man" + " "; break;
+									case 1: newspeech += "dude" + " "; break;
 									case 2: newspeech += "groovy" + " "; break;
 									case 3: newspeech += "trippy" + " "; break;
 									case 4: newspeech += "enlightened" + " "; break;
@@ -4386,17 +4395,17 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				}
 
 					if ( ILost != null )
-					{ 
+					{
 							ChewedItem box = new ChewedItem();
 							box.ItemID = ILost.ItemID;
 							box.Hue = 700;
 							box.Chew = killer.Name;
 
-							this.PlaySound( 0x637 ); 
+							this.PlaySound( 0x637 );
 							killer.PublicOverheadMessage( MessageType.Emote, EmoteHue, false, "*Chews on something*" );
 
 							ILost.Delete();
-							this.AddToBackpack ( box );	
+							this.AddToBackpack ( box );
 					}
 			}
 
@@ -4408,7 +4417,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			if ( this.AccessLevel > AccessLevel.Player )
 				return;
 
-			if ( FindItemOnLayer( Layer.OuterTorso ) != null ) 
+			if ( FindItemOnLayer( Layer.OuterTorso ) != null )
 			{ DamageItem(FindItemOnLayer( Layer.OuterTorso )); }
 			if ( FindItemOnLayer( Layer.OneHanded ) != null ) { DamageItem(FindItemOnLayer( Layer.OneHanded ));}
 			if ( FindItemOnLayer( Layer.TwoHanded ) != null ) { DamageItem(FindItemOnLayer( Layer.TwoHanded ));}
@@ -4419,7 +4428,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			if ( FindItemOnLayer( Layer.OuterLegs ) != null ) { DamageItem(FindItemOnLayer( Layer.OuterLegs )); }
 			if ( FindItemOnLayer( Layer.Neck ) != null ) { DamageItem(FindItemOnLayer( Layer.Neck )); }
 			if ( FindItemOnLayer( Layer.Gloves ) != null ) { DamageItem(FindItemOnLayer( Layer.Gloves ));}
-			if ( FindItemOnLayer( Layer.Talisman ) != null && !(FindItemOnLayer( Layer.Talisman ) is Spellbook) && !(FindItemOnLayer( Layer.Talisman ) is BaseInstrument)) { DamageItem(FindItemOnLayer( Layer.Talisman )); } 
+			if ( FindItemOnLayer( Layer.Talisman ) != null && !(FindItemOnLayer( Layer.Talisman ) is Spellbook) && !(FindItemOnLayer( Layer.Talisman ) is BaseInstrument)) { DamageItem(FindItemOnLayer( Layer.Talisman )); }
 			if ( FindItemOnLayer( Layer.Shoes ) != null ) { DamageItem(FindItemOnLayer( Layer.Shoes )); }
 			if ( FindItemOnLayer( Layer.Cloak ) != null ) { DamageItem(FindItemOnLayer( Layer.Cloak ));}
 			if ( FindItemOnLayer( Layer.FirstValid ) != null ) { DamageItem(FindItemOnLayer( Layer.FirstValid )); }
@@ -4444,7 +4453,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 						armor.HitPoints -= 1;
 					else if (armor.MaxHitPoints > 1)
 						armor.MaxHitPoints -= 1;
-					else 
+					else
 						armor.Delete();
 				}
 				else if (thing is BaseJewel )
@@ -4454,7 +4463,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 						armor.HitPoints -= 1;
 					else if (armor.MaxHitPoints > 1)
 						armor.MaxHitPoints -= 1;
-					else 
+					else
 						armor.Delete();
 				}
 				else if (thing is BaseWeapon )
@@ -4464,7 +4473,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 						armor.HitPoints -= 1;
 					else if (armor.MaxHitPoints > 1)
 						armor.MaxHitPoints -= 1;
-					else 
+					else
 						armor.Delete();
 				}
 				else if (thing is BaseClothing )
@@ -4474,9 +4483,9 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 						armor.HitPoints -= 1;
 					else if (armor.MaxHitPoints > 1)
 						armor.MaxHitPoints -= 1;
-					else 
+					else
 						armor.Delete();
-				}	
+				}
 			}
 		}
 
@@ -4538,7 +4547,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			if (poison == Poison.Lesser && from.Skills[SkillName.Poisoning].Base > 50.0 )
 			{
-				double val = from.Skills[SkillName.Poisoning].Base - 50.0; 
+				double val = from.Skills[SkillName.Poisoning].Base - 50.0;
 				if (val > 25 && Utility.RandomDouble() < 0.50)
 					return true;
 				else if (Utility.RandomDouble() < (0.50 * (val / 25) ) )
@@ -4546,7 +4555,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			}
 			if (poison == Poison.Regular && from.Skills[SkillName.Poisoning].Base > 75.0 )
 			{
-				double val = from.Skills[SkillName.Poisoning].Base - 75.0; 
+				double val = from.Skills[SkillName.Poisoning].Base - 75.0;
 				if (val > 15 && Utility.RandomDouble() < 0.50)
 					return true;
 				else if (Utility.RandomDouble() < (0.50 * (val / 15) ) )
@@ -4554,7 +4563,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			}
 			if (poison == Poison.Greater && from.Skills[SkillName.Poisoning].Base > 90.0 )
 			{
-				double val = from.Skills[SkillName.Poisoning].Base - 90.0; 
+				double val = from.Skills[SkillName.Poisoning].Base - 90.0;
 				if (val > 10 && Utility.RandomDouble() < 0.50)
 					return true;
 				else if (Utility.RandomDouble() < (0.50 * (val / 10) ) )
@@ -4562,7 +4571,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			}
 			if (poison == Poison.Deadly && from.Skills[SkillName.Poisoning].Base > 100.0 )
 			{
-				double val = from.Skills[SkillName.Poisoning].Base - 100.0; 
+				double val = from.Skills[SkillName.Poisoning].Base - 100.0;
 				if (val > 15 && Utility.RandomDouble() < 0.50)
 					return true;
 				else if (Utility.RandomDouble() < (0.50 * (val / 15) ) )
@@ -4570,7 +4579,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			}
 			if (poison == Poison.Lethal && from.Skills[SkillName.Poisoning].Base > 115.0 )
 			{
-				double val = from.Skills[SkillName.Poisoning].Base - 115.0; 
+				double val = from.Skills[SkillName.Poisoning].Base - 115.0;
 				if (val > 10 && Utility.RandomDouble() < 0.50)
 					return true;
 				else if (Utility.RandomDouble() < (0.50 * (val / 10) ) )
@@ -4677,7 +4686,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 				if (killed is BaseCreature)
 					harmed = ((BaseCreature)killed).midrace;
-				
+
 				if (killed is MidlandVendor) //special exceptions for mobs who are low fame but worth more
 					effect = 250;
 
@@ -4733,7 +4742,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			bool running = ( Direction.Running != 0 );
 			double calc = 0;
-			calc = ((double)Server.SkillHandlers.Stealth.GetArmorRating(this) / ( ((double)Str/3) + ((double)Int) ) ); 
+			calc = ((double)Server.SkillHandlers.Stealth.GetArmorRating(this) / ( ((double)Str/3) + ((double)Int) ) );
 
 			calc += ( (double)Backpack.TotalWeight/3 ) / (((double)this.Str*4) + ((double)this.Dex));
 
@@ -4746,21 +4755,21 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			calc = 1 - calc;
 			return calc;
 		}
-		
+
 		public void CheckRest()
 		{
 			if (GetFlag( PlayerFlag.WellRested ) )
 			{
-				if ( (m_LastLogin + TimeSpan.FromHours(12)) > DateTime.Now )
-					SetFlag( PlayerFlag.WellRested, false ); 
+				if ( (m_LastLogin + TimeSpan.FromHours(12)) > DateTime.UtcNow )
+					SetFlag( PlayerFlag.WellRested, false );
 			}
 		}
 
-		public bool Sorcerer() 
+		public bool Sorcerer()
 		{
 			return CustomClass == SpecializationType.Sorcerer;
         }
-		
+
 		public bool Troubadour()
         {
             return CustomClass == SpecializationType.Troubadour;
@@ -4775,12 +4784,12 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
         {
             return CustomClass == SpecializationType.Alchemist;
         }
-		
+
 		public double AlchemistBonus()
 		{
 			return CustomClasses.Alchemist.GetPotionBonus(this);
 		}
-				
+
 
 		public double Agility() //for dodge and parry
 		{
@@ -4796,7 +4805,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			double calc = 0;
 
 			double resists = ((double)PoisonResistance + (double)PhysicalResistance + (double)FireResistance + (double)ColdResistance + (double)EnergyResistance) /3;
-			calc = ( ( ((double)Server.SkillHandlers.Stealth.GetArmorRating(this)*1.5) + resists ) / (( ((double)Str/3) + ((double)Dex) ) * 2.25) ); 
+			calc = ( ( ((double)Server.SkillHandlers.Stealth.GetArmorRating(this)*1.5) + resists ) / (( ((double)Str/3) + ((double)Dex) ) * 2.25) );
 
 			calc += 0.50 * (1- ((double)this.Stam / (double)this.StamMax)); // tired player isnt agile
 			calc += 0.30 * Encumbrance();
@@ -4815,7 +4824,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 		{
 			//how much is the player carrying?  This will affect how much he can run, whether he can dodge, etc
 			//strength greatly influences this higher str, more you can carry
-			
+
 			if ( AccessLevel > AccessLevel.Player )
 				return 0;
 
@@ -4843,15 +4852,15 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 		{
 			//everytime the function is called on, count goes up.  if it gets too high the player will start failing (doing too much too quickly)
 			//higher int increases the cap and impact of this, higher end, higher focus
-			
+
 			if ( AccessLevel > AccessLevel.Player )
 				return 0;
 
-			m_mentalexhaustcount ++; 
+			m_mentalexhaustcount ++;
 
 			if ( m_mentalexhaustcount > (int)(50 + (this.Int * 20)))
 				m_mentalexhaustcount = (int)(50 + (this.Int * 20));
-			
+
 			double calc = 0;
 
 			//lets calculate base using a function of int.
@@ -5044,11 +5053,11 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			writer.Write( (DateTime) m_lastautores);
 			writer.Write(m_LastGauntletLevel);
-			
+
 			if (m_OriginalBody == null) {
 				m_OriginalBody = this.Body;
 			}
-			
+
 			writer.Write( (int)m_OriginalBody );
 
            		writer.Write( (int)m_SoulForce );
@@ -5154,7 +5163,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			writer.Write( m_LongTermElapse );
 			writer.Write( m_ShortTermElapse );
 			writer.Write( this.GameTime );
-			
+
 			writer.Write( m_BalanceStatus );
 		}
 
@@ -5195,7 +5204,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 					m_midlizardacc = reader.ReadInt();
 					m_midpirateacc = reader.ReadInt();
 					m_midorcacc = reader.ReadInt();
-					goto case 40;				
+					goto case 40;
 				case 40:
 					m_midrace = reader.ReadInt();
 					goto case 39;
@@ -5234,7 +5243,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 					m_soulbounddate = reader.ReadDateTime();
 					goto case 30;
 				}
-				case 30: 
+				case 30:
 				{
 					m_SoulBound = reader.ReadBool();
 					goto case 28;
@@ -5363,7 +5372,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 					goto case 13;
 				}
-				case 13: 
+				case 13:
 				case 12:
 				{
 					m_BOBFilter = new Engines.BulkOrders.BOBFilter( reader );
@@ -5453,11 +5462,11 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 					break;
 
 				}
-			
+
 
 			}
 
-			if (m_SongEffects == null) 
+			if (m_SongEffects == null)
 				m_SongEffects = new List<SongEffect>();
 
 			if (m_RecentlyReported == null)
@@ -5586,7 +5595,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 		public void HandleDeletion(bool handleHouse) {
 
 			if (handleHouse) {
-				BaseHouse.HandleDeletion( this );	
+				BaseHouse.HandleDeletion( this );
 			}
 			DisguiseTimers.RemoveTimer( this );
 		}
@@ -5607,7 +5616,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			string sTitle = "" + GetPlayerInfo.GetSkillTitle( this ) + GetPlayerInfo.GetNPCGuild( this );
 			list.Add( Utility.FixHtml( sTitle ) );
-			
+
 			if ( this.SoulBound)
 			{
 				if (!m_sbmaster)
@@ -5615,7 +5624,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				else
 					list.Add ( "this being is a master SoulBound" );
 			}
-			
+
 			if ( this.m_soulbounddate != null && this.SoulBound)
 				list.Add ( "Among the living since "+ m_soulbounddate);
 
@@ -5623,12 +5632,12 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				list.Add ( "Champion of the Balance");
 			else if (this.Avatar && !(this.SoulBound))
 			{
-				
+
 				if (BalanceStatus > 0)
 					list.Add ( "Avatar of the Balance, pledged to order" );
 				else if (BalanceStatus < 0)
 					list.Add ( "Avatar of the Balance, pledged to chaos" );
-				else 
+				else
 				{
 					list.Add ( "Avatar of the Balance, unpledged to chaos or order" );
 					list.Add ( "Seek out the Time Lord to choose a path" );
@@ -5660,11 +5669,11 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				default:
 					break;
             }
-            
+
             if (this.BAC > 0)
 			{
 				string drunk = "a little tipsy";
-				
+
 				if (BAC > 50)
 					drunk = "completely face-smashed.";
 				else if (BAC > 40)
@@ -5675,10 +5684,10 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 					drunk = "drunk.";
 				else if (BAC > 10)
 					drunk = "wobbly.";
-					
+
 				list.Add("Currently " + drunk);
 			}
-			
+
 			if (GetFlag( PlayerFlag.WellRested ) )
 			{
 				CheckRest();
@@ -5714,8 +5723,8 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			{
 				if (!(mobile is BaseConvo) && (mobile is BaseCreature) && (((BaseCreature)mobile).SecondsSoulTouched == 0)) {
 					int newStr = (int)(mobile.RawStr*soulBuff);
-					mobile.AddStatMod(new StatMod( StatType.Int, "SoulTouchedInt", newStr, TimeSpan.Zero ));				
-					mobile.AddStatMod(new StatMod( StatType.Dex, "SoulTouchedDex", (int)(mobile.RawDex*soulBuff), TimeSpan.Zero ));		
+					mobile.AddStatMod(new StatMod( StatType.Int, "SoulTouchedInt", newStr, TimeSpan.Zero ));
+					mobile.AddStatMod(new StatMod( StatType.Dex, "SoulTouchedDex", (int)(mobile.RawDex*soulBuff), TimeSpan.Zero ));
 					mobile.AddStatMod(new StatMod( StatType.Str, "SoulTouchedStr", (int)(mobile.RawStr*soulBuff), TimeSpan.Zero ));
 					mobile.Hits += newStr;
 
@@ -5790,7 +5799,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 					}
 			}
 
-			if (AdventuresFunctions.IsPuritain((object)this)) 
+			if (AdventuresFunctions.IsPuritain((object)this))
 			{
 
 				if ( Mounted && Mount is BaseCreature)
@@ -5802,7 +5811,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 						return false;
 					}
 				}
-				
+
 			}
 
 			if (m_PokerGame != null) //Start Edit For Poker
@@ -6040,7 +6049,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 		public virtual bool UsesFastwalkPrevention{ get{ return ( AccessLevel < AccessLevel.Counselor ); } }
 		public override int ComputeMovementSpeed(Direction dir, bool checkTurning)
-		{ 
+		{
 			if ( checkTurning && (dir & Direction.Mask) != (this.Direction & Direction.Mask) )
 				return Mobile.RunMount;	// We are NOT actually moving (just a direction change)
 
@@ -6052,7 +6061,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			AnimalFormContext animalContext = AnimalForm.GetContext( this );
 
-			if (AdventuresFunctions.IsPuritain((object)this)) 
+			if (AdventuresFunctions.IsPuritain((object)this))
 			{
 				if (running && !onHorse)
 				{
@@ -6068,17 +6077,17 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 					if (Utility.RandomDouble() < (0.30 * (Encumbrance()) + 0.15 * (1- mt.Agility())))
 						mt.Stam -= Utility.RandomMinMax(1, 3);
 
-				}					
+				}
 				if ( !onHorse && Encumbrance() >= 0.90)
 					return Mobile.WalkFoot;
-				
+
 			}
-			
+
 				if( onHorse || (animalContext != null && animalContext.SpeedBoost) )
 					return ( running ? Mobile.RunMount : Mobile.WalkMount );
 
 				return ( running ? Mobile.RunFoot : Mobile.WalkFoot );
-			
+
 		}
 
 		public static bool MovementThrottle_Callback( NetState ns )
@@ -6087,6 +6096,11 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			if ( pm != null )
 			{
+				if (!pm.Alive)
+				{
+					return true;
+				}
+
 				if ( pm.FindItemOnLayer( Layer.Shoes ) != null )
 				{
 					Item shoes = pm.FindItemOnLayer( Layer.Shoes );
@@ -6112,7 +6126,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			if ( pm == null || !pm.UsesFastwalkPrevention )
 				return true;
-				
+
 			if (!pm.m_HasMoved)
 			{
 				// has not yet moved
@@ -6467,9 +6481,9 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			if (e.Mobile != null && e.Mobile is PlayerMobile && e.Mobile == this )
 			{
 				m_lastwords = e.Speech.ToString();
-				
+
 				string speech = e.Speech;
-				
+
 				if ( (Insensitive.Contains( speech, "i wish to make" ) || Insensitive.Contains( speech, "i wish to start" ) || Insensitive.Contains( speech, "i wish to have" ) || Insensitive.Contains( speech, "i wish to sacrifice" ) ) && !GetFlag( PlayerFlag.IsAutomated ) )
 				{
 					AdventuresAutomation.StartTask(this, speech);
@@ -6895,7 +6909,29 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 			if( state != null && state.BuffIcon )
 			{
-				state.Send( new AddBuffPacket( this, b ) );
+                // Synchronize the buff icon as close to _on the second_ as we can.
+                var milliseconds = (b.TimeStart != DateTime.MinValue) ? ((b.TimeStart + b.TimeLength) - DateTime.UtcNow).Milliseconds - 50: 0;
+                if (milliseconds > 0)
+                {
+					PlayerMobile pm = this;
+					BuffInfo buffInfo = b;
+                    Timer.DelayCall(TimeSpan.FromMilliseconds(milliseconds), () =>
+                    {
+						if (pm == null || pm.m_BuffTable == null) return;
+
+                        // They are still online, we still have the buff icon in the table, and it is the same buff icon
+						BuffInfo checkBuff;
+						state = pm.NetState; // Get latest in case they reconnected
+                        if (state != null && pm.m_BuffTable.TryGetValue(buffInfo.ID, out checkBuff) && checkBuff == buffInfo)
+                        {
+                            state.Send( new AddBuffPacket( this, b ) );
+                        }
+                    });
+                }
+                else
+                {
+					state.Send( new AddBuffPacket( this, b ) );
+                }
 			}
 		}
 
