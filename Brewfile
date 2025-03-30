@@ -1,4 +1,5 @@
-brew docker
-brew docker-buildx
-brew orbstack
-brew mono
+brew "docker"
+brew "docker-buildx"
+brew "mono"
+
+cask "orbstack"
