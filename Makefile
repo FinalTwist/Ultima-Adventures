@@ -7,7 +7,7 @@ build:
 	docker buildx build --tag ultima-adventures --progress auto .
 
 run:
-	docker run -it -p 2593:2593 -v ./Backups:/opt/Ultima-Adventures/Backups -v ./Logs:/opt/Ultima-Adventures/Logs -v ./Saves:/opt/Ultima-Adventures/Saves ultima-adventures
+	docker run -it -p 2593:2593 -v "./ACC Backups:/opt/Ultima-Adventures/ACC Backups" -v ./Logs:/opt/Ultima-Adventures/Logs -v ./Saves:/opt/Ultima-Adventures/Saves ultima-adventures
 
 stop:
 	docker stop ultima-adventures
