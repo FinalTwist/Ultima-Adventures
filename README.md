@@ -23,3 +23,15 @@ Alternatively, you can just download the entire package and not bother with clon
 All the best to the UO community, I hope to keep playing this amazing game for many more years to come.  Feel free to clone and revise as you wish!
 
 Note:  This code is completely open for you to use in any way you want.  Because the code depends on Runuo, Servuo, Djeryv, myself and hundreds of other contributors, we ask that you return the favor and make your server code/changes freely available.  The codebase benefits overall when everyone adds to it in their own personal capacity.
+
+### MacOs Containerized Linux Development
+
+Steps to get started:
+1. Ensure you have `brew` installed
+2. clone repo, make it your working directory
+3. `make dev-deps` to install contents of Brewfile
+4. Start the Orbstack agent, `⌘ + Space` to open spotlight and type Orbstack.
+5. `make compile` to build the linux binary you'll need
+6. `make build` to build the containerized image
+7. `make run` to start the container and boot up the server!
+8. Changes in code can be re-loaded into the container via `make rebuild`
