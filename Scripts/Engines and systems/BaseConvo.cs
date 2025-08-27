@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using Server;
 using Server.Gumps;
+using Server.Misc;
 using Server.Items;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -847,6 +848,8 @@ namespace Server.Mobiles
 		private static ArrayList m_List = new ArrayList( 10 );
 		public override void OnSpeech( SpeechEventArgs e )
 		{
+			if (MyServerSettings.EnableTranslation())
+				e.Speech = Translator.ToEnglish(e.Speech);
 			Mobile pc = e.Mobile;
 			if ( base.HandlesOnSpeech( pc ) )
 				base.OnSpeech( e );
@@ -1105,7 +1108,11 @@ namespace Server.Mobiles
 						town = "great wide open";
 					string job = this.Title != null && this.Title.StartsWith( "the" ) ? this.Title.Substring( 5 ) : m_Job.ToString();
 					
-					Say( String.Format( str, pc != null ? pc.Name : "someone", this.Name, job, town, "" ) );
+					string response = String.Format( str, pc != null ? pc.Name : "someone", this.Name, job, town, "" );
+					if (MyServerSettings.EnableTranslation())
+						Say( Translator.ToSpanish(response) );
+					else
+						Say( response );
 					e.Handled = true;
 				}
 			}

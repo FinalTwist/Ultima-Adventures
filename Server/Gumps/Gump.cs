@@ -234,22 +234,65 @@ namespace Server.Gumps
 
 		public void AddHtml( int x, int y, int width, int height, string text, bool background, bool scrollbar )
 		{
+			if (MyServerSettings.EnableTranslation())
+				text = Translator.ToSpanish(text);
 			Add( new GumpHtml( x, y, width, height, text, background, scrollbar ) );
 		}
 
 		public void AddHtmlLocalized( int x, int y, int width, int height, int number, bool background, bool scrollbar )
 		{
-			Add( new GumpHtmlLocalized( x, y, width, height, number, background, scrollbar ) );
+			if (MyServerSettings.EnableTranslation())
+			{
+				string text = Cliloc.GetString(number);
+				if (text != null)
+					AddHtml(x, y, width, height, Translator.ToSpanish(text), background, scrollbar);
+				else
+					Add( new GumpHtmlLocalized( x, y, width, height, number, background, scrollbar ) );
+			}
+			else
+			{
+				Add( new GumpHtmlLocalized( x, y, width, height, number, background, scrollbar ) );
+			}
 		}
 
 		public void AddHtmlLocalized( int x, int y, int width, int height, int number, int color, bool background, bool scrollbar )
 		{
-			Add( new GumpHtmlLocalized( x, y, width, height, number, color, background, scrollbar ) );
+			if (MyServerSettings.EnableTranslation())
+			{
+				string text = Cliloc.GetString(number);
+				if (text != null)
+				{
+					// The color parameter is for the cliloc message, not for the html text.
+					// I will ignore it for now.
+					AddHtml(x, y, width, height, Translator.ToSpanish(text), background, scrollbar);
+				}
+				else
+					Add( new GumpHtmlLocalized( x, y, width, height, number, color, background, scrollbar ) );
+			}
+			else
+			{
+				Add( new GumpHtmlLocalized( x, y, width, height, number, color, background, scrollbar ) );
+			}
 		}
 
 		public void AddHtmlLocalized( int x, int y, int width, int height, int number, string args, int color, bool background, bool scrollbar )
 		{
-			Add( new GumpHtmlLocalized( x, y, width, height, number, args, color, background, scrollbar ) );
+			if (MyServerSettings.EnableTranslation())
+			{
+				string text = Cliloc.GetString(number, args);
+				if (text != null)
+				{
+					// The color parameter is for the cliloc message, not for the html text.
+					// I will ignore it for now.
+					AddHtml(x, y, width, height, Translator.ToSpanish(text), background, scrollbar);
+				}
+				else
+					Add( new GumpHtmlLocalized( x, y, width, height, number, args, color, background, scrollbar ) );
+			}
+			else
+			{
+				Add( new GumpHtmlLocalized( x, y, width, height, number, args, color, background, scrollbar ) );
+			}
 		}
 
 		public void AddImage( int x, int y, int gumpID )
@@ -288,6 +331,8 @@ namespace Server.Gumps
 
 		public void AddLabel( int x, int y, int hue, string text )
 		{
+			if (MyServerSettings.EnableTranslation())
+				text = Translator.ToSpanish(text);
 			Add( new GumpLabel( x, y, hue, text ) );
 		}
 

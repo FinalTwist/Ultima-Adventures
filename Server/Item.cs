@@ -27,6 +27,7 @@ using System.Threading.Tasks;
 using Server.Network;
 using Server.Items;
 using Server.ContextMenus;
+using Server.Misc;
 
 namespace Server
 {
@@ -965,9 +966,9 @@ namespace Server
 			else
             {
                 if ( m_Amount <= 1 )
-					list.Add( name );
+					list.Add( MyServerSettings.EnableTranslation() ? Translator.ToSpanish(name) : name );
 				else
-					list.Add( 1050039, "{0}\t{1}", m_Amount, name ); // ~1_NUMBER~ ~2_ITEMNAME~
+					list.Add( 1050039, "{0}\t{1}", m_Amount, MyServerSettings.EnableTranslation() ? Translator.ToSpanish(name) : name ); // ~1_NUMBER~ ~2_ITEMNAME~
 			}
 		}
 
@@ -4579,7 +4580,7 @@ namespace Server
 				}
 				else
 				{
-					ns.Send( new UnicodeMessage( m_Serial, m_ItemID, MessageType.Label, 0x3B2, 3, "ENU", "", this.Name + ( m_Amount > 1 ? " : " + m_Amount : "" ) ) );
+					ns.Send( new UnicodeMessage( m_Serial, m_ItemID, MessageType.Label, 0x3B2, 3, "ENU", "", (MyServerSettings.EnableTranslation() ? Translator.ToSpanish(this.Name) : this.Name) + ( m_Amount > 1 ? " : " + m_Amount : "" ) ) );
 				}
 			}
 		}

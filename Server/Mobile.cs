@@ -38,6 +38,7 @@ using Server.Mobiles;
 using Server.Network;
 using Server.Prompts;
 using Server.Targeting;
+using Server.Misc;
 
 namespace Server
 {
@@ -4848,6 +4849,8 @@ namespace Server
 
 		public virtual void DoSpeech( string text, int[] keywords, MessageType type, int hue )
 		{
+			if (MyServerSettings.EnableTranslation())
+				text = Translator.ToEnglish(text);
 			if( m_Deleted || CommandSystem.Handle( this, text, type ) )
 				return;
 
@@ -4943,8 +4946,10 @@ namespace Server
 
 				ProcessDelta();
 
-				Packet regp = null;
-				Packet mutp = null;
+				Packet regp_eng = null;
+				Packet regp_es = null;
+				Packet mutp_eng = null;
+				Packet mutp_es = null;
 
 				// TODO: Should this be sorted like onSpeech is below?
 
@@ -4957,10 +4962,18 @@ namespace Server
 						NetState ns = heard.NetState;
 
 						if( ns != null ) {
-							if( regp == null )
-								regp = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, text ) );
-
-							ns.Send( regp );
+							if (heard == this || !MyServerSettings.EnableTranslation())
+							{
+								if( regp_eng == null )
+									regp_eng = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, text ) );
+								ns.Send(regp_eng);
+							}
+							else
+							{
+								if( regp_es == null )
+									regp_es = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, Translator.ToSpanish(text) ) );
+								ns.Send(regp_es);
+							}
 						}
 					} else {
 						heard.OnSpeech( mutatedArgs );
@@ -4968,16 +4981,26 @@ namespace Server
 						NetState ns = heard.NetState;
 
 						if( ns != null ) {
-							if( mutp == null )
-								mutp = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, mutatedText ) );
-
-							ns.Send( mutp );
+							if (heard == this || !MyServerSettings.EnableTranslation())
+							{
+								if( mutp_eng == null )
+									mutp_eng = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, mutatedText ) );
+								ns.Send(mutp_eng);
+							}
+							else
+							{
+								if( mutp_es == null )
+									mutp_es = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, Translator.ToSpanish(mutatedText) ) );
+								ns.Send(mutp_es);
+							}
 						}
 					}
 				}
 
-				Packet.Release( regp );
-				Packet.Release( mutp );
+				Packet.Release( regp_eng );
+				Packet.Release( regp_es );
+				Packet.Release( mutp_eng );
+				Packet.Release( mutp_es );
 
 				if( onSpeech.Count > 1 )
 					onSpeech.Sort( LocationComparer.GetInstance( this ) );
@@ -11000,7 +11023,7 @@ namespace Server
 			NetState ns = m_NetState;
 
 			if( ns != null )
-				ns.Send( new UnicodeMessage( Serial.MinusOne, -1, MessageType.Regular, hue, 3, "ENU", "System", text ) );
+				ns.Send( new UnicodeMessage( Serial.MinusOne, -1, MessageType.Regular, hue, 3, "ENU", "System", MyServerSettings.EnableTranslation() ? Translator.ToSpanish(text) : text ) );
 		}
 
 		public void SendMessage( int hue, string format, params object[] args )
