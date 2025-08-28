@@ -59,12 +59,29 @@ namespace Server.Misc
 
         public static string ToSpanish(string text)
         {
+			if (!MyServerSettings.EnableTranslation())
+				return text;
             return Translate(text, "en", "es");
         }
 
         public static string ToEnglish(string text)
         {
+			if (!MyServerSettings.EnableTranslation())
+				return text;
             return Translate(text, "es", "en");
         }
+
+		public static string TranslateCliloc(int number, string args)
+		{
+			if (!MyServerSettings.EnableTranslation())
+				return null;
+
+			string text = Cliloc.GetString(number, args);
+
+			if (text != null)
+				return Translate(text, "en", "es");
+
+			return null;
+		}
     }
 }

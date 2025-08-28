@@ -38,7 +38,6 @@ using Server.Mobiles;
 using Server.Network;
 using Server.Prompts;
 using Server.Targeting;
-using Server.Misc;
 
 namespace Server
 {
@@ -4849,8 +4848,8 @@ namespace Server
 
 		public virtual void DoSpeech( string text, int[] keywords, MessageType type, int hue )
 		{
-			if (MyServerSettings.EnableTranslation())
-				text = Translator.ToEnglish(text);
+			if (Translation.TranslateToEnglish != null)
+				text = Translation.TranslateToEnglish(text);
 			if( m_Deleted || CommandSystem.Handle( this, text, type ) )
 				return;
 
@@ -4962,7 +4961,7 @@ namespace Server
 						NetState ns = heard.NetState;
 
 						if( ns != null ) {
-							if (heard == this || !MyServerSettings.EnableTranslation())
+							if (heard == this || Translation.TranslateToSpanish == null)
 							{
 								if( regp_eng == null )
 									regp_eng = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, text ) );
@@ -4971,7 +4970,7 @@ namespace Server
 							else
 							{
 								if( regp_es == null )
-									regp_es = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, Translator.ToSpanish(text) ) );
+									regp_es = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, Translation.TranslateToSpanish(text) ) );
 								ns.Send(regp_es);
 							}
 						}
@@ -4981,7 +4980,7 @@ namespace Server
 						NetState ns = heard.NetState;
 
 						if( ns != null ) {
-							if (heard == this || !MyServerSettings.EnableTranslation())
+							if (heard == this || Translation.TranslateToSpanish == null)
 							{
 								if( mutp_eng == null )
 									mutp_eng = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, mutatedText ) );
@@ -4990,7 +4989,7 @@ namespace Server
 							else
 							{
 								if( mutp_es == null )
-									mutp_es = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, Translator.ToSpanish(mutatedText) ) );
+									mutp_es = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, Translation.TranslateToSpanish(mutatedText) ) );
 								ns.Send(mutp_es);
 							}
 						}
@@ -11023,7 +11022,12 @@ namespace Server
 			NetState ns = m_NetState;
 
 			if( ns != null )
-				ns.Send( new UnicodeMessage( Serial.MinusOne, -1, MessageType.Regular, hue, 3, "ENU", "System", MyServerSettings.EnableTranslation() ? Translator.ToSpanish(text) : text ) );
+			{
+				if (Translation.TranslateToSpanish != null)
+					text = Translation.TranslateToSpanish(text);
+
+				ns.Send( new UnicodeMessage( Serial.MinusOne, -1, MessageType.Regular, hue, 3, "ENU", "System", text ) );
+			}
 		}
 
 		public void SendMessage( int hue, string format, params object[] args )
