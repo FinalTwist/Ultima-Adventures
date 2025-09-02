@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
-using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace Server.Misc
 {
@@ -33,7 +33,7 @@ namespace Server.Misc
                     data = new { q = text, source = source, target = target };
                 }
 
-                var json = JsonSerializer.Serialize(data);
+                var json = JsonConvert.SerializeObject(data);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
                 var response = client.PostAsync("http://localhost:5000/translate", content).Result;
@@ -41,7 +41,7 @@ namespace Server.Misc
                 if (response.IsSuccessStatusCode)
                 {
                     var responseString = response.Content.ReadAsStringAsync().Result;
-                    var result = JsonSerializer.Deserialize<Dictionary<string, string>>(responseString);
+                    var result = JsonConvert.DeserializeObject<Dictionary<string, string>>(responseString);
                     return result["translatedText"];
                 }
                 else
