@@ -1,0 +1,371 @@
+***Version 2.0.1a***
+-Released!
+
+
+
+***Version 2.0.1b***
+
++July 31, 2007+
+-Fixed: Missing "break;" line in Scriptobject.cpp causing templates to also load in spawn tab.
+
++August 06, 2007+
+-Added: File saving dialog to export profile option.
+-Tweaked: Prevented MySQL info to be loaded as defnames.
+
++August 08, 2007+
+-Added: Find option to Item Tab.
+-Added: Find option to Spawn Tab.
+
+
+
+***Version 2.0.1c***
+
++August 10, 2007+
+-Tweaked: Profile loading to be in separate thread.
+-Tweaked: Profile dialog to remain topmost window durring profile loading.
+
++August 18, 2007+
+-Fixed: Errors causing Axis not to run in Windows Vista.
+
+
+
+***Version 2.0.1d***
+
++August 19, 2007+
+-Fixed: Broadcast and command box in remote console loosing focus.
+-Fixed: Hoglocs.scp format now loading properly.
+-Added: Hoglocs.scp to Axis2 install file.
+
++Septemper 01, 2007+
+-Fixed: Errors causing crash when selecting travel tab if mul files where not set properly.
+-Fixed: Find option in item and spawn tabs to work properly.
+
+
+
+***Version 2.0.2a***
+
++September 13, 2007+
+-Fixed: Error caused by cancelling FTP webprofile loading
+-Added: Find option to Travel Tab.
+
++September 14, 2007+
+-Added: "Load Scripts in Spheretables" option to the profile tab.(Only available to custom local profiles)
+		This will cause the RESOURCE block to be parsed for scripts to be loaded. (These scripts are loaded before anyother selected scripts...  if any)
+-Tweaked: Spheretables.scp and Sphere.ini now always load first in custom local profiles. (Must re-save script selection of old profiles to take effect)
+
++September 23, 2007+
+-Added: Undocking/Docking option for each tab. (right mouse click on tab for menu)
+-Tweaked: Log tab now uses a RichEdit control instead of an Edit control.
+		  This allows to use color for easy reference.
+		 
++September 23, 2007+
+-Added: Add/Edit/Delete custom locations to travel tab.
+
++October 3, 2007+
+-Added: Full map view button to Travel Tab. (Small button on bottom right corner)
+		Clicking on this map will recenter the travel tab map.
+		
++October 4, 2007+
+-Fixed: Multiple data conversion warnings.
+-Fixed: Multiple memory leaks.
+-Fixed: Crash occurring on closing of Axis2 when running multiple instances.
+
++October 8, 2007+
+-Added: Tracking options to the Travel Tab.
+
++October 11, 2007+
+-Tweaked: Tabs code for better and easier switch from Dock to Undock and vice-versa.
+		  (This also fixed some comunication problems between tabs when undocked
+
+
+
+***Version 2.0.2b***
+
++October 24, 2007+
+-Added: Door Wizard to item tweak tab. (double click desired door to add in game)
+-Added: DoorWiz.ini to Axis2 install files (contains the list of available doors)
+
++November 03, 2007+
+-Added: Light Wizard to item tweak tab. (double click desired light pattern to set in game)
+-Added: LightWiz.ini to Axis2 install files (contains the list of available lights)
+
++November 12, 2007+
+-Tweaked: Find function to search defnames if present.
+
++November 16, 2007+
+-Tweaked: Object sorting to help the find function search in better order.
+
++December 15, 2007+
+-Added: Username,Password support for http web profiles.
+-Tweaked: Profile saving to help clean unused registry values.
+-Fixed: Wrong registry value being save for last remote profile used.
+-Fixed: Wrong hue name being displayed when selecting from main palette.
+
++February 10, 2008+
+-Added: Some documentation pages to the help file. (Still far from complete!)
+-Moved: Settings Tab to a menu. (would like to hear comments on this)
+
+
+
+***Version 2.0.3a***
+
++February 13, 2008+
+-Fixed: Multiple memory leaks.
+
++February 21, 2008+
+-Fixed: DUPITEM not recognized when using a defname.
+
++February 23, 2008+
+-Added: Item Overview mode in Items Tab. (right click items list for mode options)
+
++February 24, 2008+
+-Added: Quicklist mode in Items Tab. (right click items list for mode options)
+-Tweaked: Quicklist can be viewed in Overview mode.
+
++February 29, 2008+
+-Added: Quicklist & Overview modes to Spawn Tab. (right click NPC list for mode options)
+-Fixed: Elf ghosts animation causing Axis to crash.
+
++March 22, 2008+
+-Added: "Where" command to travel tab.
+-Moved: Go and Send command of the travel tab closer to the map.
+
++April 6, 2008+
+-Added: Reminder Tab after the Commands Tab.
+-Fixed: "Always on Top" option not being set on startup.
+
++May 7, 2008+
+-Tweaked: Axis2 can now be run as pre-user OR per-machine.
+-Added: RegInstallation=Machine/User to Axis2.ini
+
++May 11, 2008+
+-Fixed: Reminder Tab not able to re-dock itself.
+
++May 14, 2008+
+-Fixed: Rebuild Axis2 Installer completely.
+ >More modern design.
+ >Allows per-machine AND per-user installation. 
+  >(Old installer used per-machine installation)
+  >(Old registry settings will be lost if installed as a per-user installation)
+ >Can add startmenu shortcuts.
+ 
++May 21, 2008+
+-Added: Mulfile path Overriding in Settings
+
++May 28, 2008+
+-Moved: Profile Tab to a menu.
+-Added: Unload, Load Default, Load Last, Profile Options.
+
++June 2, 2008+
+-Tweaked: Loading/Unloading of hues and def files.
+-Fixed: body.def and bodyconv.def not loading properly.
+
++June 5, 2008+
+-Tweaked: Map files Loading/Closing to avoid possible crashes due to missing files.
+
++June 10, 2008+
+-Tweaked: USEMAPDIFFS from sphere.ini now changes the "Use Map and Static Dif files" setting if loaded.
+
++June 24, 2008+
+-Fixed: Same script loading twice in certain conditions.
+
++July 02, 2008+
+-Possibly Fixed: Vista's UAC asking permision to run Axis2 as administrator all the time. (needs testing)
+
++July 23, 2008+
+-Fixed: Tile function not accepting negative numbers in Item Tab.
+
++August 15, 2008+
+-Fixed: Light.mul and Lightidx.mul loading in wrong order.
+
++December 30, 2008+
+-Added: Misc Tab containing Music, Sound, and Spells.
+
+
+
+***Version 2.0.3b***
+
++December 31, 2008+
+-Fixed: Music indexed improperly.
+-Fixed: Few tags in Axis2.ini (Forgot to remove the * in front of the newly added ones)
+
++January 3, 2009+
+-Fixed: Some Axis tags not recognised if placed after the @Create trigger.
+
++January 7, 2009+
+-Fixed: Tracking calibration of newer clients.
+
+
+
+***Version 2.0.4a***
+
++January 16, 2009+
+-Fixed: Always On Top option not working again.
+
++January 24, 2009+
+-Added: Black Lights list to LightWiz.ini.
+-Fixed: Patched Art.mul read incorrectly.
+
++January 27, 2009+
+-Fixed: Light display in the LightWizard (Now looks more like the client displays).
+-Added: LightLevel slider to LightWizard to change light setting on the display.
+
++February 6, 2009+
+-Fixed: Anim*.mul not indexing properly.
+-Added: Slider to SpawnTab to rotate animations.
+
++February 18, 2009+
+-Fixed: Spawning/Summoning NPCs with Numerical IDs.
+-Tweaked: Uncategorized NPCs/ITEMs now only show script name instead of full path.
+-Tweaked: ID info box to show more usefull information (ID and HUE).
+-Added: "View NPC/Item Info" menu option when right-clicking on NPC/Item.
+
++March 14, 2009+
+-Added: "View Area Info" menu option when right-clicking on Areas.
+-Added: QuickList option to TravelTab.
+-Added: Script Editing option to NPC/Items/Areas with simple Text Highlighting.
+-Tweaked: Search Criterias to allow more search options.
+-Fixed: Axis Main Window size bug.
+
++March 23, 2009+
+-Fixed: Few code errors with possible crash.
+
++March 25, 2009+
+-Fixed: Crash caused by faulty defname translation.
+
++March 29, 2009+
+-Fixed: Reset Settings not resetting properly.
+-Added: Reset button to all settings pages to reset only part of settings to default.
+-Added: Background color option to Items Tab Settings.
+
++August 31, 2009+
+-Added: Background color option to Spawn Tab Settings.
+-Updated: Axis2.ini with all known override tags for items and chars.
+
+
+
+***Version 2.0.4b***
+
++January 15, 2009+
+-Added: MULTIDEF to be loaded for multis.
+-Updated: Range of ITEMDEF from 0x4000 to 0x8000.
+
++March 13, 2010+
+-Added: Multi Viewer option to Item Tab (right click display window)...Not resizable atm.
+
+
+
+***Version 2.0.4c***
+
++May 22, 2010+
+-Added: Command Prefix to General Settings.
+-Updated: Axis2.ini with Command Prefix default setting.
+
++September 7, 2010+
+-Fixed: Color Palette causing crash on opening.
+-Tweaked: Color Palette now acts like other dialogs in Axis (can be minimized and continue working with Axis).
+
++September 8, 2010+
+-Fixed: Crash caused by defname loops during loading.
+-Fixed: Categorization of ITEMDEF geting mixed up with CHARDEF when both have same numerical id.
+
+
+
+***Version 2.0.4d***
+
++March 26, 2011+
+-Added: Support for Map5.mul.
+
++April 09, 2011+
+-Fixed: Default profile set to <None> while load default profile on start causing crash.
+-Added: Auto detection of ML map size. (sphere.ini MAP settings will override this if loaded).
+
++April 10, 2011+
+-Fixed: Animation ID not properly indexed with animX.idx
+-Fixed: Crash caused by new animation IDs of SA not being in .mul files.
+
++May 22, 2011+
+-Fixed: Items/Multi/Templates and Char/Spawn overriding in script loading.
+
++September 21, 2011+
+-Added: KR & SA Resdisp settings to Account tab.
+
++October 29, 2011+
+-Fixed: Always On Top option. No need to restart to take effect.
+
++October 30, 2011+
+-Fixed: Undocked tabs not being created properly.
+
++November 02, 2011+
+-Added: Toolbar version of Axis. Axis is now a toolbar when minimized.
+-Updated: Find, Zoom, Nudge, Move, and World Map button with new icons
+
++October 08, 2011+
+-Moved: Some strings to external file for multi-language support.
+ >AboutDlg.cpp
+ >AccountTab.cpp
+ >Adddestination.cpp
+ >Axis2.cpp
+ >Axis2Dlg.cpp
+ >AxisLog.cpp
+ >AxisThread.cpp
+ >ClientInfo.cpp
+ >ColorSelectionDlg.cpp
+ >Common.cpp
+ >DockingPage.cpp
+ >GeneralTab.cpp
+ 
+ +March 27, 2012+
+ -Added: Support for artLegacyMUL.uop
+ 
+ +March 29, 2012+
+ -Added: Support for mapXLegacyMUL.uop
+ 
+ 
+ 
+ ***Version 2.0.4e***
+ 
+ +October 21, 2012+
+ -Fixed: Reading of mapXLegacyMUL.uop. Now it can read version 4 and 5 of uop format.
+ 
+ 
+ 
+ ***Version 2.0.4f***
+ 
+ +November 09, 2012+
+ -Fixed: Auto detection of ML map size not working.
+ 
+ 
+ 
+ ***Version 2.0.4g***
+ 
+ +April 03, 2013+
+ -Fixed: Crashed caused by malformed .uop files
+ 
+ 
+ 
+ ***Version 2.0.4h***
+ 
+ +April 06, 2013+
+ -Fixed: Other possible crash by access violation.
+ 
+ +April 26, 2013+
+ -Fixed: Another crash with access violation.
+ -Somewhat Fixed: Art in UOP format now works... for some of it
+ 
+ 
+ 
+ ***Version 2.0.4i***
+ 
+ +April 27, 2013+
+ -Fixed: wrong code in UOP Art support (Now it works good :)
+ 
+ 
+ 
+ ***Version 2.0.4j***
+ 
+ +September 13, 2014+
+ -Fixed: Typo in eng.lng
+ -Removed: Incomplete language selection option from the settings
+ -Added: Disable toolbar mode option on the general settings tab to disable the toolbar mode when minimized.
+ -Added: Custom Client Title option in general settings to allow for custom client titles to be recognised by Axis.

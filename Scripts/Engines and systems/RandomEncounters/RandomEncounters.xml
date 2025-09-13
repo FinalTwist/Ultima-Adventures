@@ -1,0 +1,1260 @@
+<!-- ======================================================================
+This is a sample file, mainly the file I test the baseline system with;
+if your are starting with this as a baseline for your own set of actual
+encounters, be advised that you need to change the interval and cleanup
+numbers to something bigger. The time is in seconds; I would recommend
+something like 500 or more for each. If you use numbers that are too small,
+your players will be "swamped with encounters". The result depends on both
+probability and timing together, and needs to be tuned by you; this will
+requires some planning on your behalf. GOOD LUCK.
+
+"RandomEncounters" tag. This supports the following attributes and defaults:
+
+    * picker = the picking method, defaults to "sqrt". You may want "all" instead.
+    * language = the globalization code, defaults to "en-US".
+    * skiphidden = tells the system to exclude hidden players from encounters, defaults to true
+    * delay = amount of secs before encounters begin after server start, defaults to "60"
+    * interval = frequency in secs encounters are checked, defaults to "1800". This field can be separated into as many as 3 values, one each for dungeons, wilderness, and guarded regions. Separate with ":"
+    * cleanup = how long to wait before shutting down spawned mobiles, defaults to "300"
+    * cleanupGrace = how many times the system will fail to cleanup items if players are in range of them;
+                    "0" means never cleanup if player in range
+    * debug ="false" (print out extra debugging information)
+    * debugEffect ="false" (display an energy vortex on all spawns)
+    * RFTM defaults to true. Setting RTFM="true" (or deleting the tag) indicates that you've
+           at least made it this far and read some of the instructions.
+
+"Facet" tag.
+
+    * name = (mandatory tag naming the facet)
+
+"Region" tag.
+
+    * type = (mandatory tag specifying region type; can be "Guarded", "Dungeon", and "Wilderness")
+    * name =(mandatory tag naming the region; use "default" to pick up generic)
+
+"Encounter" tag.
+
+    * p = probability of encounter, default of "1.0", which means 100%. If p is set to * (e.g., p="*"), the encounter will always be had in addition to any other encounter the player might have for the region
+    * distance = the preferred distance from the player for the encounter, a number or a range (example "1" or "0:2" or "1:3"). Default is "7".
+    * water (DEPRECATED) = water mobiles can't spawn without this; land mobiles can't spawn with it, default is "false" (DEPRECATED... use landType="Water" instead please)
+    * landType= Water, OnRoad, OffRoad, or AnyLand. Default is "AnyLand".
+    * time=Night, Twilight, Day, or AnyTime. Default is "AnyTime".
+    * level=notional level of the character required to have the encounter; defaults to 1. An optional second argument can be sent to the level indicating class after a separating colon. E.g., "8:Necromancer". Valid current class names are Fighter, Ranger, Mage, Necromancer, Thief, and Overall.
+    * scaleUp=true/false, whether or not to scale up encounters that are waker than the player; defaults to false. Never more than triples an encounter.
+
+"Mobile" tag.
+
+    * p = probability of the mobile being included in a picked encounter, default is "1.0"
+    * pick = (a comma-separated list of mobiles to pick from (NO SPACES!); one is picked randomly)
+    * n = a number or a range (example "1" or "0:2" or "1:3"), default is "1"
+    * effect=Smoke, Fire, Vortex, Swirld, Glow. (default is None). Option :tag in the string indicates HUE.
+    * forceAttack = true|false (default false) Causes the tagged mob to attack the player upon spawn
+
+			if ( 	region == "the Land of Lodoria" || 
+					region == "the Land of Sosaria" || 
+					region == "the Island of Umber Veil" || 
+					region == "the Land of Ambrosia" || 
+					region == "the Bottle World of Kuldar" || 
+					region == "the Underworld" || 
+					region == "the Serpent Island" || 
+					region == "the Isles of Dread" || 
+					region == "the Savaged Empire" )
+
+( map == Map.Felucca )
+{ regionName = "the Land of Lodoria"; }
+				}
+( map == Map.Trammel )
+{ regionName = "the Land of Sosaria"; }
+{ regionName = "the Island of Umber Veil"; }
+{ regionName = "the Land of Ambrosia"; }
+{ regionName = "the Bottle World of Kuldar"; }
+				}
+( map == Map.Ilshenar )
+{ regionName = "the Underworld"; }
+				}
+( map == Map.Malas )
+{ regionName = "the Serpent Island"; }
+				}
+( map == Map.Tokuno )
+{ regionName = "the Isles of Dread"; }
+				}
+map == Map.TerMur )
+{ regionName = "the Savaged Empire"; }
+
+
+
+Felucca
+CaveRegion
+OutDoorRegion
+OutDoorBadRegion
+DungeonRegion
+BardDungeonRegion (mangars tower)
+VillageRegion
+BardTownRegion (skara Brae)
+PublicRegion
+UnderHouseRegion
+PirateRegion
+NecromancerRegion
+
+Trammel
+LunaRegion ( moon)
+MoonCore
+PirateRegion
+PublicRegion
+PirateRegion
+OutDoorBadRegion
+CaveRegion
+DungeonRegion
+PublicRegion (bank, tavern)
+DeadRegion
+VillageRegion
+
+Ilshenar
+OutDoorBadRegion
+DungeonRegion
+
+Malas
+OutDoorRegion
+CaveRegion
+DungeonRegion
+
+Tokuno
+OutDoorBadRegion
+VillageRegion
+PirateRegion
+
+TerMur
+OutDoorRegion
+OutDoorBadRegion
+DungeonRegion
+VillageRegion
+CaveRegion
+MazeRegion
+
+    skiphidden="false"
+    delay="15"
+    interval="300:500:700"
+    cleanup="300"
+    cleanupGrace="0"
+    debug="false"
+    debugEffect="false"
+    RTFM="true"
+
+
+-->
+
+
+<RandomEncounters 
+    skiphidden="false"
+    delay="30"
+    interval="300:400:500:500:500:500"
+    cleanup="500"
+    cleanupGrace="0"
+    debug="false"
+    debugEffect="false"
+    RTFM="true"
+    >
+<Facet name="Felucca">
+    <Region type="Wilderness" name="default">
+	<Encounter p=".1" distance="10" landType="OffRoad">
+	    <Mobile pick="SpawnHelper"/>
+	</Encounter>
+	<Encounter p=".02" distance="15" landType="OffRoad">
+	    <Mobile  n="2:4" pick="BlueGuard,Zombiex,OphidianKnight">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".03" distance="15" landType="OffRoad">
+	    <Mobile  n="2:4" pick="OphidianMage,OphidianArchmage,Zombiex,OphidianKnight">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="15">
+	    <Mobile  n="1:10" pick="OrcCaptain,OrcishLord,Orc">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="15">
+	    <Mobile  n="1:3" pick="Drake,AncientDrake,Dragon">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".3" distance="10" landType="OffRoad">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".25" distance="10" landType="OffRoad">
+	    <Mobile  pick="WhippingVine">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".01" distance="10" landType="OffRoad">
+	    <Mobile  pick="HealingDragon">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".15" distance="10" landType="OffRoad">
+	    <Mobile  pick="DrugSystem_Dealer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="10" landType="OffRoad">
+	    <Mobile  pick="Corpser">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="15" landType="OffRoad">
+	    <Mobile  n="1:10" pick="Ratman,RatmanArcher,RatmanMage">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="OrcCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="RatCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="MageCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="LizardmenCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="HealerCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="BankerCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="BrigandCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".10" distance="15" landType="OffRoad">
+	    <Mobile  pick="RedPlayer">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".07" distance="15" landType="OffRoad">
+	    <Mobile  pick="SpawnRed">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".05" distance="15" landType="OffRoad">
+	    <Mobile  pick="SpawnRedMage">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".03" distance="15" landType="OffRoad">
+	    <Mobile  n="2:7" pick="RedPlayer,SpawnRed,SpawnRedMage,DreadLord">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".02" distance="15" landType="OffRoad">
+	    <Mobile  n="5:9" pick="RedPlayer,SpawnRed,SpawnRedMage,BlueGuard,SpawnHelper,SpawnHelperMage,BluePlayer">
+	    </Mobile>
+	</Encounter>		
+    </Region>
+    <Region type="Dungeon" name="default">
+	<Encounter p=".1" distance="10">
+	    <Mobile pick="SpawnHelper"/>
+	</Encounter>
+	<Encounter p=".01" distance="10">
+	    <Mobile  pick="HealingDragon">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".10" distance="3">
+	    <Mobile  pick="ForgottenContainer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile pick="BluePlayer"/>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="Rat"/>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="BoneMagi"/>
+	</Encounter>
+	<Encounter p=".1" distance="12">
+	    <Mobile pick="SkeletalKnight"/>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="Spectre"/>
+	</Encounter>
+	<Encounter p=".1" distance="12">
+	    <Mobile pick="Lich"/>
+	</Encounter>
+	<Encounter p=".07" distance="10">
+	    <Mobile pick="RedPlayer"/>
+	</Encounter>
+	<Encounter p=".04" distance="10">
+	    <Mobile pick="SpawnRed"/>
+	</Encounter>
+	<Encounter p=".04" distance="10">
+	    <Mobile pick="SpawnRedMage"/>
+	</Encounter>
+	<Encounter p=".01" distance="10">
+	    <Mobile  n="2:7" pick="RedPlayer,SpawnRed,SpawnRedMage,DreadLord">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".01" distance="15" landType="OffRoad">
+	    <Mobile  n="5:9" pick="RedPlayer,SpawnRed,SpawnRedMage,BlueGuard,SpawnHelper,SpawnHelperMage,BluePlayer">
+	    </Mobile>
+	</Encounter>
+    </Region>
+    <Region type="Guarded" name="default">
+	<Encounter p=".1" distance="8">
+	    <Mobile n="1" pick="Horse"/>
+	</Encounter>
+	<Encounter p=".3" distance="7">
+	    <Mobile n="3:5" pick="Chicken"/>
+	</Encounter>
+	<Encounter p=".15" distance="10">
+	    <Mobile  pick="DrugSystem_Dealer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="6">
+	    <Mobile n="1:2" pick="Dog"/>
+	</Encounter>
+	<Encounter p=".001" distance="6">
+	    <Mobile n="1" pick="Orphan"/>
+	</Encounter>
+	<Encounter p=".001" distance="6">
+	    <Mobile n="1" pick="RandomChild"/>
+	</Encounter>
+	<Encounter p=".3" distance="6">
+	    <Mobile pick="Cat"/>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile  pick="Townsperson">
+	    </Mobile>
+	</Encounter>
+    </Region>
+    <Region type="Public" name="default">
+	<Encounter p=".1" distance="6">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="6">
+	    <Mobile  pick="Townsperson">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".05" distance="6">
+	    <Mobile  pick="RedPlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".001" distance="6">
+	    <Mobile n="1" pick="Orphan"/>
+	</Encounter>
+	<Encounter p=".001" distance="6">
+	    <Mobile n="1" pick="RandomChild"/>
+	</Encounter>
+    </Region>
+</Facet>
+<Facet name="Trammel">
+    <Region type="Wilderness" name="default">
+	<Encounter p=".1" distance="10" landType="OffRoad">
+	    <Mobile pick="SpawnHelper"/>
+	</Encounter>
+	<Encounter p=".01" distance="15" landType="OffRoad">
+	    <Mobile  n="2:4" pick="BlueGuard,Zombiex,OphidianKnight">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".01" distance="15" landType="OffRoad">
+	    <Mobile  n="2:4" pick="OphidianMage,OphidianArchmage,OphidianKnight">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="15" landType="OffRoad">
+	    <Mobile  n="1:10" pick="OrcCaptain,OrcishLord,Orc">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="15" landType="OffRoad">
+	    <Mobile  n="1:4" pick="Ogre,Troll,Ettin">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".3" distance="10" landType="OffRoad">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".15" distance="10" landType="OffRoad">
+	    <Mobile  pick="DrugSystem_Dealer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".01" distance="10" landType="OffRoad">
+	    <Mobile  pick="HealingDragon">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".15" distance="10" landType="OffRoad">
+	    <Mobile  pick="WhippingVine">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="10" landType="OffRoad">
+	    <Mobile  pick="Corpser">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="15" landType="OffRoad">
+	    <Mobile  n="1:10" pick="Ratman,RatmanArcher,RatmanMage">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad"> 
+	    <Mobile  pick="OrcCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="RatCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="MageCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="LizardmenCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="HealerCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="BankerCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="BrigandCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".05" distance="15" landType="OffRoad">
+	    <Mobile  pick="RedPlayer">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".03" distance="15" landType="OffRoad">
+	    <Mobile  pick="SpawnRed">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".03" distance="15" landType="OffRoad">
+	    <Mobile  pick="SpawnRedMage">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".02" distance="15" landType="OffRoad">
+	    <Mobile  n="2:5" pick="RedPlayer,SpawnRed,SpawnRedMage">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".01" distance="15" landType="OffRoad">
+	    <Mobile  n="3:7" pick="RedPlayer,SpawnRed,SpawnRedMage,BlueGuard,SpawnHelper,SpawnHelperMage,BluePlayer">
+	    </Mobile>
+	</Encounter>	
+    </Region>
+    <Region type="Guarded" name="default">
+	<Encounter p=".1" distance="8">
+	    <Mobile n="1" pick="Horse"/>
+	</Encounter>
+	<Encounter p=".3" distance="7">
+	    <Mobile n="3:5" pick="Chicken"/>
+	</Encounter>
+	<Encounter p=".2" distance="6">
+	    <Mobile n="1:2" pick="Dog"/>
+	</Encounter>
+	<Encounter p=".3" distance="6">
+	    <Mobile pick="Cat"/>
+	</Encounter>
+	<Encounter p=".001" distance="6">
+	    <Mobile n="1" pick="Orphan"/>
+	</Encounter>
+	<Encounter p=".002" distance="6">
+	    <Mobile n="1" pick="RandomChild"/>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile  pick="Townsperson">
+	    </Mobile>
+	</Encounter>
+    </Region>
+    <Region type="Dungeon" name="default">
+	<Encounter p=".1" distance="10">
+	    <Mobile pick="SpawnHelper"/>
+	</Encounter>
+	<Encounter p=".2" distance="10">
+	    <Mobile pick="BluePlayer"/>
+	</Encounter>
+	<Encounter p=".01" distance="10">
+	    <Mobile  pick="HealingDragon">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="Rat"/>
+	</Encounter>
+	<Encounter p=".10" distance="3">
+	    <Mobile  pick="ForgottenContainer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="BoneMagi"/>
+	</Encounter>
+	<Encounter p=".1" distance="12">
+	    <Mobile pick="SkeletalKnight"/>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="Spectre"/>
+	</Encounter>
+	<Encounter p=".1" distance="12">
+	    <Mobile pick="Lich"/>
+	</Encounter>
+	<Encounter p=".07" distance="10">
+	    <Mobile pick="RedPlayer"/>
+	</Encounter>
+	<Encounter p=".04" distance="10">
+	    <Mobile pick="SpawnRed"/>
+	</Encounter>
+	<Encounter p=".03" distance="10">
+	    <Mobile pick="SpawnRedMage"/>
+	</Encounter>
+	<Encounter p=".01" distance="15">
+	    <Mobile  n="2:4" pick="RedPlayer,SpawnRed,SpawnRedMage">
+	    </Mobile>
+	</Encounter>
+    </Region>
+    <Region type="Public" name="default">
+	<Encounter p=".1" distance="6">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="6">
+	    <Mobile  pick="Townsperson">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".05" distance="6">
+	    <Mobile  pick="RedPlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".001" distance="6">
+	    <Mobile n="1" pick="Orphan"/>
+	</Encounter>
+	<Encounter p=".001" distance="6">
+	    <Mobile n="1" pick="RandomChild"/>
+	</Encounter>
+    </Region>
+</Facet>
+<Facet name="Malas">
+    <Region type="Wilderness" name="default">
+	<Encounter p=".1" distance="10" landType="OffRoad">
+	    <Mobile pick="SpawnHelper"/>
+	</Encounter>
+	<Encounter p=".03" distance="15" landType="OffRoad">
+	    <Mobile  n="2:4" pick="BlueGuard,Zombiex,OphidianKnight">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".03" distance="15" landType="OffRoad">
+	    <Mobile  n="2:4" pick="OphidianMage,OphidianArchmage,OphidianKnight">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="15" landType="OffRoad">
+	    <Mobile  n="1:10" pick="OrcCaptain,OrcishLord,Orc">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="15" landType="OffRoad">
+	    <Mobile  n="1:10" pick="PoisonBeetleRiding,Naga,ElderGazer,GianSerpent">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".3" distance="10" landType="OffRoad">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".01" distance="10" landType="OffRoad">
+	    <Mobile  pick="HealingDragon">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="10" landType="OffRoad">
+	    <Mobile  pick="WhippingVine">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="10" landType="OffRoad">
+	    <Mobile  pick="Corpser">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="15" landType="OffRoad">
+	    <Mobile  n="1:10" pick="Ratman,RatmanArcher,RatmanMage">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="OrcCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="RatCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="MageCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15">
+	    <Mobile  pick="LizardmenCamp" landType="OffRoad">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15">
+	    <Mobile  pick="HealerCamp" landType="OffRoad">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15">
+	    <Mobile  pick="BankerCamp" landType="OffRoad">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15">
+	    <Mobile  pick="BrigandCamp" landType="OffRoad">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".15" distance="15">
+	    <Mobile  pick="RedPlayer" landType="OffRoad">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="SpawnRed">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="SpawnRedMage">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".05" distance="15" landType="OffRoad">
+	    <Mobile  n="2:7" pick="RedPlayer,SpawnRed,SpawnRedMage,DreadLord">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".03" distance="15" landType="OffRoad">
+	    <Mobile  n="3:7" pick="RedPlayer,SpawnRed,SpawnRedMage,BlueGuard,Honorae,SpawnHelper,SpawnHelperMage,BluePlayer">
+	    </Mobile>
+	</Encounter>		
+    </Region>
+    <Region type="Dungeon" name="default">
+	<Encounter p=".1" distance="10">
+	    <Mobile pick="SpawnHelper"/>
+	</Encounter>
+	<Encounter p=".01" distance="10">
+	    <Mobile  pick="HealingDragon">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".10" distance="3">
+	    <Mobile  pick="ForgottenContainer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="10">
+	    <Mobile pick="BluePlayer"/>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="Rat"/>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="BoneMagi"/>
+	</Encounter>
+	<Encounter p=".1" distance="12">
+	    <Mobile pick="SkeletalKnight"/>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="Spectre"/>
+	</Encounter>
+	<Encounter p=".1" distance="12">
+	    <Mobile pick="Lich"/>
+	</Encounter>
+	<Encounter p=".15" distance="10">
+	    <Mobile pick="RedPlayer"/>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile pick="SpawnRed"/>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile pick="SpawnRedMage"/>
+	</Encounter>
+	<Encounter p=".05" distance="15">
+	    <Mobile  n="2:7" pick="RedPlayer,SpawnRed,SpawnRedMage,DreadLord">
+	    </Mobile>
+	</Encounter>
+    </Region>
+    <Region type="Guarded" name="default">
+	<Encounter p=".1" distance="8">
+	    <Mobile n="1" pick="Horse"/>
+	</Encounter>
+	<Encounter p=".3" distance="7">
+	    <Mobile n="3:5" pick="Chicken"/>
+	</Encounter>
+	<Encounter p=".2" distance="6">
+	    <Mobile n="1:2" pick="Dog"/>
+	</Encounter>
+	<Encounter p=".3" distance="6">
+	    <Mobile pick="Cat"/>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".001" distance="6">
+	    <Mobile n="1" pick="Orphan"/>
+	</Encounter>
+	<Encounter p=".002" distance="6">
+	    <Mobile n="1" pick="RandomChild"/>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile  pick="Townsperson">
+	    </Mobile>
+	</Encounter>
+    </Region>
+    <Region type="Public" name="default">
+	<Encounter p=".1" distance="6">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="6">
+	    <Mobile  pick="Townsperson">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".03" distance="6">
+	    <Mobile  pick="RedPlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".001" distance="6">
+	    <Mobile n="1" pick="Orphan"/>
+	</Encounter>
+	<Encounter p=".001" distance="6">
+	    <Mobile n="1" pick="RandomChild"/>
+	</Encounter>
+    </Region>
+</Facet>
+<Facet name="Tokuno">
+    <Region type="Wilderness" name="default">
+	<Encounter p=".1" distance="10" landType="OffRoad">
+	    <Mobile pick="SpawnHelper"/>
+	</Encounter>
+	<Encounter p=".03" distance="15" landType="OffRoad">
+	    <Mobile  n="2:4" pick="BlueGuard,Zombiex,OphidianKnight">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".01" distance="15" landType="OffRoad">
+	    <Mobile  n="2:4" pick="OphidianMage,OphidianArchmage,OphidianKnight">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="15" landType="OffRoad">
+	    <Mobile  n="1:5" pick="JungleViper,Snapper,GiantToad">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".10" distance="3" landType="OffRoad">
+	    <Mobile  pick="ForgottenContainer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".3" distance="10" landType="OffRoad">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".15" distance="10" landType="OffRoad">
+	    <Mobile  pick="DrugSystem_Dealer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".01" distance="10" landType="OffRoad">
+	    <Mobile  pick="WhippingVine">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".01" distance="10" landType="OffRoad">
+	    <Mobile  pick="HealingDragon">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".01" distance="10" landType="OffRoad">
+	    <Mobile  pick="Corpser">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="15" landType="OffRoad">
+	    <Mobile  n="1:10" pick="Ratman,RatmanArcher,RatmanMage">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="OrcCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="RatCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="MageCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="LizardmenCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="HealerCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="BankerCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="BrigandCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".15" distance="15" landType="OffRoad">
+	    <Mobile  pick="RedPlayer">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".10" distance="15" landType="OffRoad">
+	    <Mobile  pick="SpawnRed">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".10" distance="15" landType="OffRoad">
+	    <Mobile  pick="SpawnRedMage">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".05" distance="15" landType="OffRoad">
+	    <Mobile  n="2:7" pick="RedPlayer,SpawnRed,SpawnRedMage,DreadLord">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".03" distance="15" landType="OffRoad">
+	    <Mobile  n="3:7" pick="RedPlayer,SpawnRed,SpawnRedMage,BlueGuard,Honorae,SpawnHelper,SpawnHelperMage,BluePlayer">
+	    </Mobile>
+	</Encounter>			
+    </Region>
+    <Region type="Dungeon" name="default">
+	<Encounter p=".1" distance="10">
+	    <Mobile pick="SpawnHelper"/>
+	</Encounter>
+	<Encounter p=".2" distance="10">
+	    <Mobile pick="BluePlayer"/>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="Rat"/>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="BoneMagi"/>
+	</Encounter>
+	<Encounter p=".1" distance="12">
+	    <Mobile pick="SkeletalKnight"/>
+	</Encounter>
+	<Encounter p=".01" distance="10">
+	    <Mobile  pick="HealingDragon">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="Spectre"/>
+	</Encounter>
+	<Encounter p=".1" distance="12">
+	    <Mobile pick="Lich"/>
+	</Encounter>
+	<Encounter p=".15" distance="10">
+	    <Mobile pick="RedPlayer"/>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile pick="SpawnRed"/>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile pick="SpawnRedMage"/>
+	</Encounter>
+	<Encounter p=".05" distance="15">
+	    <Mobile  n="2:7" pick="RedPlayer,SpawnRed,SpawnRedMage,DreadLord">
+	    </Mobile>
+	</Encounter>
+    </Region>
+    <Region type="Guarded" name="default">
+	<Encounter p=".1" distance="8">
+	    <Mobile n="1" pick="Horse"/>
+	</Encounter>
+	<Encounter p=".3" distance="7">
+	    <Mobile n="3:5" pick="Chicken"/>
+	</Encounter>
+	<Encounter p=".002" distance="6">
+	    <Mobile n="1" pick="Orphan"/>
+	</Encounter>
+	<Encounter p=".002" distance="6">
+	    <Mobile n="1" pick="RandomChild"/>
+	</Encounter>
+	<Encounter p=".2" distance="6">
+	    <Mobile n="1:2" pick="Dog"/>
+	</Encounter>
+	<Encounter p=".3" distance="6">
+	    <Mobile pick="Cat"/>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile  pick="Townsperson">
+	    </Mobile>
+	</Encounter>
+    </Region>
+    <Region type="Public" name="default">
+	<Encounter p=".1" distance="6">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="6">
+	    <Mobile  pick="Townsperson">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".05" distance="6">
+	    <Mobile  pick="RedPlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".001" distance="6">
+	    <Mobile n="1" pick="Orphan"/>
+	</Encounter>
+	<Encounter p=".001" distance="6">
+	    <Mobile n="1" pick="RandomChild"/>
+	</Encounter>
+    </Region>
+</Facet>
+<Facet name="TerMur">
+    <Region type="Wilderness" name="default">
+	<Encounter p=".1" distance="10" landType="OffRoad">
+	    <Mobile pick="SpawnHelper"/>
+	</Encounter>
+	<Encounter p=".03" distance="15" landType="OffRoad">
+	    <Mobile  n="2:4" pick="BlueGuard,Zombiex,OphidianKnight">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".01" distance="15" landType="OffRoad">
+	    <Mobile  n="2:4" pick="OphidianMage,OphidianArchmage,OphidianKnight">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="15" landType="OffRoad">
+	    <Mobile  n="1:5" pick="WaterElemental,PoisonElemental,FireElemental">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".3" distance="10" landType="OffRoad">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".10" distance="3" landType="OffRoad">
+	    <Mobile  pick="ForgottenContainer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".15" distance="10" landType="OffRoad">
+	    <Mobile  pick="WhippingVine">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".01" distance="10" landType="OffRoad">
+	    <Mobile  pick="HealingDragon">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="10" landType="OffRoad">
+	    <Mobile  pick="Corpser">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".15" distance="15" landType="OffRoad">
+	    <Mobile  n="1:10" pick="Ratman,RatmanArcher,RatmanMage">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="OrcCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="RatCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="MageCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="LizardmenCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".15" distance="10" landType="OffRoad">
+	    <Mobile  pick="DrugSystem_Dealer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="HealerCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="BankerCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="BrigandCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".18" distance="15" landType="OffRoad">
+	    <Mobile  pick="RedPlayer">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".15" distance="15" landType="OffRoad">
+	    <Mobile  pick="SpawnRed">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="SpawnRedMage">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".05" distance="15" landType="OffRoad">
+	    <Mobile  n="2:7" pick="RedPlayer,SpawnRed,SpawnRedMage,DreadLord">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".03" distance="15" landType="OffRoad">
+	    <Mobile  n="3:7" pick="RedPlayer,SpawnRed,SpawnRedMage,BlueGuard,Honorae,SpawnHelper,SpawnHelperMage,BluePlayer">
+	    </Mobile>
+	</Encounter>			
+    </Region>
+    <Region type="Dungeon" name="default">
+	<Encounter p=".1" distance="10">
+	    <Mobile pick="SpawnHelper"/>
+	</Encounter>
+	<Encounter p=".2" distance="10">
+	    <Mobile pick="BluePlayer"/>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="Rat"/>
+	</Encounter>
+	<Encounter p=".01" distance="10">
+	    <Mobile  pick="HealingDragon">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="BoneMagi"/>
+	</Encounter>
+	<Encounter p=".1" distance="12">
+	    <Mobile pick="SkeletalKnight"/>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="Spectre"/>
+	</Encounter>
+	<Encounter p=".1" distance="12">
+	    <Mobile pick="Lich"/>
+	</Encounter>
+	<Encounter p=".18" distance="10">
+	    <Mobile pick="RedPlayer"/>
+	</Encounter>
+	<Encounter p=".15" distance="10">
+	    <Mobile pick="SpawnRed"/>
+	</Encounter>
+	<Encounter p=".15" distance="10">
+	    <Mobile pick="SpawnRedMage"/>
+	</Encounter>
+	<Encounter p=".09" distance="15">
+	    <Mobile  n="2:7" pick="RedPlayer,SpawnRed,SpawnRedMage,DreadLord">
+	    </Mobile>
+	</Encounter>
+    </Region>
+    <Region type="Guarded" name="default">
+	<Encounter p=".1" distance="8">
+	    <Mobile n="1" pick="Horse"/>
+	</Encounter>
+	<Encounter p=".3" distance="7">
+	    <Mobile n="3:5" pick="Chicken"/>
+	</Encounter>
+	<Encounter p=".2" distance="6">
+	    <Mobile n="1:2" pick="Dog"/>
+	</Encounter>
+	<Encounter p=".3" distance="6">
+	    <Mobile pick="Cat"/>
+	</Encounter>
+	<Encounter p=".15" distance="10">
+	    <Mobile  pick="DrugSystem_Dealer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="6">
+	    <Mobile n="1" pick="Orphan"/>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile  pick="Townsperson">
+	    </Mobile>
+	</Encounter>
+    </Region>
+    <Region type="Public" name="default">
+	<Encounter p=".1" distance="6">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="6">
+	    <Mobile  pick="Townsperson">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".05" distance="6">
+	    <Mobile  pick="RedPlayer">
+	    </Mobile>
+	</Encounter>
+    </Region>
+</Facet>
+<Facet name="Ilshenar">
+    <Region type="Wilderness" name="default">
+	<Encounter p=".1" distance="10" landType="OffRoad">
+	    <Mobile pick="SpawnHelper"/>
+	</Encounter>
+	<Encounter p=".03" distance="15" landType="OffRoad">
+	    <Mobile  n="2:4" pick="Praetor,Honorae,Zombiex,OphidianKnight">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".03" distance="15" landType="OffRoad">
+	    <Mobile  n="2:4" pick="OphidianMage,OphidianArchmage,OphidianKnight">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="15" landType="OffRoad">
+	    <Mobile  n="1:10" pick="OrcCaptain,OrcishLord, Orc">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".3" distance="10" landType="OffRoad">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".10" distance="3" landType="OffRoad">
+	    <Mobile  pick="ForgottenContainer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="10" landType="OffRoad">
+	    <Mobile  pick="WhippingVine">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="10" landType="OffRoad">
+	    <Mobile  pick="Corpser">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".02" distance="10" landType="OffRoad">
+	    <Mobile  pick="HealingDragon">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="15" landType="OffRoad">
+	    <Mobile  n="1:10" pick="Ratman,RatmanArcher,RatmanMage">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="OrcCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="RatCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="MageCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="LizardmenCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="HealerCamp">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="BankerCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="15" landType="OffRoad">
+	    <Mobile  pick="BrigandCamp">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".15" distance="15" landType="OffRoad">
+	    <Mobile  pick="RedPlayer">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".15" distance="15" landType="OffRoad">
+	    <Mobile  pick="SpawnRed">
+	    </Mobile>
+	</Encounter>	
+	<Encounter p=".15" distance="15" landType="OffRoad">
+	    <Mobile  pick="SpawnRedMage">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".09" distance="15" landType="OffRoad">
+	    <Mobile  n="2:7" pick="RedPlayer,SpawnRed,SpawnRedMage,DreadLord">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".03" distance="15" landType="OffRoad">
+	    <Mobile  n="3:7" pick="RedPlayer,SpawnRed,SpawnRedMage,Honorae,Praetor,SpawnHelper,SpawnHelperMage,BluePlayer">
+	    </Mobile>
+	</Encounter>		
+    </Region>
+    <Region type="Dungeon" name="default">
+	<Encounter p=".1" distance="10">
+	    <Mobile pick="SpawnHelper"/>
+	</Encounter>
+	<Encounter p=".2" distance="10">
+	    <Mobile pick="BluePlayer"/>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="Rat"/>
+	</Encounter>
+	<Encounter p=".01" distance="10">
+	    <Mobile  pick="HealingDragon">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="BoneMagi"/>
+	</Encounter>
+	<Encounter p=".1" distance="12">
+	    <Mobile pick="SkeletalKnight"/>
+	</Encounter>
+	<Encounter p=".2" distance="12">
+	    <Mobile pick="Spectre"/>
+	</Encounter>
+	<Encounter p=".1" distance="12">
+	    <Mobile pick="Lich"/>
+	</Encounter>
+	<Encounter p=".2" distance="10">
+	    <Mobile pick="RedPlayer"/>
+	</Encounter>
+	<Encounter p=".15" distance="10">
+	    <Mobile pick="SpawnRed"/>
+	</Encounter>
+	<Encounter p=".15" distance="10">
+	    <Mobile pick="SpawnRedMage"/>
+	</Encounter>
+	<Encounter p=".08" distance="15">
+	    <Mobile  n="2:7" pick="RedPlayer,SpawnRed,SpawnRedMage,DreadLord">
+	    </Mobile>
+	</Encounter>
+    </Region>
+    <Region type="Guarded" name="default">
+	<Encounter p=".1" distance="8">
+	    <Mobile n="1" pick="Horse"/>
+	</Encounter>
+	<Encounter p=".3" distance="7">
+	    <Mobile n="3:5" pick="Chicken"/>
+	</Encounter>
+	<Encounter p=".2" distance="6">
+	    <Mobile n="1:2" pick="Dog"/>
+	</Encounter>
+	<Encounter p=".3" distance="10">
+	    <Mobile  pick="DrugSystem_Dealer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".3" distance="6">
+	    <Mobile pick="Cat"/>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="10">
+	    <Mobile  pick="Townsperson">
+	    </Mobile>
+	</Encounter>
+    </Region>
+    <Region type="Public" name="default">
+	<Encounter p=".1" distance="6">
+	    <Mobile  pick="YoungPlayer,BluePlayer">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".1" distance="6">
+	    <Mobile  pick="Townsperson">
+	    </Mobile>
+	</Encounter>
+	<Encounter p=".05" distance="6">
+	    <Mobile  pick="RedPlayer">
+	    </Mobile>
+	</Encounter>
+    </Region>
+</Facet>
+
+
+</RandomEncounters>
+
+
+
+

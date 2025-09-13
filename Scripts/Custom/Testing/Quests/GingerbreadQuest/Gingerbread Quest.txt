@@ -1,0 +1,31 @@
+           The Great Gingerbread Caper 
+             Created by Hammerhand
+         Recipe idea from Misty_Dain of Unicorn Heaven
+
+
+            The Players:
+
+    Mrs Claus; Sweetest woman in the world. Doesnt have a single cruel bone in her body. Loves to make cookies, candy and her Famous Gingerbread Cookies. Loved by Elves & Children everywhere, but loved the most by her husband, Kris Kringle AKA Santa Claus.
+
+    Krass Kringle; Older brother to Kris. He thought that HE should be Santa, but was rejected by the Elves & Reindeer both due to a subtle cruel streak. His resentment over his younger brothers rise to the legendary Santa Claus festered inside him until it consumed his very soul. He was determined that if HE couldnt be Santa, then Christmas wasnt going to be a joyous occasion. He began calling himself The Anti Claus and created his own Mutated Reindeer & Mutated Elves. He then stole Mrs Claus' Special Gingerbread Recipe and escaped.
+
+             Items:
+
+     10 recipe fragments, 1 Special Gingerbread Cookie recipe & 3 cookies. Cookie 1 gives +10 to str. Cookie 2 gives +10 to Int. Cookie 3 gives +10 to Dex. All 3 stat gains have a 30 minute timer each. Cookies are dropped randomly. (I DID say they were "special" hehe) 
+
+             Monsters:
+
+     Mutated Reindeer; Names... Adolph, Masher, Slasher, Smasher, Nixon, Gromet, Stupid, Slaughter & Blitzed. Mutated Elves all "talk" with a few random sayings, as does Krass.
+
+
+             Objective:
+    
+     Regain all the fragments of the recipe, restore it to the original and return it to Mrs Claus. By doing so, you ensure that millions of children everywhere have a Happy & Joyous Christmas. Failure isnt an option.
+           
+            ARE YOU UP TO THE TASK?
+
+     Basically a Plug N Play quest. Drop into your customs folder, set the moongate location in the Blitzed script for Krass' location (moongate is currently set for Tram Brit bank for testing purposes) and spawn them all. Just change the X,Y,Z coordinates to where ever you have Krass spawned.
+
+     Decide where you want the Mutated Reindeer (each one in a different area) and place a book by Mrs Claus with clues to their locations. Since their mutated, they can be anywhere. They dont need to be in snow areas. The final Reindeer should be Blitzed as he opens a moongate onDeath. Place a couple of the mutated Elves with each reindeer and several with Krass.
+
+         Hammerhand

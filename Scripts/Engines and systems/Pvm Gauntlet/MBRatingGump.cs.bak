@@ -1,0 +1,49 @@
+using Server.Mobiles;
+using System.Collections.Generic;
+using Server.Commands;
+using System;
+
+namespace Server.Gumps
+{ 
+	public class MBRatingGump : Gump
+	{
+		public static void Initialize()
+		{
+			CommandSystem.Register("Gscores", AccessLevel.Player, delegate (CommandEventArgs e)
+			{
+				Mobile m = e.Mobile;
+
+				m.CloseGump(typeof(MBRatingGump));
+				m.SendGump(new MBRatingGump(GauntletMaster.MB_RATING));
+			});
+			
+		}
+
+		public MBRatingGump(SortedDictionary<Mobile, int> rating)
+			: base(0, 0)
+		{
+			this.Closable = true;
+			this.Disposable = true;
+			this.Dragable = true;
+			this.Resizable = false;
+			this.AddPage(0);
+
+			this.AddBackground(1, 0, 412, 494, 9270);
+			AddHtml(135, 22, 146, 21, "<BASEFONT COLOR=YELLOW>Top-10 Damage Ranking", false, false);
+
+			if (rating != null && rating.Count > 0)
+			{
+				int y = 60;
+				int i = 0;
+				foreach (var item in rating)
+				{
+					AddHtml(24, y, 146, 21, String.Format("<BASEFONT COLOR=YELLOW>{0}. {1}", ++i, item.Key.Name), false, false);
+					AddHtml(297, y, 146, 21, String.Format("<BASEFONT COLOR=YELLOW>{0} Points", item.Value), false, false);
+
+					y += 30;
+				}
+
+			}
+		}
+	}
+}

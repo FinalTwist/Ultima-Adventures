@@ -1,0 +1,1533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A0A520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A0A520A520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A525252520A0A5252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="0A52520A525252520A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="0A52520A52520A520A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A52520A520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A520A520A520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="5252520A520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="5252520A52520A520A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="5252520A525252520A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52525252520A0A5252">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A0A520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWB" HashKey="0A5252525252525252">
+    <MapTiles>
+      <MapTile TileID="650" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle EW" HashKey="0A52525252520A5252">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="520A0A0A5252525252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A0A520A520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="520A0A52520A52520A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A525252520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A52520A520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A520A520A0A5252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="0A0A5252525252520A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A525252520A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A5252520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52520A525252520A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle WE" HashKey="52520A52520A52520A">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52520A52520A0A520A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="52520A0A52520A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52520A5252520A0A52">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="52520A0A520A52520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="0A520A5252520A5252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="52520A0A5252520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A0A52520A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A0A525252520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A5252520A0A5252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A520A52520A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A520A520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A520A5252520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A0A5252520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A0A520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A0A520A525252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A0A52520A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A52520A0A5252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NS" HashKey="5252525252520A0A52">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A5252520A520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="520A525252520A5252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="5252520A520A520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A520A520A0A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A520A520A520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A525252520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="0A0A0A52520A525252">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52525252520A520A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEB" HashKey="52525252525252520A">
+    <MapTiles>
+      <MapTile TileID="651" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NS" HashKey="5252525252520A520A">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A0A52520A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52525252520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="0A5252525252520A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="0A525252520A52520A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A52520A520A520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle EW" HashKey="0A52520A5252525252">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="520A0A5252520A5252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A52520A520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle EW" HashKey="5252520A52520A5252">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A520A520A0A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A0A520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A0A52520A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="52520A0A52520A5252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle IWE" HashKey="0A525252525252520A">
+    <MapTiles>
+      <MapTile TileID="22" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A52520A0A5252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="0A52525252520A0A52">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A5252520A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A520A5252520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A520A52520A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A520A520A52520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A5252520A520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SN" HashKey="0A0A52525252525252">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A5252520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52520A525252520A52">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle WE" HashKey="52520A52520A525252">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A0A525252520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="0A520A0A5252525252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52520A5252520A0A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="0A520A52525252520A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A5252520A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A52520A520A520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="5252520A520A0A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A52525252520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A5252520A520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="520A5252520A52520A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A520A520A520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A520A52520A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A525252520A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="52520A0A520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A520A520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A520A5252520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A52520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SN" HashKey="0A0A0A525252525252">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A52520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A52520A520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A0A5252520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle INS" HashKey="52520A5252520A5252">
+    <MapTiles>
+      <MapTile TileID="22" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="0A52520A52520A0A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A52520A520A525252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="0A52520A5252520A52">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="5252520A5252520A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="5252520A520A52520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52525252520A520A52">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A525252520A0A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="5252520A52520A0A52">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52525252520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A0A520A52520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="0A5252525252520A52">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="0A525252520A525252">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A0A520A0A5252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="0A52525252520A0A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A5252520A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A52520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A0A520A0A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A525252520A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A525252520A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="0A0A5252520A525252">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A52525252520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52520A52520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEB" HashKey="52520A525252525252">
+    <MapTiles>
+      <MapTile TileID="652" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="52520A0A520A520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52520A52520A520A52">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="520A0A0A52520A5252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="52520A0A52520A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A0A525252520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A520A5252520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="0A0A520A52520A5252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A520A520A525252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A520A520A525252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="520A520A52520A5252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A0A52520A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="0A0A0A0A52520A5252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A52520A520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A0A520A0A5252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SN" HashKey="0A520A525252525252">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A52520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A5252520A0A5252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A52525252520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A52520A520A0A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="520A5252520A525252">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A525252520A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A0A52520A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A0A5252520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A52520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A0A520A0A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A5252520A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NS" HashKey="5252525252520A0A0A">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A0A520A0A5252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle WE" HashKey="52525252520A525252">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NS" HashKey="525252525252520A52">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A52520A0A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A525252520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="0A52520A52520A0A52">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A525252520A520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A52520A520A52520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="0A52520A5252520A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="5252520A5252520A52">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="5252520A520A525252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A5252520A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="5252520A52520A0A0A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A525252520A520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="5252520A520A0A5252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A0A5252520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A0A520A52520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A52520A520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SN" HashKey="520A0A525252525252">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A52520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A520A520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A52520A520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="0A0A520A5252525252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A520A52520A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A0A520A520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="0A0A0A52525252520A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A5252520A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A52525252520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A0A520A520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52520A52520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A520A520A52520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52520A5252520A520A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle WE" HashKey="52520A52525252520A">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="52520A0A520A520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52520A52520A520A0A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="52520A0A5252525252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="0A520A52520A525252">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A525252520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A5252520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SN" HashKey="520A52525252525252">
+    <MapTiles>
+      <MapTile TileID="644" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A5252520A520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A520A525252520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A520A52520A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A5252520A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="520A0A52525252520A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A52520A0A5252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="0A520A0A52520A5252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A0A520A525252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A0A520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A0A520A0A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A52520A520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="0A0A5252520A52520A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle EW" HashKey="0A52520A52520A5252">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="5252520A520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="0A0A0A5252520A5252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle EW" HashKey="5252520A5252525252">
+    <MapTiles>
+      <MapTile TileID="645" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52525252520A0A520A">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle WE" HashKey="52525252520A52520A">
+    <MapTiles>
+      <MapTile TileID="643" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NS" HashKey="525252525252520A0A">
+    <MapTiles>
+      <MapTile TileID="642" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A525252520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NEA" HashKey="0A52525252520A520A">
+    <MapTiles>
+      <MapTile TileID="648" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A5252520A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A52520A0A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A52520A520A0A5252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="520A0A52520A525252">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A525252520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="52520A0A520A0A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A0A5252520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="0A0A525252520A5252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A0A520A52520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A5252520A0A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle NWA" HashKey="52520A52520A0A5252">
+    <MapTiles>
+      <MapTile TileID="647" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="52520A0A52520A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="5252520A520A520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A0A520A525252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="52520A0A520A525252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="52520A0A520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="52520A0A5252520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A0A52520A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="52520A0A520A0A5252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A520A520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A520A525252520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A520A52520A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A52520A0A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A520A520A520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A0A5252520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A0A520A0A0A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="52520A0A525252520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A5252520A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A0A52520A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A0A520A520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="0A520A52520A52520A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A520A525252520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A5252520A0A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A525252520A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="520A5252525252520A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A520A520A0A5252">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="520A520A5252525252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A5252520A0A520A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A525252520A0A">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="520A0A0A52520A0A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWA" HashKey="0A0A0A52520A52520A">
+    <MapTiles>
+      <MapTile TileID="649" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle AC" HashKey="0A0A0A0A520A520A52">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SEA" HashKey="0A0A0A0A5252525252">
+    <MapTiles>
+      <MapTile TileID="646" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sand Embankment to Jungle SWB" HashKey="5252525252520A5252">
+    <MapTiles>
+      <MapTile TileID="653" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

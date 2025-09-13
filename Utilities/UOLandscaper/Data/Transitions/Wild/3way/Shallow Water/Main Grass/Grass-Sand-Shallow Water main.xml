@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="040406040406010106">
+    <MapTiles>
+      <MapTile TileID="26" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="060404060404060101">
+    <MapTiles>
+      <MapTile TileID="26" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6042" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="060404060101060101">
+    <MapTiles>
+      <MapTile TileID="38" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6042" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="010106010106040406">
+    <MapTiles>
+      <MapTile TileID="39" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="040401040401060606">
+    <MapTiles>
+      <MapTile TileID="27" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="060606040101040101">
+    <MapTiles>
+      <MapTile TileID="36" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6042" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="060606010404010404">
+    <MapTiles>
+      <MapTile TileID="27" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6042" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="060606010104010104">
+    <MapTiles>
+      <MapTile TileID="36" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6042" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="010106040406040406">
+    <MapTiles>
+      <MapTile TileID="26" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="010104010104060606">
+    <MapTiles>
+      <MapTile TileID="33" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="060101060404060404">
+    <MapTiles>
+      <MapTile TileID="26" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6042" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="060606040401040401">
+    <MapTiles>
+      <MapTile TileID="27" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6042" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="060101060101060404">
+    <MapTiles>
+      <MapTile TileID="38" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6042" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="040406010106010106">
+    <MapTiles>
+      <MapTile TileID="35" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="040101040101060606">
+    <MapTiles>
+      <MapTile TileID="33" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Grass-Sand-Shallow Water" HashKey="010404010404060606">
+    <MapTiles>
+      <MapTile TileID="27" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

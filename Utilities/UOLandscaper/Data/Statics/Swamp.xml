@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RandomStatics Chance="5">
+	<Statics Description="Cyprus Tree" Freq="0">
+		<Static TileID="3320" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cyprus Tree" Freq="0">
+		<Static TileID="3323" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cyprus Tree" Freq="2">
+		<Static TileID="3323" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3324" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cyprus Tree" Freq="0">
+		<Static TileID="3323" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3325" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cyprus Tree" Freq="0">
+		<Static TileID="3326" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cyprus Tree" Freq="2">
+		<Static TileID="3326" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3327" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cyprus Tree" Freq="0">
+		<Static TileID="3326" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3328" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cyprus Tree" Freq="0">
+		<Static TileID="3329" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Reeds" Freq="6">
+		<Static TileID="d05" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Lilypad" Freq="2">
+		<Static TileID="d06" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Lilypad" Freq="2">
+		<Static TileID="d07" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Lilypad" Freq="2">
+		<Static TileID="d08" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Lilypad" Freq="2">
+		<Static TileID="d09" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Lilypad" Freq="2">
+		<Static TileID="d0a" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Lilypad" Freq="2">
+		<Static TileID="d0b" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Lilypad" Freq="2">
+		<Static TileID="dbc" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Lilypad" Freq="2">
+		<Static TileID="dbd" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Lilypad" Freq="2">
+		<Static TileID="dbe" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Water Lily" Freq="2">
+		<Static TileID="dc1" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Water Lily" Freq="2">
+		<Static TileID="dc2" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Water Lily" Freq="2">
+		<Static TileID="dc3" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Sunken Log" Freq="4">
+		<Static TileID="12881" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="12880" X="1" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Sunken Log" Freq="4">
+		<Static TileID="324f" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="324e" X="0" Y="1" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Stump" Freq="0">
+		<Static TileID="324b" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Stump" Freq="4">
+		<Static TileID="324c" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Stump" Freq="4">
+		<Static TileID="324d" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Animated Tile" Freq="1">
+		<Static TileID="320d" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Animated Tile" Freq="1">
+		<Static TileID="12819" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Animated Tile" Freq="1">
+		<Static TileID="321a" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Animated Tile" Freq="0">
+		<Static TileID="12832" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Animated Tile" Freq="2">
+		<Static TileID="322c" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Animated Tile" Freq="2">
+		<Static TileID="12854" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Animated Tile" Freq="2">
+		<Static TileID="12865" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cattails" Freq="1">
+		<Static TileID="cb7" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cattails" Freq="1">
+		<Static TileID="cb8" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Water Plants" Freq="8">
+		<Static TileID="d04" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cedar Tree" Freq="0">
+		<Static TileID="3286" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Tree" Freq="0">
+		<Static TileID="3274" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Tree" Freq="0">
+		<Static TileID="3275" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Tree" Freq="0">
+		<Static TileID="3276" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Tree" Freq="0">
+		<Static TileID="3277" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fan plant" Freq="0">
+		<Static TileID="3224" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3231" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3232" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Large fern" Freq="0">
+		<Static TileID="3233" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3234" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3235" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3236" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3518" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3516" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3517" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3521" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3522" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3523" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Swamp Water" Freq="0">
+		<Static TileID="6044" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="6045" X="1" Y="0" Z="0" Hue="0"/>
+		<Static TileID="6047" X="0" Y="-1" Z="0" Hue="0"/>
+		<Static TileID="6049" X="0" Y="1" Z="0" Hue="0"/>
+		<Static TileID="6051" X="-1" Y="0" Z="0" Hue="0"/>
+		<Static TileID="6053" X="1" Y="-1" Z="0" Hue="0"/>
+		<Static TileID="6054" X="-1" Y="-1" Z="0" Hue="0"/>
+		<Static TileID="6055" X="1" Y="1" Z="0" Hue="0"/>
+		<Static TileID="6056" X="-1" Y="1" Z="0" Hue="0"/>
+		<Static TileID="3521" X="-1" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3522" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3518" X="0" Y="1" Z="0" Hue="0"/>
+		<Static TileID="3517" X="1" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3516" X="0" Y="-1" Z="0" Hue="0"/>
+	</Statics>
+</RandomStatics>

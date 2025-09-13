@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<TilesGroup>
+	<!--All Brushes Group - 2019-05-10-->
+	<Group Name="All Brushes" color="0xFF4444" bold="True" ital="True">
+		<!--Dirt-->
+		<Brush ID="0002"/> <!--Dirt-->
+		<Brush ID="0207"/> <!--Furrows N-S-->
+		<Brush ID="0208"/> <!--Furrows E-W-->
+		<Brush ID="0215"/> <!--Cave Dirt-->
+
+		<!--Swamp-->
+		<Brush ID="0005"/> <!--Swamp Land-->
+		<Brush ID="0240"/> <!--Swamp Water-->
+
+		<!--Grass-->
+		<Brush ID="0203"/> <!--Grass-->
+
+		<!--Forest-->
+		<Brush ID="0204"/> <!--Forest-->
+		<Brush ID="0202"/> <!--Jungle-->
+
+		<!--Sand-->
+		<Brush ID="0217"/> <!--Sand-->
+
+		<!--Mountain-->
+		<Brush ID="0209"/> <!--Mountain-->
+
+		<!--Snow-->
+		<Brush ID="0210"/> <!--Snow-->
+
+		<!--Roads-->
+		<Brush ID="0198"/> <!--Large Cobblestones-->
+		<Brush ID="0199"/> <!--Red Brick-->
+		<Brush ID="0200"/> <!--Brown Brick-->
+		<Brush ID="0201"/> <!--Light Sandstone-->
+	</Group>
+
+	<!--Grouped Brushes Group-->
+	<Group Name="Grouped Brushes">
+		<Group Name="Dirt" color="0x444444">
+			<Brush ID="0002"/> <!--Dirt-->
+			<Brush ID="0207"/> <!--Furrows N-S-->
+			<Brush ID="0208"/> <!--Furrows E-W-->
+			<Brush ID="0215"/> <!--Cave Dirt-->
+		</Group>
+		<Group Name="Swamp" color="0x444444">
+			<Brush ID="0240"/> <!--Swamp Water-->
+		</Group>
+		<Group Name="Grass" color="0x444444">
+			<Brush ID="0203"/> <!--Grass-->
+		</Group>
+		<Group Name="Forest" color="0x444444">
+			<Brush ID="0204"/> <!--Forest-->
+			<Brush ID="0202"/> <!--Jungle-->
+		</Group>
+		<Group Name="Sand" color="0x444444">
+			<Brush ID="0217"/> <!--Sand-->
+		</Group>
+		<Group Name="Mountain" color="0x444444">
+			<Brush ID="0209"/> <!--Mountain-->
+			<Brush ID="0213"/> <!--Cave - Tele Entrance-->
+			<Brush ID="0214"/> <!--Cave - Open Entrance-->
+			<Brush ID="0238"/> <!--Black-->
+		</Group>
+		<Group Name="Snow" color="0x444444">
+			<Brush ID="0210"/> <!--Snow-->
+		</Group>
+		<Group Name="Roads" color="0x444444">
+			<Brush ID="0198"/> <!--Large Cobblestones-->
+			<Brush ID="0199"/> <!--Red Brick-->
+			<Brush ID="0200"/> <!--Brown Brick-->
+			<Brush ID="0201"/> <!--Light Sandstone-->
+		</Group>
+	</Group>
+</TilesGroup>

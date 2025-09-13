@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RandomStatics Chance="10">
+  <Statics Description="Kamen velky" Freq="0">
+    <Static TileID="4944" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="4943" X="-1" Y="0" Z="0" Hue="0" />
+    <Static TileID="4945" X="0" Y="-1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Kamen velky 3" Freq="0">
+    <Static TileID="4949" X="0" Y="1" Z="0" Hue="0" />
+    <Static TileID="4950" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Kamen velky 4" Freq="0">
+    <Static TileID="4957" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="4956" X="-1" Y="0" Z="0" Hue="0" />
+    <Static TileID="4958" X="0" Y="-1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kamen" Freq="0">
+    <Static TileID="4963" X="0" Y="-1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kamen2" Freq="0">
+    <Static TileID="4966" X="0" Y="-1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kamen3" Freq="0">
+    <Static TileID="4964" X="0" Y="-1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="vyseky" Freq="30">
+    <Static TileID="3671" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="4152" X="1" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="vyseky2" Freq="30">
+    <Static TileID="3673" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="4152" X="0" Y="-1" Z="0" Hue="0" />
+    <Static TileID="7069" X="-1" Y="1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="vyseky3" Freq="30">
+    <Static TileID="3671" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="4152" X="1" Y="0" Z="0" Hue="0" />
+    <Static TileID="7069" X="0" Y="1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="vyseky4" Freq="30">
+    <Static TileID="3671" X="1" Y="0" Z="0" Hue="0" />
+    <Static TileID="4152" X="2" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="vyseky5" Freq="0">
+    <Static TileID="3673" X="1" Y="0" Z="0" Hue="0" />
+    <Static TileID="4152" X="1" Y="1" Z="0" Hue="0" />
+    <Static TileID="7069" X="0" Y="-1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Cedar tree" Freq="0">
+    <Static TileID="3286" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="3287" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Cedar tree" Freq="0">
+    <Static TileID="3288" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="3289" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="parez" Freq="2">
+    <Static TileID="3673" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kapradi" Freq="5">
+    <Static TileID="3224" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kapradi" Freq="5">
+    <Static TileID="3231" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kapradi" Freq="5">
+    <Static TileID="3232" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kapradi velke" Freq="0">
+    <Static TileID="3233" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kapradi velke" Freq="0">
+    <Static TileID="3234" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kapradi velke" Freq="0">
+    <Static TileID="3235" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kapradi velke" Freq="0">
+    <Static TileID="3236" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="klada" Freq="2">
+    <Static TileID="3315" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="3316" X="0" Y="1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="klada" Freq="2">
+    <Static TileID="3318" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="3317" X="-1" Y="0" Z="0" Hue="0" />
+    <Static TileID="3319" X="1" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kvetinka" Freq="1">
+    <Static TileID="3205" X="1" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kvetinky" Freq="0">
+    <Static TileID="3206" X="1" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kvetinky" Freq="0">
+    <Static TileID="3207" X="1" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="bili" Freq="2">
+    <Static TileID="3211" X="1" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="koprivy" Freq="1">
+    <Static TileID="3213" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Kamen velky 1" Freq="0">
+    <Static TileID="4944" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="4943" X="-1" Y="0" Z="0" Hue="0" />
+    <Static TileID="4945" X="0" Y="-1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Kamen velky 2" Freq="0">
+    <Static TileID="4949" X="0" Y="1" Z="0" Hue="0" />
+    <Static TileID="4950" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="Kamen velky 3" Freq="0">
+    <Static TileID="4957" X="0" Y="0" Z="0" Hue="0" />
+    <Static TileID="4956" X="-1" Y="0" Z="0" Hue="0" />
+    <Static TileID="4958" X="0" Y="-1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kamen" Freq="0">
+    <Static TileID="4963" X="0" Y="-1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kamen2" Freq="0">
+    <Static TileID="4966" X="0" Y="-1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kamen3" Freq="4">
+    <Static TileID="4964" X="0" Y="-1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="flowers" Freq="4">
+    <Static TileID="3148" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="flowers2" Freq="4">
+    <Static TileID="3146" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="houby" Freq="4">
+    <Static TileID="3351" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="houby2" Freq="4">
+    <Static TileID="3349" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="houby3" Freq="4">
+    <Static TileID="3346" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="houby4" Freq="4">
+    <Static TileID="3343" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="flowers 3 " Freq="5">
+    <Static TileID="3142" X="0" Y="-1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kvetiny3" Freq="5">
+    <Static TileID="3246" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kvetiny4" Freq="5">
+    <Static TileID="3245" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kvetiny5" Freq="5">
+    <Static TileID="3244" X="1" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kvetiny6" Freq="5">
+    <Static TileID="3247" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kvetiny7" Freq="5">
+    <Static TileID="3248" X="1" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kvetiny8" Freq="5">
+    <Static TileID="3249" X="0" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kvetiny9" Freq="5">
+    <Static TileID="3253" X="0" Y="-1" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="kvetiny10" Freq="5">
+    <Static TileID="3254" X="1" Y="0" Z="0" Hue="0" />
+  </Statics>
+  <Statics Description="houby" Freq="5">
+    <Static TileID="3350" X="1" Y="0" Z="0" Hue="0" />
+  </Statics>
+</RandomStatics>

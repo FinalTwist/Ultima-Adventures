@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<places>
+	<parent name="Lodoria">
+		<parent name="Lodoria">
+			<parent name="Towns">
+				<child name="Dusk" x="2650" y="3181" z="0" />
+				<child name="Elidor" x="2930" y="1327" z="0" />
+				<child name="Glacial Hills" x="3667" y="391" z="0" />
+				<child name="Greensky" x="4222" y="2996" z="0" />
+				<child name="Islegem" x="2812" y="2265" z="0" />
+				<parent name="Kraken Reef">
+					<child name="Docks" x="4800" y="3279" z="31" />
+					<child name="Cave" x="5700" y="4073" z="-5" />
+				</parent>
+				<child name="Lodoria" x="1912" y="2187" z="0" />
+				<child name="Lodoria Castle" x="1772" y="2215" z="55" />
+				<child name="Portshine" x="845" y="2026" z="0" />
+				<child name="Ravendark" x="6796" y="3720" z="14" />
+				<child name="Springvale" x="4223" y="1459" z="0" />
+				<child name="Starguide Port" x="2335" y="3160" z="0" />
+				<child name="Whisper" x="924" y="948" z="0" />
+			</parent>
+			<parent name="Dungeons">
+				<parent name="Catacombs">
+					<child name="Level 1" x="5579" y="1924" z="0" />
+					<child name="Lake Cave" x="5467" y="1805" z="7" />
+					<child name="Torture Chambers" x="5552" y="1807" z="0" />
+				</parent>
+				<parent name="City of Embers">
+					<child name="Level 1" x="5783" y="1504" z="20" />
+				</parent>
+				<parent name="Covetous">
+					<child name="Level 1" x="5458" y="1853" z="0" />
+					<child name="Level 2" x="5614" y="1997" z="0" />
+					<child name="Level 3" x="5517" y="2106" z="0" />
+					<child name="Level 4" x="5672" y="2506" z="0" />
+					<child name="Level 5" x="5831" y="2489" z="20" />
+				</parent>
+				<parent name="Deceit">
+					<child name="Level 1" x="5188" y="638" z="0" />
+					<child name="Level 2" x="5305" y="533" z="2" />
+					<child name="Level 3" x="5137" y="650" z="5" />
+					<child name="Level 4" x="5306" y="652" z="2" />
+				</parent>
+				<parent name="Despise">
+					<child name="Level 1" x="5519" y="673" z="20" />
+					<child name="Level 2" x="5407" y="859" z="45" />
+					<child name="Level 3" x="5248" y="2440" z="8" />
+					<child name="Level 4" x="5461" y="2573" z="0" />
+				</parent>
+				<parent name="Destard">
+					<child name="Level 1" x="5243" y="1006" z="0" />
+					<child name="Level 2" x="5143" y="801" z="4" />
+					<child name="Level 3" x="5137" y="986" z="5" />
+					<child name="Level 4" x="6828" y="501" z="3" />
+					<child name="Level 5" x="6887" y="535" z="2" />
+					<child name="Level 6" x="6781" y="606" z="0" />
+				</parent>
+				<parent name="Frozen Hells">
+					<child name="Level 1" x="5879" y="242" z="-2" />
+					<child name="Ratman Room" x="5834" y="327" z="18" />
+					<child name="Ice Demon Lair" x="5700" y="305" z="0" />
+				</parent>
+				<parent name="Hythloth">
+					<child name="Level 1" x="5905" y="20" z="46" />
+					<child name="Level 2" x="5976" y="169" z="0" />
+					<child name="Level 3" x="6083" y="145" z="-20" />
+					<child name="Level 4" x="6059" y="89" z="24" />
+					<child name="Level 5" x="5957" y="353" z="5" />
+				</parent>
+				<parent name="Lizardman Cave">
+					<child name="Level 1" x="5407" y="631" z="30" />
+				</parent>
+				<parent name="Ravendark">
+					<child name="Island" x="524" y="3630" z="2" />
+					<child name="Woods" x="6985" y="3067" z="0" />
+					<child name="Village" x="6796" y="3720" z="14" />
+					<child name="Gate" x="6627" y="3721" z="15" />
+					<child name="Castle" x="6942" y="1696" z="0" />
+					<child name="Crypts" x="5768" y="2843" z="10" />
+				</parent>
+				<parent name="Shame">
+					<child name="Level 1" x="5395" y="126" z="0" />
+					<child name="Level 2" x="5515" y="11" z="5" />
+					<child name="Level 3" x="5514" y="148" z="25" />
+					<child name="Level 4" x="5875" y="20" z="-5" />
+				</parent>
+				<parent name="Stonegate Castle">
+					<child name="Entrance" x="1355" y="405" z="0" />
+					<child name="Level 1" x="6529" y="2823" z="0" />
+					<child name="Level 2" x="6394" y="2291" z="0" />
+					<child name="Level 3" x="6411" y="2683" z="0" />
+					<child name="Level 4" x="6780" y="2632" z="0" />
+					<child name="Level 5" x="6247" y="2395" z="0" />
+					<child name="Level 6" x="6058" y="2426" z="0" />
+					<child name="Level 7" x="6195" y="2852" z="0" />
+					<child name="Level 8" x="6542" y="2636" z="0" />
+				</parent>
+				<parent name="Terathan Keep">
+					<child name="Level 1" x="5342" y="1601" z="0" />
+				</parent>
+				<parent name="Undermountain">
+					<child name="Level 1" x="5413" y="506" z="0" />
+					<child name="Level 2" x="5458" y="418" z="0" />
+					<child name="Level 3" x="5291" y="466" z="0" />
+				</parent>
+				<parent name="Volcanic Caves">
+					<child name="Entrance" x="3105" y="3597" z="0" />
+				</parent>
+				<parent name="Wrong">
+					<child name="Level 1" x="5825" y="630" z="0" />
+					<child name="Level 2" x="5690" y="569" z="25" />
+					<child name="Level 3" x="5703" y="639" z="0" />
+					<child name="Level 4" x="5571" y="1302" z="0" />
+				</parent>
+			</parent>
+			<parent name="Other Areas">
+				<child name="Chamber of Tyball" x="6069" y="357" z="0" />
+				<child name="Forge of Ice" x="3977" y="741" z="0" />
+				<child name="Great Dwarven Forge" x="2968" y="3469" z="0" />
+				<child name="Lost Elven Mines" x="6262" y="3527" z="16" />
+				<child name="Ranger Outpost" x="5228" y="1197" z="0" />
+				<child name="Riverfront Ship Builders" x="2173" y="2779" z="0" />
+				<child name="Serpent Pillars" x="3485" y="2456" z="0" />
+				<child name="Tower of Stoneguard" x="5410" y="1165" z="0" />
+				<child name="Undersea Pass North" x="1060" y="1065" z="0" />
+				<child name="Undersea Pass South" x="1179" y="1931" z="0" />
+			</parent>
+			<parent name="Isles of Dread">
+				<parent name="Sanctum of Saltmarsh">
+					<child name="Level 1" x="6283" y="1157" z="1" />
+					<child name="Level 2" x="6138" y="1359" z="0" />
+					<child name="Level 3" x="5821" y="2041" z="0" />
+					<child name="Level 4" x="6049" y="1980" z="0" />
+					<child name="Level 5" x="6589" y="2067" z="-30" />
+					<child name="Level 6" x="6229" y="1360" z="0" />
+				</parent>
+				<parent name="Temple of Osirus">
+					<child name="Level 1" x="6222" y="3931" z="30" />
+					<child name="Level 2" x="6133" y="3842" z="-65" />
+					<child name="Level 3" x="6142" y="3707" z="0" />
+					<child name="Level 4" x="6085" y="4045" z="31" />
+					<child name="Level 5" x="6180" y="1004" z="20" />
+				</parent>
+			</parent>
+			<parent name="Serpent Island">
+				<child name="Black Knight Vault" x="6248" y="305" z="20" />
+			</parent>
+			<parent name="Sosaria">
+				<child name="Montor Sewers" x="6479" y="926" z="22" />
+			</parent>
+			<parent name="Underworld">
+				<parent name="Argentrock Castle">
+					<child name="Level 1" x="6098" y="503" z="0" />
+					<child name="Level 2" x="5954" y="660" z="0" />
+					<child name="Level 3" x="6058" y="615" z="0" />
+					<child name="Level 4" x="6246" y="789" z="0" />
+					<child name="Level 5" x="6520" y="1080" z="0" />
+					<child name="Maze 1" x="5849" y="741" z="22" />
+					<child name="Maze 2" x="5847" y="893" z="22" />
+					<child name="Bedroom" x="6022" y="681" z="0" />
+					<child name="Wizard Den" x="6264" y="647" z="0" />
+				</parent>
+				<parent name="Carthax Lake">
+					<child name="Level 1" x="5764" y="1770" z="71" />
+					<child name="Level 2" x="5936" y="1804" z="-5" />
+					<child name="Level 3" x="6033" y="1737" z="-5" />
+					<child name="Level 4" x="5769" y="1885" z="0" />
+					<child name="Level 5" x="5455" y="2323" z="0" />
+					<child name="Level 6" x="5211" y="2017" z="0" />
+					<child name="Level 7" x="5176" y="2123" z="0" />
+					<child name="Level 8" x="5365" y="2228" z="-10" />
+				</parent>
+				<parent name="Daemon's Crag">
+					<child name="Level 1" x="5889" y="2171" z="-7" />
+					<child name="Level 2" x="6171" y="2089" z="-20" />
+					<child name="Level 3" x="6369" y="2027" z="-19" />
+					<child name="Level 4" x="5929" y="2178" z="0" />
+					<child name="Level 5" x="6232" y="2153" z="0" />
+					<child name="Level 6" x="6373" y="2162" z="-20" />
+				</parent>
+				<parent name="Hall of Mountain King">
+					<child name="Level 1" x="6834" y="1896" z="50" />
+					<child name="Level 2" x="6963" y="1831" z="62" />
+					<child name="Level 3" x="6997" y="2139" z="90" />
+					<child name="Level 4" x="6399" y="963" z="26" />
+					<child name="Level 5" x="6424" y="1217" z="0" />
+					<child name="Level 6" x="6505" y="2065" z="-30" />
+					<child name="Level 7" x="6868" y="1801" z="45" />
+					<child name="Level 8" x="5221" y="2790" z="49" />
+				</parent>
+				<parent name="Morgaelin's Inferno">
+					<child name="Level 1" x="7003" y="740" z="-30" />
+					<child name="Level 2" x="6902" y="1020" z="-7" />
+					<child name="Level 3" x="7024" y="609" z="5" />
+					<child name="Level 4" x="6034" y="2222" z="30" />
+				</parent>
+				<parent name="Zealan Tombs">
+					<child name="Level 1" x="5553" y="1664" z="102" />
+					<child name="Level 2" x="6519" y="748" z="0" />
+					<child name="Level 3" x="6432" y="667" z="2" />
+					<child name="Level 4" x="6548" y="767" z="0" />
+					<child name="Level 5" x="6632" y="668" z="0" />
+					<child name="Level 6" x="6670" y="770" z="-20" />
+					<child name="Level 7" x="6001" y="879" z="0" />
+					<child name="Level 8" x="7060" y="2341" z="0" />
+					<child name="Level 9" x="6752" y="730" z="0" />
+					<child name="Level 10" x="5662" y="1600" z="59" />
+					<child name="Level 11" x="6745" y="2405" z="0" />
+				</parent>
+			</parent>
+			<parent name="Bard's Tale">
+				<child name="Skara Brae" x="7019" y="245" z="0" />
+				<child name="Cellar" x="5482" y="2699" z="0" />
+				<child name="Sewers" x="6493" y="1649" z="15" />
+				<child name="Catacombs Lvl 1" x="6578" y="2033" z="45" />
+				<child name="Catacombs Lvl 2" x="6266" y="2682" z="0" />
+				<child name="Harkyn's Castle Lvl 1" x="5839" y="1118" z="30" />
+				<child name="Harkyn's Castle Lvl 2" x="5911" y="1229" z="10" />
+				<child name="Kylearan's Tower" x="5766" y="2411" z="0" />
+				<child name="Mangar's Tower Lvl 1" x="6295" y="1880" z="25" />
+				<child name="Mangar's Tower Lvl 2" x="6290" y="1572" z="0" />
+				<child name="Mangar's Tower Lvl 3" x="6482" y="1476" z="5" />
+				<child name="Mangar's Tower Lvl 4" x="6568" y="1456" z="20" />
+				<child name="Mangar's Tower Lvl 5" x="6653" y="1490" z="60" />
+				<child name="Mangar's Tower Lvl 6" x="6427" y="1541" z="0" />
+			</parent>
+		</parent>
+	</parent>
+</places>

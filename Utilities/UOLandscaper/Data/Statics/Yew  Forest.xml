@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RandomStatics Chance="20">
+	<Statics Description="Peach Tree with green leaves" Freq="0">
+		<Static TileID="3484" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3485" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Peach Tree with green leaves and peaches" Freq="10">
+		<Static TileID="3484" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3486" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Peach Tree with brown leaves" Freq="0">
+		<Static TileID="3484" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3487" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Peach Tree with green leaves" Freq="0">
+		<Static TileID="3488" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3489" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Peach Tree with green leaves and peaches" Freq="10">
+		<Static TileID="3488" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3490" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Peach Tree with brown leaves" Freq="0">
+		<Static TileID="3488" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3491" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Pear Tree with green leaves" Freq="0">
+		<Static TileID="3492" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3493" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Pear Tree with green leaves and pears" Freq="10">
+		<Static TileID="3492" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3494" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Pear Tree with brown leaves" Freq="0">
+		<Static TileID="3492" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3495" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Pear Tree with green leaves" Freq="0">
+		<Static TileID="3496" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3497" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Pear Tree with green leaves and pears" Freq="10">
+		<Static TileID="3496" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3498" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Pear Tree with brown leaves" Freq="0">
+		<Static TileID="3496" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3499" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Tree grey, green leaves" Freq="8">
+		<Static TileID="3277" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3278" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Tree grey, brown leaves" Freq="0">
+		<Static TileID="3277" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3279" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Tree grey, green leaves" Freq="8">
+		<Static TileID="3283" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3284" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Tree grey, brown leaves" Freq="0">
+		<Static TileID="3283" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3285" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Tree, warm brown, green leaves" Freq="8">
+		<Static TileID="3280" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3281" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Tree, warm brown, brown leaves" Freq="0">
+		<Static TileID="3280" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3282" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Tree grey, green leaves" Freq="8">
+		<Static TileID="3283" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3284" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Tree grey, brown leaves" Freq="0">
+		<Static TileID="3283" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3285" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cedar tree" Freq="32">
+		<Static TileID="3286" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3287" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cedar tree" Freq="32">
+		<Static TileID="3288" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3289" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Oak tree, green leaves" Freq="32">
+		<Static TileID="3290" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3291" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Oak tree brown leaves" Freq="0">
+		<Static TileID="3290" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3292" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Oak tree, green leaves" Freq="32">
+		<Static TileID="3293" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3294" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Oak tree, brown leaves" Freq="0">
+		<Static TileID="3293" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3295" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Walnut tree, green leaves" Freq="32">
+		<Static TileID="3296" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3297" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Walnut tree, brown leaves" Freq="0">
+		<Static TileID="3296" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3298" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Walnut tree, green leaves" Freq="32">
+		<Static TileID="3299" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3300" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Walnut tree, brown leaves" Freq="0">
+		<Static TileID="3299" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3301" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Willow tree, green leaves" Freq="32">
+		<Static TileID="3302" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3303" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Willow tree, brown leaves" Freq="0">
+		<Static TileID="3302" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3304" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="O'hii Tree" Freq="32">
+		<Static TileID="3230" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Tree, dark brown" Freq="0">
+		<Static TileID="3275" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Sapling" Freq="8">
+		<Static TileID="3305" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Sapling" Freq="8">
+		<Static TileID="3305" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Apple tree, green leaves" Freq="0">
+		<Static TileID="3476" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3477" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Apple tree, green leaves, apples" Freq="10">
+		<Static TileID="3476" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3478" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Apple tree, brown leaves" Freq="0">
+		<Static TileID="3476" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3479" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Apple tree, green leaves" Freq="0">
+		<Static TileID="3480" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3481" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Apple tree, green leaves, apples" Freq="10">
+		<Static TileID="3480" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3482" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Apple tree, brown leaves" Freq="0">
+		<Static TileID="3480" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3483" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Tree stump" Freq="0">
+		<Static TileID="3673" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushrooms" Freq="4">
+		<Static TileID="3340" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushrooms" Freq="4">
+		<Static TileID="3341" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushrooms" Freq="4">
+		<Static TileID="3342" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushrooms" Freq="4">
+		<Static TileID="3343" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushrooms" Freq="4">
+		<Static TileID="3344" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushrooms" Freq="4">
+		<Static TileID="3345" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushrooms" Freq="4">
+		<Static TileID="3346" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushrooms" Freq="4">
+		<Static TileID="3347" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushrooms" Freq="4">
+		<Static TileID="3348" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushrooms" Freq="4">
+		<Static TileID="3349" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushrooms" Freq="4">
+		<Static TileID="3350" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushrooms" Freq="4">
+		<Static TileID="3351" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushrooms" Freq="4">
+		<Static TileID="3352" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushrooms" Freq="4">
+		<Static TileID="3353" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="4962" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="4963" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="4964" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="4965" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="4966" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="4967" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="4968" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="4969" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="4970" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="4971" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="4972" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="4973" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="6001" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="6002" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="2">
+		<Static TileID="6003" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="4">
+		<Static TileID="6004" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="6005" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="6006" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="2">
+		<Static TileID="6007" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="4">
+		<Static TileID="6008" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="6009" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="0">
+		<Static TileID="6010" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="2">
+		<Static TileID="6011" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rocks" Freq="4">
+		<Static TileID="6012" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3244" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3245" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3246" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3247" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3248" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3249" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3250" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3251" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3252" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3253" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3254" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3255" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3256" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3257" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3258" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3259" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3260" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="0">
+		<Static TileID="3261" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Weed" Freq="1">
+		<Static TileID="3271" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fan plant" Freq="0">
+		<Static TileID="3224" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3224" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3231" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3232" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Large Fern" Freq="0">
+		<Static TileID="3233" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3234" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3235" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3236" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fern" Freq="0">
+		<Static TileID="3232" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Bulrushes" Freq="0">
+		<Static TileID="3220" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Elephant ear plant" Freq="0">
+		<Static TileID="3223" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Pampas Gras" Freq="0">
+		<Static TileID="3237" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Rushes" Freq="0">
+		<Static TileID="3239" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Snake plant" Freq="0">
+		<Static TileID="3241" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Sticks" Freq="2">
+		<Static TileID="7067" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Twigs" Freq="4">
+		<Static TileID="7068" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Twigs" Freq="4">
+		<Static TileID="7069" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Twigs" Freq="0">
+		<Static TileID="7070" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fallen log N/S" Freq="8">
+		<Static TileID="3315" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3316" X="0" Y="1" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Fallen log W/E" Freq="8">
+		<Static TileID="3317" X="-1" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3318" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3319" X="1" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Foxglove flower" Freq="2">
+		<Static TileID="3204" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Ourflour flower" Freq="2">
+		<Static TileID="3205" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Campion flowers" Freq="2">
+		<Static TileID="3207" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Snowdrops" Freq="2">
+		<Static TileID="3208" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Foxglove flower" Freq="2">
+		<Static TileID="3210" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Poppies" Freq="2">
+		<Static TileID="cbe" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Poppies" Freq="2">
+		<Static TileID="cbf" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="White flowers" Freq="2">
+		<Static TileID="3211" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="White flowers" Freq="2">
+		<Static TileID="3212" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Flowers" Freq="4">
+		<Static TileID="3127" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Flowers" Freq="4">
+		<Static TileID="3128" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Flowers" Freq="4">
+		<Static TileID="3141" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Flowers" Freq="4">
+		<Static TileID="3142" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Flowers" Freq="4">
+		<Static TileID="3143" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Flowers" Freq="0">
+		<Static TileID="3144" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Flowers" Freq="4">
+		<Static TileID="3145" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Flowers" Freq="0">
+		<Static TileID="3146" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Flowers" Freq="4">
+		<Static TileID="3147" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Flowers" Freq="0">
+		<Static TileID="3148" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Flowers" Freq="0">
+		<Static TileID="3149" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Flowers" Freq="4">
+		<Static TileID="3150" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Brambles" Freq="0">
+		<Static TileID="3391" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Brambles" Freq="0">
+		<Static TileID="3392" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Yew Tree" Freq="3">
+		<Static TileID="4797" X="4" Y="-4" Z="0" Hue="0"/>
+		<Static TileID="4796" X="3" Y="-3" Z="0" Hue="0"/>
+		<Static TileID="4795" X="2" Y="-2" Z="0" Hue="0"/>
+		<Static TileID="4794" X="1" Y="-1" Z="0" Hue="0"/>
+		<Static TileID="4793" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="4792" X="-1" Y="1" Z="0" Hue="0"/>
+		<Static TileID="4791" X="-2" Y="2" Z="0" Hue="0"/>
+		<Static TileID="4790" X="-3" Y="3" Z="0" Hue="0"/>
+		<Static TileID="4798" X="-4" Y="4" Z="0" Hue="0"/>
+		<Static TileID="4799" X="-3" Y="3" Z="0" Hue="0"/>
+		<Static TileID="4800" X="-2" Y="2" Z="0" Hue="0"/>
+		<Static TileID="4801" X="-1" Y="1" Z="0" Hue="0"/>
+		<Static TileID="4802" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="4803" X="1" Y="-1" Z="0" Hue="0"/>
+		<Static TileID="4804" X="2" Y="-2" Z="0" Hue="0"/>
+		<Static TileID="4805" X="3" Y="-3" Z="0" Hue="0"/>
+		<Static TileID="4806" X="4" Y="-4" Z="0" Hue="0"/>
+		<Static TileID="4807" X="5" Y="-5" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Mushroom Ring" Freq="4">
+		<Static TileID="3343" X="2" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3344" X="1" Y="1" Z="0" Hue="0"/>
+		<Static TileID="3342" X="3" Y="1" Z="0" Hue="0"/>
+		<Static TileID="3345" X="0" Y="2" Z="0" Hue="0"/>
+		<Static TileID="3341" X="2" Y="2" Z="0" Hue="0"/>
+		<Static TileID="3340" X="1" Y="3" Z="0" Hue="0"/>
+	</Statics>
+</RandomStatics>

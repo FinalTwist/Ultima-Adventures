@@ -1,0 +1,17 @@
+http://www.runuo.com/community/threads/basic-item-that-can-only-be-equiped-by-only-one-character.527180/
+Originally Scripted by Mortis
+Edited/Changed by JBob (ThatDudeJBob)
+
+Changes Made By JBob
+    V1.0 --------
+    I added the ability to evolve the weapon.
+    Changed how the name of the item shows.
+    Was "Soul Bow [Bound To Player]"
+    or "Iron Soul Bow [Bound To Player]"
+    Now "Player's Soul Bow"
+              [Soulbound]
+          Evolution Points: 0
+    Added Name Property to have [Un-Bound] on a new line along with the Evolution Points
+    V1.1 --------
+    V1.2 --------
+    V1.3 --------

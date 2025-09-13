@@ -1,0 +1,259 @@
+[LANGUAGE]
+
+IDS_ABOUTBOX=About Axis2
+IDS_ACCOUNT=Account
+IDS_ADDDESTINATION=Custom Destination Editor
+IDS_ADMIN=Admin
+IDS_ALLMOVE=Allmove
+IDS_AXIS_PROFILE=<Axis Profile>
+IDS_AXIS_VERSION=Axis2 version %1
+IDS_AXISTITLE=%1 - Press F1 for Help
+
+IDS_BAN=Ban
+IDS_BRIGHT=Bright
+IDS_BUY=Buy
+
+IDS_CANCEL=Cancel
+IDS_CATEGORY=Category
+IDS_CLIENT=Clients
+IDS_CLIENT_NOMEMORY =Client Info: Couldn't allocate enough memory (%1!d! bytes) for the client's image (handle: %2!X!)
+IDS_CLIENT_NOREF=Client Info: Could not a reference to "%1" return was %2!d!
+IDS_CLIENT_NOTOPEN=Client Info: Could not open the file %1. Check if the path is right and the file is not being used
+IDS_CLIENT_NOVALID=Client Info: The client is not a valid PE
+IDS_CLIENTINST=Looking for client installation
+IDS_CLIENTPATH=Client path is %1
+IDS_CLIENTVER=Client version is %1
+IDS_COLORINDEX=Color Index
+IDS_COLORSELECTION=Color Selection
+IDS_COMMANDS=Commands
+IDS_CREATE_TABS=Creating Tabs
+
+IDS_DARK=Dark
+IDS_DEBUG=Debug
+IDS_DEFAULT_PROFILE_FOLDER=Select the Default Profile folder
+IDS_DEFAULT_PROFILE_PATH=Default profile path is %1
+IDS_DELETE=Delete
+IDS_DESCRIPTION=Description
+IDS_DETAIL=Detail
+IDS_DISCIPLINE=Discipline
+IDS_DISCONNECT=Disconnect
+IDS_DOCK=Dock Tab
+IDS_DOWN=South
+IDS_DOWNRIGHT=South East
+IDS_DRY=Dry
+IDS_DUPE=Dupe
+
+IDS_EDIT=Edit
+IDS_ERRNOCLIENT=ERROR: No client path specified. Check settings tab to manually set the path
+IDS_ERRNOMUL=ERROR: No mulfile path specified. Check settings tab to manually set the path
+
+IDS_FILE_EXMOVE=An exception occured while moving files.\n\n%1
+IDS_FILE_RENAME=\n\nAxis can attempt to rename the existing file, and move in the new file.\nWould you like to try this?
+IDS_FILE_RENAMESUCCESS=Rename was successful.  The backup file is now stored in\n%1
+IDS_FILE_RENAMEFAILED=Rename failed.
+IDS_FINDAREA=Find Area
+IDS_FINDITEM=Find Item
+IDS_FINDNPC=Find NPC
+IDS_FIX=Fix
+IDS_FLIP=Flip
+IDS_FORGIVE=Forgive
+
+IDS_GENERAL=General
+IDS_GM=GM Toggle
+IDS_GMPAGE=GM Page
+IDS_GO_ORIGIN=Go Origin
+IDS_GO_PLAYER=Go Player
+IDS_GPLVL=Plevel
+IDS_GPRIV=Priv Flags
+IDS_GRESDISP=Resdisp
+
+IDS_HEARALL=Hear All
+IDS_HIDE_CONSOLE=Hide Console
+IDS_HTMLERROR_100=OK to continue with request.
+IDS_HTMLERROR_101=server has switched protocols in upgrade header.
+IDS_HTMLERROR_200=request completed.
+IDS_HTMLERROR_201=object created, reason = new URI.
+IDS_HTMLERROR_202=async completion (TBS).
+IDS_HTMLERROR_203=partial completion.
+IDS_HTMLERROR_204=no info to return.
+IDS_HTMLERROR_205=request completed, but clear form.
+IDS_HTMLERROR_206=partial GET furfilled.
+IDS_HTMLERROR_300=server couldn't decide what to return.
+IDS_HTMLERROR_301=object permanently moved.
+IDS_HTMLERROR_302=object temporarily moved.
+IDS_HTMLERROR_303=redirection w/ new access method.
+IDS_HTMLERROR_304=if-modified-since was not modified.
+IDS_HTMLERROR_305=redirection to proxy, location header specifies proxy to use.
+IDS_HTMLERROR_307=HTTP/1.1: keep same verb.
+IDS_HTMLERROR_400=invalid syntax.
+IDS_HTMLERROR_401=access denied.
+IDS_HTMLERROR_402=payment required.
+IDS_HTMLERROR_403=request forbidden.
+IDS_HTMLERROR_404=object not found.
+IDS_HTMLERROR_405=method is not allowed.
+IDS_HTMLERROR_406=no response acceptable to client found.
+IDS_HTMLERROR_407=proxy authentication required.
+IDS_HTMLERROR_408=server timed out waiting for request.
+IDS_HTMLERROR_409=user should resubmit with more info.
+IDS_HTMLERROR_410=the resource is no longer available.
+IDS_HTMLERROR_411=the server refused to accept request w/o a length.
+IDS_HTMLERROR_412=precondition given in request failed.
+IDS_HTMLERROR_413=request entity was too large.
+IDS_HTMLERROR_414=request URI too long.
+IDS_HTMLERROR_415=unsupported media type.
+IDS_HTMLERROR_449=retry after doing the appropriate action.
+IDS_HTMLERROR_500=internal server error.
+IDS_HTMLERROR_501=required not supported.
+IDS_HTMLERROR_502=error response received from gateway.
+IDS_HTMLERROR_503=temporarily overloaded.
+IDS_HTMLERROR_504=timed out waiting for gateway.
+IDS_HTMLERROR_505=HTTP version not supported.
+IDS_HUE_NOTLOADED=Hues were not successfully loaded at startup, so the palette is not available
+IDS_HUE_OUTOFRANGE=Hue group index out of range!  Requested index %1!ld!, but the upper bound is %2!ld!
+
+IDS_INDEX=Index
+IDS_INFORMATION=Information
+IDS_INFO=Info
+IDS_INTERNALNAME=Internal Name
+IDS_INVALCOORD=Invalid value for %1 coordinate
+IDS_INVALMAP=Invalid value for map plane
+IDS_INVENTORY=Inventory
+IDS_INVIS=Invisible
+IDS_INVUL=Invul
+IDS_ITEMS=Items
+IDS_ITEM_TWEAK=Item Tweak
+
+IDS_JAIL=Jail
+
+IDS_KILL=Kill
+
+IDS_LAUNCHER=Launcher
+IDS_LEFT=West
+IDS_LEFTDOWN=South West
+IDS_LIGHT_LVL=Light Level
+IDS_LINK=Link
+IDS_LIST=List
+IDS_LOADDEFAULT=Loading Default Settings
+IDS_LOAD_DEFAULT_PROFILE=Load Default Profile (%1)
+IDS_LOAD_LAST_PROFILE=Load Last Profile (%1)
+IDS_LOADREGISTRY=Loading Registry Settings
+IDS_LOADFINISH=Finished loading Axis
+IDS_LOGS=Log
+
+IDS_MAP=Map
+IDS_MAP_REGION=Map %1!d! Regions
+IDS_MISC=Misc
+IDS_MULPATH=Mul path is %1
+IDS_MULTIPLE_INSTANCES=Checking multiple instances
+
+IDS_NIGHTSIGHT=NightSight
+IDS_NOCATSEL=No category selected!
+IDS_NODESC=Must have text in the description field
+IDS_NONE=<None>
+IDS_NOSUBSEL=No subsection selected!
+IDS_NUDGEDOWN=Nudge Down
+IDS_NUDGEUP=Nudge Up
+IDS_NUKE=Nuke
+
+IDS_OFF=Off
+IDS_OK=OK
+IDS_ON=On
+
+IDS_PALETTE=Color Picker
+IDS_PLAYER_TWEAK=Character Tweak
+IDS_PLVL0=Guest
+IDS_PLVL1=Player/NPC
+IDS_PLVL2=Counselor
+IDS_PLVL3=Seer
+IDS_PLVL4=GM
+IDS_PLVL5=Developer
+IDS_PLVL6=Administrator
+IDS_PLVL7=Owner
+IDS_PRIV00002=Act as a GM
+IDS_PRIV00008=Listen to GM Pages
+IDS_PRIV00010=Hearall
+IDS_PRIV00020=Allmove
+IDS_PRIV00040=Show Combat Details
+IDS_PRIV00080=Debug Mode
+IDS_PRIV00200=Show GM Privileges
+IDS_PRIV00400=Telnet Modificator
+IDS_PRIV00800=Jailed
+IDS_PRIV02000=Blocked/Banned
+IDS_PRIV04000=Allshow
+IDS_PURCHASES=Purchases
+
+IDS_QUEUE=Queue
+
+IDS_RAIN=Rain
+IDS_REMINDER=Reminder
+IDS_REMOTE_CONSOLE=Remote Console
+IDS_REMOVE=Remove
+IDS_RESDISP0=Pre-T2A
+IDS_RESDISP1=The 2nd Age
+IDS_RESDISP2=Lord Blackthorn's Revenge
+IDS_RESDISP3=Age Of Shadows
+IDS_RESDISP4=Samurai Empire
+IDS_RESDISP5=Mondain's Legacy
+IDS_RESDISP6=Kingdom Reborn
+IDS_RESDISP7=Stygian Abyss
+IDS_RESETBUTTON=Reset
+IDS_RESTOCK=Restock
+IDS_RESTOCK_ALL=Restock all NPCs
+IDS_RESURRECT=Resurrect
+IDS_RESYNC=Resync
+IDS_RIGHT=East
+IDS_RIGHTUP=North East
+
+IDS_SAMPLES=Samples
+IDS_SAVE=Save World
+IDS_SAVE_STATICS=Save Statics
+IDS_SELF=Self
+IDS_SELL=Sell
+IDS_SERV_INFO=Serv Info
+IDS_SETBUTTON=Set
+IDS_SETTINGS=Settings
+IDS_SHOW_CONSOLE=Show Console
+IDS_SHRINK=Shrink
+IDS_SHUTDOWN=Axis is shutting down.
+IDS_SNOW=Snow
+IDS_SPAWN=Spawns
+IDS_START=Starting %1, built %2
+IDS_SUBSECTION=Subsection
+
+IDS_TAB=Tab
+IDS_TELE=Tele
+IDS_TRAVEL=Travel
+IDS_TYPE=Type
+
+IDS_UNDOCK=Undock Tab
+IDS_UNKNOWN=Unknown
+IDS_UNLOAD_PROFILE=Unload Profile (%1)
+IDS_UP=North
+IDS_UPLEFT=North West
+
+IDS_VENDORS=Vendors
+IDS_VERSION=Version
+
+IDS_WARNING_BAN=Are you sure you wish to BAN the client that sent this page?
+IDS_WARNING_DELETE_REG_KEY=Error deleting registry key %1.  Last error was %2
+IDS_WARNING_DELETE_REG_VAL=Error deleting registry value %1.  Last error was %2
+IDS_WARNING_DISCONNECT=Are you sure you wish to disconnect the client that sent this page?
+IDS_WARNING_EXCEPTION_FILE=ERROR: Caught an exception while reading the file %1.  Cause code = %2!ld!
+IDS_WARNING_JAIL=Are you sure you wish to jail the client that sent this page?
+IDS_WARNING_NOOPEN=ERROR: Unable to open %1
+IDS_WARNING_OPEN_REG=Couldn't open registry key %1.  Last error was %2
+IDS_WARNING_READ_REG_VAL=Error reading value %1 from registry.  Last error was %2
+IDS_WARNING_REG_TYPE=Registry value of wrong type for %1.  Type was %2!ld!, expected %3!ld!
+IDS_WARNING_UNKNOWN_SECTION=ERROR: Unknown section %1 in file %2
+IDS_WARNING_WRITE_REG_VAL=Error writing value %1 to the registry.  Last error was %2
+IDS_WEATHER=Weather
+IDS_WORLDMAP=World Map
+
+IDS_X=X
+
+IDS_Y=Y
+    
+IDS_Z=Z
+IDS_ZOOMIN=Zoom In
+IDS_ZOOMOUT=Zoom Out
+

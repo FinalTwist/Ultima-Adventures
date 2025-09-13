@@ -1,0 +1,1667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF120CFF1212141414">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0C14120C121212">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF120C0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="905" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C0C0C0CFFFFFF">
+    <MapTiles>
+      <MapTile TileID="901" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C1212121212FFFF14">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12120C14121214FFFF">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="120C0C12FFFF14FFFF">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="141212FFFF0CFFFF0C">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF120C0C120C0C0C">
+    <MapTiles>
+      <MapTile TileID="905" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="141412FF1212FF120C">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C1212FF1212FF1414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212FF12120C12120C">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="14120C14121214FFFF">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C1212FF1212FF1412">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="121212121212FFFF0C">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="120C0C120C0CFF0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="14120C14120CFFFF0C">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C12FFFF12FFFF12">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="121212121212FF0C0C">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF141212140C1212">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1214141212FF0C12FF">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF141212140C1214">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212120C12120C0CFF">
+    <MapTiles>
+      <MapTile TileID="271" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212141212140CFFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C12FF1212FF121414">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0C14120C12120C">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF1414FF12120C0C12">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF1212FF12120C0C12">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C0C0C12FFFF12">
+    <MapTiles>
+      <MapTile TileID="908" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1214FF1212FF12120C">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C12140CFFFF0CFFFF">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12FFFF12FFFF120C0C">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C12FF1212FF1414">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="121212FF0C0CFF0C0C">
+    <MapTiles>
+      <MapTile TileID="908" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C12FF1212FF1412">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF1212FF120C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="1878" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="120C0C120C0C1212FF">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="14FFFF12FFFF120C0C">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0C14120C141212">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C12120C12140CFFFF">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF1212FF12120C1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212120C12140CFFFF">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1214FF1212FF120C0C">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF120CFF1212141212">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12120C12120C1212FF">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C0C12FF1212FF">
+    <MapTiles>
+      <MapTile TileID="1879" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="120C0C1212FF1414FF">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0C12120C12120C">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF1414FF12120C1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C0C0C0CFF120C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C120C0C120C0CFF">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0CFFFF12FFFF12">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF0CFFFF121212">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212FF0C0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0CFFFF12FFFF14">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF0CFFFF121214">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF0C0C12120C12120C">
+    <MapTiles>
+      <MapTile TileID="269" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1214FF1212FF0C0C0C">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0C12120C120C0C">
+    <MapTiles>
+      <MapTile TileID="1877" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C120C1212FF1212">
+    <MapTiles>
+      <MapTile TileID="268" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212121212120CFFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C120C0C1212FF">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12FFFF12FFFF0C0C0C">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12120C120C0CFF0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0CFF120CFF1212">
+    <MapTiles>
+      <MapTile TileID="1874" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="14FFFF12121212120C">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12120C1212FF1214FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12120C1212FF1414FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF0C1212121212">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12FFFF0C0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="907" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="120C0C120C0C12FFFF">
+    <MapTiles>
+      <MapTile TileID="906" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF0CFFFF0CFFFF">
+    <MapTiles>
+      <MapTile TileID="475" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="120C0C12120CFFFF0C">
+    <MapTiles>
+      <MapTile TileID="1876" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C12120C12120C0CFF">
+    <MapTiles>
+      <MapTile TileID="271" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212121212140CFFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF0C0C12120C121212">
+    <MapTiles>
+      <MapTile TileID="269" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0CFF0C0CFF121212">
+    <MapTiles>
+      <MapTile TileID="907" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="141212FF1212FF120C">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212FF1212FF12120C">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12120CFF0C0CFF0C0C">
+    <MapTiles>
+      <MapTile TileID="908" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12120C14120CFFFF0C">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C0C0C0CFF1212">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C12FF0C0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12121214120CFFFF0C">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF0CFFFF0C1212">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="14FFFF14121212120C">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12121212120CFF0C0C">
+    <MapTiles>
+      <MapTile TileID="270" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF0CFFFF0C1214">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF0C0C120C0C120C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C120C0C12FF1212">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="141414FF1212FF120C">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF0C0C120C0C121212">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212FF1212FF120C0C">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212141212FF0C12FF">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF0C12120C1212">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0CFF0C0C12121212">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="141212141212FFFF0C">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C120C0C12FFFF12">
+    <MapTiles>
+      <MapTile TileID="908" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C12FFFF14FFFF">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF12120C12120C0C12">
+    <MapTiles>
+      <MapTile TileID="271" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C120C0CFF0C0CFF">
+    <MapTiles>
+      <MapTile TileID="906" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0C141212141212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12120C1212FF1212FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="14FFFF14121214120C">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212FF0C12FF0C0C0C">
+    <MapTiles>
+      <MapTile TileID="1875" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0CFF0C0CFF0C1212">
+    <MapTiles>
+      <MapTile TileID="907" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="14FFFF12FFFF0C0C0C">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF0C0C120C0C12120C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0CFFFF0CFFFF0C">
+    <MapTiles>
+      <MapTile TileID="475" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C12120C1212FF">
+    <MapTiles>
+      <MapTile TileID="269" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C1214121214FFFF14">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C1212FF1414FF">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12FFFF120C0C120C0C">
+    <MapTiles>
+      <MapTile TileID="907" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C120C0C12FFFF">
+    <MapTiles>
+      <MapTile TileID="906" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFFFF0C0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="904" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF14FFFF120C0C0C">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212120C0C120C0CFF">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212FF12120C120C0C">
+    <MapTiles>
+      <MapTile TileID="270" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0CFF0C0C120C1212">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF12FFFF120C0C0C">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF12FFFF120C0C12">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="120C0C1212FF1212FF">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="120C0CFF0C0CFF0C0C">
+    <MapTiles>
+      <MapTile TileID="908" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="121212120C0CFF0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="121212FFFF0CFFFF0C">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C12120CFFFF0CFFFF">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212120C12120CFFFF">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12121212120CFFFF0C">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0C12120C121212">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF141212120C1212">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0CFF1212FF1212">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C0C0C120C0CFF">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212FF12120C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="270" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF0C1214121214">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C12120C1212FF1212">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF0C0C120C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF1412FF12120C0C12">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF0C0C121212121212">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0C121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF12120C0C120C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12120C12121214FFFF">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0CFF0C0C120C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF0C12120C0C12">
+    <MapTiles>
+      <MapTile TileID="1873" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C12FFFF12FFFF">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="14120CFFFF0CFFFF0C">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12120C12120CFFFF0C">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF0C0CFF0C0C121212">
+    <MapTiles>
+      <MapTile TileID="905" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF12120C12120C1212">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C0C1212FF1212">
+    <MapTiles>
+      <MapTile TileID="268" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C12120C12120CFFFF">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12120C12120CFF0C0C">
+    <MapTiles>
+      <MapTile TileID="270" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF14FFFF120C0C12">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0CFF0C0C120C0C12">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0CFF0C12120C1212">
+    <MapTiles>
+      <MapTile TileID="268" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0CFFFF0C12120C">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF120C0C120C0C12">
+    <MapTiles>
+      <MapTile TileID="905" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212140CFFFF0CFFFF">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF0C0CFF0C0CFF0C0C">
+    <MapTiles>
+      <MapTile TileID="903" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="121212141212FFFF0C">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212120CFFFF0CFFFF">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0CFF0C0CFF0C0C12">
+    <MapTiles>
+      <MapTile TileID="907" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212FF1212FF0C0C0C">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C12FF1212FF1212">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212140C12140CFFFF">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0CFF1212FF1414">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF12120C0C120C0C12">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0CFFFF0C14120C">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212FF120C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="120C0C1212FF1214FF">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0CFF1212FF1412">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF0C1214121212">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF1412FF12120C1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1414FF1212FF12120C">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0CFF121212121212">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212120C0CFF0C0CFF">
+    <MapTiles>
+      <MapTile TileID="906" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C12FFFF12FFFF14">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C0C0C0C1212FF">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C12140C12140CFFFF">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C1212FF1212FF">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C120C12120CFFFF">
+    <MapTiles>
+      <MapTile TileID="1880" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF121214121214">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212FF120C0C120C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF12120C0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF121214121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF12120C12120C0C0C">
+    <MapTiles>
+      <MapTile TileID="271" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0CFF0C1212121212">
+    <MapTiles>
+      <MapTile TileID="268" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C1212FF1212FF1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C12120C0C120C0CFF">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C0C0C0CFFFF12">
+    <MapTiles>
+      <MapTile TileID="908" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12FFFF120C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="907" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0CFFFF0C121212">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C0C0C0C0C12FF">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF0C0CFF0C0C120C0C">
+    <MapTiles>
+      <MapTile TileID="905" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1414FF1212FF120C0C">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1414141212FF0C12FF">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0C141212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0CFF0C0CFF0C0CFF">
+    <MapTiles>
+      <MapTile TileID="902" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C120C0CFF0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="120C0C12FFFF12FFFF">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C12120C0CFF0C0CFF">
+    <MapTiles>
+      <MapTile TileID="906" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF1412FF12120C0C0C">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C1212FF1214FF">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C12FF1212FF121214">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1414FF1212FF0C0C0C">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0CFFFFFFFFFFFF">
+    <MapTiles>
+      <MapTile TileID="475" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C12FF1212FF141414">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF1414FF12120C0C0C">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF1212FF12120C0C0C">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C0C0C12FF1212">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF0C12140C1214">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="1212121212120C0CFF">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0CFFFF0C141212">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="12120CFFFF0CFFFF0C">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0CFFFF0C12140C1212">
+    <MapTiles>
+      <MapTile TileID="273" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF0C0CFF0C0C12120C">
+    <MapTiles>
+      <MapTile TileID="905" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C1212121214FFFF14">
+    <MapTiles>
+      <MapTile TileID="274" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="14121214120CFFFF0C">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="0C0C0C0C0C0C12FFFF">
+    <MapTiles>
+      <MapTile TileID="906" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="120C0C12120C1212FF">
+    <MapTiles>
+      <MapTile TileID="269" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF120CFF1212141412">
+    <MapTiles>
+      <MapTile TileID="275" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFFFFFFFFFF0C0C0C">
+    <MapTiles>
+      <MapTile TileID="475" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FF120C0C0C0C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="282" AltIDMod="0" />
+      <MapTile TileID="283" AltIDMod="0" />
+      <MapTile TileID="284" AltIDMod="0" />
+      <MapTile TileID="285" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Snow" HashKey="FFFF0C14120C14120C">
+    <MapTiles>
+      <MapTile TileID="272" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>
