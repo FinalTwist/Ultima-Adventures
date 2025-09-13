@@ -1,0 +1,55 @@
+Mystical Sextant Quest.
+Created by Skarth.
+RunUO 2.0 adaptation dy Dereckson.
+
+This will guide you through the set-up process. It's pretty basic. You just add mobiles at key
+	locations that I will give you. You will also add spawners at other locations that I
+	will give you (I'm assuming you know how to set up your spawner system). An overview
+	of the quest is below the instructions.
+
+SET-UP
+	At the locations given, make sure you're on the Trammel map and type the following:
+		[go XXX YYY ZZZ
+	....where XXX, YYY, and ZZZ are the location numbers given for each mobile and spawner.
+
+Quest Mob set-up:
+
+1. Finlor - Add Finlor where ever you wish to begin this quest....anywhere.
+2. Orthal - Go to loc "1487 1757 -2" by typing "[go 1487 1757 -2", and add Orthal on the
+	docks in Britain by typing "[add Orthal" and placing him there.
+3. Kyvon - Go to loc "3804 1279 5" and add Kyvon on the docks here in Nujel'm.
+4. Sevargas - Go to loc "3029 826 -3" and add Sevargas on the docks here in Vesper.
+5. Flint - Go to loc "2084 2855 -3" and add Flint on the docks here in Trinsic.
+6. Snyden - Go to loc "2256 1170 -2" and add Snyden on the docks here in Cove.
+7. Barthus - Go to loc "660 2242 -3" and add Barthus on the docks here in Skara Brae.
+8. Caztor - Go to loc "3003 3464 15" and add Caztor on the docks here in Serpent's Hold.
+9. Arathan - Go to loc "2751 2165 -2" and add Arathan on the docks here in Buccaneer's Den.
+
+Creature set-up:
+
+1. EnragedGoat - Go to loc "926 1983 0" and add your spawner. Add "EnragedGoat" to your spawner
+	and set up about 7-10 of them with a spawn range around 40.
+	[add spawner EnragedGoat set Count 10 HomeRange 40
+2. DeadlyRat - Go to loc "3674 1086 0" and add your spawner with "DeadlyRat" to it. About 7-10
+	with spawn range of around 40.
+	[add spawner DeadlyRat set Count 10 HomeRange 40
+3. FrenziedMongbat - Go to loc "3120 433 9" and add your spawner with "FrenziedMongbat" to it. 
+	About 7-10 with spawn range of around 40.
+	[add spawner FrenziedMongbat set Count 10 HomeRange 40
+4. DreadedWolf - Go to loc "2123 2740 20" and add your spawner with "DreadedWolf" to it. About 
+	7-10 with spawn range of around 30.
+	[add spawner DreadedWolf set Count 10 HomeRange 30
+5. DecayingZombie - Go to loc "2582 1121 0" and add your spawner with "DecayingZombie" to it. 
+	About 7 with spawn range of around 25.
+	[add spawner DecayingZombie set Count 7 HomeRange 25
+6. DrunkenOrc - Go to loc "944 2247 0" and add your spawner with "DrunkenOrc" to it. About 
+	7-10 with spawn range of around 40.
+	[add spawner DrunkenOrc set Count 10 HomeRange 40
+7. WaterSerpent - Go to loc "3001 3592 15" and add your spawner with "WaterSerpent" to it.
+	About 7-10 with spawn range of around 40.
+	[add spawner WaterSerpent set Count 10 HomeRange 40
+8. Rackham - Go to loc "2794 2273 10" and add your spawner with "Rackham" to it. Only spawn
+	ONE of him, with a spawn range of around 50.
+	[add spawner Rackham set HomeRange 50
+
+That's all you need to do. Now your players can talk to Finlor and start their quest.

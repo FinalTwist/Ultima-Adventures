@@ -1,0 +1,1324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D154D4D4D154D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="154D15154D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave EW" HashKey="154D4D4D4D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D4D4D4D154D154D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="154D154D4D154D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="4D15154D4D154D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="1515154D4D4D4D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D154D4D15151515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="4D4D4D154D4D15154D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="1515154D4D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="1515154D4D154D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NS" HashKey="4D4D4D4D4D4D4D1515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D154D4D4D15154D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="154D4D154D4D15154D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="154D4D154D4D4D154D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="4D4D15154D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEB" HashKey="4D4D154D4D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="4D4D4D154D4D154D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D154D4D15154D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="4D154D4D4D4D4D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="154D4D4D4D154D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="4D15154D4D4D4D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="154D154D4D154D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="154D4D154D4D4D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="15154D4D4D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NS" HashKey="4D4D4D4D4D4D154D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="15154D4D4D154D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave EW" HashKey="4D4D4D154D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D4D4D4D1515154D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="154D154D4D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D4D4D4D15154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SN" HashKey="4D15154D4D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave EW" HashKey="154D4D154D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWB" HashKey="154D4D4D4D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="15154D154D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="154D15154D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NS" HashKey="4D4D4D4D4D4D151515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave WE" HashKey="4D4D154D4D154D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D154D4D154D1515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave WE" HashKey="4D4D154D4D4D4D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NS" HashKey="4D4D4D4D4D4D15154D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWB" HashKey="4D4D4D4D4D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="4D154D4D4D154D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="4D154D154D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="154D4D4D4D4D15154D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D154D4D15154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="15154D4D4D154D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave EW" HashKey="4D4D4D154D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="4D154D4D4D154D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D154D4D4D4D1515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave WE" HashKey="4D4D4D4D4D154D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="4D15154D4D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="154D4D154D4D151515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D154D4D1515154D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D154D4D154D154D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="4D1515154D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEB" HashKey="4D4D4D4D4D4D4D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D4D4D4D15154D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D154D4D4D4D154D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast (High) to Dungeon Cave SWA" HashKey="1515154D4D154D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-11" />
+      <MapTile TileID="583" AltIDMod="-11" />
+      <MapTile TileID="584" AltIDMod="-11" />
+      <MapTile TileID="585" AltIDMod="-11" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="151515154D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="154D4D4D4D4D151515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SN" HashKey="1515154D4D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SN" HashKey="154D154D4D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="154D4D154D4D154D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="154D4D4D4D4D4D1515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="4D4D15154D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D154D4D4D151515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave WE" HashKey="4D4D154D4D154D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="154D154D4D4D4D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="154D4D4D4D4D4D154D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="4D4D4D154D4D4D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave WE" HashKey="4D4D4D4D4D154D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NS" HashKey="4D4D4D4D4D4D4D154D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="4D154D4D4D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="4D15154D4D154D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave EW" HashKey="154D4D154D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="151515154D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="4D4D4D154D4D151515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SN" HashKey="15154D4D4D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="4D154D154D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SN" HashKey="4D154D4D4D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D4D4D4D15151515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="4D4D4D154D4D4D1515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="4D1515154D4D154D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="154D4D4D4D154D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="154D4D4D4D4D154D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NWA" HashKey="4D4D4D4D4D154D1515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="154D4D154D4D4D1515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SWA" HashKey="15154D4D4D4D4D4D15">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave SEA" HashKey="15154D154D4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="High Coast to Dungeon Cave NEA" HashKey="4D4D4D154D4D4D154D">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="-13" />
+      <MapTile TileID="583" AltIDMod="-13" />
+      <MapTile TileID="584" AltIDMod="-13" />
+      <MapTile TileID="585" AltIDMod="-13" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

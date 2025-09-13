@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="center"><font size="6"><a name="top"></a>UO Landscaper </font></div>
+<p align="center"><font size="5">Exporting your Statics<br>
+  Version 1.0</font></p>
+<p align="center"><font size="2">Original Scripted by DKnight<br>
+  Fixed and Edited by Ravenal<br>
+  Observed by Irro and Khaybel</font></p>
+<p></p>
+<p align="center"><a href="#additions">Additons</a> || <a href="#directions">Directions</a> 
+  || Fixed Bugs</p>
+<p><br>
+  <a name="additions"></a>Original Additions<br>
+  - Command &quot;ExportUOL&quot; Designed to take all the statics including checking 
+  some of the statics to make sure it was a static before exporting. Scripted 
+  by DKnight<br>
+  - Using the power of XML UO Landscaper uses these XML files to import your exported 
+  statics to create on compiling your map, so everytime you wanted to fix something 
+  on you map without altering any of your statics you could do so.<br>
+</p>
+<p>Ravenal's Additions<br>
+  - Command &quot;AreaExportUOL&quot; Designed to target a bounding box area to 
+  export into a xml file.<br>
+  - You can now do [AreaExportUOL &lt;Filename&gt; or [ExportUOL &lt;Filename&gt; 
+  for example: [AreaExportUOL DessertTown-Dock and this will create a file in 
+  the certain directory which is editable on top of the ExportUOL.cs script, Example 
+  below.</p>
+<p> <font color="#FF0000">private const string ExportPath = @&quot;C:\Documents 
+  and Settings\Owner\My Documents\UOLandscaper\Exports&quot;;</font></p>
+<p> - When Exporting at anytime, there will be a warning gump to warn you if you 
+  wish to do this, don't say we didn't warn you.</p>
+<p>Future Possible Additions<br>
+  - ImportUOL, will import all the XML files inside your ExportPath and such, 
+  this will have a warning gump before you import<br>
+  - ImportUOL &lt;Filename&gt;, will import a specific filename you requested, 
+  that is within your ExportPath.</p>
+<p><a href="#top">TOP</a></p>
+<p> <a name="directions"></a>DIRECTIONS</p>
+<p> Directions on how to Export your Statics and use it in UO Landscaper.</p>
+<ol>
+  <li>Check your ExportPath to make sure it is the directory you wish to target. 
+    If it doesn't exist it will automatically create it, make sure you fix this 
+    when you first get this script.</li>
+  <li>Use either the [ExportUOL or [AreaExportUOL command with &lt;filename&gt; 
+    or not to your choice.</li>
+  <li>When exporting into the xml file, there will be a warning gump, make sure 
+    you say okay or cancel if your unsure about this.</li>
+  <li>When the 3 steps above are complete, goto your ExportPath and grab those 
+    files, I would just &quot;Copy&quot; those files, and then place them into 
+    your UO Landscaper Project Folder, For example of what I have is,</li>
+</ol>
+<p> <font color="#0000FF">C:\Documents and Settings\Owner\My Documents\UOLandscaper\Paragonix\Map3\Import 
+  Files</font></p>
+<ol>
+  <li>Always make sure in your project folder you have the folder name called 
+    Import Files, if it doesn't exist right click on your mouse and create a new 
+    folder naming it &quot;Import Files&quot;. Within your Project Folder.</li>
+  <li>After that do the following steps on how to create your map it then should 
+    import those XML within the Import Files folder within your Project Folder, 
+    and add it to the statics0.mul or statics2, 3 or even 4. It will also do the 
+    staidx files too</li>
+</ol>
+<p>FIXED BUGS - None at this time...</p>
+<p><a href="#top">TOP</a><br>
+</p>
+</body>
+</html>

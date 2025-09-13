@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<places>
+	<parent name="Isles of Dread">
+		<parent name="Isles of Dread">
+			<parent name="Towns">
+				<child name="Cimmeran Hold" x="358" y="1123" z="15" />
+			</parent>		
+			<child name="Blood Dungeon" x="1260" y="1233" z="0" />
+			<child name="Blood Temple" x="1131" y="1031" z="30" />
+			<child name="Forgotten Lighthouse" x="716" y="506" z="2" />
+			<child name="Glacial Scar" x="212" y="178" z="45" />
+			<child name="Godly Mines" x="1229" y="189" z="0" />
+			<child name="Ice Queen Fortress" x="318" y="327" z="5" />
+			<child name="Portal" x="246" y="876" z="5" />
+			<child name="Sanctum of Saltmarsh" x="926" y="874" z="0" />
+			<child name="Temple of Osirus" x="602" y="819" z="20" />
+		</parent>
+	</parent>
+</places>

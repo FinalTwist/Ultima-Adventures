@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RandomStatics Chance="0">
+	<Statics Description="Banana tree (small)" Freq="1">
+		<Static TileID="3240" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Banana tree " Freq="1">
+		<Static TileID="3243" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cactus" Freq="2">
+		<Static TileID="3365" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cactus" Freq="2">
+		<Static TileID="3367" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cactus" Freq="2">
+		<Static TileID="3368" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3369" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Cactus" Freq="2">
+		<Static TileID="3372" X="0" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3373" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="1">
+		<Static TileID="3378" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Grasses" Freq="1">
+		<Static TileID="3379" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Oasis" Freq="1">
+		<Static TileID="3222" X="-1" Y="-1" Z="0" Hue="0"/>
+		<Static TileID="3229" X="-1" Y="0" Z="0" Hue="0"/>
+		<Static TileID="3231" X="0" Y="-1" Z="0" Hue="0"/>
+		<Static TileID="3791" X="-1" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Bones1" Freq="2">
+		<Static TileID="3794" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+	<Statics Description="Bones2" Freq="2">
+		<Static TileID="3792" X="0" Y="0" Z="0" Hue="0"/>
+	</Statics>
+</RandomStatics>

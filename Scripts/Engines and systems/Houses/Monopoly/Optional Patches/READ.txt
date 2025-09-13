@@ -1,0 +1,3 @@
+These patches are optional, meaning TownHouses will function without including them.  However, they do correct minor issues with TownHouses that could not otherwise be corrected.  These patches require modifying default RunUO source code, and you should have some knowledge of how to do this before attempting to patch.  Finaly, be sure to make a backup copy of the original files, just in case.
+
+Good luck!

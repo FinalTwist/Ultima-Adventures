@@ -1,0 +1,1406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120612121212121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121206120606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121206121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121206121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212061212120606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060612061212061206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-7" />
+      <MapTile TileID="557" AltIDMod="-7" />
+      <MapTile TileID="558" AltIDMod="-7" />
+      <MapTile TileID="559" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6055" AltIDMod="-5" />
+      <StaticTile TileID="6065" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060612121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120612061212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212121206060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606061206060612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061206061212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121212060612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606121206121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120612121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121206121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212061212121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121206120612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206061212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212061206060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212121212120612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121206120612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121212120612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212061212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212121212120606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120606121206121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120606121212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212061212061206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606061206061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121206061206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606121212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606121206121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121212061206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212061212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606061212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061206121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120612121206121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212121212060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212061212120612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606061212060612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206061212060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212061212121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061206121206121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061206121212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120612121206121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120606121206121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121212121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212061212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121206061206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212061212060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061206121206120606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121206060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060612061212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606061206121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212121212060612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060612061206060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212121206121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212061212120606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212121212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212121206121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061206121206121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060612121212121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120606061212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120606121206061206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121212121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121206061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120606121206120606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120606061206060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061206061212060612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121206060612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121206060612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120612121212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121206061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120612061212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206061212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121212061206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212121212061206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120606121206060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061206061212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212061212120612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606121212121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120606121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606061206121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060612061212060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212061212060612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121206060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060612061212060612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212061212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606061212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212061212060612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121212060612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206061206060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121206120606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120606121212121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121212120606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121212120612">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060612121206121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121212120606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060612061212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606061206120606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212061212061206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606061212121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060612121206121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060612121212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061212061212060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212061206060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121206121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-5" />
+      <MapTile TileID="557" AltIDMod="-5" />
+      <MapTile TileID="558" AltIDMod="-5" />
+      <MapTile TileID="559" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="060606121206120606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121212121212060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="121206121212060606">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="0" />
+      <MapTile TileID="557" AltIDMod="0" />
+      <MapTile TileID="558" AltIDMod="0" />
+      <MapTile TileID="559" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="061206121212121206">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rock to Shallow Water" HashKey="120606061212061212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="-15" />
+      <MapTile TileID="557" AltIDMod="-15" />
+      <MapTile TileID="558" AltIDMod="-15" />
+      <MapTile TileID="559" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

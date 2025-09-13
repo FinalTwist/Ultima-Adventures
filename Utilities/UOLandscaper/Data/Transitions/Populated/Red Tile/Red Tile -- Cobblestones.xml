@@ -1,0 +1,1533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+    <TransInfo Description="Red Tile to Cobblestones SN" HashKey="1818180F0F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1056" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SN" HashKey="0F18180F0F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1056" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SN" HashKey="18180F0F0F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1056" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SN" HashKey="0F180F0F0F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1056" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SN" HashKey="180F180F0F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1056" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones EW" HashKey="180F0F180F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1059" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones EW" HashKey="180F0F180F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1059" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones EW" HashKey="0F0F0F180F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1059" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones EW" HashKey="0F0F0F180F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1059" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones EW" HashKey="180F0F0F0F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1059" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones WE" HashKey="0F0F180F0F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1058" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones WE" HashKey="0F0F0F0F0F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1058" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones WE" HashKey="0F0F180F0F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1058" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones WE" HashKey="0F0F0F0F0F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1058" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones WE" HashKey="0F0F180F0F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1058" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NS" HashKey="0F0F0F0F0F0F181818">
+    <MapTiles>
+      <MapTile TileID="1059" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NS" HashKey="0F0F0F0F0F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1059" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NS" HashKey="0F0F0F0F0F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1059" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NS" HashKey="0F0F0F0F0F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1059" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NS" HashKey="0F0F0F0F0F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1059" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F180F0F18181818">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F0F0F0F18181818">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F180F0F180F1818">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F0F0F0F180F1818">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F0F0F0F180F180F">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F180F0F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F180F0F0F181818">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F180F0F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F0F0F0F18180F18">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F180F0F18180F18">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F180F0F1818180F">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F180F0F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F180F0F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F0F0F0F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F180F0F180F180F">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F180F0F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWA" HashKey="0F0F0F0F0F1818180F">
+    <MapTiles>
+      <MapTile TileID="1063" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="181818180F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="18180F180F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="181818180F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="18180F180F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="180F18180F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="18180F0F0F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="0F18180F0F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="180F180F0F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="1818180F0F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="0F180F180F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="180F18180F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="0F0F18180F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="0F1818180F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="0F0F18180F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="0F180F180F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="0F180F0F0F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEA" HashKey="0F1818180F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1061" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="180F0F180F0F181818">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="0F0F0F180F0F181818">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="180F0F180F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="0F0F0F180F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="0F0F0F180F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="180F0F180F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="180F0F0F0F0F181818">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="180F0F0F0F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="180F0F0F0F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="0F0F0F180F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="180F0F180F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="180F0F0F0F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="180F0F180F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="0F0F0F180F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="0F0F0F180F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="180F0F0F0F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEA" HashKey="180F0F180F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1060" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="1818180F0F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="1818180F0F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="0F18180F0F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="0F18180F0F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="180F0F0F0F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="180F180F0F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="180F180F0F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="18180F0F0F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="0F180F0F0F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="1818180F0F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="18180F0F0F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="0F18180F0F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="0F180F0F0F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="180F0F0F0F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="180F180F0F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="0F180F0F0F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWA" HashKey="18180F0F0F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1062" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NWB" HashKey="180F0F0F0F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1074" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SEB" HashKey="0F0F0F0F0F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1072" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones NEB" HashKey="0F0F180F0F0F0F0F0F">
+    <MapTiles>
+      <MapTile TileID="1075" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones SWB" HashKey="0F0F0F0F0F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1073" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F0F180F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F0F180F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F0F180F180F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F0F180F1818180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F0F180F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F0F180F18180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F0F180F180F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F0F180F18181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F18180F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F18180F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F18180F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F18180F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F18180F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F18180F0F181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F18180F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F18180F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F18180F180F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F18180F1818180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F18180F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F18180F18180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F18180F180F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F0F18180F18181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F0F0F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F180F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F0F0F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F180F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F180F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F0F0F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F180F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F0F0F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F180F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F0F0F0F181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F180F0F181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F180F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F0F0F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F180F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F0F0F180F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F180F180F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F0F0F1818180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F180F1818180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F180F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F0F0F18180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F180F18180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F0F0F180F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F180F180F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F0F0F18181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F180F180F18181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F18180F0F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F1818180F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F18180F0F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F1818180F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F1818180F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F18180F0F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F1818180F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F18180F0F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F1818180F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F18180F0F0F181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F1818180F0F181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F1818180F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F18180F0F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F1818180F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F18180F0F180F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F1818180F180F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F18180F0F1818180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F1818180F1818180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F1818180F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F18180F0F18180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F1818180F18180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F18180F0F180F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F1818180F180F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F18180F0F18181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="0F1818180F18181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F0F180F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F0F0F0F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F0F180F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F0F0F0F180F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F0F180F180F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F0F0F0F1818180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F0F180F1818180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F0F180F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F0F0F0F18180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F0F180F18180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F0F0F0F180F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F0F180F180F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F0F0F0F18181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F0F180F18181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F180F0F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F18180F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F180F0F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F18180F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F18180F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F180F0F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F18180F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F180F0F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F18180F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F180F0F0F181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F18180F0F181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F18180F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F180F0F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F18180F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F180F0F180F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F18180F180F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F180F0F1818180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F18180F1818180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F18180F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F180F0F18180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F18180F18180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F180F0F180F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F18180F180F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F180F0F18181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="180F18180F18181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F0F0F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F180F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F0F0F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F180F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F180F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F0F0F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F180F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F0F0F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F180F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F0F0F0F181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F180F0F181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F180F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F0F0F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F180F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F0F0F180F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F180F180F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F0F0F1818180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F180F1818180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F180F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F0F0F18180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F180F18180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F0F0F180F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F180F180F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F0F0F18181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="18180F180F18181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="1818180F0F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="181818180F0F0F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="1818180F0F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="181818180F0F18180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="181818180F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="1818180F0F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="181818180F0F180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="1818180F0F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="181818180F0F0F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="1818180F0F0F181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="181818180F0F181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="181818180F180F0F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="1818180F0F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="181818180F18180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="1818180F0F180F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="181818180F180F180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="1818180F0F1818180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="181818180F1818180F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="181818180F180F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="1818180F0F18180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="181818180F18180F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="1818180F0F180F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="181818180F180F1818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="1818180F0F18181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones AC" HashKey="181818180F18181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones IWE" HashKey="180F0F0F0F0F0F0F18">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Red Tile to Cobblestones INS" HashKey="0F0F180F0F0F180F0F">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

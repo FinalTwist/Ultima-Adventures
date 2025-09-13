@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<places>
+	<parent name="Underworld">
+		<child name="Entrance" x="1342" y="600" z="0" />
+		<child name="Argentrock Castle" x="103" y="999" z="36" />
+		<child name="Carthax Lake" x="118" y="1582" z="0" />
+		<child name="Crash Site" x="66" y="561" z="0" />
+		<child name="Daemon's Crag" x="1481" y="835" z="0" />
+		<parent name="Glacial Scar">
+			<child name="Entrance" x="1871" y="1504" z="20" />
+			<child name="Level 1" x="2268" y="1309" z="20" />
+			<child name="Level 2" x="1972" y="1391" z="20" />
+			<child name="Level 3" x="2085" y="1518" z="-2" />
+			<child name="Level 4" x="1777" y="1488" z="0" />
+		</parent>
+		<child name="Morgaelin's Inferno" x="1459" y="100" z="0" />
+		<child name="Mountain King" x="120" y="111" z="0" />
+		<child name="Obsidian Fortress" x="453" y="303" z="5" />
+		<child name="Tenebrae" x="756" y="392" z="0" />
+		<parent name="Stygian Abyss">
+			<child name="Entrance" x="824" y="907" z="0" />
+			<child name="Level 1" x="1784" y="1416" z="-2" />
+			<child name="Level 2" x="2035" y="1194" z="-15" />
+			<child name="Codex Chamber" x="1842" y="1372" z="-42" />
+		</parent>
+		<child name="Zealan Cemetery" x="1094" y="1229" z="0" />
+	</parent>
+</places>

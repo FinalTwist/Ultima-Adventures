@@ -1,0 +1,1667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121208121208FFFF08">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808080812FFFF12">
+    <MapTiles>
+      <MapTile TileID="487" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121212FF0808FF0808">
+    <MapTiles>
+      <MapTile TileID="487" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080812FF1212FF1212">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF081214081214">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF081214081212">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1414FF1212FF121208">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808080808FFFFFF">
+    <MapTiles>
+      <MapTile TileID="476" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF14121212081212">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1208FF1212141412">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1208FF1212141414">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0812FF1212FF121214">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="120808120808FF0808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212121212120808FF">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808080812FF1212">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080812080812FF1212">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808FF0808FF080812">
+    <MapTiles>
+      <MapTile TileID="486" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF0808120808121212">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF121214121214">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF121214121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="081212FF1212FF1412">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="081212121212FFFF14">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808080808FF1212">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808080808120808FF">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08080812FFFF12FFFF">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF0808121208121208">
+    <MapTiles>
+      <MapTile TileID="226" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080812FF1212FF1412">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF0808120808120808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808120808FF0808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212FF1212FF080808">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212120808FF0808FF">
+    <MapTiles>
+      <MapTile TileID="485" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08141212141212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08121208121208">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF14121214081214">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08080808080812FFFF">
+    <MapTiles>
+      <MapTile TileID="485" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08121208FFFF08FFFF">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF0808121208121212">
+    <MapTiles>
+      <MapTile TileID="226" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1212080812080808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121208FF0808FF0808">
+    <MapTiles>
+      <MapTile TileID="487" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080812FF1212FF1414">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF0808121212121212">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF14FFFF12080808">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="14FFFF12FFFF080808">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08121208121208FFFF">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1212FF1212080812">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF14FFFF12080812">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1208081212FF1214FF">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF08FFFF121214">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1214FF1212FF080808">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808FF0808FF0808FF">
+    <MapTiles>
+      <MapTile TileID="478" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="141412FF1212FF1208">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1412FF1212081212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1414FF1212FF120808">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="141212FF1212FF1208">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121212121212FFFF08">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212FF120808080808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08FFFF08FFFF08">
+    <MapTiles>
+      <MapTile TileID="475" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1212080812080812">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121208121208FF0808">
+    <MapTiles>
+      <MapTile TileID="227" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808FF080812080808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12121208FFFF08FFFF">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121212FFFF08FFFF08">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08141208141208">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121212121208FFFF08">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1214141212FF0812FF">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212FF121208120808">
+    <MapTiles>
+      <MapTile TileID="227" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="141208FFFF08FFFF08">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1212081212081212">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1212FF1212081212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12FFFF12FFFF120808">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="081212121214FFFF14">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1208081212FF1212FF">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1214FF1212FF121208">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF12FFFF12080808">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121208FFFF08FFFF08">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08FFFF08121212">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808081212FF1212">
+    <MapTiles>
+      <MapTile TileID="225" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808FF1212FF1414">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808FF1212FF1412">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808FF080812080812">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212141212FF0812FF">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0812FF1212FF141414">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212FF080808080808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08121208120808">
+    <MapTiles>
+      <MapTile TileID="1783" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="081212FF1212FF1414">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12FFFF080808080808">
+    <MapTiles>
+      <MapTile TileID="486" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF12080812080812">
+    <MapTiles>
+      <MapTile TileID="484" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808FF081212081212">
+    <MapTiles>
+      <MapTile TileID="225" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808FF0808FF081212">
+    <MapTiles>
+      <MapTile TileID="486" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0812120808FF0808FF">
+    <MapTiles>
+      <MapTile TileID="485" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08FFFF08121208">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08080812080812FFFF">
+    <MapTiles>
+      <MapTile TileID="485" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12121212121208FFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1208081212FF1414FF">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121212120808FF0808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212081212FF1414FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF081212080812">
+    <MapTiles>
+      <MapTile TileID="1779" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121208120808FF0808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF081214121214">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFFFFFFFFFF080808">
+    <MapTiles>
+      <MapTile TileID="475" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0812FF080808080808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212120808120808FF">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF081214121212">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12121208121208FFFF">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12120812121214FFFF">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808081208081212FF">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="141208141208FFFF08">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12121408FFFF08FFFF">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1214FF1212FF120808">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1212FF1212080808">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08FFFF08141212">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121212121212FF0808">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08121408121408FFFF">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121212141208FFFF08">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08121208121408FFFF">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212081212FF1212FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080812081212FF1212">
+    <MapTiles>
+      <MapTile TileID="225" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08FFFF08141208">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1212081212080812">
+    <MapTiles>
+      <MapTile TileID="224" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="14FFFF141212141208">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1414FF1212FF080808">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08141208141212">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212FF1212FF121208">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="14120814121214FFFF">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212120812120808FF">
+    <MapTiles>
+      <MapTile TileID="224" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212081212FF1214FF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808FF0808FF121212">
+    <MapTiles>
+      <MapTile TileID="486" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212FF120808120808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1414FF1212080812">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0812FF1212FF121414">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1212080808080808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1208081212081212FF">
+    <MapTiles>
+      <MapTile TileID="226" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="14FFFF141212121208">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121212121208FF0808">
+    <MapTiles>
+      <MapTile TileID="227" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="141414FF1212FF1208">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808081212FF1214FF">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808FFFFFFFFFFFF">
+    <MapTiles>
+      <MapTile TileID="475" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212FF121208080808">
+    <MapTiles>
+      <MapTile TileID="227" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF0808FF0808121208">
+    <MapTiles>
+      <MapTile TileID="484" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12121412121408FFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1414FF1212080808">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1212081212080808">
+    <MapTiles>
+      <MapTile TileID="224" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="141212141212FFFF08">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808081212081212FF">
+    <MapTiles>
+      <MapTile TileID="226" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1412FF1212080808">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080812080812FFFF12">
+    <MapTiles>
+      <MapTile TileID="487" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="14FFFF121212121208">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08121408FFFF08FFFF">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08121208121212">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08141208121212">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF0808FF0808FF0808">
+    <MapTiles>
+      <MapTile TileID="477" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="141212141208FFFF08">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="120808FF0808FF0808">
+    <MapTiles>
+      <MapTile TileID="487" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12FFFF120808120808">
+    <MapTiles>
+      <MapTile TileID="486" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFFFF080808080808">
+    <MapTiles>
+      <MapTile TileID="479" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF12080812080808">
+    <MapTiles>
+      <MapTile TileID="484" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08141208121208">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF08FFFF081212">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212FF121208121208">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF08FFFF081214">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12080812FFFF12FFFF">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808FFFF12FFFF12">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808FFFF12FFFF14">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212FF0812FF080808">
+    <MapTiles>
+      <MapTile TileID="1781" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12121212121408FFFF">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF0808120808121208">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808FF081212121212">
+    <MapTiles>
+      <MapTile TileID="225" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="141212FFFF08FFFF08">
+    <MapTiles>
+      <MapTile TileID="468" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1208081208081212FF">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808081212FF1414FF">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF081212081212">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808FF080812121212">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF14121214081212">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808FF080812081212">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0812120808120808FF">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1208FF1212141212">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212FF1212FF120808">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808120808120808FF">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808080808FF1208">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08081208121208FFFF">
+    <MapTiles>
+      <MapTile TileID="1786" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808080808080812FF">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12FFFF12FFFF080808">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808FF1212FF1212">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1212FF1208080808">
+    <MapTiles>
+      <MapTile TileID="1784" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF0808120808080808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF0808FF0808121212">
+    <MapTiles>
+      <MapTile TileID="484" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12080812FFFF14FFFF">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF12080808080808">
+    <MapTiles>
+      <MapTile TileID="484" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808080812FF1212FF">
+    <MapTiles>
+      <MapTile TileID="1785" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="081212FF1212FF1212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808081212FF1212FF">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808120808FF0808FF">
+    <MapTiles>
+      <MapTile TileID="485" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF12FFFF12080812">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808FF1208FF1212">
+    <MapTiles>
+      <MapTile TileID="1780" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12121208121408FFFF">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808080808081212FF">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="14FFFF12FFFF120808">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1414141212FF0812FF">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF08FFFF121212">
+    <MapTiles>
+      <MapTile TileID="472" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0812120812120808FF">
+    <MapTiles>
+      <MapTile TileID="224" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF08FFFF08FFFF">
+    <MapTiles>
+      <MapTile TileID="475" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1414FF1212081212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12080812080812FFFF">
+    <MapTiles>
+      <MapTile TileID="485" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080812FFFF12FFFF12">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080808080808FFFF12">
+    <MapTiles>
+      <MapTile TileID="487" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="0808FF121212121212">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="080812FFFF12FFFF14">
+    <MapTiles>
+      <MapTile TileID="470" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1208080808080808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="0" />
+      <MapTile TileID="118" AltIDMod="0" />
+      <MapTile TileID="119" AltIDMod="0" />
+      <MapTile TileID="120" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08FFFF081212121212">
+    <MapTiles>
+      <MapTile TileID="229" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="120808121208FFFF08">
+    <MapTiles>
+      <MapTile TileID="1782" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="1212081212081212FF">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF1412FF1212080812">
+    <MapTiles>
+      <MapTile TileID="228" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12121408121408FFFF">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FF0808FF0808120808">
+    <MapTiles>
+      <MapTile TileID="484" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121212151212FFFF08">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="121208141208FFFF08">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="08080812FFFF14FFFF">
+    <MapTiles>
+      <MapTile TileID="474" AltIDMod="20" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="081212081212FF1212">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12FFFF120808080808">
+    <MapTiles>
+      <MapTile TileID="486" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="FFFF08141212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="23" />
+      <MapTile TileID="557" AltIDMod="23" />
+      <MapTile TileID="558" AltIDMod="23" />
+      <MapTile TileID="559" AltIDMod="23" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="081214121214FFFF14">
+    <MapTiles>
+      <MapTile TileID="230" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cave Entrance To Small Dirt" HashKey="12120814121214FFFF">
+    <MapTiles>
+      <MapTile TileID="231" AltIDMod="42" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

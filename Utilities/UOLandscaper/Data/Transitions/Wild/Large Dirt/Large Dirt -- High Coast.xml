@@ -1,0 +1,908 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07074D0707074D4D07">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="4D4D074D0707070707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-5" />
+      <MapTile TileID="114" AltIDMod="-5" />
+      <MapTile TileID="115" AltIDMod="-5" />
+      <MapTile TileID="116" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast (High) NWB" HashKey="4D0707070707070707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-1" />
+      <MapTile TileID="114" AltIDMod="-1" />
+      <MapTile TileID="115" AltIDMod="-1" />
+      <MapTile TileID="116" AltIDMod="-1" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07074D070707074D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="07074D4D0707070707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-5" />
+      <MapTile TileID="114" AltIDMod="-5" />
+      <MapTile TileID="115" AltIDMod="-5" />
+      <MapTile TileID="116" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07070707074D4D074D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07070707074D4D4D07">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast WE" HashKey="07074D07074D070707">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="07074D4D07074D0707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-5" />
+      <MapTile TileID="114" AltIDMod="-5" />
+      <MapTile TileID="115" AltIDMod="-5" />
+      <MapTile TileID="116" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="4D07074D07074D4D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07074D07074D074D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07070707074D074D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="4D074D4D07074D0707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-5" />
+      <MapTile TileID="114" AltIDMod="-5" />
+      <MapTile TileID="115" AltIDMod="-5" />
+      <MapTile TileID="116" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="4D070707074D070707">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast WE" HashKey="07074D07070707074D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SN" HashKey="074D07070707070707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-12" />
+      <MapTile TileID="114" AltIDMod="-12" />
+      <MapTile TileID="115" AltIDMod="-12" />
+      <MapTile TileID="116" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SN" HashKey="4D074D070707070707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-12" />
+      <MapTile TileID="114" AltIDMod="-12" />
+      <MapTile TileID="115" AltIDMod="-12" />
+      <MapTile TileID="116" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="0707074D0707074D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWB" HashKey="0707070707074D0707">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="4D07074D0707074D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07074D07074D4D074D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast WE" HashKey="07070707074D07074D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="4D4D4D07074D07074D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NS" HashKey="070707070707074D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="4D07074D07074D074D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07074D070707074D07">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07074D07074D4D0707">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07070707074D4D0707">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07074D0707074D4D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="4D07070707074D074D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NS" HashKey="0707070707074D4D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="4D07070707074D4D07">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="074D0707074D07074D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SN" HashKey="4D4D4D070707070707">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="074D4D07074D070707">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="074D4D07070707074D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="4D0707070707074D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="4D4D0707074D070707">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="4D4D0707070707074D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07074D07074D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="4D074D0707074D0707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-5" />
+      <MapTile TileID="114" AltIDMod="-5" />
+      <MapTile TileID="115" AltIDMod="-5" />
+      <MapTile TileID="116" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="074D4D4D07074D0707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-5" />
+      <MapTile TileID="114" AltIDMod="-5" />
+      <MapTile TileID="115" AltIDMod="-5" />
+      <MapTile TileID="116" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="4D074D07074D07074D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="0707074D0707074D07">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="4D4D074D07074D0707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-9" />
+      <MapTile TileID="114" AltIDMod="-9" />
+      <MapTile TileID="115" AltIDMod="-9" />
+      <MapTile TileID="116" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="074D0707070707074D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="4D4D4D4D0707070707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-9" />
+      <MapTile TileID="114" AltIDMod="-9" />
+      <MapTile TileID="115" AltIDMod="-9" />
+      <MapTile TileID="116" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="0707074D07074D074D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="0707074D07074D4D07">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="074D0707074D070707">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast EW" HashKey="4D07070707074D0707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-12" />
+      <MapTile TileID="114" AltIDMod="-12" />
+      <MapTile TileID="115" AltIDMod="-12" />
+      <MapTile TileID="116" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="074D074D07074D0707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-5" />
+      <MapTile TileID="114" AltIDMod="-5" />
+      <MapTile TileID="115" AltIDMod="-5" />
+      <MapTile TileID="116" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SN" HashKey="074D4D070707070707">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="4D0707070707074D07">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="074D074D0707070707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-5" />
+      <MapTile TileID="114" AltIDMod="-5" />
+      <MapTile TileID="115" AltIDMod="-5" />
+      <MapTile TileID="116" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NS" HashKey="0707070707074D074D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="074D4D07074D07074D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SN" HashKey="4D4D07070707070707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-7" />
+      <MapTile TileID="114" AltIDMod="-7" />
+      <MapTile TileID="115" AltIDMod="-7" />
+      <MapTile TileID="116" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07074D07074D4D4D07">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast EW" HashKey="0707074D07074D0707">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07074D07074D074D07">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="4D074D4D0707070707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-5" />
+      <MapTile TileID="114" AltIDMod="-5" />
+      <MapTile TileID="115" AltIDMod="-5" />
+      <MapTile TileID="116" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="4D07074D070707074D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast EW" HashKey="4D07074D07074D0707">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="4D07074D0707074D07">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast WE" HashKey="07070707074D070707">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEB" HashKey="07070707070707074D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="4D4D4D0707074D0707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-5" />
+      <MapTile TileID="114" AltIDMod="-5" />
+      <MapTile TileID="115" AltIDMod="-5" />
+      <MapTile TileID="116" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NS" HashKey="070707070707074D07">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NS" HashKey="0707070707074D4D07">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="4D4D4D4D07074D0707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-9" />
+      <MapTile TileID="114" AltIDMod="-9" />
+      <MapTile TileID="115" AltIDMod="-9" />
+      <MapTile TileID="116" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="074D070707074D0707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-5" />
+      <MapTile TileID="114" AltIDMod="-5" />
+      <MapTile TileID="115" AltIDMod="-5" />
+      <MapTile TileID="116" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="0707074D070707074D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast WE" HashKey="07074D07074D07074D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="4D4D4D07074D070707">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="4D07074D07074D4D07">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast EW" HashKey="0707074D0707070707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-12" />
+      <MapTile TileID="114" AltIDMod="-12" />
+      <MapTile TileID="115" AltIDMod="-12" />
+      <MapTile TileID="116" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEB" HashKey="07074D070707070707">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="4D07070707074D4D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="074D4D0707074D0707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-5" />
+      <MapTile TileID="114" AltIDMod="-5" />
+      <MapTile TileID="115" AltIDMod="-5" />
+      <MapTile TileID="116" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="4D4D4D07070707074D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07070707074D074D07">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="074D4D4D0707070707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-5" />
+      <MapTile TileID="114" AltIDMod="-5" />
+      <MapTile TileID="115" AltIDMod="-5" />
+      <MapTile TileID="116" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NEA" HashKey="0707074D07074D4D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SEA" HashKey="4D4D070707074D0707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-5" />
+      <MapTile TileID="114" AltIDMod="-5" />
+      <MapTile TileID="115" AltIDMod="-5" />
+      <MapTile TileID="116" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="4D070707074D07074D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07070707074D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="4D4D0707074D07074D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="4D074D07074D070707">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast SWA" HashKey="4D074D07070707074D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast EW" HashKey="4D07074D0707070707">
+    <MapTiles>
+      <MapTile TileID="113" AltIDMod="-7" />
+      <MapTile TileID="114" AltIDMod="-7" />
+      <MapTile TileID="115" AltIDMod="-7" />
+      <MapTile TileID="116" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Large Dirt to High Coast NWA" HashKey="07074D0707074D074D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

@@ -1,0 +1,50 @@
+Yahtzee! (unversioned)
+
+
+Components:
+
+YahtzeeDice.cs
+Yahtzee.cs
+YahtzeeGump.cs
+
+
+Installation:
+
+- Runuo 2.0 Compatible
+- Place the component files in the scripts directory of your runuo installation.
+
+
+Description:
+
+Yahtzee! A fun little dice game that has been around for well over 50 years now. If you're unfamiliar with the game the following link to the wikipedia provides a pretty good explanation:
+
+http://en.wikipedia.org/wiki/Yahtzee#Game_Play
+
+A set of rules can be recovered from the following site:
+
+http://grail.sourceforge.net/demo/yahtzee/rules.html
+
+Since a great many variations exist to these rules it should come to no surprise that I have made a few changes myself (mostly to cut down overhead code). The yahtzee throw now simply can be stacked on the Yahtzee score. So as long as you don't have a 0 under yahtzee you can stack every yahtzee on top of each other (50, 100, 150) etc. You'll notice what I mean if you have an unhealthy amount of luck in throwing yahtzees.
+
+
+How to use:
+
+A yahtzee game can be started by double clicking on the Yahtzee dice. (these can be added via [add YahtzeeDice). Once you've started the game the dice consume themselves (this is by design) and you can start playing the game of Yahtzee.
+
+The gump should be fairly self-explanatory. Use the 'roll' button to roll the dice. The hold checkboxes to hold a dice (preventing it from being re-rolled on the next role) and the buttons next to the scores to assign a score to the category of your choice.
+
+The yahtzee game currently gives a gold reward based on your points. If you have more than 200 points you get 10 gold per point over 200 (otherwise you get nothing).
+
+
+Additional information:
+
+You can modify the reward in the Yahtzee.cs in the GiveReward method. I am sure you can figure out how it works (it's not very complex).
+
+Personally Id' sell the dice for about 200 gold on a vendor or something of the sorts. Since the average score on Yahtzee is between 200-300 points you allow the player to practically always win relatively small amounts of gold. I consider this a dab more motivating than macroing a jackpot stone. 
+
+
+Important:
+
+I just finished the last touches on this script about 15 minutes ago. The components were all tested in various steps but for the time being I would consider this script package in beta. If you're going to use this script be aware that it _may_ generate errors. Please report these errors so that they can be fixed.
+
+

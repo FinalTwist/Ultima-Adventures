@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+    <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F1F1F3E3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1115" AltIDMod="0" />
+      <MapTile TileID="1116" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E1F1F3E3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1115" AltIDMod="0" />
+      <MapTile TileID="1116" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F1F3E3E3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1115" AltIDMod="0" />
+      <MapTile TileID="1116" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E1F3E3E3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1115" AltIDMod="0" />
+      <MapTile TileID="1116" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E1F3E3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1115" AltIDMod="0" />
+      <MapTile TileID="1116" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E1F3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1124" AltIDMod="0" />
+      <MapTile TileID="1125" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E1F3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1124" AltIDMod="0" />
+      <MapTile TileID="1125" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E1F3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1124" AltIDMod="0" />
+      <MapTile TileID="1125" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E1F3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1124" AltIDMod="0" />
+      <MapTile TileID="1125" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E3E3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1124" AltIDMod="0" />
+      <MapTile TileID="1125" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E1F3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1120" AltIDMod="0" />
+      <MapTile TileID="1121" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E1F3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1120" AltIDMod="0" />
+      <MapTile TileID="1121" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E1F3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1120" AltIDMod="0" />
+      <MapTile TileID="1121" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E1F3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1120" AltIDMod="0" />
+      <MapTile TileID="1121" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E3E3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1120" AltIDMod="0" />
+      <MapTile TileID="1121" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E3E1F1F1F">
+    <MapTiles>
+      <MapTile TileID="1112" AltIDMod="0" />
+      <MapTile TileID="1113" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E3E1F1F3E">
+    <MapTiles>
+      <MapTile TileID="1112" AltIDMod="0" />
+      <MapTile TileID="1113" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E3E3E1F1F">
+    <MapTiles>
+      <MapTile TileID="1112" AltIDMod="0" />
+      <MapTile TileID="1113" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E3E3E1F3E">
+    <MapTiles>
+      <MapTile TileID="1112" AltIDMod="0" />
+      <MapTile TileID="1113" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E3E1F3E1F">
+    <MapTiles>
+      <MapTile TileID="1112" AltIDMod="0" />
+      <MapTile TileID="1113" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E1F1F1F1F">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E1F1F1F1F">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E1F3E1F1F">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E1F3E1F1F">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E1F3E1F3E">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E3E3E1F1F">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E3E1F1F1F">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E3E1F1F3E">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E1F1F3E1F">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E1F1F3E1F">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E1F1F1F3E">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E1F1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E3E3E1F3E">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E1F1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E1F3E1F3E">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E3E1F3E1F">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E1F1F1F3E">
+    <MapTiles>
+      <MapTile TileID="1134" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F1F1F1F3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F1F3E1F3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F1F1F1F3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F1F3E1F3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E1F1F3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F1F3E3E3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E1F1F3E3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E1F3E3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F1F1F3E3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E1F3E1F3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E1F1F3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F1F3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E1F1F1F3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F1F3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E1F3E1F3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E1F3E3E3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E1F1F1F3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1133" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E1F3E3E1F1F1F">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E1F3E3E1F1F1F">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E1F3E3E1F1F3E">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E1F3E3E1F1F3E">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E1F3E3E3E1F3E">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E1F3E3E3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E3E3E3E1F1F1F">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E3E3E3E1F1F3E">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E3E3E3E3E1F3E">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E1F3E3E1F3E1F">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E1F3E3E1F3E1F">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E3E3E3E3E1F1F">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E1F3E3E3E1F1F">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E1F3E3E3E1F1F">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E1F3E3E3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E3E3E3E1F3E1F">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E1F3E3E3E1F3E">
+    <MapTiles>
+      <MapTile TileID="1126" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F1F1F3E3E1F3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F1F1F3E3E1F3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E1F1F3E3E1F3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E1F1F3E3E1F3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E3E3E1F3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E1F3E3E1F3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E1F3E3E1F3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F1F3E3E3E3E3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E1F3E3E3E3E3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F1F1F3E3E3E3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F1F3E3E3E1F3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E1F1F3E3E3E3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E1F3E3E3E1F3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E3E3E1F3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E1F3E3E3E3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E1F3E3E3E1F3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F1F3E3E3E1F3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1135" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="1F3E3E3E3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1132" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E3E3E3E1F">
+    <MapTiles>
+      <MapTile TileID="1131" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E1F3E3E3E3E3E3E">
+    <MapTiles>
+      <MapTile TileID="1130" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass Without Static to Sandstone Floor" HashKey="3E3E3E3E3E3E1F3E3E">
+    <MapTiles>
+      <MapTile TileID="1129" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

@@ -1,0 +1,21 @@
+Need added:
+"33 Medium Stone 1082,1083,1084,1085" - Done
+"34 Gray Tile 16337" - Done
+"35 Cavewall (Dungeon) 602,603,604,605,606,607,608,609,614,615,616,617,618,619,620,621" - Done
+
+Bricks:
+"1F Light Sandstone Brick WE 1094,1095,1096,1097" - Done
+"Light Sandstone Brick NS 1098,1099,1100,1101" - Done
+
+"Dark Sandstone Brick WE 1102,1103,1104,1105"
+"Dark Sandstone Brick NS 1106,1107,1108,1109"
+
+"Red Brick WE 1147,1150,1151,1156,1157" - Done
+"Red Brick NS 1146,1152,1153,1154,1155" - Done
+
+1F contains both directions of red
+"Brown Brick WE 1167,1168,1169,1170" - Fixed
+"Brown Brick NS 1171,1172,1173,1174" - Fixed
+24 contains both directions of brown - Fixed
+
+Group numbers are in hex, tile id in decimal.

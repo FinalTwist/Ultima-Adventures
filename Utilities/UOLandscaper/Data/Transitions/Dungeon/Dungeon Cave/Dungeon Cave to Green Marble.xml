@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151525151515151515">
+    <MapTiles>
+      <MapTile TileID="583" AltIDMod="0" />
+      <MapTile TileID="581" AltIDMod="0" />
+      <MapTile TileID="582" AltIDMod="0" />
+      <MapTile TileID="584" AltIDMod="0" />
+      <MapTile TileID="585" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151515151525151525">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151515151515251515">
+    <MapTiles>
+      <MapTile TileID="581" AltIDMod="0" />
+      <MapTile TileID="582" AltIDMod="0" />
+      <MapTile TileID="583" AltIDMod="0" />
+      <MapTile TileID="584" AltIDMod="0" />
+      <MapTile TileID="585" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151515151515152525">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+      <StaticTile TileID="1345" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151515251515251515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1356" AltIDMod="0" />
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="251515251515251515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1355" AltIDMod="0" />
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151525151525152525">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="252525251515251515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="252525151525151525">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="252515151515151515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1359" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1357" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151515151525152525">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="252525151525151515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="252515251515151515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="152525151515151515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1357" AltIDMod="0" />
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151515151515151525">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="0" />
+      <MapTile TileID="581" AltIDMod="0" />
+      <MapTile TileID="583" AltIDMod="0" />
+      <MapTile TileID="584" AltIDMod="0" />
+      <MapTile TileID="585" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151515151515252525">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151525151525151525">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="251515251515252525">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+      <StaticTile TileID="1362" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="251515251515151515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1354" AltIDMod="0" />
+      <StaticTile TileID="1356" AltIDMod="0" />
+      <StaticTile TileID="1355" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151515251515252515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+      <StaticTile TileID="1362" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151525151525252525">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151515151515252515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1345" AltIDMod="0" />
+      <StaticTile TileID="1346" AltIDMod="0" />
+      <StaticTile TileID="1347" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151525151525151515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1348" AltIDMod="0" />
+      <StaticTile TileID="1349" AltIDMod="0" />
+      <StaticTile TileID="1350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="251515251515252515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+      <StaticTile TileID="1362" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151515251515252525">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1351" AltIDMod="0" />
+      <StaticTile TileID="1362" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="251515151515151515">
+    <MapTiles>
+      <MapTile TileID="582" AltIDMod="0" />
+      <MapTile TileID="581" AltIDMod="0" />
+      <MapTile TileID="583" AltIDMod="0" />
+      <MapTile TileID="584" AltIDMod="0" />
+      <MapTile TileID="585" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="252525251515151515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="151515151525252525">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1344" AltIDMod="0" />
+      <StaticTile TileID="1361" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="252525151515151515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1358" AltIDMod="0" />
+      <StaticTile TileID="1359" AltIDMod="0" />
+      <StaticTile TileID="1357" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="152525151525151515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="152525151525151525">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1352" AltIDMod="0" />
+      <StaticTile TileID="1363" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave to Marble" HashKey="252515251515251515">
+    <MapTiles>
+      <MapTile TileID="1255" AltIDMod="0" />
+      <MapTile TileID="1256" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1353" AltIDMod="0" />
+      <StaticTile TileID="1386" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

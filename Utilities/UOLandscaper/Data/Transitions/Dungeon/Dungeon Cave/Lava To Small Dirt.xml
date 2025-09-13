@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0808080D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12943" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D080D0D0D0D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D08080D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="08080D0D0D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D080D0D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12946" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D0808080D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D0808080D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D080D0D0D0D0D08">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D080D0D080D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D080D0D080D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0808080D0D080D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12954" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D080D0D0D080D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D0D0D080D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D0D0D080D0D08">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12953" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D08080D08">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D0D080808">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12940" AltIDMod="0" />
+      <StaticTile TileID="12941" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080808080D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12949" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D0D0D0808">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12941" AltIDMod="0" />
+      <StaticTile TileID="12940" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D080D0D080D0D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D080D0D08080D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12955" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D080D080D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12953" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D080D0D0D0D0D0D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D08080D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D08080D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D080D0D0D0D080D0D">
+    <MapTiles />
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D080D0D08080D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12955" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D0D0D0D0D0808">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12953" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0808080D0D080D0D">
+    <MapTiles />
+    <StaticTiles>
+      <StaticTile TileID="12950" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D0D0D0D080808">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12953" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="08080D0D0D0D0D0D08">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D080D0D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12947" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D080D0D0D080D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12953" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D08080D0D080D0D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12946" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D080D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12946" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D080D0D080D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D0D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12937" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D080D0D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D0D0D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12953" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D080D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D08080D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12939" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D080D0D0D0D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12953" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D08080D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12943" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D0D080808">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D080D0808">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12948" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0808080D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12950" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D0D0D080D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D0D080D08">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D080D0D0D080D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="08080D0D0D080D0D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D08080D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0808080D0D080D0D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12954" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="08080D080D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12949" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D08080D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D080D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12944" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D0D0D0D080D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12953" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D0D0D0D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D080D080D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D080D0808">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12948" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D08080808">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12948" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D080D0D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D080D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12945" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D08080D0D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12938" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D080D0D080808">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12955" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D08080808">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12948" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D080D0D0D0808">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D0D0D0D08080D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12953" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D0D0D080D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12953" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D080D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D0D0D0D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12936" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D0D08080D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12941" AltIDMod="0" />
+      <StaticTile TileID="12940" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D080D0D0D0808">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12953" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D080D0D080808">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12955" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0808080D0D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D080D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12944" AltIDMod="0" />
+      <StaticTile TileID="12945" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0808080D0D0D0D0D08">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="08080D0D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12943" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D080D080D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="08080D080D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12949" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080D0D0D0D0D0D080D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12953" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D0D080D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D080D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12953" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D08080D0D0D0D0D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D0D08080D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D080D080D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D080D0D0D0D0808">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D08080D0D080D0D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12946" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D0D0D0D0D08080D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12952" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="0D080D0D0D080D0D08">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="08080D0D0D080D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12951" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava To Small Dirt" HashKey="080808080D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="500" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12949" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

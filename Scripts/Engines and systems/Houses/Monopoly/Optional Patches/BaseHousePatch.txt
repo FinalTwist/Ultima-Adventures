@@ -1,0 +1,27 @@
+This patch adjusts how RunUO finds items in houses, switching from searching sectors and MultiComponentLists to simply seeing if the house region contains the location.  Since players cannot go underground, or stand 10 feet above the roof of their house, this will negatively affect nothing.  What it corrects is being able to see houses within houses, which is what renting out classic and custom homes creates.  This patch will determine whether a home has a TownHouse within it, and whether the point in question is actually within the TownHouse.
+
+~
+
+To patch, replace the following method within Scripts/Multis/BaseHouse.cs with this updated code:
+
+[code]
+
+		public virtual bool IsInside( Point3D p, int height )
+		{
+			Sector sector = Map.GetSector( p );
+
+			foreach( BaseMulti m in sector.Multis )
+			{
+				if ( m != this
+				&& m is Knives.TownHouses.TownHouse
+				&& ((Knives.TownHouses.TownHouse)m).ForSaleSign is Knives.TownHouses.RentalContract
+				&& ((Knives.TownHouses.TownHouse)m).IsInside( p, height ) )
+					return false;
+			}
+
+			return Region.Contains( p );
+		}
+
+[/code]
+
+Be sure you make a backup of the default BaseHouse.cs file, just in case TownHouses needs to be removed or other problems occur.  You can also comment out the old method instead of completely replacing it.

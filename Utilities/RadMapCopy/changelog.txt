@@ -1,0 +1,121 @@
+===========================================
+RadMap Copy
+RadstaR (C) 2004-2013
+http://ultima.manawydan.cz
+===========================================
+
+  (+) nove
+  (*) vylepseno/upraveno
+  (o) opraveno
+  (-) odstraneno
+
+===========================================
+3.0.1 (18.05.2013)
+  (*) Zrychleni generovani nahledu mapy
+
+3.0.0 (16.05.2013)
+  (+) Ikona nahledu mapy u informaci o mape (v adresari programu musi by soubor radarcol.mul)
+
+3.0.0 RC (15.05.2013)
+  (*) Zrychleno vytvareni nove mapy a rozsireni na ML mapu
+
+3.0.0 Beta (08.05.2013)
+  (+) Moznost ulozeni souradnic pri ukonceni programu
+  (+) Moznost preruseni kopirovani (tlacitko CANCEL)
+  (+) 64bit verze programu
+  (*) Kompletni prepsani programu
+  (*) Mapa vlastni velikosti musi byt definovana v souboru maps.ini
+  (*) Prepracovani zobrazeni prubehu kopirovani
+  (o) "Preteceni" Z souradnice
+  (-) Odstraneni upravy staidx pro CentrED
+
+2.2.0 (14.05.2008)
+  (+) Kopirovani mapy a statiky v pameti (podstatne zrychleni)
+  (+) Upraveni staidx souboru po dokonceni kopirovani pro CentrED
+
+2.1.5 (15.03.2008)
+  (+) Kopirovani mapy vlastnich rozmeru
+  (+) Vytvoreni prazdne mapy a rozsireni na ML mapu v pameti (podstatne zrychleni)
+    
+2.1.0 (21.07.2007)
+  (+) Pridan vyber kopirovani mapy (muzete tedy kopirovat bud mapu nebo statiku nebo oboje)
+  (+) Definice ID, ktere se maji vynechat pri kopirovani (soubor definitions.ini)
+  (+) Vytvoreni prazdnych soubru statiky (v TOOLS/Create empty map/statics)
+  
+2.0.7 (20.07.2007)
+  (o) Dvojite zobrazovani okna s prubehem akci
+
+2.0.6 (27.05.2007)
+  (+) Zachyceni chyby pri cteni souboru
+  (*) Kosmeticke zmeny
+  (o) Drobne chybky
+  (-) Cestina (program je ted pouze v anglictine krome napovedy)
+
+2.0.5 (30.04.2007)
+  (+) Moznost editace Map1.mul - Mondains Legacy (Patch 6.0.0.0)
+  
+2.0.4 (28.01.2007)
+  (*) Zrychleni provadenych akci (kopirovani, vytvareni mapy atd.)
+
+2.0.3 (31.12.2006)
+  (*) Drobne upravy
+  (o) Drobne opravy
+
+2.0.2
+  (+) Lokalizace do vice jazyku (prozatim jen anglictina)
+  (*) Par veci bylo mirne upraveno
+  (o) Nektere mensi chybky
+
+2.0.0
+  (+) Moznost kopirovat s mapou i statiku
+  (+) Funkce Vytvorit prazdnou mapu (v menu Nastroje)
+  (+) Funkce Rozsirit mapu na Mondain's Legacy (v menu Nastroje)
+  (*) Kosmeticke upravy
+
+1.3.8 Build 39 (13.03.2006)
+
+  (*) Mala zmena rozmisteni policek pro zadavani Z souradnice
+  (o) Kontrola zdrojoveho souboru. Program nepoznal typ mapy, pokud nazev souboru nebyl malym pismem
+  
+1.3.7 Build 39 (08.01.2006)
+
+  (+) Moznost zmenit Z souradnici
+  (o) Zobrazeni chyby pri zadavani souradnic a zadani prazdneho pole
+  
+1.3.6 Build 36 (22.07.2005)
+  (+) Moznost kopirovat z mapy map0.mul (Mondain's Legacy Beta)
+  (*) Mensi zmeny ve vzhledu programu
+  (*) Kontrola vybranych souboru
+  (o) Zadani maximalni velikosti kopirovane mapy
+
+1.3.5 Build 34 (23.03.2005)
+  (+) Zobrazeni celkoveho potrebneho casu po ukonceni kopirovani
+  (*) Vyrazne zrychleni kopirovani mapy
+  (*) Kosmeticke zmeny vzhledu programu
+  (-) Kopirovani statiky, ktere bylo pomale a ne moc pouzitelne
+
+1.3.1 Build 26 (12.12.2004)
+  (o) Text u zadavani ciloveho staidx a statics
+  (*) Kontrola zadani souradnic
+
+1.3.0 Build 25 (11.12.2004)
+  (+) Kopirovani statiku (pouze cela mapa do map0.mul)
+  (+) Vyhledani souboru map, staidx i statics pres dialogove okno
+  (+) Okno ukazujici prubeh kopirovani
+  (+) Okno s napovedou
+  (+) Vyber kopirovani mapy nebo statiku, pripadne oboje
+  (*) Vzhled okna programu
+  (o) Program se pri kopirovani nechova jako ze zamrznul
+
+1.1.0 Build 16 (04.12.2004)
+  (+) Pridana moznost vyhledat soubor pres dialogove okno
+  (+) Pridano okno s informaci o verzi programu a historii verzi
+  (*) Zmenen vzhled programu
+  (*) Zmena indikace kontroly pritomnosti souboru (nemeni se barva podkladu, ale textu)
+  (*) Zmenen nazev programu na RadMap Copy
+
+1.0.0 Build 12 (03.12.2004)
+  
+  (+) Prvni verze
+  (+) Pri vkladani cesty k souborum se kontroluje jejich pritomnost (cervene nen pritomen, zelene je pritomen)
+  (+) Kontroluje se i zadani spravnych souradnic, aby nedoslo k chybe (pokud neco nesedi, cisla se zobrazi cervene)

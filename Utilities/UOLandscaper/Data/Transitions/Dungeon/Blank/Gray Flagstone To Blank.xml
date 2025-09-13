@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="132727131327131327">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="27" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="271313272713272713">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="27" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="132727272727272727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313131313272727">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="28" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313131327131327">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="27" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727131327131327">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="27" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727272713272713">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="27" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="132727132727131313">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="28" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272713272713131313">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="26" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313271313272713">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="28" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313272713272713">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="27" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313131313271313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727272713271313">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="26" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="132727132727272727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="132727132727132727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313271313271313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272713272713272727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="27" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="271313272713272727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="27" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272713271313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313132727132727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313132727272727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727272727131327">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="28" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313131313272713">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="28" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131327131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313272727272727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313271313272727">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="28" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272713272713271313">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="26" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="271313271313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313131313132727">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="28" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="271313131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131327272727272727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313272713272727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="27" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727272713131313">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="26" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272713272713272713">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="27" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727132727132727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131327131327131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="27" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727272727131313">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="28" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131327131327131327">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="27" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="271313271313271313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="271313271313272713">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="28" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727271313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727132727131313">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="28" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313131327132727">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="26" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131327131327132727">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="26" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131327131327272727">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="26" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131327132727272727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727272727132727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313131313131327">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="29" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131327132727132727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="131313131327272727">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="26" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272713131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="271313271313272727">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="28" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="132727131327131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="27" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272713271313271313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727272727271313">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="28" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727132727131327">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="28" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727131327131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="27" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="132727132727131327">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="28" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="132727131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272713272727272727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727272727272713">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="29" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="271313272727272727">
+    <MapTiles>
+      <MapTile TileID="1259" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Gray Flagstone To Blank" HashKey="272727271313271313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>
