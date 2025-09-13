@@ -1,0 +1,14 @@
+// Here you can create filters that automatically add when your restart the server!
+// Just in case you lose your save files, you'll never have to re-input your filters.
+// TO USE THIS:  Place your ChatFilters.txt file into the RunUO/Data folder.
+
+// The process is simple: Write your filter on its own line below!
+// Just follow this example...
+
+Knives Rulz
+
+// In game, this filter will appear as "knives rulz" which will catch upper case as well.
+// Be sure to add your filters before the "EndOfFile" line!
+
+
+EndOfFile
