@@ -1,0 +1,17 @@
+// Here you can add new text colors to the gump customization!
+// This system uses RGB values to determine its text colors, just like HTML.
+//  If you don't understand how to use RGB (RedGreenBlue), you can either
+//  Google them to get a color listing or not use this file at all.  I don't
+//  think there is any risk of client crashes with bad entries.
+// TO USE THIS:  Place your ChatColors.txt file in your RunUO/Data folder.
+
+// Adding entries here is simple!  You just put the 6 digit integer RGB value
+//  on its own line below, like this:
+
+111111
+
+// Since this value already exists in the gump customizations, nothing will happen.
+// Now add your custom colors before the 'EndOfFile' tag below!
+
+
+EndOfFile
