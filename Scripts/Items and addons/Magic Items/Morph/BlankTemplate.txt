@@ -1,0 +1,157 @@
+		public static string TemplateBlank( string s ) //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		{
+			string powers = "";
+
+			if ( s == "weapons" )
+			{
+				/* ENTRY 1 FOR WeaponAttributes.LowerStatReq */ 		powers = 				"0";
+				/* ENTRY 2 FOR WeaponAttributes.SelfRepair */ 			powers = powers + "," + "0";
+				/* ENTRY 3 FOR WeaponAttributes.HitLeechHits */ 		powers = powers + "," + "0";
+				/* ENTRY 4 FOR WeaponAttributes.HitLeechStam */ 		powers = powers + "," + "0";
+				/* ENTRY 5 FOR WeaponAttributes.HitLeechMana */ 		powers = powers + "," + "0";
+				/* ENTRY 6 FOR WeaponAttributes.HitLowerAttack */ 		powers = powers + "," + "0";
+				/* ENTRY 7 FOR WeaponAttributes.HitLowerDefend */ 		powers = powers + "," + "0";
+				/* ENTRY 8 FOR WeaponAttributes.HitMagicArrow */ 		powers = powers + "," + "0";
+				/* ENTRY 9 FOR WeaponAttributes.HitHarm */ 				powers = powers + "," + "0";
+				/* ENTRY 10 FOR WeaponAttributes.HitFireball */ 		powers = powers + "," + "0";
+				/* ENTRY 11 FOR WeaponAttributes.HitLightning */ 		powers = powers + "," + "0";
+				/* ENTRY 12 FOR WeaponAttributes.HitDispel */ 			powers = powers + "," + "0";
+				/* ENTRY 13 FOR WeaponAttributes.HitColdArea */ 		powers = powers + "," + "0";
+				/* ENTRY 14 FOR WeaponAttributes.HitFireArea */ 		powers = powers + "," + "0";
+				/* ENTRY 15 FOR WeaponAttributes.HitPoisonArea */ 		powers = powers + "," + "0";
+				/* ENTRY 16 FOR WeaponAttributes.HitEnergyArea */ 		powers = powers + "," + "0";
+				/* ENTRY 17 FOR WeaponAttributes.HitPhysicalArea */ 	powers = powers + "," + "0";
+				/* ENTRY 18 FOR WeaponAttributes.ResistPhysicalBonus */ powers = powers + "," + "0";
+				/* ENTRY 19 FOR WeaponAttributes.ResistFireBonus */ 	powers = powers + "," + "0";
+				/* ENTRY 20 FOR WeaponAttributes.ResistColdBonus */ 	powers = powers + "," + "0";
+				/* ENTRY 21 FOR WeaponAttributes.ResistPoisonBonus */ 	powers = powers + "," + "0";
+				/* ENTRY 22 FOR WeaponAttributes.ResistEnergyBonus */ 	powers = powers + "," + "0";
+				/* ENTRY 23 FOR WeaponAttributes.UseBestSkill */ 		powers = powers + "," + "0";		// VALUE OF 1
+				/* ENTRY 24 FOR WeaponAttributes.DurabilityBonus */ 	powers = powers + "," + "0";
+				/* ENTRY 25 FOR Hue */ 									powers = powers + "," + "0";		// INT ONLY
+				/* ENTRY 26 FOR AccuracyLevel */ 						powers = powers + "," + "0";		// VALUE OF 1-6
+				/* ENTRY 27 FOR DamageLevel */ 							powers = powers + "," + "0";		// VALUE OF 1-6
+				/* ENTRY 28 FOR Quality */ 								powers = powers + "," + "0";		// VALUE OF 1
+				/* ENTRY 29 FOR DurabilityLevel */ 						powers = powers + "," + "0";		// VALUE OF 1-6
+				/* ENTRY 30 FOR AosElementDamages.Physical */ 			powers = powers + "," + "0";		// 30-34 SHOULD TOTAL 100
+				/* ENTRY 31 FOR AosElementDamages.Fire */ 				powers = powers + "," + "0";
+				/* ENTRY 32 FOR AosElementDamages.Cold */ 				powers = powers + "," + "0";
+				/* ENTRY 33 FOR AosElementDamages.Poison */ 			powers = powers + "," + "0";
+				/* ENTRY 34 FOR AosElementDamages.Energy */ 			powers = powers + "," + "0";
+				/* ENTRY 35 FOR Extra Hit Points */ 					powers = powers + "," + "0";
+				/* ENTRY 36 FOR Extra Damage */ 						powers = powers + "," + "0";
+				/* ENTRY 37 FOR Attributes.RegenHits */ 				powers = powers + "," + "0";
+				/* ENTRY 38 FOR Attributes.RegenStam */ 				powers = powers + "," + "0";
+				/* ENTRY 39 FOR Attributes.RegenMana */ 				powers = powers + "," + "0";
+				/* ENTRY 40 FOR Attributes.DefendChance */ 				powers = powers + "," + "0";
+				/* ENTRY 41 FOR Attributes.AttackChance */ 				powers = powers + "," + "0";
+				/* ENTRY 42 FOR Attributes.BonusStr */ 					powers = powers + "," + "0";
+				/* ENTRY 43 FOR Attributes.BonusDex */ 					powers = powers + "," + "0";
+				/* ENTRY 44 FOR Attributes.BonusInt */ 					powers = powers + "," + "0";
+				/* ENTRY 45 FOR Attributes.BonusHits */ 				powers = powers + "," + "0";
+				/* ENTRY 46 FOR Attributes.BonusStam */ 				powers = powers + "," + "0";
+				/* ENTRY 47 FOR Attributes.BonusMana */ 				powers = powers + "," + "0";
+				/* ENTRY 48 FOR Attributes.WeaponDamage */ 				powers = powers + "," + "0";
+				/* ENTRY 49 FOR Attributes.WeaponSpeed */ 				powers = powers + "," + "0";
+				/* ENTRY 50 FOR Attributes.SpellDamage */ 				powers = powers + "," + "0";
+				/* ENTRY 51 FOR Attributes.CastRecovery */ 				powers = powers + "," + "0";
+				/* ENTRY 52 FOR Attributes.CastSpeed */ 				powers = powers + "," + "0";
+				/* ENTRY 53 FOR Attributes.LowerManaCost */ 			powers = powers + "," + "0";
+				/* ENTRY 54 FOR Attributes.LowerRegCost */ 				powers = powers + "," + "0";
+				/* ENTRY 55 FOR Attributes.ReflectPhysical */ 			powers = powers + "," + "0";
+				/* ENTRY 56 FOR Attributes.EnhancePotions */ 			powers = powers + "," + "0";
+				/* ENTRY 57 FOR Attributes.Luck */ 						powers = powers + "," + "0";
+				/* ENTRY 58 FOR Attributes.SpellChanneling */ 			powers = powers + "," + "0";		// VALUE OF 1
+				/* ENTRY 59 FOR Attributes.NightSight */ 				powers = powers + "," + "0";		// VALUE OF 1
+				/* ENTRY 60 FOR Slayer */ 								powers = powers + "," + "0";
+				/* ENTRY 61 FOR Slayer2 */ 								powers = powers + "," + "0";
+				/* ENTRY 62,63 FOR SkillBonuses 1 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND...99 FOR WEAPON SKILL
+				/* ENTRY 64,65 FOR SkillBonuses 2 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND
+				/* ENTRY 66,67 FOR SkillBonuses 3 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND
+				/* ENTRY 68,69 FOR SkillBonuses 4 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND
+				/* ENTRY 70,71 FOR SkillBonuses 5 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND
+			}
+			else if ( s == "armors" )
+			{
+				/* ENTRY 1 FOR ArmorAttributes.LowerStatReq */ 			powers = 				"0";
+				/* ENTRY 2 FOR ArmorAttributes.SelfRepair */ 			powers = powers + "," + "0";
+				/* ENTRY 3 FOR ArmorAttributes.MageArmor */ 			powers = powers + "," + "0";
+				/* ENTRY 4 FOR ArmorAttributes.DurabilityBonus */ 		powers = powers + "," + "0";
+				/* ENTRY 5 FOR PhysicalBonus */ 						powers = powers + "," + "0";
+				/* ENTRY 6 FOR ColdBonus */ 							powers = powers + "," + "0";
+				/* ENTRY 7 FOR EnergyBonus */ 							powers = powers + "," + "0";
+				/* ENTRY 8 FOR FireBonus */ 							powers = powers + "," + "0";
+				/* ENTRY 9 FOR PoisonBonus */ 							powers = powers + "," + "0";
+				/* ENTRY 10 FOR Extra HitPoints */ 						powers = powers + "," + "0";
+				/* ENTRY 11 FOR Durability */ 							powers = powers + "," + "0";		// VALUE OF 1-6
+				/* ENTRY 12 FOR Quality */ 								powers = powers + "," + "0";		// VALUE OF 1
+				/* ENTRY 13 FOR ProtectionLevel */ 						powers = powers + "," + "0";		// VALUE OF 1-6
+				/* ENTRY 14 FOR Attributes.RegenHits */ 				powers = powers + "," + "0";
+				/* ENTRY 15 FOR Attributes.RegenStam */ 				powers = powers + "," + "0";
+				/* ENTRY 16 FOR Attributes.RegenMana */ 				powers = powers + "," + "0";
+				/* ENTRY 17 FOR Attributes.DefendChance */ 				powers = powers + "," + "0";
+				/* ENTRY 18 FOR Attributes.AttackChance */ 				powers = powers + "," + "0";
+				/* ENTRY 19 FOR Attributes.BonusStr */ 					powers = powers + "," + "0";
+				/* ENTRY 20 FOR Attributes.BonusDex */ 					powers = powers + "," + "0";
+				/* ENTRY 21 FOR Attributes.BonusInt */ 					powers = powers + "," + "0";
+				/* ENTRY 22 FOR Attributes.BonusHits */ 				powers = powers + "," + "0";
+				/* ENTRY 23 FOR Attributes.BonusStam */ 				powers = powers + "," + "0";
+				/* ENTRY 24 FOR Attributes.BonusMana */ 				powers = powers + "," + "0";
+				/* ENTRY 25 FOR Attributes.WeaponDamage */ 				powers = powers + "," + "0";
+				/* ENTRY 26 FOR Attributes.WeaponSpeed */ 				powers = powers + "," + "0";
+				/* ENTRY 27 FOR Attributes.SpellDamage */ 				powers = powers + "," + "0";
+				/* ENTRY 28 FOR Attributes.CastRecovery */ 				powers = powers + "," + "0";
+				/* ENTRY 29 FOR Attributes.CastSpeed */ 				powers = powers + "," + "0";
+				/* ENTRY 30 FOR Attributes.LowerManaCost */ 			powers = powers + "," + "0";
+				/* ENTRY 31 FOR Attributes.LowerRegCost */ 				powers = powers + "," + "0";
+				/* ENTRY 32 FOR Attributes.ReflectPhysical */ 			powers = powers + "," + "0";
+				/* ENTRY 33 FOR Attributes.EnhancePotions */ 			powers = powers + "," + "0";
+				/* ENTRY 34 FOR Attributes.Luck */ 						powers = powers + "," + "0";
+				/* ENTRY 35 FOR Attributes.SpellChanneling */ 			powers = powers + "," + "0";		// VALUE OF 1
+				/* ENTRY 36 FOR Attributes.NightSight */ 				powers = powers + "," + "0";		// VALUE OF 1
+				/* ENTRY 37,38 FOR SkillBonuses 1 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND
+				/* ENTRY 39,40 FOR SkillBonuses 2 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND
+				/* ENTRY 41,42 FOR SkillBonuses 3 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND
+				/* ENTRY 43,44 FOR SkillBonuses 4 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND
+				/* ENTRY 45,46 FOR SkillBonuses 5 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND
+				/* ENTRY 47 FOR Hue */ 									powers = powers + "," + "0";		// INT ONLY
+			}
+			else if ( s == "misc" )
+			{
+				/* ENTRY 1 FOR Resistances.Physical */ 					powers = 				"0";
+				/* ENTRY 2 FOR Resistances.Fire */ 						powers = powers + "," + "0";
+				/* ENTRY 3 FOR Resistances.Cold */ 						powers = powers + "," + "0";
+				/* ENTRY 4 FOR Resistances.Poison */ 					powers = powers + "," + "0";
+				/* ENTRY 5 FOR Resistances.Energy */ 					powers = powers + "," + "0";
+				/* ENTRY 6 FOR Attributes.DefendChance */ 				powers = powers + "," + "0";
+				/* ENTRY 7 FOR Attributes.AttackChance */ 				powers = powers + "," + "0";
+				/* ENTRY 8 FOR Attributes.BonusStr */ 					powers = powers + "," + "0";
+				/* ENTRY 9 FOR Attributes.BonusDex */ 					powers = powers + "," + "0";
+				/* ENTRY 10 FOR Attributes.BonusInt */ 					powers = powers + "," + "0";
+				/* ENTRY 11 FOR Attributes.BonusHits */ 				powers = powers + "," + "0";
+				/* ENTRY 12 FOR Attributes.BonusStam */ 				powers = powers + "," + "0";
+				/* ENTRY 13 FOR Attributes.BonusMana */ 				powers = powers + "," + "0";
+				/* ENTRY 14 FOR Attributes.CastRecovery */ 				powers = powers + "," + "0";
+				/* ENTRY 15 FOR Attributes.CastSpeed */ 				powers = powers + "," + "0";
+				/* ENTRY 16 FOR Attributes.EnhancePotions */ 			powers = powers + "," + "0";
+				/* ENTRY 17 FOR Attributes.LowerManaCost */ 			powers = powers + "," + "0";
+				/* ENTRY 18 FOR Attributes.LowerRegCost */ 				powers = powers + "," + "0";
+				/* ENTRY 19 FOR Attributes.Luck */ 						powers = powers + "," + "0";
+				/* ENTRY 20 FOR Attributes.NightSight */ 				powers = powers + "," + "0";		// VALUE OF 1
+				/* ENTRY 21 FOR Attributes.ReflectPhysical */ 			powers = powers + "," + "0";
+				/* ENTRY 22 FOR Attributes.RegenHits */ 				powers = powers + "," + "0";
+				/* ENTRY 23 FOR Attributes.RegenStam */ 				powers = powers + "," + "0";
+				/* ENTRY 24 FOR Attributes.RegenMana */ 				powers = powers + "," + "0";
+				/* ENTRY 25 FOR Attributes.SpellDamage */ 				powers = powers + "," + "0";
+				/* ENTRY 26 FOR Attributes.WeaponDamage */ 				powers = powers + "," + "0";
+				/* ENTRY 27 FOR Attributes.WeaponSpeed */ 				powers = powers + "," + "0";
+				/* ENTRY 28,29 FOR SkillBonuses 1 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND
+				/* ENTRY 30,31 FOR SkillBonuses 2 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND
+				/* ENTRY 32,33 FOR SkillBonuses 3 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND
+				/* ENTRY 34,35 FOR SkillBonuses 4 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND
+				/* ENTRY 36,37 FOR SkillBonuses 5 */ 					powers = powers + "," + "0,0";		// SKILL LEVEL FIRST...SKILL NAME SECOND
+				/* ENTRY 38 FOR Hue */ 									powers = powers + "," + "0";		// INT ONLY
+			}
+
+			return powers;
+		}
