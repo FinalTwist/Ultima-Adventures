@@ -1,0 +1,497 @@
+using Server.Items;
+using Server.Mobiles;
+using Server.Regions;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml;
+
+namespace Server
+{
+	public enum MonstersBashType
+	{
+		Abyss,
+		Arachnid,
+		ColdBlood,
+		ForestLord,
+		VerminHorde,
+		UnholyTerror,
+		SleepingDragon,
+		Glade,
+		Pestilence
+	}
+	public class GauntletMaster : Banker
+	{
+		private bool m_Enable;
+		private bool m_IsActive;
+		private int m_EntranceCost;
+		private MonstersBashType m_MonstersType;
+		private Rectangle2D m_SpawnArea;
+		private Map m_EventMap;
+		private Point3D m_PlayerResPoint;
+		private Point3D m_PlayerStartPoint;
+		private int m_Kills;
+		private int m_MaxWaveKills;
+		private int m_Wave;
+		private int m_MaxWaves = 3; // from 0 to 3 = 4 wave totals
+		private List<Mobile> m_Creatures;
+		private SliceTimer m_Timer;
+		private Region m_Region;
+
+		public static SortedDictionary<Mobile, int> MB_RATING = new SortedDictionary<Mobile, int>();
+
+		private Dictionary<Mobile, int> m_ParticipantsPoints;
+		private List<Mobile> m_Participants;
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public bool Enable { get { return m_Enable; } set { m_Enable = value; } }
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public bool IsActive { get { return m_IsActive; } set { m_IsActive = value; } }
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int EntranceCost { get { return m_EntranceCost; } set { m_EntranceCost = value; } }
+		[CommandProperty(AccessLevel.GameMaster)]
+		public MonstersBashType MonstersType { get { return m_MonstersType; } set { m_MonstersType = value; } }
+		[CommandProperty(AccessLevel.GameMaster)]
+		public Rectangle2D SpawnArea
+		{
+			get { return m_SpawnArea; }
+			set
+			{
+				m_SpawnArea = value;
+
+				if (m_SpawnArea.Start.X != 0 && m_SpawnArea.End.X != 0)
+				{
+					if (m_Region != null)
+						m_Region.Unregister();
+
+					m_Region = new MBRegion(this, "The Gauntlet Arena", EventMap, 200, m_SpawnArea);
+					m_Region.Register();
+
+				}
+			}
+		}
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public Map EventMap { get { return m_EventMap; } set { m_EventMap = value; } }
+		[CommandProperty(AccessLevel.GameMaster)]
+		public Point3D PlayerResPoint { get { return m_PlayerResPoint; } set { m_PlayerResPoint = value; } }
+		[CommandProperty(AccessLevel.GameMaster)]
+		public Point3D PlayerStartPoint { get { return m_PlayerStartPoint; } set { m_PlayerStartPoint = value; } }
+		[CommandProperty(AccessLevel.GameMaster)]
+		public string KillsProgress { get { return String.Format("{0}/{1}", m_Kills, m_MaxWaveKills); } set { m_Kills = int.Parse(value); } }
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int ParticipantsCount { get { return m_Participants.Count; } }
+
+		public void UnregisterRegion()
+		{
+		    if (m_Region != null)
+			m_Region.Unregister();
+		}
+
+		public override void OnMovement( Mobile m, Point3D oldLocation )
+		{
+			if ( InRange( m, 3 ) && !InRange( oldLocation, 3 ) )
+			{
+				if ( m is PlayerMobile && !m.Hidden ) 
+				{
+                           		switch (Utility.Random(5))
+                           		{
+                                		case 0: Say("Try your luck at the Monster Bash!"); break;
+                        	     	 	case 1: Say("You Sir, Fancy a go aagainst certain death?"); break;
+                         	    		case 2: Say("Only the Brave need apply!"); break;
+                         	    		case 3: Say("Ask me for the latest scores!"); break;
+                         	 	}
+				
+				}
+			}
+
+		}
+		
+
+		[Constructable]
+		public GauntletMaster() : base()
+		{
+			Title = "the Gauntlet Master";
+			m_EntranceCost = 1000;
+
+			m_Creatures = new List<Mobile>();
+
+			m_ParticipantsPoints = new Dictionary<Mobile, int>();
+			m_Participants = new List<Mobile>();
+
+			CantWalk = true;
+			Timer.DelayCall(TimeSpan.FromSeconds(0.5), delegate { m_EventMap = Map; });
+
+		}
+
+		public GauntletMaster(Serial serial) : base(serial)
+		{
+		}
+
+		public override void OnDoubleClick(Mobile from)
+		{
+			if (from.InRange(this, 3))
+			{
+				if (Enable)
+				{
+					if (m_Participants.Count >= 1)
+						from.SendMessage("Event is currently busy! Please wait.");
+					else
+					{
+						if (Banker.Withdraw(from, m_EntranceCost) || from.Backpack != null && from.Backpack.ConsumeTotal(typeof(Gold), m_EntranceCost))
+							StartEvent(from);
+						else
+							from.SendMessage("You do not have enought gold to enter the Gauntlet. It costs {0} gold to enter.", m_EntranceCost);
+					}
+				}
+				else
+					from.SendMessage("Event is currently disabled! Come later!");
+			}
+			else
+				from.SendMessage("You are too far away to the Gauntlet Master.");
+
+
+			base.OnDoubleClick(from);
+		}
+
+		public void StartEvent(Mobile m)
+		{
+			if (m_Region != null)
+				m_Region.Register();
+			else
+			{
+				m_Region = new MBRegion(this, "The Gauntlet Arena", EventMap, 200, m_SpawnArea);
+				m_Region.Register();
+			}
+
+			m_IsActive = true;
+			m.MoveToWorld(m_PlayerStartPoint, m_EventMap);
+			m_Participants.Add(m);
+			SpawnWaves();
+
+			if (m_Timer == null)
+				m_Timer = new SliceTimer(this);
+
+			m_Timer.Start();
+
+		}
+
+		public bool IsChampionSpawn(Mobile m)
+		{
+			return m_Creatures.Contains(m);
+		}
+
+		public void SpawnWaves()
+		{
+			if (m_Wave < 0)
+				m_Wave = 0;
+
+			m_MaxWaveKills = 10 / (m_Wave == 0 ? 1 : m_Wave);
+
+			for (int i = 0; i < m_MaxWaveKills; i++)
+			{
+				Mobile m = Spawn();
+
+				if (m == null)
+					return;
+
+				Point3D loc = GetSpawnLocation();
+
+				m_Creatures.Add(m);
+				m.MoveToWorld(loc, Map);
+
+				if (m is BaseCreature)
+				{
+					BaseCreature bc = m as BaseCreature;
+					bc.Tamable = false;
+
+					bc.Home = this.Location;
+					bc.RangeHome = (int)(Math.Sqrt(m_SpawnArea.Width * m_SpawnArea.Width + m_SpawnArea.Height * m_SpawnArea.Height) / 2);
+				}
+			}
+		}
+
+		public Point3D GetSpawnLocation()
+		{
+			Map map = Map;
+
+			if (map == null)
+				return Location;
+
+			// Try 20 times to find a spawnable location.
+			for (int i = 0; i < 20; i++)
+			{
+				int x = Utility.Random(m_SpawnArea.X, m_SpawnArea.Width);
+				int y = Utility.Random(m_SpawnArea.Y, m_SpawnArea.Height);
+
+				int z = Map.GetAverageZ(x, y);
+
+				if (Map.CanSpawnMobile(new Point2D(x, y), z))
+					return new Point3D(x, y, z);
+
+				/* try @ platform Z if map z fails */
+				else if (Map.CanSpawnMobile(new Point2D(x, y), m_PlayerStartPoint.Z))
+					return new Point3D(x, y, m_PlayerStartPoint.Z);
+			}
+
+			return Location;
+		}
+
+
+		public Mobile Spawn()
+		{
+			Type[][] types = MonstersBashSpawnInfo.GetInfo(m_MonstersType).SpawnTypes;
+
+			if (m_Wave >= 0 && m_Wave < types.Length)
+				return Spawn(types[m_Wave]);
+
+			return null;
+		}
+
+		public Mobile Spawn(params Type[] types)
+		{
+			try
+			{
+				return Activator.CreateInstance(types[Utility.Random(types.Length)]) as Mobile;
+			}
+			catch
+			{
+				return null;
+			}
+		}
+
+		public void OnSlice()
+		{
+			if (!m_Enable || Deleted)
+				return;
+
+			for (int i = 0; i < m_Creatures.Count; ++i)
+			{
+				Mobile m = m_Creatures[i];
+
+				if (m.Deleted)
+				{
+					if (m.Corpse != null && !m.Corpse.Deleted)
+					{
+						((Corpse)m.Corpse).Delete();
+					}
+
+					m_Creatures.RemoveAt(i);
+					--i;
+					++m_Kills;
+
+					Mobile killer = m.FindMostRecentDamager(false);
+
+					if (killer is BaseCreature)
+						killer = ((BaseCreature)killer).GetMaster();
+
+					var info = MonstersBashSpawnInfo.GetInfo(m_MonstersType);
+
+					if (killer != null)
+					{
+						int points = info.PointsPerKill[m_Wave];
+						if (MB_RATING.Keys.Contains(killer))
+							MB_RATING[killer] += points;
+						else
+							MB_RATING.Add(killer, points);
+
+						killer.SendMessage(38, "You just scored {0} points! Total: {1}", points, MB_RATING[killer]);
+					}
+				}
+			}
+
+			// Only really needed once.
+			if (m_Kills >= m_MaxWaveKills && m_Wave < m_MaxWaves)
+			{
+
+				m_Timer.Stop();
+				foreach (var player in m_Participants)
+				{
+					player.SendMessage("Ready Yourself... the next wave is coming.");
+				}
+
+				Timer.DelayCall(TimeSpan.FromSeconds(20), delegate
+				{
+					m_Wave++;
+					m_Kills = 0;
+					SpawnWaves();
+					m_Timer.Start();
+
+				});
+				InvalidateProperties();
+
+			}
+			else if (m_Kills >= m_Creatures.Count && m_Wave >= m_MaxWaves)
+			{
+				// clear event
+				OnEventFinished(true);
+			}
+
+		}
+
+		public void OnEventFinished(bool isWin)
+		{
+			foreach (var pm in m_Participants)
+			{
+				if (isWin)
+				{
+					pm.SendMessage(38, "You made it through the Gauntlet");
+					Timer.DelayCall(TimeSpan.FromSeconds(5), delegate { pm.MoveToWorld(m_PlayerResPoint, this.Map); });
+					pm.AddToBackpack(new MBRewardBox());
+				}
+				else
+				{
+					pm.SendMessage(38, "The Guantlet prevails.. ");
+					pm.MoveToWorld(m_PlayerResPoint, this.Map);
+				}
+
+			}
+
+			ResetEventTotals();
+
+		}
+
+		public void ResetEventTotals()
+		{
+			m_Participants.Clear();
+
+			if (m_Creatures != null && m_Creatures.Count > 0)
+			{
+				foreach (var mob in m_Creatures)
+				{
+					if (mob != null && !mob.Deleted)
+					{
+						if (mob.Corpse != null && !mob.Corpse.Deleted)
+							mob.Corpse.Delete();
+
+						mob.Delete();
+					}
+				}
+
+				m_Creatures.Clear();
+			}
+
+			if (m_Timer != null)
+				m_Timer.Stop();
+
+			m_Kills = 0;
+			m_Wave = 0;
+		}
+
+		public override void OnDelete()
+		{
+			UnregisterRegion();
+		}
+
+		public class SliceTimer : Timer
+		{
+			private GauntletMaster m_Spawn;
+			public SliceTimer(GauntletMaster spawn) : base(TimeSpan.FromSeconds(1.0), TimeSpan.FromSeconds(1.0))
+			{
+				m_Spawn = spawn;
+				Priority = TimerPriority.OneSecond;
+			}
+
+			protected override void OnTick()
+			{
+				m_Spawn.OnSlice();
+			}
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)1); // version
+
+			if (MB_RATING == null)
+			{
+				writer.Write((int)0);
+			}
+			else
+			{
+				writer.Write(MB_RATING.Count);
+
+				foreach (KeyValuePair<Mobile, int> kvp in MB_RATING)
+				{
+					writer.Write(kvp.Key);
+					writer.Write(kvp.Value);
+				}
+			}
+
+			writer.Write(m_Enable);
+			writer.Write(m_IsActive);
+			writer.Write(m_EntranceCost);
+			writer.Write((int)m_MonstersType);
+			writer.Write(m_EventMap);
+			writer.Write(m_SpawnArea);
+			writer.Write(m_PlayerResPoint);
+			writer.Write(m_PlayerStartPoint);
+			writer.Write(m_Kills);
+			writer.Write(m_MaxWaveKills);
+			writer.Write(m_Wave);
+			writer.Write(m_MaxWaves);
+			writer.Write(m_Creatures);
+			writer.Write(m_Participants);
+
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+
+			switch (version)
+			{
+				case 1:
+					{
+						int ratingCount = reader.ReadInt();
+
+						if (ratingCount > 0)
+						{
+							MB_RATING = new SortedDictionary<Mobile, int>();
+
+							for (int i = 0; i < ratingCount; i++)
+							{
+								Mobile mob = reader.ReadMobile();
+								int rating = reader.ReadInt();
+
+								MB_RATING.Add(mob, rating);
+							}
+						}
+
+						goto case 0;
+					}
+				case 0:
+					{
+						m_Enable = reader.ReadBool();
+						m_IsActive = reader.ReadBool();
+						m_EntranceCost = reader.ReadInt();
+						m_MonstersType = (MonstersBashType)reader.ReadInt();
+						m_EventMap = reader.ReadMap();
+						SpawnArea = reader.ReadRect2D();
+						m_PlayerResPoint = reader.ReadPoint3D();
+						m_PlayerStartPoint = reader.ReadPoint3D();
+						m_Kills = reader.ReadInt();
+						m_MaxWaveKills = reader.ReadInt();
+						m_Wave = reader.ReadInt();
+						m_MaxWaves = reader.ReadInt();
+						m_Creatures = reader.ReadStrongMobileList();
+						m_Participants = reader.ReadStrongMobileList();
+
+						if (m_IsActive)
+						{
+							m_Timer = new SliceTimer(this);
+							m_Timer.Start();
+						}
+					}
+					break;
+			}
+		}
+	}
+}

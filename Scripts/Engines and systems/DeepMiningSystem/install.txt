@@ -1,0 +1,56 @@
+INSTALL and USE:
+
+- Praxiis 's ULTIMA LIVE is required.
+
+- Add the three blackmap files into your server's client files directory.
+(you can place several blackmaps, assuming you correctly rename them, map34.mul, map35.mul...)
+
+- Register your map in Server/Scripts/Misc/MapDefinitions.cs :
+Code:
+RegisterMap( 34, 34, 34, 7168, 4096, 1, "MapNoire", MapRules.TrammelRules );
+
+- Register your map for Ultima Live use, in UltimaLive/Core/MapRegistry.cs:
+Code:
+AddMapDefinition(34, 34, new Point2D(7168, 4096), new Point2D(5120, 4096));
+
+- Edit your PickAxe.cs (and other Mining harvest tools...)
+and replace the HarvestSystem declaration by this one :
+Code:
+public override HarvestSystem HarvestSystem{ get{ return DeepMine.DeepMining.GetSystem(this); } }
+
+- Place DeepMining and DynamicGumps folders in your cutom scripts directory.
+
+- Register your black maps in DeepMining/DeepMineMapRegistry.cs :
+Code:
+public static MapRegister[] MapEntries = new MapRegister[]
+		{
+			new MapRegister(34,10,10)//Map.MapID, number of mines, number of levels
+		};
+Here you choose how many mines a map will contain, and how many levels each mine will contain.
+
+- With the command DEEPGO , you can navigate as a GM between maps, mines and levels.
+
+- Then use it and manually add teleporters to bring your players from your playables maps to mines entries.
+
+- Players got to have a HeavyPickAxe to dig tunnels.
+
+- They will sometimes find holes that bring them deeper in the mine, at next level.
+
+- With the harvest tools, they only be able to harvest the base type of ore (defined in DeepMineHarvestInfo.cs)
+
+- Until they stand in a spot range of another ore.
+
+- With the command SETMINE, when you are in a mine as a GM, you can define which types of ore can be found in that mine (and all mine's levels)
+
+- Spots are randomly spawned when digging, and oretype they allow is randomly chosen between all defined ore types.
+
+
+
+This is a beta system, I will update it for :
+
+- monster spawning
+- decay of ore spots (time, or amount of harvested ore)
+- scaled difficulty or rarety related to level deepth
+- deepmine region rules (allow cast, allow item use, lightlevel...)
+
+But it will still more a canvas than a ready to use system, as every shard owner have its own choice to do..

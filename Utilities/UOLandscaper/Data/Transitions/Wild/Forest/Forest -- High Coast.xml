@@ -1,0 +1,918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="0B4D0B0B0B0B0B0B4D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast (High) NWB" HashKey="4D0B0B0B0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-1" />
+      <MapTile TileID="197" AltIDMod="-1" />
+      <MapTile TileID="198" AltIDMod="-1" />
+      <MapTile TileID="199" AltIDMod="-1" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="0B0B0B4D0B0B4D4D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B0B0B0B4D0B4D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="4D0B4D4D0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-5" />
+      <MapTile TileID="197" AltIDMod="-5" />
+      <MapTile TileID="198" AltIDMod="-5" />
+      <MapTile TileID="199" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="4D0B0B4D0B0B0B4D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="0B0B0B4D0B0B4D4D0B">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="4D4D4D0B0B4D0B0B4D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B4D0B0B0B4D4D0B">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="4D4D4D0B0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-5" />
+      <MapTile TileID="197" AltIDMod="-5" />
+      <MapTile TileID="198" AltIDMod="-5" />
+      <MapTile TileID="199" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B0B0B0B4D0B4D0B">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="0B4D0B0B0B4D0B0B4D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="4D4D0B4D0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-9" />
+      <MapTile TileID="197" AltIDMod="-9" />
+      <MapTile TileID="198" AltIDMod="-9" />
+      <MapTile TileID="199" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="4D4D4D0B0B4D0B0B0B">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B4D0B0B0B4D4D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="0B4D0B0B0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-5" />
+      <MapTile TileID="197" AltIDMod="-5" />
+      <MapTile TileID="198" AltIDMod="-5" />
+      <MapTile TileID="199" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="4D0B0B0B0B0B4D0B4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast WE" HashKey="0B0B0B0B0B4D0B0B0B">
+    <MapTiles>
+      <MapTile TileID="742" AltIDMod="-3" />
+      <MapTile TileID="755" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="0B0B4D4D0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-5" />
+      <MapTile TileID="197" AltIDMod="-5" />
+      <MapTile TileID="198" AltIDMod="-5" />
+      <MapTile TileID="199" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="0B4D4D4D0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-5" />
+      <MapTile TileID="197" AltIDMod="-5" />
+      <MapTile TileID="198" AltIDMod="-5" />
+      <MapTile TileID="199" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="0B4D0B0B0B4D0B0B0B">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="4D0B0B0B0B4D0B0B4D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWB" HashKey="0B0B0B0B0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="762" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast EW" HashKey="4D0B0B0B0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-12" />
+      <MapTile TileID="197" AltIDMod="-12" />
+      <MapTile TileID="198" AltIDMod="-12" />
+      <MapTile TileID="199" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast WE" HashKey="0B0B0B0B0B4D0B0B4D">
+    <MapTiles>
+      <MapTile TileID="742" AltIDMod="-3" />
+      <MapTile TileID="755" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="4D4D0B0B0B4D0B0B0B">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="4D4D4D4D0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-9" />
+      <MapTile TileID="197" AltIDMod="-9" />
+      <MapTile TileID="198" AltIDMod="-9" />
+      <MapTile TileID="199" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="4D0B4D4D0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-5" />
+      <MapTile TileID="197" AltIDMod="-5" />
+      <MapTile TileID="198" AltIDMod="-5" />
+      <MapTile TileID="199" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="4D0B0B0B0B4D0B0B0B">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NS" HashKey="0B0B0B0B0B0B4D0B4D">
+    <MapTiles>
+      <MapTile TileID="747" AltIDMod="-3" />
+      <MapTile TileID="754" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="4D4D0B0B0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-5" />
+      <MapTile TileID="197" AltIDMod="-5" />
+      <MapTile TileID="198" AltIDMod="-5" />
+      <MapTile TileID="199" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="4D0B0B0B0B0B4D4D0B">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="0B4D4D0B0B4D0B0B0B">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B0B0B0B4D4D0B4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="0B4D0B4D0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-5" />
+      <MapTile TileID="197" AltIDMod="-5" />
+      <MapTile TileID="198" AltIDMod="-5" />
+      <MapTile TileID="199" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="4D4D0B0B0B4D0B0B4D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="0B4D0B4D0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-5" />
+      <MapTile TileID="197" AltIDMod="-5" />
+      <MapTile TileID="198" AltIDMod="-5" />
+      <MapTile TileID="199" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="0B4D4D0B0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-5" />
+      <MapTile TileID="197" AltIDMod="-5" />
+      <MapTile TileID="198" AltIDMod="-5" />
+      <MapTile TileID="199" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEB" HashKey="0B0B0B0B0B0B0B0B4D">
+    <MapTiles>
+      <MapTile TileID="752" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B4D0B0B0B0B4D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="4D0B0B0B0B0B4D4D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="0B4D4D0B0B4D0B0B4D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="4D0B4D0B0B4D0B0B0B">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B0B0B0B4D4D0B0B">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="0B0B0B4D0B0B0B4D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="0B0B4D4D0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-5" />
+      <MapTile TileID="197" AltIDMod="-5" />
+      <MapTile TileID="198" AltIDMod="-5" />
+      <MapTile TileID="199" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B4D0B0B4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SN" HashKey="4D4D4D0B0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="753" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="4D0B0B4D0B0B4D4D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="4D0B4D0B0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-5" />
+      <MapTile TileID="197" AltIDMod="-5" />
+      <MapTile TileID="198" AltIDMod="-5" />
+      <MapTile TileID="199" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B4D0B0B0B0B4D0B">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="4D4D0B0B0B0B0B0B4D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B0B0B0B4D4D4D0B">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="4D0B4D0B0B4D0B0B4D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B4D0B0B4D0B4D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="0B0B0B4D0B0B0B4D0B">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEB" HashKey="0B0B4D0B0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="761" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B4D0B0B4D4D4D0B">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NS" HashKey="0B0B0B0B0B0B0B4D0B">
+    <MapTiles>
+      <MapTile TileID="747" AltIDMod="-3" />
+      <MapTile TileID="754" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="4D0B0B4D0B0B4D4D0B">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SN" HashKey="4D4D0B0B0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-7" />
+      <MapTile TileID="197" AltIDMod="-7" />
+      <MapTile TileID="198" AltIDMod="-7" />
+      <MapTile TileID="199" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="0B0B0B4D0B0B4D0B4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B0B0B0B4D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast WE" HashKey="0B0B4D0B0B4D0B0B4D">
+    <MapTiles>
+      <MapTile TileID="742" AltIDMod="-3" />
+      <MapTile TileID="755" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast EW" HashKey="0B0B0B4D0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-12" />
+      <MapTile TileID="197" AltIDMod="-12" />
+      <MapTile TileID="198" AltIDMod="-12" />
+      <MapTile TileID="199" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="0B4D4D0B0B0B0B0B4D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="4D4D4D4D0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-9" />
+      <MapTile TileID="197" AltIDMod="-9" />
+      <MapTile TileID="198" AltIDMod="-9" />
+      <MapTile TileID="199" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B4D0B0B4D4D0B0B">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="4D0B0B4D0B0B0B0B4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SN" HashKey="4D0B4D0B0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-12" />
+      <MapTile TileID="197" AltIDMod="-12" />
+      <MapTile TileID="198" AltIDMod="-12" />
+      <MapTile TileID="199" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast EW" HashKey="4D0B0B4D0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="750" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast WE" HashKey="0B0B4D0B0B0B0B0B4D">
+    <MapTiles>
+      <MapTile TileID="742" AltIDMod="-3" />
+      <MapTile TileID="755" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NS" HashKey="0B0B0B0B0B0B0B4D4D">
+    <MapTiles>
+      <MapTile TileID="747" AltIDMod="-3" />
+      <MapTile TileID="754" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SN" HashKey="0B4D4D0B0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="753" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="4D0B4D0B0B0B0B0B4D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="4D0B0B0B0B0B0B4D4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast EW" HashKey="0B0B0B4D0B0B4D0B0B">
+    <MapTiles>
+      <MapTile TileID="750" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NS" HashKey="0B0B0B0B0B0B4D4D4D">
+    <MapTiles>
+      <MapTile TileID="747" AltIDMod="-3" />
+      <MapTile TileID="754" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast WE" HashKey="0B0B4D0B0B4D0B0B0B">
+    <MapTiles>
+      <MapTile TileID="742" AltIDMod="-3" />
+      <MapTile TileID="755" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="0B0B0B4D0B0B0B0B4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="4D4D0B4D0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-5" />
+      <MapTile TileID="197" AltIDMod="-5" />
+      <MapTile TileID="198" AltIDMod="-5" />
+      <MapTile TileID="199" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B4D0B0B4D4D0B4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast EW" HashKey="4D0B0B4D0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-7" />
+      <MapTile TileID="197" AltIDMod="-7" />
+      <MapTile TileID="198" AltIDMod="-7" />
+      <MapTile TileID="199" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="4D0B0B4D0B0B4D0B4D">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SN" HashKey="0B4D0B0B0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-12" />
+      <MapTile TileID="197" AltIDMod="-12" />
+      <MapTile TileID="198" AltIDMod="-12" />
+      <MapTile TileID="199" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B4D0B0B0B4D0B4D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SWA" HashKey="4D4D4D0B0B0B0B0B4D">
+    <MapTiles>
+      <MapTile TileID="741" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="4D0B0B0B0B0B0B4D0B">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NWA" HashKey="0B0B4D0B0B4D0B4D0B">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast SEA" HashKey="0B4D4D4D0B0B0B0B0B">
+    <MapTiles>
+      <MapTile TileID="196" AltIDMod="-5" />
+      <MapTile TileID="197" AltIDMod="-5" />
+      <MapTile TileID="198" AltIDMod="-5" />
+      <MapTile TileID="199" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NEA" HashKey="4D0B0B4D0B0B0B4D0B">
+    <MapTiles>
+      <MapTile TileID="745" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Forest to High Coast NS" HashKey="0B0B0B0B0B0B4D4D0B">
+    <MapTiles>
+      <MapTile TileID="747" AltIDMod="-3" />
+      <MapTile TileID="754" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

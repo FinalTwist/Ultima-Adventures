@@ -1,0 +1,1199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+    <TransInfo Description="Shallow Water to Snow SN" HashKey="0C0C0C060606060606">
+    <MapTiles>
+      <MapTile TileID="80" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SN" HashKey="060C0C060606060606">
+    <MapTiles>
+      <MapTile TileID="80" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SN" HashKey="0C0C06060606060606">
+    <MapTiles>
+      <MapTile TileID="80" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SN" HashKey="060C06060606060606">
+    <MapTiles>
+      <MapTile TileID="80" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SN" HashKey="0C060C060606060606">
+    <MapTiles>
+      <MapTile TileID="80" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow EW" HashKey="0C06060C06060C0606">
+    <MapTiles>
+      <MapTile TileID="83" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow EW" HashKey="0C06060C0606060606">
+    <MapTiles>
+      <MapTile TileID="83" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow EW" HashKey="0606060C06060C0606">
+    <MapTiles>
+      <MapTile TileID="83" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow EW" HashKey="0606060C0606060606">
+    <MapTiles>
+      <MapTile TileID="83" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow EW" HashKey="0C06060606060C0606">
+    <MapTiles>
+      <MapTile TileID="83" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow WE" HashKey="06060C06060C06060C">
+    <MapTiles>
+      <MapTile TileID="81" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow WE" HashKey="06060606060C06060C">
+    <MapTiles>
+      <MapTile TileID="81" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow WE" HashKey="06060C06060C060606">
+    <MapTiles>
+      <MapTile TileID="81" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow WE" HashKey="06060606060C060606">
+    <MapTiles>
+      <MapTile TileID="81" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow WE" HashKey="06060C06060606060C">
+    <MapTiles>
+      <MapTile TileID="81" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NS" HashKey="0606060606060C0C0C">
+    <MapTiles>
+      <MapTile TileID="82" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NS" HashKey="0606060606060C0C06">
+    <MapTiles>
+      <MapTile TileID="82" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NS" HashKey="060606060606060C0C">
+    <MapTiles>
+      <MapTile TileID="82" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NS" HashKey="060606060606060C06">
+    <MapTiles>
+      <MapTile TileID="82" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NS" HashKey="0606060606060C060C">
+    <MapTiles>
+      <MapTile TileID="82" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060C06060C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060606060C0C0C0C">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060C06060C060C0C">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060606060C060C0C">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060606060C060C06">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060C060606060C0C">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060C0606060C0C0C">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060C0606060C0C06">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060606060C0C060C">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060C06060C0C060C">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060C06060C0C0C06">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060C06060C0C0606">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060C060606060C06">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060606060C0C0606">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060C06060C060C06">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060C0606060C060C">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWA" HashKey="06060606060C0C0C06">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="0C0C0C0C06060C0606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="0C0C060C06060C0606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="0C0C0C0C0606060606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="0C0C060C0606060606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="0C060C0C0606060606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="0C0C060606060C0606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="060C0C0606060C0606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="0C060C0606060C0606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="0C0C0C0606060C0606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="060C060C0606060606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="0C060C0C06060C0606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="06060C0C06060C0606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="060C0C0C06060C0606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="06060C0C0606060606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="060C060C06060C0606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="060C060606060C0606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEA" HashKey="060C0C0C0606060606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0C06060C06060C0C0C">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0606060C06060C0C0C">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0C06060C06060C0C06">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0606060C06060C0C06">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0606060C0606060C06">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0C06060C060606060C">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0C06060606060C0C0C">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0C06060606060C0C06">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0C0606060606060C06">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0606060C06060C060C">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0C06060C06060C060C">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0C0606060606060C0C">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0C06060C0606060C0C">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0606060C0606060C0C">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0606060C060606060C">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0C06060606060C060C">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEA" HashKey="0C06060C0606060C06">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="0C0C0C06060C06060C">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="0C0C0C06060C060606">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="060C0C06060C06060C">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="060C0C06060C060606">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="0C060606060C06060C">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="0C060C06060C060606">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="0C060C06060C06060C">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="0C0C0606060606060C">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="060C0606060606060C">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="0C0C0C06060606060C">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="0C0C0606060C060606">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="060C0C06060606060C">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="060C0606060C060606">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="0C060606060C060606">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="0C060C06060606060C">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="060C0606060C06060C">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWA" HashKey="0C0C0606060C06060C">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NWB" HashKey="0C0606060606060606">
+    <MapTiles>
+      <MapTile TileID="84" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SEB" HashKey="06060606060606060C">
+    <MapTiles>
+      <MapTile TileID="86" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow NEB" HashKey="06060C060606060606">
+    <MapTiles>
+      <MapTile TileID="85" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Snow SWB" HashKey="0606060606060C0606">
+    <MapTiles>
+      <MapTile TileID="87" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

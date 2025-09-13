@@ -1,0 +1,11 @@
+1. you need to change the directory in /scripts/MyserverSettings.cs
+Change return @"C:\Ultima-Adventures\Files";
+To return @"./Files";
+
+install mono (required)
+
+then run this in the main directory
+
+mcs -optimize+ -unsafe -t:exe -out:RunUO.exe -win32icon:Server/runuo.ico -nowarn:219,414 -d:NEWTIMERS -d:NEWPARENT -d:MONO -reference:System.Drawing -recurse:Server/*.cs 
+
+OR just run the linux executable with ./LinuxExecutable.exe

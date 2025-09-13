@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131818131818181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313181313181313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131318181818181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818131818131313">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="464" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131818131818131318">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="464" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181813181313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313131318181818">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="463" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818181818131818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131818131318131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="465" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313131318131318">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="465" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818131818131318">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="464" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818131318131318">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="465" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181313181313181818">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="464" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131318131818181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181313181813181813">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="465" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131818131318131318">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="465" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181313181313181313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313181813181813">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="465" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818181818181313">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="464" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818131818131818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181313181813181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="465" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313131818181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131818131818131313">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="464" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181813181813131313">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="463" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181813181813181313">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="463" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818181813181813">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="465" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131318131818131818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181813131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181813181818181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313131313131818">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="464" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313181313181813">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="464" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181813181813181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="465" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131318131318181818">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="463" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818181818131313">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="464" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818131318131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="465" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181313181313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181813181313181313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313131313181313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313181313181818">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="464" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313131313131318">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="466" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131818181818181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818181313181313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131318131318131818">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="463" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818181818131318">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="464" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818181818181813">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="466" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131818131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131318131318131318">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="465" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818181313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181813181813181813">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="465" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313131313181813">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="464" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131318131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818181813131313">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="463" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313131318131818">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="463" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181313131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313131818131818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131318131318131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="465" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313181818181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181313181313181813">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="464" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181818181813181313">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="463" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="181313181818181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313181813181818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="465" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131818131818131818">
+    <MapTiles>
+      <MapTile TileID="1001" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Cobblestone To Blank" HashKey="131313131313181818">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="464" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

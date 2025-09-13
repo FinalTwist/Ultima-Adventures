@@ -1,0 +1,278 @@
+UO Animation List
+-----------------
+
+(Any animation number not shown below is unused in the default UO client files).
+
+
+High Detail Critters
+
+Model #		Hex		Description
+-------		---		-----------
+
+1		0x1		Ogre
+2		0x2		Ettin
+3		0x3		Zombie
+4		0x4		Gargoyle
+5		0x5		Eagle
+6		0x6		Bird
+7		0x7		Orc Lord
+8		0x8		Corpser
+9		0x9		Daemon (unarmed)
+10		0xA		Daemon (with sword)
+12		0xC		Dragon (gray)
+13		0xD		Air Elemental
+14		0xE		Earth Elemental
+15		0xF		Fire Elemental
+16		0x10		Water Elemental
+17		0x11		Orc (unarmed)
+18		0x12		Ettin (with hammer)
+21		0x15		Giant Serpent
+22		0x16		Gazer
+24		0x18		Lich
+26		0x1A		Shade
+28		0x1C		Giant Spider
+29		0x1d		Ape
+30		0x1E		Harpy
+31		0x1F		Headless
+33		0x21		Lizardman (unarmed)
+35		0x23		Lizardman (with spear)
+36		0x24		Lizardman (with mace)
+39		0x27		Mongbat
+41		0x29		Orc (with club)
+42		0x2A		Rat Man (unarmed)
+44		0x2C		Rat Man (with axe)
+45		0x2D		Rat Man (with sword)
+47		0x2F		Reaper
+48		0x30		Scorpion
+50		0x32		Skeleton (unarmed)
+51		0x33		Slime
+52		0x34		Snake
+53		0x35		Troll (with axe)
+54		0x36		Troll (unarmed)
+55		0x37		Troll (with maul)
+56		0x38		Sleleton (with axe)
+57		0x39		Skeleton (with scimitar)
+58		0x3A		Wisp
+59		0x3B		Dragon (red)
+60		0x3C		Drake (gray)
+61		0x3D		Drake (red)
+70		0x46		Terethan Warrior
+71		0x47		Terethan Drone
+72		0x48		Terethan Matriarch
+75		0x4B		Titan
+76		0x4c		Cyclops
+80		0x50		Giant Toad
+81		0x51		Bullfrog
+85		0x55		Ophidean Mage
+86		0x56		Ophidean Warrior
+87		0x57		Ophidean Queen
+95		0x5F		Unknown Sea Creature
+150		0x96		Sea Serpent
+151		0x97		Dolphin
+
+Low Detail Critters
+
+200		0xC8		Horse (light brown)
+201		0xC9		Cat/HellCat
+202		0xCA		Alligator
+203		0xCB		Pig
+204		0xCC		Horse (Dark Brown)
+205		0xCD		Bunny
+206		0xCE		Lava Lizard
+207		0xCF		Sheep (unsheered)
+208		0xD0		Chicken
+209		0xD1		Goat
+210		0xD2		Desert Ostard
+211		0xD3		Bear (Dark Brown)
+212		0xD4		Bear (Light Brown)
+213		0xD5		Bear (Polar)
+214		0xD6		Panther
+215		0xD7		Giant Rat
+216		0xD8		Cow (Black and White)
+217		0xD9		Dog
+218		0xDA		Frenzied Ostard
+219		0xDB		Forest Ostard
+220		0xDC		Llama
+221		0xDD		Walrus
+223		0xDF		Sheep (sheered)
+225		0xE1		Wolf/Hellhound
+226		0xE2		Horse (Light Grey)
+228		0xE4		Horse (Grey-Brown)
+231		0xE7		Cow (Brown)
+232		0xE8		Bull (Brown)
+233		0xE9		Bull (Black and White)
+234		0xEA		Great Hart
+237		0xED		Deer
+238		0xEE		Rat
+290		0x122		Boar
+291		0x123		Pack Horse
+292		0x124		Pack Llama
+
+People and Accessories
+
+400		0x190		Man
+401		0x191		Woman
+404		0x194		Hat Floppy
+405		0x195		Hat Two Pointed
+406		0x196		Hat Cap
+407		0x197		Hat Straw Tall
+408		0x198		Hat Straw
+409		0x199		Hat Wide Brim
+410		0x19A		Hat Skullcap
+411		0x19B		Hat Feathered
+412		0x18C		Hat Pirate
+413		0x19D		Hat Jesters
+414		0x19E		Mask Bear
+415		0x19F		Mask Deer
+416		0x1A0		Mask Orc
+417		0x1A1		Mask Tribal 1
+418		0x1A2		Mask Tribal 2
+419		0x1A3		Hat Bandanna
+430		0x1AE		Pants Short
+431		0x1AF		Pants Long
+434		0x1B2		Shirt Sleeveless
+435		0x1B3		Shirt Fancy
+447		0x1BF		Dress Long
+448		0x1C0		Dress Fancy
+449		0x1C1		Skirt Long
+455		0x1C7		Kilt
+465		0x1D1		Apron Long
+466		0x1D2		Apron Short
+468		0x1D4		Cape
+469		0x1D5		Robe
+476		0x1DC		Boots Theigh
+477		0x1DD		Boots
+479		0x1DF		Shoes Sandals
+480		0x1E0		Shoes
+490		0x1EA		Sash
+492		0x1EC		Hat Headband
+500		0x1F4		Light Lantern Lit
+501		0x1F5		Light Torch Lit
+502		0x1F6		Light Candle Lit
+503		0x1F7		Light Lantern Unlit
+504		0x1F8		Light Torch Unlit
+505		0x1F9		Light Candle Unlit
+521		0x209		Armor Breast Studded Leather
+523		0x20B		Armor Arms Studded Leather
+525		0x20D		Armor Gorget Studded Leather
+527		0x20F		Armor Breast Plate
+528		0x210		Armor Arms Plate
+529		0x211		Armor Leggings Plate
+530		0x212		Armor Gloves Plate
+538		0x21A		Armor Breast Chain
+540		0x21C		Armor Leggings Chainmail
+542		0x21E		Armor Breast Leather
+543		0x21F		Armor Leggings Leather
+544		0x220		Armor Arms Leather
+545		0x221		Armor Gloves Leather
+546		0x222		Armor Gorget Leather
+548		0x224		Armor Breast Ringmail
+549		0x225		Armor Leggings Ringmail
+550		0x226		Armor Arms Ringmail
+554		0x22A		Armor Breast Bone
+555		0x22B		Armor Leggings Bone
+556		0x22C		Armor Arms Bone
+557		0x22D		Armor Gloves Bone
+560		0x230		Armor Helm Leather Cap
+561		0x231		Armor Helm Chainmail Coif
+562		0x232		Armor Helm Bone
+563		0x233		Armor Helm Plate
+564		0x234		Armor Helm Bascinet
+565		0x235		Armor Helm Helmet
+573		0x23D		Blue E Vortex
+574		0x23E		Blade Spirit
+576		0x240		Armor Shield Round
+577		0x241		Armor Shield Bronze
+578		0x242		Armor Shield Wooden
+579		0x243		Armor Shield Tiny Round
+580		0x244		Armor Shield Wooden Kite
+581		0x245		Armor Shield Kite
+582		0x246		Armor Shield Heater
+611		0x263		Weapon BattleAxe
+612		0x264		Weapon Axe
+613		0x265		Weapon Executioners Axe
+614		0x266		Weapon Bardiche
+615		0x267		Weapon Hatchet
+616		0x268		Weapon Heavy Crossbow
+617		0x269		Weapon Black Staff
+618		0x26A		Weapon Sword
+619		0x26B		Weapon Cleaver
+620		0x26C		Weapon Club
+621		0x26D		Weapon Crook
+622		0x26E		Weapon Dagger
+623		0x26F		Weapon Cutlass
+624		0x270		Weapon Halbred
+625		0x271		Weapon HammerPick
+626		0x272		Weapon Spear
+627		0x273		Weapon Skinning Knife
+628		0x274		Weapon Gnarled Staff
+629		0x275		Weapon Katana
+630		0x276		Weapon Kryss
+631		0x277		Weapon Mace
+633		0x279		Weapon Maul
+634		0x27A		Weapon Large Battle Axe
+635		0x27B		Weapon Pick
+636		0x27C		Weapon Pitchfork
+637		0x27D		Weapon Scimitar
+638		0x27E		Weapon Short Sword
+639		0x27F		Weapon Short Spear
+640		0x280		Weapon Hammer
+641		0x281		Weapon Spear 2 (?)
+642		0x282		Weapon War Mace
+643		0x283		Weapon Viking Sword
+644		0x284		Weapon War Axe
+645		0x285		Weapon War Fork
+646		0x286		Weapon War Hammer
+648		0x288		Weapon Quarterstaff
+649		0x289		Weapon Bow
+651		0x28B		Weapon Crossbow
+653		0x28D		Weapon Axe 2
+700		0x2BC		Hair Short
+701		0x2BD		Hair Long
+702		0x2BE		Hair Ponytail
+703		0x2BF		Hair Mohawk
+710		0x2C6		Hair Shoulder Length
+712		0x2C8		Hair Buns
+800		0x320		Hair Facial Goatee
+801		0x321		Hair Facial Long Beard
+802		0x322		Hair Facial Short Beard
+803		0x323		Hair Facial Mustache
+900		0x384		Hair Short 2
+901		0x385		Hair Receeding	
+902		0x386		Hair Pigtails
+903		0x387		Hair Topknot
+904		0x388		Hair Facial Short Beard 2
+905		0x389		Hair Facial Long Beard 2
+906		0x38A		Hair Facial Goatee 2
+909		0x38D		Shirt 1 (Tunic)
+910		0x38E		Shirt 2 (Sleeveless Tunic)
+911		0x38F		Shirt Checkered
+912		0x390		Shirt Jesters
+913		0x391		Shirt 5 (Sleeveless w/shoulderpads)
+921		0x399		Armor Female 1
+922		0x39A		Armor Female 2
+923		0x39B		Armor Female 3
+924		0x38C		Armor Female 4
+925		0x39D		Armor Female 5
+926		0x39E		Armor Female Leather Skirt
+927		0x39F		Armor Female Leather Shorts
+928		0x3A0		Armor Helm Close Helm
+929		0x3A1		Armor Helm Norse Helm
+970		0x3CA		Ghost
+971		0x3CB		Skirt Long 2
+972		0x3CC		Fishing Rod
+973		0x3CD		Armor Helm Orc Helm
+980		0x3D4		Wand 1
+981		0x3D5		Wand 2
+982		0x3D6		Wand 3
+983		0x#D7		Wand 4
+984		0x3D8		Spellbook 1
+985		0x3D9		Spellbook 2 (left hand?)
+986		0x3DA		Armor Breast Female Chain
+987		0x3DB		Counselor/GM
+988		0x3DC		Shirt 6
+990		0x3DE		Lord British
+991		0x3DF		Blackthorne
+992		0x3E0		Armor Shield Order
+993		0x3E1		Armor Shield Chaos
+994		0x3E2		Dupre

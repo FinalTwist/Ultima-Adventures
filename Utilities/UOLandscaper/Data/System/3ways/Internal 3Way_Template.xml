@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Wizard>
+	<Tile Pattern="AACBBCBBC" MapTile=" " StaticTile=" " />
+	<Tile Pattern="BBCBBCAAC" MapTile=" " StaticTile=" " />
+	<Tile Pattern="CCCABBABB" MapTile=" " StaticTile=" " />
+	<Tile Pattern="CCCBBABBA" MapTile=" " StaticTile=" " />
+	<Tile Pattern="CAACBBCBB" MapTile=" " StaticTile=" " />
+	<Tile Pattern="CBBCBBCAA" MapTile=" " StaticTile=" " />
+	<Tile Pattern="ABBABBCCC" MapTile=" " StaticTile=" " />
+	<Tile Pattern="BBABBACCC" MapTile=" " StaticTile=" " />
+
+	<Tile Pattern="ACCBCCBCC" MapTile=" " StaticTile=" " />
+	<Tile Pattern="ABBCCCCCC" MapTile=" " StaticTile=" " />
+	<Tile Pattern="CCACCBCCB" MapTile=" " StaticTile=" " />
+	<Tile Pattern="CCCCCCABB" MapTile=" " StaticTile=" " />
+	<Tile Pattern="CCCCCCBBA" MapTile=" " StaticTile=" " />
+	<Tile Pattern="CCBCCBCCA" MapTile=" " StaticTile=" " />
+	<Tile Pattern="BBACCCCCC" MapTile=" " StaticTile=" " />
+	<Tile Pattern="BCCBCCACC" MapTile=" " StaticTile=" " />
+
+	<Tile Pattern="ACCACCBCC" MapTile=" " StaticTile=" " />
+	<Tile Pattern="AABCCCCCC" MapTile=" " StaticTile=" " />
+	<Tile Pattern="CCACCACCB" MapTile=" " StaticTile=" " />
+	<Tile Pattern="CCCCCCAAB" MapTile=" " StaticTile=" " />
+	<Tile Pattern="CCCCCCBAA" MapTile=" " StaticTile=" " />
+	<Tile Pattern="CCBCCACCA" MapTile=" " StaticTile=" " />
+	<Tile Pattern="BAACCCCCC" MapTile=" " StaticTile=" " />
+	<Tile Pattern="BCCACCACC" MapTile=" " StaticTile=" " />
+
+
+</Wizard>

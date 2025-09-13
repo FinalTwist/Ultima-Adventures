@@ -1,0 +1,844 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291529151529151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="152915151529151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="292929151515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12917" AltIDMod="0" />
+      <StaticTile TileID="12916" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="292915291515291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291529151515291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151529291529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="152915291515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515291515292929">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151515291529">
+    <MapTiles>
+      <MapTile TileID="1596" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12915" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151515292929">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515291515152929">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="292915151515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12917" AltIDMod="0" />
+      <StaticTile TileID="12916" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515291515291529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="152915151529151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="292929151515151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151529152915">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151529291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515291515292915">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="152929151529151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515291515291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12912" AltIDMod="0" />
+      <StaticTile TileID="12913" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="152929151515291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529291515291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291529291515291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151529292915">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="292929151515291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515291515291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12912" AltIDMod="0" />
+      <StaticTile TileID="12913" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="292929151529151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515291515292915">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="152929291515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151529152929">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="292929291515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151529292929">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151515291529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="292915151529151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515291515291529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="152915151515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12917" AltIDMod="0" />
+      <StaticTile TileID="12916" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515291515152929">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="292929151529151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515291515292929">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="292915291515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="152915291515291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="292915151529151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151529151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12919" AltIDMod="0" />
+      <StaticTile TileID="12918" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="152915151515151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515291515152915">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515151515291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12913" AltIDMod="0" />
+      <StaticTile TileID="12912" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="292915151515291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151529151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12919" AltIDMod="0" />
+      <StaticTile TileID="12918" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151515292915">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151529151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12918" AltIDMod="0" />
+      <StaticTile TileID="12919" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151515151529">
+    <MapTiles>
+      <MapTile TileID="1595" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12921" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515291515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12912" AltIDMod="0" />
+      <StaticTile TileID="12913" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515151515292915">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="152929151529151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151529151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12918" AltIDMod="0" />
+      <StaticTile TileID="12919" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151515152929">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291529151515151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291529291515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151529152915">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515151515152929">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515291515151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515151515292929">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151515152915">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291529151515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12917" AltIDMod="0" />
+      <StaticTile TileID="12916" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151529292929">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151529152929">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="292929291515291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515151515152915">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151515152915">
+    <MapTiles>
+      <MapTile TileID="1596" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12885" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="152929151515151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12923" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151529292915">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515151515291529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151515292929">
+    <MapTiles>
+      <MapTile TileID="1596" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12915" AltIDMod="0" />
+      <StaticTile TileID="12885" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515291515151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515151515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12922" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151515152929">
+    <MapTiles>
+      <MapTile TileID="1596" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12885" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="152929151515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12917" AltIDMod="0" />
+      <StaticTile TileID="12916" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529291515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151515151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12919" AltIDMod="0" />
+      <StaticTile TileID="12918" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515151529151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151529291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151515292915">
+    <MapTiles>
+      <MapTile TileID="1596" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12915" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="152929291515291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515291515151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12912" AltIDMod="0" />
+      <StaticTile TileID="12913" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291529151529151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515151529151515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151529151529291529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12927" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="152915151515291515">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12925" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="151515151515291515">
+    <MapTiles>
+      <MapTile TileID="1596" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12920" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="291515291515152915">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12924" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Dungeon Cave To Swamp" HashKey="292915151515151529">
+    <MapTiles>
+      <MapTile TileID="1597" AltIDMod="0" />
+      <MapTile TileID="1596" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12926" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

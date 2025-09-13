@@ -1,0 +1,1199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060632060606323206">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="063206320606320606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="320606320606323206">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss EW" HashKey="320606320606320606">
+    <MapTiles>
+      <MapTile TileID="83" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="060606320606063206">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss EW" HashKey="060606320606060606">
+    <MapTiles>
+      <MapTile TileID="83" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="063232060632060606">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060632060632063232">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="323232060606060632">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="323206060632060632">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060606060632320606">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060606060632323206">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="063206060606060632">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SN" HashKey="323206060606060606">
+    <MapTiles>
+      <MapTile TileID="80" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="320606320606060632">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="320632320606320606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="063232060606320606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="060606320606320632">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NS" HashKey="060606060606063232">
+    <MapTiles>
+      <MapTile TileID="82" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="063206320606060606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="323232060606320606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060632060606323232">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="323206320606060606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="320606060606063232">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="320606320606320632">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="060632320606320606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="060606320606060632">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060606060632323232">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="063232060606060632">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060632060632323232">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss EW" HashKey="320606320606060606">
+    <MapTiles>
+      <MapTile TileID="83" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="320606320606063206">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss EW" HashKey="060606320606320606">
+    <MapTiles>
+      <MapTile TileID="83" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="060606320606323206">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="320632060606320606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="320606060632060632">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NS" HashKey="060606060606323232">
+    <MapTiles>
+      <MapTile TileID="82" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="323232320606320606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="063206060632060606">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="320606060606063206">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWB" HashKey="320606060606060606">
+    <MapTiles>
+      <MapTile TileID="84" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060632060606063232">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="320632060606060632">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SN" HashKey="063232060606060606">
+    <MapTiles>
+      <MapTile TileID="80" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060632060632323206">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060632060632320606">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="320606060606320632">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="320606320606063232">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060606060632063232">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="060632320606060606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="063232060632060632">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="060606320606323232">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="063206060606320606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="063206060632060632">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="320606060632060606">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="323232060632060606">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NS" HashKey="060606060606323206">
+    <MapTiles>
+      <MapTile TileID="82" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWB" HashKey="060606060606320606">
+    <MapTiles>
+      <MapTile TileID="87" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss WE" HashKey="060632060632060632">
+    <MapTiles>
+      <MapTile TileID="81" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="320632060632060606">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="063232320606060606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="323206320606320606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060632060606063206">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEB" HashKey="060632060606060606">
+    <MapTiles>
+      <MapTile TileID="85" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SN" HashKey="320632060606060606">
+    <MapTiles>
+      <MapTile TileID="80" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEB" HashKey="060606060606060632">
+    <MapTiles>
+      <MapTile TileID="86" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="323232320606060606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="320632060632060632">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060632060632320632">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss EW" HashKey="320606060606320606">
+    <MapTiles>
+      <MapTile TileID="83" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="320606060606323206">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060606060632063206">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss WE" HashKey="060606060632060606">
+    <MapTiles>
+      <MapTile TileID="81" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060632060606320632">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="323206060606320606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="320606320606323232">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="323232060632060632">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="320632320606060606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="060606320606063232">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NS" HashKey="060606060606320632">
+    <MapTiles>
+      <MapTile TileID="82" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss WE" HashKey="060632060632060606">
+    <MapTiles>
+      <MapTile TileID="81" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060632060632063206">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SN" HashKey="323232060606060606">
+    <MapTiles>
+      <MapTile TileID="80" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NWA" HashKey="060606060632320632">
+    <MapTiles>
+      <MapTile TileID="78" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SN" HashKey="063206060606060606">
+    <MapTiles>
+      <MapTile TileID="80" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="323206060606060632">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss WE" HashKey="060632060606060632">
+    <MapTiles>
+      <MapTile TileID="81" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NS" HashKey="060606060606063206">
+    <MapTiles>
+      <MapTile TileID="82" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SWA" HashKey="323206060632060606">
+    <MapTiles>
+      <MapTile TileID="77" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss SEA" HashKey="063232320606320606">
+    <MapTiles>
+      <MapTile TileID="76" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss NEA" HashKey="320606060606323232">
+    <MapTiles>
+      <MapTile TileID="79" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water to Moss WE" HashKey="060606060632060632">
+    <MapTiles>
+      <MapTile TileID="81" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

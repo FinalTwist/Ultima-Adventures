@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+    <TransInfo Description="Grass to Beach" HashKey="505050808080808080">
+    <MapTiles>
+      <MapTile TileID="57" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="805050808080808080">
+    <MapTiles>
+      <MapTile TileID="57" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="505080808080808080">
+    <MapTiles>
+      <MapTile TileID="57" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="805080808080808080">
+    <MapTiles>
+      <MapTile TileID="57" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508050808080808080">
+    <MapTiles>
+      <MapTile TileID="57" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080508080508080">
+    <MapTiles>
+      <MapTile TileID="55" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080508080808080">
+    <MapTiles>
+      <MapTile TileID="55" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080508080508080">
+    <MapTiles>
+      <MapTile TileID="55" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080508080808080">
+    <MapTiles>
+      <MapTile TileID="55" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080808080508080">
+    <MapTiles>
+      <MapTile TileID="55" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808050808050">
+    <MapTiles>
+      <MapTile TileID="56" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808050808050">
+    <MapTiles>
+      <MapTile TileID="56" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808050808080">
+    <MapTiles>
+      <MapTile TileID="56" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808050808080">
+    <MapTiles>
+      <MapTile TileID="56" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808080808050">
+    <MapTiles>
+      <MapTile TileID="56" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808080505050">
+    <MapTiles>
+      <MapTile TileID="58" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808080505080">
+    <MapTiles>
+      <MapTile TileID="58" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808080805050">
+    <MapTiles>
+      <MapTile TileID="58" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808080805080">
+    <MapTiles>
+      <MapTile TileID="58" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808080508050">
+    <MapTiles>
+      <MapTile TileID="58" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808050505050">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808050505050">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808050805050">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808050805050">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808050805080">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808080805050">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808080505050">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808080505080">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808050508050">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808050508050">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808050505080">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808050508080">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808080805080">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808050508080">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808050805080">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808080508050">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808050505080">
+    <MapTiles>
+      <MapTile TileID="53" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="505050508080508080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="505080508080508080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="505050508080808080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="505080508080808080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508050508080808080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="505080808080508080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="805050808080508080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508050808080508080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="505050808080508080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="805080508080808080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508050508080508080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050508080508080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="805050508080508080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050508080808080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="805080508080508080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="805080808080508080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="805050508080808080">
+    <MapTiles>
+      <MapTile TileID="51" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080508080505050">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080508080505050">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080508080505080">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080508080505080">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080508080805080">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080508080808050">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080808080505050">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080808080505080">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080808080805080">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080508080508050">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080508080508050">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080808080805050">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080508080805050">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080508080805050">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080508080808050">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080808080508050">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080508080805080">
+    <MapTiles>
+      <MapTile TileID="54" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="505050808050808050">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="505050808050808080">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="805050808050808050">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="805050808050808080">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080808050808050">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508050808050808080">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508050808050808050">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="505080808080808050">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="805080808080808050">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="505050808080808050">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="505080808050808080">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="805050808080808050">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="805080808050808080">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080808050808080">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508050808080808050">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="805080808050808050">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="505080808050808050">
+    <MapTiles>
+      <MapTile TileID="52" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="508080808080808080">
+    <MapTiles>
+      <MapTile TileID="62" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808080808050">
+    <MapTiles>
+      <MapTile TileID="61" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808050808080808080">
+    <MapTiles>
+      <MapTile TileID="59" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Grass to Beach" HashKey="808080808080508080">
+    <MapTiles>
+      <MapTile TileID="60" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

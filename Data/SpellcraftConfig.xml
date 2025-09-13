@@ -1,0 +1,146 @@
+<?xml version='1.0' ?>
+<!--
+	This file enables configuration of the Xanthos Auction System module without code changes
+	You may only change the values between the '>' and '<' characters to set the configuratoin
+	parameters.  The type attribute is ignored and is only provided as a documentary guide to
+	the user. Array element names are also meaningless.  Values may be left empty, with the
+	exception of individual array elements, so that the value in the code is used.
+	
+	For example: to change the foo configuration from 50 to 100 one would change
+		<foo type="int">50</foo>
+			to
+		<foo type="int">100</foo>
+-->
+<Xanthos>
+	<SpellCraftingSystem>
+		<ArtifactCraftable type="bool">true</ArtifactCraftable>		<!-- whether artifcats can be spellcrafted (SC'd) -->
+		<BraceletsRingsOnly type="bool">false</BraceletsRingsOnly>	<!-- Limits the kind of jewelry that can be SC'd -->
+		<MaxPropsAllowed type="int">5</MaxPropsAllowed>				<!-- Items with at least this many props cannot be SC'd -->
+		<ScPenaltyChance type="double">0.35</ScPenaltyChance>		<!-- Chance that applying Spell Channelling to a weapon will result in a casting penalty -->
+		<ExplodeChance type="double">0.35</ExplodeChance>			<!-- Chance that an explosion will occur during SC'ing -->
+		<DestroyChance type="double">0.35</DestroyChance>			<!-- Chance that an explosion will destroy the item -->
+		<ExplodeMinDmg type="int">20</ExplodeMinDmg>				<!-- Min damage done to crafter during an explosion -->
+		<ExplodeMaxDmg type="int">80</ExplodeMaxDmg>				<!-- Max damage done to crafter during an explosion -->
+		<CraftersMarkChance type="double">0.35</CraftersMarkChance>	<!-- Chance of the item bearing the SC'ers mark -->
+		<UseCharges type="bool">true</UseCharges>					<!-- Whether SC'ing uses magic jewel charges -->
+
+		<!-- Chances/amounts for SC loot drops on Guardians of the Magics -->
+		<GuardianOfTheMagicsBookChance type="double">0.03</GuardianOfTheMagicsBookChance>
+		<GuardianOfTheMagicsJewelChance type="double">0.35</GuardianOfTheMagicsJewelChance>
+		<GuardianOfTheMagicsMagicJewelSpawn type="int">3</GuardianOfTheMagicsMagicJewelSpawn>
+		
+		<MinimumInscription type="int">50</MinimumInscription>		<!-- Cannot SC with less -->
+		<MinimumAlchemy type="int">50</MinimumAlchemy>				<!-- Cannot SC with less -->
+		<MaximumSkillValue type="int">100</MaximumSkillValue>		<!-- Highest Inscription and Alchemy can be on this shard -->
+		<MinimumIntensity type="int">2</MinimumIntensity>
+		<MaximumIntensity type="int">10</MaximumIntensity>
+
+		<!-- Individual crafts can be enabled/disabled by changing true to false in the following. -->
+		<CraftEnabled type="array">				
+			<str_bonus index="0" type="bool">true</str_bonus>
+			<dex_bonus index="1" type="bool">true</dex_bonus>
+			<int_bonus index="2" type="bool">true</int_bonus>
+			<hp_bonus index="3" type="bool">true</hp_bonus>
+			<stam_bonus index="4" type="bool">true</stam_bonus>
+			<mana_bonus index="5" type="bool">true</mana_bonus>
+			<physical_resist index="6" type="bool">true</physical_resist>
+			<fire_resist index="7" type="bool">true</fire_resist>
+			<cold_resist index="8" type="bool">true</cold_resist>
+			<poison_resist index="9" type="bool">true</poison_resist>
+			<energy_resist index="10" type="bool">true</energy_resist>
+			<hit_point_regeneration index="11" type="bool">true</hit_point_regeneration>
+			<mana_regeneration index="12" type="bool">true</mana_regeneration>
+			<stamina_regeneration index="13" type="bool">true</stamina_regeneration>
+			<faster_cast_recovery index="14" type="bool">true</faster_cast_recovery>
+			<faster_cast_speed index="15" type="bool">true</faster_cast_speed>
+			<lower_mana_cost index="16" type="bool">true</lower_mana_cost>
+			<lower_reagent_cost index="17" type="bool">true</lower_reagent_cost>
+			<mage_armor index="18" type="bool">true</mage_armor>
+			<mage_weapon index="19" type="bool">true</mage_weapon>
+			<spell_channeling index="20" type="bool">true</spell_channeling>
+			<spell_damage_increase index="21" type="bool">true</spell_damage_increase>
+			<hit_cold_area index="22" type="bool">true</hit_cold_area>
+			<hit_energy_area index="23" type="bool">true</hit_energy_area>
+			<hit_fire_area index="24" type="bool">true</hit_fire_area>
+			<hit_physical_area index="25" type="bool">true</hit_physical_area>
+			<hit_poison_area index="26" type="bool">true</hit_poison_area>
+			<hit_dispel index="27" type="bool">true</hit_dispel>
+			<hit_fireball index="28" type="bool">true</hit_fireball>
+			<hit_harm index="29" type="bool">true</hit_harm>
+			<hit_lightning index="30" type="bool">true</hit_lightning>
+			<hit_magic_arrow index="31" type="bool">true</hit_magic_arrow>
+			<hit_lower_attack index="32" type="bool">true</hit_lower_attack>
+			<hit_lower_defense index="33" type="bool">true</hit_lower_defense>
+			<hit_leech_hits index="34" type="bool">true</hit_leech_hits>
+			<hit_leech_mana index="35" type="bool">true</hit_leech_mana>
+			<hit_leech_stamina index="36" type="bool">true</hit_leech_stamina>
+			<use_best_weapon_skill index="37" type="bool">true</use_best_weapon_skill>
+			<weapon_damage_increase index="38" type="bool">true</weapon_damage_increase>
+			<swing_speed_increase index="39" type="bool">true</swing_speed_increase>
+			<hit_chance_increase index="40" type="bool">true</hit_chance_increase>
+			<defense_chance_increase index="41" type="bool">true</defense_chance_increase>
+			<enhance_potions index="42" type="bool">true</enhance_potions>
+			<lower_stat_requirements index="43" type="bool">true</lower_stat_requirements>
+			<luck index="44" type="bool">true</luck>
+			<reflect_physical index="45" type="bool">true</reflect_physical>
+			<self_repair index="46" type="bool">true</self_repair>
+			<night_sight index="47" type="bool">true</night_sight>
+			<slayer index="48" type="bool">true</slayer>
+			<durability index="49" type="bool">true</durability>
+		</CraftEnabled>
+
+		<!-- Number of MagicJewels each craft consumes -->
+		<MagicJewelRequirements type="array">				
+			<str_bonus index="0" type="int">1</str_bonus>
+			<dex_bonus index="1" type="int">1</dex_bonus>
+			<int_bonus index="2" type="int">1</int_bonus>
+			<hp_bonus index="3" type="int">1</hp_bonus>
+			<stam_bonus index="4" type="int">1</stam_bonus>
+			<mana_bonus index="5" type="int">1</mana_bonus>
+			<physical_resist index="6" type="int">1</physical_resist>
+			<fire_resist index="7" type="int">1</fire_resist>
+			<cold_resist index="8" type="int">1</cold_resist>
+			<poison_resist index="9" type="int">1</poison_resist>
+			<energy_resist index="10" type="int">1</energy_resist>
+			<hit_point_regeneration index="11" type="int">1</hit_point_regeneration>
+			<mana_regeneration index="12" type="int">1</mana_regeneration>
+			<stamina_regeneration index="13" type="int">1</stamina_regeneration>
+			<faster_cast_recovery index="14" type="int">1</faster_cast_recovery>
+			<faster_cast_speed index="15" type="int">1</faster_cast_speed>
+			<lower_mana_cost index="16" type="int">1</lower_mana_cost>
+			<lower_reagent_cost index="17" type="int">1</lower_reagent_cost>
+			<mage_armor index="18" type="int">1</mage_armor>
+			<mage_weapon index="19" type="int">1</mage_weapon>
+			<spell_channeling index="20" type="int">1</spell_channeling>
+			<spell_damage_increase index="21" type="int">1</spell_damage_increase>
+			<hit_cold_area index="22" type="int">1</hit_cold_area>
+			<hit_energy_area index="23" type="int">1</hit_energy_area>
+			<hit_fire_area index="24" type="int">1</hit_fire_area>
+			<hit_physical_area index="25" type="int">1</hit_physical_area>
+			<hit_poison_area index="26" type="int">1</hit_poison_area>
+			<hit_dispel index="27" type="int">1</hit_dispel>
+			<hit_fireball index="28" type="int">1</hit_fireball>
+			<hit_harm index="29" type="int">1</hit_harm>
+			<hit_lightning index="30" type="int">1</hit_lightning>
+			<hit_magic_arrow index="31" type="int">1</hit_magic_arrow>
+			<hit_lower_attack index="32" type="int">1</hit_lower_attack>
+			<hit_lower_defense index="33" type="int">1</hit_lower_defense>
+			<hit_leech_hits index="34" type="int">1</hit_leech_hits>
+			<hit_leech_mana index="35" type="int">1</hit_leech_mana>
+			<hit_leech_stamina index="36" type="int">1</hit_leech_stamina>
+			<use_best_weapon_skill index="37" type="int">1</use_best_weapon_skill>
+			<weapon_damage_increase index="38" type="int">1</weapon_damage_increase>
+			<swing_speed_increase index="39" type="int">1</swing_speed_increase>
+			<hit_chance_increase index="40" type="int">1</hit_chance_increase>
+			<defense_chance_increase index="41" type="int">1</defense_chance_increase>
+			<enhance_potions index="42" type="int">1</enhance_potions>
+			<lower_stat_requirements index="43" type="int">1</lower_stat_requirements>
+			<luck index="44" type="int">1</luck>
+			<reflect_physical index="45" type="int">1</reflect_physical>
+			<self_repair index="46" type="int">1</self_repair>
+			<night_sight index="47" type="int">1</night_sight>
+			<slayer index="48" type="int">1</slayer>
+			<durability index="49" type="int">1</durability>
+		</MagicJewelRequirements>
+	</SpellCraftingSystem>	
+</Xanthos>

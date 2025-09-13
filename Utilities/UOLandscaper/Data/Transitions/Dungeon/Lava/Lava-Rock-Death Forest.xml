@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C0D0D4C0D0D121212">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12955" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D0D4C4C124C4C12">
+    <MapTiles>
+      <MapTile TileID="220" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12972" AltIDMod="0" />
+      <StaticTile TileID="12973" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="1212124C0D0D4C0D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12934" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D4C4C0D4C4C0D1212">
+    <MapTiles>
+      <MapTile TileID="221" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12976" AltIDMod="0" />
+      <StaticTile TileID="12977" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="124C4C124C4C120D0D">
+    <MapTiles>
+      <MapTile TileID="222" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12974" AltIDMod="0" />
+      <StaticTile TileID="12975" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="12120D4C4C4C4C4C4C">
+    <MapTiles>
+      <MapTile TileID="223" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12966" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="124C4C0D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12943" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D4C4C124C4C124C4C">
+    <MapTiles>
+      <MapTile TileID="222" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12967" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D4C0D0D4C121212">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12948" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C124C4C124C4C0D">
+    <MapTiles>
+      <MapTile TileID="220" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12968" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D0D0D0D0D4C1212">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12941" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C4C0D0D120D0D12">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12954" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D120D0D124C4C12">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12948" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C0D4C4C124C4C12">
+    <MapTiles>
+      <MapTile TileID="220" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12966" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D4C4C0D4C4C124C4C">
+    <MapTiles>
+      <MapTile TileID="226" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12976" AltIDMod="0" />
+      <StaticTile TileID="12977" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D4C0D0D4C0D0D12">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12946" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D124C4C124C4C12">
+    <MapTiles>
+      <MapTile TileID="220" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12972" AltIDMod="0" />
+      <StaticTile TileID="12973" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="124C4C120D0D120D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12934" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C124C4C0D4C4C0D">
+    <MapTiles>
+      <MapTile TileID="224" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12970" AltIDMod="0" />
+      <StaticTile TileID="12971" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D0D124C4C124C4C">
+    <MapTiles>
+      <MapTile TileID="222" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12972" AltIDMod="0" />
+      <StaticTile TileID="12973" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C0D4C4C0D4C4C12">
+    <MapTiles>
+      <MapTile TileID="225" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12970" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="1212124C4C0D4C4C0D">
+    <MapTiles>
+      <MapTile TileID="223" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12970" AltIDMod="0" />
+      <StaticTile TileID="12971" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C4C4C4C4C0D1212">
+    <MapTiles>
+      <MapTile TileID="221" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12969" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D0D0D0D0D4C4C12">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12941" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C0D4C4C0D121212">
+    <MapTiles>
+      <MapTile TileID="221" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12970" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="120D0D120D0D4C0D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12944" AltIDMod="0" />
+      <StaticTile TileID="12945" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C4C4C4C4C0D0D12">
+    <MapTiles>
+      <MapTile TileID="225" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12974" AltIDMod="0" />
+      <StaticTile TileID="12975" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="124C4C124C4C0D4C4C">
+    <MapTiles>
+      <MapTile TileID="222" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12969" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C124C4C120D0D12">
+    <MapTiles>
+      <MapTile TileID="220" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12974" AltIDMod="0" />
+      <StaticTile TileID="12975" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C12124C0D0D4C0D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12934" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D124C4C4C4C4C4C">
+    <MapTiles>
+      <MapTile TileID="224" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12972" AltIDMod="0" />
+      <StaticTile TileID="12973" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="120D0D4C4C4C4C4C4C">
+    <MapTiles>
+      <MapTile TileID="227" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12972" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D120D0D4C0D0D4C">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12946" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="12120D4C4C0D4C4C0D">
+    <MapTiles>
+      <MapTile TileID="223" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12970" AltIDMod="0" />
+      <StaticTile TileID="12971" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D12120D4C4C0D4C4C">
+    <MapTiles>
+      <MapTile TileID="223" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12976" AltIDMod="0" />
+      <StaticTile TileID="12977" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="12124C0D0D4C0D0D4C">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12954" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="120D0D4C0D0D4C0D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12944" AltIDMod="0" />
+      <StaticTile TileID="12945" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="120D0D120D0D124C4C">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12955" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C4C4C4C4C120D0D">
+    <MapTiles>
+      <MapTile TileID="226" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12974" AltIDMod="0" />
+      <StaticTile TileID="12975" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="1212120D0D4C0D0D4C">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12954" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C120D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12943" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C4C4C4C4C12120D">
+    <MapTiles>
+      <MapTile TileID="221" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12968" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D4C0D0D4C12124C">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12948" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D0D0D0D0D124C4C">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12941" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="1212120D4C4C0D4C4C">
+    <MapTiles>
+      <MapTile TileID="223" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12977" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C0D4C4C0D12120D">
+    <MapTiles>
+      <MapTile TileID="221" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12970" AltIDMod="0" />
+      <StaticTile TileID="12971" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D4C0D0D120D0D12">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12946" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D120D0D124C4C4C">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12948" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C124C4C120D0D0D">
+    <MapTiles>
+      <MapTile TileID="220" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12974" AltIDMod="0" />
+      <StaticTile TileID="12975" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D120D0D120D0D4C">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12946" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="120D0D124C4C124C4C">
+    <MapTiles>
+      <MapTile TileID="222" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12972" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D12124C4C4C4C4C4C">
+    <MapTiles>
+      <MapTile TileID="223" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12967" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="120D0D120D0D4C4C4C">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12955" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C0D0D4C0D0D4C1212">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12955" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C4C120D0D120D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12934" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C4C120D0D120D0D12">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12954" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D0D0D0D0D0D12124C">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12941" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C0D0D4C0D0D120D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12944" AltIDMod="0" />
+      <StaticTile TileID="12945" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="124C4C124C4C0D0D0D">
+    <MapTiles>
+      <MapTile TileID="222" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12974" AltIDMod="0" />
+      <StaticTile TileID="12975" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C0D0D120D0D120D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12944" AltIDMod="0" />
+      <StaticTile TileID="12945" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="0D4C4C0D4C4C121212">
+    <MapTiles>
+      <MapTile TileID="221" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12976" AltIDMod="0" />
+      <StaticTile TileID="12977" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="124C4C0D4C4C0D4C4C">
+    <MapTiles>
+      <MapTile TileID="227" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12977" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="12124C0D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12943" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Lava-Rock-Death Forest" HashKey="4C12120D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="500" AltIDMod="0" />
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12943" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

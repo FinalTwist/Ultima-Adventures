@@ -1,0 +1,20 @@
+
+//indicate # of players
+//make some way of changing # of players when people are waiting on the setup gump
+//when player 1 leaves, give the next in line the setup gump
+
+
+make list of who is signed up, who is waiting
+
+list players left in game
+
+//announce # of players required when player join/leave
+
+kick a player if they log out in game
+
+spectator mode for players who want to watch
+
+//block all hiding and stealth
+
+create game queue when other people are waiting for game to finish
+

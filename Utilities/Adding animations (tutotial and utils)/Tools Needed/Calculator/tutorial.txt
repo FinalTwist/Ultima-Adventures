@@ -1,0 +1,39 @@
+Animation Copying Tutorial
+--------------------------
+
+This tutorial requires the following programs:
+
+UO Animation Calculator (included)
+MichelAngelo (included)
+ChangeUOP (included)
+InsideUO (available at http://dkbush.cablenet-va.com/alazane/insideuo.html)
+
+Editing programs for the UO client files use decimal values, hexadecimal values, or both.  For that reason, the UO Animation Calculator gives you both values.  You will need to make sure that whenever you are editing values in the client files that you are using the correct method for that editing program (decimal or hexadecimal).
+
+1.  Use InsideUO to find the model number of the animation you wish to copy.
+
+2.  Enter the model number in the Animation Calculator to get the Anim ID/Gump Offset value and the first/last animation frame number.
+
+3.  Load Michelangelo.  Select "Import".  Change filetype to "Anim".  Import from "Anim.mul" and "Anim.idx".  In the "Limit to Block" section, use the first/last animation frame number from the Animation Calculator.  
+
+4.  Save this file as a ".UOP" file.  You've just saved one complete animation into a file by itself.
+
+5.  Browse the animation list (available on this screen) to find a blank model number to copy to.  Make sure the new model number is of the same type as the one you are copying from (0-199 for High Detail, 200-399 for Low Detail, 400-999 for People and Accessories).
+
+6.  Now you will use the ChangeUOP program to renumber all the animation frames in the UOP file you just saved, in effect copying the animation from one location to another.  Enter the destination model number in the UO animation calculator to get the first/last animation frame numbers for the destination.  Then use ChangeUOP on the ".UOP" file you saved, useage:  ChangeUOP filename.uop (first animation frame for the original animation) (first animation frame for the destination animation).
+
+7.  Load Michelangelo again, open the ".UOP" file, and export to verdata.  Congrats, you have just copied the animation to a new model number.  You can verify this with Inside UO.
+
+8.  To assign a paperdoll gump for the animation, enter the new model number in the UO Animation Calculator.  It will give you the address the gump should be placed at.
+
+9.  To assign static tile art to the animation, create the tile art anywhere and use the new model number (also shown in the Animation Calculator) as the Gump/Anim offset.
+
+That's it!  I hope you find this program and the tutorial useful.
+
+Special thanks to:
+
+  - Belgar, for all his help, and for providing the ChangeUOP program!
+
+  - Senser, for breaking new ground with his Animation Editor and tutorials!  Check out his web page and all his great UO editing utilities at:  http://www.eikon.tum.de/~isp/sphere/doc_index.html
+
+- HellRazor

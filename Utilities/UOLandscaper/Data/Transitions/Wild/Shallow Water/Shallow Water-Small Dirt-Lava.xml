@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="08080D08080D06060D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0608080608080D0D0D">
+    <MapTiles>
+      <MapTile TileID="145" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6055" AltIDMod="-5" />
+      <StaticTile TileID="6065" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="08080806060D06060D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D080D0D08060608">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12939" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0606080606080D0D08">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="060D0D060D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0806060D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D080D0D060D0D06">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D080D0D080D0D06">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12939" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0606060606060D0D08">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D08080D06060D0606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0608080608080D0808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="-5" />
+      <MapTile TileID="118" AltIDMod="-5" />
+      <MapTile TileID="119" AltIDMod="-5" />
+      <MapTile TileID="120" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6055" AltIDMod="-5" />
+      <StaticTile TileID="6065" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D08060608060608">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="08080D080806080806">
+    <MapTiles>
+      <MapTile TileID="141" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0606080D0D080D0D08">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12936" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D08080D08080D0606">
+    <MapTiles>
+      <MapTile TileID="145" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="080D0D060D0D060D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="08080D08080D060606">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0808080D06060D0606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="060D0D080808080808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="-5" />
+      <MapTile TileID="118" AltIDMod="-5" />
+      <MapTile TileID="119" AltIDMod="-5" />
+      <MapTile TileID="120" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12972" AltIDMod="-5" />
+      <StaticTile TileID="12973" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0806060D06060D0606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D0D060808060808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="-5" />
+      <MapTile TileID="118" AltIDMod="-5" />
+      <MapTile TileID="119" AltIDMod="-5" />
+      <MapTile TileID="120" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0808060808060D0D0D">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D060D0D06080808">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12938" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D08060606060606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D0D0D0D0D080806">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12938" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="060D0D060D0D060808">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12936" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="08080D060606060606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="08080608080D08080D">
+    <MapTiles>
+      <MapTile TileID="141" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12970" AltIDMod="-5" />
+      <StaticTile TileID="12971" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D060D0D06080806">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12938" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0606080D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="06060806060D06060D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="080D0D080D0D060606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12937" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D08080D0808060808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="-5" />
+      <MapTile TileID="118" AltIDMod="-5" />
+      <MapTile TileID="119" AltIDMod="-5" />
+      <MapTile TileID="120" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12976" AltIDMod="-5" />
+      <StaticTile TileID="12977" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0808060D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12937" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0808060D0D060D0D06">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12937" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="060D0D080D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12938" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="080808080808060D0D">
+    <MapTiles>
+      <MapTile TileID="145" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12974" AltIDMod="-5" />
+      <StaticTile TileID="12975" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="080D0D060606060606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="06060606060608080D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="080D0D080D0D080606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12937" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D0D080806080806">
+    <MapTiles>
+      <MapTile TileID="141" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="06060D06060D060608">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D06060D0606080606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="06060D06060D08080D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0806060806060D0D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D0D0D0D0D060808">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12936" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D0D080606080606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="080606080D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12938" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="080D0D080D0D060D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12937" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0606060D0D080D0D08">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12936" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="08080808080806060D">
+    <MapTiles>
+      <MapTile TileID="145" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D060D0D060D0D08">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="06060608080D08080D">
+    <MapTiles>
+      <MapTile TileID="141" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6055" AltIDMod="-5" />
+      <StaticTile TileID="6065" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="080D0D080606080606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0808060808060808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="-5" />
+      <MapTile TileID="118" AltIDMod="-5" />
+      <MapTile TileID="119" AltIDMod="-5" />
+      <MapTile TileID="120" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D06080806080806">
+    <MapTiles>
+      <MapTile TileID="141" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D08080D0808060606">
+    <MapTiles>
+      <MapTile TileID="145" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D060D0D080D0D08">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12936" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0808080808080D0606">
+    <MapTiles>
+      <MapTile TileID="145" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6054" AltIDMod="-5" />
+      <StaticTile TileID="6063" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0808060808060D0D06">
+    <MapTiles>
+      <MapTile TileID="749" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="080606080606080D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0806060806060D0606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0606080606080D0D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="06060D08080D08080D">
+    <MapTiles>
+      <MapTile TileID="141" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6055" AltIDMod="-5" />
+      <StaticTile TileID="6065" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="060808060D0D060D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12939" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D06060D0606080808">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="08080D06060D06060D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D0D0D0D0D060608">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D06060D06060D0808">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6051" AltIDMod="-5" />
+      <StaticTile TileID="6052" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D06060D08080D0808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="-5" />
+      <MapTile TileID="118" AltIDMod="-5" />
+      <MapTile TileID="119" AltIDMod="-5" />
+      <MapTile TileID="120" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0606060606060D0808">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6059" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="06060D080808080808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="-5" />
+      <MapTile TileID="118" AltIDMod="-5" />
+      <MapTile TileID="119" AltIDMod="-5" />
+      <MapTile TileID="120" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6055" AltIDMod="-5" />
+      <StaticTile TileID="6065" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0808080D0D060D0D06">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12937" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D06080808080808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="-5" />
+      <MapTile TileID="118" AltIDMod="-5" />
+      <MapTile TileID="119" AltIDMod="-5" />
+      <MapTile TileID="120" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12972" AltIDMod="-5" />
+      <StaticTile TileID="12973" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0606080606080606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="06060D06060D080808">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0608080D0D0D0D0D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12939" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D0D0D0D0D080606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0606060D08080D0808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="-5" />
+      <MapTile TileID="118" AltIDMod="-5" />
+      <MapTile TileID="119" AltIDMod="-5" />
+      <MapTile TileID="120" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="08080608080608080D">
+    <MapTiles>
+      <MapTile TileID="141" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0808080808080D0D06">
+    <MapTiles>
+      <MapTile TileID="145" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12974" AltIDMod="-5" />
+      <StaticTile TileID="12975" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="060606060606080D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0808060606060606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6060" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="08080D08080D080806">
+    <MapTiles>
+      <MapTile TileID="141" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12970" AltIDMod="-5" />
+      <StaticTile TileID="12971" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D080D0D08060606">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12939" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="060D0D060808060808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="-5" />
+      <MapTile TileID="118" AltIDMod="-5" />
+      <MapTile TileID="119" AltIDMod="-5" />
+      <MapTile TileID="120" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="060808060808060D0D">
+    <MapTiles>
+      <MapTile TileID="145" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6055" AltIDMod="-5" />
+      <StaticTile TileID="6065" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="06060806060806060D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6058" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="06060D060608060608">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6057" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0D0D060608060608">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="-5" />
+      <MapTile TileID="502" AltIDMod="-5" />
+      <MapTile TileID="503" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6047" AltIDMod="-5" />
+      <StaticTile TileID="6048" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0608080D08080D0808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="-5" />
+      <MapTile TileID="118" AltIDMod="-5" />
+      <MapTile TileID="119" AltIDMod="-5" />
+      <MapTile TileID="120" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12976" AltIDMod="-5" />
+      <StaticTile TileID="12977" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="0D0606080808080808">
+    <MapTiles>
+      <MapTile TileID="117" AltIDMod="-5" />
+      <MapTile TileID="118" AltIDMod="-5" />
+      <MapTile TileID="119" AltIDMod="-5" />
+      <MapTile TileID="120" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="060D0D060D0D080808">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12936" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="060606080D0D080D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12938" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Shallow Water-Small Dirt-Lava" HashKey="080808060D0D060D0D">
+    <MapTiles>
+      <MapTile TileID="501" AltIDMod="0" />
+      <MapTile TileID="502" AltIDMod="0" />
+      <MapTile TileID="503" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="12939" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

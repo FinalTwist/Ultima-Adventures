@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<CEDConfig Version="6">
+  <Language>..\Language\English.ini</Language>
+  <Port>2597</Port>
+  <Map>
+    <Map>c:\Ultima-Adventures\Files\map1.mul</Map>
+    <StaIdx>c:\Ultima-Adventures\Files\staidx1.mul</StaIdx>
+    <Statics>c:\Ultima-Adventures\Files\statics1.mul</Statics>
+    <Width>896</Width>
+    <Height>512</Height>
+    <Prefix>0</Prefix>
+    <Format>0x0000000C</Format>
+  </Map>
+  <Tiledata>c:\Ultima-Adventures\Files\tiledata.mul</Tiledata>
+  <Radarcol>c:\Ultima-Adventures\Files\radarcol.mul</Radarcol>
+  <Accounts>
+    <Account>
+      <Name>wizard</Name>
+      <PasswordHash>21232f297a57a5a743894a0e4a801fc3</PasswordHash>
+      <AccessLevel>255</AccessLevel>
+      <LastPos x="752" y="104"/>
+      <Regions/>
+    </Account>
+  </Accounts>
+  <Regions/>
+</CEDConfig>

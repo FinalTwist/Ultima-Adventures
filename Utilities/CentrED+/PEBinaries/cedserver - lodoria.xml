@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<CEDConfig Version="6">
+  <Language>..\Language\English.ini</Language>
+  <Port>2597</Port>
+  <Map>
+    <Map>c:\UO\Classicuo\map0.mul</Map>
+    <StaIdx>c:\UO\Classicuo\staidx0.mul</StaIdx>
+    <Statics>c:\UO\Classicuo\statics0.mul</Statics>
+    <Width>896</Width>
+    <Height>512</Height>
+    <Prefix>0</Prefix>
+    <Format>0x0000000C</Format>
+  </Map>
+  <Tiledata>c:\UO\Classicuo\tiledata.mul</Tiledata>
+  <Radarcol>c:\UO\Classicuo\radarcol.mul</Radarcol>
+  <Accounts>
+    <Account>
+      <Name>wizard</Name>
+      <PasswordHash>21232f297a57a5a743894a0e4a801fc3</PasswordHash>
+      <AccessLevel>255</AccessLevel>
+      <LastPos x="4080" y="800"/>
+      <Regions/>
+    </Account>
+  </Accounts>
+  <Regions/>
+</CEDConfig>

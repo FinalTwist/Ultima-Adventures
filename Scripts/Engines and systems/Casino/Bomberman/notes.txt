@@ -1,0 +1,113 @@
+Board Games and Bomberman - developed by Fenn of BES Oasis shard
+=========================
+If you choose to use this or develop on this, please leave this file intact.
+
+
+Version:  Last Modified Wednesday, May 6, 2009
+========
+
+Changelog:
+==========
+
+-Version 2009-05-05
+	-Improved user interface for registering players to the bomberman game.  The first person to register can control the number of players while others register.  Also, the control stone is more verbose
+	-Increased region priority around boargame.  It now properly blocks spells and skills if the boardgame is contained within another region
+	-Added more verbose reports from the stone during bomberman game.
+
+-Version 2009-05-01
+	-Fixed a long-annoying bug that causes the Bomberman game to break after a game ends.  (thanks mikeymaze and fcondon!)
+
+-Version 2009-01-26
+	-When the bomb is deleted, the fuse is stopped first.  This may prevent bombs that blow up while being deleted.  Also added some extra checks just in case.  (thanks nevar2006!) 
+	-Restructured the gameover condition.  Now a tie game is properly detected, and Bomberman does not get broken when two players die at the same time.  (thanks test444!)
+	-Plugged a crash bug when a broken boardgame is deleted.
+
+-Version 2009-01-18
+	-Fixed a crash issue that was only apparent on RC1 servers.  The game should now be playable with RC1 servers. (thanks purplemouse91!)
+	-Added a preventative measure to keep players from fooling around with pets while playing Bomberman.  Players, consider this your one and only warning! (Thanks Robbie!)
+	-Added a staff-only context menu command that clears the game scores of the selected boardgame type (thanks oiii88!)
+
+-Version 2009-01-15
+	-Added compatibility code for RunUO 2.0 RC1 servers.  If you are running on a RC1-based server, open the file BoardGames\Bomberman\Items\BombBag.cs
+	 and uncomment the second line.
+	-Added LOSBlockers to Bomberman's indestructable walls.  This will remove any chance of PvP interference from external players. (thanks Hammerhand!)
+	-Added a delay to the end of the game, and win/lose gumps sent to the winner/losers of the game. (thanks test444!)
+	-Added staff-controllable property AllowPlayerConfiguration to BoardGameControlItem.  When this is set false, the players can no longer adjust
+	 the game's size and artwork style.  Default is true.  (thanks test444!)
+	-Added a scorekeeping system that tracks players wins, losses, and "score".  Points are awarded or deducted based on whether they win, lose, blow 
+	 up another player, or blow themselves up.  The score points awarded can be adjusted in the BombermanSettings.cs file.  Players can view this
+	 score listing by using the context menu on the control item.  (thanks mikeymaze!)
+	-Improved staff control of board position with respect to controller position.  When you [props the control stone, the new properties BoardLocation
+	 and BoardMap will let the staff member choose where to position the board explicitly.  Note that the board is still tied to the stone.  If you 
+	 move the stone east by 5 tiles, the board, wherever it is, will also move east by 5 tiles.  However, the map of the board is no longer tied to the
+	 map of the stone, and can be set independent to the stone position.  (thanks test444!)
+	
+-Version 2009-01-12
+	-initial release
+
+
+Compatibility:
+--------------
+
+This was developed using a freshly downloaded RunUO 2.0 SVN server
+
+-RunUO RC1 (check the Notes section for details)
+-RunUO RC2
+-RunUO 2.0 SVN version 300 (downloaded October 7, 2008)
+
+Notes:
+------
+
+If you wish to use this script on a RC1-based server, you will need to edit one file.  Open the file BoardGames\Bomberman\Items\BombBag.cs
+and uncomment the second line.  This sets it so the speedboost upgrade in Bomberman will use the correct syntax for a RC1 server.
+
+
+Overview:
+---------
+
+The BoardGame system provides a base for the Bomberman system.  The basic system is designed to automatically generate a collection of items to be
+used in some kind of game.  Players interact with a control item, and the game gets underway when all conditions are met.  The game runs automatically,
+moving players into the board game when it starts, and out of the game when its over.  It is intended to run without any staff support.
+
+The Bomberman game is an implementation of this base system, where players navigate an arena, cutting their way through destroyable walls, trying
+to blow each other up with bombs.  A bomb bag is placed in the players' backpacks.  Players use this bag to place bombs at their feet.
+A bomb will detonate after some time, and has a limited blast size.  The number of bombs any player can place at any time is limited.
+
+Players must blast at the breakable walls to navigate the arena.  While blasting, upgrades can be found which improve the blast size or number of 
+bombs a player can place at once.   There is also a detonator upgrade that lets a player choose when they want their bombs to blow up, and a
+"big badda boom" upgrade that causes bombs to tear through destructable walls to their maximum blast size.  A bomb can trigger another bomb to go off, 
+creating interesting chain reactions. The game ends when there is only one player left standing.
+
+Staff can set up the game by adding the constructable BombermanControlItem device.  The field is automatically generated to the southeast of the control
+device.  Some consideration will be needed to properly place the gamefield.  Luckily, the control item and game field can be moved together like an 
+addon.  There are various properties accessible to staff, including game field size, style, and default bomb upgrade settings.
+
+When a player uses the control item, they are given some information and instructions related to the game.  The first person to use the
+control item can select the number of players, as well as some game properties.  For Bomberman, they can choose the playfield size, and
+the artwork style.  When the required number of players have signed up for the game, the players will be automatically transported onto
+the game field.
+
+Additional controls are accessible to the staff, via the properties gump.  For bomberman, staff can adjust the default upgrade 
+configuration for each player when they start the game.  In the case of an emergency, staff can force a game over.  Additionally, staff 
+can adjust the game artwork style and board size manually.  Finally, staff can configure the game to charge gold when players play the game.
+
+For the developer, there are various properties that can be adjusted.  in the file BoardGames\Bomberman\BombermanSettings.cs, there are
+various constants and variables that can be modified to suit your shard's needs.
+
+
+
+Installation:
+-------------
+
+Basic installation:  Drop this entire folder somewhere in your Scripts Directory.  Be mindful of class name conflicts.
+
+Deinstallation:
+---------------
+
+Basic deinstallation: Remove this entire folder from your scripts directory.
+
+
+Contact:
+--------
+
+Questions, comments?  Contact me at the RunUO Forums under username Fenn.

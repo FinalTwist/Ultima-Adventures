@@ -1,0 +1,23 @@
+<Config>
+		<!--Configuration File for DataList-->
+		<DataName Name="UOL Data" />
+		<Directories>
+				<Directory Name="Data" />
+				<Directory Name="Data\System" />
+				<Directory Name="Data\Photoshop" />
+				<Directory Name="Data\Import Files" />
+				<Directory Name="Data\Statics" />
+				<Directory Name="Data\Logger" />
+				<Directory Name="Data\Transitions" />				
+				<Directory Name="Data\Transitions\Populated" />
+				<Directory Name="Data\Transitions\Wild" />
+				<Directory Name="Data\Transitions\Populated\3way" />
+				<Directory Name="Data\Transitions\Dungeon" />
+				<Directory Name="Data\Transitions\Populated\3way" />
+				<Directory Name="Data\Transitions\Wild\3way" />
+				<Directory Name="Data\Transitions\Wild\3way\Shallow Water" />
+				<Directory Name="Data\Transitions\Wild\Embankment Support" />
+				<Directory Name="Data\Transitions\Wild\Rough Support" />
+				<Directory Name="Data\Transitions\Wild\Embankment Support" />
+		</Directories>
+</Config>

@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="124949124949121249">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="491212491212494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212494912494912">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2272" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212124949124949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="610" AltIDMod="0" />
+      <StaticTile TileID="616" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="491212491212491212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212124949494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="610" AltIDMod="0" />
+      <StaticTile TileID="616" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121249121249124949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949491212491212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121249121249494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212121212491212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494912494912494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121249494949494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="605" AltIDMod="0" />
+      <StaticTile TileID="607" AltIDMod="0" />
+      <StaticTile TileID="609" AltIDMod="0" />
+      <StaticTile TileID="613" AltIDMod="0" />
+      <StaticTile TileID="617" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949121249121249">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="491212491212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="55" />
+      <MapTile TileID="557" AltIDMod="57" />
+      <MapTile TileID="558" AltIDMod="59" />
+      <MapTile TileID="559" AltIDMod="62" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494912494949494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212121249494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="124949494949494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="612" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949124949121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949494912494912">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121249121249121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949494949494912">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494912494912121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212491212494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494912494912491212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212121212124949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121249124949124949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="610" AltIDMod="0" />
+      <StaticTile TileID="616" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="124949124949494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="604" AltIDMod="0" />
+      <StaticTile TileID="606" AltIDMod="0" />
+      <StaticTile TileID="608" AltIDMod="0" />
+      <StaticTile TileID="615" AltIDMod="0" />
+      <StaticTile TileID="618" AltIDMod="0" />
+      <StaticTile TileID="614" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212491212491212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212121212494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212491212494912">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121249124949494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="610" AltIDMod="0" />
+      <StaticTile TileID="616" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949494949124949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="1340" AltIDMod="0" />
+      <StaticTile TileID="1339" AltIDMod="0" />
+      <StaticTile TileID="1341" AltIDMod="0" />
+      <StaticTile TileID="1342" AltIDMod="0" />
+      <StaticTile TileID="1343" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212121249121249">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="124949121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949491212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="55" />
+      <MapTile TileID="557" AltIDMod="57" />
+      <MapTile TileID="558" AltIDMod="59" />
+      <MapTile TileID="559" AltIDMod="62" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212494912494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="124949124949121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="491212491212494912">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494912491212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="55" />
+      <MapTile TileID="557" AltIDMod="57" />
+      <MapTile TileID="558" AltIDMod="59" />
+      <MapTile TileID="559" AltIDMod="62" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949124949121249">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949494949121249">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949124949124949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="604" AltIDMod="0" />
+      <StaticTile TileID="606" AltIDMod="0" />
+      <StaticTile TileID="608" AltIDMod="0" />
+      <StaticTile TileID="649" AltIDMod="0" />
+      <StaticTile TileID="615" AltIDMod="0" />
+      <StaticTile TileID="618" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949494912491212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="124949121249121249">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949121249121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494912494912494912">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="491212494912494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949494912121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="124949121249121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="491212494949494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="605" AltIDMod="0" />
+      <StaticTile TileID="607" AltIDMod="0" />
+      <StaticTile TileID="609" AltIDMod="0" />
+      <StaticTile TileID="613" AltIDMod="0" />
+      <StaticTile TileID="617" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121249121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212121249124949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121249121249121249">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494912491212491212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494912121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="55" />
+      <MapTile TileID="557" AltIDMod="57" />
+      <MapTile TileID="558" AltIDMod="59" />
+      <MapTile TileID="559" AltIDMod="62" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949494949491212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="491212121212121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="62" />
+      <MapTile TileID="557" AltIDMod="59" />
+      <MapTile TileID="558" AltIDMod="57" />
+      <MapTile TileID="559" AltIDMod="55" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="491212494912494912">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212121212121249">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212121212494912">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="494949494949121212">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="2272" AltIDMod="0" />
+      <StaticTile TileID="2273" AltIDMod="0" />
+      <StaticTile TileID="2274" AltIDMod="0" />
+      <StaticTile TileID="2279" AltIDMod="0" />
+      <StaticTile TileID="2280" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="124949124949124949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="604" AltIDMod="0" />
+      <StaticTile TileID="606" AltIDMod="0" />
+      <StaticTile TileID="608" AltIDMod="0" />
+      <StaticTile TileID="615" AltIDMod="0" />
+      <StaticTile TileID="618" AltIDMod="0" />
+      <StaticTile TileID="614" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Mountain Cave Without Static To Rock" HashKey="121212494949494949">
+    <MapTiles>
+      <MapTile TileID="556" AltIDMod="60" />
+      <MapTile TileID="557" AltIDMod="62" />
+      <MapTile TileID="558" AltIDMod="63" />
+      <MapTile TileID="559" AltIDMod="64" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="605" AltIDMod="0" />
+      <StaticTile TileID="607" AltIDMod="0" />
+      <StaticTile TileID="609" AltIDMod="0" />
+      <StaticTile TileID="613" AltIDMod="0" />
+      <StaticTile TileID="617" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

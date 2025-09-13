@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212121212121212">
+    <MapTiles>
+      <MapTile TileID="292" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851285121285121285">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212851212851212">
+    <MapTiles>
+      <MapTile TileID="294" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285851212121212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="128512121212121285">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="128585121212121285">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121285858512">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212851212128512">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121285121212">
+    <MapTiles>
+      <MapTile TileID="296" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121212128512">
+    <MapTiles>
+      <MapTile TileID="297" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121212128512">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="858512121285121212">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121285121212">
+    <MapTiles>
+      <MapTile TileID="296" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851285851212851212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212851212121212">
+    <MapTiles>
+      <MapTile TileID="294" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121285858512">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121212851212">
+    <MapTiles>
+      <MapTile TileID="291" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212121212851212">
+    <MapTiles>
+      <MapTile TileID="294" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212851212858512">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212121285121212">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="128512851212851212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212121212128512">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851285121285121212">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851285121212851212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="128512121212121212">
+    <MapTiles>
+      <MapTile TileID="295" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="128585121285121285">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="858585121212121285">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212851212851285">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="128585851212121212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121212851285">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212851212128585">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121285851212">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121285121285">
+    <MapTiles>
+      <MapTile TileID="296" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121212128585">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="858585121285121212">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212851212121285">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121285128512">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121285858585">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121212858512">
+    <MapTiles>
+      <MapTile TileID="297" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="128512121285121212">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="128512851212121212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212121212851285">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212851212858585">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212121285121285">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851285121212121212">
+    <MapTiles>
+      <MapTile TileID="295" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="128512121212851212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212851212858585">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212121212128585">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="858512851212121212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="858585851212851212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121212858585">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212851212121285">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="128585121285121212">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="858585121212121212">
+    <MapTiles>
+      <MapTile TileID="295" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="128585121212851212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="858512121285121285">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121285851285">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121212121285">
+    <MapTiles>
+      <MapTile TileID="296" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121212121285">
+    <MapTiles>
+      <MapTile TileID="290" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212851212128585">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121285851285">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121285128585">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="858585121285121285">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121285128585">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212121212858585">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="858512121212121212">
+    <MapTiles>
+      <MapTile TileID="295" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121212858585">
+    <MapTiles>
+      <MapTile TileID="297" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212851212851285">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="858512851212851212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="858585851212121212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851285121212121285">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212851212858512">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="128512121285121285">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="858585121212851212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="128585121212121212">
+    <MapTiles>
+      <MapTile TileID="295" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121212858512">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212851212121212">
+    <MapTiles>
+      <MapTile TileID="294" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285851212851212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121285858585">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121285128512">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="128585851212851212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121212128585">
+    <MapTiles>
+      <MapTile TileID="297" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="858512121212851212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121212121212">
+    <MapTiles>
+      <MapTile TileID="293" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212851212128512">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121285121285">
+    <MapTiles>
+      <MapTile TileID="296" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121285121285851212">
+    <MapTiles>
+      <MapTile TileID="1981" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="121212121212851285">
+    <MapTiles>
+      <MapTile TileID="297" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212121212858512">
+    <MapTiles>
+      <MapTile TileID="1983" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="858512121212121285">
+    <MapTiles>
+      <MapTile TileID="1984" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851285851212121212">
+    <MapTiles>
+      <MapTile TileID="1982" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rock to Rough Beach" HashKey="851212851212851212">
+    <MapTiles>
+      <MapTile TileID="294" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

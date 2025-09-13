@@ -1,0 +1,918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Rough Jungle to High Coast SN" HashKey="4D4D4D828282828282">
+    <MapTiles>
+      <MapTile TileID="1923" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="824D4D82828282824D">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="8282824D8282824D82">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="4D4D4D4D8282828282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-9" />
+      <MapTile TileID="173" AltIDMod="-9" />
+      <MapTile TileID="174" AltIDMod="-9" />
+      <MapTile TileID="175" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82824D82824D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82824D82824D824D4D">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="4D824D82828282824D">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="824D8282824D82824D">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="4D4D4D4D82824D8282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-9" />
+      <MapTile TileID="173" AltIDMod="-9" />
+      <MapTile TileID="174" AltIDMod="-9" />
+      <MapTile TileID="175" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="8282824D82824D824D">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82828282824D4D4D4D">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="4D82828282824D4D4D">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="4D828282824D82824D">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast WE" HashKey="82828282824D82824D">
+    <MapTiles>
+      <MapTile TileID="1912" AltIDMod="-3" />
+      <MapTile TileID="1925" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82824D828282824D82">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="4D4D4D82824D82824D">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="4D4D824D82824D8282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-9" />
+      <MapTile TileID="173" AltIDMod="-9" />
+      <MapTile TileID="174" AltIDMod="-9" />
+      <MapTile TileID="175" AltIDMod="-9" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="4D82824D82824D4D4D">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="4D82824D8282824D4D">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast WE" HashKey="82824D82824D828282">
+    <MapTiles>
+      <MapTile TileID="1912" AltIDMod="-3" />
+      <MapTile TileID="1925" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NS" HashKey="8282828282824D4D4D">
+    <MapTiles>
+      <MapTile TileID="1917" AltIDMod="-3" />
+      <MapTile TileID="1924" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="4D4D4D82828282824D">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="4D4D8282824D828282">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEB" HashKey="82828282828282824D">
+    <MapTiles>
+      <MapTile TileID="1922" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="824D4D4D8282828282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-5" />
+      <MapTile TileID="173" AltIDMod="-5" />
+      <MapTile TileID="174" AltIDMod="-5" />
+      <MapTile TileID="175" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="8282824D8282824D4D">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82828282824D4D8282">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="4D824D4D82824D8282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-5" />
+      <MapTile TileID="173" AltIDMod="-5" />
+      <MapTile TileID="174" AltIDMod="-5" />
+      <MapTile TileID="175" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SN" HashKey="824D82828282828282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-12" />
+      <MapTile TileID="173" AltIDMod="-12" />
+      <MapTile TileID="174" AltIDMod="-12" />
+      <MapTile TileID="175" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast EW" HashKey="4D82828282824D8282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-12" />
+      <MapTile TileID="173" AltIDMod="-12" />
+      <MapTile TileID="174" AltIDMod="-12" />
+      <MapTile TileID="175" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="824D824D8282828282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-5" />
+      <MapTile TileID="173" AltIDMod="-5" />
+      <MapTile TileID="174" AltIDMod="-5" />
+      <MapTile TileID="175" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="4D824D82824D828282">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="4D4D4D8282824D8282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-5" />
+      <MapTile TileID="173" AltIDMod="-5" />
+      <MapTile TileID="174" AltIDMod="-5" />
+      <MapTile TileID="175" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast EW" HashKey="4D82824D8282828282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-7" />
+      <MapTile TileID="173" AltIDMod="-7" />
+      <MapTile TileID="174" AltIDMod="-7" />
+      <MapTile TileID="175" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82824D8282824D824D">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82824D828282824D4D">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82828282824D824D82">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="8282824D82824D4D82">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast EW" HashKey="4D82824D82824D8282">
+    <MapTiles>
+      <MapTile TileID="1920" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast WE" HashKey="82824D82824D82824D">
+    <MapTiles>
+      <MapTile TileID="1912" AltIDMod="-3" />
+      <MapTile TileID="1925" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWB" HashKey="8282828282824D8282">
+    <MapTiles>
+      <MapTile TileID="1932" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="4D8282828282824D82">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="4D4D8282824D82824D">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast EW" HashKey="8282824D8282828282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-12" />
+      <MapTile TileID="173" AltIDMod="-12" />
+      <MapTile TileID="174" AltIDMod="-12" />
+      <MapTile TileID="175" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82828282824D4D824D">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="824D8282828282824D">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="4D82828282824D824D">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="824D824D82824D8282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-5" />
+      <MapTile TileID="173" AltIDMod="-5" />
+      <MapTile TileID="174" AltIDMod="-5" />
+      <MapTile TileID="175" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82824D82824D4D8282">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="4D824D82824D82824D">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NS" HashKey="828282828282824D82">
+    <MapTiles>
+      <MapTile TileID="1917" AltIDMod="-3" />
+      <MapTile TileID="1924" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82824D8282824D4D82">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="824D4D4D82824D8282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-5" />
+      <MapTile TileID="173" AltIDMod="-5" />
+      <MapTile TileID="174" AltIDMod="-5" />
+      <MapTile TileID="175" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="4D82824D828282824D">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="824D828282824D8282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-5" />
+      <MapTile TileID="173" AltIDMod="-5" />
+      <MapTile TileID="174" AltIDMod="-5" />
+      <MapTile TileID="175" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEB" HashKey="82824D828282828282">
+    <MapTiles>
+      <MapTile TileID="1931" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="824D4D82824D828282">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82828282824D824D4D">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="8282824D82824D4D4D">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="4D82824D82824D824D">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="82824D4D8282828282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-5" />
+      <MapTile TileID="173" AltIDMod="-5" />
+      <MapTile TileID="174" AltIDMod="-5" />
+      <MapTile TileID="175" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="4D8282828282824D4D">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NS" HashKey="8282828282824D824D">
+    <MapTiles>
+      <MapTile TileID="1917" AltIDMod="-3" />
+      <MapTile TileID="1924" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SN" HashKey="4D4D82828282828282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-7" />
+      <MapTile TileID="173" AltIDMod="-7" />
+      <MapTile TileID="174" AltIDMod="-7" />
+      <MapTile TileID="175" AltIDMod="-7" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="8282824D828282824D">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="82824D4D82824D8282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-5" />
+      <MapTile TileID="173" AltIDMod="-5" />
+      <MapTile TileID="174" AltIDMod="-5" />
+      <MapTile TileID="175" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SN" HashKey="824D4D828282828282">
+    <MapTiles>
+      <MapTile TileID="1923" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="4D4D828282824D8282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-5" />
+      <MapTile TileID="173" AltIDMod="-5" />
+      <MapTile TileID="174" AltIDMod="-5" />
+      <MapTile TileID="175" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82824D82824D824D82">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82824D82824D4D4D82">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SN" HashKey="4D824D828282828282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-12" />
+      <MapTile TileID="173" AltIDMod="-12" />
+      <MapTile TileID="174" AltIDMod="-12" />
+      <MapTile TileID="175" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82824D82824D4D824D">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="4D4D824D8282828282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-5" />
+      <MapTile TileID="173" AltIDMod="-5" />
+      <MapTile TileID="174" AltIDMod="-5" />
+      <MapTile TileID="175" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="824D4D8282824D8282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-5" />
+      <MapTile TileID="173" AltIDMod="-5" />
+      <MapTile TileID="174" AltIDMod="-5" />
+      <MapTile TileID="175" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NS" HashKey="828282828282824D4D">
+    <MapTiles>
+      <MapTile TileID="1917" AltIDMod="-3" />
+      <MapTile TileID="1924" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82824D8282824D4D4D">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NWA" HashKey="82828282824D4D4D82">
+    <MapTiles>
+      <MapTile TileID="1919" AltIDMod="-2" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast EW" HashKey="8282824D82824D8282">
+    <MapTiles>
+      <MapTile TileID="1920" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6053" AltIDMod="-5" />
+      <StaticTile TileID="6066" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="824D8282824D828282">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="4D82828282824D4D82">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="4D824D8282824D8282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-5" />
+      <MapTile TileID="173" AltIDMod="-5" />
+      <MapTile TileID="174" AltIDMod="-5" />
+      <MapTile TileID="175" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="4D828282824D828282">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast WE" HashKey="82824D82828282824D">
+    <MapTiles>
+      <MapTile TileID="1912" AltIDMod="-3" />
+      <MapTile TileID="1925" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast WE" HashKey="82828282824D828282">
+    <MapTiles>
+      <MapTile TileID="1912" AltIDMod="-3" />
+      <MapTile TileID="1925" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="824D4D82824D82824D">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6056" AltIDMod="-5" />
+      <StaticTile TileID="6064" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SEA" HashKey="4D824D4D8282828282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-5" />
+      <MapTile TileID="173" AltIDMod="-5" />
+      <MapTile TileID="174" AltIDMod="-5" />
+      <MapTile TileID="175" AltIDMod="-5" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="4D4D4D82824D828282">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6049" AltIDMod="-5" />
+      <StaticTile TileID="6050" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="4D82824D8282824D82">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NEA" HashKey="4D82824D82824D4D82">
+    <MapTiles>
+      <MapTile TileID="1915" AltIDMod="-12" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6045" AltIDMod="-5" />
+      <StaticTile TileID="6046" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast (High) NWB" HashKey="4D8282828282828282">
+    <MapTiles>
+      <MapTile TileID="172" AltIDMod="-1" />
+      <MapTile TileID="173" AltIDMod="-1" />
+      <MapTile TileID="174" AltIDMod="-1" />
+      <MapTile TileID="175" AltIDMod="-1" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast SWA" HashKey="4D4D8282828282824D">
+    <MapTiles>
+      <MapTile TileID="1911" AltIDMod="-15" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="6039" AltIDMod="-5" />
+      <StaticTile TileID="6040" AltIDMod="-5" />
+      <StaticTile TileID="6041" AltIDMod="-5" />
+      <StaticTile TileID="6042" AltIDMod="-5" />
+      <StaticTile TileID="6043" AltIDMod="-5" />
+      <StaticTile TileID="6044" AltIDMod="-5" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Rough Jungle to High Coast NS" HashKey="8282828282824D4D82">
+    <MapTiles>
+      <MapTile TileID="1917" AltIDMod="-3" />
+      <MapTile TileID="1924" AltIDMod="-3" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+</Trans>

@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trans>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="131f1f131f1f1f1f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1313131f13131f1313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="13131f1f1f1f1f1f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f131f1f131313">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="131f1f131f1f13131f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f131f1313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="13131313131f1f1f1f">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f1f1f1f131f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="131f1f13131f131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="13131313131f13131f">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f131f1f13131f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f13131f13131f">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f13131f13131f1f1f">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="13131f131f1f1f1f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f13131f1f131f1f13">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="131f1f13131f13131f">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f13131f13131f1313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1313131f1f131f1f13">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f1f1f1f1f1313">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f131f1f131f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f13131f1f131f1f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="131313131f1f1f1f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="131f1f131f1f131313">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f131f1f13131313">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f131f1f131f1313">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f1f1f131f1f13">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="13131f131f1f131f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f13131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f131f1f1f1f1f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="131313131313131f1f">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1313131f13131f1f13">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f131f1f131f1f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="13131f13131f1f1f1f">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f1f1f1f131313">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f13131f131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f13131f1313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f131f13131f1313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1313131313131f1313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1313131f13131f1f1f">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="13131313131313131f">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="353" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="131f1f1f1f1f1f1f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f1f13131f1313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="13131f13131f131f1f">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f1f1f1f13131f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f1f1f1f1f1f13">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="353" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="131f1f131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="13131f13131f13131f">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f1f1313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f131f1f131f1f13">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1313131313131f1f13">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="13131f131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f1f1f13131313">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="13131313131f131f1f">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1313131313131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="131313131f1f131f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="13131f13131f131313">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1313131f1f1f1f1f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f13131f13131f1f13">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f1f1f1f1f131f1313">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="350" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1f13131f1f1f1f1f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1313131f1f131f1f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="351" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="131f1f131f1f131f1f">
+    <MapTiles>
+      <MapTile TileID="1098" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles />
+  </TransInfo>
+  <TransInfo Description="Sandstone Brick To Blank" HashKey="1313131313131f1f1f">
+    <MapTiles>
+      <MapTile TileID="580" AltIDMod="0" />
+    </MapTiles>
+    <StaticTiles>
+      <StaticTile TileID="352" AltIDMod="0" />
+    </StaticTiles>
+  </TransInfo>
+</Trans>

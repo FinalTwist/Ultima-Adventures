@@ -1,0 +1,54 @@
+FinalTwist comissioned Juzzver to create this script.
+initial script by Juzzver, modifications by FinalTwist
+
+Here's how to set up your own Guantlet:
+
+(if you want to place your own)
+as an admin, type
+[premiumspawner gauntletmaster
+place the NPC where you want him to be
+
+[props him
+you will see a few locations that need to be set
+spawnarea, playerrespoint, playerstartpoint
+
+the spawn area need to be set as a square, NW point first (start) and SE point second (finish)
+you should see the arena markers around the area
+
+if you do not, note that the markers are moved to ground level.  you will need to move them to the proper height
+to move the markers up or down to Z level 20, type
+
+[area set z 20 where losblocker name != null
+
+[area set z 20 where blocker name != null
+in both cases select an area wider than the gauntlet arena.
+
+if you messed up and want to delete the markers, type 
+[area delete where blocker name != null
+
+[area delete where losblocker name != null
+
+to change the number of enemies, find in gauntletmaster.cs
+m_MaxWaveKills = 100 / (m_Wave == 0 ? 1 : m_Wave);
+change 100 (or whatever it is in the script) to the amount you want
+
+To change the reward reward look in in:
+
+MBRewardBox.cs
+
+
+To set or change groups of mobs you can here:
+
+MonstersBashSpawnInfo.cs
+
+
+To change the points per kill, change this params for each array: 
+new int[] {50, 70, 80, 100}
+
+
+To add new gauntlet waves type, you will need add new types here 
+MonstersBashEventNPC.cs 
+in:
+
+	public enum MonstersBashType
+	

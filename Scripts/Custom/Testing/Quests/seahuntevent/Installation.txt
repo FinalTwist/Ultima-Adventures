@@ -1,0 +1,82 @@
+Sea Hunt Event Arena Addon
+
+Made With Addon Script Generator by Arya
+
+This Addon Requires The Following System To Be Installed:
+
+In-game Customizable Regions In A Box by ASayre8
+
+
+Update 3/9/2006
+
+Added A Fishing Pole Of The Stars item for those of you who want to give out the prize to the person or persons who win the event by collecting the most fishing nets.  It's basically an edited version of the normal fishing pole in the game that adds +15 to the player's fishing.
+
+I would like to thank the following people in the Script Support forum for providing their technical expertise in editing the distro Fishing Pole to make this possible:
+
+Aeolus, Twice, snicker7, Khaz, and Heartless
+
+
+Description:
+
+My second Addon Submission.  I call this the Sea Hunt Event Arena Addon.  This is another event we hold on my shard, almost every other day.  It's another event that my players seem to love, and like my other Addon it brings back the more fun parts of the game.  This brings back Fishing and battling sea creatures.  And it's a lot of fun as well.  And like my other addon, this requires a lot of staff interaction with the players by making you spawn everything manually, which on my shard we have found makes the players more happy and willing to come back for more.
+
+Basically what you do in this event is first get atleast 4 players (More would make it more fun).  You can pull them to this arena if you want, but on my shard, we have a small gate room with 4 gates and each one takes you to a different dock.  You can do that as you see fit.  When I run this event on my shard, I have atleast 2 other staff helping me out.  What I do is have my other 2 staff running around the arena mass spawning sea creatures like Krakens and Deep Sea Serpents, while I run around spawning fish nets on the dead corpses.  After players have collected as many fish nets as they can hold, I end the event and gate everyone back to our starting point and give everyone a bag with their name on it and tell them to put their fish nets into it and give them back to me.  After counting (Doesn't really require much since the bag tells you how many items it has in it on mouse over) I announce according to how many players we have who got what place in the event and how many nets they have.
+
+Everybody who participates in this event on my shard gets a "Participation Prize" of like 50K tokens or something (They all appreciate that), and the person who has the most fishing nets at the end wins a fishing pole that adds +15 to their fishing.  And I haven't scripted that item, basically it's a katana with the item ID set to a fishing pole with a name change and a fishing skill bonus of 15.  It doesn't have to be perfect.  My players really seem to love it.  And on my shard since we have a lot of other stuff that's more worth while when we're not running events, I go ahead and give them their bags back with the fish nets in them along with their prizes so they can go off and do their own thing with them.
+
+Installation:
+
+Place SeaHuntEventArenaAddon.cs into your Customs folder and restart your shard.  Then you can simply go out in the middle of the ocean anywhere on your shard you want and place the arena with [add SeaHuntEventArenaAddon and target yourself.  Then on the white squares on the docks, you [add resgate on all 4 of them.
+
+Then the next thing you will want to do is [add regioncontrol and target the North West Corner and disable the following spells and skills:
+
+TeleportSpell
+WallOfStoneSpell
+RecallSpell
+BladeSpiritsSpell
+Dispelfieldspell
+IncognitoSpell
+SummonCreatureSpell
+DispelSpell
+InvisibilitySpell
+MarkSpell
+GateTravelSpell
+MassDispelSpell
+PolymorphSpell
+EarthquakeSpell
+EnergyVortexSpell
+AirElementalSpell
+SummonDaemonSpell
+EarthElementalSpell
+FireElementalSpell
+WaterElementalSpell
+AnimateDeadSpell
+EvilOmenSpell
+HorrificBeastSpell
+LichFormSpell
+SummonFamiliarSpell
+VengefulSpiritSpell
+WitherSpell
+WeraithFormSpell
+DispelEvilSpell
+SacredJourneySpell
+
+Camping
+Detecting Hidden
+Hiding
+Provocation
+Snooping
+Stealing
+Animal Taming
+Lumberjacking
+Stealth
+Bushido
+Ninjitsu
+
+It is necessary to disable these spells and skills to cut down on shard lag and save times, because we all know what happens when you put stuff on water that doesn't belong there.  It can be done, but when you have extra activity like spell casting going on, it causes a lot of lag and long save times.  Which really doesn't make the event very fun.
+
+You don't exactly have to run this like I run it, I mean you could even have your players running around on Sea Horses and kill stuff.  It would probably make it easier to get to corpses that they kill.  Play around with it, see what works for you :)
+
+Questions and comments are welcome.  Enjoy!
+
+Also see the screen shots below :)

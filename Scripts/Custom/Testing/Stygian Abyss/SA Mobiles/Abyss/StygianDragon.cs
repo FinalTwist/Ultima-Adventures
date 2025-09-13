@@ -1,0 +1,295 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using Server;
+using Server.Items;
+using Server.Mobiles;
+using Server.Targeting;
+using Server.Spells;
+using Server.Spells.Fourth;
+
+namespace Server.Mobiles
+{
+    [CorpseName( "a dragon corpse" )]
+    public class StygianDragon : BaseCreature
+    {
+	public override bool AlwaysMurderer { get { return true; } }
+
+	[Constructable]
+	public StygianDragon () : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.3, 0.5 )
+	{
+	    Name = "a stygian dragon";
+	    Body = 806;
+	    BaseSoundID = 362;
+		Hue = 1161;
+
+	    SetStr( 700, 720 );
+	    SetDex( 200, 250 );
+	    SetInt( 150, 180 );
+
+	    SetHits( 100000, 200000 );
+	    SetStam( 420, 431 );
+	    SetMana( 150, 180 );
+
+	    SetDamage( 45, 85 );
+
+	    SetDamageType( ResistanceType.Physical, 25 );
+	    SetDamageType( ResistanceType.Fire, 50 );
+	    SetDamageType( ResistanceType.Energy, 25 );
+
+	    SetResistance( ResistanceType.Physical, 80, 89 );
+	    SetResistance( ResistanceType.Fire, 85, 89 );
+	    SetResistance( ResistanceType.Cold, 60, 69 );
+	    SetResistance( ResistanceType.Poison, 80, 81 );
+	    SetResistance( ResistanceType.Energy, 85, 87 );
+
+
+	    SetSkill( SkillName.Anatomy, 100.0 );
+	    SetSkill( SkillName.MagicResist, 140.0, 152.2 );
+	    SetSkill( SkillName.Tactics, 110.0, 120.7 );
+	    SetSkill( SkillName.Wrestling, 115.0, 117.7 );
+
+	    Fame = 55000;
+	    Karma = -55000;
+
+	    VirtualArmor = 60;
+
+	    Tamable = false;
+	}
+
+	public override void GenerateLoot()
+	{
+	    AddLoot( LootPack.AosSuperBoss, 4 );
+	    AddLoot( LootPack.Gems, 8 );
+	}
+
+	public override bool Unprovokable { get { return true; } }
+	public override bool BardImmune { get { return true; } }
+	public override bool HasBreath{ get{ return true; } } // fire breath enabled
+	public override bool AutoDispel{ get{ return !Controlled; } }
+	public override int TreasureMapLevel{ get{ return 5; } }
+	public override int Meat{ get{ return 19; } }
+	public override int Hides{ get{ return 30; } }
+	public override HideType HideType{ get{ return HideType.Barbed; } }
+	public override int Scales{ get{ return 7; } }
+	public override ScaleType ScaleType{ get{ return ( Body == 12 ? ScaleType.Yellow : ScaleType.Red ); } }
+	public override FoodType FavoriteFood{ get{ return FoodType.Meat; } }
+	public override bool CanAngerOnTame { get { return true; } }
+
+	public override WeaponAbility GetWeaponAbility()
+	{
+	    if (50.0 >= Utility.RandomDouble())
+		return WeaponAbility.Bladeweave;
+	    else
+		return WeaponAbility.TalonStrike;
+
+	}
+
+	public override void OnGaveMeleeAttack(Mobile defender)
+	{
+	    int damage = 50; // TODO: Set this in any way reasonable
+
+	    base.OnGaveMeleeAttack(defender);
+	    if (0.2 >= Utility.RandomDouble())
+		CrimsonMeteor(this, damage);
+	}
+
+	public static void CrimsonMeteor( Mobile from, int damage )
+	{
+	    if ( !Ability.CanUse( from ) )
+		return;
+
+	    new CrimsonMeteorTimer( from, damage ).Start();
+	}
+
+	public class CrimsonMeteorTimer : Timer
+	{
+	    private Mobile m_From;
+	    private int m_Damage;
+	    private int m_Count;
+	    private int m_MaxCount;
+	    private Point3D m_LastTarget;
+	    private Point3D m_ShowerLocation;
+
+	    public CrimsonMeteorTimer( Mobile from, int damage ) : base( TimeSpan.FromMilliseconds( 500.0 ), TimeSpan.FromMilliseconds( 500.0 ) )
+	    {
+		m_From = from;
+		m_Damage = damage;
+		m_Count = 0;
+		m_MaxCount = 30;
+		m_LastTarget = new Point3D( 0, 0, 0 );
+		m_ShowerLocation = new Point3D( from.Location );
+	    }
+
+	    protected override void OnTick()
+	    {
+		if ( m_From == null )
+		{
+		    Stop();
+		    return;
+		}
+
+		new FireField( m_From, 30, m_Damage, m_Damage, Utility.RandomBool(), m_LastTarget, m_From.Map );
+
+		if ( m_Count >= m_MaxCount )
+		{
+		    Stop();
+		    return;
+		}
+
+		Point3D point = new Point3D();
+		int tries = 0;
+
+		while ( tries < 5 )
+		{
+		    point.X = m_ShowerLocation.X += Utility.RandomMinMax( -5, 5 );
+		    point.Y = m_ShowerLocation.Y += Utility.RandomMinMax( -5, 5 );
+
+		    if ( m_From.CanSee( point ) )
+			break;
+
+		    tries++;
+		}
+
+		Effects.SendMovingParticles( 
+			new Entity( Serial.Zero, new Point3D( point.X, point.Y, point.Z + 30 ), m_From.Map ), 
+			new Entity( Serial.Zero, point, m_From.Map ), 
+			0x36D4, 5, 0, false, false, 0, 0, 9502, 1, 0, (EffectLayer)255, 0x100 );
+
+		m_LastTarget = point;
+		m_Count++;
+	    }
+	}
+
+	public StygianDragon( Serial serial ) : base( serial )
+	{
+	}
+
+	public override void Serialize( GenericWriter writer )
+	{
+	    base.Serialize( writer );
+	    writer.Write( (int) 1 );
+	}
+
+	public override void Deserialize( GenericReader reader )
+	{
+	    base.Deserialize( reader );
+	    int version = reader.ReadInt();
+
+	}
+    }
+
+#region FireField
+    public class FireField : Item
+    {
+	private Mobile m_Owner;
+	private int m_MinDamage;
+	private int m_MaxDamage;
+	private DateTime m_Destroy;
+	private Point3D m_MoveToPoint;
+	private Map m_MoveToMap;
+	private Timer m_Timer;
+	private List<Mobile> m_List;
+
+	[Constructable]
+	public FireField( int duration, int min, int max, bool south, Point3D point, Map map ) : this( null, duration, min, max, south, point, map )
+	{
+	}
+
+	[Constructable]
+	public FireField( Mobile owner, int duration, int min, int max, bool south, Point3D point, Map map ) : base( GetItemID( south ) )
+	{
+	    Movable = false;
+
+	    m_Owner = owner;
+	    m_MinDamage = min;
+	    m_MaxDamage = max;
+	    m_Destroy = DateTime.UtcNow + TimeSpan.FromSeconds( (double)duration + 1.5 );
+	    m_MoveToPoint = point;
+	    m_MoveToMap = map;
+	    m_List = new List<Mobile>();
+	    m_Timer = Timer.DelayCall( TimeSpan.Zero, TimeSpan.FromSeconds( 1 ), new TimerCallback( OnTick ) );
+	    Timer.DelayCall( TimeSpan.Zero, TimeSpan.FromSeconds( 1.5 ), new TimerCallback( Move ) );
+	}
+
+	private static int GetItemID( bool south )
+	{
+	    if ( south )
+		return 0x398C;
+	    else
+		return 0x3996;
+	}
+
+	public override void OnAfterDelete()
+	{
+	    if ( m_Timer != null )
+		m_Timer.Stop();
+	}
+
+	private void Move()
+	{
+	    if ( !Visible )
+		ItemID = 0x36FE;
+
+	    MoveToWorld( m_MoveToPoint, m_MoveToMap );
+	}
+
+	private void OnTick()
+	{
+	    if ( DateTime.UtcNow > m_Destroy )
+		Delete();
+	    else if ( m_MinDamage != 0 )
+	    {
+		foreach( Mobile m in GetMobilesInRange( 0 ) )
+		{
+		    if ( m == null )
+			continue;
+		    else if ( m_Owner != null )
+		    {
+			if ( Ability.CanTarget( m_Owner, m, true, true, false ) )
+			    m_List.Add( m );
+		    }
+		    else
+			m_List.Add( m );
+		}
+
+		for ( int i = 0; i < m_List.Count; i++ )
+		{
+		    if ( m_List[i] != null )
+			DealDamage( m_List[i] );
+		}
+
+		m_List.Clear();
+		m_List = new List<Mobile>();
+	    }
+	}
+
+	public override bool OnMoveOver( Mobile m )
+	{
+	    if ( m_MinDamage != 0 )
+		DealDamage( m );
+
+	    return true;
+	}
+
+	public void DealDamage( Mobile m )
+	{
+	    if ( m != m_Owner )
+		AOS.Damage( m, (m_Owner == null) ? m : m_Owner, Utility.RandomMinMax( m_MinDamage, m_MaxDamage ), 0, 100, 0, 0, 0 );
+	}
+
+	public FireField( Serial serial ) : base( serial )
+	{
+	}
+
+	public override void Serialize( GenericWriter writer )
+	{
+	    // Unsaved.
+	}
+
+	public override void Deserialize( GenericReader reader )
+	{
+	}
+    }
+#endregion
+}
