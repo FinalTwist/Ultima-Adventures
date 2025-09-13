@@ -1,0 +1,125 @@
+using System;
+using Server.Items;
+using Server.Network;
+using System.Collections.Generic;
+using System.Collections;
+using Server.Mobiles;
+using Server.Misc;
+
+namespace Server.Items
+{
+	public class TaskManager200Min : Item
+	{
+		[Constructable]
+		public TaskManager200Min () : base( 0x0EDE )
+		{
+			Movable = false;
+			Name = "Task Manager 200 Minutes";
+			Visible = false;
+			TaskTimer thisTimer = new TaskTimer( this ); 
+			thisTimer.Start(); 
+		}
+
+        public TaskManager200Min(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize( GenericWriter writer )
+		{
+			base.Serialize( writer );
+            writer.Write( (int) 0 ); // version
+		}
+
+		public override void Deserialize( GenericReader reader )
+		{
+			base.Deserialize( reader );
+            int version = reader.ReadInt();
+
+			if ( Server.Misc.MyServerSettings.RunRoutinesAtStartup() )
+			{
+				FirstTimer thisTimer = new FirstTimer( this ); 
+				thisTimer.Start();
+			}
+		}
+
+		public class TaskTimer : Timer 
+		{ 
+			private Item i_item; 
+			public TaskTimer( Item task ) : base( TimeSpan.FromMinutes( 200.0 ) )
+			{ 
+				Priority = TimerPriority.OneMinute; 
+				i_item = task; 
+			} 
+
+			protected override void OnTick() 
+			{
+				TaskTimer thisTimer = new TaskTimer( i_item ); 
+				thisTimer.Start(); 
+				RunThis( false );
+			} 
+		}
+
+		public class FirstTimer : Timer 
+		{ 
+			private Item i_item; 
+			public FirstTimer( Item task ) : base( TimeSpan.FromSeconds( 10.0 ) )
+			{ 
+				Priority = TimerPriority.OneSecond; 
+				i_item = task; 
+			} 
+
+			protected override void OnTick() 
+			{
+				TaskTimer thisTimer = new TaskTimer( i_item ); 
+				thisTimer.Start(); 
+				RunThis( true );
+			} 
+		}
+
+		public static void RunThis( bool DoAction )
+		{
+			Console.WriteLine( "Beginning 200 Minute Task" );
+			ArrayList spawns = new ArrayList();
+			foreach ( Item item in World.Items.Values )
+			{
+				if ( item is PremiumSpawner )
+				{
+					PremiumSpawner spawner = (PremiumSpawner)item;
+
+					if ( spawner.SpawnID == 8888 )
+					{
+						bool reconfigure = true;
+
+						foreach ( NetState state in NetState.Instances )
+						{
+							Mobile m = state.Mobile;
+
+							if ( m is PlayerMobile && m.InRange( spawner.Location, (spawner.HomeRange+20) ) )
+							{
+								reconfigure = false;
+							}
+						}
+
+						if ( reconfigure ){ spawns.Add( item ); }
+					}
+				}
+				else if ( item is Coffer )
+				{
+					Coffer coffer = (Coffer)item;
+					Server.Items.Coffer.SetupCoffer( coffer );
+				}
+				else if ( item is HayCrate || item is HollowStump )
+				{
+					item.Stackable = false;
+				}
+			}
+
+			for ( int i = 0; i < spawns.Count; ++i )
+			{
+				PremiumSpawner spawners = ( PremiumSpawner )spawns[ i ];
+				Server.Mobiles.PremiumSpawner.Reconfigure( spawners, DoAction );
+			}
+			Console.WriteLine( "Done 200 Minute Tasks" );
+		}
+	}
+}

@@ -1,0 +1,111 @@
+// The Help Contents menu can be found in game by either typing [HelpContents
+//  or pressing the '?' button on the chat gump in game.  While I use it to
+//  provide help for the chat system, it can also be used by you to give info
+//  about your shard!
+
+// Here you can add new Help Contents entries!  The process is very simple.
+// Each entry has two lines.  The first is the Subject, the second the Details.
+// Here's a good example:
+
+Contact Knives
+You can email me at kmwill23@hotmail.com, or visit www.runuo.com and leave me a private message.  My MSN address is also kmwill23@hotmail.com.
+
+// The first line, Contact Knives, will appear as a selectable subject.
+// The second line will appear when the player selects the subject entry.
+// Be careful when you add entries!  If you don't add two lines of text,
+//  it won't appear in the Help Contents menu.  You can also apply updates to
+//  this file in game through the General Options menu.  Press Relad Help Contents.
+// Now go forth and add help contents!  Good idea to add them at the bottom.
+
+Public Chat
+Unless changed by your shard administrators, to use public chat begin your chat with '[c'.  Try this: [c Hello world!
+
+Guild Chat
+To use guild chat, you must first be in a guild.  Once you have joined a guild, there are two ways you can chat with your new friends: [g and \g
+
+Private Messages
+You can send private messages, or PMs, to other players whether they are online or not.  There are many ways to do this.  First, you can open up the Chat menu ( [c ) and press the gold button next to the player's name.  You will now see an option to send them a message.  For faster PMing, try turning on the Quickbar by pressing the 'Q' button on the main Chat menu.  Then you can click the little 'm' button next to the player.  If you can't see either of these, then they aren't allowing messages from you.  This can be an ignore or they could require you to be friends first.<br><br>You can also use the command '[pm <name>' for ultra-fast PMing!
+
+Mail
+By typing '[ma' you can access all your stored private message, which display kind of like an email list.  From here you can view old messages, reply to them again, or delete them.  You have many different mail options available to you: Auto deleting, friends only, friend online alert, read receipts, and received sounds.  Check them out!
+
+Auto delete week old messages
+By selecting this in Mail options, every time the world saves it will clear out any of your old messages.  This can help keep you under your server's private message limit.
+
+Auto delete old when mailbox is full
+By selecting this in Mail options, your mailbox will never prevent you from receiving new private messages.  When you are at the limit, it will simply remove the oldest.
+
+Only freinds can send messages
+Selecting this option in Mail options will limit who can send you private messages to prevent spam.  Only those you have on your friends list can send you messages.
+
+Require friend requests
+Just like most instant messengers, you can turn this Mail option on if you wish to approve who adds you as a friend.  You get these requests in your mailbox.
+
+Friend online alert
+A simple Mail option that will send you a message when one of your friends logs in.
+
+Message Read Receipts
+Selecting this will inform you when another player first opens a private message you have sent them.  Handy when you want to know if they are AFK and forgot to set their Away!
+
+Sound on message receive
+If you have this Mail option enabled and your Ultima Online sound on, you can use this to give each person their own neat sound when they send you a private message.
+
+Channel Options
+If you are an administrator, you can use this menu to modify each and every channel on your shard.  Begin by pressing the button in the empty box and selecting the channel.  You can also create new ones by pressing the New Channel button!  For more info on each of the options, search for them in Help.
+
+Enable Channel
+For staff, in the Channel Options menu you can chose to disable a channel.  For example, if you don't want your shard to have a Public channel, simply uncheck the Enabled button.
+
+Regional Channel
+For staff, in the Channel Options menu you can chose to make many channels Regional.  This setting makes it so when a player chats in this channel, it is sent to those in the same town or dungeon, not to everyone.
+
+Global Channel
+For staff, in the Channel Options menu you can chose to make any channel Global.  The global setting is just like the default Public chat room, when a player sends a message it will be sent to all those online in that channel.
+
+Show Staff in Channel
+For staff, in the Channel Options menu you can chose to show or not show staff in that channel.  This will make it so players won't be able to see when staff are online.
+
+Send Channel Chat to IRC
+For staff, in the Channel Options menu you can chose to send all player chat to your IRC channel.  Your IRC channel must be connected for this option to work!
+
+Auto Joining to Channels
+For staff, in the Channel Options menu you can chose to automaticaly join all new players to the selected channel.  This allows them to be able to chat without first needing to know the details of the chat menu.
+
+Applying Filters to Channels
+For staff, in the Channel Options menu you can chose to apply your filters to the selected channel.  This option is enabled by default, so it is mroe likely you will disable it.  Handy for allowing more chat freedom in Guild channels.
+
+Applying Spam Delay to Channels
+For staff, in the Channel Options menu you can chose to allow spam protection to the selected channel.  This option is enabled default.
+
+Adding Commands to Channels
+For staff, in the Channel Options menu you can add and remove channel commands.  To remove one, type in the command name as it displays on the command list.  To add one, enter the command, without the prefix, that isn't already on the command list.
+
+Changing Chat Colors
+You can change many of the colors in the chat system through the Color Options menu.  You can change the following colors: Channels, System messages, and for staff your personal Staff chat color and the many Global color types.
+
+Notifications
+If you are an administrator, Notifications allow you to send periodic messages to every online player.  They come in two forms: Gump and Broadcast.  If you select the Gump style, you can also apply an anti-macro check to the gump.  If the player doesn't check this message after a time you specify, you will receive a Pm and you can then have them disconnected.  Notifications are handy for remingins players to vote, telling them about features and events, and anything else you can imagine!
+
+Anti-Macro Chat Check
+If you are an administrator, you can create anti-macro checks by using the Notifications system.  Open up the Notifications View and create a new Notification.  Select Gump and you will see options for enabling anti-macro check.  Set the time and chose whether to disconnect them or not!  Either way, you will receive a Pm notifying you when a player doesn't respond to the notification.
+
+Chat Filter Options
+If you are an administrator, you can open the Filter options to add new filters and modify a few filter settings.  For information on those settings, search for them here.
+
+Filter Speech
+For administrators, in the Filter Options menu you can chose to have your filters applied to world speech.
+
+Filter Messages
+For administrators, in the Filter Options menu you can chose to have your filters applied to private messages.
+
+Filter Penalties
+For administrators, in the Filter Options menu you can change the penalty for violating filters.  You can have them banned from chat, sent to jail if you have a jail system connected, or you can go light on them and just filter out the words!
+
+Filter Ban Length
+For administrators, in the Filter Options menu you can change the amount of time a player is banned for when the Ban penalty is selected.
+
+Filter Warnings
+For administrators, in the Filter Options menu you can change the amount of warnings a player gets before they face the chosen chat penalty.
+
+Adding and Removing Filters
+For Administrators, in the Filter Options you can add and remove filters by either adding one which doesn;t appear in the list or entering one that is on the list to remove it.
